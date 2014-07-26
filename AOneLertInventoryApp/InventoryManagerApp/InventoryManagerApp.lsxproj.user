@@ -21,6 +21,6 @@
     <AzureSubscriptionId>c58035f4-f4cc-4df0-9519-9344feff37f8</AzureSubscriptionId>
     <AzureManagementThumbprint>8D977043435681D77518732064CD787D0A241894</AzureManagementThumbprint>
     <SharePointServerToServerCertificatePassword />
-    <SchemaManagementLastDatabaseProjectDacpacWriteTime>635419929316043274</SchemaManagementLastDatabaseProjectDacpacWriteTime>
+    <SchemaManagementLastDatabaseProjectDacpacWriteTime>635419949345219101</SchemaManagementLastDatabaseProjectDacpacWriteTime>
   </PropertyGroup>
 </Project>

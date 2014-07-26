@@ -39891,32 +39891,6 @@
                             }
                           }
                         ]
-                      },
-                      {
-                        "displayName": "Switch to Master",
-                        "name": "ShowSettingsGroup",
-                        "kind": "Command",
-                        "view": { "__id": ":Button" },
-                        "propertySources":
-                        [
-                          {
-                            "property": { "__id": ":RootControl/Properties[Tap]" },
-                            "source":
-                            {
-                              "target": { "__id": "Home/Methods[showTab]" },
-                              "arguments":
-                              [
-                                {
-                                  "parameter": { "__id": "Home/Methods[showTab]/Parameters[tabName]" },
-                                  "value":
-                                  {
-                                    "value": "SettingsGroup"
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        ]
                       }
                     ]
                   },
