@@ -1,0 +1,16 @@
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs

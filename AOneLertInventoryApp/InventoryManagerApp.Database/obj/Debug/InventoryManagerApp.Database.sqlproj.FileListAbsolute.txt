@@ -1,0 +1,46 @@
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dacpac
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.pdb
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\ApplicationSchema.dacpac
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.pdb
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.sqlprojResolveAssemblyReference.cache
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\Model.xml
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\refactor.xml
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\postdeploy.sql
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\predeploy.sql
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dacpac
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.pdb
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\ApplicationSchema.dacpac
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.sqlprojResolveAssemblyReference.cache
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.pdb
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dacpac
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.pdb
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\ApplicationSchema.dacpac
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.sqlprojResolveAssemblyReference.cache
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.pdb
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dacpac
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.pdb
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\ApplicationSchema.dacpac
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.pdb
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.sqlprojResolveAssemblyReference.cache
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dacpac
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.pdb
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\ApplicationSchema.dacpac
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.sqlprojResolveAssemblyReference.cache
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.pdb
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dacpac
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.pdb
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\ApplicationSchema.dacpac
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.sqlprojResolveAssemblyReference.cache
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.pdb

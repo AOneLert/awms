@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\ApplicationData\ProductReceiveBalanceForwardDetails.lsml" Checksum="FF9337C57D2D47522D4CDCADC5CBDC63670DC5E96EA38C6C425F88E865500EE8" />
+    <Document FullPath="E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\ApplicationData\Products.lsml" Checksum="0CEB3A511364FAE3CAB3C41F74B5634359D361C7AF67718090ACBAF972959BB3" />
+    <Document FullPath="E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\Client.lsml" Checksum="78EF5A90DAF8DB801A1D2E2DF235667BD1DF87326EF3540E6FB997FC4780E47D" />
+    <Document FullPath="E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\Proxies.lsml" Checksum="A779E74F5CC7B517038844AF8EF0CEAEE2AAC7670742670CCDEF183E46142F4B" />
+  </Documents>
+</ModelDocumentManifest>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="DatabaseServer" value="vaio\mssqlserver2014" />
+  <setParameter name="DatabaseName" value="AWMSDB" />
+  <setParameter name="DatabaseUserName" value="sa" />
+  <setParameter name="DatabaseUserPassword" value="admin2014" />
+  <setParameter name="InventoryManagerApp_IisWebApplication" value="Default Web Site/awms1" />
+</parameters>

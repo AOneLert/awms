@@ -1,0 +1,1329 @@
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\vslshost.exe
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\vslshost.exe.config
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\vslshost.exe.manifest
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\ClientAccessPolicy.xml
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.Design.svc
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\web.config
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\default.aspx
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\diagnostics.wadcfg
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Application.Server.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Edm.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.OData.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.Spatial.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\packages.config
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\ApplicationData.svc
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\dark-theme-2.0.0.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\light-theme-2.0.0.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.min.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-dark-2.0.0.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-light-2.0.0.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\user-customization.css
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Web.config
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Employees.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileEmployees.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileSuppliers.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Suppliers.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-logo.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\default.htm
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\packages.config
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\Home.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.min.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0-vsdoc.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.min.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\data.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ShippingMethods.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ProductCategories.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Orders.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Customers.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\PurchaseOrders.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\StockCheck.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Products.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProducts.png
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheckDetail.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomer.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditEmployee.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrder.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrderDetail.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductCategory.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditShippingMethod.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\LogIn.aspx
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\LogOut.aspx
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Newtonsoft.Json.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.Net.Http.Formatting.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.WebHost.dll
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\Global.asax
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSupplier.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheck.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseCustomers.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseEmployees.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseOrders.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductCategories.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseShippingMethods.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockChecks.lsml.js
+C:\Users\delordsonadmin\Documents\Visual Studio 2013\Projects\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSuppliers.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\vslshost.exe
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\vslshost.exe.config
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\vslshost.exe.manifest
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\ClientAccessPolicy.xml
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.Design.svc
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\web.config
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\default.aspx
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\diagnostics.wadcfg
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\LogIn.aspx
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\LogOut.aspx
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Application.Server.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Edm.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.OData.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\Newtonsoft.Json.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.Net.Http.Formatting.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.Spatial.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.WebHost.dll
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\ApplicationLogo.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\Global.asax
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\Register.aspx
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\packages.config
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\ApplicationData.svc
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\DesktopClient\default.htm
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\DesktopClient\Silverlight.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\DesktopClient\web\InventoryManagerApp.DesktopClient.xap
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\dark-theme-2.0.0.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\light-theme-2.0.0.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.min.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-dark-2.0.0.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-light-2.0.0.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\user-customization.css
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Web.config
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ShippingMethods.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ProductCategories.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Orders.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Customers.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\PurchaseOrders.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\StockCheck.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Products.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Employees.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProducts.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileEmployees.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileSuppliers.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Suppliers.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-logo.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\default.htm
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\packages.config
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomer.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditEmployee.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrder.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrderDetail.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductCategory.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditShippingMethod.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheck.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheckDetail.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSupplier.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseCustomers.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseEmployees.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseOrders.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductCategories.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseShippingMethods.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockChecks.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSuppliers.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\Home.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.min.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0-vsdoc.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.min.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\data.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileCustomers.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileOrders.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProductCategories.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobilePurchaseOrders.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileShippingMethods.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileStockCheck.png
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\MobileHome.lsml.js
+C:\BitBucket\InventoryManagerApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductSubscriber.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.config
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.manifest
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ClientAccessPolicy.xml
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.Design.svc
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\web.config
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\default.aspx
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\diagnostics.wadcfg
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogIn.aspx
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogOut.aspx
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Application.Server.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Edm.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.OData.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Newtonsoft.Json.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Net.Http.Formatting.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Spatial.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.WebHost.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationLogo.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Global.asax
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Register.aspx
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\packages.config
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\GetReceiveProductBalanceForwardDocumentNo.ashx
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationData.svc
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\default.htm
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\Silverlight.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\web\InventoryManagerApp.DesktopClient.xap
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\dark-theme-2.0.0.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\light-theme-2.0.0.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.min.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-dark-2.0.0.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-light-2.0.0.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\user-customization.css
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Web.config
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileCustomers.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileOrders.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProductCategories.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProducts.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileShippingMethods.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileStockCheck.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ShippingMethods.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ProductCategories.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Orders.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Customers.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Products.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\StockCheck.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\PurchaseOrders.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Employees.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobilePurchaseOrders.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileEmployees.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileSuppliers.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Suppliers.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-logo.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\default.htm
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\packages.config
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomer.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditEmployee.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrder.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrderDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForward.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardWithDetails.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct_bk.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductCategory.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditLocation.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductSubscriber.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditShippingMethod.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheck.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheckDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSupplier.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseCustomers.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseEmployees.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuReceiveProduct.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseOrders.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductCategories.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductGroups.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseLocations.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductReceiveBalanceForwards.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts_bk.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseShippingMethods.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockChecks.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseUnitOfMeasures.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\Home.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\MobileHome.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.min.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0-vsdoc.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.min.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\ProductReceiveBalanceForward.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\data.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSuppliers.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuSales.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockOnHands.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjust.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrderDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrder.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductPricing.lsml.js
+C:\Users\Chalermpol Chueayen\Desktop\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjustDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.config
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.manifest
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ClientAccessPolicy.xml
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.Design.svc
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\web.config
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\default.aspx
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\diagnostics.wadcfg
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogIn.aspx
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogOut.aspx
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Application.Server.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Edm.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.OData.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Newtonsoft.Json.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Net.Http.Formatting.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Spatial.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.WebHost.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationLogo.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Global.asax
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Register.aspx
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\packages.config
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\GetReceiveProductBalanceForwardDocumentNo.ashx
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationData.svc
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\default.htm
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\Silverlight.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\web\InventoryManagerApp.DesktopClient.xap
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\dark-theme-2.0.0.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\light-theme-2.0.0.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.min.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-dark-2.0.0.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-light-2.0.0.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\user-customization.css
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Web.config
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileCustomers.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileOrders.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProductCategories.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProducts.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileShippingMethods.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileStockCheck.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ShippingMethods.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ProductCategories.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Orders.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Customers.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Products.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\StockCheck.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\PurchaseOrders.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Employees.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobilePurchaseOrders.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileEmployees.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileSuppliers.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Suppliers.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-logo.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\default.htm
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\packages.config
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomer.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditEmployee.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrder.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrderDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductPricing.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForward.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardWithDetails.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct_bk.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductCategory.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditLocation.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductSubscriber.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrder.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrderDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditShippingMethod.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjust.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjustDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheck.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheckDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSupplier.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseCustomers.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseEmployees.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuReceiveProduct.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuSales.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseOrders.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductCategories.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductGroups.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseLocations.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductReceiveBalanceForwards.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts_bk.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseShippingMethods.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockChecks.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockOnHands.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSuppliers.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseUnitOfMeasures.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\Home.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\MobileHome.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.min.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0-vsdoc.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.min.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\ProductReceiveBalanceForward.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\data.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomerGroup.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditTransportRoute.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder_Old.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail_Old.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders_Old.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderTest.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPODetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPO.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\PurchaseOrder.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPOReceiveDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePO.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile.custom.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile.custom.min.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePOReceive.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment-with-langs.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment-with-langs.min.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment.min.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.config
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.manifest
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ClientAccessPolicy.xml
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.Design.svc
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\web.config
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\default.aspx
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\diagnostics.wadcfg
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogIn.aspx
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogOut.aspx
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Application.Server.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Edm.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.OData.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Newtonsoft.Json.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Net.Http.Formatting.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Spatial.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.WebHost.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationLogo.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Global.asax
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Register.aspx
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\packages.config
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\GetReceiveProductBalanceForwardDocumentNo.ashx
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationData.svc
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\default.htm
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\Silverlight.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\web\InventoryManagerApp.DesktopClient.xap
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\dark-theme-2.0.0.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\light-theme-2.0.0.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.min.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-dark-2.0.0.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-light-2.0.0.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\user-customization.css
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Web.config
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileCustomers.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileOrders.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProductCategories.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProducts.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileShippingMethods.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileStockCheck.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ShippingMethods.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ProductCategories.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Orders.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Customers.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Products.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\StockCheck.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\PurchaseOrders.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Employees.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobilePurchaseOrders.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileEmployees.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileSuppliers.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Suppliers.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-logo.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\default.htm
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\packages.config
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomer.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomerGroup.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditEmployee.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrder.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrderDetail.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPO.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPODetail.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPOReceiveDetail.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductPricing.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForward.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardDetail.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardWithDetails.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct_bk.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductCategory.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditLocation.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductSubscriber.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderTest.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder_Old.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail_Old.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrder.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrderDetail.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditShippingMethod.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjust.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjustDetail.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheck.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheckDetail.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSupplier.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditTransportRoute.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseCustomers.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseEmployees.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuReceiveProduct.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuSales.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseOrders.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePO.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePOReceive.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductCategories.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductGroups.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseLocations.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductReceiveBalanceForwards.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts_bk.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders_Old.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSaleOrders.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseShippingMethods.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockChecks.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockOnHands.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSuppliers.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseUnitOfMeasures.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\Home.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\MobileHome.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.min.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile.custom.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile.custom.min.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment-with-langs.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment-with-langs.min.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment.min.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0-vsdoc.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.min.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\ProductReceiveBalanceForward.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\PurchaseOrder.lsml.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\data.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+C:\tfs\Git\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.config
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.manifest
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ClientAccessPolicy.xml
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.Design.svc
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\web.config
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\default.aspx
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\diagnostics.wadcfg
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogIn.aspx
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogOut.aspx
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Application.Server.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Edm.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.OData.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Newtonsoft.Json.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Net.Http.Formatting.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Spatial.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.WebHost.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationLogo.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Global.asax
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Register.aspx
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\packages.config
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\GetReceiveProductBalanceForwardDocumentNo.ashx
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationData.svc
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\default.htm
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\Silverlight.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\web\InventoryManagerApp.DesktopClient.xap
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\dark-theme-2.0.0.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\light-theme-2.0.0.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.min.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-dark-2.0.0.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-light-2.0.0.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\user-customization.css
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Web.config
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileCustomers.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileOrders.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProductCategories.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProducts.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileShippingMethods.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileStockCheck.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ShippingMethods.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ProductCategories.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Orders.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Customers.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Products.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\StockCheck.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\PurchaseOrders.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Employees.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobilePurchaseOrders.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileEmployees.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileSuppliers.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Suppliers.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-logo.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\default.htm
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\packages.config
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomer.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomerGroup.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditEmployee.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrder.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrderDetail.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPO.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPODetail.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPOReceive.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPOReceiveDetail.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductPricing.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForward.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardDetail.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardWithDetails.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct_bk.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductCategory.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditLocation.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductSubscriber.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderTest.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder_Old.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail_Old.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditReceiveFromPurchaseOrder.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrder.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrderDetail.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditShippingMethod.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjust.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjustDetail.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheck.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheckDetail.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSupplier.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditTransportRoute.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditWorkOrder.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditWorkOrderIssueDetail.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditWorkOrderProduce.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseCustomers.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseEmployees.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuReceiveProduct.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuSales.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseOrders.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePO.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePOReceive.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductCategories.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductGroups.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseLocations.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductReceiveBalanceForwards.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts_bk.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders_Old.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSaleOrders.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseShippingMethods.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockChecks.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockOnHands.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSuppliers.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseUnitOfMeasures.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseWorkOrders.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\Home.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\MobileHome.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.min.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile.custom.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile.custom.min.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment-with-langs.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment-with-langs.min.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment.min.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0-vsdoc.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.min.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\ProductReceiveBalanceForward.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\PurchaseOrder.lsml.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\data.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+C:\Users\paradornn.BTG\Source\Repos\aonelert\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.config
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.manifest
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ClientAccessPolicy.xml
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.Design.svc
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\web.config
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\default.aspx
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\diagnostics.wadcfg
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogIn.aspx
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogOut.aspx
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Application.Server.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Edm.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.OData.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Newtonsoft.Json.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Net.Http.Formatting.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Spatial.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.WebHost.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationLogo.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Global.asax
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Register.aspx
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\packages.config
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\GetReceiveProductBalanceForwardDocumentNo.ashx
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationData.svc
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\default.htm
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\Silverlight.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\web\InventoryManagerApp.DesktopClient.xap
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\dark-theme-2.0.0.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\light-theme-2.0.0.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.min.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-dark-2.0.0.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-light-2.0.0.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\user-customization.css
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Web.config
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileCustomers.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileOrders.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProductCategories.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProducts.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileShippingMethods.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileStockCheck.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ShippingMethods.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ProductCategories.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Orders.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Customers.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Products.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\StockCheck.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\PurchaseOrders.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Employees.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobilePurchaseOrders.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileEmployees.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileSuppliers.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Suppliers.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-logo.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\default.htm
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\packages.config
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomer.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomerGroup.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditEmployee.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrder.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrderDetail.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPO.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPODetail.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPOReceive.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPOReceiveDetail.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductPricing.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForward.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardDetail.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardWithDetails.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct_bk.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductCategory.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditLocation.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductSubscriber.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderTest.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder_Old.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail_Old.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditReceiveFromPurchaseOrder.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrder.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrderDetail.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditShippingMethod.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjust.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjustDetail.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheck.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheckDetail.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSupplier.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditTransportRoute.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditWorkOrder.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditWorkOrderIssueDetail.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditWorkOrderProduce.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseCustomers.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseEmployees.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuReceiveProduct.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuSales.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseOrders.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePO.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePOReceive.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductCategories.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductGroups.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseLocations.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductReceiveBalanceForwards.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts_bk.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders_Old.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSaleOrders.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseShippingMethods.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockChecks.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockOnHands.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSuppliers.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseUnitOfMeasures.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseWorkOrders.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\Home.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\MobileHome.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.min.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile.custom.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile.custom.min.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment-with-langs.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment-with-langs.min.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment.min.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0-vsdoc.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.min.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\ProductReceiveBalanceForward.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\PurchaseOrder.lsml.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\data.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+E:\RepositProject\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.config
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\vslshost.exe.manifest
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ClientAccessPolicy.xml
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.Design.svc
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Microsoft.LightSwitch.SecurityData.svc
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\web.config
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\default.aspx
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\diagnostics.wadcfg
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogIn.aspx
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\LogOut.aspx
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Web\Manifests\Microsoft.LightSwitch.Server.Manifest.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Application.Server.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Edm.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.OData.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.Client.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.Data.Services.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.AppBridge.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.CodeMarker.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ExportProvider.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Extensions.Server.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.ManifestService.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Model.Xaml.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.LightSwitch.Server.Host.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Newtonsoft.Json.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Net.Http.Formatting.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.EntityFramework.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Hosting.OData.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.ServiceModel.DomainServices.Server.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Spatial.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\System.Web.Http.WebHost.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationLogo.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Global.asax
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\Register.aspx
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\packages.config
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\GetReceiveProductBalanceForwardDocumentNo.ashx
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\ApplicationData.svc
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\default.htm
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\Silverlight.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\DesktopClient\web\InventoryManagerApp.DesktopClient.xap
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\dark-theme-2.0.0.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.min.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\jquery.mobile.theme-1.3.0.min.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\light-theme-2.0.0.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-2.0.0.min.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-dark-2.0.0.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\msls-light-2.0.0.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\user-customization.css
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Web.config
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileCustomers.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileOrders.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProductCategories.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileProducts.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileShippingMethods.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileStockCheck.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ShippingMethods.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ajax-loader.gif
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\ProductCategories.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Orders.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Customers.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Products.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\StockCheck.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\PurchaseOrders.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Employees.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-black.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-18-white.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-black.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\icons-36-white.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobilePurchaseOrders.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileEmployees.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\MobileSuppliers.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-18.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-black-icons-36.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-dark.gif
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-loader-light.gif
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-18.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-white-icons-36.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\msls-blue-icons-36.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\Suppliers.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-logo.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Images\user-splash-screen.png
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\default.htm
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\packages.config
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomer.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditCustomerGroup.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditEmployee.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrder.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditOrderDetail.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPO.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPODetail.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPOReceive.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPOReceiveDetail.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductPricing.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForward.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardDetail.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductReceiveBalanceForwardWithDetails.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProduct_bk.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductCategory.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditLocation.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditProductSubscriber.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderTest.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrder_Old.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditPurchaseOrderDetail_Old.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditReceiveFromPurchaseOrder.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrder.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSaleOrderDetail.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditShippingMethod.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjust.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockAdjustDetail.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheck.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditStockCheckDetail.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditSupplier.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditTransportRoute.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditWorkOrder.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditWorkOrderIssueDetail.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\AddEditWorkOrderProduce.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseCustomers.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseEmployees.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuReceiveProduct.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseMenuSales.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseOrders.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePO.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePOReceive.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductCategories.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductGroups.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseLocations.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductReceiveBalanceForwards.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProducts_bk.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders_Old.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSaleOrders.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseShippingMethods.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockChecks.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockOnHands.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSuppliers.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseUnitOfMeasures.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseWorkOrders.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\Home.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\MobileHome.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\datajs-1.1.1.min.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.intellisense.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery-1.9.1.min.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0-vsdoc.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile-1.3.0.min.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile.custom.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\jquery.mobile.custom.min.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment-with-langs.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment-with-langs.min.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\moment.min.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0-vsdoc.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\msls-2.0.0.min.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\winjs-1.0.min.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\ProductReceiveBalanceForward.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\UserCode\PurchaseOrder.lsml.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\generatedAssets.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\data.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\viewModel.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\usercode.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\resources.js
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
+E:\RepositProject\AWMS\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
