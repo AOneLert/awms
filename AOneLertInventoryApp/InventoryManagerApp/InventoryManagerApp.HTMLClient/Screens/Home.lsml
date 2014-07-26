@@ -249,7 +249,6 @@
             </ContentItem>
             <ContentItem
               Name="ShowBrowseStockAdjusts"
-              IsHidden="True"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
@@ -269,7 +268,6 @@
             </ContentItem>
             <ContentItem
               Name="ShowBrowseStockTransfers"
-              IsHidden="True"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
