@@ -118,7 +118,6 @@
                 </ContentItem>
                 <ContentItem
                   Name="EmployeeFullName"
-                  IsHidden="True"
                   Kind="Value"
                   DataType=":String">
                   <ContentItem.Attributes>
