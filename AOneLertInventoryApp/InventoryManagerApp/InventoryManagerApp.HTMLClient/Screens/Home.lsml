@@ -304,32 +304,6 @@
                 </ControlPropertySource>
               </ContentItem.PropertySources>
             </ContentItem>
-            <ContentItem
-              Name="ShowSettingsGroup"
-              Kind="Command">
-              <ContentItem.Attributes>
-                <DisplayName
-                  Value="Switch to Master" />
-              </ContentItem.Attributes>
-              <ContentItem.PropertySources>
-                <ControlPropertySource
-                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <CallExpression
-                        Target="Home/Methods[showTab]">
-                        <ArgumentExpression
-                          Parameter="tabName">
-                          <ConstantExpression
-                            Value="SettingsGroup"
-                            ResultType=":String" />
-                        </ArgumentExpression>
-                      </CallExpression>
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ControlPropertySource>
-              </ContentItem.PropertySources>
-            </ContentItem>
           </ContentItem>
           <ContentItem
             Name="SettingsGroup"

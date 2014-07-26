@@ -15878,12 +15878,6 @@
             _$parentName: "Group",
             screen: lightSwitchApplication.Home
         },
-        ShowSettingsGroup: {
-            _$class: msls.ContentItem,
-            _$name: "ShowSettingsGroup",
-            _$parentName: "Group",
-            screen: lightSwitchApplication.Home
-        },
         SettingsGroup: {
             _$class: msls.ContentItem,
             _$name: "SettingsGroup",
@@ -16076,11 +16070,6 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ShowBrowseSaleOrder_postRender: [$element, function () { return new lightSwitchApplication.Home().findContentItem("ShowBrowseSaleOrder"); }],
-        /// <field>
-        /// Called after the ShowSettingsGroup content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ShowSettingsGroup_postRender: [$element, function () { return new lightSwitchApplication.Home().findContentItem("ShowSettingsGroup"); }],
         /// <field>
         /// Called after the SettingsGroup content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
