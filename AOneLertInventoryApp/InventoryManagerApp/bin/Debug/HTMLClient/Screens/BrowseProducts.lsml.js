@@ -50,6 +50,12 @@ myapp.AddEditProduct.created = function (screen) {
     //    screen.findContentItem("StockChecks").isReadOnly = true;
     //    screen.findContentItem("ProductSubscribersGroup").isReadOnly = true;
     //}
+    //if (myapp.permissions["LightSwitchApplication:CanEditProducts"]) {
+    //    screen.findContentItem("AddProduct").isEnabled = true;
+    //}
+    //else {
+    //    screen.findContentItem("AddProduct").isEnabled = false;
+    //}
 
     //if (myapp.permissions["LightSwitchApplication:CanEditProductSubscribers"]) {
     //    screen.findContentItem("AddProductSubscriber").isEnabled = true;
