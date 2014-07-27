@@ -518,6 +518,23 @@
     <NavigationProperty Name="StockCheckBy" Relationship="LightSwitchApplication.StockCheck_Employee" ToRole="Employee" FromRole="StockCheck" />
     <NavigationProperty Name="StockCheckDetails" Relationship="LightSwitchApplication.StockCheckDetail_StockCheck" ToRole="StockCheckDetail" FromRole="StockCheck" />
   </EntityType>
+  <EntityType Name="StockOnHandHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionNo" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="TransactionDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="TransactionBy" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="ProductId" Type="Edm.Int32" Nullable="false" />
+    <Property Name="LocationId" Type="Edm.Int32" Nullable="false" />
+    <Property Name="LotNo" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
   <EntityType Name="StockOnHand">
     <Key>
       <PropertyRef Name="Id" />
@@ -615,11 +632,20 @@
     <NavigationProperty Name="PurchaseOrders" Relationship="LightSwitchApplication.PurchaseOrder_Supplier" ToRole="PurchaseOrder" FromRole="Supplier" />
     <NavigationProperty Name="ReceiveFromPurchaseOrders" Relationship="LightSwitchApplication.ReceiveFromPurchaseOrder_Supplier" ToRole="ReceiveFromPurchaseOrder" FromRole="Supplier" />
   </EntityType>
-  <EntityType Name="Table1Item">
+  <EntityType Name="Transaction">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionNo" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="TransactionDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="TransactionType" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="ReferenceNo" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="ProductId" Type="Edm.Int32" Nullable="false" />
+    <Property Name="LocationId" Type="Edm.Int32" Nullable="false" />
+    <Property Name="LotNo" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Quantity" Type="Edm.Double" Nullable="false" />
+    <Property Name="Cost" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
@@ -1274,12 +1300,13 @@
     <EntitySet Name="StockAdjusts" EntityType="LightSwitchApplication.StockAdjust" />
     <EntitySet Name="StockCheckDetails" EntityType="LightSwitchApplication.StockCheckDetail" />
     <EntitySet Name="StockChecks" EntityType="LightSwitchApplication.StockCheck" />
+    <EntitySet Name="StockOnHandHistories" EntityType="LightSwitchApplication.StockOnHandHistory" />
     <EntitySet Name="StockOnHands" EntityType="LightSwitchApplication.StockOnHand" />
     <EntitySet Name="StockTransactions" EntityType="LightSwitchApplication.StockTransaction" />
     <EntitySet Name="StockTransfers" EntityType="LightSwitchApplication.StockTransfer" />
     <EntitySet Name="SupplierGroups" EntityType="LightSwitchApplication.SupplierGroup" />
     <EntitySet Name="Suppliers" EntityType="LightSwitchApplication.Supplier" />
-    <EntitySet Name="Table1Items" EntityType="LightSwitchApplication.Table1Item" />
+    <EntitySet Name="Transactions" EntityType="LightSwitchApplication.Transaction" />
     <EntitySet Name="TransportRoutes" EntityType="LightSwitchApplication.TransportRoute" />
     <EntitySet Name="UnitOfMeasures" EntityType="LightSwitchApplication.UnitOfMeasure" />
     <EntitySet Name="Workers" EntityType="LightSwitchApplication.Worker" />
@@ -1471,12 +1498,11 @@
     </FunctionImport>
     <FunctionImport Name="PurchaseOrderNotClose" ReturnType="Collection(LightSwitchApplication.PurchaseOrder)" EntitySet="PurchaseOrders" m:HttpMethod="GET" />
     <FunctionImport Name="QueryMaxPONumber" ReturnType="Collection(LightSwitchApplication.PurchaseOrder)" EntitySet="PurchaseOrders" m:HttpMethod="GET" />
+    <FunctionImport Name="QueryMaxSONumber" ReturnType="Collection(LightSwitchApplication.SaleOrder)" EntitySet="SaleOrders" m:HttpMethod="GET" />
     <FunctionImport Name="QueryStockOnHandForIssue" ReturnType="Collection(LightSwitchApplication.StockOnHand)" EntitySet="StockOnHands" m:HttpMethod="GET" />
     <FunctionImport Name="StockOnHandForSale" ReturnType="Collection(LightSwitchApplication.StockOnHand)" EntitySet="StockOnHands" m:HttpMethod="GET" />
     <FunctionImport Name="SupplierGroupsActiveQuery" ReturnType="Collection(LightSwitchApplication.SupplierGroup)" EntitySet="SupplierGroups" m:HttpMethod="GET" />
-    <FunctionImport Name="SupplierActiveQuery" ReturnType="Collection(LightSwitchApplication.Supplier)" EntitySet="Suppliers" m:HttpMethod="GET">
-      <Parameter Name="SupplierName" Type="Edm.String" Mode="In" />
-    </FunctionImport>
+    <FunctionImport Name="SupplierActiveQuery" ReturnType="Collection(LightSwitchApplication.Supplier)" EntitySet="Suppliers" m:HttpMethod="GET" />
     <FunctionImport Name="TransportRoutesActiveQuery" ReturnType="Collection(LightSwitchApplication.TransportRoute)" EntitySet="TransportRoutes" m:HttpMethod="GET" />
     <FunctionImport Name="UnitOfMeasuresActiveQuery" ReturnType="Collection(LightSwitchApplication.UnitOfMeasure)" EntitySet="UnitOfMeasures" m:HttpMethod="GET" />
     <FunctionImport Name="WorkersActiveQuery" ReturnType="Collection(LightSwitchApplication.Worker)" EntitySet="Workers" m:HttpMethod="GET" />
