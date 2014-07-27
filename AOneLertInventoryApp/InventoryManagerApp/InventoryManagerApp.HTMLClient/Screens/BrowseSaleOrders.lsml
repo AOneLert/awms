@@ -29,6 +29,24 @@
                 Value="ข้อมูลขายสินค้า" />
             </ContentItem.Attributes>
             <ContentItem
+              Name="SearchSO"
+              Kind="Value"
+              DataType=":String?"
+              View="Microsoft.LightSwitch.MobileWeb:TextBox">
+              <ContentItem.Attributes>
+                <DisplayName
+                  Value="ค้นหาใบขายสินค้า" />
+              </ContentItem.Attributes>
+              <ContentItem.DataSource>
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <MemberExpression
+                      Member="BrowseSaleOrders/Properties[SearchSO]" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ContentItem.DataSource>
+            </ContentItem>
+            <ContentItem
               Name="SaleOrder"
               Kind="Collection"
               DataType="CollectionView$SaleOrder"
@@ -296,7 +314,63 @@
             Name="SaleOrdersQuery"
             ReturnType="SaleOrder*">
             <ScreenQueryDefinition.FilterExpression>
-              <QueryFilterExpressionTree />
+              <QueryFilterExpressionTree>
+                <BinaryExpression
+                  NodeType="Or">
+                  <BinaryExpression.Left>
+                    <BinaryExpression
+                      NodeType="Or">
+                      <BinaryExpression.Left>
+                        <BinaryExpression
+                          NodeType="Contains">
+                          <BinaryExpression.Left>
+                            <ChainExpression>
+                              <MemberExpression
+                                Member="SaleOrder/Properties[DocumentNo]" />
+                            </ChainExpression>
+                          </BinaryExpression.Left>
+                          <BinaryExpression.Right>
+                            <ParameterExpression
+                              Parameter="SearchSO" />
+                          </BinaryExpression.Right>
+                        </BinaryExpression>
+                      </BinaryExpression.Left>
+                      <BinaryExpression.Right>
+                        <BinaryExpression
+                          NodeType="Contains">
+                          <BinaryExpression.Left>
+                            <ChainExpression>
+                              <MemberExpression
+                                Member="SaleOrder/Properties[ReferenceNo]" />
+                            </ChainExpression>
+                          </BinaryExpression.Left>
+                          <BinaryExpression.Right>
+                            <ParameterExpression
+                              Parameter="SearchSO" />
+                          </BinaryExpression.Right>
+                        </BinaryExpression>
+                      </BinaryExpression.Right>
+                    </BinaryExpression>
+                  </BinaryExpression.Left>
+                  <BinaryExpression.Right>
+                    <BinaryExpression
+                      NodeType="Contains">
+                      <BinaryExpression.Left>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="SaleOrder/Properties[Customer]" />
+                          <MemberExpression
+                            Member="CustomerName" />
+                        </ChainExpression>
+                      </BinaryExpression.Left>
+                      <BinaryExpression.Right>
+                        <ParameterExpression
+                          Parameter="SearchSO" />
+                      </BinaryExpression.Right>
+                    </BinaryExpression>
+                  </BinaryExpression.Right>
+                </BinaryExpression>
+              </QueryFilterExpressionTree>
             </ScreenQueryDefinition.FilterExpression>
             <ScreenQueryDefinition.Source>
               <QuerySourceExpressionTree>
@@ -304,15 +378,41 @@
                   Member="ApplicationData/Members[SaleOrders]" />
               </QuerySourceExpressionTree>
             </ScreenQueryDefinition.Source>
+            <ScreenQueryDefinition.Parameters>
+              <QueryParameter
+                Name="SearchSO"
+                IsOptional="True"
+                ParameterType=":String?" />
+            </ScreenQueryDefinition.Parameters>
+            <ScreenQueryDefinition.SortCriteria>
+              <SortCriterion
+                Direction="Descending">
+                <ChainExpression>
+                  <MemberExpression
+                    Member="DocumentNo" />
+                </ChainExpression>
+              </SortCriterion>
+            </ScreenQueryDefinition.SortCriteria>
           </ScreenQueryDefinition>
         </ScreenCollectionProperty.Query>
         <ScreenExpressionTree>
           <ChainExpression>
             <CallExpression
-              Target="BrowseSaleOrders/Properties[SaleOrders]/Query" />
+              Target="BrowseSaleOrders/Properties[SaleOrders]/Query">
+              <ArgumentExpression
+                Parameter="SearchSO">
+                <ChainExpression>
+                  <MemberExpression
+                    Member="BrowseSaleOrders/Properties[SearchSO]" />
+                </ChainExpression>
+              </ArgumentExpression>
+            </CallExpression>
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
+      <ScreenProperty
+        Name="SearchSO"
+        PropertyType=":String?" />
     </Screen.Properties>
   </Screen>
   <Application.Methods>
