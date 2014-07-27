@@ -1773,6 +1773,21 @@ namespace LightSwitchApplication
         partial void QueryMaxPONumber_ExecuteFailed(global::System.Exception exception);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void QueryMaxSONumber_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryMaxSONumber_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void QueryMaxSONumber_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.SaleOrder> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryMaxSONumber_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.SaleOrder> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryMaxSONumber_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void QueryStockOnHandForIssue_CanExecute(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -5523,6 +5538,39 @@ namespace LightSwitchApplication
             {
                 global::System.Linq.IQueryable<global::LightSwitchApplication.PurchaseOrder> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PurchaseOrder>)args[0];
                 d.QueryMaxPONumber_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.SaleOrder>
+                __QueryMaxSONumberEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.SaleOrder>(
+                    "QueryMaxSONumber",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryMaxSONumber_CanExecute,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryMaxSONumber_Executing,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryMaxSONumber_Executed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryMaxSONumber_Failed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryMaxSONumber_PreprocessQuery);
+            private static bool __QueryMaxSONumber_CanExecute(global::LightSwitchApplication.ApplicationDataService d, bool r)
+            {
+                d.QueryMaxSONumber_CanExecute(ref r);
+                return r;
+            }
+            private static void __QueryMaxSONumber_Executing(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.QueryMaxSONumber_Executing();
+            }
+            private static void __QueryMaxSONumber_Executed(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.QueryMaxSONumber_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.SaleOrder>)args[0]);
+            }
+            private static void __QueryMaxSONumber_Failed(global::LightSwitchApplication.ApplicationDataService d, object[] args, global::System.Exception ex)
+            {
+                d.QueryMaxSONumber_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __QueryMaxSONumber_PreprocessQuery(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.SaleOrder> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.SaleOrder>)args[0];
+                d.QueryMaxSONumber_PreprocessQuery(ref query);
                 return query;
             }
             
