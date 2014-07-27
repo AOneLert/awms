@@ -81,24 +81,6 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="PurchaseOrderStatus"
-                  IsHidden="True"
-                  Kind="Value"
-                  DataType=":Boolean">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="สถานะ" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="PurchaseOrder/Properties[PurchaseOrderStatus]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
                   Name="SupplierName"
                   Kind="Value"
                   DataType=":String">
@@ -135,6 +117,24 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
+                  Name="PurchaseOrderStatus"
+                  IsHidden="True"
+                  Kind="Value"
+                  DataType=":Boolean">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="ปิดการรับแล้ว" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="PurchaseOrder/Properties[PurchaseOrderStatus]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
                   Name="POStatusDescription"
                   Kind="Value"
                   DataType=":String?">
@@ -158,21 +158,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showAddEditPO]">
-                        <CallExpression.Attributes>
-                          <AssociatedCollection
-                            Collection="BrowsePO/Properties[PurchaseOrders]" />
-                        </CallExpression.Attributes>
-                        <ArgumentExpression
-                          Parameter="PurchaseOrder">
-                          <ChainExpression>
-                            <MemberExpression
-                              Member="BrowsePO/Properties[PurchaseOrders]" />
-                            <MemberExpression
-                              Member="selectedItem" />
-                          </ChainExpression>
-                        </ArgumentExpression>
-                      </CallExpression>
+                        Target="BrowsePO/Methods[PurchaseOrder_ItemTap]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>
@@ -259,6 +245,10 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
+      <ScreenMethod
+        Name="PurchaseOrder_ItemTap" />
+      <ScreenMethod
+        Name="ShowAddEditPO_Tap" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty

@@ -349,12 +349,6 @@
   <EntityType>
     <EntityType.Attributes>
       <Proxy
-        Target="ServiceInterface:Table1Item" />
-    </EntityType.Attributes>
-  </EntityType>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
         Target="ServiceInterface:PurchaseOrder" />
     </EntityType.Attributes>
   </EntityType>
@@ -490,4 +484,16 @@
         Target="ServiceInterface:WorkOrderProduce_WorkOrder" />
     </Association.Attributes>
   </Association>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:Transaction" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:StockOnHandHistory" />
+    </EntityType.Attributes>
+  </EntityType>
 </Application>

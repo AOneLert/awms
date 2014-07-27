@@ -29,12 +29,13 @@
     <EntitySet Name="StockAdjusts" EntityType="ApplicationDataStore.StockAdjust" store:Type="Tables" Schema="dbo" Table="StockAdjusts" />
     <EntitySet Name="StockCheckDetails" EntityType="ApplicationDataStore.StockCheckDetail" store:Type="Tables" Schema="dbo" Table="StockCheckDetails" />
     <EntitySet Name="StockChecks" EntityType="ApplicationDataStore.StockCheck" store:Type="Tables" Schema="dbo" Table="StockChecks" />
+    <EntitySet Name="StockOnHandHistories" EntityType="ApplicationDataStore.StockOnHandHistory" store:Type="Tables" Schema="dbo" Table="StockOnHandHistories" />
     <EntitySet Name="StockOnHands" EntityType="ApplicationDataStore.StockOnHand" store:Type="Tables" Schema="dbo" Table="StockOnHands" />
     <EntitySet Name="StockTransactions" EntityType="ApplicationDataStore.StockTransaction" store:Type="Tables" Schema="dbo" Table="StockTransactions" />
     <EntitySet Name="StockTransfers" EntityType="ApplicationDataStore.StockTransfer" store:Type="Tables" Schema="dbo" Table="StockTransfers" />
     <EntitySet Name="SupplierGroups" EntityType="ApplicationDataStore.SupplierGroup" store:Type="Tables" Schema="dbo" Table="SupplierGroups" />
     <EntitySet Name="Suppliers" EntityType="ApplicationDataStore.Supplier" store:Type="Tables" Schema="dbo" Table="Suppliers" />
-    <EntitySet Name="Table1Items" EntityType="ApplicationDataStore.Table1Item" store:Type="Tables" Schema="dbo" Table="Table1Items" />
+    <EntitySet Name="Transactions" EntityType="ApplicationDataStore.Transaction" store:Type="Tables" Schema="dbo" Table="Transactions" />
     <EntitySet Name="TransportRoutes" EntityType="ApplicationDataStore.TransportRoute" store:Type="Tables" Schema="dbo" Table="TransportRoutes" />
     <EntitySet Name="UnitOfMeasures" EntityType="ApplicationDataStore.UnitOfMeasure" store:Type="Tables" Schema="dbo" Table="UnitOfMeasures" />
     <EntitySet Name="Workers" EntityType="ApplicationDataStore.Worker" store:Type="Tables" Schema="dbo" Table="Workers" />
@@ -664,6 +665,23 @@
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
     <Property Name="StockCheck_Employee" Type="int" Nullable="false" />
   </EntityType>
+  <EntityType Name="StockOnHandHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionNo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="TransactionDate" Type="datetime" Nullable="false" />
+    <Property Name="TransactionBy" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="LocationId" Type="int" Nullable="false" />
+    <Property Name="LotNo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
   <EntityType Name="StockOnHand">
     <Key>
       <PropertyRef Name="Id" />
@@ -755,11 +773,20 @@
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
     <Property Name="Supplier_SupplierGroup" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="Table1Item">
+  <EntityType Name="Transaction">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionNo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="TransactionDate" Type="datetime" Nullable="false" />
+    <Property Name="TransactionType" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ReferenceNo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="LocationId" Type="int" Nullable="false" />
+    <Property Name="LotNo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Quantity" Type="float" Nullable="false" />
+    <Property Name="Cost" Type="decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Created" Type="datetimeoffset" />
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />

@@ -352,24 +352,12 @@
         Target="ServiceInterface:SaleOrderDetail_Location" />
     </Association.Attributes>
   </Association>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
-        Target="ServiceInterface:Table1Item" />
-    </EntityType.Attributes>
-  </EntityType>
   <Association>
     <Association.Attributes>
       <Proxy
         Target="ServiceInterface:PurchaseOrder_Supplier" />
     </Association.Attributes>
   </Association>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
-        Target="ServiceInterface:PurchaseOrderDetail" />
-    </EntityType.Attributes>
-  </EntityType>
   <Association>
     <Association.Attributes>
       <Proxy
@@ -478,4 +466,16 @@
         Target="ServiceInterface:WorkOrderProduce_WorkOrder" />
     </Association.Attributes>
   </Association>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:Transaction" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:StockOnHandHistory" />
+    </EntityType.Attributes>
+  </EntityType>
 </Application>

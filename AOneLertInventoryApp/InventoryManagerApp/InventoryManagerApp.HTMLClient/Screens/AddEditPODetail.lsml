@@ -55,7 +55,7 @@
                   DataType=":Date">
                   <ContentItem.Attributes>
                     <DisplayName
-                      Value="วันที่ต้องการ" />
+                      Value="วันที่กำหนดส่ง" />
                   </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
@@ -602,7 +602,15 @@
         <ScreenExpressionTree>
           <ChainExpression>
             <CallExpression
-              Target="AddEditPODetail/Properties[ProductsActiveQuery]/Query" />
+              Target="AddEditPODetail/Properties[ProductsActiveQuery]/Query">
+              <ArgumentExpression
+                Parameter="SearchProduct">
+                <ChainExpression>
+                  <MemberExpression
+                    Member="AddEditPODetail/Properties[SearchProduct]" />
+                </ChainExpression>
+              </ArgumentExpression>
+            </CallExpression>
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>

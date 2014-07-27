@@ -81,23 +81,6 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="PurchaseOrderStatus"
-                  Kind="Value"
-                  DataType=":Boolean">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="สถานะ" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="PurchaseOrder/Properties[PurchaseOrderStatus]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
                   Name="SupplierName"
                   Kind="Value"
                   DataType=":String">
@@ -133,6 +116,41 @@
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                 </ContentItem>
+                <ContentItem
+                  Name="PurchaseOrderStatus"
+                  IsHidden="True"
+                  Kind="Value"
+                  DataType=":Boolean">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="สถานะ" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="PurchaseOrder/Properties[PurchaseOrderStatus]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="POStatusDescription"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="สถานะ" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="BrowsePOReceive/Properties[POStatusDescription]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
               </ContentItem>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -140,21 +158,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showAddEditPOReceive]">
-                        <CallExpression.Attributes>
-                          <AssociatedCollection
-                            Collection="BrowsePOReceive/Properties[PurchaseOrders]" />
-                        </CallExpression.Attributes>
-                        <ArgumentExpression
-                          Parameter="PurchaseOrder">
-                          <ChainExpression>
-                            <MemberExpression
-                              Member="BrowsePOReceive/Properties[PurchaseOrders]" />
-                            <MemberExpression
-                              Member="selectedItem" />
-                          </ChainExpression>
-                        </ArgumentExpression>
-                      </CallExpression>
+                        Target="BrowsePOReceive/Methods[PurchaseOrder_ItemTap]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>
@@ -203,6 +207,8 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
+      <ScreenMethod
+        Name="PurchaseOrder_ItemTap" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty
@@ -225,7 +231,7 @@
                   </BinaryExpression.Left>
                   <BinaryExpression.Right>
                     <ConstantExpression
-                      Value="True"
+                      Value="False"
                       ResultType=":Boolean" />
                   </BinaryExpression.Right>
                 </BinaryExpression>
@@ -246,6 +252,13 @@
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
+      <ScreenProperty
+        Name="POStatusDescription"
+        PropertyType=":String">
+        <ScreenProperty.Attributes>
+          <Required />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
     </Screen.Properties>
   </Screen>
   <Application.Methods>

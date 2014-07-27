@@ -189,7 +189,7 @@ namespace LightSwitchApplication.Implementation
                 global::System.Linq.Queryable.OrderBy(
                     global::System.Linq.Queryable.Where(
                         this.GetQuery<global::LightSwitchApplication.Implementation.PurchaseOrder>("PurchaseOrders"),
-                        (p) => (p.PurchaseOrderStatus == true)),
+                        (p) => (p.PurchaseOrderStatus == false)),
                     (p) => p.PurchaseOrderDate),
                 (p) => p.PurchaseOrderNumber);
             return query;
@@ -231,7 +231,7 @@ namespace LightSwitchApplication.Implementation
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.Supplier> SupplierActiveQuery(string SupplierName)
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.Supplier> SupplierActiveQuery()
         {
             global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.Supplier> query;
             query = global::System.Linq.Queryable.OrderBy(
@@ -410,6 +410,10 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.Implementation.StockCheck();
             }
+            if (type == typeof(global::LightSwitchApplication.Implementation.StockOnHandHistory))
+            {
+                return new global::LightSwitchApplication.Implementation.StockOnHandHistory();
+            }
             if (type == typeof(global::LightSwitchApplication.Implementation.StockOnHand))
             {
                 return new global::LightSwitchApplication.Implementation.StockOnHand();
@@ -430,9 +434,9 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.Implementation.Supplier();
             }
-            if (type == typeof(global::LightSwitchApplication.Implementation.Table1Item))
+            if (type == typeof(global::LightSwitchApplication.Implementation.Transaction))
             {
-                return new global::LightSwitchApplication.Implementation.Table1Item();
+                return new global::LightSwitchApplication.Implementation.Transaction();
             }
             if (type == typeof(global::LightSwitchApplication.Implementation.TransportRoute))
             {
@@ -586,6 +590,10 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.Implementation.StockCheck();
             }
+            if (typeof(T) == typeof(global::LightSwitchApplication.StockOnHandHistory))
+            {
+                return new global::LightSwitchApplication.Implementation.StockOnHandHistory();
+            }
             if (typeof(T) == typeof(global::LightSwitchApplication.StockOnHand))
             {
                 return new global::LightSwitchApplication.Implementation.StockOnHand();
@@ -606,9 +614,9 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.Implementation.Supplier();
             }
-            if (typeof(T) == typeof(global::LightSwitchApplication.Table1Item))
+            if (typeof(T) == typeof(global::LightSwitchApplication.Transaction))
             {
-                return new global::LightSwitchApplication.Implementation.Table1Item();
+                return new global::LightSwitchApplication.Implementation.Transaction();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.TransportRoute))
             {
@@ -791,6 +799,10 @@ namespace LightSwitchApplication.Implementation
             {
                 return typeof(global::LightSwitchApplication.Implementation.StockCheck);
             }
+            if (typeof(global::LightSwitchApplication.StockOnHandHistory) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.StockOnHandHistory);
+            }
             if (typeof(global::LightSwitchApplication.StockOnHand) == definitionType)
             {
                 return typeof(global::LightSwitchApplication.Implementation.StockOnHand);
@@ -811,9 +823,9 @@ namespace LightSwitchApplication.Implementation
             {
                 return typeof(global::LightSwitchApplication.Implementation.Supplier);
             }
-            if (typeof(global::LightSwitchApplication.Table1Item) == definitionType)
+            if (typeof(global::LightSwitchApplication.Transaction) == definitionType)
             {
-                return typeof(global::LightSwitchApplication.Implementation.Table1Item);
+                return typeof(global::LightSwitchApplication.Implementation.Transaction);
             }
             if (typeof(global::LightSwitchApplication.TransportRoute) == definitionType)
             {
@@ -2848,6 +2860,41 @@ namespace LightSwitchApplication.Implementation
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public partial class StockOnHandHistory :
+        global::LightSwitchApplication.StockOnHandHistory.DetailsClass.IImplementation,
+        global::Microsoft.LightSwitch.Internal.ICreatedModifiedPropertiesImplementation
+    
+    {
+    
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(string propertyName)
+        {
+            base.OnPropertyChanged(propertyName);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(propertyName);
+            }
+        }
+        #endregion
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public partial class StockOnHand :
         global::LightSwitchApplication.StockOnHand.DetailsClass.IImplementation,
         global::Microsoft.LightSwitch.Internal.ICreatedModifiedPropertiesImplementation
@@ -3119,8 +3166,8 @@ namespace LightSwitchApplication.Implementation
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public partial class Table1Item :
-        global::LightSwitchApplication.Table1Item.DetailsClass.IImplementation,
+    public partial class Transaction :
+        global::LightSwitchApplication.Transaction.DetailsClass.IImplementation,
         global::Microsoft.LightSwitch.Internal.ICreatedModifiedPropertiesImplementation
     
     {

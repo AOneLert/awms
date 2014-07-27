@@ -36,9 +36,6 @@
             Member="Suppliers" />
         </QuerySourceExpressionTree>
       </QueryOperation.Source>
-      <QueryOperationParameter
-        Name="SupplierName"
-        ParameterType=":String?" />
       <QueryOperation.SortCriteria>
         <SortCriterion>
           <ChainExpression>

@@ -258,14 +258,6 @@
         created: [lightSwitchApplication.SaleOrderDetail]
     });
 
-    msls._addEntryPoints(lightSwitchApplication.Table1Item, {
-        /// <field>
-        /// Called when a new table1Item is created.
-        /// <br/>created(msls.application.Table1Item entity)
-        /// </field>
-        created: [lightSwitchApplication.Table1Item]
-    });
-
     msls._addEntryPoints(lightSwitchApplication.PurchaseOrder, {
         /// <field>
         /// Called when a new purchaseOrder is created.
@@ -320,6 +312,22 @@
         /// <br/>created(msls.application.WorkOrderProduce entity)
         /// </field>
         created: [lightSwitchApplication.WorkOrderProduce]
+    });
+
+    msls._addEntryPoints(lightSwitchApplication.Transaction, {
+        /// <field>
+        /// Called when a new transaction is created.
+        /// <br/>created(msls.application.Transaction entity)
+        /// </field>
+        created: [lightSwitchApplication.Transaction]
+    });
+
+    msls._addEntryPoints(lightSwitchApplication.StockOnHandHistory, {
+        /// <field>
+        /// Called when a new stockOnHandHistory is created.
+        /// <br/>created(msls.application.StockOnHandHistory entity)
+        /// </field>
+        created: [lightSwitchApplication.StockOnHandHistory]
     });
 
 }(msls.application));

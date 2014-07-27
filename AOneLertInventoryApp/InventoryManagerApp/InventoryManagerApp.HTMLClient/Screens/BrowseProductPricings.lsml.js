@@ -16,7 +16,7 @@ myapp.BrowseProductPricings.StockOnHand_ItemTap_execute = function (screen) {
         },
         afterClosed: function (addEditScreen, navigationAction) {
             if (navigationAction === msls.NavigateBackAction.commit) {
-                myapp.showBrowseProductPricings();
+                screen.StockOnHands.refresh();
             }
         }
     });

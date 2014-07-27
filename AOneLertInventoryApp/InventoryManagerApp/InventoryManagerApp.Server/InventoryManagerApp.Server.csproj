@@ -328,7 +328,6 @@
     <LightSwitchModel Include="DataSources\ApplicationData\StockAdjusts.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\SaleOrders.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\SaleOrderDetails.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\Table1Items.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\PurchaseOrders.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\PurchaseOrderDetails.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\ReceiveFromPurchaseOrders.lsml" />
@@ -366,6 +365,8 @@
     <LightSwitchModel Include="DataSources\ApplicationData\WorkOrderIsNotReceive.lsml">
       <DependentUpon>WorkOrders.lsml</DependentUpon>
     </LightSwitchModel>
+    <LightSwitchModel Include="DataSources\ApplicationData\Transactions.lsml" />
+    <LightSwitchModel Include="DataSources\ApplicationData\StockOnHandHistories.lsml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

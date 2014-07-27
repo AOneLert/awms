@@ -47,6 +47,7 @@ document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowsePOReceive
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProductCategories.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProductGroups.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseLocations.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProductPricings.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProductReceiveBalanceForwards.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProducts.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProducts_bk.lsml.js\"></script>");
@@ -61,3 +62,5 @@ document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseUnitOfMea
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseWorkOrders.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/Home.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MobileHome.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/ViewPurchaseOrder.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/ViewPurchaseOrderDetail.lsml.js\"></script>");

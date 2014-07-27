@@ -38,6 +38,10 @@
                   Name="PurchaseOrderNumber"
                   Kind="Value"
                   DataType=":String">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="เลขที่ใบสั่งซื้อ" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -53,6 +57,10 @@
                   Name="PurchaseOrderDate"
                   Kind="Value"
                   DataType=":Date">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="วันที่สั่งซื้อ" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -65,9 +73,13 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="Supplier"
-                  Kind="Details"
-                  DataType="Supplier">
+                  Name="SupplierName"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="ผู้จำหน่าย" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -75,24 +87,21 @@
                           Member="ViewPurchaseOrder/Properties[PurchaseOrder]" />
                         <MemberExpression
                           Member="Supplier" />
+                        <MemberExpression
+                          Member="SupplierName" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
-                  <ContentItem
-                    Name="RowTemplate"
-                    Kind="Details"
-                    DataType="Supplier">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression />
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
                 </ContentItem>
                 <ContentItem
                   Name="PurchaseOrderStatus"
+                  IsHidden="True"
                   Kind="Value"
                   DataType=":Boolean">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="Purchase Order Status" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -100,6 +109,23 @@
                           Member="ViewPurchaseOrder/Properties[PurchaseOrder]" />
                         <MemberExpression
                           Member="PurchaseOrderStatus" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="POStatusDescription"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="สถานะการรับสินค้า" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="ViewPurchaseOrder/Properties[POStatusDescription]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -132,10 +158,14 @@
               Name="Group"
               Kind="Group">
               <ContentItem
-                Name="PurchaseOrderDetails1"
+                Name="PurchaseOrderDetails"
                 Kind="Collection"
                 DataType="CollectionView$PurchaseOrderDetail"
                 View="Microsoft.LightSwitch.MobileWeb:Table">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="รายการสินค้าสั่งซื้อ" />
+                </ContentItem.Attributes>
                 <ContentItem.DataSource>
                   <ScreenExpressionTree>
                     <ChainExpression>
@@ -145,7 +175,7 @@
                   </ScreenExpressionTree>
                 </ContentItem.DataSource>
                 <ContentItem
-                  Name="RowTemplate1"
+                  Name="PurchaseOrderDetailsTemplate"
                   Kind="Details"
                   DataType="PurchaseOrderDetail">
                   <ContentItem.DataSource>
@@ -157,6 +187,10 @@
                     Name="RequireDate"
                     Kind="Value"
                     DataType=":Date">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="วันที่กำหนดส่ง" />
+                    </ContentItem.Attributes>
                     <ContentItem.DataSource>
                       <ScreenExpressionTree>
                         <ChainExpression>
@@ -168,6 +202,7 @@
                   </ContentItem>
                   <ContentItem
                     Name="ProductCode"
+                    IsHidden="True"
                     Kind="Value"
                     DataType=":String">
                     <ContentItem.DataSource>
@@ -185,6 +220,10 @@
                     Name="ProductName"
                     Kind="Value"
                     DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="สินค้า" />
+                    </ContentItem.Attributes>
                     <ContentItem.DataSource>
                       <ScreenExpressionTree>
                         <ChainExpression>
@@ -197,9 +236,78 @@
                     </ContentItem.DataSource>
                   </ContentItem>
                   <ContentItem
+                    Name="UnitWeight"
+                    IsHidden="True"
+                    Kind="Value"
+                    DataType=":Double?">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[Product]" />
+                          <MemberExpression
+                            Member="UnitWeight" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="ReceiveDate"
+                    Kind="Value"
+                    DataType=":Date?">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="วันที่รับ" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[ReceiveDate]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="LocationName"
+                    Kind="Value"
+                    DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="สถานที่รับ" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[Location]" />
+                          <MemberExpression
+                            Member="LocationName" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="LotNo"
+                    Kind="Value"
+                    DataType=":String?">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[LotNo]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
                     Name="RequireQuantity"
                     Kind="Value"
                     DataType=":Double">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="จำนวนสั่ง" />
+                    </ContentItem.Attributes>
                     <ContentItem.DataSource>
                       <ScreenExpressionTree>
                         <ChainExpression>
@@ -210,9 +318,30 @@
                     </ContentItem.DataSource>
                   </ContentItem>
                   <ContentItem
+                    Name="ReceiveQuantity"
+                    Kind="Value"
+                    DataType=":Double?">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="จำนวนรับ" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[ReceiveQuantity]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
                     Name="UOMName"
                     Kind="Value"
                     DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="หน่วย" />
+                    </ContentItem.Attributes>
                     <ContentItem.DataSource>
                       <ScreenExpressionTree>
                         <ChainExpression>
@@ -222,6 +351,92 @@
                             Member="UnitOfMeasure" />
                           <MemberExpression
                             Member="UOMName" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="RequireTotalCost"
+                    Kind="Value"
+                    DataType="Microsoft.LightSwitch.Extensions:Money">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="มูลค่าสั่งซื้อ" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[RequireTotalCost]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="ReceiveTotalCost"
+                    Kind="Value"
+                    DataType="Microsoft.LightSwitch.Extensions:Money?">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="มูลค่าซื้อจริง" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[ReceiveTotalCost]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="Remark"
+                    IsHidden="True"
+                    Kind="Value"
+                    DataType=":String?">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="หมายเหตุ" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[Remark]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="IsReceiveComplete"
+                    Kind="Value"
+                    DataType=":Boolean">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="รับสินค้าแล้ว" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[IsReceiveComplete]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="ModifiedBy"
+                    Kind="Value"
+                    DataType=":Person?">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="ผู้รับ" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[ModifiedBy]" />
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ContentItem.DataSource>
@@ -311,6 +526,13 @@
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
+      <ScreenProperty
+        Name="POStatusDescription"
+        PropertyType=":String">
+        <ScreenProperty.Attributes>
+          <Required />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
     </Screen.Properties>
   </Screen>
   <Application.Methods>

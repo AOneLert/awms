@@ -311,6 +311,41 @@
                       </ScreenExpressionTree>
                     </ContentItem.DataSource>
                   </ContentItem>
+                  <ContentItem
+                    Name="IsReceiveComplete"
+                    IsHidden="True"
+                    Kind="Value"
+                    DataType=":Boolean">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="สถานะการรับสินค้า" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[IsReceiveComplete]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="ItemIsReceiveComplete"
+                    Kind="Value"
+                    DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="สถานะการรับสินค้า" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="AddEditPO/Properties[ItemIsReceiveComplete]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
                 </ContentItem>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
@@ -318,21 +353,7 @@
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <CallExpression
-                          Target="!module/Methods[showAddEditPODetail]">
-                          <CallExpression.Attributes>
-                            <AssociatedCollection
-                              Collection="AddEditPO/Properties[PurchaseOrderDetails]" />
-                          </CallExpression.Attributes>
-                          <ArgumentExpression
-                            Parameter="PurchaseOrderDetail">
-                            <ChainExpression>
-                              <MemberExpression
-                                Member="AddEditPO/Properties[PurchaseOrderDetails]" />
-                              <MemberExpression
-                                Member="selectedItem" />
-                            </ChainExpression>
-                          </ArgumentExpression>
-                        </CallExpression>
+                          Target="AddEditPO/Methods[PurchaseOrderDetails_ItemTap]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ControlPropertySource>
@@ -363,14 +384,7 @@
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <CallExpression
-                          Target="!module/Methods[showAddEditPODetail]">
-                          <CallExpression.Attributes>
-                            <AssociatedCollection
-                              Collection="AddEditPO/Properties[PurchaseOrderDetails]" />
-                            <CreateNewEntity
-                              TargetParameter="!module/Methods[showAddEditPODetail]/Parameters[PurchaseOrderDetail]" />
-                          </CallExpression.Attributes>
-                        </CallExpression>
+                          Target="AddEditPO/Methods[ShowAddEditPODetail_Tap]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ControlPropertySource>
@@ -419,7 +433,7 @@
             <ContentItem
               Name="SearchSupplier"
               Kind="Value"
-              DataType=":String?">
+              DataType=":String">
               <ContentItem.DataSource>
                 <ScreenExpressionTree>
                   <ChainExpression>
@@ -545,6 +559,10 @@
       </ScreenMethod>
       <ScreenMethod
         Name="SupplierActiveQuery_ItemTap" />
+      <ScreenMethod
+        Name="PurchaseOrderDetails_ItemTap" />
+      <ScreenMethod
+        Name="ShowAddEditPODetail_Tap" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenProperty
@@ -563,22 +581,7 @@
             Name="PurchaseOrderDetailsQuery"
             ReturnType="PurchaseOrderDetail*">
             <ScreenQueryDefinition.FilterExpression>
-              <QueryFilterExpressionTree>
-                <BinaryExpression
-                  NodeType="Equal">
-                  <BinaryExpression.Left>
-                    <ChainExpression>
-                      <MemberExpression
-                        Member="PurchaseOrderDetail/Properties[Created]" />
-                    </ChainExpression>
-                  </BinaryExpression.Left>
-                  <BinaryExpression.Right>
-                    <ConstantExpression
-                      Value="2014-07-18 +07:00"
-                      ResultType=":DateTimeOffset?" />
-                  </BinaryExpression.Right>
-                </BinaryExpression>
-              </QueryFilterExpressionTree>
+              <QueryFilterExpressionTree />
             </ScreenQueryDefinition.FilterExpression>
             <ScreenQueryDefinition.Source>
               <QuerySourceExpressionTree>
@@ -643,7 +646,7 @@
             <CallExpression
               Target="AddEditPO/Properties[SupplierActiveQuery]/Query">
               <ArgumentExpression
-                Parameter="SupplierName">
+                Parameter="SearchSupplier">
                 <ChainExpression>
                   <MemberExpression
                     Member="AddEditPO/Properties[SearchSupplier]" />
@@ -655,10 +658,21 @@
       </ScreenCollectionProperty>
       <ScreenProperty
         Name="SearchSupplier"
-        PropertyType=":String?" />
+        PropertyType=":String">
+        <ScreenProperty.Attributes>
+          <Required />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
       <ScreenProperty
         Name="POStatusDescription"
         PropertyType=":String?" />
+      <ScreenProperty
+        Name="ItemIsReceiveComplete"
+        PropertyType=":String">
+        <ScreenProperty.Attributes>
+          <Required />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
     </Screen.Properties>
   </Screen>
   <Application.Methods>
