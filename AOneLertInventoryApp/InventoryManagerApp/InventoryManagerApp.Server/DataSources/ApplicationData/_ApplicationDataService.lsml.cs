@@ -555,7 +555,9 @@ namespace LightSwitchApplication
         }
         private string getNewLotFromStockOnhand(string ReceiveType,DateTime LotDate,Product ReceiveProduct,string OldRawmatLotNo) {
             string newLot = "";
-            string insertLot = (Int32.Parse(String.Format("{0:yy}", LotDate))%10).ToString() + String.Format("{0:MMdd}", LotDate);
+            //string insertLot = (Int32.Parse(String.Format("{0:yy}", LotDate))%10).ToString() + String.Format("{0:MMdd}", LotDate);
+            // YMMDD
+            string insertLot = (Int32.Parse(String.Format("{0:yy}", LotDate.Year.ToString())) % 10).ToString() + String.Format("{0:MMdd}", LotDate);
 
             string[] ReceiveNewLotPrefix = { "PO","BF","RT" };
             if (ReceiveNewLotPrefix.Contains(ReceiveType.Substring(0, 2)))
