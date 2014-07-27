@@ -46,7 +46,6 @@ InventoryManagerApp.Server.DataSources.ApplicationData.StockAdjustDetails.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.StockAdjusts.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.SaleOrders.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.SaleOrderDetails.lsml
-InventoryManagerApp.Server.DataSources.ApplicationData.Table1Items.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.PurchaseOrders.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.PurchaseOrderDetails.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.ReceiveFromPurchaseOrders.lsml
@@ -64,3 +63,6 @@ InventoryManagerApp.Server.DataSources.ApplicationData.EmployeeActiveQuery.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.QueryMaxWONumber.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.QueryStockOnHandForIssue.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.WorkOrderIsNotReceive.lsml
+InventoryManagerApp.Server.DataSources.ApplicationData.Transactions.lsml
+InventoryManagerApp.Server.DataSources.ApplicationData.StockOnHandHistories.lsml
+InventoryManagerApp.Server.DataSources.ApplicationData.QueryMaxSONumber.lsml
