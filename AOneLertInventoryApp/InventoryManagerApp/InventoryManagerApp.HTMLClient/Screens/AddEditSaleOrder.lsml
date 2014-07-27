@@ -53,7 +53,7 @@
                   Name="DocumentNo"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="เลขที่เอกสาร" />
@@ -330,6 +330,31 @@
                     </ContentItem.DataSource>
                   </ContentItem>
                 </ContentItem>
+                <ContentItem.PropertySources>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootCollectionControl/Properties[ItemTap]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <CallExpression
+                          Target="!module/Methods[showAddEditSaleOrderDetail]">
+                          <CallExpression.Attributes>
+                            <AssociatedCollection
+                              Collection="AddEditSaleOrder/Properties[SaleOrderDetails]" />
+                          </CallExpression.Attributes>
+                          <ArgumentExpression
+                            Parameter="SaleOrderDetail">
+                            <ChainExpression>
+                              <MemberExpression
+                                Member="AddEditSaleOrder/Properties[SaleOrderDetails]" />
+                              <MemberExpression
+                                Member="selectedItem" />
+                            </ChainExpression>
+                          </ArgumentExpression>
+                        </CallExpression>
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                </ContentItem.PropertySources>
               </ContentItem>
             </ContentItem>
             <ContentItem
