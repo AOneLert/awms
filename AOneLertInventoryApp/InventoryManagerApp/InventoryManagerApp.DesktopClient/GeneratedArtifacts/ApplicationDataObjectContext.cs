@@ -9,7 +9,11 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
+<<<<<<< HEAD
 // Generation date: 7/28/2014 1:16:37 AM
+=======
+// Generation date: 7/27/2014 11:06:06 PM
+>>>>>>> b4f882f3b53bfa08e694f06a810ef9fb5e768914
 namespace LightSwitchApplication.Implementation
 {
     
@@ -2212,11 +2216,18 @@ namespace LightSwitchApplication.Implementation
                 "ction(LightSwitchApplication.WorkOrder)\" EntitySet=\"WorkOrders\" m:HttpMethod=\"GE" +
                 "T\" /><FunctionImport Name=\"WorkOrderIsNotReceive\" ReturnType=\"Collection(LightSw" +
                 "itchApplication.WorkOrder)\" EntitySet=\"WorkOrders\" m:HttpMethod=\"GET\" /><Functio" +
+<<<<<<< HEAD
                 "nImport Name=\"QueryMaxSONumber\" ReturnType=\"Collection(LightSwitchApplication.Sa" +
                 "leOrder)\" EntitySet=\"SaleOrders\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"Micr" +
                 "osoft_LightSwitch_GetCanInformation\" ReturnType=\"Edm.String\" m:HttpMethod=\"GET\">" +
                 "<Parameter Name=\"dataServiceMembers\" Type=\"Edm.String\" Mode=\"In\" /></FunctionImp" +
                 "ort></EntityContainer></Schema></edmx:DataServices></edmx:Edmx>";
+=======
+                "nImport Name=\"Microsoft_LightSwitch_GetCanInformation\" ReturnType=\"Edm.String\" m" +
+                ":HttpMethod=\"GET\"><Parameter Name=\"dataServiceMembers\" Type=\"Edm.String\" Mode=\"I" +
+                "n\" /></FunctionImport></EntityContainer></Schema></edmx:DataServices></edmx:Edmx" +
+                ">";
+>>>>>>> b4f882f3b53bfa08e694f06a810ef9fb5e768914
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
             private static string GetConcatenatedEdmxString()
             {

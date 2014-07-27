@@ -3783,6 +3783,76 @@ namespace LightSwitchApplication.Implementation
     }
     #endregion
     
+    #region StockOnHandHistory
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/ApplicationData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public partial class StockOnHandHistory :
+        global::LightSwitchApplication.StockOnHandHistory.DetailsClass.IImplementation
+    {
+        partial void OnIdChanged()
+        {
+            this.___OnPropertyChanged("Id");
+        }
+        
+        partial void OnTransactionNoChanged()
+        {
+            this.___OnPropertyChanged("TransactionNo");
+        }
+        
+        partial void OnTransactionDateChanged()
+        {
+            this.___OnPropertyChanged("TransactionDate");
+        }
+        
+        partial void OnTransactionByChanged()
+        {
+            this.___OnPropertyChanged("TransactionBy");
+        }
+        
+        partial void OnProductIdChanged()
+        {
+            this.___OnPropertyChanged("ProductId");
+        }
+        
+        partial void OnLocationIdChanged()
+        {
+            this.___OnPropertyChanged("LocationId");
+        }
+        
+        partial void OnLotNoChanged()
+        {
+            this.___OnPropertyChanged("LotNo");
+        }
+        
+        partial void OnCreatedByChanged()
+        {
+            this.___OnPropertyChanged("CreatedBy");
+        }
+        
+        partial void OnCreatedChanged()
+        {
+            this.___OnPropertyChanged("Created");
+        }
+        
+        partial void OnModifiedByChanged()
+        {
+            this.___OnPropertyChanged("ModifiedBy");
+        }
+        
+        partial void OnModifiedChanged()
+        {
+            this.___OnPropertyChanged("Modified");
+        }
+        
+        partial void OnRowVersionChanged()
+        {
+            this.___OnPropertyChanged("RowVersion");
+        }
+        
+    }
+    #endregion
+    
     #region StockOnHand
     [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/ApplicationData.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
@@ -4340,16 +4410,61 @@ namespace LightSwitchApplication.Implementation
     }
     #endregion
     
-    #region Table1Item
+    #region Transaction
     [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/ApplicationData.Implementation")]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public partial class Table1Item :
-        global::LightSwitchApplication.Table1Item.DetailsClass.IImplementation
+    public partial class Transaction :
+        global::LightSwitchApplication.Transaction.DetailsClass.IImplementation
     {
         partial void OnIdChanged()
         {
             this.___OnPropertyChanged("Id");
+        }
+        
+        partial void OnTransactionNoChanged()
+        {
+            this.___OnPropertyChanged("TransactionNo");
+        }
+        
+        partial void OnTransactionDateChanged()
+        {
+            this.___OnPropertyChanged("TransactionDate");
+        }
+        
+        partial void OnTransactionTypeChanged()
+        {
+            this.___OnPropertyChanged("TransactionType");
+        }
+        
+        partial void OnReferenceNoChanged()
+        {
+            this.___OnPropertyChanged("ReferenceNo");
+        }
+        
+        partial void OnProductIdChanged()
+        {
+            this.___OnPropertyChanged("ProductId");
+        }
+        
+        partial void OnLocationIdChanged()
+        {
+            this.___OnPropertyChanged("LocationId");
+        }
+        
+        partial void OnLotNoChanged()
+        {
+            this.___OnPropertyChanged("LotNo");
+        }
+        
+        partial void OnQuantityChanged()
+        {
+            this.___OnPropertyChanged("Quantity");
+        }
+        
+        partial void OnCostChanged()
+        {
+            this.___OnPropertyChanged("Cost");
         }
         
         partial void OnCreatedByChanged()
@@ -5252,6 +5367,10 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.Implementation.StockCheck();
             }
+            if (typeof(T) == typeof(global::LightSwitchApplication.StockOnHandHistory))
+            {
+                return new global::LightSwitchApplication.Implementation.StockOnHandHistory();
+            }
             if (typeof(T) == typeof(global::LightSwitchApplication.StockOnHand))
             {
                 return new global::LightSwitchApplication.Implementation.StockOnHand();
@@ -5272,9 +5391,9 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.Implementation.Supplier();
             }
-            if (typeof(T) == typeof(global::LightSwitchApplication.Table1Item))
+            if (typeof(T) == typeof(global::LightSwitchApplication.Transaction))
             {
-                return new global::LightSwitchApplication.Implementation.Table1Item();
+                return new global::LightSwitchApplication.Implementation.Transaction();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.TransportRoute))
             {
@@ -5461,6 +5580,10 @@ namespace LightSwitchApplication.Implementation
             {
                 return typeof(global::LightSwitchApplication.Implementation.StockCheck);
             }
+            if (typeof(global::LightSwitchApplication.StockOnHandHistory) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.StockOnHandHistory);
+            }
             if (typeof(global::LightSwitchApplication.StockOnHand) == definitionType)
             {
                 return typeof(global::LightSwitchApplication.Implementation.StockOnHand);
@@ -5481,9 +5604,9 @@ namespace LightSwitchApplication.Implementation
             {
                 return typeof(global::LightSwitchApplication.Implementation.Supplier);
             }
-            if (typeof(global::LightSwitchApplication.Table1Item) == definitionType)
+            if (typeof(global::LightSwitchApplication.Transaction) == definitionType)
             {
-                return typeof(global::LightSwitchApplication.Implementation.Table1Item);
+                return typeof(global::LightSwitchApplication.Implementation.Transaction);
             }
             if (typeof(global::LightSwitchApplication.TransportRoute) == definitionType)
             {
