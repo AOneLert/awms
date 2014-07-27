@@ -67,24 +67,44 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="ProductName"
-                  Kind="Value"
-                  DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="สินค้า" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="PurchaseOrderDetail/Properties[Product]" />
-                        <MemberExpression
-                          Member="ProductName" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
+                  Name="Group4"
+                  Kind="Group"
+                  View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
+                  <ContentItem
+                    Name="ProductCode"
+                    Kind="Value"
+                    DataType=":String">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[Product]" />
+                          <MemberExpression
+                            Member="ProductCode" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="ProductName"
+                    Kind="Value"
+                    DataType=":String"
+                    View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="สินค้า" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[Product]" />
+                          <MemberExpression
+                            Member="ProductName" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
                 </ContentItem>
                 <ContentItem
                   Name="Group2"

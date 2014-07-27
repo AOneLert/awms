@@ -367,9 +367,6 @@
     </LightSwitchModel>
     <LightSwitchModel Include="DataSources\ApplicationData\Transactions.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\StockOnHandHistories.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\QueryMaxSONumber.lsml">
-      <DependentUpon>SaleOrders.lsml</DependentUpon>
-    </LightSwitchModel>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -269,7 +269,6 @@
             </ContentItem>
             <ContentItem
               Name="ShowBrowseStockTransfers"
-              IsHidden="True"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName

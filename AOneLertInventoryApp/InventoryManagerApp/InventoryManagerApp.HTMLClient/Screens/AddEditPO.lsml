@@ -53,7 +53,7 @@
                   Name="PurchaseOrderNumber"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="เลขที่ใบสั่งซื้อ" />
@@ -155,18 +155,24 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="POStatusDescription"
-                  Kind="Value"
-                  DataType=":String?"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="AddEditPO/Properties[POStatusDescription]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
+                  Name="Group"
+                  Kind="Group"
+                  View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
+                  <ContentItem
+                    Name="POStatusDescription"
+                    IsHidden="True"
+                    Kind="Value"
+                    DataType=":String?"
+                    View="Microsoft.LightSwitch.MobileWeb:Text">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="AddEditPO/Properties[POStatusDescription]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
                 </ContentItem>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
