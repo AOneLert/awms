@@ -9,6 +9,8 @@
     <Screen.Attributes>
       <SaveChangesTo
         EntityContainer="ApplicationData" />
+      <DisplayName
+        Value="รายละเอียดใบสั่งซื้อสินค้า" />
     </Screen.Attributes>
     <Screen.RootContentItem>
       <ContentItem
@@ -31,104 +33,133 @@
               Name="left"
               Kind="Group">
               <ContentItem
-                Name="Group1"
-                Kind="Group"
-                View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
+                Name="Group3"
+                Kind="Group">
                 <ContentItem
-                  Name="PurchaseOrderNumber"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="เลขที่ใบสั่งซื้อ" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="ViewPurchaseOrder/Properties[PurchaseOrder]" />
-                        <MemberExpression
-                          Member="PurchaseOrderNumber" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
+                  Name="Group1"
+                  Kind="Group"
+                  View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
+                  <ContentItem
+                    Name="PurchaseOrderNumber"
+                    Kind="Value"
+                    DataType=":String"
+                    View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="เลขที่ใบสั่งซื้อ" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="ViewPurchaseOrder/Properties[PurchaseOrder]" />
+                          <MemberExpression
+                            Member="PurchaseOrderNumber" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="PurchaseOrderDate"
+                    Kind="Value"
+                    DataType=":Date"
+                    View="Microsoft.LightSwitch.MobileWeb:DatePicker">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="วันที่สั่งซื้อ" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="ViewPurchaseOrder/Properties[PurchaseOrder]" />
+                          <MemberExpression
+                            Member="PurchaseOrderDate" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="PurchaseOrderStatus"
+                    IsHidden="True"
+                    Kind="Value"
+                    DataType=":Boolean">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="Purchase Order Status" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="ViewPurchaseOrder/Properties[PurchaseOrder]" />
+                          <MemberExpression
+                            Member="PurchaseOrderStatus" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
                 </ContentItem>
+              </ContentItem>
+              <ContentItem
+                Name="Group2"
+                Kind="Group">
                 <ContentItem
-                  Name="PurchaseOrderDate"
-                  Kind="Value"
-                  DataType=":Date">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="วันที่สั่งซื้อ" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="ViewPurchaseOrder/Properties[PurchaseOrder]" />
-                        <MemberExpression
-                          Member="PurchaseOrderDate" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="SupplierName"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="ผู้จำหน่าย" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="ViewPurchaseOrder/Properties[PurchaseOrder]" />
-                        <MemberExpression
-                          Member="Supplier" />
-                        <MemberExpression
-                          Member="SupplierName" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="PurchaseOrderStatus"
-                  IsHidden="True"
-                  Kind="Value"
-                  DataType=":Boolean">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="Purchase Order Status" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="ViewPurchaseOrder/Properties[PurchaseOrder]" />
-                        <MemberExpression
-                          Member="PurchaseOrderStatus" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="POStatusDescription"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="สถานะการรับสินค้า" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="ViewPurchaseOrder/Properties[POStatusDescription]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
+                  Name="Group4"
+                  Kind="Group"
+                  View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
+                  <ContentItem
+                    Name="SupplierName"
+                    Kind="Value"
+                    DataType=":String"
+                    View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="ผู้จำหน่าย" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="ViewPurchaseOrder/Properties[PurchaseOrder]" />
+                          <MemberExpression
+                            Member="Supplier" />
+                          <MemberExpression
+                            Member="SupplierName" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="POStatusDescription"
+                    Kind="Value"
+                    DataType=":String"
+                    View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="สถานะการรับสินค้า" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="ViewPurchaseOrder/Properties[POStatusDescription]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                    <ContentItem.PropertySources>
+                      <ControlPropertySource
+                        Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Width]">
+                        <ScreenExpressionTree>
+                          <ChainExpression>
+                            <ConstantExpression
+                              Value="100"
+                              ResultType=":Double" />
+                          </ChainExpression>
+                        </ScreenExpressionTree>
+                      </ControlPropertySource>
+                    </ContentItem.PropertySources>
+                  </ContentItem>
                 </ContentItem>
               </ContentItem>
               <ContentItem.PropertySources>
@@ -137,7 +168,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <ConstantExpression
-                        Value="200"
+                        Value="400"
                         ResultType=":Double" />
                     </ChainExpression>
                   </ScreenExpressionTree>
@@ -148,6 +179,26 @@
                     <ChainExpression>
                       <ConstantExpression
                         Value="400"
+                        ResultType=":Double" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="FixedSize"
+                        ResultType=":String" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Width]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="500"
                         ResultType=":Double" />
                     </ChainExpression>
                   </ScreenExpressionTree>
@@ -185,6 +236,7 @@
                   </ContentItem.DataSource>
                   <ContentItem
                     Name="RequireDate"
+                    IsHidden="True"
                     Kind="Value"
                     DataType=":Date">
                     <ContentItem.Attributes>
@@ -252,23 +304,6 @@
                     </ContentItem.DataSource>
                   </ContentItem>
                   <ContentItem
-                    Name="ReceiveDate"
-                    Kind="Value"
-                    DataType=":Date?">
-                    <ContentItem.Attributes>
-                      <DisplayName
-                        Value="วันที่รับ" />
-                    </ContentItem.Attributes>
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="PurchaseOrderDetail/Properties[ReceiveDate]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                  <ContentItem
                     Name="LocationName"
                     Kind="Value"
                     DataType=":String">
@@ -302,6 +337,7 @@
                   </ContentItem>
                   <ContentItem
                     Name="RequireQuantity"
+                    IsHidden="True"
                     Kind="Value"
                     DataType=":Double">
                     <ContentItem.Attributes>
@@ -357,6 +393,7 @@
                   </ContentItem>
                   <ContentItem
                     Name="RequireTotalCost"
+                    IsHidden="True"
                     Kind="Value"
                     DataType="Microsoft.LightSwitch.Extensions:Money">
                     <ContentItem.Attributes>
@@ -374,6 +411,7 @@
                   </ContentItem>
                   <ContentItem
                     Name="ReceiveTotalCost"
+                    IsHidden="True"
                     Kind="Value"
                     DataType="Microsoft.LightSwitch.Extensions:Money?">
                     <ContentItem.Attributes>
@@ -409,6 +447,7 @@
                   </ContentItem>
                   <ContentItem
                     Name="IsReceiveComplete"
+                    IsHidden="True"
                     Kind="Value"
                     DataType=":Boolean">
                     <ContentItem.Attributes>
@@ -420,6 +459,23 @@
                         <ChainExpression>
                           <MemberExpression
                             Member="PurchaseOrderDetail/Properties[IsReceiveComplete]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="ReceiveDate"
+                    Kind="Value"
+                    DataType=":Date?">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="วันที่รับ" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrderDetail/Properties[ReceiveDate]" />
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ContentItem.DataSource>
@@ -442,6 +498,31 @@
                     </ContentItem.DataSource>
                   </ContentItem>
                 </ContentItem>
+                <ContentItem.PropertySources>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootCollectionControl/Properties[ItemTap]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <CallExpression
+                          Target="!module/Methods[showViewPOReceivedDetail]">
+                          <CallExpression.Attributes>
+                            <AssociatedCollection
+                              Collection="ViewPurchaseOrder/Properties[PurchaseOrderDetails]" />
+                          </CallExpression.Attributes>
+                          <ArgumentExpression
+                            Parameter="PurchaseOrderDetail">
+                            <ChainExpression>
+                              <MemberExpression
+                                Member="ViewPurchaseOrder/Properties[PurchaseOrderDetails]" />
+                              <MemberExpression
+                                Member="selectedItem" />
+                            </ChainExpression>
+                          </ArgumentExpression>
+                        </CallExpression>
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                </ContentItem.PropertySources>
               </ContentItem>
             </ContentItem>
           </ContentItem>

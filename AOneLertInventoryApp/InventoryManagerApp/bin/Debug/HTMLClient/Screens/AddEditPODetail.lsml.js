@@ -27,6 +27,9 @@ myapp.AddEditPODetail.ProductsActiveQuery_ItemTap_execute = function (screen) {
 };
 myapp.AddEditPODetail.created = function (screen) {
     // Write code here.
-    screen.PurchaseOrderDetail.RequireDate = new Date();
-    screen.PurchaseOrderDetail.IsReceiveComplete = false;
+    if (screen.PurchaseOrderDetail.RequireDate == undefined) {
+        screen.PurchaseOrderDetail.RequireDate = new Date();
+        screen.PurchaseOrderDetail.IsReceiveComplete = false;
+    }
+    
 };

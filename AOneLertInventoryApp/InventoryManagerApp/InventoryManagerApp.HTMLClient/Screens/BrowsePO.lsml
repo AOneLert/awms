@@ -25,6 +25,24 @@
             Name="PurchaseOrderList"
             Kind="Group">
             <ContentItem
+              Name="SearchParameter"
+              Kind="Value"
+              DataType=":String?"
+              View="Microsoft.LightSwitch.MobileWeb:TextBox">
+              <ContentItem.Attributes>
+                <DisplayName
+                  Value="ค้นหาใบสั่งซื้อ" />
+              </ContentItem.Attributes>
+              <ContentItem.DataSource>
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <MemberExpression
+                      Member="BrowsePO/Properties[SearchParameter]" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ContentItem.DataSource>
+            </ContentItem>
+            <ContentItem
               Name="PurchaseOrder"
               Kind="Collection"
               DataType="CollectionView$PurchaseOrder"
@@ -260,7 +278,43 @@
             Name="PurchaseOrdersQuery"
             ReturnType="PurchaseOrder*">
             <ScreenQueryDefinition.FilterExpression>
-              <QueryFilterExpressionTree />
+              <QueryFilterExpressionTree>
+                <BinaryExpression
+                  NodeType="Or">
+                  <BinaryExpression.Left>
+                    <BinaryExpression
+                      NodeType="Contains">
+                      <BinaryExpression.Left>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrder/Properties[PurchaseOrderNumber]" />
+                        </ChainExpression>
+                      </BinaryExpression.Left>
+                      <BinaryExpression.Right>
+                        <ParameterExpression
+                          Parameter="SearchParameter" />
+                      </BinaryExpression.Right>
+                    </BinaryExpression>
+                  </BinaryExpression.Left>
+                  <BinaryExpression.Right>
+                    <BinaryExpression
+                      NodeType="Contains">
+                      <BinaryExpression.Left>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="PurchaseOrder/Properties[Supplier]" />
+                          <MemberExpression
+                            Member="SupplierName" />
+                        </ChainExpression>
+                      </BinaryExpression.Left>
+                      <BinaryExpression.Right>
+                        <ParameterExpression
+                          Parameter="SearchParameter" />
+                      </BinaryExpression.Right>
+                    </BinaryExpression>
+                  </BinaryExpression.Right>
+                </BinaryExpression>
+              </QueryFilterExpressionTree>
             </ScreenQueryDefinition.FilterExpression>
             <ScreenQueryDefinition.Source>
               <QuerySourceExpressionTree>
@@ -268,17 +322,43 @@
                   Member="ApplicationData/Members[PurchaseOrders]" />
               </QuerySourceExpressionTree>
             </ScreenQueryDefinition.Source>
+            <ScreenQueryDefinition.Parameters>
+              <QueryParameter
+                Name="SearchParameter"
+                IsOptional="True"
+                ParameterType=":String?" />
+            </ScreenQueryDefinition.Parameters>
+            <ScreenQueryDefinition.SortCriteria>
+              <SortCriterion
+                Direction="Descending">
+                <ChainExpression>
+                  <MemberExpression
+                    Member="PurchaseOrderNumber" />
+                </ChainExpression>
+              </SortCriterion>
+            </ScreenQueryDefinition.SortCriteria>
           </ScreenQueryDefinition>
         </ScreenCollectionProperty.Query>
         <ScreenExpressionTree>
           <ChainExpression>
             <CallExpression
-              Target="BrowsePO/Properties[PurchaseOrders]/Query" />
+              Target="BrowsePO/Properties[PurchaseOrders]/Query">
+              <ArgumentExpression
+                Parameter="SearchParameter">
+                <ChainExpression>
+                  <MemberExpression
+                    Member="BrowsePO/Properties[SearchParameter]" />
+                </ChainExpression>
+              </ArgumentExpression>
+            </CallExpression>
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
       <ScreenProperty
         Name="POStatusDescription"
+        PropertyType=":String?" />
+      <ScreenProperty
+        Name="SearchParameter"
         PropertyType=":String?" />
     </Screen.Properties>
   </Screen>

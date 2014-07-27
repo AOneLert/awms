@@ -26,7 +26,7 @@ myapp.AddEditPO.created = function (screen) {
 
                 var runningNo = 'PO' + (latestYear == curentYear ? latestYear : curentYear) + String('00000' + (parseInt(latestRunningNo) + 1)).slice(-5);
                 screen.PurchaseOrder.PurchaseOrderNumber = runningNo;
-                screen.PurchaseOrder.PurchaseOrderStatus = true;
+                screen.PurchaseOrder.PurchaseOrderStatus = false;
             }
         });
     }
@@ -69,9 +69,86 @@ myapp.AddEditPO.SupplierActiveQuery_ItemTap_execute = function (screen) {
 myapp.AddEditPO.PurchaseOrderStatus_postRender = function (element, contentItem) {
     // Write code here.
     if (contentItem.value) {
-        contentItem.screen.POStatusDescription = "xx";
+        contentItem.screen.POStatusDescription = "ปิดการรับ";
     } else {
-        contentItem.screen.POStatusDescription = "yy";
+        contentItem.screen.POStatusDescription = "รอรับสินค้า";
     }
 };
 
+
+myapp.AddEditPO.POStatusDescription_postRender = function (element, contentItem) {
+    // Write code here.
+
+};
+myapp.AddEditPO.PurchaseOrderDetails_ItemTap_execute = function (screen) {
+    // Write code here.
+    if (screen.PurchaseOrderDetails.selectedItem.IsReceiveComplete) {
+        myapp.showViewPurchaseOrderDetail(null, {
+            beforeShown: function (addNewScreen) {
+                var selectPODetail = screen.PurchaseOrderDetails.selectedItem;
+                addNewScreen.PurchaseOrderDetail = selectPODetail;
+            }
+        });
+    } else {
+        myapp.showAddEditPODetail(null, {
+            beforeShown: function (addNewScreen) {
+                var selectPODetail = screen.PurchaseOrderDetails.selectedItem;
+                addNewScreen.PurchaseOrderDetail = selectPODetail;
+            }
+        });
+    }
+};
+myapp.AddEditPO.RowTemplate1_postRender = function (element, contentItem) {
+    // Write code here.
+    var desc = "";
+    if (contentItem.value.IsReceiveComplete)
+        desc = "ปิดการรับ";
+    else
+        desc = "รอรับสินค้า";
+
+    element.cells[6].innerText = desc;
+};
+myapp.AddEditPO.ShowAddEditPODetail_Tap_execute = function (screen) {
+    // Write code here.
+    //var checkIsReceive = screen.PurchaseOrderDetails.selectedItem.IsReceiveComplete;
+    if (screen.PurchaseOrderDetails.selectedItem != undefined || screen.PurchaseOrderDetails.selectedItem != null) {
+        if (screen.PurchaseOrderDetails.selectedItem.IsReceiveComplete) {
+            myapp.showViewPurchaseOrderDetail(null, {
+                beforeShown: function (addNewScreen) {
+                    var selectPoDetail = screen.PurchaseOrderDetails.selectedItem;
+                    addNewScreen.PurchaseOrderDetail = selectPoDetail;
+                }, afterClosed: function (addEditScreen, navigationAction) {
+                    if (navigationAction === msls.NavigateBackAction.commit) {                        
+                        screen.PurchaseOrderDetails.refresh();
+                    }
+                }
+            });
+        } else {
+            myapp.showAddEditPODetail(null, {
+                beforeShown: function (addEditScreen) {
+                    var selectPoDetail = screen.PurchaseOrderDetails.selectedItem;
+                    selectPoDetail.PurchaseOrder = screen.PurchaseOrder;
+                    //selectPoDetail.IsReceiveComplete = false;
+                    addEditScreen.PurchaseOrderDetail = selectPoDetail;
+                }, afterClosed: function (addEditScreen, navigationAction) {
+                    if (navigationAction === msls.NavigateBackAction.commit) {
+                        screen.PurchaseOrderDetails.refresh();
+                    }
+                }
+            });
+        }
+    } else {
+        myapp.showAddEditPODetail(null, {
+            beforeShown: function (addEditScreen) {
+                var newPoDetail = new myapp.PurchaseOrderDetail();
+                newPoDetail.PurchaseOrder = screen.PurchaseOrder;
+                addEditScreen.PurchaseOrderDetail = newPoDetail;
+            }
+            , afterClosed: function (addEditScreen, navigationAction) {
+                if (navigationAction === msls.NavigateBackAction.commit) {
+                    screen.PurchaseOrderDetails.refresh();
+                }
+            }
+        });
+    }
+};

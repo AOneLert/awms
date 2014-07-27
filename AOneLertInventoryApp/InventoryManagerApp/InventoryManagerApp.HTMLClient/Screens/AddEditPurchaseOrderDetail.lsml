@@ -31,7 +31,7 @@
               Name="SelectPONumber"
               Kind="Value"
               DataType=":String"
-              View="Microsoft.LightSwitch.MobileWeb:Text">
+              View="Microsoft.LightSwitch.MobileWeb:TextBox">
               <ContentItem.DataSource>
                 <ScreenExpressionTree>
                   <ChainExpression>
