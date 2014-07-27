@@ -2094,7 +2094,8 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:EmailAddress",
           "name": "EmailAddress",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@EmailAddressValidation": { "domainRequired": true }
         },
         {
           "__isSemanticType": 1,
@@ -2112,13 +2113,15 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:PhoneNumber",
           "name": "PhoneNumber",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@PhoneNumberValidation": { "formats": "C (AAA) NNN-NNNN;C (AAA) NNNNNNN;CAAANNNNNNN;(AAA) NNN-NNNN;(AAA) NNNNNNN;AAANNNNNNN;NNN-NNNN;NNNNNNN" }
         },
         {
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:Percent",
           "name": "Percent",
           "underlyingType": { "__id": ":Decimal" },
+          "Microsoft.LightSwitch.Extensions:@FormatParameter": { "decimalDigits": 2 },
           ":@DecimalConstraint":
           {
             "scale": 9
@@ -2128,7 +2131,8 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:WebAddress",
           "name": "WebAddress",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@WebAddressValidation": { }
         }
       ]
     },
@@ -8455,6 +8459,17 @@
                   "member": { "__id": "WorkOrder/Properties[WorkOrderNumber]" }
                 }
               ]
+            },
+            {
+              "id": "ApplicationData/Members[QueryMaxSONumber]",
+              "name": "QueryMaxSONumber",
+              "elementType": { "__id": "SaleOrder" },
+              "query": { "__id": "ApplicationData/Members[QueryMaxSONumber]" },
+              "returnType": { "__id": "SaleOrder*" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[SaleOrders]" }
+              }
             }
           ]
         },
@@ -24048,7 +24063,7 @@
                                 "displayName": "เลขที่เอกสาร",
                                 "name": "DocumentNo",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrder/Properties[DocumentNo]" }
@@ -24227,6 +24242,35 @@
                                     }
                                   }
                                 ]
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                                "source":
+                                {
+                                  "target": { "__id": "!module/Methods[showAddEditSaleOrderDetail]" },
+                                  ":@AssociatedCollection": { "collection": { "__id": "AddEditSaleOrder/Properties[SaleOrderDetails]" } },
+                                  "arguments":
+                                  [
+                                    {
+                                      "parameter": { "__id": "!module/Methods[showAddEditSaleOrderDetail]/Parameters[SaleOrderDetail]" },
+                                      "value":
+                                      {
+                                        "links":
+                                        [
+                                          {
+                                            "member": { "__id": "AddEditSaleOrder/Properties[SaleOrderDetails]" }
+                                          },
+                                          {
+                                            "member": { "__id": "CollectionView$SaleOrderDetail/Properties[selectedItem]" }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
                               }
                             ]
                           }
@@ -24709,40 +24753,49 @@
                         "childContentItems":
                         [
                           {
-                            "displayName": "Product Code",
-                            "name": "ProductCode1",
-                            "kind": "Value",
-                            "view": { "__id": ":Text" },
-                            "dataSource":
-                            {
-                              "links":
-                              [
+                            "displayName": "Group3",
+                            "name": "Group3",
+                            "kind": "Group",
+                            "view": { "__id": ":ColumnsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "รหัสสินค้า",
+                                "name": "ProductCode1",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
                                 {
-                                  "member": { "__id": "SaleOrderDetail/Properties[Product]" }
-                                },
-                                {
-                                  "member": { "__id": "Product/Properties[ProductCode]" }
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "SaleOrderDetail/Properties[Product]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Product/Properties[ProductCode]" }
+                                    }
+                                  ]
                                 }
-                              ]
-                            }
-                          },
-                          {
-                            "displayName": "Product Name",
-                            "name": "ProductName1",
-                            "kind": "Value",
-                            "view": { "__id": ":Text" },
-                            "dataSource":
-                            {
-                              "links":
-                              [
+                              },
+                              {
+                                "displayName": "ชื่อสินค้า",
+                                "name": "ProductName1",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
                                 {
-                                  "member": { "__id": "SaleOrderDetail/Properties[Product]" }
-                                },
-                                {
-                                  "member": { "__id": "Product/Properties[ProductName]" }
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "SaleOrderDetail/Properties[Product]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Product/Properties[ProductName]" }
+                                    }
+                                  ]
                                 }
-                              ]
-                            }
+                              }
+                            ]
                           },
                           {
                             "displayName": "Group1",
@@ -24752,10 +24805,10 @@
                             "childContentItems":
                             [
                               {
-                                "displayName": "Location Name",
+                                "displayName": "เบิกจากสถานที่",
                                 "name": "LocationName1",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "links":
@@ -24773,7 +24826,7 @@
                                 "displayName": "Lot No.",
                                 "name": "LotNo",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrderDetail/Properties[LotNo]" }
@@ -24792,17 +24845,17 @@
                                 "displayName": "จำนวนสินค้าพร้อมขาย",
                                 "name": "AvailableQuantity",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "AddEditSaleOrderDetail/Properties[AvailableQuantity]" }
                                 }
                               },
                               {
-                                "displayName": "UOMName",
+                                "displayName": "หน่วย",
                                 "name": "UOMName1",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "links":
@@ -24832,7 +24885,7 @@
                                 "displayName": "ต้นทุนต่อหน่วย",
                                 "name": "UnitCost",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrderDetail/Properties[UnitCost]" }
@@ -24842,7 +24895,7 @@
                                 "displayName": "ต้นทุนขาย",
                                 "name": "MasterSalePrice",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrderDetail/Properties[MasterSalePrice]" }
@@ -24861,7 +24914,7 @@
                             }
                           },
                           {
-                            "displayName": "Sale Price",
+                            "displayName": "ราคาขาย",
                             "name": "SalePrice",
                             "kind": "Value",
                             "view": { "__id": ":MoneyEditor" },
@@ -24947,7 +25000,14 @@
                         "dataSource":
                         {
                           "member": { "__id": "AddEditSaleOrderDetail/Properties[SearchProduct]" }
-                        }
+                        },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                            "value": "LeftAligned"
+                          }
+                        ]
                       },
                       {
                         "displayName": "ระบุสถานที่",
@@ -24957,7 +25017,14 @@
                         "dataSource":
                         {
                           "member": { "__id": "AddEditSaleOrderDetail/Properties[SearchLocation]" }
-                        }
+                        },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                            "value": "LeftAligned"
+                          }
+                        ]
                       },
                       {
                         "displayName": "ระบุ Lot",
@@ -24967,7 +25034,14 @@
                         "dataSource":
                         {
                           "member": { "__id": "AddEditSaleOrderDetail/Properties[SearchLot]" }
-                        }
+                        },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                            "value": "LeftAligned"
+                          }
+                        ]
                       },
                       {
                         "displayName": "รายการสินค้าพร้อมขาย",
@@ -36704,6 +36778,7 @@
                               {
                                 "displayName": "เงื่อนไขการชำระ",
                                 "name": "PaymentTerm",
+                                "isHidden": true,
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
                                 "dataSource":
