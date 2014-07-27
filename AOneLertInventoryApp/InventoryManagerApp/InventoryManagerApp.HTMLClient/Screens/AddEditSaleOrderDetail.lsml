@@ -47,36 +47,49 @@
                 </ScreenExpressionTree>
               </ContentItem.DataSource>
               <ContentItem
-                Name="ProductCode1"
-                Kind="Value"
-                DataType=":String"
-                View="Microsoft.LightSwitch.MobileWeb:Text">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression
-                        Member="SaleOrderDetail/Properties[Product]" />
-                      <MemberExpression
-                        Member="ProductCode" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem
-                Name="ProductName1"
-                Kind="Value"
-                DataType=":String"
-                View="Microsoft.LightSwitch.MobileWeb:Text">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression
-                        Member="SaleOrderDetail/Properties[Product]" />
-                      <MemberExpression
-                        Member="ProductName" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
+                Name="Group3"
+                Kind="Group"
+                View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
+                <ContentItem
+                  Name="ProductCode1"
+                  Kind="Value"
+                  DataType=":String"
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="รหัสสินค้า" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="SaleOrderDetail/Properties[Product]" />
+                        <MemberExpression
+                          Member="ProductCode" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="ProductName1"
+                  Kind="Value"
+                  DataType=":String"
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="ชื่อสินค้า" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="SaleOrderDetail/Properties[Product]" />
+                        <MemberExpression
+                          Member="ProductName" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
               </ContentItem>
               <ContentItem
                 Name="Group1"
@@ -86,7 +99,11 @@
                   Name="LocationName1"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="เบิกจากสถานที่" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -102,7 +119,7 @@
                   Name="LotNo"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="Lot No." />
@@ -125,7 +142,7 @@
                   Name="AvailableQuantity"
                   Kind="Value"
                   DataType=":Double"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="จำนวนสินค้าพร้อมขาย" />
@@ -143,7 +160,11 @@
                   Name="UOMName1"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="หน่วย" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -166,7 +187,7 @@
                   Name="UnitCost"
                   Kind="Value"
                   DataType="Microsoft.LightSwitch.Extensions:Money"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="ต้นทุนต่อหน่วย" />
@@ -184,7 +205,7 @@
                   Name="MasterSalePrice"
                   Kind="Value"
                   DataType="Microsoft.LightSwitch.Extensions:Money"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="ต้นทุนขาย" />
@@ -220,6 +241,10 @@
                 Name="SalePrice"
                 Kind="Value"
                 DataType="Microsoft.LightSwitch.Extensions:Money">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="ราคาขาย" />
+                </ContentItem.Attributes>
                 <ContentItem.DataSource>
                   <ScreenExpressionTree>
                     <ChainExpression>
@@ -312,6 +337,18 @@
                   </ChainExpression>
                 </ScreenExpressionTree>
               </ContentItem.DataSource>
+              <ContentItem.PropertySources>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="LeftAligned"
+                        ResultType=":String" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
             </ContentItem>
             <ContentItem
               Name="SearchLocation"
@@ -329,6 +366,18 @@
                   </ChainExpression>
                 </ScreenExpressionTree>
               </ContentItem.DataSource>
+              <ContentItem.PropertySources>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="LeftAligned"
+                        ResultType=":String" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
             </ContentItem>
             <ContentItem
               Name="SearchLot"
@@ -346,6 +395,18 @@
                   </ChainExpression>
                 </ScreenExpressionTree>
               </ContentItem.DataSource>
+              <ContentItem.PropertySources>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="LeftAligned"
+                        ResultType=":String" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
             </ContentItem>
             <ContentItem
               Name="StockOnHandForSale"

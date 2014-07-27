@@ -168,6 +168,7 @@
                 </ContentItem>
                 <ContentItem
                   Name="PaymentTerm"
+                  IsHidden="True"
                   Kind="Value"
                   DataType=":Int32?">
                   <ContentItem.Attributes>
