@@ -1608,37 +1608,6 @@ window.myapp = msls.application;
         $Entity.call(this, entitySet);
     }
 
-    function Table1Item(entitySet) {
-        /// <summary>
-        /// Represents the Table1Item entity type.
-        /// </summary>
-        /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// The entity set that should contain this table1Item.
-        /// </param>
-        /// <field name="Id" type="Number">
-        /// Gets or sets the id for this table1Item.
-        /// </field>
-        /// <field name="CreatedBy" type="String">
-        /// Gets or sets the createdBy for this table1Item.
-        /// </field>
-        /// <field name="Created" type="Date">
-        /// Gets or sets the created for this table1Item.
-        /// </field>
-        /// <field name="ModifiedBy" type="String">
-        /// Gets or sets the modifiedBy for this table1Item.
-        /// </field>
-        /// <field name="Modified" type="Date">
-        /// Gets or sets the modified for this table1Item.
-        /// </field>
-        /// <field name="RowVersion" type="Array">
-        /// Gets or sets the rowVersion for this table1Item.
-        /// </field>
-        /// <field name="details" type="msls.application.Table1Item.Details">
-        /// Gets the details for this table1Item.
-        /// </field>
-        $Entity.call(this, entitySet);
-    }
-
     function PurchaseOrder(entitySet) {
         /// <summary>
         /// Represents the PurchaseOrder entity type.
@@ -2006,6 +1975,113 @@ window.myapp = msls.application;
         $Entity.call(this, entitySet);
     }
 
+    function Transaction(entitySet) {
+        /// <summary>
+        /// Represents the Transaction entity type.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// The entity set that should contain this transaction.
+        /// </param>
+        /// <field name="Id" type="Number">
+        /// Gets or sets the id for this transaction.
+        /// </field>
+        /// <field name="TransactionNo" type="String">
+        /// Gets or sets the transactionNo for this transaction.
+        /// </field>
+        /// <field name="TransactionDate" type="Date">
+        /// Gets or sets the transactionDate for this transaction.
+        /// </field>
+        /// <field name="TransactionType" type="String">
+        /// Gets or sets the transactionType for this transaction.
+        /// </field>
+        /// <field name="ReferenceNo" type="String">
+        /// Gets or sets the referenceNo for this transaction.
+        /// </field>
+        /// <field name="ProductId" type="Number">
+        /// Gets or sets the productId for this transaction.
+        /// </field>
+        /// <field name="LocationId" type="Number">
+        /// Gets or sets the locationId for this transaction.
+        /// </field>
+        /// <field name="LotNo" type="String">
+        /// Gets or sets the lotNo for this transaction.
+        /// </field>
+        /// <field name="Quantity" type="Number">
+        /// Gets or sets the quantity for this transaction.
+        /// </field>
+        /// <field name="Cost" type="String">
+        /// Gets or sets the cost for this transaction.
+        /// </field>
+        /// <field name="CreatedBy" type="String">
+        /// Gets or sets the createdBy for this transaction.
+        /// </field>
+        /// <field name="Created" type="Date">
+        /// Gets or sets the created for this transaction.
+        /// </field>
+        /// <field name="ModifiedBy" type="String">
+        /// Gets or sets the modifiedBy for this transaction.
+        /// </field>
+        /// <field name="Modified" type="Date">
+        /// Gets or sets the modified for this transaction.
+        /// </field>
+        /// <field name="RowVersion" type="Array">
+        /// Gets or sets the rowVersion for this transaction.
+        /// </field>
+        /// <field name="details" type="msls.application.Transaction.Details">
+        /// Gets the details for this transaction.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
+    function StockOnHandHistory(entitySet) {
+        /// <summary>
+        /// Represents the StockOnHandHistory entity type.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// The entity set that should contain this stockOnHandHistory.
+        /// </param>
+        /// <field name="Id" type="Number">
+        /// Gets or sets the id for this stockOnHandHistory.
+        /// </field>
+        /// <field name="TransactionNo" type="String">
+        /// Gets or sets the transactionNo for this stockOnHandHistory.
+        /// </field>
+        /// <field name="TransactionDate" type="Date">
+        /// Gets or sets the transactionDate for this stockOnHandHistory.
+        /// </field>
+        /// <field name="TransactionBy" type="String">
+        /// Gets or sets the transactionBy for this stockOnHandHistory.
+        /// </field>
+        /// <field name="ProductId" type="Number">
+        /// Gets or sets the productId for this stockOnHandHistory.
+        /// </field>
+        /// <field name="LocationId" type="Number">
+        /// Gets or sets the locationId for this stockOnHandHistory.
+        /// </field>
+        /// <field name="LotNo" type="String">
+        /// Gets or sets the lotNo for this stockOnHandHistory.
+        /// </field>
+        /// <field name="CreatedBy" type="String">
+        /// Gets or sets the createdBy for this stockOnHandHistory.
+        /// </field>
+        /// <field name="Created" type="Date">
+        /// Gets or sets the created for this stockOnHandHistory.
+        /// </field>
+        /// <field name="ModifiedBy" type="String">
+        /// Gets or sets the modifiedBy for this stockOnHandHistory.
+        /// </field>
+        /// <field name="Modified" type="Date">
+        /// Gets or sets the modified for this stockOnHandHistory.
+        /// </field>
+        /// <field name="RowVersion" type="Array">
+        /// Gets or sets the rowVersion for this stockOnHandHistory.
+        /// </field>
+        /// <field name="details" type="msls.application.StockOnHandHistory.Details">
+        /// Gets the details for this stockOnHandHistory.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
     function ApplicationData(dataWorkspace) {
         /// <summary>
         /// Represents the ApplicationData data service.
@@ -2109,9 +2185,6 @@ window.myapp = msls.application;
         /// <field name="SaleOrderDetails" type="msls.EntitySet">
         /// Gets the SaleOrderDetails entity set.
         /// </field>
-        /// <field name="Table1Items" type="msls.EntitySet">
-        /// Gets the Table1Items entity set.
-        /// </field>
         /// <field name="PurchaseOrders" type="msls.EntitySet">
         /// Gets the PurchaseOrders entity set.
         /// </field>
@@ -2132,6 +2205,12 @@ window.myapp = msls.application;
         /// </field>
         /// <field name="WorkOrderProduces" type="msls.EntitySet">
         /// Gets the WorkOrderProduces entity set.
+        /// </field>
+        /// <field name="Transactions" type="msls.EntitySet">
+        /// Gets the Transactions entity set.
+        /// </field>
+        /// <field name="StockOnHandHistories" type="msls.EntitySet">
+        /// Gets the StockOnHandHistories entity set.
         /// </field>
         /// <field name="details" type="msls.application.ApplicationData.Details">
         /// Gets the details for this data service.
@@ -2642,15 +2721,6 @@ window.myapp = msls.application;
             { name: "RowVersion", type: Array }
         ]),
 
-        Table1Item: $defineEntity(Table1Item, [
-            { name: "Id", type: Number },
-            { name: "CreatedBy", type: String, isReadOnly: true },
-            { name: "Created", type: Date, isReadOnly: true },
-            { name: "ModifiedBy", type: String, isReadOnly: true },
-            { name: "Modified", type: Date, isReadOnly: true },
-            { name: "RowVersion", type: Array }
-        ]),
-
         PurchaseOrder: $defineEntity(PurchaseOrder, [
             { name: "Id", type: Number },
             { name: "PurchaseOrderNumber", type: String },
@@ -2764,6 +2834,39 @@ window.myapp = msls.application;
             { name: "RowVersion", type: Array }
         ]),
 
+        Transaction: $defineEntity(Transaction, [
+            { name: "Id", type: Number },
+            { name: "TransactionNo", type: String },
+            { name: "TransactionDate", type: Date },
+            { name: "TransactionType", type: String },
+            { name: "ReferenceNo", type: String },
+            { name: "ProductId", type: Number },
+            { name: "LocationId", type: Number },
+            { name: "LotNo", type: String },
+            { name: "Quantity", type: Number },
+            { name: "Cost", type: String },
+            { name: "CreatedBy", type: String, isReadOnly: true },
+            { name: "Created", type: Date, isReadOnly: true },
+            { name: "ModifiedBy", type: String, isReadOnly: true },
+            { name: "Modified", type: Date, isReadOnly: true },
+            { name: "RowVersion", type: Array }
+        ]),
+
+        StockOnHandHistory: $defineEntity(StockOnHandHistory, [
+            { name: "Id", type: Number },
+            { name: "TransactionNo", type: String },
+            { name: "TransactionDate", type: Date },
+            { name: "TransactionBy", type: String },
+            { name: "ProductId", type: Number },
+            { name: "LocationId", type: Number },
+            { name: "LotNo", type: String },
+            { name: "CreatedBy", type: String, isReadOnly: true },
+            { name: "Created", type: Date, isReadOnly: true },
+            { name: "ModifiedBy", type: String, isReadOnly: true },
+            { name: "Modified", type: Date, isReadOnly: true },
+            { name: "RowVersion", type: Array }
+        ]),
+
         ApplicationData: $defineDataService(ApplicationData, lightSwitchApplication.rootUri + "/ApplicationData.svc", [
             { name: "Products", elementType: Product },
             { name: "ProductCategories", elementType: ProductCategory },
@@ -2797,14 +2900,15 @@ window.myapp = msls.application;
             { name: "StockAdjusts", elementType: StockAdjust },
             { name: "SaleOrders", elementType: SaleOrder },
             { name: "SaleOrderDetails", elementType: SaleOrderDetail },
-            { name: "Table1Items", elementType: Table1Item },
             { name: "PurchaseOrders", elementType: PurchaseOrder },
             { name: "PurchaseOrderDetails", elementType: PurchaseOrderDetail },
             { name: "ReceiveFromPurchaseOrders", elementType: ReceiveFromPurchaseOrder },
             { name: "ReceiveFromPurchaseOrderDetails", elementType: ReceiveFromPurchaseOrderDetail },
             { name: "WorkOrders", elementType: WorkOrder },
             { name: "WorkOrderIssueDetails", elementType: WorkOrderIssueDetail },
-            { name: "WorkOrderProduces", elementType: WorkOrderProduce }
+            { name: "WorkOrderProduces", elementType: WorkOrderProduce },
+            { name: "Transactions", elementType: Transaction },
+            { name: "StockOnHandHistories", elementType: StockOnHandHistory }
         ], [
             {
                 name: "Products_SingleOrDefault", value: function (Id) {
@@ -3143,13 +3247,6 @@ window.myapp = msls.application;
                 }
             },
             {
-                name: "Table1Items_SingleOrDefault", value: function (Id) {
-                    return new $DataServiceQuery({ _entitySet: this.Table1Items },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/Table1Items(" + "Id=" + $toODataString(Id, "Int32?") + ")"
-                    );
-                }
-            },
-            {
                 name: "PurchaseOrders_SingleOrDefault", value: function (Id) {
                     return new $DataServiceQuery({ _entitySet: this.PurchaseOrders },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/PurchaseOrders(" + "Id=" + $toODataString(Id, "Int32?") + ")"
@@ -3211,11 +3308,10 @@ window.myapp = msls.application;
                 }
             },
             {
-                name: "SupplierActiveQuery", value: function (SupplierName) {
+                name: "SupplierActiveQuery", value: function () {
                     return new $DataServiceQuery({ _entitySet: this.Suppliers },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/SupplierActiveQuery()",
                         {
-                            SupplierName: $toODataString(SupplierName, "String?")
                         });
                 }
             },
@@ -3276,6 +3372,28 @@ window.myapp = msls.application;
                 name: "WorkOrderIsNotReceive", value: function () {
                     return new $DataServiceQuery({ _entitySet: this.WorkOrders },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/WorkOrderIsNotReceive()",
+                        {
+                        });
+                }
+            },
+            {
+                name: "Transactions_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.Transactions },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/Transactions(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
+                }
+            },
+            {
+                name: "StockOnHandHistories_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.StockOnHandHistories },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/StockOnHandHistories(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
+                }
+            },
+            {
+                name: "QueryMaxSONumber", value: function () {
+                    return new $DataServiceQuery({ _entitySet: this.SaleOrders },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/QueryMaxSONumber()",
                         {
                         });
                 }

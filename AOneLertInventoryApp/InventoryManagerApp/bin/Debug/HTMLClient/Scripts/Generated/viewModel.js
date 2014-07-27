@@ -259,6 +259,9 @@
         /// <field name="POStatusDescription" type="String">
         /// Gets or sets the pOStatusDescription for this screen.
         /// </field>
+        /// <field name="ItemIsReceiveComplete" type="String">
+        /// Gets or sets the itemIsReceiveComplete for this screen.
+        /// </field>
         /// <field name="details" type="msls.application.AddEditPO.Details">
         /// Gets the details for this screen.
         /// </field>
@@ -336,6 +339,12 @@
         /// </param>
         /// <field name="PurchaseOrderDetail" type="msls.application.PurchaseOrderDetail">
         /// Gets or sets the purchaseOrderDetail for this screen.
+        /// </field>
+        /// <field name="LocationActiveQuery" type="msls.VisualCollection" elementType="msls.application.Location">
+        /// Gets the locationActiveQuery for this screen.
+        /// </field>
+        /// <field name="SearchLocation" type="String">
+        /// Gets or sets the searchLocation for this screen.
         /// </field>
         /// <field name="details" type="msls.application.AddEditPOReceiveDetail.Details">
         /// Gets the details for this screen.
@@ -1483,6 +1492,9 @@
         /// <field name="POStatusDescription" type="String">
         /// Gets or sets the pOStatusDescription for this screen.
         /// </field>
+        /// <field name="SearchParameter" type="String">
+        /// Gets or sets the searchParameter for this screen.
+        /// </field>
         /// <field name="details" type="msls.application.BrowsePO.Details">
         /// Gets the details for this screen.
         /// </field>
@@ -1504,6 +1516,9 @@
         /// </param>
         /// <field name="PurchaseOrders" type="msls.VisualCollection" elementType="msls.application.PurchaseOrder">
         /// Gets the purchaseOrders for this screen.
+        /// </field>
+        /// <field name="POStatusDescription" type="String">
+        /// Gets or sets the pOStatusDescription for this screen.
         /// </field>
         /// <field name="details" type="msls.application.BrowsePOReceive.Details">
         /// Gets the details for this screen.
@@ -1610,6 +1625,9 @@
         /// </field>
         /// <field name="Search" type="String">
         /// Gets or sets the search for this screen.
+        /// </field>
+        /// <field name="AvailableForSaleDescription" type="String">
+        /// Gets or sets the availableForSaleDescription for this screen.
         /// </field>
         /// <field name="details" type="msls.application.BrowseProductPricings.Details">
         /// Gets the details for this screen.
@@ -1782,6 +1800,9 @@
         /// </param>
         /// <field name="SaleOrders" type="msls.VisualCollection" elementType="msls.application.SaleOrder">
         /// Gets the saleOrders for this screen.
+        /// </field>
+        /// <field name="SearchSO" type="String">
+        /// Gets or sets the searchSO for this screen.
         /// </field>
         /// <field name="details" type="msls.application.BrowseSaleOrders.Details">
         /// Gets the details for this screen.
@@ -2149,6 +2170,31 @@
         $Screen.call(this, dataWorkspace, "SearchActiveProducts", parameters);
     }
 
+    function ViewPOReceivedDetail(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the ViewPOReceivedDetail screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="PurchaseOrderDetail" type="msls.application.PurchaseOrderDetail">
+        /// Gets or sets the purchaseOrderDetail for this screen.
+        /// </field>
+        /// <field name="IsReceiveCompleteDescription" type="String">
+        /// Gets or sets the isReceiveCompleteDescription for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.ViewPOReceivedDetail.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "ViewPOReceivedDetail", parameters);
+    }
+
     function ViewPurchaseOrder(parameters, dataWorkspace) {
         /// <summary>
         /// Represents the ViewPurchaseOrder screen.
@@ -2165,6 +2211,9 @@
         /// <field name="PurchaseOrderDetails" type="msls.VisualCollection" elementType="msls.application.PurchaseOrderDetail">
         /// Gets the purchaseOrderDetails for this screen.
         /// </field>
+        /// <field name="POStatusDescription" type="String">
+        /// Gets or sets the pOStatusDescription for this screen.
+        /// </field>
         /// <field name="details" type="msls.application.ViewPurchaseOrder.Details">
         /// Gets the details for this screen.
         /// </field>
@@ -2172,6 +2221,31 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "ViewPurchaseOrder", parameters);
+    }
+
+    function ViewPurchaseOrderDetail(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the ViewPurchaseOrderDetail screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="PurchaseOrderDetail" type="msls.application.PurchaseOrderDetail">
+        /// Gets or sets the purchaseOrderDetail for this screen.
+        /// </field>
+        /// <field name="POStatusDescription" type="String">
+        /// Gets or sets the pOStatusDescription for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.ViewPurchaseOrderDetail.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "ViewPurchaseOrderDetail", parameters);
     }
 
     function ViewReceiveFromPurchaseOrder(parameters, dataWorkspace) {
@@ -2308,19 +2382,22 @@
                     return null;
                 },
                 appendQuery: function () {
-                    return this.filter("(Created ne null) and (Created eq datetimeoffset'2014-07-18T00:00:00+07:00')").expand("Product").expand("Product.UnitOfMeasure");
+                    return this.expand("Product").expand("Product.UnitOfMeasure");
                 }
             },
             {
                 name: "SupplierActiveQuery", kind: "collection", elementType: lightSwitchApplication.Supplier,
-                createQuery: function (SupplierName, SearchSupplier) {
-                    return this.dataWorkspace.ApplicationData.SupplierActiveQuery(SupplierName).filter("" + ((SearchSupplier === undefined || SearchSupplier === null) ? "true" : "substringof(" + $toODataString(SearchSupplier, "String?") + ", SupplierName)") + "").expand("SupplierGroup");
+                createQuery: function (SearchSupplier) {
+                    return this.dataWorkspace.ApplicationData.SupplierActiveQuery().filter("" + ((SearchSupplier === undefined || SearchSupplier === null) ? "true" : "substringof(" + $toODataString(SearchSupplier, "String?") + ", SupplierName)") + "").expand("SupplierGroup");
                 }
             },
             { name: "SearchSupplier", kind: "local", type: String },
-            { name: "POStatusDescription", kind: "local", type: String }
+            { name: "POStatusDescription", kind: "local", type: String },
+            { name: "ItemIsReceiveComplete", kind: "local", type: String }
         ], [
-            { name: "SupplierActiveQuery_ItemTap" }
+            { name: "SupplierActiveQuery_ItemTap" },
+            { name: "PurchaseOrderDetails_ItemTap" },
+            { name: "ShowAddEditPODetail_Tap" }
         ]),
 
         AddEditPODetail: $defineScreen(AddEditPODetail, [
@@ -2356,8 +2433,16 @@
         ]),
 
         AddEditPOReceiveDetail: $defineScreen(AddEditPOReceiveDetail, [
-            { name: "PurchaseOrderDetail", kind: "local", type: lightSwitchApplication.PurchaseOrderDetail }
+            { name: "PurchaseOrderDetail", kind: "local", type: lightSwitchApplication.PurchaseOrderDetail },
+            {
+                name: "LocationActiveQuery", kind: "collection", elementType: lightSwitchApplication.Location,
+                createQuery: function (SearchLocation) {
+                    return this.dataWorkspace.ApplicationData.LocationActiveQuery().filter("" + ((SearchLocation === undefined || SearchLocation === null) ? "true" : "substringof(" + $toODataString(SearchLocation, "String?") + ", LocationName)") + "").orderBy("LocationName");
+                }
+            },
+            { name: "SearchLocation", kind: "local", type: String }
         ], [
+            { name: "LocationActiveQuery_ItemTap" }
         ]),
 
         AddEditProduct: $defineScreen(AddEditProduct, [
@@ -2893,22 +2978,27 @@
         BrowsePO: $defineScreen(BrowsePO, [
             {
                 name: "PurchaseOrders", kind: "collection", elementType: lightSwitchApplication.PurchaseOrder,
-                createQuery: function () {
-                    return this.dataWorkspace.ApplicationData.PurchaseOrders.expand("Supplier");
+                createQuery: function (SearchParameter) {
+                    return this.dataWorkspace.ApplicationData.PurchaseOrders.filter("" + ((SearchParameter === undefined || SearchParameter === null) ? "true" : "substringof(" + $toODataString(SearchParameter, "String?") + ", PurchaseOrderNumber)") + " or " + ((SearchParameter === undefined || SearchParameter === null) ? "true" : "substringof(" + $toODataString(SearchParameter, "String?") + ", Supplier/SupplierName)") + "").orderByDescending("PurchaseOrderNumber").expand("Supplier");
                 }
             },
-            { name: "POStatusDescription", kind: "local", type: String }
+            { name: "POStatusDescription", kind: "local", type: String },
+            { name: "SearchParameter", kind: "local", type: String }
         ], [
+            { name: "PurchaseOrder_ItemTap" },
+            { name: "ShowAddEditPO_Tap" }
         ]),
 
         BrowsePOReceive: $defineScreen(BrowsePOReceive, [
             {
                 name: "PurchaseOrders", kind: "collection", elementType: lightSwitchApplication.PurchaseOrder,
                 createQuery: function () {
-                    return this.dataWorkspace.ApplicationData.PurchaseOrders.filter("PurchaseOrderStatus eq true").expand("Supplier");
+                    return this.dataWorkspace.ApplicationData.PurchaseOrders.filter("PurchaseOrderStatus eq false").expand("Supplier");
                 }
-            }
+            },
+            { name: "POStatusDescription", kind: "local", type: String }
         ], [
+            { name: "PurchaseOrder_ItemTap" }
         ]),
 
         BrowseProductCategories: $defineScreen(BrowseProductCategories, [
@@ -2975,8 +3065,10 @@
                     return this.dataWorkspace.ApplicationData.StockOnHands.filter("(" + ((Search === undefined || Search === null) ? "true" : "substringof(" + $toODataString(Search, "String?") + ", Location/LocationName)") + " or " + ((Search === undefined || Search === null) ? "true" : "substringof(" + $toODataString(Search, "String?") + ", Product/ProductCode)") + ") or " + ((Search === undefined || Search === null) ? "true" : "substringof(" + $toODataString(Search, "String?") + ", Product/ProductName)") + "").orderBy("Location/LocationName").thenBy("Product/ProductName").expand("Location").expand("Product");
                 }
             },
-            { name: "Search", kind: "local", type: String }
+            { name: "Search", kind: "local", type: String },
+            { name: "AvailableForSaleDescription", kind: "local", type: String }
         ], [
+            { name: "StockOnHand_ItemTap" }
         ]),
 
         BrowseProductReceiveBalanceForwards: $defineScreen(BrowseProductReceiveBalanceForwards, [
@@ -3059,10 +3151,11 @@
         BrowseSaleOrders: $defineScreen(BrowseSaleOrders, [
             {
                 name: "SaleOrders", kind: "collection", elementType: lightSwitchApplication.SaleOrder,
-                createQuery: function () {
-                    return this.dataWorkspace.ApplicationData.SaleOrders.expand("Customer").expand("Customer.TransportRoute");
+                createQuery: function (SearchSO) {
+                    return this.dataWorkspace.ApplicationData.SaleOrders.filter("(" + ((SearchSO === undefined || SearchSO === null) ? "true" : "substringof(" + $toODataString(SearchSO, "String?") + ", DocumentNo)") + " or " + ((SearchSO === undefined || SearchSO === null) ? "true" : "substringof(" + $toODataString(SearchSO, "String?") + ", ReferenceNo)") + ") or " + ((SearchSO === undefined || SearchSO === null) ? "true" : "substringof(" + $toODataString(SearchSO, "String?") + ", Customer/CustomerName)") + "").orderByDescending("DocumentNo").expand("Customer").expand("Customer.TransportRoute");
                 }
-            }
+            },
+            { name: "SearchSO", kind: "local", type: String }
         ], [
         ]),
 
@@ -3220,6 +3313,12 @@
         ], [
         ]),
 
+        ViewPOReceivedDetail: $defineScreen(ViewPOReceivedDetail, [
+            { name: "PurchaseOrderDetail", kind: "local", type: lightSwitchApplication.PurchaseOrderDetail },
+            { name: "IsReceiveCompleteDescription", kind: "local", type: String }
+        ], [
+        ]),
+
         ViewPurchaseOrder: $defineScreen(ViewPurchaseOrder, [
             { name: "PurchaseOrder", kind: "local", type: lightSwitchApplication.PurchaseOrder },
             {
@@ -3231,9 +3330,16 @@
                     return null;
                 },
                 appendQuery: function () {
-                    return this.expand("Product").expand("Product.UnitOfMeasure");
+                    return this.expand("Product").expand("Location").expand("Product.UnitOfMeasure");
                 }
-            }
+            },
+            { name: "POStatusDescription", kind: "local", type: String }
+        ], [
+        ]),
+
+        ViewPurchaseOrderDetail: $defineScreen(ViewPurchaseOrderDetail, [
+            { name: "PurchaseOrderDetail", kind: "local", type: lightSwitchApplication.PurchaseOrderDetail },
+            { name: "POStatusDescription", kind: "local", type: String }
         ], [
         ]),
 
@@ -4315,6 +4421,18 @@
             return lightSwitchApplication.showScreen("SearchActiveProducts", parameters, options);
         }),
 
+        showViewPOReceivedDetail: $defineShowScreen(function showViewPOReceivedDetail(PurchaseOrderDetail, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the ViewPOReceivedDetail screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("ViewPOReceivedDetail", parameters, options);
+        }),
+
         showViewPurchaseOrder: $defineShowScreen(function showViewPurchaseOrder(PurchaseOrder, options) {
             /// <summary>
             /// Asynchronously navigates forward to the ViewPurchaseOrder screen.
@@ -4325,6 +4443,18 @@
             /// <returns type="WinJS.Promise" />
             var parameters = Array.prototype.slice.call(arguments, 0, 1);
             return lightSwitchApplication.showScreen("ViewPurchaseOrder", parameters, options);
+        }),
+
+        showViewPurchaseOrderDetail: $defineShowScreen(function showViewPurchaseOrderDetail(PurchaseOrderDetail, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the ViewPurchaseOrderDetail screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("ViewPurchaseOrderDetail", parameters, options);
         }),
 
         showViewReceiveFromPurchaseOrder: $defineShowScreen(function showViewReceiveFromPurchaseOrder(ReceiveFromPurchaseOrder, options) {
