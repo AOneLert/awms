@@ -2094,7 +2094,8 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:EmailAddress",
           "name": "EmailAddress",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@EmailAddressValidation": { "domainRequired": true }
         },
         {
           "__isSemanticType": 1,
@@ -2112,13 +2113,15 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:PhoneNumber",
           "name": "PhoneNumber",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@PhoneNumberValidation": { "formats": "C (AAA) NNN-NNNN;C (AAA) NNNNNNN;CAAANNNNNNN;(AAA) NNN-NNNN;(AAA) NNNNNNN;AAANNNNNNN;NNN-NNNN;NNNNNNN" }
         },
         {
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:Percent",
           "name": "Percent",
           "underlyingType": { "__id": ":Decimal" },
+          "Microsoft.LightSwitch.Extensions:@FormatParameter": { "decimalDigits": 2 },
           ":@DecimalConstraint":
           {
             "scale": 9
@@ -2128,7 +2131,8 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:WebAddress",
           "name": "WebAddress",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@WebAddressValidation": { }
         }
       ]
     },
@@ -7636,6 +7640,17 @@
                   "parameterType": { "__id": ":Int32?" }
                 }
               ]
+            },
+            {
+              "id": "ApplicationData/Members[QueryMaxSONumber]",
+              "name": "QueryMaxSONumber",
+              "elementType": { "__id": "SaleOrder" },
+              "query": { "__id": "ApplicationData/Members[QueryMaxSONumber]" },
+              "returnType": { "__id": "SaleOrder*" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[SaleOrders]" }
+              }
             },
             {
               "id": "ApplicationData/Members[ShippingMethods_Single]",
@@ -16487,7 +16502,7 @@
                                 "displayName": "เลขที่ใบสั่งซื้อ",
                                 "name": "PurchaseOrderNumber",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "PurchaseOrder/Properties[PurchaseOrderNumber]" }
@@ -16559,14 +16574,24 @@
                                 }
                               },
                               {
-                                "displayName": "POStatus Description",
-                                "name": "POStatusDescription",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "AddEditPO/Properties[POStatusDescription]" }
-                                }
+                                "displayName": "Group",
+                                "name": "Group",
+                                "kind": "Group",
+                                "view": { "__id": ":ColumnsLayout" },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "POStatus Description",
+                                    "name": "POStatusDescription",
+                                    "isHidden": true,
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "AddEditPO/Properties[POStatusDescription]" }
+                                    }
+                                  }
+                                ]
                               }
                             ],
                             "propertySources":
@@ -17107,22 +17132,49 @@
                                 }
                               },
                               {
-                                "displayName": "สินค้า",
-                                "name": "ProductName",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
+                                "displayName": "Group4",
+                                "name": "Group4",
+                                "kind": "Group",
+                                "view": { "__id": ":ColumnsLayout" },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "Product Code",
+                                    "name": "ProductCode",
+                                    "kind": "Value",
+                                    "view": { "__id": ":TextBox" },
+                                    "dataSource":
                                     {
-                                      "member": { "__id": "PurchaseOrderDetail/Properties[Product]" }
-                                    },
-                                    {
-                                      "member": { "__id": "Product/Properties[ProductName]" }
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "PurchaseOrderDetail/Properties[Product]" }
+                                        },
+                                        {
+                                          "member": { "__id": "Product/Properties[ProductCode]" }
+                                        }
+                                      ]
                                     }
-                                  ]
-                                }
+                                  },
+                                  {
+                                    "displayName": "สินค้า",
+                                    "name": "ProductName",
+                                    "kind": "Value",
+                                    "view": { "__id": ":TextBox" },
+                                    "dataSource":
+                                    {
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "PurchaseOrderDetail/Properties[Product]" }
+                                        },
+                                        {
+                                          "member": { "__id": "Product/Properties[ProductName]" }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
                               },
                               {
                                 "displayName": "Group2",
@@ -22127,7 +22179,7 @@
                         "displayName": "Select PONumber",
                         "name": "SelectPONumber",
                         "kind": "Value",
-                        "view": { "__id": ":Text" },
+                        "view": { "__id": ":TextBox" },
                         "dataSource":
                         {
                           "member": { "__id": "AddEditPurchaseOrderDetail/Properties[SelectPONumber]" }
@@ -24048,7 +24100,7 @@
                                 "displayName": "เลขที่เอกสาร",
                                 "name": "DocumentNo",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrder/Properties[DocumentNo]" }
@@ -24227,6 +24279,35 @@
                                     }
                                   }
                                 ]
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                                "source":
+                                {
+                                  "target": { "__id": "!module/Methods[showAddEditSaleOrderDetail]" },
+                                  ":@AssociatedCollection": { "collection": { "__id": "AddEditSaleOrder/Properties[SaleOrderDetails]" } },
+                                  "arguments":
+                                  [
+                                    {
+                                      "parameter": { "__id": "!module/Methods[showAddEditSaleOrderDetail]/Parameters[SaleOrderDetail]" },
+                                      "value":
+                                      {
+                                        "links":
+                                        [
+                                          {
+                                            "member": { "__id": "AddEditSaleOrder/Properties[SaleOrderDetails]" }
+                                          },
+                                          {
+                                            "member": { "__id": "CollectionView$SaleOrderDetail/Properties[selectedItem]" }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
                               }
                             ]
                           }
@@ -24709,40 +24790,49 @@
                         "childContentItems":
                         [
                           {
-                            "displayName": "Product Code",
-                            "name": "ProductCode1",
-                            "kind": "Value",
-                            "view": { "__id": ":Text" },
-                            "dataSource":
-                            {
-                              "links":
-                              [
+                            "displayName": "Group3",
+                            "name": "Group3",
+                            "kind": "Group",
+                            "view": { "__id": ":ColumnsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "รหัสสินค้า",
+                                "name": "ProductCode1",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
                                 {
-                                  "member": { "__id": "SaleOrderDetail/Properties[Product]" }
-                                },
-                                {
-                                  "member": { "__id": "Product/Properties[ProductCode]" }
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "SaleOrderDetail/Properties[Product]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Product/Properties[ProductCode]" }
+                                    }
+                                  ]
                                 }
-                              ]
-                            }
-                          },
-                          {
-                            "displayName": "Product Name",
-                            "name": "ProductName1",
-                            "kind": "Value",
-                            "view": { "__id": ":Text" },
-                            "dataSource":
-                            {
-                              "links":
-                              [
+                              },
+                              {
+                                "displayName": "ชื่อสินค้า",
+                                "name": "ProductName1",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
                                 {
-                                  "member": { "__id": "SaleOrderDetail/Properties[Product]" }
-                                },
-                                {
-                                  "member": { "__id": "Product/Properties[ProductName]" }
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "SaleOrderDetail/Properties[Product]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Product/Properties[ProductName]" }
+                                    }
+                                  ]
                                 }
-                              ]
-                            }
+                              }
+                            ]
                           },
                           {
                             "displayName": "Group1",
@@ -24752,10 +24842,10 @@
                             "childContentItems":
                             [
                               {
-                                "displayName": "Location Name",
+                                "displayName": "เบิกจากสถานที่",
                                 "name": "LocationName1",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "links":
@@ -24773,7 +24863,7 @@
                                 "displayName": "Lot No.",
                                 "name": "LotNo",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrderDetail/Properties[LotNo]" }
@@ -24792,17 +24882,17 @@
                                 "displayName": "จำนวนสินค้าพร้อมขาย",
                                 "name": "AvailableQuantity",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "AddEditSaleOrderDetail/Properties[AvailableQuantity]" }
                                 }
                               },
                               {
-                                "displayName": "UOMName",
+                                "displayName": "หน่วย",
                                 "name": "UOMName1",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "links":
@@ -24832,7 +24922,7 @@
                                 "displayName": "ต้นทุนต่อหน่วย",
                                 "name": "UnitCost",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrderDetail/Properties[UnitCost]" }
@@ -24842,7 +24932,7 @@
                                 "displayName": "ต้นทุนขาย",
                                 "name": "MasterSalePrice",
                                 "kind": "Value",
-                                "view": { "__id": ":Text" },
+                                "view": { "__id": ":TextBox" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrderDetail/Properties[MasterSalePrice]" }
@@ -24861,7 +24951,7 @@
                             }
                           },
                           {
-                            "displayName": "Sale Price",
+                            "displayName": "ราคาขาย",
                             "name": "SalePrice",
                             "kind": "Value",
                             "view": { "__id": ":MoneyEditor" },
@@ -24947,7 +25037,14 @@
                         "dataSource":
                         {
                           "member": { "__id": "AddEditSaleOrderDetail/Properties[SearchProduct]" }
-                        }
+                        },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                            "value": "LeftAligned"
+                          }
+                        ]
                       },
                       {
                         "displayName": "ระบุสถานที่",
@@ -24957,7 +25054,14 @@
                         "dataSource":
                         {
                           "member": { "__id": "AddEditSaleOrderDetail/Properties[SearchLocation]" }
-                        }
+                        },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                            "value": "LeftAligned"
+                          }
+                        ]
                       },
                       {
                         "displayName": "ระบุ Lot",
@@ -24967,7 +25071,14 @@
                         "dataSource":
                         {
                           "member": { "__id": "AddEditSaleOrderDetail/Properties[SearchLot]" }
-                        }
+                        },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                            "value": "LeftAligned"
+                          }
+                        ]
                       },
                       {
                         "displayName": "รายการสินค้าพร้อมขาย",
@@ -33051,6 +33162,16 @@
                     "childContentItems":
                     [
                       {
+                        "displayName": "ค้นหาใบสั่งซื้อ",
+                        "name": "SearchParameter",
+                        "kind": "Value",
+                        "view": { "__id": ":TextBox" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "BrowsePO/Properties[SearchParameter]" }
+                        }
+                      },
+                      {
                         "displayName": "Purchase Orders",
                         "name": "PurchaseOrder",
                         "kind": "Collection",
@@ -33253,19 +33374,96 @@
                 "name": "PurchaseOrdersQuery",
                 "elementType": { "__id": "PurchaseOrder" },
                 "returnType": { "__id": "PurchaseOrder*" },
+                "filterExpression":
+                {
+                  "nodeType": "Or",
+                  "left":
+                  {
+                    "nodeType": "Contains",
+                    "left":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "PurchaseOrder/Properties[PurchaseOrderNumber]" }
+                        }
+                      ]
+                    },
+                    "right":
+                    {
+                      "parameter": { "__id": "BrowsePO/Properties[PurchaseOrders]/Query/Parameters[SearchParameter]" }
+                    }
+                  },
+                  "right":
+                  {
+                    "nodeType": "Contains",
+                    "left":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "PurchaseOrder/Properties[Supplier]" }
+                        },
+                        {
+                          "member": { "__id": "Supplier/Properties[SupplierName]" }
+                        }
+                      ]
+                    },
+                    "right":
+                    {
+                      "parameter": { "__id": "BrowsePO/Properties[PurchaseOrders]/Query/Parameters[SearchParameter]" }
+                    }
+                  }
+                },
                 "source":
                 {
                   "member": { "__id": "ApplicationData/Members[PurchaseOrders]" }
-                }
+                },
+                "parameters":
+                [
+                  {
+                    "id": "BrowsePO/Properties[PurchaseOrders]/Query/Parameters[SearchParameter]",
+                    "name": "SearchParameter",
+                    "isOptional": true,
+                    "parameterType": { "__id": ":String?" }
+                  }
+                ],
+                "sortCriteria":
+                [
+                  {
+                    "member": { "__id": "PurchaseOrder/Properties[PurchaseOrderNumber]" }
+                  }
+                ]
               },
               "source":
               {
-                "target": { "__id": "BrowsePO/Properties[PurchaseOrders]/Query" }
+                "target": { "__id": "BrowsePO/Properties[PurchaseOrders]/Query" },
+                "arguments":
+                [
+                  {
+                    "parameter": { "__id": "BrowsePO/Properties[PurchaseOrders]/Query/Parameters[SearchParameter]" },
+                    "value":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "BrowsePO/Properties[SearchParameter]" }
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
             },
             {
               "id": "BrowsePO/Properties[POStatusDescription]",
               "name": "POStatusDescription",
+              "elementType": { "__id": ":String?" },
+              "propertyType": { "__id": ":String?" }
+            },
+            {
+              "id": "BrowsePO/Properties[SearchParameter]",
+              "name": "SearchParameter",
               "elementType": { "__id": ":String?" },
               "propertyType": { "__id": ":String?" }
             }
@@ -36588,6 +36786,16 @@
                     "childContentItems":
                     [
                       {
+                        "displayName": "ค้นหาใบขายสินค้า",
+                        "name": "SearchSO",
+                        "kind": "Value",
+                        "view": { "__id": ":TextBox" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "BrowseSaleOrders/Properties[SearchSO]" }
+                        }
+                      },
+                      {
                         "displayName": "รายการขายสินค้า",
                         "name": "SaleOrder",
                         "kind": "Collection",
@@ -36704,6 +36912,7 @@
                               {
                                 "displayName": "เงื่อนไขการชำระ",
                                 "name": "PaymentTerm",
+                                "isHidden": true,
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
                                 "dataSource":
@@ -36821,15 +37030,113 @@
                 "name": "SaleOrdersQuery",
                 "elementType": { "__id": "SaleOrder" },
                 "returnType": { "__id": "SaleOrder*" },
+                "filterExpression":
+                {
+                  "nodeType": "Or",
+                  "left":
+                  {
+                    "nodeType": "Or",
+                    "left":
+                    {
+                      "nodeType": "Contains",
+                      "left":
+                      {
+                        "links":
+                        [
+                          {
+                            "member": { "__id": "SaleOrder/Properties[DocumentNo]" }
+                          }
+                        ]
+                      },
+                      "right":
+                      {
+                        "parameter": { "__id": "BrowseSaleOrders/Properties[SaleOrders]/Query/Parameters[SearchSO]" }
+                      }
+                    },
+                    "right":
+                    {
+                      "nodeType": "Contains",
+                      "left":
+                      {
+                        "links":
+                        [
+                          {
+                            "member": { "__id": "SaleOrder/Properties[ReferenceNo]" }
+                          }
+                        ]
+                      },
+                      "right":
+                      {
+                        "parameter": { "__id": "BrowseSaleOrders/Properties[SaleOrders]/Query/Parameters[SearchSO]" }
+                      }
+                    }
+                  },
+                  "right":
+                  {
+                    "nodeType": "Contains",
+                    "left":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "SaleOrder/Properties[Customer]" }
+                        },
+                        {
+                          "member": { "__id": "Customer/Properties[CustomerName]" }
+                        }
+                      ]
+                    },
+                    "right":
+                    {
+                      "parameter": { "__id": "BrowseSaleOrders/Properties[SaleOrders]/Query/Parameters[SearchSO]" }
+                    }
+                  }
+                },
                 "source":
                 {
                   "member": { "__id": "ApplicationData/Members[SaleOrders]" }
-                }
+                },
+                "parameters":
+                [
+                  {
+                    "id": "BrowseSaleOrders/Properties[SaleOrders]/Query/Parameters[SearchSO]",
+                    "name": "SearchSO",
+                    "isOptional": true,
+                    "parameterType": { "__id": ":String?" }
+                  }
+                ],
+                "sortCriteria":
+                [
+                  {
+                    "member": { "__id": "SaleOrder/Properties[DocumentNo]" }
+                  }
+                ]
               },
               "source":
               {
-                "target": { "__id": "BrowseSaleOrders/Properties[SaleOrders]/Query" }
+                "target": { "__id": "BrowseSaleOrders/Properties[SaleOrders]/Query" },
+                "arguments":
+                [
+                  {
+                    "parameter": { "__id": "BrowseSaleOrders/Properties[SaleOrders]/Query/Parameters[SearchSO]" },
+                    "value":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "BrowseSaleOrders/Properties[SearchSO]" }
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
+            },
+            {
+              "id": "BrowseSaleOrders/Properties[SearchSO]",
+              "name": "SearchSO",
+              "elementType": { "__id": ":String?" },
+              "propertyType": { "__id": ":String?" }
             }
           ]
         },
@@ -40318,7 +40625,6 @@
                       {
                         "displayName": "เคลื่อนย้ายสินค้า",
                         "name": "ShowBrowseStockTransfers",
-                        "isHidden": true,
                         "kind": "Command",
                         "view": { "__id": ":Button" },
                         "propertySources":
@@ -41019,7 +41325,498 @@
           ]
         },
         {
-          "displayName": "View Purchase Order",
+          "displayName": "รายละเอียดการรับสินค้า",
+          "id": "ViewPOReceivedDetail",
+          "name": "ViewPOReceivedDetail",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "รายละเอียดการรับสินค้า",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Details",
+                    "name": "Details",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "Group1",
+                        "name": "Group1",
+                        "kind": "Group",
+                        "view": { "__id": ":RowsLayout" },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "Group2",
+                            "name": "Group2",
+                            "kind": "Group",
+                            "view": { "__id": ":ColumnsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "รหัสสินค้า",
+                                "name": "ProductCode",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[Product]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Product/Properties[ProductCode]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "ชื่อสินค้า",
+                                "name": "ProductName",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[Product]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Product/Properties[ProductName]" }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Group3",
+                        "name": "Group3",
+                        "kind": "Group",
+                        "view": { "__id": ":ColumnsLayout" },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "left",
+                            "name": "Group4",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "วันที่ต้องการ",
+                                "name": "RequireDate",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[RequireDate]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "วันที่รับสินค้า",
+                                "name": "ReceiveDate",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[ReceiveDate]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "สถานที่เก็บ",
+                                "name": "Location",
+                                "kind": "Details",
+                                "view": { "__id": ":Summary" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[Location]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Lot No.",
+                                "name": "LotNo",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[LotNo]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "จำนวนสั่งซื้อ",
+                                "name": "RequireQuantity",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[RequireQuantity]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "จำนวนรับ",
+                                "name": "ReceiveQuantity",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[ReceiveQuantity]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "ราคาสั่งซื้อ",
+                                "name": "RequireTotalCost",
+                                "kind": "Value",
+                                "view": { "__id": ":MoneyViewer" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[RequireTotalCost]" }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "right",
+                            "name": "right",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "ราคาซื้อจริง",
+                                "name": "ReceiveTotalCost",
+                                "kind": "Value",
+                                "view": { "__id": ":MoneyViewer" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[ReceiveTotalCost]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "สถานะการรับสินค้า",
+                                "name": "IsReceiveCompleteDescription",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "ViewPOReceivedDetail/Properties[IsReceiveCompleteDescription]" }
+                                }
+                              },
+                              {
+                                "displayName": "Is Receive Complete",
+                                "name": "IsReceiveComplete",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[IsReceiveComplete]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Purchase Order",
+                                "name": "PurchaseOrder",
+                                "isHidden": true,
+                                "kind": "Details",
+                                "view": { "__id": ":Summary" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[PurchaseOrder]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Created By",
+                                "name": "CreatedBy",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[CreatedBy]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Created",
+                                "name": "Created",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[Created]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Modified By",
+                                "name": "ModifiedBy",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[ModifiedBy]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Modified",
+                                "name": "Modified",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[Modified]" }
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Group",
+                        "name": "Group",
+                        "kind": "Group",
+                        "view": { "__id": ":RowsLayout" },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "Remark",
+                            "name": "Remark",
+                            "kind": "Value",
+                            "view": { "__id": ":TextArea" },
+                            "dataSource":
+                            {
+                              "links":
+                              [
+                                {
+                                  "member": { "__id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]" }
+                                },
+                                {
+                                  "member": { "__id": "PurchaseOrderDetail/Properties[Remark]" }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "propertySources":
+                [
+                  {
+                    "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ],
+            "propertySources":
+            [
+              {
+                "property": { "__id": ":Screen/Properties[ShowAsDialog]" },
+                "value": true
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "ViewPOReceivedDetail/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "ViewPOReceivedDetail/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "ViewPOReceivedDetail/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "ViewPOReceivedDetail/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "ViewPOReceivedDetail/Properties[PurchaseOrderDetail]",
+              "name": "PurchaseOrderDetail",
+              "elementType": { "__id": "PurchaseOrderDetail" },
+              "propertyType": { "__id": "PurchaseOrderDetail" },
+              ":@IsParameter": { }
+            },
+            {
+              "id": "ViewPOReceivedDetail/Properties[IsReceiveCompleteDescription]",
+              "name": "IsReceiveCompleteDescription",
+              "elementType": { "__id": ":String" },
+              "propertyType": { "__id": ":String" },
+              ":@Required": { }
+            }
+          ]
+        },
+        {
+          "displayName": "รายละเอียดใบสั่งซื้อสินค้า",
           "id": "ViewPurchaseOrder",
           "name": "ViewPurchaseOrder",
           "launchMode": "Single",
@@ -41029,7 +41826,7 @@
           },
           "rootContentItem":
           {
-            "displayName": "Root Content Item",
+            "displayName": "รายละเอียดใบสั่งซื้อสินค้า",
             "name": "RootContentItem",
             "kind": "Screen",
             "view": { "__id": ":Screen" },
@@ -41057,97 +41854,131 @@
                         "childContentItems":
                         [
                           {
-                            "displayName": "Group1",
-                            "name": "Group1",
+                            "displayName": "Group3",
+                            "name": "Group3",
                             "kind": "Group",
-                            "view": { "__id": ":ColumnsLayout" },
+                            "view": { "__id": ":RowsLayout" },
                             "childContentItems":
                             [
                               {
-                                "displayName": "เลขที่ใบสั่งซื้อ",
-                                "name": "PurchaseOrderNumber",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
+                                "displayName": "Group1",
+                                "name": "Group1",
+                                "kind": "Group",
+                                "view": { "__id": ":ColumnsLayout" },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "เลขที่ใบสั่งซื้อ",
+                                    "name": "PurchaseOrderNumber",
+                                    "kind": "Value",
+                                    "view": { "__id": ":TextBox" },
+                                    "dataSource":
                                     {
-                                      "member": { "__id": "ViewPurchaseOrder/Properties[PurchaseOrder]" }
-                                    },
-                                    {
-                                      "member": { "__id": "PurchaseOrder/Properties[PurchaseOrderNumber]" }
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "ViewPurchaseOrder/Properties[PurchaseOrder]" }
+                                        },
+                                        {
+                                          "member": { "__id": "PurchaseOrder/Properties[PurchaseOrderNumber]" }
+                                        }
+                                      ]
                                     }
-                                  ]
-                                }
-                              },
-                              {
-                                "displayName": "วันที่สั่งซื้อ",
-                                "name": "PurchaseOrderDate",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
+                                  },
+                                  {
+                                    "displayName": "วันที่สั่งซื้อ",
+                                    "name": "PurchaseOrderDate",
+                                    "kind": "Value",
+                                    "view": { "__id": ":DatePicker" },
+                                    "dataSource":
                                     {
-                                      "member": { "__id": "ViewPurchaseOrder/Properties[PurchaseOrder]" }
-                                    },
-                                    {
-                                      "member": { "__id": "PurchaseOrder/Properties[PurchaseOrderDate]" }
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "ViewPurchaseOrder/Properties[PurchaseOrder]" }
+                                        },
+                                        {
+                                          "member": { "__id": "PurchaseOrder/Properties[PurchaseOrderDate]" }
+                                        }
+                                      ]
                                     }
-                                  ]
-                                }
-                              },
-                              {
-                                "displayName": "ผู้จำหน่าย",
-                                "name": "SupplierName",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
+                                  },
+                                  {
+                                    "displayName": "Purchase Order Status",
+                                    "name": "PurchaseOrderStatus",
+                                    "isHidden": true,
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
                                     {
-                                      "member": { "__id": "ViewPurchaseOrder/Properties[PurchaseOrder]" }
-                                    },
-                                    {
-                                      "member": { "__id": "PurchaseOrder/Properties[Supplier]" }
-                                    },
-                                    {
-                                      "member": { "__id": "Supplier/Properties[SupplierName]" }
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "ViewPurchaseOrder/Properties[PurchaseOrder]" }
+                                        },
+                                        {
+                                          "member": { "__id": "PurchaseOrder/Properties[PurchaseOrderStatus]" }
+                                        }
+                                      ]
                                     }
-                                  ]
-                                }
-                              },
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "Group2",
+                            "name": "Group2",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
                               {
-                                "displayName": "Purchase Order Status",
-                                "name": "PurchaseOrderStatus",
-                                "isHidden": true,
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
+                                "displayName": "Group4",
+                                "name": "Group4",
+                                "kind": "Group",
+                                "view": { "__id": ":ColumnsLayout" },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "ผู้จำหน่าย",
+                                    "name": "SupplierName",
+                                    "kind": "Value",
+                                    "view": { "__id": ":TextBox" },
+                                    "dataSource":
                                     {
-                                      "member": { "__id": "ViewPurchaseOrder/Properties[PurchaseOrder]" }
-                                    },
-                                    {
-                                      "member": { "__id": "PurchaseOrder/Properties[PurchaseOrderStatus]" }
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "ViewPurchaseOrder/Properties[PurchaseOrder]" }
+                                        },
+                                        {
+                                          "member": { "__id": "PurchaseOrder/Properties[Supplier]" }
+                                        },
+                                        {
+                                          "member": { "__id": "Supplier/Properties[SupplierName]" }
+                                        }
+                                      ]
                                     }
-                                  ]
-                                }
-                              },
-                              {
-                                "displayName": "สถานะการรับสินค้า",
-                                "name": "POStatusDescription",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "ViewPurchaseOrder/Properties[POStatusDescription]" }
-                                }
+                                  },
+                                  {
+                                    "displayName": "สถานะการรับสินค้า",
+                                    "name": "POStatusDescription",
+                                    "kind": "Value",
+                                    "view": { "__id": ":TextBox" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "ViewPurchaseOrder/Properties[POStatusDescription]" }
+                                    },
+                                    "propertySources":
+                                    [
+                                      {
+                                        "property": { "__id": ":RootControl/Properties[Width]" },
+                                        "value": 100
+                                      }
+                                    ]
+                                  }
+                                ]
                               }
                             ]
                           }
@@ -41156,11 +41987,19 @@
                         [
                           {
                             "property": { "__id": ":RootControl/Properties[MinWidth]" },
-                            "value": 200
+                            "value": 400
                           },
                           {
                             "property": { "__id": ":RootControl/Properties[MaxWidth]" },
                             "value": 400
+                          },
+                          {
+                            "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                            "value": "FixedSize"
+                          },
+                          {
+                            "property": { "__id": ":RootControl/Properties[Width]" },
+                            "value": 500
                           }
                         ]
                       },
@@ -41198,6 +42037,7 @@
                                   {
                                     "displayName": "วันที่กำหนดส่ง",
                                     "name": "RequireDate",
+                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":Text" },
                                     "dataSource":
@@ -41262,16 +42102,6 @@
                                     }
                                   },
                                   {
-                                    "displayName": "วันที่รับ",
-                                    "name": "ReceiveDate",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "PurchaseOrderDetail/Properties[ReceiveDate]" }
-                                    }
-                                  },
-                                  {
                                     "displayName": "สถานที่รับ",
                                     "name": "LocationName",
                                     "kind": "Value",
@@ -41302,6 +42132,7 @@
                                   {
                                     "displayName": "จำนวนสั่ง",
                                     "name": "RequireQuantity",
+                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":Text" },
                                     "dataSource":
@@ -41343,6 +42174,7 @@
                                   {
                                     "displayName": "มูลค่าสั่งซื้อ",
                                     "name": "RequireTotalCost",
+                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":MoneyViewer" },
                                     "dataSource":
@@ -41353,6 +42185,7 @@
                                   {
                                     "displayName": "มูลค่าซื้อจริง",
                                     "name": "ReceiveTotalCost",
+                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":MoneyViewer" },
                                     "dataSource":
@@ -41374,11 +42207,22 @@
                                   {
                                     "displayName": "รับสินค้าแล้ว",
                                     "name": "IsReceiveComplete",
+                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":Text" },
                                     "dataSource":
                                     {
                                       "member": { "__id": "PurchaseOrderDetail/Properties[IsReceiveComplete]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "วันที่รับ",
+                                    "name": "ReceiveDate",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "PurchaseOrderDetail/Properties[ReceiveDate]" }
                                     }
                                   },
                                   {
@@ -41392,6 +42236,35 @@
                                     }
                                   }
                                 ]
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                                "source":
+                                {
+                                  "target": { "__id": "!module/Methods[showViewPOReceivedDetail]" },
+                                  ":@AssociatedCollection": { "collection": { "__id": "ViewPurchaseOrder/Properties[PurchaseOrderDetails]" } },
+                                  "arguments":
+                                  [
+                                    {
+                                      "parameter": { "__id": "!module/Methods[showViewPOReceivedDetail]/Parameters[PurchaseOrderDetail]" },
+                                      "value":
+                                      {
+                                        "links":
+                                        [
+                                          {
+                                            "member": { "__id": "ViewPurchaseOrder/Properties[PurchaseOrderDetails]" }
+                                          },
+                                          {
+                                            "member": { "__id": "CollectionView$PurchaseOrderDetail/Properties[selectedItem]" }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
                               }
                             ]
                           }
@@ -43870,6 +44743,19 @@
           "id": "!module/Methods[showSearchActiveProducts]",
           "name": "showSearchActiveProducts",
           ":@ShowScreenMethod": { "targetScreen": { "__id": "SearchActiveProducts" } }
+        },
+        {
+          "id": "!module/Methods[showViewPOReceivedDetail]",
+          "name": "showViewPOReceivedDetail",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "ViewPOReceivedDetail" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showViewPOReceivedDetail]/Parameters[PurchaseOrderDetail]",
+              "name": "PurchaseOrderDetail",
+              "parameterType": { "__id": "PurchaseOrderDetail" }
+            }
+          ]
         },
         {
           "id": "!module/Methods[showViewPurchaseOrder]",

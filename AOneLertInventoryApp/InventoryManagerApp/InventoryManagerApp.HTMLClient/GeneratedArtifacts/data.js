@@ -3389,6 +3389,14 @@ window.myapp = msls.application;
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/StockOnHandHistories(" + "Id=" + $toODataString(Id, "Int32?") + ")"
                     );
                 }
+            },
+            {
+                name: "QueryMaxSONumber", value: function () {
+                    return new $DataServiceQuery({ _entitySet: this.SaleOrders },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/QueryMaxSONumber()",
+                        {
+                        });
+                }
             }
         ]),
 

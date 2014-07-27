@@ -1492,6 +1492,9 @@
         /// <field name="POStatusDescription" type="String">
         /// Gets or sets the pOStatusDescription for this screen.
         /// </field>
+        /// <field name="SearchParameter" type="String">
+        /// Gets or sets the searchParameter for this screen.
+        /// </field>
         /// <field name="details" type="msls.application.BrowsePO.Details">
         /// Gets the details for this screen.
         /// </field>
@@ -1797,6 +1800,9 @@
         /// </param>
         /// <field name="SaleOrders" type="msls.VisualCollection" elementType="msls.application.SaleOrder">
         /// Gets the saleOrders for this screen.
+        /// </field>
+        /// <field name="SearchSO" type="String">
+        /// Gets or sets the searchSO for this screen.
         /// </field>
         /// <field name="details" type="msls.application.BrowseSaleOrders.Details">
         /// Gets the details for this screen.
@@ -2162,6 +2168,31 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "SearchActiveProducts", parameters);
+    }
+
+    function ViewPOReceivedDetail(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the ViewPOReceivedDetail screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="PurchaseOrderDetail" type="msls.application.PurchaseOrderDetail">
+        /// Gets or sets the purchaseOrderDetail for this screen.
+        /// </field>
+        /// <field name="IsReceiveCompleteDescription" type="String">
+        /// Gets or sets the isReceiveCompleteDescription for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.ViewPOReceivedDetail.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "ViewPOReceivedDetail", parameters);
     }
 
     function ViewPurchaseOrder(parameters, dataWorkspace) {
@@ -2947,11 +2978,12 @@
         BrowsePO: $defineScreen(BrowsePO, [
             {
                 name: "PurchaseOrders", kind: "collection", elementType: lightSwitchApplication.PurchaseOrder,
-                createQuery: function () {
-                    return this.dataWorkspace.ApplicationData.PurchaseOrders.expand("Supplier");
+                createQuery: function (SearchParameter) {
+                    return this.dataWorkspace.ApplicationData.PurchaseOrders.filter("" + ((SearchParameter === undefined || SearchParameter === null) ? "true" : "substringof(" + $toODataString(SearchParameter, "String?") + ", PurchaseOrderNumber)") + " or " + ((SearchParameter === undefined || SearchParameter === null) ? "true" : "substringof(" + $toODataString(SearchParameter, "String?") + ", Supplier/SupplierName)") + "").orderByDescending("PurchaseOrderNumber").expand("Supplier");
                 }
             },
-            { name: "POStatusDescription", kind: "local", type: String }
+            { name: "POStatusDescription", kind: "local", type: String },
+            { name: "SearchParameter", kind: "local", type: String }
         ], [
             { name: "PurchaseOrder_ItemTap" },
             { name: "ShowAddEditPO_Tap" }
@@ -3119,10 +3151,11 @@
         BrowseSaleOrders: $defineScreen(BrowseSaleOrders, [
             {
                 name: "SaleOrders", kind: "collection", elementType: lightSwitchApplication.SaleOrder,
-                createQuery: function () {
-                    return this.dataWorkspace.ApplicationData.SaleOrders.expand("Customer").expand("Customer.TransportRoute");
+                createQuery: function (SearchSO) {
+                    return this.dataWorkspace.ApplicationData.SaleOrders.filter("(" + ((SearchSO === undefined || SearchSO === null) ? "true" : "substringof(" + $toODataString(SearchSO, "String?") + ", DocumentNo)") + " or " + ((SearchSO === undefined || SearchSO === null) ? "true" : "substringof(" + $toODataString(SearchSO, "String?") + ", ReferenceNo)") + ") or " + ((SearchSO === undefined || SearchSO === null) ? "true" : "substringof(" + $toODataString(SearchSO, "String?") + ", Customer/CustomerName)") + "").orderByDescending("DocumentNo").expand("Customer").expand("Customer.TransportRoute");
                 }
-            }
+            },
+            { name: "SearchSO", kind: "local", type: String }
         ], [
         ]),
 
@@ -3277,6 +3310,12 @@
                     return this.dataWorkspace.ApplicationData.Products.expand("ProductCategory").expand("ProductGroup").expand("Location").expand("UnitOfMeasure");
                 }
             }
+        ], [
+        ]),
+
+        ViewPOReceivedDetail: $defineScreen(ViewPOReceivedDetail, [
+            { name: "PurchaseOrderDetail", kind: "local", type: lightSwitchApplication.PurchaseOrderDetail },
+            { name: "IsReceiveCompleteDescription", kind: "local", type: String }
         ], [
         ]),
 
@@ -4380,6 +4419,18 @@
             /// <returns type="WinJS.Promise" />
             var parameters = Array.prototype.slice.call(arguments, 0, 0);
             return lightSwitchApplication.showScreen("SearchActiveProducts", parameters, options);
+        }),
+
+        showViewPOReceivedDetail: $defineShowScreen(function showViewPOReceivedDetail(PurchaseOrderDetail, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the ViewPOReceivedDetail screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("ViewPOReceivedDetail", parameters, options);
         }),
 
         showViewPurchaseOrder: $defineShowScreen(function showViewPurchaseOrder(PurchaseOrder, options) {
