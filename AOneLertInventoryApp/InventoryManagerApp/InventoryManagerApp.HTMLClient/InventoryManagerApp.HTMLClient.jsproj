@@ -265,6 +265,9 @@
     <Content Include="Screens\MobileHome.lsml.js">
       <DependentUpon>MobileHome.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\ViewPOReceivedDetail.lsml.js">
+      <DependentUpon>ViewPOReceivedDetail.lsml</DependentUpon>
+    </Content>
     <Content Include="Screens\ViewPurchaseOrder.lsml.js">
       <DependentUpon>ViewPurchaseOrder.lsml</DependentUpon>
     </Content>
@@ -401,6 +404,7 @@
     <LightSwitchModel Include="Screens\Home.lsml" />
     <LightSwitchModel Include="Screens\MobileHome.lsml" />
     <LightSwitchModel Include="Screens\SearchActiveProducts.lsml" />
+    <LightSwitchModel Include="Screens\ViewPOReceivedDetail.lsml" />
     <LightSwitchModel Include="Screens\ViewPurchaseOrder.lsml" />
     <LightSwitchModel Include="Screens\ViewPurchaseOrderDetail.lsml" />
     <LightSwitchModel Include="Screens\ViewReceiveFromPurchaseOrder.lsml" />
