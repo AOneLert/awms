@@ -188,6 +188,7 @@
                 </ContentItem>
                 <ContentItem
                   Name="IsAvailableForSale"
+                  IsHidden="True"
                   Kind="Value"
                   DataType=":Boolean">
                   <ContentItem.Attributes>
@@ -203,6 +204,19 @@
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                 </ContentItem>
+                <ContentItem
+                  Name="AvailableForSaleDescription"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="BrowseProductPricings/Properties[AvailableForSaleDescription]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
               </ContentItem>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -210,21 +224,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showAddEditProductPricing]">
-                        <CallExpression.Attributes>
-                          <AssociatedCollection
-                            Collection="BrowseProductPricings/Properties[StockOnHands]" />
-                        </CallExpression.Attributes>
-                        <ArgumentExpression
-                          Parameter="StockOnHand">
-                          <ChainExpression>
-                            <MemberExpression
-                              Member="BrowseProductPricings/Properties[StockOnHands]" />
-                            <MemberExpression
-                              Member="selectedItem" />
-                          </ChainExpression>
-                        </ArgumentExpression>
-                      </CallExpression>
+                        Target="BrowseProductPricings/Methods[StockOnHand_ItemTap]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>
@@ -318,6 +318,8 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
+      <ScreenMethod
+        Name="StockOnHand_ItemTap" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty
@@ -441,6 +443,13 @@
       <ScreenProperty
         Name="Search"
         PropertyType=":String?" />
+      <ScreenProperty
+        Name="AvailableForSaleDescription"
+        PropertyType=":String">
+        <ScreenProperty.Attributes>
+          <Required />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
     </Screen.Properties>
   </Screen>
   <Application.Methods>
