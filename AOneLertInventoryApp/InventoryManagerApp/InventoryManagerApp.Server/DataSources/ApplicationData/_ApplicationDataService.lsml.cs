@@ -524,8 +524,8 @@ namespace LightSwitchApplication
         partial void PurchaseOrderDetails_Inserting(PurchaseOrderDetail entity)
         {
             if (entity.ReceiveDate != null) {
-                entity.LotNo = getNewLotFromStockOnhand(entity.ReceiveDate.Value, entity.Product, entity.Location);
-
+                string receiveType = getPOTransactionType(entity.Product);
+                entity.LotNo = getNewLotFromStockOnhand(receiveType, entity.ReceiveDate.Value, entity.Product, "");
             }
         }
 
@@ -533,28 +533,81 @@ namespace LightSwitchApplication
         {
             if (entity.ReceiveDate != null)
             {
-                entity.LotNo = getNewLotFromStockOnhand(entity.ReceiveDate.Value, entity.Product, entity.Location);
-
+                string receiveType = getPOTransactionType(entity.Product);
+                entity.LotNo = getNewLotFromStockOnhand(receiveType, entity.ReceiveDate.Value, entity.Product, "");
             }
         }
 
-        private string getNewLotFromStockOnhand(DateTime LotDate,Product Product,Location Location) {
+        private string getPOTransactionType(Product ReceiveProduct) {
+            string receiveType = "";
+            switch (ReceiveProduct.ProductCategory.ProductCategoryName)
+            {
+                case "วัตถุดิบ": receiveType = "PORM";
+                    break;
+                case "สินค้า": receiveType = "POFG";
+                    break;
+                case "ของเสีย": receiveType = "POWS";
+                    break;
+                default: receiveType = "PONA";
+                    break;
+            }
+            return receiveType;
+        }
+        private string getNewLotFromStockOnhand(string ReceiveType,DateTime LotDate,Product ReceiveProduct,string OldRawmatLotNo) {
             string newLot = "";
             string insertLot = (Int32.Parse(String.Format("{0:yy}", LotDate))%10).ToString() + String.Format("{0:MMdd}", LotDate);
-            var queryStockOnHand = from stock in StockOnHands
-                                   where stock.Product.Id == (Product.Id)
-                                    && stock.Location.Id == (Location.Id)
-                                    && stock.LotNo.Contains(insertLot)
-                                   orderby stock.LotNo descending
-                                   select stock.LotNo;
-            if (queryStockOnHand.Count() > 0)
+
+            string[] ReceiveNewLotPrefix = { "PO","BF","RT" };
+            if (ReceiveNewLotPrefix.Contains(ReceiveType.Substring(0, 2)))
             {
-                string LastLot = queryStockOnHand.First();
-                newLot = insertLot + (Int32.Parse(LastLot.Substring(6, 1)) + 1).ToString();
+                var queryStockOnHand = from stock in StockOnHands
+                                       where stock.Product.Id == (ReceiveProduct.Id) && stock.LotNo.Contains(insertLot)
+                                       orderby stock.LotNo descending
+                                       select stock.LotNo;
+                if (queryStockOnHand.Count() > 0)
+                {
+                    string LastLot = queryStockOnHand.First();
+                    newLot = insertLot + (Int32.Parse(LastLot.Substring(6, 1)) + 1).ToString();
+                }
+                else
+                {
+                    newLot = insertLot + '1';
+                }
             }
-            else
+
+            string[] ReceiveOldLotPrefix = { "GIRM","AJQT","AJCT","TRFS" };
+            if (ReceiveOldLotPrefix.Contains(ReceiveType))
             {
-                newLot = insertLot + '1';
+                newLot = OldRawmatLotNo;
+            }
+
+            string[] ReceiveCheckLotPrefix = { "GIFG", "GIWS" };
+            if (ReceiveCheckLotPrefix.Contains(ReceiveType))
+            {
+                var SelectProduct = from Item in Products where Item.Id == ReceiveProduct.Id select Item.LotType;
+                if (SelectProduct.Count() > 0) {
+                    string ItemCategory = SelectProduct.FirstOrDefault();
+                    if (ItemCategory == "Fix")
+                    {
+                        newLot = OldRawmatLotNo;
+                    }else
+                    {
+                        var queryStockOnHand = from stock in StockOnHands
+                                               where stock.Product.Id == (ReceiveProduct.Id) && stock.LotNo.Contains(insertLot)
+                                               orderby stock.LotNo descending
+                                               select stock.LotNo;
+                        if (queryStockOnHand.Count() > 0)
+                        {
+                            string LastLot = queryStockOnHand.First();
+                            newLot = insertLot + (Int32.Parse(LastLot.Substring(6, 1)) + 1).ToString();
+                        }
+                        else
+                        {
+                            newLot = insertLot + '1';
+                        }
+                    }
+                }
+
             }
             return newLot;
         }        
