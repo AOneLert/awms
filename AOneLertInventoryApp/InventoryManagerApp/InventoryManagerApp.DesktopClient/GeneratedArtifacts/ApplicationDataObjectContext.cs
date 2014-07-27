@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
-// Generation date: 7/27/2014 11:06:06 PM
+// Generation date: 7/28/2014 1:29:14 AM
 namespace LightSwitchApplication.Implementation
 {
     
@@ -2195,27 +2195,28 @@ namespace LightSwitchApplication.Implementation
                 "on(LightSwitchApplication.PurchaseOrder)\" EntitySet=\"PurchaseOrders\" m:HttpMetho" +
                 "d=\"GET\" /><FunctionImport Name=\"QueryMaxPONumber\" ReturnType=\"Collection(LightSw" +
                 "itchApplication.PurchaseOrder)\" EntitySet=\"PurchaseOrders\" m:HttpMethod=\"GET\" />" +
-                "<FunctionImport Name=\"QueryStockOnHandForIssue\" ReturnType=\"Collection(LightSwit" +
-                "chApplication.StockOnHand)\" EntitySet=\"StockOnHands\" m:HttpMethod=\"GET\" /><Funct" +
-                "ionImport Name=\"StockOnHandForSale\" ReturnType=\"Collection(LightSwitchApplicatio" +
-                "n.StockOnHand)\" EntitySet=\"StockOnHands\" m:HttpMethod=\"GET\" /><FunctionImport Na" +
-                "me=\"SupplierGroupsActiveQuery\" ReturnType=\"Collection(LightSwitchApplication.Sup" +
-                "plierGroup)\" EntitySet=\"SupplierGroups\" m:HttpMethod=\"GET\" /><FunctionImport Nam" +
-                "e=\"SupplierActiveQuery\" ReturnType=\"Collection(LightSwitchApplication.Supplier)\"" +
-                " EntitySet=\"Suppliers\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"TransportRoute" +
-                "sActiveQuery\" ReturnType=\"Collection(LightSwitchApplication.TransportRoute)\" Ent" +
-                "itySet=\"TransportRoutes\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"UnitOfMeasur" +
-                "esActiveQuery\" ReturnType=\"Collection(LightSwitchApplication.UnitOfMeasure)\" Ent" +
-                "itySet=\"UnitOfMeasures\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"WorkersActive" +
-                "Query\" ReturnType=\"Collection(LightSwitchApplication.Worker)\" EntitySet=\"Workers" +
-                "\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"QueryMaxWONumber\" ReturnType=\"Colle" +
-                "ction(LightSwitchApplication.WorkOrder)\" EntitySet=\"WorkOrders\" m:HttpMethod=\"GE" +
-                "T\" /><FunctionImport Name=\"WorkOrderIsNotReceive\" ReturnType=\"Collection(LightSw" +
-                "itchApplication.WorkOrder)\" EntitySet=\"WorkOrders\" m:HttpMethod=\"GET\" /><Functio" +
-                "nImport Name=\"Microsoft_LightSwitch_GetCanInformation\" ReturnType=\"Edm.String\" m" +
-                ":HttpMethod=\"GET\"><Parameter Name=\"dataServiceMembers\" Type=\"Edm.String\" Mode=\"I" +
-                "n\" /></FunctionImport></EntityContainer></Schema></edmx:DataServices></edmx:Edmx" +
-                ">";
+                "<FunctionImport Name=\"QueryMaxSONumber\" ReturnType=\"Collection(LightSwitchApplic" +
+                "ation.SaleOrder)\" EntitySet=\"SaleOrders\" m:HttpMethod=\"GET\" /><FunctionImport Na" +
+                "me=\"QueryStockOnHandForIssue\" ReturnType=\"Collection(LightSwitchApplication.Stoc" +
+                "kOnHand)\" EntitySet=\"StockOnHands\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"St" +
+                "ockOnHandForSale\" ReturnType=\"Collection(LightSwitchApplication.StockOnHand)\" En" +
+                "titySet=\"StockOnHands\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"SupplierGroups" +
+                "ActiveQuery\" ReturnType=\"Collection(LightSwitchApplication.SupplierGroup)\" Entit" +
+                "ySet=\"SupplierGroups\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"SupplierActiveQ" +
+                "uery\" ReturnType=\"Collection(LightSwitchApplication.Supplier)\" EntitySet=\"Suppli" +
+                "ers\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"TransportRoutesActiveQuery\" Retu" +
+                "rnType=\"Collection(LightSwitchApplication.TransportRoute)\" EntitySet=\"TransportR" +
+                "outes\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"UnitOfMeasuresActiveQuery\" Ret" +
+                "urnType=\"Collection(LightSwitchApplication.UnitOfMeasure)\" EntitySet=\"UnitOfMeas" +
+                "ures\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"WorkersActiveQuery\" ReturnType=" +
+                "\"Collection(LightSwitchApplication.Worker)\" EntitySet=\"Workers\" m:HttpMethod=\"GE" +
+                "T\" /><FunctionImport Name=\"QueryMaxWONumber\" ReturnType=\"Collection(LightSwitchA" +
+                "pplication.WorkOrder)\" EntitySet=\"WorkOrders\" m:HttpMethod=\"GET\" /><FunctionImpo" +
+                "rt Name=\"WorkOrderIsNotReceive\" ReturnType=\"Collection(LightSwitchApplication.Wo" +
+                "rkOrder)\" EntitySet=\"WorkOrders\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"Micr" +
+                "osoft_LightSwitch_GetCanInformation\" ReturnType=\"Edm.String\" m:HttpMethod=\"GET\">" +
+                "<Parameter Name=\"dataServiceMembers\" Type=\"Edm.String\" Mode=\"In\" /></FunctionImp" +
+                "ort></EntityContainer></Schema></edmx:DataServices></edmx:Edmx>";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
             private static string GetConcatenatedEdmxString()
             {
