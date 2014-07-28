@@ -709,6 +709,7 @@
           <ScalarProperty Name="WorkOrder_Employee" ColumnName="WorkOrder_Employee" />
           <ScalarProperty Name="WorkOrder_Machine" ColumnName="WorkOrder_Machine" />
           <ScalarProperty Name="IsReceiveComplete" ColumnName="IsReceiveComplete" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="Created" ColumnName="Created" />
           <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />

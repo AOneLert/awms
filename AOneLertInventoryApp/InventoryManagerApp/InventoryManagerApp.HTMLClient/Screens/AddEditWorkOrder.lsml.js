@@ -46,8 +46,8 @@ myapp.AddEditWorkOrder.created = function (screen) {
         screen.findContentItem("WorkOrderDate").isEnabled = false;
         screen.findContentItem("Employee").isEnabled = false;
         screen.findContentItem("Machine").isEnabled = false;
-        screen.findContentItem("WorkOrderStatus").isEnabled = false;
-        screen.findContentItem("AddWorkOrderIssueDetail").isEnabled = false;
+        //screen.findContentItem("WorkOrderStatus").isEnabled = false;
+        //screen.findContentItem("AddWorkOrderIssueDetail").isEnabled = false;
         screen.findContentItem("ShowPopupEmployee").isEnabled = false;
         screen.findContentItem("ShowPopupMachine").isEnabled = false;
     }

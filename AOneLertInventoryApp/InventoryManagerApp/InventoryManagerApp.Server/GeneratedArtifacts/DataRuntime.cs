@@ -1309,6 +1309,14 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.SaleOrder> QueryMaxSONumber()
+        {
+            return this.Details.Methods.QueryMaxSONumber.CreateInvocation().Execute();
+        }
+        
+        /// <summary>
         /// Returns the entity whose identity is specified by the parameter(s).
         /// </summary>
         /// <param name="Id">
@@ -2309,6 +2317,14 @@ namespace LightSwitchApplication
                     get
                     {
                         return base.GetItem(global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties.SaleOrders_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.SaleOrder>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.SaleOrder> QueryMaxSONumber
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties.QueryMaxSONumber) as global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.SaleOrder>;
                     }
                 }
                 
@@ -3632,6 +3648,16 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.SaleOrder>.Entry
+                    QueryMaxSONumber = new global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.SaleOrder>.Entry(
+                        "QueryMaxSONumber",
+                        global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties._QueryMaxSONumber_Stub);
+                private static void _QueryMaxSONumber_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ApplicationData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.SaleOrder>.Data> c, global::LightSwitchApplication.ApplicationData.DetailsClass d, object sf)
+                {
+                    c(d, ref d._QueryMaxSONumber, sf);
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.ShippingMethod>.Entry
                     ShippingMethods_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.ShippingMethod>.Entry(
                         "ShippingMethods_Single",
@@ -4806,6 +4832,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.SaleOrder>.Data _SaleOrders_SingleOrDefault;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.SaleOrder>.Data _QueryMaxSONumber;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.ShippingMethod>.Data _ShippingMethods_Single;

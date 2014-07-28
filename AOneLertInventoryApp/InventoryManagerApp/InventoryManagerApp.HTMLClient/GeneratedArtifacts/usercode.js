@@ -62,5 +62,6 @@ document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseUnitOfMea
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseWorkOrders.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/Home.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MobileHome.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/ViewPOReceivedDetail.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/ViewPurchaseOrder.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/ViewPurchaseOrderDetail.lsml.js\"></script>");

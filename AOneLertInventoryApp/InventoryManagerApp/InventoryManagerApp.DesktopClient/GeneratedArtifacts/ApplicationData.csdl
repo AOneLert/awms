@@ -749,6 +749,7 @@
     <Property Name="WorkOrder_Employee" Type="Edm.Int32" Nullable="false" />
     <Property Name="WorkOrder_Machine" Type="Edm.Int32" Nullable="false" />
     <Property Name="IsReceiveComplete" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="Remark" Type="Edm.String" Nullable="false" MaxLength="255" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
@@ -1498,6 +1499,7 @@
     </FunctionImport>
     <FunctionImport Name="PurchaseOrderNotClose" ReturnType="Collection(LightSwitchApplication.PurchaseOrder)" EntitySet="PurchaseOrders" m:HttpMethod="GET" />
     <FunctionImport Name="QueryMaxPONumber" ReturnType="Collection(LightSwitchApplication.PurchaseOrder)" EntitySet="PurchaseOrders" m:HttpMethod="GET" />
+    <FunctionImport Name="QueryMaxSONumber" ReturnType="Collection(LightSwitchApplication.SaleOrder)" EntitySet="SaleOrders" m:HttpMethod="GET" />
     <FunctionImport Name="QueryStockOnHandForIssue" ReturnType="Collection(LightSwitchApplication.StockOnHand)" EntitySet="StockOnHands" m:HttpMethod="GET" />
     <FunctionImport Name="StockOnHandForSale" ReturnType="Collection(LightSwitchApplication.StockOnHand)" EntitySet="StockOnHands" m:HttpMethod="GET" />
     <FunctionImport Name="SupplierGroupsActiveQuery" ReturnType="Collection(LightSwitchApplication.SupplierGroup)" EntitySet="SupplierGroups" m:HttpMethod="GET" />
@@ -1507,7 +1509,6 @@
     <FunctionImport Name="WorkersActiveQuery" ReturnType="Collection(LightSwitchApplication.Worker)" EntitySet="Workers" m:HttpMethod="GET" />
     <FunctionImport Name="QueryMaxWONumber" ReturnType="Collection(LightSwitchApplication.WorkOrder)" EntitySet="WorkOrders" m:HttpMethod="GET" />
     <FunctionImport Name="WorkOrderIsNotReceive" ReturnType="Collection(LightSwitchApplication.WorkOrder)" EntitySet="WorkOrders" m:HttpMethod="GET" />
-    <FunctionImport Name="QueryMaxSONumber" ReturnType="Collection(LightSwitchApplication.SaleOrder)" EntitySet="SaleOrders" m:HttpMethod="GET" />
     <FunctionImport Name="Microsoft_LightSwitch_GetCanInformation" ReturnType="Edm.String" m:HttpMethod="GET">
       <Parameter Name="dataServiceMembers" Type="Edm.String" Mode="In" />
     </FunctionImport>

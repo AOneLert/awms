@@ -5104,6 +5104,11 @@ namespace LightSwitchApplication.Implementation
             this.___OnPropertyChanged("IsReceiveComplete");
         }
         
+        partial void OnRemarkChanged()
+        {
+            this.___OnPropertyChanged("Remark");
+        }
+        
         partial void OnCreatedByChanged()
         {
             this.___OnPropertyChanged("CreatedBy");
