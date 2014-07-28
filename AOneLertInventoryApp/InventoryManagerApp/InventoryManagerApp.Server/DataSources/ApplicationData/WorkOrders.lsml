@@ -72,6 +72,15 @@
         FromEnd="WorkOrder"
         ToEnd="WorkOrderProduce" />
       <EntityProperty
+        Name="Remark"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
         PropertyType=":Person?">

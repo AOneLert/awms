@@ -2061,6 +2061,9 @@ window.myapp = msls.application;
         /// <field name="WorkOrderProduces" type="msls.EntityCollection" elementType="msls.application.WorkOrderProduce">
         /// Gets the workOrderProduces for this workOrder.
         /// </field>
+        /// <field name="Remark" type="String">
+        /// Gets or sets the remark for this workOrder.
+        /// </field>
         /// <field name="CreatedBy" type="String">
         /// Gets or sets the createdBy for this workOrder.
         /// </field>
@@ -2860,6 +2863,7 @@ window.myapp = msls.application;
             { name: "IsReceiveComplete", type: Boolean },
             { name: "WorkOrderIssueDetails", kind: "collection", elementType: WorkOrderIssueDetail },
             { name: "WorkOrderProduces", kind: "collection", elementType: WorkOrderProduce },
+            { name: "Remark", type: String },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },
@@ -3193,6 +3197,14 @@ window.myapp = msls.application;
                 }
             },
             {
+                name: "QueryMaxSONumber", value: function () {
+                    return new $DataServiceQuery({ _entitySet: this.SaleOrders },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/QueryMaxSONumber()",
+                        {
+                        });
+                }
+            },
+            {
                 name: "ShippingMethods_SingleOrDefault", value: function (Id) {
                     return new $DataServiceQuery({ _entitySet: this.ShippingMethods },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/ShippingMethods(" + "Id=" + $toODataString(Id, "Int32?") + ")"
@@ -3386,14 +3398,6 @@ window.myapp = msls.application;
                 name: "WorkOrderIsNotReceive", value: function () {
                     return new $DataServiceQuery({ _entitySet: this.WorkOrders },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/WorkOrderIsNotReceive()",
-                        {
-                        });
-                }
-            },
-            {
-                name: "QueryMaxSONumber", value: function () {
-                    return new $DataServiceQuery({ _entitySet: this.SaleOrders },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/QueryMaxSONumber()",
                         {
                         });
                 }

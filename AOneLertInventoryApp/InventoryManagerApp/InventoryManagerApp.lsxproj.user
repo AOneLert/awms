@@ -4,8 +4,8 @@
     <EnableENC>False</EnableENC>
     <ProjectView>ProjectFiles</ProjectView>
     <StartUpClientProject>InventoryManagerApp.HTMLClient</StartUpClientProject>
-    <SchemaManagementLastSsdlWriteTime>635420494233746530</SchemaManagementLastSsdlWriteTime>
-    <SchemaManagementSchemaBuildState>1</SchemaManagementSchemaBuildState>
+    <SchemaManagementLastSsdlWriteTime>635421039292451207</SchemaManagementLastSsdlWriteTime>
+    <SchemaManagementSchemaBuildState>0</SchemaManagementSchemaBuildState>
     <GrantedPermissions>Microsoft.LightSwitch.Security:SecurityAdministration</GrantedPermissions>
     <SchemaManagementDatabaseIncludesSecurityObjects>True</SchemaManagementDatabaseIncludesSecurityObjects>
     <EncryptedPublishConnectionString>
@@ -21,6 +21,6 @@
     <AzureSubscriptionId>c58035f4-f4cc-4df0-9519-9344feff37f8</AzureSubscriptionId>
     <AzureManagementThumbprint>8D977043435681D77518732064CD787D0A241894</AzureManagementThumbprint>
     <SharePointServerToServerCertificatePassword />
-    <SchemaManagementLastDatabaseProjectDacpacWriteTime>635420494314845306</SchemaManagementLastDatabaseProjectDacpacWriteTime>
+    <SchemaManagementLastDatabaseProjectDacpacWriteTime>635421039311815632</SchemaManagementLastDatabaseProjectDacpacWriteTime>
   </PropertyGroup>
 </Project>

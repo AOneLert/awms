@@ -202,6 +202,13 @@ namespace LightSwitchApplication.Implementation
             return query;
         }
     
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.SaleOrder> QueryMaxSONumber()
+        {
+            global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.SaleOrder> query;
+            query = this.GetQuery<global::LightSwitchApplication.Implementation.SaleOrder>("SaleOrders");
+            return query;
+        }
+    
         public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.StockOnHand> QueryStockOnHandForIssue()
         {
             global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.StockOnHand> query;

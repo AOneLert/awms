@@ -79,6 +79,23 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
+                  Name="Remark"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="หมายเหตุ" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="WorkOrder/Properties[Remark]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
                   Name="FirstName"
                   Kind="Value"
                   DataType=":String">
@@ -99,6 +116,7 @@
                 </ContentItem>
                 <ContentItem
                   Name="LastName"
+                  IsHidden="True"
                   Kind="Value"
                   DataType=":String">
                   <ContentItem.Attributes>
@@ -118,6 +136,7 @@
                 </ContentItem>
                 <ContentItem
                   Name="EmployeeFullName"
+                  IsHidden="True"
                   Kind="Value"
                   DataType=":String">
                   <ContentItem.Attributes>
@@ -154,6 +173,7 @@
                 </ContentItem>
                 <ContentItem
                   Name="WorkOrderStatus"
+                  IsHidden="True"
                   Kind="Value"
                   DataType=":Boolean">
                   <ContentItem.Attributes>
@@ -169,6 +189,23 @@
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                 </ContentItem>
+                <ContentItem
+                  Name="WorkOrderStatusDescription"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="สถานะการผลิต" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="BrowseWorkOrders/Properties[WorkOrderStatusDescription]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
               </ContentItem>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -176,21 +213,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showViewWorkOrder]">
-                        <CallExpression.Attributes>
-                          <AssociatedCollection
-                            Collection="BrowseWorkOrders/Properties[WorkOrders]" />
-                        </CallExpression.Attributes>
-                        <ArgumentExpression
-                          Parameter="WorkOrder">
-                          <ChainExpression>
-                            <MemberExpression
-                              Member="BrowseWorkOrders/Properties[WorkOrders]" />
-                            <MemberExpression
-                              Member="selectedItem" />
-                          </ChainExpression>
-                        </ArgumentExpression>
-                      </CallExpression>
+                        Target="BrowseWorkOrders/Methods[WorkOrder_ItemTap]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>
@@ -263,6 +286,8 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
+      <ScreenMethod
+        Name="WorkOrder_ItemTap" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty
@@ -293,6 +318,13 @@
       </ScreenCollectionProperty>
       <ScreenProperty
         Name="EmployeeFullName"
+        PropertyType=":String">
+        <ScreenProperty.Attributes>
+          <Required />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
+      <ScreenProperty
+        Name="WorkOrderStatusDescription"
         PropertyType=":String">
         <ScreenProperty.Attributes>
           <Required />

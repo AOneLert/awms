@@ -3407,6 +3407,16 @@
         Name="SaleOrder"
         EntitySet="SaleOrders" />
     </AssociationSet>
+    <QueryOperation
+      Name="QueryMaxSONumber"
+      ReturnType="SaleOrder*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="SaleOrders" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+    </QueryOperation>
     <EntitySet
       Name="ShippingMethods"
       CanDelete="True"
@@ -4580,16 +4590,6 @@
           </ChainExpression>
         </SortCriterion>
       </QueryOperation.SortCriteria>
-    </QueryOperation>
-    <QueryOperation
-      Name="QueryMaxSONumber"
-      ReturnType="SaleOrder*">
-      <QueryOperation.Source>
-        <QuerySourceExpressionTree>
-          <MemberExpression
-            Member="SaleOrders" />
-        </QuerySourceExpressionTree>
-      </QueryOperation.Source>
     </QueryOperation>
   </EntityContainer>
   <Association
@@ -8036,6 +8036,15 @@
         Association="WorkOrderProduce_WorkOrder"
         FromEnd="WorkOrder"
         ToEnd="WorkOrderProduce" />
+      <EntityProperty
+        Name="Remark"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"

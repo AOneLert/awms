@@ -1531,6 +1531,30 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string Remark
+        {
+            get
+            {
+                return global::LightSwitchApplication.WorkOrder.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrder.DetailsClass.PropertySetProperties.Remark);
+            }
+            set
+            {
+                global::LightSwitchApplication.WorkOrder.DetailsClass.SetValue(this, global::LightSwitchApplication.WorkOrder.DetailsClass.PropertySetProperties.Remark, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Remark_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Remark_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Remark_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string CreatedBy
         {
             get
@@ -1855,6 +1879,14 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrder, global::LightSwitchApplication.WorkOrder.DetailsClass, string> Remark
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.WorkOrder.DetailsClass.PropertySetProperties.Remark) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrder, global::LightSwitchApplication.WorkOrder.DetailsClass, string>;
+                    }
+                }
+                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrder, global::LightSwitchApplication.WorkOrder.DetailsClass, string> CreatedBy
                 {
                     get
@@ -1937,6 +1969,7 @@ namespace LightSwitchApplication
                 new string WorkOrderNumber { get; set; }
                 new global::System.DateTime WorkOrderDate { get; set; }
                 new bool IsReceiveComplete { get; set; }
+                new string Remark { get; set; }
                 new string CreatedBy { get; }
                 new global::System.Nullable<global::System.DateTimeOffset> Created { get; }
                 new string ModifiedBy { get; }
@@ -2101,6 +2134,43 @@ namespace LightSwitchApplication
                 private static void _IsReceiveComplete_OnValueChanged(global::LightSwitchApplication.WorkOrder e)
                 {
                     e.IsReceiveComplete_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrder, global::LightSwitchApplication.WorkOrder.DetailsClass, string>.Entry
+                    Remark = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrder, global::LightSwitchApplication.WorkOrder.DetailsClass, string>.Entry(
+                        "Remark",
+                        global::LightSwitchApplication.WorkOrder.DetailsClass.PropertySetProperties._Remark_Stub,
+                        global::LightSwitchApplication.WorkOrder.DetailsClass.PropertySetProperties._Remark_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrder.DetailsClass.PropertySetProperties._Remark_Validate,
+                        global::LightSwitchApplication.WorkOrder.DetailsClass.PropertySetProperties._Remark_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrder.DetailsClass.PropertySetProperties._Remark_SetImplementationValue,
+                        global::LightSwitchApplication.WorkOrder.DetailsClass.PropertySetProperties._Remark_OnValueChanged);
+                private static void _Remark_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrder.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrder, global::LightSwitchApplication.WorkOrder.DetailsClass, string>.Data> c, global::LightSwitchApplication.WorkOrder.DetailsClass d, object sf)
+                {
+                    c(d, ref d._Remark, sf);
+                }
+                private static bool _Remark_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrder e)
+                {
+                    bool result = false;
+                    e.Remark_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _Remark_Validate(global::LightSwitchApplication.WorkOrder e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.Remark_Validate(r);
+                }
+                private static string _Remark_GetImplementationValue(global::LightSwitchApplication.WorkOrder.DetailsClass d)
+                {
+                    return d.ImplementationEntity.Remark;
+                }
+                private static void _Remark_SetImplementationValue(global::LightSwitchApplication.WorkOrder.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.Remark = v;
+                }
+                private static void _Remark_OnValueChanged(global::LightSwitchApplication.WorkOrder e)
+                {
+                    e.Remark_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -2419,6 +2489,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrder, global::LightSwitchApplication.WorkOrder.DetailsClass, bool>.Data _IsReceiveComplete;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrder, global::LightSwitchApplication.WorkOrder.DetailsClass, string>.Data _Remark;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrder, global::LightSwitchApplication.WorkOrder.DetailsClass, string>.Data _CreatedBy;
