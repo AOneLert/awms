@@ -255,15 +255,10 @@
     <LightSwitchModel Include="Properties\DataSources\ApplicationData.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\Products.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\ProductCategories.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\Employees.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\Orders.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\OrderDetails.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\Customers.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\Suppliers.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\ShippingMethods.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\StockCheckDetails.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\StockChecks.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\ProductSubscribers.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\Locations.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\ProductGroups.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\UnitOfMeasures.lsml" />
@@ -330,8 +325,6 @@
     <LightSwitchModel Include="DataSources\ApplicationData\SaleOrderDetails.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\PurchaseOrders.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\PurchaseOrderDetails.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\ReceiveFromPurchaseOrders.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\ReceiveFromPurchaseOrderDetails.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\PurchaseOrderNotClose.lsml">
       <DependentUpon>PurchaseOrders.lsml</DependentUpon>
     </LightSwitchModel>
@@ -353,9 +346,6 @@
     <LightSwitchModel Include="DataSources\ApplicationData\WorkOrders.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\WorkOrderIssueDetails.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\WorkOrderProduces.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\EmployeeActiveQuery.lsml">
-      <DependentUpon>Employees.lsml</DependentUpon>
-    </LightSwitchModel>
     <LightSwitchModel Include="DataSources\ApplicationData\QueryMaxWONumber.lsml">
       <DependentUpon>WorkOrders.lsml</DependentUpon>
     </LightSwitchModel>

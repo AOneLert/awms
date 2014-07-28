@@ -34,14 +34,6 @@
         created: [lightSwitchApplication.Customer]
     });
 
-    msls._addEntryPoints(lightSwitchApplication.Employee, {
-        /// <field>
-        /// Called when a new employee is created.
-        /// <br/>created(msls.application.Employee entity)
-        /// </field>
-        created: [lightSwitchApplication.Employee]
-    });
-
     msls._addEntryPoints(lightSwitchApplication.Location, {
         /// <field>
         /// Called when a new location is created.
@@ -56,22 +48,6 @@
         /// <br/>created(msls.application.Machine entity)
         /// </field>
         created: [lightSwitchApplication.Machine]
-    });
-
-    msls._addEntryPoints(lightSwitchApplication.OrderDetail, {
-        /// <field>
-        /// Called when a new orderDetail is created.
-        /// <br/>created(msls.application.OrderDetail entity)
-        /// </field>
-        created: [lightSwitchApplication.OrderDetail]
-    });
-
-    msls._addEntryPoints(lightSwitchApplication.Order, {
-        /// <field>
-        /// Called when a new order is created.
-        /// <br/>created(msls.application.Order entity)
-        /// </field>
-        created: [lightSwitchApplication.Order]
     });
 
     msls._addEntryPoints(lightSwitchApplication.Package, {
@@ -130,14 +106,6 @@
         created: [lightSwitchApplication.Product]
     });
 
-    msls._addEntryPoints(lightSwitchApplication.ProductSubscriber, {
-        /// <field>
-        /// Called when a new productSubscriber is created.
-        /// <br/>created(msls.application.ProductSubscriber entity)
-        /// </field>
-        created: [lightSwitchApplication.ProductSubscriber]
-    });
-
     msls._addEntryPoints(lightSwitchApplication.PurchaseOrderDetail, {
         /// <field>
         /// Called when a new purchaseOrderDetail is created.
@@ -154,22 +122,6 @@
         created: [lightSwitchApplication.PurchaseOrder]
     });
 
-    msls._addEntryPoints(lightSwitchApplication.ReceiveFromPurchaseOrderDetail, {
-        /// <field>
-        /// Called when a new receiveFromPurchaseOrderDetail is created.
-        /// <br/>created(msls.application.ReceiveFromPurchaseOrderDetail entity)
-        /// </field>
-        created: [lightSwitchApplication.ReceiveFromPurchaseOrderDetail]
-    });
-
-    msls._addEntryPoints(lightSwitchApplication.ReceiveFromPurchaseOrder, {
-        /// <field>
-        /// Called when a new receiveFromPurchaseOrder is created.
-        /// <br/>created(msls.application.ReceiveFromPurchaseOrder entity)
-        /// </field>
-        created: [lightSwitchApplication.ReceiveFromPurchaseOrder]
-    });
-
     msls._addEntryPoints(lightSwitchApplication.SaleOrderDetail, {
         /// <field>
         /// Called when a new saleOrderDetail is created.
@@ -184,14 +136,6 @@
         /// <br/>created(msls.application.SaleOrder entity)
         /// </field>
         created: [lightSwitchApplication.SaleOrder]
-    });
-
-    msls._addEntryPoints(lightSwitchApplication.ShippingMethod, {
-        /// <field>
-        /// Called when a new shippingMethod is created.
-        /// <br/>created(msls.application.ShippingMethod entity)
-        /// </field>
-        created: [lightSwitchApplication.ShippingMethod]
     });
 
     msls._addEntryPoints(lightSwitchApplication.StockAdjustDetail, {

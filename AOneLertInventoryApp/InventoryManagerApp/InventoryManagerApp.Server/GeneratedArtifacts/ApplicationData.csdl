@@ -74,30 +74,9 @@
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Modified" Type="Edm.DateTimeOffset" />
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="Orders" Relationship="LightSwitchApplication.Customer_Order" ToRole="Order" FromRole="Customer" />
     <NavigationProperty Name="CustomerGroup" Relationship="LightSwitchApplication.Customer_CustomerGroup" ToRole="CustomerGroup" FromRole="Customer" />
     <NavigationProperty Name="TransportRoute" Relationship="LightSwitchApplication.Customer_TransportRoute" ToRole="TransportRoute" FromRole="Customer" />
     <NavigationProperty Name="SaleOrders" Relationship="LightSwitchApplication.SaleOrder_Customer" ToRole="SaleOrder" FromRole="Customer" />
-  </EntityType>
-  <EntityType Name="Employee">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="LastName" Type="Edm.String" Nullable="false" MaxLength="75" />
-    <Property Name="FirstName" Type="Edm.String" Nullable="false" MaxLength="75" />
-    <Property Name="UserName" Type="Edm.String" Nullable="false" MaxLength="75" />
-    <Property Name="Email" Type="Edm.String" Nullable="false" MaxLength="255" />
-    <Property Name="Current" Type="Edm.Boolean" />
-    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Created" Type="Edm.DateTimeOffset" />
-    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Modified" Type="Edm.DateTimeOffset" />
-    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="Orders" Relationship="LightSwitchApplication.Order_Employee" ToRole="Order" FromRole="Employee" />
-    <NavigationProperty Name="StockChecks" Relationship="LightSwitchApplication.StockCheck_Employee" ToRole="StockCheck" FromRole="Employee" />
-    <NavigationProperty Name="ProductSubscribers" Relationship="LightSwitchApplication.ProductSubscriber_Employee" ToRole="ProductSubscriber" FromRole="Employee" />
-    <NavigationProperty Name="WorkOrders" Relationship="LightSwitchApplication.WorkOrder_Employee" ToRole="WorkOrder" FromRole="Employee" />
   </EntityType>
   <EntityType Name="Location">
     <Key>
@@ -119,7 +98,6 @@
     <NavigationProperty Name="StockOnHands" Relationship="LightSwitchApplication.StockOnHand_Location" ToRole="StockOnHand" FromRole="Location" />
     <NavigationProperty Name="StockAdjustDetails" Relationship="LightSwitchApplication.StockAdjustDetail_Location" ToRole="StockAdjustDetail" FromRole="Location" />
     <NavigationProperty Name="SaleOrderDetails" Relationship="LightSwitchApplication.SaleOrderDetail_Location" ToRole="SaleOrderDetail" FromRole="Location" />
-    <NavigationProperty Name="ReceiveFromPurchaseOrderDetails" Relationship="LightSwitchApplication.ReceiveFromPurchaseOrderDetail_Location" ToRole="ReceiveFromPurchaseOrderDetail" FromRole="Location" />
     <NavigationProperty Name="PurchaseOrderDetails" Relationship="LightSwitchApplication.PurchaseOrderDetail_Location" ToRole="PurchaseOrderDetail" FromRole="Location" />
     <NavigationProperty Name="WorkOrderIssueDetail" Relationship="LightSwitchApplication.WorkOrderIssueDetail_Location" ToRole="WorkOrderIssueDetail" FromRole="Location" />
     <NavigationProperty Name="WorkOrderProduces" Relationship="LightSwitchApplication.WorkOrderProduce_Location" ToRole="WorkOrderProduce" FromRole="Location" />
@@ -137,44 +115,6 @@
     <Property Name="Modified" Type="Edm.DateTimeOffset" />
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
     <NavigationProperty Name="WorkOrders" Relationship="LightSwitchApplication.WorkOrder_Machine" ToRole="WorkOrder" FromRole="Machine" />
-  </EntityType>
-  <EntityType Name="OrderDetail">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="OrderDetail_Order" Type="Edm.Int32" Nullable="false" />
-    <Property Name="UnitsOrdered" Type="Edm.Int32" Nullable="false" />
-    <Property Name="UnitsShipped" Type="Edm.Int32" />
-    <Property Name="DateOrderShipped" Type="Edm.DateTime" />
-    <Property Name="OrderDetail_ShippingMethod" Type="Edm.Int32" />
-    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Created" Type="Edm.DateTimeOffset" />
-    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Modified" Type="Edm.DateTimeOffset" />
-    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="Order" Relationship="LightSwitchApplication.OrderDetail_Order" ToRole="Order" FromRole="OrderDetail" />
-    <NavigationProperty Name="ShippingMethod" Relationship="LightSwitchApplication.OrderDetail_ShippingMethod" ToRole="ShippingMethod" FromRole="OrderDetail" />
-  </EntityType>
-  <EntityType Name="Order">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="OrderReference" Type="Edm.String" Nullable="false" MaxLength="255" />
-    <Property Name="OrderDate" Type="Edm.DateTime" Nullable="false" />
-    <Property Name="Customer_Order" Type="Edm.Int32" Nullable="false" />
-    <Property Name="Order_Employee" Type="Edm.Int32" Nullable="false" />
-    <Property Name="OrderPaidFor" Type="Edm.Boolean" Nullable="false" />
-    <Property Name="DatePaid" Type="Edm.DateTime" />
-    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Created" Type="Edm.DateTimeOffset" />
-    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Modified" Type="Edm.DateTimeOffset" />
-    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="Customer" Relationship="LightSwitchApplication.Customer_Order" ToRole="Customer" FromRole="Order" />
-    <NavigationProperty Name="Employee" Relationship="LightSwitchApplication.Order_Employee" ToRole="Employee" FromRole="Order" />
-    <NavigationProperty Name="OrderDetails" Relationship="LightSwitchApplication.OrderDetail_Order" ToRole="OrderDetail" FromRole="Order" />
   </EntityType>
   <EntityType Name="Package">
     <Key>
@@ -302,22 +242,8 @@
     <NavigationProperty Name="StockAdjustDetail" Relationship="LightSwitchApplication.StockAdjustDetail_Product" ToRole="StockAdjustDetail" FromRole="Product" />
     <NavigationProperty Name="SaleOrderDetails" Relationship="LightSwitchApplication.SaleOrderDetail_Product" ToRole="SaleOrderDetail" FromRole="Product" />
     <NavigationProperty Name="PurchaseOrderDetails" Relationship="LightSwitchApplication.PurchaseOrderDetail_Product" ToRole="PurchaseOrderDetail" FromRole="Product" />
-    <NavigationProperty Name="ReceiveFromPurchaseOrderDetails" Relationship="LightSwitchApplication.ReceiveFromPurchaseOrderDetail_Product" ToRole="ReceiveFromPurchaseOrderDetail" FromRole="Product" />
     <NavigationProperty Name="WorkOrderIssueDetail" Relationship="LightSwitchApplication.WorkOrderIssueDetail_Product" ToRole="WorkOrderIssueDetail" FromRole="Product" />
     <NavigationProperty Name="WorkOrderProduces" Relationship="LightSwitchApplication.WorkOrderProduce_Product" ToRole="WorkOrderProduce" FromRole="Product" />
-  </EntityType>
-  <EntityType Name="ProductSubscriber">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="ProductSubscriber_Employee" Type="Edm.Int32" Nullable="false" />
-    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Created" Type="Edm.DateTimeOffset" />
-    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Modified" Type="Edm.DateTimeOffset" />
-    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="Employee" Relationship="LightSwitchApplication.ProductSubscriber_Employee" ToRole="Employee" FromRole="ProductSubscriber" />
   </EntityType>
   <EntityType Name="PurchaseOrderDetail">
     <Key>
@@ -362,42 +288,6 @@
     <NavigationProperty Name="Supplier" Relationship="LightSwitchApplication.PurchaseOrder_Supplier" ToRole="Supplier" FromRole="PurchaseOrder" />
     <NavigationProperty Name="PurchaseOrderDetails" Relationship="LightSwitchApplication.PurchaseOrderDetail_PurchaseOrder" ToRole="PurchaseOrderDetail" FromRole="PurchaseOrder" />
   </EntityType>
-  <EntityType Name="ReceiveFromPurchaseOrderDetail">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" Type="Edm.Int32" Nullable="false" />
-    <Property Name="ReceiveFromPurchaseOrderDetail_Location" Type="Edm.Int32" Nullable="false" />
-    <Property Name="ReceiveFromPurchaseOrderDetail_Product" Type="Edm.Int32" Nullable="false" />
-    <Property Name="LotNo" Type="Edm.String" Nullable="false" MaxLength="255" />
-    <Property Name="Quantity" Type="Edm.Double" Nullable="false" />
-    <Property Name="UnitCost" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
-    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Created" Type="Edm.DateTimeOffset" />
-    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Modified" Type="Edm.DateTimeOffset" />
-    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="ReceiveFromPurchaseOrder" Relationship="LightSwitchApplication.ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" ToRole="ReceiveFromPurchaseOrder" FromRole="ReceiveFromPurchaseOrderDetail" />
-    <NavigationProperty Name="Location" Relationship="LightSwitchApplication.ReceiveFromPurchaseOrderDetail_Location" ToRole="Location" FromRole="ReceiveFromPurchaseOrderDetail" />
-    <NavigationProperty Name="Product" Relationship="LightSwitchApplication.ReceiveFromPurchaseOrderDetail_Product" ToRole="Product" FromRole="ReceiveFromPurchaseOrderDetail" />
-  </EntityType>
-  <EntityType Name="ReceiveFromPurchaseOrder">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="ReceiveNumber" Type="Edm.String" Nullable="false" MaxLength="255" />
-    <Property Name="ReceiveDate" Type="Edm.DateTime" Nullable="false" />
-    <Property Name="ReceiveFromPurchaseOrder_Supplier" Type="Edm.Int32" Nullable="false" />
-    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Created" Type="Edm.DateTimeOffset" />
-    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Modified" Type="Edm.DateTimeOffset" />
-    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="Supplier" Relationship="LightSwitchApplication.ReceiveFromPurchaseOrder_Supplier" ToRole="Supplier" FromRole="ReceiveFromPurchaseOrder" />
-    <NavigationProperty Name="ReceiveFromPurchaseOrderDetails" Relationship="LightSwitchApplication.ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" ToRole="ReceiveFromPurchaseOrderDetail" FromRole="ReceiveFromPurchaseOrder" />
-  </EntityType>
   <EntityType Name="SaleOrderDetail">
     <Key>
       <PropertyRef Name="Id" />
@@ -439,19 +329,6 @@
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
     <NavigationProperty Name="Customer" Relationship="LightSwitchApplication.SaleOrder_Customer" ToRole="Customer" FromRole="SaleOrder" />
     <NavigationProperty Name="SaleOrderDetails" Relationship="LightSwitchApplication.SaleOrderDetail_SaleOrder" ToRole="SaleOrderDetail" FromRole="SaleOrder" />
-  </EntityType>
-  <EntityType Name="ShippingMethod">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Shipper" Type="Edm.String" Nullable="false" MaxLength="255" />
-    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Created" Type="Edm.DateTimeOffset" />
-    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Modified" Type="Edm.DateTimeOffset" />
-    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="OrderDetails" Relationship="LightSwitchApplication.OrderDetail_ShippingMethod" ToRole="OrderDetail" FromRole="ShippingMethod" />
   </EntityType>
   <EntityType Name="StockAdjustDetail">
     <Key>
@@ -509,13 +386,11 @@
     </Key>
     <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="StockCheckDate" Type="Edm.DateTime" Nullable="false" />
-    <Property Name="StockCheck_Employee" Type="Edm.Int32" Nullable="false" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Modified" Type="Edm.DateTimeOffset" />
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="StockCheckBy" Relationship="LightSwitchApplication.StockCheck_Employee" ToRole="Employee" FromRole="StockCheck" />
     <NavigationProperty Name="StockCheckDetails" Relationship="LightSwitchApplication.StockCheckDetail_StockCheck" ToRole="StockCheckDetail" FromRole="StockCheck" />
   </EntityType>
   <EntityType Name="StockOnHandHistory">
@@ -630,7 +505,6 @@
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
     <NavigationProperty Name="SupplierGroup" Relationship="LightSwitchApplication.Supplier_SupplierGroup" ToRole="SupplierGroup" FromRole="Supplier" />
     <NavigationProperty Name="PurchaseOrders" Relationship="LightSwitchApplication.PurchaseOrder_Supplier" ToRole="PurchaseOrder" FromRole="Supplier" />
-    <NavigationProperty Name="ReceiveFromPurchaseOrders" Relationship="LightSwitchApplication.ReceiveFromPurchaseOrder_Supplier" ToRole="ReceiveFromPurchaseOrder" FromRole="Supplier" />
   </EntityType>
   <EntityType Name="Transaction">
     <Key>
@@ -746,7 +620,6 @@
     <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="WorkOrderNumber" Type="Edm.String" Nullable="false" MaxLength="255" />
     <Property Name="WorkOrderDate" Type="Edm.DateTime" Nullable="false" />
-    <Property Name="WorkOrder_Employee" Type="Edm.Int32" Nullable="false" />
     <Property Name="WorkOrder_Machine" Type="Edm.Int32" Nullable="false" />
     <Property Name="IsReceiveComplete" Type="Edm.Boolean" Nullable="false" />
     <Property Name="Remark" Type="Edm.String" MaxLength="255" />
@@ -755,7 +628,6 @@
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Modified" Type="Edm.DateTimeOffset" />
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="Employee" Relationship="LightSwitchApplication.WorkOrder_Employee" ToRole="Employee" FromRole="WorkOrder" />
     <NavigationProperty Name="Machine" Relationship="LightSwitchApplication.WorkOrder_Machine" ToRole="Machine" FromRole="WorkOrder" />
     <NavigationProperty Name="WorkOrderIssueDetails" Relationship="LightSwitchApplication.WorkOrderIssueDetail_WorkOrder" ToRole="WorkOrderIssueDetail" FromRole="WorkOrder" />
     <NavigationProperty Name="WorkOrderProduces" Relationship="LightSwitchApplication.WorkOrderProduce_WorkOrder" ToRole="WorkOrderProduce" FromRole="WorkOrder" />
@@ -772,20 +644,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="Customer_Order">
-    <End Role="Customer" Type="LightSwitchApplication.Customer" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="Order" Type="LightSwitchApplication.Order" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Customer">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Order">
-        <PropertyRef Name="Customer_Order" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="SaleOrder_Customer">
     <End Role="Customer" Type="LightSwitchApplication.Customer" Multiplicity="1" />
     <End Role="SaleOrder" Type="LightSwitchApplication.SaleOrder" Multiplicity="*" />
@@ -795,56 +653,6 @@
       </Principal>
       <Dependent Role="SaleOrder">
         <PropertyRef Name="SaleOrder_Customer" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="Order_Employee">
-    <End Role="Employee" Type="LightSwitchApplication.Employee" Multiplicity="1" />
-    <End Role="Order" Type="LightSwitchApplication.Order" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Employee">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Order">
-        <PropertyRef Name="Order_Employee" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="StockCheck_Employee">
-    <End Role="Employee" Type="LightSwitchApplication.Employee" Multiplicity="1" />
-    <End Role="StockCheck" Type="LightSwitchApplication.StockCheck" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Employee">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="StockCheck">
-        <PropertyRef Name="StockCheck_Employee" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="ProductSubscriber_Employee">
-    <End Role="Employee" Type="LightSwitchApplication.Employee" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="ProductSubscriber" Type="LightSwitchApplication.ProductSubscriber" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Employee">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ProductSubscriber">
-        <PropertyRef Name="ProductSubscriber_Employee" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="WorkOrder_Employee">
-    <End Role="Employee" Type="LightSwitchApplication.Employee" Multiplicity="1" />
-    <End Role="WorkOrder" Type="LightSwitchApplication.WorkOrder" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Employee">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="WorkOrder">
-        <PropertyRef Name="WorkOrder_Employee" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -908,18 +716,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="ReceiveFromPurchaseOrderDetail_Location">
-    <End Role="Location" Type="LightSwitchApplication.Location" Multiplicity="1" />
-    <End Role="ReceiveFromPurchaseOrderDetail" Type="LightSwitchApplication.ReceiveFromPurchaseOrderDetail" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Location">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ReceiveFromPurchaseOrderDetail">
-        <PropertyRef Name="ReceiveFromPurchaseOrderDetail_Location" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="PurchaseOrderDetail_Location">
     <End Role="Location" Type="LightSwitchApplication.Location" Multiplicity="1" />
     <End Role="PurchaseOrderDetail" Type="LightSwitchApplication.PurchaseOrderDetail" Multiplicity="*" />
@@ -965,20 +761,6 @@
       </Principal>
       <Dependent Role="WorkOrder">
         <PropertyRef Name="WorkOrder_Machine" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="OrderDetail_Order">
-    <End Role="Order" Type="LightSwitchApplication.Order" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="OrderDetail" Type="LightSwitchApplication.OrderDetail" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Order">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="OrderDetail">
-        <PropertyRef Name="OrderDetail_Order" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1078,18 +860,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="ReceiveFromPurchaseOrderDetail_Product">
-    <End Role="Product" Type="LightSwitchApplication.Product" Multiplicity="1" />
-    <End Role="ReceiveFromPurchaseOrderDetail" Type="LightSwitchApplication.ReceiveFromPurchaseOrderDetail" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Product">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ReceiveFromPurchaseOrderDetail">
-        <PropertyRef Name="ReceiveFromPurchaseOrderDetail_Product" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="WorkOrderIssueDetail_Product">
     <End Role="Product" Type="LightSwitchApplication.Product" Multiplicity="1" />
     <End Role="WorkOrderIssueDetail" Type="LightSwitchApplication.WorkOrderIssueDetail" Multiplicity="*" />
@@ -1126,18 +896,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder">
-    <End Role="ReceiveFromPurchaseOrder" Type="LightSwitchApplication.ReceiveFromPurchaseOrder" Multiplicity="1" />
-    <End Role="ReceiveFromPurchaseOrderDetail" Type="LightSwitchApplication.ReceiveFromPurchaseOrderDetail" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="ReceiveFromPurchaseOrder">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ReceiveFromPurchaseOrderDetail">
-        <PropertyRef Name="ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="SaleOrderDetail_SaleOrder">
     <End Role="SaleOrder" Type="LightSwitchApplication.SaleOrder" Multiplicity="1" />
     <End Role="SaleOrderDetail" Type="LightSwitchApplication.SaleOrderDetail" Multiplicity="*" />
@@ -1147,18 +905,6 @@
       </Principal>
       <Dependent Role="SaleOrderDetail">
         <PropertyRef Name="SaleOrderDetail_SaleOrder" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="OrderDetail_ShippingMethod">
-    <End Role="ShippingMethod" Type="LightSwitchApplication.ShippingMethod" Multiplicity="0..1" />
-    <End Role="OrderDetail" Type="LightSwitchApplication.OrderDetail" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="ShippingMethod">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="OrderDetail">
-        <PropertyRef Name="OrderDetail_ShippingMethod" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1209,18 +955,6 @@
       </Principal>
       <Dependent Role="PurchaseOrder">
         <PropertyRef Name="PurchaseOrder_Supplier" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="ReceiveFromPurchaseOrder_Supplier">
-    <End Role="Supplier" Type="LightSwitchApplication.Supplier" Multiplicity="1" />
-    <End Role="ReceiveFromPurchaseOrder" Type="LightSwitchApplication.ReceiveFromPurchaseOrder" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Supplier">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ReceiveFromPurchaseOrder">
-        <PropertyRef Name="ReceiveFromPurchaseOrder_Supplier" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1277,11 +1011,8 @@
     <EntitySet Name="Companies" EntityType="LightSwitchApplication.Company" />
     <EntitySet Name="CustomerGroups" EntityType="LightSwitchApplication.CustomerGroup" />
     <EntitySet Name="Customers" EntityType="LightSwitchApplication.Customer" />
-    <EntitySet Name="Employees" EntityType="LightSwitchApplication.Employee" />
     <EntitySet Name="Locations" EntityType="LightSwitchApplication.Location" />
     <EntitySet Name="Machines" EntityType="LightSwitchApplication.Machine" />
-    <EntitySet Name="OrderDetails" EntityType="LightSwitchApplication.OrderDetail" />
-    <EntitySet Name="Orders" EntityType="LightSwitchApplication.Order" />
     <EntitySet Name="Packages" EntityType="LightSwitchApplication.Package" />
     <EntitySet Name="PaymentTypes" EntityType="LightSwitchApplication.PaymentType" />
     <EntitySet Name="ProductCategories" EntityType="LightSwitchApplication.ProductCategory" />
@@ -1289,14 +1020,10 @@
     <EntitySet Name="ProductReceiveBalanceForwardDetails" EntityType="LightSwitchApplication.ProductReceiveBalanceForwardDetail" />
     <EntitySet Name="ProductReceiveBalanceForwards" EntityType="LightSwitchApplication.ProductReceiveBalanceForward" />
     <EntitySet Name="Products" EntityType="LightSwitchApplication.Product" />
-    <EntitySet Name="ProductSubscribers" EntityType="LightSwitchApplication.ProductSubscriber" />
     <EntitySet Name="PurchaseOrderDetails" EntityType="LightSwitchApplication.PurchaseOrderDetail" />
     <EntitySet Name="PurchaseOrders" EntityType="LightSwitchApplication.PurchaseOrder" />
-    <EntitySet Name="ReceiveFromPurchaseOrderDetails" EntityType="LightSwitchApplication.ReceiveFromPurchaseOrderDetail" />
-    <EntitySet Name="ReceiveFromPurchaseOrders" EntityType="LightSwitchApplication.ReceiveFromPurchaseOrder" />
     <EntitySet Name="SaleOrderDetails" EntityType="LightSwitchApplication.SaleOrderDetail" />
     <EntitySet Name="SaleOrders" EntityType="LightSwitchApplication.SaleOrder" />
-    <EntitySet Name="ShippingMethods" EntityType="LightSwitchApplication.ShippingMethod" />
     <EntitySet Name="StockAdjustDetails" EntityType="LightSwitchApplication.StockAdjustDetail" />
     <EntitySet Name="StockAdjusts" EntityType="LightSwitchApplication.StockAdjust" />
     <EntitySet Name="StockCheckDetails" EntityType="LightSwitchApplication.StockCheckDetail" />
@@ -1318,29 +1045,9 @@
       <End Role="CustomerGroup" EntitySet="CustomerGroups" />
       <End Role="Customer" EntitySet="Customers" />
     </AssociationSet>
-    <AssociationSet Name="Customer_Order" Association="LightSwitchApplication.Customer_Order">
-      <End Role="Customer" EntitySet="Customers" />
-      <End Role="Order" EntitySet="Orders" />
-    </AssociationSet>
     <AssociationSet Name="SaleOrder_Customer" Association="LightSwitchApplication.SaleOrder_Customer">
       <End Role="Customer" EntitySet="Customers" />
       <End Role="SaleOrder" EntitySet="SaleOrders" />
-    </AssociationSet>
-    <AssociationSet Name="Order_Employee" Association="LightSwitchApplication.Order_Employee">
-      <End Role="Employee" EntitySet="Employees" />
-      <End Role="Order" EntitySet="Orders" />
-    </AssociationSet>
-    <AssociationSet Name="StockCheck_Employee" Association="LightSwitchApplication.StockCheck_Employee">
-      <End Role="Employee" EntitySet="Employees" />
-      <End Role="StockCheck" EntitySet="StockChecks" />
-    </AssociationSet>
-    <AssociationSet Name="ProductSubscriber_Employee" Association="LightSwitchApplication.ProductSubscriber_Employee">
-      <End Role="Employee" EntitySet="Employees" />
-      <End Role="ProductSubscriber" EntitySet="ProductSubscribers" />
-    </AssociationSet>
-    <AssociationSet Name="WorkOrder_Employee" Association="LightSwitchApplication.WorkOrder_Employee">
-      <End Role="Employee" EntitySet="Employees" />
-      <End Role="WorkOrder" EntitySet="WorkOrders" />
     </AssociationSet>
     <AssociationSet Name="Product_Location" Association="LightSwitchApplication.Product_Location">
       <End Role="Location" EntitySet="Locations" />
@@ -1362,10 +1069,6 @@
       <End Role="Location" EntitySet="Locations" />
       <End Role="SaleOrderDetail" EntitySet="SaleOrderDetails" />
     </AssociationSet>
-    <AssociationSet Name="ReceiveFromPurchaseOrderDetail_Location" Association="LightSwitchApplication.ReceiveFromPurchaseOrderDetail_Location">
-      <End Role="Location" EntitySet="Locations" />
-      <End Role="ReceiveFromPurchaseOrderDetail" EntitySet="ReceiveFromPurchaseOrderDetails" />
-    </AssociationSet>
     <AssociationSet Name="PurchaseOrderDetail_Location" Association="LightSwitchApplication.PurchaseOrderDetail_Location">
       <End Role="Location" EntitySet="Locations" />
       <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
@@ -1381,10 +1084,6 @@
     <AssociationSet Name="WorkOrder_Machine" Association="LightSwitchApplication.WorkOrder_Machine">
       <End Role="Machine" EntitySet="Machines" />
       <End Role="WorkOrder" EntitySet="WorkOrders" />
-    </AssociationSet>
-    <AssociationSet Name="OrderDetail_Order" Association="LightSwitchApplication.OrderDetail_Order">
-      <End Role="Order" EntitySet="Orders" />
-      <End Role="OrderDetail" EntitySet="OrderDetails" />
     </AssociationSet>
     <AssociationSet Name="ProductCategory_Product" Association="LightSwitchApplication.ProductCategory_Product">
       <End Role="ProductCategory" EntitySet="ProductCategories" />
@@ -1418,10 +1117,6 @@
       <End Role="Product" EntitySet="Products" />
       <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
     </AssociationSet>
-    <AssociationSet Name="ReceiveFromPurchaseOrderDetail_Product" Association="LightSwitchApplication.ReceiveFromPurchaseOrderDetail_Product">
-      <End Role="Product" EntitySet="Products" />
-      <End Role="ReceiveFromPurchaseOrderDetail" EntitySet="ReceiveFromPurchaseOrderDetails" />
-    </AssociationSet>
     <AssociationSet Name="WorkOrderIssueDetail_Product" Association="LightSwitchApplication.WorkOrderIssueDetail_Product">
       <End Role="Product" EntitySet="Products" />
       <End Role="WorkOrderIssueDetail" EntitySet="WorkOrderIssueDetails" />
@@ -1434,17 +1129,9 @@
       <End Role="PurchaseOrder" EntitySet="PurchaseOrders" />
       <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
     </AssociationSet>
-    <AssociationSet Name="ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" Association="LightSwitchApplication.ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder">
-      <End Role="ReceiveFromPurchaseOrder" EntitySet="ReceiveFromPurchaseOrders" />
-      <End Role="ReceiveFromPurchaseOrderDetail" EntitySet="ReceiveFromPurchaseOrderDetails" />
-    </AssociationSet>
     <AssociationSet Name="SaleOrderDetail_SaleOrder" Association="LightSwitchApplication.SaleOrderDetail_SaleOrder">
       <End Role="SaleOrder" EntitySet="SaleOrders" />
       <End Role="SaleOrderDetail" EntitySet="SaleOrderDetails" />
-    </AssociationSet>
-    <AssociationSet Name="OrderDetail_ShippingMethod" Association="LightSwitchApplication.OrderDetail_ShippingMethod">
-      <End Role="ShippingMethod" EntitySet="ShippingMethods" />
-      <End Role="OrderDetail" EntitySet="OrderDetails" />
     </AssociationSet>
     <AssociationSet Name="StockAdjustDetail_StockAdjust" Association="LightSwitchApplication.StockAdjustDetail_StockAdjust">
       <End Role="StockAdjust" EntitySet="StockAdjusts" />
@@ -1461,10 +1148,6 @@
     <AssociationSet Name="PurchaseOrder_Supplier" Association="LightSwitchApplication.PurchaseOrder_Supplier">
       <End Role="Supplier" EntitySet="Suppliers" />
       <End Role="PurchaseOrder" EntitySet="PurchaseOrders" />
-    </AssociationSet>
-    <AssociationSet Name="ReceiveFromPurchaseOrder_Supplier" Association="LightSwitchApplication.ReceiveFromPurchaseOrder_Supplier">
-      <End Role="Supplier" EntitySet="Suppliers" />
-      <End Role="ReceiveFromPurchaseOrder" EntitySet="ReceiveFromPurchaseOrders" />
     </AssociationSet>
     <AssociationSet Name="Customer_TransportRoute" Association="LightSwitchApplication.Customer_TransportRoute">
       <End Role="TransportRoute" EntitySet="TransportRoutes" />

@@ -36,68 +36,6 @@
                 </ScreenExpressionTree>
               </ContentItem.DataSource>
             </ContentItem>
-            <ContentItem
-              Name="ShippingMethod"
-              Kind="Collection"
-              DataType="CollectionView$ShippingMethod"
-              View="Microsoft.LightSwitch.MobileWeb:TileList">
-              <ContentItem.DataSource>
-                <ScreenExpressionTree>
-                  <ChainExpression>
-                    <MemberExpression
-                      Member="BrowseShippingMethods/Properties[ShippingMethods]" />
-                  </ChainExpression>
-                </ScreenExpressionTree>
-              </ContentItem.DataSource>
-              <ContentItem
-                Name="RowTemplate"
-                Kind="Details"
-                DataType="ShippingMethod">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression />
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-                <ContentItem
-                  Name="Shipper"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="ShippingMethod/Properties[Shipper]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-              </ContentItem>
-              <ContentItem.PropertySources>
-                <ControlPropertySource
-                  Property="Microsoft.LightSwitch.MobileWeb:RootCollectionControl/Properties[ItemTap]">
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <CallExpression
-                        Target="!module/Methods[showAddEditShippingMethod]">
-                        <CallExpression.Attributes>
-                          <AssociatedCollection
-                            Collection="BrowseShippingMethods/Properties[ShippingMethods]" />
-                        </CallExpression.Attributes>
-                        <ArgumentExpression
-                          Parameter="ShippingMethod">
-                          <ChainExpression>
-                            <MemberExpression
-                              Member="BrowseShippingMethods/Properties[ShippingMethods]" />
-                            <MemberExpression
-                              Member="selectedItem" />
-                          </ChainExpression>
-                        </ArgumentExpression>
-                      </CallExpression>
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ControlPropertySource>
-              </ContentItem.PropertySources>
-            </ContentItem>
             <ContentItem.CommandItems>
               <ContentItem
                 Name="AddShippingMethod"
@@ -106,24 +44,6 @@
                   <DisplayName
                     Value="Add" />
                 </ContentItem.Attributes>
-                <ContentItem.PropertySources>
-                  <ControlPropertySource
-                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <CallExpression
-                          Target="!module/Methods[showAddEditShippingMethod]">
-                          <CallExpression.Attributes>
-                            <AssociatedCollection
-                              Collection="BrowseShippingMethods/Properties[ShippingMethods]" />
-                            <CreateNewEntity
-                              TargetParameter="!module/Methods[showAddEditShippingMethod]/Parameters[ShippingMethod]" />
-                          </CallExpression.Attributes>
-                        </CallExpression>
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ControlPropertySource>
-                </ContentItem.PropertySources>
               </ContentItem>
             </ContentItem.CommandItems>
           </ContentItem>
@@ -171,60 +91,6 @@
       </ScreenMethod>
     </Screen.Methods>
     <Screen.Properties>
-      <ScreenCollectionProperty
-        Name="ShippingMethods"
-        PageSize="20"
-        PropertyType="CollectionView$ShippingMethod">
-        <ScreenCollectionProperty.Query>
-          <ScreenQueryDefinition
-            Name="ShippingMethodsQuery"
-            ReturnType="ShippingMethod*">
-            <ScreenQueryDefinition.FilterExpression>
-              <QueryFilterExpressionTree>
-                <BinaryExpression
-                  NodeType="Contains">
-                  <BinaryExpression.Left>
-                    <ChainExpression>
-                      <MemberExpression
-                        Member="ShippingMethod/Properties[Shipper]" />
-                    </ChainExpression>
-                  </BinaryExpression.Left>
-                  <BinaryExpression.Right>
-                    <ParameterExpression
-                      Parameter="Search" />
-                  </BinaryExpression.Right>
-                </BinaryExpression>
-              </QueryFilterExpressionTree>
-            </ScreenQueryDefinition.FilterExpression>
-            <ScreenQueryDefinition.Source>
-              <QuerySourceExpressionTree>
-                <MemberExpression
-                  Member="ApplicationData/Members[ShippingMethods]" />
-              </QuerySourceExpressionTree>
-            </ScreenQueryDefinition.Source>
-            <ScreenQueryDefinition.Parameters>
-              <QueryParameter
-                Name="Search"
-                IsOptional="True"
-                ParameterType=":String?" />
-            </ScreenQueryDefinition.Parameters>
-          </ScreenQueryDefinition>
-        </ScreenCollectionProperty.Query>
-        <ScreenExpressionTree>
-          <ChainExpression>
-            <CallExpression
-              Target="BrowseShippingMethods/Properties[ShippingMethods]/Query">
-              <ArgumentExpression
-                Parameter="Search">
-                <ChainExpression>
-                  <MemberExpression
-                    Member="BrowseShippingMethods/Properties[Search]" />
-                </ChainExpression>
-              </ArgumentExpression>
-            </CallExpression>
-          </ChainExpression>
-        </ScreenExpressionTree>
-      </ScreenCollectionProperty>
       <ScreenProperty
         Name="Search"
         PropertyType=":String">

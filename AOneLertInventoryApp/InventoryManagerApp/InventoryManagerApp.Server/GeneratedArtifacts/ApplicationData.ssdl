@@ -5,11 +5,8 @@
     <EntitySet Name="Companies" EntityType="ApplicationDataStore.Company" store:Type="Tables" Schema="dbo" Table="Companies" />
     <EntitySet Name="CustomerGroups" EntityType="ApplicationDataStore.CustomerGroup" store:Type="Tables" Schema="dbo" Table="CustomerGroups" />
     <EntitySet Name="Customers" EntityType="ApplicationDataStore.Customer" store:Type="Tables" Schema="dbo" Table="Customers" />
-    <EntitySet Name="Employees" EntityType="ApplicationDataStore.Employee" store:Type="Tables" Schema="dbo" Table="Employees" />
     <EntitySet Name="Locations" EntityType="ApplicationDataStore.Location" store:Type="Tables" Schema="dbo" Table="Locations" />
     <EntitySet Name="Machines" EntityType="ApplicationDataStore.Machine" store:Type="Tables" Schema="dbo" Table="Machines" />
-    <EntitySet Name="OrderDetails" EntityType="ApplicationDataStore.OrderDetail" store:Type="Tables" Schema="dbo" Table="OrderDetails" />
-    <EntitySet Name="Orders" EntityType="ApplicationDataStore.Order" store:Type="Tables" Schema="dbo" Table="Orders" />
     <EntitySet Name="Packages" EntityType="ApplicationDataStore.Package" store:Type="Tables" Schema="dbo" Table="Packages" />
     <EntitySet Name="PaymentTypes" EntityType="ApplicationDataStore.PaymentType" store:Type="Tables" Schema="dbo" Table="PaymentTypes" />
     <EntitySet Name="ProductCategories" EntityType="ApplicationDataStore.ProductCategory" store:Type="Tables" Schema="dbo" Table="ProductCategories" />
@@ -17,14 +14,10 @@
     <EntitySet Name="ProductReceiveBalanceForwardDetails" EntityType="ApplicationDataStore.ProductReceiveBalanceForwardDetail" store:Type="Tables" Schema="dbo" Table="ProductReceiveBalanceForwardDetails" />
     <EntitySet Name="ProductReceiveBalanceForwards" EntityType="ApplicationDataStore.ProductReceiveBalanceForward" store:Type="Tables" Schema="dbo" Table="ProductReceiveBalanceForwards" />
     <EntitySet Name="Products" EntityType="ApplicationDataStore.Product" store:Type="Tables" Schema="dbo" Table="Products" />
-    <EntitySet Name="ProductSubscribers" EntityType="ApplicationDataStore.ProductSubscriber" store:Type="Tables" Schema="dbo" Table="ProductSubscribers" />
     <EntitySet Name="PurchaseOrderDetails" EntityType="ApplicationDataStore.PurchaseOrderDetail" store:Type="Tables" Schema="dbo" Table="PurchaseOrderDetails" />
     <EntitySet Name="PurchaseOrders" EntityType="ApplicationDataStore.PurchaseOrder" store:Type="Tables" Schema="dbo" Table="PurchaseOrders" />
-    <EntitySet Name="ReceiveFromPurchaseOrderDetails" EntityType="ApplicationDataStore.ReceiveFromPurchaseOrderDetail" store:Type="Tables" Schema="dbo" Table="ReceiveFromPurchaseOrderDetails" />
-    <EntitySet Name="ReceiveFromPurchaseOrders" EntityType="ApplicationDataStore.ReceiveFromPurchaseOrder" store:Type="Tables" Schema="dbo" Table="ReceiveFromPurchaseOrders" />
     <EntitySet Name="SaleOrderDetails" EntityType="ApplicationDataStore.SaleOrderDetail" store:Type="Tables" Schema="dbo" Table="SaleOrderDetails" />
     <EntitySet Name="SaleOrders" EntityType="ApplicationDataStore.SaleOrder" store:Type="Tables" Schema="dbo" Table="SaleOrders" />
-    <EntitySet Name="ShippingMethods" EntityType="ApplicationDataStore.ShippingMethod" store:Type="Tables" Schema="dbo" Table="ShippingMethods" />
     <EntitySet Name="StockAdjustDetails" EntityType="ApplicationDataStore.StockAdjustDetail" store:Type="Tables" Schema="dbo" Table="StockAdjustDetails" />
     <EntitySet Name="StockAdjusts" EntityType="ApplicationDataStore.StockAdjust" store:Type="Tables" Schema="dbo" Table="StockAdjusts" />
     <EntitySet Name="StockCheckDetails" EntityType="ApplicationDataStore.StockCheckDetail" store:Type="Tables" Schema="dbo" Table="StockCheckDetails" />
@@ -46,29 +39,9 @@
       <End Role="CustomerGroup" EntitySet="CustomerGroups" />
       <End Role="Customer" EntitySet="Customers" />
     </AssociationSet>
-    <AssociationSet Name="Customer_Order" Association="ApplicationDataStore.Customer_Order">
-      <End Role="Customer" EntitySet="Customers" />
-      <End Role="Order" EntitySet="Orders" />
-    </AssociationSet>
     <AssociationSet Name="SaleOrder_Customer" Association="ApplicationDataStore.SaleOrder_Customer">
       <End Role="Customer" EntitySet="Customers" />
       <End Role="SaleOrder" EntitySet="SaleOrders" />
-    </AssociationSet>
-    <AssociationSet Name="Order_Employee" Association="ApplicationDataStore.Order_Employee">
-      <End Role="Employee" EntitySet="Employees" />
-      <End Role="Order" EntitySet="Orders" />
-    </AssociationSet>
-    <AssociationSet Name="StockCheck_Employee" Association="ApplicationDataStore.StockCheck_Employee">
-      <End Role="Employee" EntitySet="Employees" />
-      <End Role="StockCheck" EntitySet="StockChecks" />
-    </AssociationSet>
-    <AssociationSet Name="ProductSubscriber_Employee" Association="ApplicationDataStore.ProductSubscriber_Employee">
-      <End Role="Employee" EntitySet="Employees" />
-      <End Role="ProductSubscriber" EntitySet="ProductSubscribers" />
-    </AssociationSet>
-    <AssociationSet Name="WorkOrder_Employee" Association="ApplicationDataStore.WorkOrder_Employee">
-      <End Role="Employee" EntitySet="Employees" />
-      <End Role="WorkOrder" EntitySet="WorkOrders" />
     </AssociationSet>
     <AssociationSet Name="Product_Location" Association="ApplicationDataStore.Product_Location">
       <End Role="Location" EntitySet="Locations" />
@@ -90,10 +63,6 @@
       <End Role="Location" EntitySet="Locations" />
       <End Role="SaleOrderDetail" EntitySet="SaleOrderDetails" />
     </AssociationSet>
-    <AssociationSet Name="ReceiveFromPurchaseOrderDetail_Location" Association="ApplicationDataStore.ReceiveFromPurchaseOrderDetail_Location">
-      <End Role="Location" EntitySet="Locations" />
-      <End Role="ReceiveFromPurchaseOrderDetail" EntitySet="ReceiveFromPurchaseOrderDetails" />
-    </AssociationSet>
     <AssociationSet Name="PurchaseOrderDetail_Location" Association="ApplicationDataStore.PurchaseOrderDetail_Location">
       <End Role="Location" EntitySet="Locations" />
       <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
@@ -109,10 +78,6 @@
     <AssociationSet Name="WorkOrder_Machine" Association="ApplicationDataStore.WorkOrder_Machine">
       <End Role="Machine" EntitySet="Machines" />
       <End Role="WorkOrder" EntitySet="WorkOrders" />
-    </AssociationSet>
-    <AssociationSet Name="OrderDetail_Order" Association="ApplicationDataStore.OrderDetail_Order">
-      <End Role="Order" EntitySet="Orders" />
-      <End Role="OrderDetail" EntitySet="OrderDetails" />
     </AssociationSet>
     <AssociationSet Name="ProductCategory_Product" Association="ApplicationDataStore.ProductCategory_Product">
       <End Role="ProductCategory" EntitySet="ProductCategories" />
@@ -146,10 +111,6 @@
       <End Role="Product" EntitySet="Products" />
       <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
     </AssociationSet>
-    <AssociationSet Name="ReceiveFromPurchaseOrderDetail_Product" Association="ApplicationDataStore.ReceiveFromPurchaseOrderDetail_Product">
-      <End Role="Product" EntitySet="Products" />
-      <End Role="ReceiveFromPurchaseOrderDetail" EntitySet="ReceiveFromPurchaseOrderDetails" />
-    </AssociationSet>
     <AssociationSet Name="WorkOrderIssueDetail_Product" Association="ApplicationDataStore.WorkOrderIssueDetail_Product">
       <End Role="Product" EntitySet="Products" />
       <End Role="WorkOrderIssueDetail" EntitySet="WorkOrderIssueDetails" />
@@ -162,17 +123,9 @@
       <End Role="PurchaseOrder" EntitySet="PurchaseOrders" />
       <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
     </AssociationSet>
-    <AssociationSet Name="ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" Association="ApplicationDataStore.ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder">
-      <End Role="ReceiveFromPurchaseOrder" EntitySet="ReceiveFromPurchaseOrders" />
-      <End Role="ReceiveFromPurchaseOrderDetail" EntitySet="ReceiveFromPurchaseOrderDetails" />
-    </AssociationSet>
     <AssociationSet Name="SaleOrderDetail_SaleOrder" Association="ApplicationDataStore.SaleOrderDetail_SaleOrder">
       <End Role="SaleOrder" EntitySet="SaleOrders" />
       <End Role="SaleOrderDetail" EntitySet="SaleOrderDetails" />
-    </AssociationSet>
-    <AssociationSet Name="OrderDetail_ShippingMethod" Association="ApplicationDataStore.OrderDetail_ShippingMethod">
-      <End Role="ShippingMethod" EntitySet="ShippingMethods" />
-      <End Role="OrderDetail" EntitySet="OrderDetails" />
     </AssociationSet>
     <AssociationSet Name="StockAdjustDetail_StockAdjust" Association="ApplicationDataStore.StockAdjustDetail_StockAdjust">
       <End Role="StockAdjust" EntitySet="StockAdjusts" />
@@ -189,10 +142,6 @@
     <AssociationSet Name="PurchaseOrder_Supplier" Association="ApplicationDataStore.PurchaseOrder_Supplier">
       <End Role="Supplier" EntitySet="Suppliers" />
       <End Role="PurchaseOrder" EntitySet="PurchaseOrders" />
-    </AssociationSet>
-    <AssociationSet Name="ReceiveFromPurchaseOrder_Supplier" Association="ApplicationDataStore.ReceiveFromPurchaseOrder_Supplier">
-      <End Role="Supplier" EntitySet="Suppliers" />
-      <End Role="ReceiveFromPurchaseOrder" EntitySet="ReceiveFromPurchaseOrders" />
     </AssociationSet>
     <AssociationSet Name="Customer_TransportRoute" Association="ApplicationDataStore.Customer_TransportRoute">
       <End Role="TransportRoute" EntitySet="TransportRoutes" />
@@ -285,24 +234,6 @@
     <Property Name="Customer_CustomerGroup" Type="int" Nullable="false" />
     <Property Name="Customer_TransportRoute" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="Employee">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="75" />
-    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="75" />
-    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="75">
-      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </Property>
-    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="255" />
-    <Property Name="Current" Type="bit" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Created" Type="datetimeoffset" />
-    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Modified" Type="datetimeoffset" />
-    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-  </EntityType>
   <EntityType Name="Location">
     <Key>
       <PropertyRef Name="Id" />
@@ -331,39 +262,6 @@
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Modified" Type="datetimeoffset" />
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-  </EntityType>
-  <EntityType Name="OrderDetail">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="UnitsOrdered" Type="int" Nullable="false" />
-    <Property Name="UnitsShipped" Type="int" />
-    <Property Name="DateOrderShipped" Type="datetime" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Created" Type="datetimeoffset" />
-    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Modified" Type="datetimeoffset" />
-    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-    <Property Name="OrderDetail_Order" Type="int" Nullable="false" />
-    <Property Name="OrderDetail_ShippingMethod" Type="int" />
-  </EntityType>
-  <EntityType Name="Order">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="OrderReference" Type="nvarchar" Nullable="false" MaxLength="255" />
-    <Property Name="OrderDate" Type="datetime" Nullable="false" />
-    <Property Name="OrderPaidFor" Type="bit" Nullable="false" />
-    <Property Name="DatePaid" Type="datetime" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Created" Type="datetimeoffset" />
-    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Modified" Type="datetimeoffset" />
-    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-    <Property Name="Customer_Order" Type="int" Nullable="false" />
-    <Property Name="Order_Employee" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Package">
     <Key>
@@ -477,18 +375,6 @@
     <Property Name="Product_ProductGroup" Type="int" Nullable="false" />
     <Property Name="Product_UnitOfMeasure" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="ProductSubscriber">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Created" Type="datetimeoffset" />
-    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Modified" Type="datetimeoffset" />
-    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-    <Property Name="ProductSubscriber_Employee" Type="int" Nullable="false" />
-  </EntityType>
   <EntityType Name="PurchaseOrderDetail">
     <Key>
       <PropertyRef Name="Id" />
@@ -527,37 +413,6 @@
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
     <Property Name="PurchaseOrder_Supplier" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="ReceiveFromPurchaseOrderDetail">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="LotNo" Type="nvarchar" Nullable="false" MaxLength="255" />
-    <Property Name="Quantity" Type="float" Nullable="false" />
-    <Property Name="UnitCost" Type="decimal" Nullable="false" Precision="18" Scale="2" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Created" Type="datetimeoffset" />
-    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Modified" Type="datetimeoffset" />
-    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-    <Property Name="ReceiveFromPurchaseOrderDetail_Location" Type="int" Nullable="false" />
-    <Property Name="ReceiveFromPurchaseOrderDetail_Product" Type="int" Nullable="false" />
-    <Property Name="ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" Type="int" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ReceiveFromPurchaseOrder">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="ReceiveNumber" Type="nvarchar" Nullable="false" MaxLength="255" />
-    <Property Name="ReceiveDate" Type="datetime" Nullable="false" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Created" Type="datetimeoffset" />
-    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Modified" Type="datetimeoffset" />
-    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-    <Property Name="ReceiveFromPurchaseOrder_Supplier" Type="int" Nullable="false" />
-  </EntityType>
   <EntityType Name="SaleOrderDetail">
     <Key>
       <PropertyRef Name="Id" />
@@ -594,18 +449,6 @@
     <Property Name="Modified" Type="datetimeoffset" />
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
     <Property Name="SaleOrder_Customer" Type="int" Nullable="false" />
-  </EntityType>
-  <EntityType Name="ShippingMethod">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="Shipper" Type="nvarchar" Nullable="false" MaxLength="255" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Created" Type="datetimeoffset" />
-    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Modified" Type="datetimeoffset" />
-    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
   </EntityType>
   <EntityType Name="StockAdjustDetail">
     <Key>
@@ -663,7 +506,6 @@
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Modified" Type="datetimeoffset" />
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-    <Property Name="StockCheck_Employee" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="StockOnHandHistory">
     <Key>
@@ -886,7 +728,6 @@
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Modified" Type="datetimeoffset" />
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-    <Property Name="WorkOrder_Employee" Type="int" Nullable="false" />
     <Property Name="WorkOrder_Machine" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="Customer_CustomerGroup">
@@ -903,20 +744,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="Customer_Order">
-    <End Role="Customer" Type="ApplicationDataStore.Customer" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="Order" Type="ApplicationDataStore.Order" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Customer">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Order">
-        <PropertyRef Name="Customer_Order" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="SaleOrder_Customer">
     <End Role="Customer" Type="ApplicationDataStore.Customer" Multiplicity="1">
       <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
@@ -928,62 +755,6 @@
       </Principal>
       <Dependent Role="SaleOrder">
         <PropertyRef Name="SaleOrder_Customer" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="Order_Employee">
-    <End Role="Employee" Type="ApplicationDataStore.Employee" Multiplicity="1">
-      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </End>
-    <End Role="Order" Type="ApplicationDataStore.Order" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Employee">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Order">
-        <PropertyRef Name="Order_Employee" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="StockCheck_Employee">
-    <End Role="Employee" Type="ApplicationDataStore.Employee" Multiplicity="1">
-      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </End>
-    <End Role="StockCheck" Type="ApplicationDataStore.StockCheck" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Employee">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="StockCheck">
-        <PropertyRef Name="StockCheck_Employee" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="ProductSubscriber_Employee">
-    <End Role="Employee" Type="ApplicationDataStore.Employee" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="ProductSubscriber" Type="ApplicationDataStore.ProductSubscriber" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Employee">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ProductSubscriber">
-        <PropertyRef Name="ProductSubscriber_Employee" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="WorkOrder_Employee">
-    <End Role="Employee" Type="ApplicationDataStore.Employee" Multiplicity="1">
-      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </End>
-    <End Role="WorkOrder" Type="ApplicationDataStore.WorkOrder" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Employee">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="WorkOrder">
-        <PropertyRef Name="WorkOrder_Employee" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1057,20 +828,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="ReceiveFromPurchaseOrderDetail_Location">
-    <End Role="Location" Type="ApplicationDataStore.Location" Multiplicity="1">
-      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </End>
-    <End Role="ReceiveFromPurchaseOrderDetail" Type="ApplicationDataStore.ReceiveFromPurchaseOrderDetail" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Location">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ReceiveFromPurchaseOrderDetail">
-        <PropertyRef Name="ReceiveFromPurchaseOrderDetail_Location" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="PurchaseOrderDetail_Location">
     <End Role="Location" Type="ApplicationDataStore.Location" Multiplicity="1">
       <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
@@ -1124,20 +881,6 @@
       </Principal>
       <Dependent Role="WorkOrder">
         <PropertyRef Name="WorkOrder_Machine" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="OrderDetail_Order">
-    <End Role="Order" Type="ApplicationDataStore.Order" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="OrderDetail" Type="ApplicationDataStore.OrderDetail" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Order">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="OrderDetail">
-        <PropertyRef Name="OrderDetail_Order" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1253,20 +996,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="ReceiveFromPurchaseOrderDetail_Product">
-    <End Role="Product" Type="ApplicationDataStore.Product" Multiplicity="1">
-      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </End>
-    <End Role="ReceiveFromPurchaseOrderDetail" Type="ApplicationDataStore.ReceiveFromPurchaseOrderDetail" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Product">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ReceiveFromPurchaseOrderDetail">
-        <PropertyRef Name="ReceiveFromPurchaseOrderDetail_Product" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="WorkOrderIssueDetail_Product">
     <End Role="Product" Type="ApplicationDataStore.Product" Multiplicity="1">
       <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
@@ -1309,20 +1038,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder">
-    <End Role="ReceiveFromPurchaseOrder" Type="ApplicationDataStore.ReceiveFromPurchaseOrder" Multiplicity="1">
-      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </End>
-    <End Role="ReceiveFromPurchaseOrderDetail" Type="ApplicationDataStore.ReceiveFromPurchaseOrderDetail" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="ReceiveFromPurchaseOrder">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ReceiveFromPurchaseOrderDetail">
-        <PropertyRef Name="ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="SaleOrderDetail_SaleOrder">
     <End Role="SaleOrder" Type="ApplicationDataStore.SaleOrder" Multiplicity="1">
       <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
@@ -1334,20 +1049,6 @@
       </Principal>
       <Dependent Role="SaleOrderDetail">
         <PropertyRef Name="SaleOrderDetail_SaleOrder" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="OrderDetail_ShippingMethod">
-    <End Role="ShippingMethod" Type="ApplicationDataStore.ShippingMethod" Multiplicity="0..1">
-      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </End>
-    <End Role="OrderDetail" Type="ApplicationDataStore.OrderDetail" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="ShippingMethod">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="OrderDetail">
-        <PropertyRef Name="OrderDetail_ShippingMethod" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1404,20 +1105,6 @@
       </Principal>
       <Dependent Role="PurchaseOrder">
         <PropertyRef Name="PurchaseOrder_Supplier" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="ReceiveFromPurchaseOrder_Supplier">
-    <End Role="Supplier" Type="ApplicationDataStore.Supplier" Multiplicity="1">
-      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </End>
-    <End Role="ReceiveFromPurchaseOrder" Type="ApplicationDataStore.ReceiveFromPurchaseOrder" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Supplier">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="ReceiveFromPurchaseOrder">
-        <PropertyRef Name="ReceiveFromPurchaseOrder_Supplier" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

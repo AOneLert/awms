@@ -25,63 +25,15 @@
   <EntityType>
     <EntityType.Attributes>
       <Proxy
-        Target="ServiceInterface:Employee" />
-    </EntityType.Attributes>
-  </EntityType>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
-        Target="ServiceInterface:Order" />
-    </EntityType.Attributes>
-  </EntityType>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
-        Target="ServiceInterface:OrderDetail" />
-    </EntityType.Attributes>
-  </EntityType>
-  <Association>
-    <Association.Attributes>
-      <Proxy
-        Target="ServiceInterface:OrderDetail_Order" />
-    </Association.Attributes>
-  </Association>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
         Target="ServiceInterface:Customer" />
     </EntityType.Attributes>
   </EntityType>
-  <Association>
-    <Association.Attributes>
-      <Proxy
-        Target="ServiceInterface:Customer_Order" />
-    </Association.Attributes>
-  </Association>
   <EntityType>
     <EntityType.Attributes>
       <Proxy
         Target="ServiceInterface:Supplier" />
     </EntityType.Attributes>
   </EntityType>
-  <Association>
-    <Association.Attributes>
-      <Proxy
-        Target="ServiceInterface:Order_Employee" />
-    </Association.Attributes>
-  </Association>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
-        Target="ServiceInterface:ShippingMethod" />
-    </EntityType.Attributes>
-  </EntityType>
-  <Association>
-    <Association.Attributes>
-      <Proxy
-        Target="ServiceInterface:OrderDetail_ShippingMethod" />
-    </Association.Attributes>
-  </Association>
   <EntityType>
     <EntityType.Attributes>
       <Proxy
@@ -97,25 +49,7 @@
   <Association>
     <Association.Attributes>
       <Proxy
-        Target="ServiceInterface:StockCheck_Employee" />
-    </Association.Attributes>
-  </Association>
-  <Association>
-    <Association.Attributes>
-      <Proxy
         Target="ServiceInterface:StockCheckDetail_StockCheck" />
-    </Association.Attributes>
-  </Association>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
-        Target="ServiceInterface:ProductSubscriber" />
-    </EntityType.Attributes>
-  </EntityType>
-  <Association>
-    <Association.Attributes>
-      <Proxy
-        Target="ServiceInterface:ProductSubscriber_Employee" />
     </Association.Attributes>
   </Association>
   <EntityType>
@@ -367,43 +301,7 @@
   <Association>
     <Association.Attributes>
       <Proxy
-        Target="ServiceInterface:ReceiveFromPurchaseOrder_Supplier" />
-    </Association.Attributes>
-  </Association>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
-        Target="ServiceInterface:ReceiveFromPurchaseOrderDetail" />
-    </EntityType.Attributes>
-  </EntityType>
-  <Association>
-    <Association.Attributes>
-      <Proxy
-        Target="ServiceInterface:ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" />
-    </Association.Attributes>
-  </Association>
-  <Association>
-    <Association.Attributes>
-      <Proxy
-        Target="ServiceInterface:ReceiveFromPurchaseOrderDetail_Location" />
-    </Association.Attributes>
-  </Association>
-  <Association>
-    <Association.Attributes>
-      <Proxy
-        Target="ServiceInterface:ReceiveFromPurchaseOrderDetail_Product" />
-    </Association.Attributes>
-  </Association>
-  <Association>
-    <Association.Attributes>
-      <Proxy
         Target="ServiceInterface:PurchaseOrderDetail_Location" />
-    </Association.Attributes>
-  </Association>
-  <Association>
-    <Association.Attributes>
-      <Proxy
-        Target="ServiceInterface:WorkOrder_Employee" />
     </Association.Attributes>
   </Association>
   <Association>

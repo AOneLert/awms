@@ -153,11 +153,6 @@
         Association="PurchaseOrder_Supplier"
         FromEnd="Supplier"
         ToEnd="PurchaseOrder" />
-      <NavigationProperty
-        Name="ReceiveFromPurchaseOrders"
-        Association="ReceiveFromPurchaseOrder_Supplier"
-        FromEnd="Supplier"
-        ToEnd="ReceiveFromPurchaseOrder" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -311,16 +306,6 @@
         Name="Supplier"
         EntitySet="Suppliers" />
     </AssociationSet>
-    <AssociationSet
-      Name="ReceiveFromPurchaseOrder_Suppliers"
-      Association="ReceiveFromPurchaseOrder_Supplier">
-      <AssociationSetEnd
-        Name="ReceiveFromPurchaseOrder"
-        EntitySet="ReceiveFromPurchaseOrders" />
-      <AssociationSetEnd
-        Name="Supplier"
-        EntitySet="Suppliers" />
-    </AssociationSet>
   </EntityContainer>
   <DataService
     Name="ApplicationDataMapping">
@@ -357,27 +342,6 @@
         </SsdlAssociationSetEnd>
       </AssociationSetMapping.Attributes>
     </AssociationSetMapping>
-    <AssociationSetMapping
-      AssociationSet="ReceiveFromPurchaseOrder_Suppliers">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet
-          Name="ReceiveFromPurchaseOrder_Suppliers" />
-        <SsdlAssociationSetEnd
-          End="ApplicationData/Members[ReceiveFromPurchaseOrder_Suppliers]/Members[ReceiveFromPurchaseOrder]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef
-              Name="ReceiveFromPurchaseOrder_Supplier" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd
-          End="ApplicationData/Members[ReceiveFromPurchaseOrder_Suppliers]/Members[Supplier]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef
-              Name="Id" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
   </DataService>
   <Association
     Name="PurchaseOrder_Supplier">
@@ -385,22 +349,6 @@
       Name="PurchaseOrder"
       Multiplicity="Many"
       EntityType="PurchaseOrder" />
-    <AssociationEnd
-      Name="Supplier"
-      Multiplicity="One"
-      EntityType="Supplier">
-      <AssociationEnd.Attributes>
-        <DeleteRule
-          Action="Restrict" />
-      </AssociationEnd.Attributes>
-    </AssociationEnd>
-  </Association>
-  <Association
-    Name="ReceiveFromPurchaseOrder_Supplier">
-    <AssociationEnd
-      Name="ReceiveFromPurchaseOrder"
-      Multiplicity="Many"
-      EntityType="ReceiveFromPurchaseOrder" />
     <AssociationEnd
       Name="Supplier"
       Multiplicity="One"

@@ -447,29 +447,6 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail> ReceiveFromPurchaseOrderDetails
-        {
-            get
-            {
-                return global::LightSwitchApplication.Location.DetailsClass.GetValue(this, global::LightSwitchApplication.Location.DetailsClass.PropertySetProperties.ReceiveFromPurchaseOrderDetails);
-            }
-        }
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail> ReceiveFromPurchaseOrderDetailsQuery
-        {
-            get
-            {
-                return global::LightSwitchApplication.Location.DetailsClass.GetQuery(this, global::LightSwitchApplication.Location.DetailsClass.PropertySetProperties.ReceiveFromPurchaseOrderDetails);
-            }
-        }
-
-        /// <summary>
-        /// No Modeled Description Available
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.PurchaseOrderDetail> PurchaseOrderDetails
         {
             get
@@ -744,14 +721,6 @@ namespace LightSwitchApplication
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail> ReceiveFromPurchaseOrderDetails
-                {
-                    get
-                    {
-                        return base.GetItem(global::LightSwitchApplication.Location.DetailsClass.PropertySetProperties.ReceiveFromPurchaseOrderDetails) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail>;
-                    }
-                }
-                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.PurchaseOrderDetail> PurchaseOrderDetails
                 {
                     get
@@ -798,7 +767,6 @@ namespace LightSwitchApplication
                 new global::System.Collections.IEnumerable StockOnHands { get; }
                 new global::System.Collections.IEnumerable StockAdjustDetails { get; }
                 new global::System.Collections.IEnumerable SaleOrderDetails { get; }
-                new global::System.Collections.IEnumerable ReceiveFromPurchaseOrderDetails { get; }
                 new global::System.Collections.IEnumerable PurchaseOrderDetails { get; }
                 new global::System.Collections.IEnumerable WorkOrderIssueDetail { get; }
                 new global::System.Collections.IEnumerable WorkOrderProduces { get; }
@@ -1303,26 +1271,6 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail>.Entry
-                    ReceiveFromPurchaseOrderDetails = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail>.Entry(
-                        "ReceiveFromPurchaseOrderDetails",
-                        global::LightSwitchApplication.Location.DetailsClass.PropertySetProperties._ReceiveFromPurchaseOrderDetails_Stub,
-                        global::LightSwitchApplication.Location.DetailsClass.PropertySetProperties._ReceiveFromPurchaseOrderDetails_GetReferencedEntities,
-                        global::LightSwitchApplication.Location.DetailsClass.PropertySetProperties._ReceiveFromPurchaseOrderDetails_GetEntityCollection);
-                private static void _ReceiveFromPurchaseOrderDetails_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Location.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail>.Data> c, global::LightSwitchApplication.Location.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ReceiveFromPurchaseOrderDetails, sf);
-                }
-                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail> _ReceiveFromPurchaseOrderDetails_GetReferencedEntities(global::LightSwitchApplication.Location.DetailsClass d)
-                {
-                    return d.GetReferencedEntities<global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail, global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail.DetailsClass>(global::LightSwitchApplication.Location.DetailsClass.PropertySetProperties.ReceiveFromPurchaseOrderDetails, ref d._ReceiveFromPurchaseOrderDetails);
-                }
-                private static global::System.Collections.IEnumerable _ReceiveFromPurchaseOrderDetails_GetEntityCollection(global::LightSwitchApplication.Location.DetailsClass d)
-                {
-                    return d.ImplementationEntity.ReceiveFromPurchaseOrderDetails;
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.PurchaseOrderDetail>.Entry
                     PurchaseOrderDetails = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.PurchaseOrderDetail>.Entry(
                         "PurchaseOrderDetails",
@@ -1431,9 +1379,6 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.SaleOrderDetail>.Data _SaleOrderDetails;
-            
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.ReceiveFromPurchaseOrderDetail>.Data _ReceiveFromPurchaseOrderDetails;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass, global::LightSwitchApplication.PurchaseOrderDetail>.Data _PurchaseOrderDetails;

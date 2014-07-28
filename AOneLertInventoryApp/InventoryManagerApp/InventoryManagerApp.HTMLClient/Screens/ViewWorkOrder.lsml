@@ -127,33 +127,6 @@
                 Name="right"
                 Kind="Group">
                 <ContentItem
-                  Name="Employee"
-                  Kind="Details"
-                  DataType="Employee">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="พนักงาน" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="WorkOrder/Properties[Employee]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                  <ContentItem
-                    Name="RowTemplate"
-                    Kind="Details"
-                    DataType="Employee">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression />
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                </ContentItem>
-                <ContentItem
                   Name="Machine"
                   Kind="Details"
                   DataType="Machine">

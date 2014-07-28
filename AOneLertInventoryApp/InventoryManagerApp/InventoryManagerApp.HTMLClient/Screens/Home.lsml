@@ -66,19 +66,7 @@
             <ContentItem
               Name="StockCheck"
               IsHidden="True"
-              Kind="Command">
-              <ContentItem.PropertySources>
-                <ControlPropertySource
-                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <CallExpression
-                        Target="!module/Methods[showBrowseStockChecks]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ControlPropertySource>
-              </ContentItem.PropertySources>
-            </ContentItem>
+              Kind="Command" />
             <ContentItem
               Name="ManageAccounting"
               IsHidden="True"

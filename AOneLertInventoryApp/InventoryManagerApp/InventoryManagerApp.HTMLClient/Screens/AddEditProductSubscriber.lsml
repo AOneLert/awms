@@ -27,71 +27,6 @@
               <DisplayName
                 Value="Details" />
             </ContentItem.Attributes>
-            <ContentItem
-              Name="Employee"
-              Kind="Details"
-              DataType="Employee">
-              <ContentItem.DataSource>
-                <ScreenExpressionTree>
-                  <ChainExpression>
-                    <MemberExpression
-                      Member="AddEditProductSubscriber/Properties[ProductSubscriber]" />
-                    <MemberExpression
-                      Member="Employee" />
-                  </ChainExpression>
-                </ScreenExpressionTree>
-              </ContentItem.DataSource>
-              <ContentItem
-                Name="RowTemplate1"
-                Kind="Details"
-                DataType="Employee"
-                View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression />
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-                <ContentItem
-                  Name="UserName"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="Employee/Properties[UserName]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="LastName"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="Employee/Properties[LastName]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="FirstName"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="Employee/Properties[FirstName]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-              </ContentItem>
-            </ContentItem>
           </ContentItem>
         </ContentItem>
         <ContentItem
@@ -146,15 +81,6 @@
           ParameterType=":String" />
       </ScreenMethod>
     </Screen.Methods>
-    <Screen.Properties>
-      <ScreenProperty
-        Name="ProductSubscriber"
-        PropertyType="ProductSubscriber">
-        <ScreenProperty.Attributes>
-          <IsParameter />
-        </ScreenProperty.Attributes>
-      </ScreenProperty>
-    </Screen.Properties>
   </Screen>
   <Application.Methods>
     <ApplicationMethod
@@ -163,9 +89,6 @@
         <ShowScreenMethod
           TargetScreen="AddEditProductSubscriber" />
       </ApplicationMethod.Attributes>
-      <ApplicationMethodParameter
-        Name="ProductSubscriber"
-        ParameterType="ProductSubscriber" />
     </ApplicationMethod>
   </Application.Methods>
 </Application>
