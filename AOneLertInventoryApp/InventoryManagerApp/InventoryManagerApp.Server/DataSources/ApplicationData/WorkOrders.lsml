@@ -68,9 +68,8 @@
         ToEnd="WorkOrderProduce" />
       <EntityProperty
         Name="Remark"
-        PropertyType=":String">
+        PropertyType=":String?">
         <EntityProperty.Attributes>
-          <Required />
           <MaxLength
             Value="255" />
         </EntityProperty.Attributes>

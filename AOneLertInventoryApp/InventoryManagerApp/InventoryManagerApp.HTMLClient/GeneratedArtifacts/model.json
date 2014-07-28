@@ -4870,8 +4870,7 @@
             {
               "id": "WorkOrder/Properties[Remark]",
               "name": "Remark",
-              "propertyType": { "__id": ":String" },
-              ":@Required": { },
+              "propertyType": { "__id": ":String?" },
               ":@MaxLength":
               {
                 "value": 255
@@ -25183,7 +25182,6 @@
                                   {
                                     "displayName": "Receive Date",
                                     "name": "ReceiveDate",
-                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":Text" },
                                     "dataSource":
@@ -25194,7 +25192,6 @@
                                   {
                                     "displayName": "รหัสสินค้าสั่งผลิต",
                                     "name": "ProductCode",
-                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":Text" },
                                     "dataSource":
@@ -25280,7 +25277,6 @@
                                   {
                                     "displayName": "Produce Location",
                                     "name": "ProduceLocation",
-                                    "isHidden": true,
                                     "kind": "Details",
                                     "view": { "__id": ":Summary" },
                                     "dataSource":
@@ -25291,7 +25287,6 @@
                                   {
                                     "displayName": "Produce Lot",
                                     "name": "ProduceLot",
-                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":Text" },
                                     "dataSource":
@@ -25302,7 +25297,6 @@
                                   {
                                     "displayName": "Receive Quantity",
                                     "name": "ReceiveQuantity",
-                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":Text" },
                                     "dataSource":
@@ -25313,7 +25307,6 @@
                                   {
                                     "displayName": "Produce Cost",
                                     "name": "ProduceCost",
-                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":MoneyViewer" },
                                     "dataSource":
@@ -25324,7 +25317,6 @@
                                   {
                                     "displayName": "Receive Cost",
                                     "name": "ReceiveCost",
-                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":MoneyViewer" },
                                     "dataSource":
@@ -25335,7 +25327,6 @@
                                   {
                                     "displayName": "Is Receive Complete",
                                     "name": "isReceiveComplete",
-                                    "isHidden": true,
                                     "kind": "Value",
                                     "view": { "__id": ":Text" },
                                     "dataSource":
