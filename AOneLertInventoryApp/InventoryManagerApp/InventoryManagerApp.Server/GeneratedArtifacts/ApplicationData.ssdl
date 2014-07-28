@@ -880,7 +880,7 @@
     <Property Name="WorkOrderNumber" Type="nvarchar" Nullable="false" MaxLength="255" />
     <Property Name="WorkOrderDate" Type="datetime" Nullable="false" />
     <Property Name="IsReceiveComplete" Type="bit" Nullable="false" />
-    <Property Name="Remark" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="255" />
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Created" Type="datetimeoffset" />
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />

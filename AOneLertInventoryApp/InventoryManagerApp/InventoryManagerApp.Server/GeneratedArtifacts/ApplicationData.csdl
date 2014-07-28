@@ -749,7 +749,7 @@
     <Property Name="WorkOrder_Employee" Type="Edm.Int32" Nullable="false" />
     <Property Name="WorkOrder_Machine" Type="Edm.Int32" Nullable="false" />
     <Property Name="IsReceiveComplete" Type="Edm.Boolean" Nullable="false" />
-    <Property Name="Remark" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Remark" Type="Edm.String" MaxLength="255" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />

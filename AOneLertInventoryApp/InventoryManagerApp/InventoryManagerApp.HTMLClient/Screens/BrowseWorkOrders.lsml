@@ -81,7 +81,7 @@
                 <ContentItem
                   Name="Remark"
                   Kind="Value"
-                  DataType=":String">
+                  DataType=":String?">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="หมายเหตุ" />

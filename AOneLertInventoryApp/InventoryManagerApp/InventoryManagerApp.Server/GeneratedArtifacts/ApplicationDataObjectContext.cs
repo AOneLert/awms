@@ -15400,9 +15400,8 @@ namespace LightSwitchApplication.Implementation
         /// <param name="workOrder_Employee">Initial value of the WorkOrder_Employee property.</param>
         /// <param name="workOrder_Machine">Initial value of the WorkOrder_Machine property.</param>
         /// <param name="isReceiveComplete">Initial value of the IsReceiveComplete property.</param>
-        /// <param name="remark">Initial value of the Remark property.</param>
         /// <param name="rowVersion">Initial value of the RowVersion property.</param>
-        public static WorkOrder CreateWorkOrder(global::System.Int32 id, global::System.String workOrderNumber, global::System.DateTime workOrderDate, global::System.Int32 workOrder_Employee, global::System.Int32 workOrder_Machine, global::System.Boolean isReceiveComplete, global::System.String remark, global::System.Byte[] rowVersion)
+        public static WorkOrder CreateWorkOrder(global::System.Int32 id, global::System.String workOrderNumber, global::System.DateTime workOrderDate, global::System.Int32 workOrder_Employee, global::System.Int32 workOrder_Machine, global::System.Boolean isReceiveComplete, global::System.Byte[] rowVersion)
         {
             WorkOrder workOrder = new WorkOrder();
             workOrder.Id = id;
@@ -15411,7 +15410,6 @@ namespace LightSwitchApplication.Implementation
             workOrder.WorkOrder_Employee = workOrder_Employee;
             workOrder.WorkOrder_Machine = workOrder_Machine;
             workOrder.IsReceiveComplete = isReceiveComplete;
-            workOrder.Remark = remark;
             workOrder.RowVersion = rowVersion;
             return workOrder;
         }
@@ -15570,7 +15568,7 @@ namespace LightSwitchApplication.Implementation
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
         public global::System.String Remark
         {
