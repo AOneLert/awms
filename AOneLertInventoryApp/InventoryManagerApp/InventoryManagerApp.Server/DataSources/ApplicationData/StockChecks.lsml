@@ -35,11 +35,6 @@
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty
-        Name="StockCheckBy"
-        Association="StockCheck_Employee"
-        FromEnd="StockCheck"
-        ToEnd="Employee" />
-      <NavigationProperty
         Name="StockCheckDetails"
         Association="StockCheckDetail_StockCheck"
         FromEnd="StockCheck"

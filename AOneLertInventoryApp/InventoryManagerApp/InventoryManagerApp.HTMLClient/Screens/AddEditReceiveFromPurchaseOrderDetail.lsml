@@ -27,178 +27,6 @@
               <DisplayName
                 Value="Details" />
             </ContentItem.Attributes>
-            <ContentItem
-              Name="columns"
-              Kind="Details"
-              DataType="ReceiveFromPurchaseOrderDetail"
-              View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
-              <ContentItem.Attributes>
-                <DisplayName
-                  Value="columns" />
-              </ContentItem.Attributes>
-              <ContentItem.DataSource>
-                <ScreenExpressionTree>
-                  <ChainExpression>
-                    <MemberExpression
-                      Member="AddEditReceiveFromPurchaseOrderDetail/Properties[ReceiveFromPurchaseOrderDetail]" />
-                  </ChainExpression>
-                </ScreenExpressionTree>
-              </ContentItem.DataSource>
-              <ContentItem
-                Name="Location"
-                Kind="Details"
-                DataType="Location">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression
-                        Member="ReceiveFromPurchaseOrderDetail/Properties[Location]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-                <ContentItem
-                  Name="RowTemplate1"
-                  Kind="Details"
-                  DataType="Location"
-                  View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression />
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                  <ContentItem
-                    Name="LocationName"
-                    Kind="Value"
-                    DataType=":String">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="Location/Properties[LocationName]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                </ContentItem>
-              </ContentItem>
-              <ContentItem
-                Name="Product"
-                Kind="Details"
-                DataType="Product">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression
-                        Member="ReceiveFromPurchaseOrderDetail/Properties[Product]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-                <ContentItem
-                  Name="RowTemplate2"
-                  Kind="Details"
-                  DataType="Product"
-                  View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression />
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                  <ContentItem
-                    Name="ProductCode"
-                    Kind="Value"
-                    DataType=":String">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="Product/Properties[ProductCode]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                  <ContentItem
-                    Name="ProductName"
-                    Kind="Value"
-                    DataType=":String">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="Product/Properties[ProductName]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                  <ContentItem
-                    Name="UOMName"
-                    Kind="Value"
-                    DataType=":String">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="Product/Properties[UnitOfMeasure]" />
-                          <MemberExpression
-                            Member="UOMName" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                </ContentItem>
-              </ContentItem>
-              <ContentItem
-                Name="LotNo"
-                Kind="Value"
-                DataType=":String">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression
-                        Member="ReceiveFromPurchaseOrderDetail/Properties[LotNo]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem
-                Name="Quantity"
-                Kind="Value"
-                DataType=":Double">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression
-                        Member="ReceiveFromPurchaseOrderDetail/Properties[Quantity]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem
-                Name="ItemUOM"
-                Kind="Value"
-                DataType=":String">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression
-                        Member="AddEditReceiveFromPurchaseOrderDetail/Properties[ItemUOM]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-              <ContentItem
-                Name="UnitCost"
-                Kind="Value"
-                DataType=":Decimal">
-                <ContentItem.DataSource>
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <MemberExpression
-                        Member="ReceiveFromPurchaseOrderDetail/Properties[UnitCost]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ContentItem.DataSource>
-              </ContentItem>
-            </ContentItem>
           </ContentItem>
         </ContentItem>
         <ContentItem
@@ -255,13 +83,6 @@
     </Screen.Methods>
     <Screen.Properties>
       <ScreenProperty
-        Name="ReceiveFromPurchaseOrderDetail"
-        PropertyType="ReceiveFromPurchaseOrderDetail">
-        <ScreenProperty.Attributes>
-          <IsParameter />
-        </ScreenProperty.Attributes>
-      </ScreenProperty>
-      <ScreenProperty
         Name="ItemUOM"
         PropertyType=":String">
         <ScreenProperty.Attributes>
@@ -277,9 +98,6 @@
         <ShowScreenMethod
           TargetScreen="AddEditReceiveFromPurchaseOrderDetail" />
       </ApplicationMethod.Attributes>
-      <ApplicationMethodParameter
-        Name="ReceiveFromPurchaseOrderDetail"
-        ParameterType="ReceiveFromPurchaseOrderDetail" />
     </ApplicationMethod>
   </Application.Methods>
 </Application>

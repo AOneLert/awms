@@ -44,11 +44,6 @@
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty
-        Name="Employee"
-        Association="WorkOrder_Employee"
-        FromEnd="WorkOrder"
-        ToEnd="Employee" />
-      <NavigationProperty
         Name="Machine"
         Association="WorkOrder_Machine"
         FromEnd="WorkOrder"

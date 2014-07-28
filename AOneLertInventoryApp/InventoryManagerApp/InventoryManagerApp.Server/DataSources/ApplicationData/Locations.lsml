@@ -93,11 +93,6 @@
         FromEnd="Location"
         ToEnd="SaleOrderDetail" />
       <NavigationProperty
-        Name="ReceiveFromPurchaseOrderDetails"
-        Association="ReceiveFromPurchaseOrderDetail_Location"
-        FromEnd="Location"
-        ToEnd="ReceiveFromPurchaseOrderDetail" />
-      <NavigationProperty
         Name="PurchaseOrderDetails"
         Association="PurchaseOrderDetail_Location"
         FromEnd="Location"
@@ -306,16 +301,6 @@
         EntitySet="Locations" />
     </AssociationSet>
     <AssociationSet
-      Name="ReceiveFromPurchaseOrderDetail_Locations"
-      Association="ReceiveFromPurchaseOrderDetail_Location">
-      <AssociationSetEnd
-        Name="ReceiveFromPurchaseOrderDetail"
-        EntitySet="ReceiveFromPurchaseOrderDetails" />
-      <AssociationSetEnd
-        Name="Location"
-        EntitySet="Locations" />
-    </AssociationSet>
-    <AssociationSet
       Name="PurchaseOrderDetail_Locations"
       Association="PurchaseOrderDetail_Location">
       <AssociationSetEnd
@@ -473,27 +458,6 @@
       </AssociationSetMapping.Attributes>
     </AssociationSetMapping>
     <AssociationSetMapping
-      AssociationSet="ReceiveFromPurchaseOrderDetail_Locations">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet
-          Name="ReceiveFromPurchaseOrderDetail_Locations" />
-        <SsdlAssociationSetEnd
-          End="ApplicationData/Members[ReceiveFromPurchaseOrderDetail_Locations]/Members[ReceiveFromPurchaseOrderDetail]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef
-              Name="ReceiveFromPurchaseOrderDetail_Location" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd
-          End="ApplicationData/Members[ReceiveFromPurchaseOrderDetail_Locations]/Members[Location]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef
-              Name="Id" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping
       AssociationSet="PurchaseOrderDetail_Locations">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet
@@ -611,22 +575,6 @@
       Name="SaleOrderDetail"
       Multiplicity="Many"
       EntityType="SaleOrderDetail" />
-    <AssociationEnd
-      Name="Location"
-      Multiplicity="One"
-      EntityType="Location">
-      <AssociationEnd.Attributes>
-        <DeleteRule
-          Action="Restrict" />
-      </AssociationEnd.Attributes>
-    </AssociationEnd>
-  </Association>
-  <Association
-    Name="ReceiveFromPurchaseOrderDetail_Location">
-    <AssociationEnd
-      Name="ReceiveFromPurchaseOrderDetail"
-      Multiplicity="Many"
-      EntityType="ReceiveFromPurchaseOrderDetail" />
     <AssociationEnd
       Name="Location"
       Multiplicity="One"

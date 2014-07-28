@@ -205,11 +205,6 @@
         FromEnd="Product"
         ToEnd="PurchaseOrderDetail" />
       <NavigationProperty
-        Name="ReceiveFromPurchaseOrderDetails"
-        Association="ReceiveFromPurchaseOrderDetail_Product"
-        FromEnd="Product"
-        ToEnd="ReceiveFromPurchaseOrderDetail" />
-      <NavigationProperty
         Name="WorkOrderIssueDetail"
         Association="WorkOrderIssueDetail_Product"
         FromEnd="Product"
@@ -413,16 +408,6 @@
         EntitySet="Products" />
     </AssociationSet>
     <AssociationSet
-      Name="ReceiveFromPurchaseOrderDetail_Products"
-      Association="ReceiveFromPurchaseOrderDetail_Product">
-      <AssociationSetEnd
-        Name="ReceiveFromPurchaseOrderDetail"
-        EntitySet="ReceiveFromPurchaseOrderDetails" />
-      <AssociationSetEnd
-        Name="Product"
-        EntitySet="Products" />
-    </AssociationSet>
-    <AssociationSet
       Name="WorkOrderIssueDetail_Products"
       Association="WorkOrderIssueDetail_Product">
       <AssociationSetEnd
@@ -579,27 +564,6 @@
       </AssociationSetMapping.Attributes>
     </AssociationSetMapping>
     <AssociationSetMapping
-      AssociationSet="ReceiveFromPurchaseOrderDetail_Products">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet
-          Name="ReceiveFromPurchaseOrderDetail_Products" />
-        <SsdlAssociationSetEnd
-          End="ApplicationData/Members[ReceiveFromPurchaseOrderDetail_Products]/Members[ReceiveFromPurchaseOrderDetail]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef
-              Name="ReceiveFromPurchaseOrderDetail_Product" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd
-          End="ApplicationData/Members[ReceiveFromPurchaseOrderDetail_Products]/Members[Product]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef
-              Name="Id" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
-    <AssociationSetMapping
       AssociationSet="WorkOrderIssueDetail_Products">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet
@@ -712,22 +676,6 @@
       Name="PurchaseOrderDetail"
       Multiplicity="Many"
       EntityType="PurchaseOrderDetail" />
-    <AssociationEnd
-      Name="Product"
-      Multiplicity="One"
-      EntityType="Product">
-      <AssociationEnd.Attributes>
-        <DeleteRule
-          Action="Restrict" />
-      </AssociationEnd.Attributes>
-    </AssociationEnd>
-  </Association>
-  <Association
-    Name="ReceiveFromPurchaseOrderDetail_Product">
-    <AssociationEnd
-      Name="ReceiveFromPurchaseOrderDetail"
-      Multiplicity="Many"
-      EntityType="ReceiveFromPurchaseOrderDetail" />
     <AssociationEnd
       Name="Product"
       Multiplicity="One"

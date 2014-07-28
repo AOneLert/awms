@@ -122,11 +122,6 @@
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty
-        Name="Orders"
-        Association="Customer_Order"
-        FromEnd="Customer"
-        ToEnd="Order" />
-      <NavigationProperty
         Name="CustomerGroup"
         Association="Customer_CustomerGroup"
         FromEnd="Customer"
@@ -307,16 +302,6 @@
       </QueryOperationParameter>
     </QueryOperation>
     <AssociationSet
-      Name="Customer_Orders"
-      Association="Customer_Order">
-      <AssociationSetEnd
-        Name="Customer"
-        EntitySet="Customers" />
-      <AssociationSetEnd
-        Name="Order"
-        EntitySet="Orders" />
-    </AssociationSet>
-    <AssociationSet
       Name="SaleOrder_Customers"
       Association="SaleOrder_Customer">
       <AssociationSetEnd
@@ -327,48 +312,11 @@
         EntitySet="Customers" />
     </AssociationSet>
   </EntityContainer>
-  <Association
-    Name="Customer_Order">
-    <AssociationEnd
-      Name="Customer"
-      Multiplicity="One"
-      EntityType="Customer">
-      <AssociationEnd.Attributes>
-        <DeleteRule
-          Action="Cascade" />
-      </AssociationEnd.Attributes>
-    </AssociationEnd>
-    <AssociationEnd
-      Name="Order"
-      Multiplicity="Many"
-      EntityType="Order" />
-  </Association>
   <DataService
     Name="ApplicationDataMapping">
     <DataService.Attributes>
       <Partial />
     </DataService.Attributes>
-    <AssociationSetMapping
-      AssociationSet="Customer_Orders">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet
-          Name="Customer_Orders" />
-        <SsdlAssociationSetEnd
-          End="ApplicationData/Members[Customer_Orders]/Members[Customer]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef
-              Name="Id" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd
-          End="ApplicationData/Members[Customer_Orders]/Members[Order]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef
-              Name="Customer_Order" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
     <EntitySetMapping
       EntitySet="Customers">
       <EntitySetMapping.Attributes>

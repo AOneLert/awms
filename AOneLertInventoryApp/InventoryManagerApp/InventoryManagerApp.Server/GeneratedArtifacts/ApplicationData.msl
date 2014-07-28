@@ -79,23 +79,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Employees">
-      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Employee)">
-        <MappingFragment StoreEntitySet="Employees">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="LastName" ColumnName="LastName" />
-          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Current" ColumnName="Current" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="Created" ColumnName="Created" />
-          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
-          <ScalarProperty Name="Modified" ColumnName="Modified" />
-          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Locations">
       <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Location)">
         <MappingFragment StoreEntitySet="Locations">
@@ -119,41 +102,6 @@
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="MachineName" ColumnName="MachineName" />
           <ScalarProperty Name="Discontinued" ColumnName="Discontinued" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="Created" ColumnName="Created" />
-          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
-          <ScalarProperty Name="Modified" ColumnName="Modified" />
-          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="OrderDetails">
-      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.OrderDetail)">
-        <MappingFragment StoreEntitySet="OrderDetails">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="OrderDetail_Order" ColumnName="OrderDetail_Order" />
-          <ScalarProperty Name="UnitsOrdered" ColumnName="UnitsOrdered" />
-          <ScalarProperty Name="UnitsShipped" ColumnName="UnitsShipped" />
-          <ScalarProperty Name="DateOrderShipped" ColumnName="DateOrderShipped" />
-          <ScalarProperty Name="OrderDetail_ShippingMethod" ColumnName="OrderDetail_ShippingMethod" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="Created" ColumnName="Created" />
-          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
-          <ScalarProperty Name="Modified" ColumnName="Modified" />
-          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Orders">
-      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Order)">
-        <MappingFragment StoreEntitySet="Orders">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="OrderReference" ColumnName="OrderReference" />
-          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
-          <ScalarProperty Name="Customer_Order" ColumnName="Customer_Order" />
-          <ScalarProperty Name="Order_Employee" ColumnName="Order_Employee" />
-          <ScalarProperty Name="OrderPaidFor" ColumnName="OrderPaidFor" />
-          <ScalarProperty Name="DatePaid" ColumnName="DatePaid" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="Created" ColumnName="Created" />
           <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
@@ -281,19 +229,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ProductSubscribers">
-      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.ProductSubscriber)">
-        <MappingFragment StoreEntitySet="ProductSubscribers">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="ProductSubscriber_Employee" ColumnName="ProductSubscriber_Employee" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="Created" ColumnName="Created" />
-          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
-          <ScalarProperty Name="Modified" ColumnName="Modified" />
-          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="PurchaseOrderDetails">
       <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.PurchaseOrderDetail)">
         <MappingFragment StoreEntitySet="PurchaseOrderDetails">
@@ -334,39 +269,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ReceiveFromPurchaseOrderDetails">
-      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.ReceiveFromPurchaseOrderDetail)">
-        <MappingFragment StoreEntitySet="ReceiveFromPurchaseOrderDetails">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" ColumnName="ReceiveFromPurchaseOrderDetail_ReceiveFromPurchaseOrder" />
-          <ScalarProperty Name="ReceiveFromPurchaseOrderDetail_Location" ColumnName="ReceiveFromPurchaseOrderDetail_Location" />
-          <ScalarProperty Name="ReceiveFromPurchaseOrderDetail_Product" ColumnName="ReceiveFromPurchaseOrderDetail_Product" />
-          <ScalarProperty Name="LotNo" ColumnName="LotNo" />
-          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="Created" ColumnName="Created" />
-          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
-          <ScalarProperty Name="Modified" ColumnName="Modified" />
-          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="ReceiveFromPurchaseOrders">
-      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.ReceiveFromPurchaseOrder)">
-        <MappingFragment StoreEntitySet="ReceiveFromPurchaseOrders">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="ReceiveNumber" ColumnName="ReceiveNumber" />
-          <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
-          <ScalarProperty Name="ReceiveFromPurchaseOrder_Supplier" ColumnName="ReceiveFromPurchaseOrder_Supplier" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="Created" ColumnName="Created" />
-          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
-          <ScalarProperty Name="Modified" ColumnName="Modified" />
-          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="SaleOrderDetails">
       <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.SaleOrderDetail)">
         <MappingFragment StoreEntitySet="SaleOrderDetails">
@@ -398,19 +300,6 @@
           <ScalarProperty Name="PaymentTerm" ColumnName="PaymentTerm" />
           <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
           <ScalarProperty Name="Remarks" ColumnName="Remarks" />
-          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
-          <ScalarProperty Name="Created" ColumnName="Created" />
-          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
-          <ScalarProperty Name="Modified" ColumnName="Modified" />
-          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="ShippingMethods">
-      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.ShippingMethod)">
-        <MappingFragment StoreEntitySet="ShippingMethods">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Shipper" ColumnName="Shipper" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="Created" ColumnName="Created" />
           <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
@@ -472,7 +361,6 @@
         <MappingFragment StoreEntitySet="StockChecks">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="StockCheckDate" ColumnName="StockCheckDate" />
-          <ScalarProperty Name="StockCheck_Employee" ColumnName="StockCheck_Employee" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="Created" ColumnName="Created" />
           <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
@@ -706,7 +594,6 @@
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="WorkOrderNumber" ColumnName="WorkOrderNumber" />
           <ScalarProperty Name="WorkOrderDate" ColumnName="WorkOrderDate" />
-          <ScalarProperty Name="WorkOrder_Employee" ColumnName="WorkOrder_Employee" />
           <ScalarProperty Name="WorkOrder_Machine" ColumnName="WorkOrder_Machine" />
           <ScalarProperty Name="IsReceiveComplete" ColumnName="IsReceiveComplete" />
           <ScalarProperty Name="Remark" ColumnName="Remark" />
