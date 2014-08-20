@@ -47,6 +47,7 @@ document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowsePOReceive
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProductCategories.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProductGroups.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseLocations.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProductPricings.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProductReceiveBalanceForwards.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProducts.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProducts_bk.lsml.js\"></script>");
@@ -54,10 +55,12 @@ document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowsePurchaseO
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowsePurchaseOrders_Old.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseSaleOrders.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseShippingMethods.lsml.js\"></script>");
-document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseStockChecks.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseStockOnHands.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseSuppliers.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseUnitOfMeasures.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseWorkOrders.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/Home.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MobileHome.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/ViewPOReceivedDetail.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/ViewPurchaseOrder.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/ViewPurchaseOrderDetail.lsml.js\"></script>");

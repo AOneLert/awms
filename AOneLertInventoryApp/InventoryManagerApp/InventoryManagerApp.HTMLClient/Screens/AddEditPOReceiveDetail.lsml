@@ -229,6 +229,20 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
+                  Name="RequireUnitCost"
+                  Kind="Value"
+                  DataType="Microsoft.LightSwitch.Extensions:Money?"
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="PurchaseOrderDetail/Properties[RequireUnitCost]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
                   Name="RequireTotalCost"
                   Kind="Value"
                   DataType="Microsoft.LightSwitch.Extensions:Money"
@@ -238,6 +252,19 @@
                       <ChainExpression>
                         <MemberExpression
                           Member="PurchaseOrderDetail/Properties[RequireTotalCost]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="ReceiveUnitCost"
+                  Kind="Value"
+                  DataType="Microsoft.LightSwitch.Extensions:Money?">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="PurchaseOrderDetail/Properties[ReceiveUnitCost]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>

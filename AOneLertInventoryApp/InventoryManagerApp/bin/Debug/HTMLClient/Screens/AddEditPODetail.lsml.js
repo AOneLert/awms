@@ -32,4 +32,10 @@ myapp.AddEditPODetail.created = function (screen) {
         screen.PurchaseOrderDetail.IsReceiveComplete = false;
     }
     
+    screen.PurchaseOrderDetail.addChangeListener("RequireUnitCost", function (e) {
+        var requireQty = screen.PurchaseOrderDetail.RequireQuantity;
+        var itemPrice = screen.PurchaseOrderDetail.RequireUnitCost;        
+        if (requireQty != undefined && requireQty != null && itemPrice != undefined && itemPrice != null) 
+            screen.PurchaseOrderDetail.RequireTotalCost = (requireQty * itemPrice).toFixed(2);
+    });
 };

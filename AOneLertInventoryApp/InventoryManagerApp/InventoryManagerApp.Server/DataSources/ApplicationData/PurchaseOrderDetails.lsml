@@ -75,6 +75,26 @@
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
+        Name="RequireUnitCost"
+        PropertyType="Microsoft.LightSwitch.Extensions:Money?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <DecimalConstraint
+            Precision="18"
+            Scale="2" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ReceiveUnitCost"
+        PropertyType="Microsoft.LightSwitch.Extensions:Money?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <DecimalConstraint
+            Precision="18"
+            Scale="2" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
         Name="RequireTotalCost"
         PropertyType="Microsoft.LightSwitch.Extensions:Money">
         <EntityProperty.Attributes>
