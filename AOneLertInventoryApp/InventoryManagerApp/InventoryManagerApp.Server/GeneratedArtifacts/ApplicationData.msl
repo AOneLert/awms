@@ -240,6 +240,8 @@
           <ScalarProperty Name="LotNo" ColumnName="LotNo" />
           <ScalarProperty Name="RequireQuantity" ColumnName="RequireQuantity" />
           <ScalarProperty Name="ReceiveQuantity" ColumnName="ReceiveQuantity" />
+          <ScalarProperty Name="RequireUnitCost" ColumnName="RequireUnitCost" />
+          <ScalarProperty Name="ReceiveUnitCost" ColumnName="ReceiveUnitCost" />
           <ScalarProperty Name="RequireTotalCost" ColumnName="RequireTotalCost" />
           <ScalarProperty Name="ReceiveTotalCost" ColumnName="ReceiveTotalCost" />
           <ScalarProperty Name="Remark" ColumnName="Remark" />

@@ -257,6 +257,8 @@
     <Property Name="LotNo" Type="Edm.String" MaxLength="255" />
     <Property Name="RequireQuantity" Type="Edm.Double" Nullable="false" />
     <Property Name="ReceiveQuantity" Type="Edm.Double" />
+    <Property Name="RequireUnitCost" Type="Edm.Decimal" Precision="18" Scale="2" />
+    <Property Name="ReceiveUnitCost" Type="Edm.Decimal" Precision="18" Scale="2" />
     <Property Name="RequireTotalCost" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="ReceiveTotalCost" Type="Edm.Decimal" Precision="18" Scale="2" />
     <Property Name="Remark" Type="Edm.String" MaxLength="255" />

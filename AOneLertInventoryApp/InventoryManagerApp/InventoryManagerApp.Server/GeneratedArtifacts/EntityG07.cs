@@ -2609,6 +2609,54 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Nullable<decimal> RequireUnitCost
+        {
+            get
+            {
+                return global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties.RequireUnitCost);
+            }
+            set
+            {
+                global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties.RequireUnitCost, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequireUnitCost_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequireUnitCost_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequireUnitCost_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Nullable<decimal> ReceiveUnitCost
+        {
+            get
+            {
+                return global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties.ReceiveUnitCost);
+            }
+            set
+            {
+                global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties.ReceiveUnitCost, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ReceiveUnitCost_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ReceiveUnitCost_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ReceiveUnitCost_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public decimal RequireTotalCost
         {
             get
@@ -3023,6 +3071,22 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>> RequireUnitCost
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties.RequireUnitCost) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>> ReceiveUnitCost
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties.ReceiveUnitCost) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>>;
+                    }
+                }
+                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, decimal> RequireTotalCost
                 {
                     get
@@ -3131,6 +3195,8 @@ namespace LightSwitchApplication
                 new string LotNo { get; set; }
                 new double RequireQuantity { get; set; }
                 new global::System.Nullable<double> ReceiveQuantity { get; set; }
+                new global::System.Nullable<decimal> RequireUnitCost { get; set; }
+                new global::System.Nullable<decimal> ReceiveUnitCost { get; set; }
                 new decimal RequireTotalCost { get; set; }
                 new global::System.Nullable<decimal> ReceiveTotalCost { get; set; }
                 new string Remark { get; set; }
@@ -3372,6 +3438,80 @@ namespace LightSwitchApplication
                 private static void _ReceiveQuantity_OnValueChanged(global::LightSwitchApplication.PurchaseOrderDetail e)
                 {
                     e.ReceiveQuantity_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>>.Entry
+                    RequireUnitCost = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>>.Entry(
+                        "RequireUnitCost",
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._RequireUnitCost_Stub,
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._RequireUnitCost_ComputeIsReadOnly,
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._RequireUnitCost_Validate,
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._RequireUnitCost_GetImplementationValue,
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._RequireUnitCost_SetImplementationValue,
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._RequireUnitCost_OnValueChanged);
+                private static void _RequireUnitCost_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>>.Data> c, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass d, object sf)
+                {
+                    c(d, ref d._RequireUnitCost, sf);
+                }
+                private static bool _RequireUnitCost_ComputeIsReadOnly(global::LightSwitchApplication.PurchaseOrderDetail e)
+                {
+                    bool result = false;
+                    e.RequireUnitCost_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _RequireUnitCost_Validate(global::LightSwitchApplication.PurchaseOrderDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.RequireUnitCost_Validate(r);
+                }
+                private static global::System.Nullable<decimal> _RequireUnitCost_GetImplementationValue(global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass d)
+                {
+                    return d.ImplementationEntity.RequireUnitCost;
+                }
+                private static void _RequireUnitCost_SetImplementationValue(global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass d, global::System.Nullable<decimal> v)
+                {
+                    d.ImplementationEntity.RequireUnitCost = v;
+                }
+                private static void _RequireUnitCost_OnValueChanged(global::LightSwitchApplication.PurchaseOrderDetail e)
+                {
+                    e.RequireUnitCost_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>>.Entry
+                    ReceiveUnitCost = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>>.Entry(
+                        "ReceiveUnitCost",
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._ReceiveUnitCost_Stub,
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._ReceiveUnitCost_ComputeIsReadOnly,
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._ReceiveUnitCost_Validate,
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._ReceiveUnitCost_GetImplementationValue,
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._ReceiveUnitCost_SetImplementationValue,
+                        global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass.PropertySetProperties._ReceiveUnitCost_OnValueChanged);
+                private static void _ReceiveUnitCost_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>>.Data> c, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ReceiveUnitCost, sf);
+                }
+                private static bool _ReceiveUnitCost_ComputeIsReadOnly(global::LightSwitchApplication.PurchaseOrderDetail e)
+                {
+                    bool result = false;
+                    e.ReceiveUnitCost_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _ReceiveUnitCost_Validate(global::LightSwitchApplication.PurchaseOrderDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.ReceiveUnitCost_Validate(r);
+                }
+                private static global::System.Nullable<decimal> _ReceiveUnitCost_GetImplementationValue(global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass d)
+                {
+                    return d.ImplementationEntity.ReceiveUnitCost;
+                }
+                private static void _ReceiveUnitCost_SetImplementationValue(global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass d, global::System.Nullable<decimal> v)
+                {
+                    d.ImplementationEntity.ReceiveUnitCost = v;
+                }
+                private static void _ReceiveUnitCost_OnValueChanged(global::LightSwitchApplication.PurchaseOrderDetail e)
+                {
+                    e.ReceiveUnitCost_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -3851,6 +3991,12 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<double>>.Data _ReceiveQuantity;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>>.Data _RequireUnitCost;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, global::System.Nullable<decimal>>.Data _ReceiveUnitCost;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PurchaseOrderDetail, global::LightSwitchApplication.PurchaseOrderDetail.DetailsClass, decimal>.Data _RequireTotalCost;
