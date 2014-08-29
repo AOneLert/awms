@@ -385,6 +385,8 @@
     <Property Name="LotNo" Type="nvarchar" MaxLength="255" />
     <Property Name="RequireQuantity" Type="float" Nullable="false" />
     <Property Name="ReceiveQuantity" Type="float" />
+    <Property Name="RequireUnitCost" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ReceiveUnitCost" Type="decimal" Precision="18" Scale="2" />
     <Property Name="RequireTotalCost" Type="decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="ReceiveTotalCost" Type="decimal" Precision="18" Scale="2" />
     <Property Name="Remark" Type="nvarchar" MaxLength="255" />

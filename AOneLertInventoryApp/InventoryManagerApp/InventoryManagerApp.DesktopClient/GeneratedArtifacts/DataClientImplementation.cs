@@ -1788,6 +1788,16 @@ namespace LightSwitchApplication.Implementation
             this.___OnPropertyChanged("ReceiveQuantity");
         }
         
+        partial void OnRequireUnitCostChanged()
+        {
+            this.___OnPropertyChanged("RequireUnitCost");
+        }
+        
+        partial void OnReceiveUnitCostChanged()
+        {
+            this.___OnPropertyChanged("ReceiveUnitCost");
+        }
+        
         partial void OnRequireTotalCostChanged()
         {
             this.___OnPropertyChanged("RequireTotalCost");

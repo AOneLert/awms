@@ -1475,7 +1475,6 @@ C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLert
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowsePurchaseOrders_Old.lsml.js
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSaleOrders.lsml.js
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseShippingMethods.lsml.js
-C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockChecks.lsml.js
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseStockOnHands.lsml.js
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSuppliers.lsml.js
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseUnitOfMeasures.lsml.js
@@ -1511,3 +1510,7 @@ C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLert
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Scripts\Generated\resources.js
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseProductPricings.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\ViewPOReceivedDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\ViewPurchaseOrder.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\ViewPurchaseOrderDetail.lsml.js
