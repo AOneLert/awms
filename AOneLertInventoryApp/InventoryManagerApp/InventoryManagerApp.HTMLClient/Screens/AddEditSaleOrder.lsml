@@ -404,6 +404,7 @@
                 View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
                 <ContentItem
                   Name="SaleOrderTotalAmount"
+                  IsHidden="True"
                   Kind="Value"
                   DataType="Microsoft.LightSwitch.Extensions:Money"
                   View="Microsoft.LightSwitch.MobileWeb:Text">
@@ -573,6 +574,7 @@
                 </ContentItem>
                 <ContentItem
                   Name="CustomerGroupName"
+                  IsHidden="True"
                   Kind="Value"
                   DataType=":String">
                   <ContentItem.Attributes>
@@ -592,6 +594,7 @@
                 </ContentItem>
                 <ContentItem
                   Name="CreditTerm"
+                  IsHidden="True"
                   Kind="Value"
                   DataType=":Int16?">
                   <ContentItem.DataSource>

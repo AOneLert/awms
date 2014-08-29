@@ -10,7 +10,7 @@
       <SaveChangesTo
         EntityContainer="ApplicationData" />
       <DisplayName
-        Value="ขายสินค้า" />
+        Value="บันทึกการขายสินค้า" />
     </Screen.Attributes>
     <Screen.RootContentItem>
       <ContentItem
@@ -165,6 +165,7 @@
                 </ContentItem>
                 <ContentItem
                   Name="Distance"
+                  IsHidden="True"
                   Kind="Value"
                   DataType=":Double">
                   <ContentItem.Attributes>
@@ -237,7 +238,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showViewSaleOrder]">
+                        Target="!module/Methods[showAddEditSaleOrder]">
                         <CallExpression.Attributes>
                           <AssociatedCollection
                             Collection="BrowseSaleOrders/Properties[SaleOrders]" />
@@ -279,6 +280,16 @@
                               TargetParameter="!module/Methods[showAddEditSaleOrder]/Parameters[SaleOrder]" />
                           </CallExpression.Attributes>
                         </CallExpression>
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootCommand/Properties[Icon]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <ConstantExpression
+                          Value="msls-add"
+                          ResultType=":String" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ControlPropertySource>
