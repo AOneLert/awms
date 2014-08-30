@@ -31,7 +31,7 @@
               View="Microsoft.LightSwitch.MobileWeb:TextBox">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="ค้นหาใบสั่งซื้อ" />
+                  Value="ค้นหาใบสั่งซื้อสินค้า" />
               </ContentItem.Attributes>
               <ContentItem.DataSource>
                 <ScreenExpressionTree>
@@ -214,6 +214,35 @@
                               TargetParameter="!module/Methods[showAddEditPO]/Parameters[PurchaseOrder]" />
                           </CallExpression.Attributes>
                         </CallExpression>
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                </ContentItem.PropertySources>
+              </ContentItem>
+              <ContentItem
+                Name="ShowBrowsePOReceive"
+                Kind="Command">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="รับสินค้า" />
+                </ContentItem.Attributes>
+                <ContentItem.PropertySources>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <CallExpression
+                          Target="!module/Methods[showBrowsePOReceive]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootCommand/Properties[Icon]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <ConstantExpression
+                          Value="msls-document"
+                          ResultType=":String" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ControlPropertySource>

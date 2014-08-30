@@ -2288,6 +2288,11 @@ namespace LightSwitchApplication.Implementation
             this.___OnPropertyChanged("Remarks");
         }
         
+        partial void OnSaleOrderStatusChanged()
+        {
+            this.___OnPropertyChanged("SaleOrderStatus");
+        }
+        
         partial void OnCreatedByChanged()
         {
             this.___OnPropertyChanged("CreatedBy");
@@ -4189,6 +4194,46 @@ namespace LightSwitchApplication.Implementation
     }
     #endregion
     
+    #region Requisitions
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/ApplicationData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public partial class Requisitions :
+        global::LightSwitchApplication.Requisitions.DetailsClass.IImplementation
+    {
+        partial void OnIdChanged()
+        {
+            this.___OnPropertyChanged("Id");
+        }
+        
+        partial void OnCreatedByChanged()
+        {
+            this.___OnPropertyChanged("CreatedBy");
+        }
+        
+        partial void OnCreatedChanged()
+        {
+            this.___OnPropertyChanged("Created");
+        }
+        
+        partial void OnModifiedByChanged()
+        {
+            this.___OnPropertyChanged("ModifiedBy");
+        }
+        
+        partial void OnModifiedChanged()
+        {
+            this.___OnPropertyChanged("Modified");
+        }
+        
+        partial void OnRowVersionChanged()
+        {
+            this.___OnPropertyChanged("RowVersion");
+        }
+        
+    }
+    #endregion
+    
     #region ApplicationData
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4331,6 +4376,10 @@ namespace LightSwitchApplication.Implementation
             if (typeof(T) == typeof(global::LightSwitchApplication.WorkOrder))
             {
                 return new global::LightSwitchApplication.Implementation.WorkOrder();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.Requisitions))
+            {
+                return new global::LightSwitchApplication.Implementation.Requisitions();
             }
             return null;
         }
@@ -4516,6 +4565,10 @@ namespace LightSwitchApplication.Implementation
             if (typeof(global::LightSwitchApplication.WorkOrder) == definitionType)
             {
                 return typeof(global::LightSwitchApplication.Implementation.WorkOrder);
+            }
+            if (typeof(global::LightSwitchApplication.Requisitions) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Requisitions);
             }
             return null;
         }

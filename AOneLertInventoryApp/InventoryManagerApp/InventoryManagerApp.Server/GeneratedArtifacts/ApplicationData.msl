@@ -302,6 +302,7 @@
           <ScalarProperty Name="PaymentTerm" ColumnName="PaymentTerm" />
           <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
           <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="SaleOrderStatus" ColumnName="SaleOrderStatus" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="Created" ColumnName="Created" />
           <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
@@ -599,6 +600,18 @@
           <ScalarProperty Name="WorkOrder_Machine" ColumnName="WorkOrder_Machine" />
           <ScalarProperty Name="IsReceiveComplete" ColumnName="IsReceiveComplete" />
           <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionsSet">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.Requisitions)">
+        <MappingFragment StoreEntitySet="RequisitionsSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="Created" ColumnName="Created" />
           <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />

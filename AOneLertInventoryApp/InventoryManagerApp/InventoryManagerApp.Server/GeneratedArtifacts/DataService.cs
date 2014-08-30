@@ -1284,6 +1284,42 @@ namespace LightSwitchApplication
         partial void WorkOrders_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.WorkOrder, bool>> filter);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_Inserting(global::LightSwitchApplication.Requisitions entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_Inserted(global::LightSwitchApplication.Requisitions entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_Updating(global::LightSwitchApplication.Requisitions entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_Updated(global::LightSwitchApplication.Requisitions entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_Deleting(global::LightSwitchApplication.Requisitions entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_Deleted(global::LightSwitchApplication.Requisitions entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_Validate(global::LightSwitchApplication.Requisitions entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RequisitionsSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Requisitions, bool>> filter);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void SaveChanges_CanExecute(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4225,6 +4261,81 @@ namespace LightSwitchApplication
             {
                 global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.WorkOrder, bool>> filter = null;
                 d.WorkOrders_Filter(ref filter);
+                return filter;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.Requisitions>
+                __RequisitionsSetEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.Requisitions>(
+                    "RequisitionsSet",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_CanInsert,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_CanUpdate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_CanDelete,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_CanRead,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_Inserting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_Inserted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_Updating,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_Updated,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_Deleting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_Deleted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_Validate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RequisitionsSet_Filter);
+            private static bool __RequisitionsSet_CanInsert(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.RequisitionsSet_CanInsert(ref result);
+                return result;
+            }
+            private static bool __RequisitionsSet_CanUpdate(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.RequisitionsSet_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __RequisitionsSet_CanDelete(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.RequisitionsSet_CanDelete(ref result);
+                return result;
+            }
+            private static bool __RequisitionsSet_CanRead(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.RequisitionsSet_CanRead(ref result);
+                return result;
+            }
+            private static void __RequisitionsSet_Inserting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Requisitions e)
+            {
+                d.RequisitionsSet_Inserting(e);
+            }
+            private static void __RequisitionsSet_Inserted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Requisitions e)
+            {
+                d.RequisitionsSet_Inserted(e);
+            }
+            private static void __RequisitionsSet_Updating(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Requisitions e)
+            {
+                d.RequisitionsSet_Updating(e);
+            }
+            private static void __RequisitionsSet_Updated(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Requisitions e)
+            {
+                d.RequisitionsSet_Updated(e);
+            }
+            private static void __RequisitionsSet_Deleting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Requisitions e)
+            {
+                d.RequisitionsSet_Deleting(e);
+            }
+            private static void __RequisitionsSet_Deleted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Requisitions e)
+            {
+                d.RequisitionsSet_Deleted(e);
+            }
+            private static void __RequisitionsSet_Validate(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Requisitions e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.RequisitionsSet_Validate(e, r);
+            }
+            private static global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Requisitions, bool>> __RequisitionsSet_Filter(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Requisitions, bool>> filter = null;
+                d.RequisitionsSet_Filter(ref filter);
                 return filter;
             }
             

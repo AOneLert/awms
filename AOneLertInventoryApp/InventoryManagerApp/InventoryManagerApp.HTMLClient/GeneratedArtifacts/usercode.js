@@ -54,6 +54,7 @@ document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseProducts_
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowsePurchaseOrders.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowsePurchaseOrders_Old.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseSaleOrders.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseSaleOrderTasks.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseShippingMethods.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseStockOnHands.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseSuppliers.lsml.js\"></script>");

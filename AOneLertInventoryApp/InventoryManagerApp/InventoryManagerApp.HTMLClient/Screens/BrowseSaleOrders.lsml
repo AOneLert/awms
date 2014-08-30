@@ -10,7 +10,7 @@
       <SaveChangesTo
         EntityContainer="ApplicationData" />
       <DisplayName
-        Value="บันทึกการขายสินค้า" />
+        Value="รายการขายสินค้า" />
     </Screen.Attributes>
     <Screen.RootContentItem>
       <ContentItem
@@ -227,6 +227,23 @@
                       <ChainExpression>
                         <MemberExpression
                           Member="SaleOrder/Properties[Remarks]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="SaleOrderStatus"
+                  Kind="Value"
+                  DataType=":Boolean">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="สถานะ" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="SaleOrder/Properties[SaleOrderStatus]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>

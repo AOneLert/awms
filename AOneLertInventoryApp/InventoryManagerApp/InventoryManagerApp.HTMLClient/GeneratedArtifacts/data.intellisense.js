@@ -274,4 +274,12 @@
         created: [lightSwitchApplication.StockOnHandHistory]
     });
 
+    msls._addEntryPoints(lightSwitchApplication.Requisitions, {
+        /// <field>
+        /// Called when a new requisitions is created.
+        /// <br/>created(msls.application.Requisitions entity)
+        /// </field>
+        created: [lightSwitchApplication.Requisitions]
+    });
+
 }(msls.application));

@@ -1278,9 +1278,6 @@ window.myapp = msls.application;
         /// <field name="Customer" type="msls.application.Customer">
         /// Gets or sets the customer for this saleOrder.
         /// </field>
-        /// <field name="SaleOrderDetails" type="msls.EntityCollection" elementType="msls.application.SaleOrderDetail">
-        /// Gets the saleOrderDetails for this saleOrder.
-        /// </field>
         /// <field name="PaymentTerm" type="Number">
         /// Gets or sets the paymentTerm for this saleOrder.
         /// </field>
@@ -1289,6 +1286,12 @@ window.myapp = msls.application;
         /// </field>
         /// <field name="Remarks" type="String">
         /// Gets or sets the remarks for this saleOrder.
+        /// </field>
+        /// <field name="SaleOrderStatus" type="Boolean">
+        /// Gets or sets the saleOrderStatus for this saleOrder.
+        /// </field>
+        /// <field name="SaleOrderDetails" type="msls.EntityCollection" elementType="msls.application.SaleOrderDetail">
+        /// Gets the saleOrderDetails for this saleOrder.
         /// </field>
         /// <field name="CreatedBy" type="String">
         /// Gets or sets the createdBy for this saleOrder.
@@ -1754,6 +1757,37 @@ window.myapp = msls.application;
         $Entity.call(this, entitySet);
     }
 
+    function Requisitions(entitySet) {
+        /// <summary>
+        /// Represents the Requisitions entity type.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// The entity set that should contain this requisitions.
+        /// </param>
+        /// <field name="Id" type="Number">
+        /// Gets or sets the id for this requisitions.
+        /// </field>
+        /// <field name="CreatedBy" type="String">
+        /// Gets or sets the createdBy for this requisitions.
+        /// </field>
+        /// <field name="Created" type="Date">
+        /// Gets or sets the created for this requisitions.
+        /// </field>
+        /// <field name="ModifiedBy" type="String">
+        /// Gets or sets the modifiedBy for this requisitions.
+        /// </field>
+        /// <field name="Modified" type="Date">
+        /// Gets or sets the modified for this requisitions.
+        /// </field>
+        /// <field name="RowVersion" type="Array">
+        /// Gets or sets the rowVersion for this requisitions.
+        /// </field>
+        /// <field name="details" type="msls.application.Requisitions.Details">
+        /// Gets the details for this requisitions.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
     function ApplicationData(dataWorkspace) {
         /// <summary>
         /// Represents the ApplicationData data service.
@@ -1862,6 +1896,9 @@ window.myapp = msls.application;
         /// </field>
         /// <field name="StockOnHandHistories" type="msls.EntitySet">
         /// Gets the StockOnHandHistories entity set.
+        /// </field>
+        /// <field name="RequisitionsSet" type="msls.EntitySet">
+        /// Gets the RequisitionsSet entity set.
         /// </field>
         /// <field name="details" type="msls.application.ApplicationData.Details">
         /// Gets the details for this data service.
@@ -2270,10 +2307,11 @@ window.myapp = msls.application;
             { name: "SaleOrderDate", type: Date },
             { name: "ReferenceNo", type: String },
             { name: "Customer", kind: "reference", type: Customer },
-            { name: "SaleOrderDetails", kind: "collection", elementType: SaleOrderDetail },
             { name: "PaymentTerm", type: Number },
             { name: "PaymentStatus", type: String },
             { name: "Remarks", type: String },
+            { name: "SaleOrderStatus", type: Boolean },
+            { name: "SaleOrderDetails", kind: "collection", elementType: SaleOrderDetail },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },
@@ -2418,6 +2456,15 @@ window.myapp = msls.application;
             { name: "RowVersion", type: Array }
         ]),
 
+        Requisitions: $defineEntity(Requisitions, [
+            { name: "Id", type: Number },
+            { name: "CreatedBy", type: String, isReadOnly: true },
+            { name: "Created", type: Date, isReadOnly: true },
+            { name: "ModifiedBy", type: String, isReadOnly: true },
+            { name: "Modified", type: Date, isReadOnly: true },
+            { name: "RowVersion", type: Array }
+        ]),
+
         ApplicationData: $defineDataService(ApplicationData, lightSwitchApplication.rootUri + "/ApplicationData.svc", [
             { name: "Products", elementType: Product },
             { name: "ProductCategories", elementType: ProductCategory },
@@ -2452,7 +2499,8 @@ window.myapp = msls.application;
             { name: "WorkOrderIssueDetails", elementType: WorkOrderIssueDetail },
             { name: "WorkOrderProduces", elementType: WorkOrderProduce },
             { name: "Transactions", elementType: Transaction },
-            { name: "StockOnHandHistories", elementType: StockOnHandHistory }
+            { name: "StockOnHandHistories", elementType: StockOnHandHistory },
+            { name: "RequisitionsSet", elementType: Requisitions }
         ], [
             {
                 name: "Products_SingleOrDefault", value: function (Id) {
@@ -2883,6 +2931,13 @@ window.myapp = msls.application;
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/QueryMaxSONumber()",
                         {
                         });
+                }
+            },
+            {
+                name: "RequisitionsSet_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.RequisitionsSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/RequisitionsSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
                 }
             }
         ]),

@@ -35,6 +35,7 @@
     <EntitySet Name="WorkOrderIssueDetails" EntityType="ApplicationDataStore.WorkOrderIssueDetail" store:Type="Tables" Schema="dbo" Table="WorkOrderIssueDetails" />
     <EntitySet Name="WorkOrderProduces" EntityType="ApplicationDataStore.WorkOrderProduce" store:Type="Tables" Schema="dbo" Table="WorkOrderProduces" />
     <EntitySet Name="WorkOrders" EntityType="ApplicationDataStore.WorkOrder" store:Type="Tables" Schema="dbo" Table="WorkOrders" />
+    <EntitySet Name="RequisitionsSet" EntityType="ApplicationDataStore.Requisitions" store:Type="Tables" Schema="dbo" Table="RequisitionsSet" />
     <AssociationSet Name="Customer_CustomerGroup" Association="ApplicationDataStore.Customer_CustomerGroup">
       <End Role="CustomerGroup" EntitySet="CustomerGroups" />
       <End Role="Customer" EntitySet="Customers" />
@@ -445,6 +446,7 @@
     <Property Name="PaymentTerm" Type="int" />
     <Property Name="PaymentStatus" Type="nvarchar" MaxLength="255" />
     <Property Name="Remarks" Type="nvarchar" MaxLength="255" />
+    <Property Name="SaleOrderStatus" Type="bit" Nullable="false" />
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Created" Type="datetimeoffset" />
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
@@ -731,6 +733,17 @@
     <Property Name="Modified" Type="datetimeoffset" />
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
     <Property Name="WorkOrder_Machine" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Requisitions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
   </EntityType>
   <Association Name="Customer_CustomerGroup">
     <End Role="CustomerGroup" Type="ApplicationDataStore.CustomerGroup" Multiplicity="1">

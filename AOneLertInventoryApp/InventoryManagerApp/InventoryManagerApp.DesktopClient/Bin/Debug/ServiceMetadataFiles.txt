@@ -58,3 +58,4 @@ InventoryManagerApp.Server.DataSources.ApplicationData.WorkOrderIsNotReceive.lsm
 InventoryManagerApp.Server.DataSources.ApplicationData.Transactions.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.StockOnHandHistories.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.QueryMaxSONumber.lsml
+InventoryManagerApp.Server.DataSources.ApplicationData.RequisitionsSet.lsml

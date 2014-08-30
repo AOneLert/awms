@@ -10,7 +10,7 @@
       <SaveChangesTo
         EntityContainer="ApplicationData" />
       <DisplayName
-        Value="เพิ่ม/แก้ไข รายการสินค้า" />
+        Value="รายการสินค้า" />
     </Screen.Attributes>
     <Screen.RootContentItem>
       <ContentItem
@@ -54,7 +54,7 @@
                   Name="ProductCode1"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="รหัสสินค้า" />
@@ -69,12 +69,24 @@
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="StretchToContainer"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
                   Name="ProductName1"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="ชื่อสินค้า" />
@@ -89,6 +101,18 @@
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="StretchToContainer"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
               </ContentItem>
               <ContentItem
@@ -99,7 +123,7 @@
                   Name="LocationName1"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="เบิกจากสถานที่" />
@@ -114,12 +138,24 @@
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="StretchToContainer"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
                   Name="LotNo"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="Lot No." />
@@ -132,6 +168,18 @@
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="StretchToContainer"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
               </ContentItem>
               <ContentItem
@@ -142,7 +190,7 @@
                   Name="AvailableQuantity"
                   Kind="Value"
                   DataType=":Double"
-                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="จำนวนสินค้าพร้อมขาย" />
@@ -155,12 +203,24 @@
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="StretchToContainer"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
                   Name="UOMName1"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="หน่วย" />
@@ -177,6 +237,18 @@
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="StretchToContainer"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
               </ContentItem>
               <ContentItem
@@ -187,7 +259,7 @@
                   Name="UnitCost"
                   Kind="Value"
                   DataType="Microsoft.LightSwitch.Extensions:Money"
-                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  View="Microsoft.LightSwitch.MobileWeb:MoneyViewer">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="ต้นทุนต่อหน่วย" />
@@ -200,12 +272,24 @@
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="StretchToContainer"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
                   Name="MasterSalePrice"
                   Kind="Value"
                   DataType="Microsoft.LightSwitch.Extensions:Money"
-                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
+                  View="Microsoft.LightSwitch.MobileWeb:MoneyViewer">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="ต้นทุนขาย" />
@@ -218,6 +302,18 @@
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="StretchToContainer"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
               </ContentItem>
               <ContentItem
@@ -290,7 +386,7 @@
                 Kind="Command">
                 <ContentItem.Attributes>
                   <DisplayName
-                    Value="เลือกสินค้าเพื่อขาย" />
+                    Value="เลือกสินค้า" />
                 </ContentItem.Attributes>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
@@ -321,6 +417,10 @@
           <ContentItem
             Name="PopupStockOnHand"
             Kind="Group">
+            <ContentItem.Attributes>
+              <DisplayName
+                Value="ค้นหารายการสินค้าพร้อมขาย" />
+            </ContentItem.Attributes>
             <ContentItem
               Name="SearchProduct"
               Kind="Value"
@@ -473,6 +573,23 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
+                  Name="LotNo1"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="Lot No." />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="StockOnHand/Properties[LotNo]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
                   Name="LocationName"
                   Kind="Value"
                   DataType=":String">
@@ -487,19 +604,6 @@
                           Member="StockOnHand/Properties[Location]" />
                         <MemberExpression
                           Member="LocationName" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="LotNo1"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="StockOnHand/Properties[LotNo]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -591,6 +695,38 @@
                 </ControlPropertySource>
               </ContentItem.PropertySources>
             </ContentItem>
+            <ContentItem.PropertySources>
+              <ControlPropertySource
+                Property="Microsoft.LightSwitch.MobileWeb:RootGroup/Properties[CompactMargins]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression
+                      Value="True"
+                      ResultType=":Boolean" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+              <ControlPropertySource
+                Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MinWidth]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression
+                      Value="600"
+                      ResultType=":Double" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+              <ControlPropertySource
+                Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MaxWidth]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression
+                      Value="600"
+                      ResultType=":Double" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+            </ContentItem.PropertySources>
           </ContentItem>
         </ContentItem>
         <ContentItem.PropertySources>

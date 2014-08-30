@@ -10,7 +10,7 @@
       <SaveChangesTo
         EntityContainer="ApplicationData" />
       <DisplayName
-        Value="สร้างเอกสารการขาย" />
+        Value="เอกสารการขาย" />
     </Screen.Attributes>
     <Screen.RootContentItem>
       <ContentItem
@@ -255,6 +255,23 @@
                     </ContentItem>
                   </ContentItem>
                   <ContentItem
+                    Name="LotNo"
+                    Kind="Value"
+                    DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="Lot No." />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="SaleOrderDetail/Properties[LotNo]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
                     Name="Location"
                     Kind="Details"
                     DataType="Location">
@@ -282,23 +299,6 @@
                     </ContentItem>
                   </ContentItem>
                   <ContentItem
-                    Name="LotNo"
-                    Kind="Value"
-                    DataType=":String">
-                    <ContentItem.Attributes>
-                      <DisplayName
-                        Value="Lot No." />
-                    </ContentItem.Attributes>
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="SaleOrderDetail/Properties[LotNo]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                  <ContentItem
                     Name="OrderQuantity"
                     Kind="Value"
                     DataType=":Double">
@@ -320,6 +320,10 @@
                     Kind="Value"
                     DataType="Microsoft.LightSwitch.Extensions:Money"
                     View="Microsoft.LightSwitch.MobileWeb:Text">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="ราคาขาย" />
+                    </ContentItem.Attributes>
                     <ContentItem.DataSource>
                       <ScreenExpressionTree>
                         <ChainExpression>
@@ -642,6 +646,16 @@
                   <ChainExpression>
                     <CallExpression
                       Target="AddEditSaleOrder/Methods[CustomersPopup_Tap]" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+              <ControlPropertySource
+                Property="Microsoft.LightSwitch.MobileWeb:RootGroup/Properties[CompactMargins]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression
+                      Value="True"
+                      ResultType=":Boolean" />
                   </ChainExpression>
                 </ScreenExpressionTree>
               </ControlPropertySource>

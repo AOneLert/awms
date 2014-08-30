@@ -17,32 +17,32 @@ namespace LightSwitchApplication
     /// No Modeled Description Available
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-    public sealed partial class Worker : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass>
+    public sealed partial class WorkOrderIssueDetail : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass>
     {
         #region Constructors
     
         /// <summary>
-        /// Initializes a new instance of the Worker entity.
+        /// Initializes a new instance of the WorkOrderIssueDetail entity.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public Worker()
+        public WorkOrderIssueDetail()
             : this(null)
         {
         }
     
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public Worker(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.Worker> entitySet)
+        public WorkOrderIssueDetail(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.WorkOrderIssueDetail> entitySet)
             : base(entitySet)
         {
-            global::LightSwitchApplication.Worker.DetailsClass.Initialize(this);
+            global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.Initialize(this);
         }
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Worker_Created();
+        partial void WorkOrderIssueDetail_Created();
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Worker_AllowSaveWithErrors(ref bool result);
+        partial void WorkOrderIssueDetail_AllowSaveWithErrors(ref bool result);
     
         #endregion
     
@@ -87,11 +87,11 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.Worker.DetailsClass.GetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Id);
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.Id);
             }
             set
             {
-                global::LightSwitchApplication.Worker.DetailsClass.SetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Id, value);
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.Id, value);
             }
         }
         
@@ -107,72 +107,72 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string WorkerName
+        public string IssueLot
         {
             get
             {
-                return global::LightSwitchApplication.Worker.DetailsClass.GetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.WorkerName);
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueLot);
             }
             set
             {
-                global::LightSwitchApplication.Worker.DetailsClass.SetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.WorkerName, value);
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueLot, value);
             }
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void WorkerName_IsReadOnly(ref bool result);
+        partial void IssueLot_IsReadOnly(ref bool result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void WorkerName_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        partial void IssueLot_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void WorkerName_Changed();
+        partial void IssueLot_Changed();
 
         /// <summary>
         /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.DateTime HireDate
+        public double IssueQuantity
         {
             get
             {
-                return global::LightSwitchApplication.Worker.DetailsClass.GetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.HireDate);
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueQuantity);
             }
             set
             {
-                global::LightSwitchApplication.Worker.DetailsClass.SetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.HireDate, value);
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueQuantity, value);
             }
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void HireDate_IsReadOnly(ref bool result);
+        partial void IssueQuantity_IsReadOnly(ref bool result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void HireDate_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        partial void IssueQuantity_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void HireDate_Changed();
+        partial void IssueQuantity_Changed();
 
         /// <summary>
         /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public bool Discontinued
+        public decimal IssueUnitCost
         {
             get
             {
-                return global::LightSwitchApplication.Worker.DetailsClass.GetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Discontinued);
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueUnitCost);
             }
             set
             {
-                global::LightSwitchApplication.Worker.DetailsClass.SetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Discontinued, value);
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueUnitCost, value);
             }
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Discontinued_IsReadOnly(ref bool result);
+        partial void IssueUnitCost_IsReadOnly(ref bool result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Discontinued_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        partial void IssueUnitCost_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Discontinued_Changed();
+        partial void IssueUnitCost_Changed();
 
         /// <summary>
         /// No Modeled Description Available
@@ -183,7 +183,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.Worker.DetailsClass.GetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.CreatedBy);
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.CreatedBy);
             }
         }
         
@@ -211,7 +211,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.Worker.DetailsClass.GetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Created);
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.Created);
             }
         }
         
@@ -231,7 +231,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.Worker.DetailsClass.GetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.ModifiedBy);
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.ModifiedBy);
             }
         }
         
@@ -259,7 +259,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.Worker.DetailsClass.GetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Modified);
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.Modified);
             }
         }
         
@@ -280,11 +280,11 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.Worker.DetailsClass.GetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.RowVersion);
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.RowVersion);
             }
             set
             {
-                global::LightSwitchApplication.Worker.DetailsClass.SetValue(this, global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.RowVersion, value);
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.RowVersion, value);
             }
         }
         
@@ -295,6 +295,78 @@ namespace LightSwitchApplication
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void RowVersion_Changed();
 
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::LightSwitchApplication.WorkOrder WorkOrder
+        {
+            get
+            {
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.WorkOrder);
+            }
+            set
+            {
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.WorkOrder, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkOrder_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkOrder_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void WorkOrder_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::LightSwitchApplication.Product IssueProduct
+        {
+            get
+            {
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueProduct);
+            }
+            set
+            {
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueProduct, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void IssueProduct_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void IssueProduct_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void IssueProduct_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::LightSwitchApplication.Location IssueLocation
+        {
+            get
+            {
+                return global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueLocation);
+            }
+            set
+            {
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueLocation, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void IssueLocation_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void IssueLocation_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void IssueLocation_Changed();
+
         #endregion
     
         #region Details Class
@@ -304,37 +376,37 @@ namespace LightSwitchApplication
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public sealed class DetailsClass : global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<
-                global::LightSwitchApplication.Worker,
-                global::LightSwitchApplication.Worker.DetailsClass,
-                global::LightSwitchApplication.Worker.DetailsClass.IImplementation,
-                global::LightSwitchApplication.Worker.DetailsClass.PropertySet,
-                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass>,
-                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass>>
+                global::LightSwitchApplication.WorkOrderIssueDetail,
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass,
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.IImplementation,
+                global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySet,
+                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass>,
+                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass>>
         {
     
             static DetailsClass()
             {
-                var initializeEntry = global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Id;
+                var initializeEntry = global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.Id;
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass>.Entry
-                __WorkerEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass>.Entry(
-                    global::LightSwitchApplication.Worker.DetailsClass.__Worker_CreateNew,
-                    global::LightSwitchApplication.Worker.DetailsClass.__Worker_Created,
-                    global::LightSwitchApplication.Worker.DetailsClass.__Worker_AllowSaveWithErrors);
-            private static global::LightSwitchApplication.Worker __Worker_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.Worker> es)
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass>.Entry
+                __WorkOrderIssueDetailEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass>.Entry(
+                    global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.__WorkOrderIssueDetail_CreateNew,
+                    global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.__WorkOrderIssueDetail_Created,
+                    global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.__WorkOrderIssueDetail_AllowSaveWithErrors);
+            private static global::LightSwitchApplication.WorkOrderIssueDetail __WorkOrderIssueDetail_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.WorkOrderIssueDetail> es)
             {
-                return new global::LightSwitchApplication.Worker(es);
+                return new global::LightSwitchApplication.WorkOrderIssueDetail(es);
             }
-            private static void __Worker_Created(global::LightSwitchApplication.Worker e)
+            private static void __WorkOrderIssueDetail_Created(global::LightSwitchApplication.WorkOrderIssueDetail e)
             {
-                e.Worker_Created();
+                e.WorkOrderIssueDetail_Created();
             }
-            private static bool __Worker_AllowSaveWithErrors(global::LightSwitchApplication.Worker e)
+            private static bool __WorkOrderIssueDetail_AllowSaveWithErrors(global::LightSwitchApplication.WorkOrderIssueDetail e)
             {
                 bool result = false;
-                e.Worker_AllowSaveWithErrors(ref result);
+                e.WorkOrderIssueDetail_AllowSaveWithErrors(ref result);
                 return result;
             }
     
@@ -342,7 +414,7 @@ namespace LightSwitchApplication
             {
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass> Commands
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass> Commands
             {
                 get
                 {
@@ -350,7 +422,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass> Methods
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass> Methods
             {
                 get
                 {
@@ -358,7 +430,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::LightSwitchApplication.Worker.DetailsClass.PropertySet Properties
+            public new global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySet Properties
             {
                 get
                 {
@@ -370,82 +442,106 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass>
+            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass>
             {
     
                 public PropertySet() : base()
                 {
                 }
     
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, int> Id
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, int> Id
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Id) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, int>;
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.Id) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, int>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string> WorkerName
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string> IssueLot
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.WorkerName) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueLot) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.DateTime> HireDate
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, double> IssueQuantity
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.HireDate) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.DateTime>;
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueQuantity) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, double>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, bool> Discontinued
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, decimal> IssueUnitCost
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Discontinued) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, bool>;
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueUnitCost) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, decimal>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string> CreatedBy
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string> CreatedBy
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.CreatedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.CreatedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Created
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Created
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Created) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.Created) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string> ModifiedBy
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string> ModifiedBy
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.ModifiedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.ModifiedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Modified
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Modified
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.Modified) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.Modified) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, byte[]> RowVersion
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, byte[]> RowVersion
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties.RowVersion) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, byte[]>;
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.RowVersion) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, byte[]>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.WorkOrder> WorkOrder
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.WorkOrder) as global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.WorkOrder>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Product> IssueProduct
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueProduct) as global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Product>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Location> IssueLocation
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueLocation) as global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Location>;
                     }
                 }
                 
@@ -456,14 +552,17 @@ namespace LightSwitchApplication
             public interface IImplementation : global::Microsoft.LightSwitch.Internal.IEntityImplementation
             {
                 new int Id { get; set; }
-                new string WorkerName { get; set; }
-                new global::System.DateTime HireDate { get; set; }
-                new bool Discontinued { get; set; }
+                new string IssueLot { get; set; }
+                new double IssueQuantity { get; set; }
+                new decimal IssueUnitCost { get; set; }
                 new string CreatedBy { get; }
                 new global::System.Nullable<global::System.DateTimeOffset> Created { get; }
                 new string ModifiedBy { get; }
                 new global::System.Nullable<global::System.DateTimeOffset> Modified { get; }
                 new byte[] RowVersion { get; set; }
+                new global::Microsoft.LightSwitch.Internal.IEntityImplementation WorkOrder { get; set; }
+                new global::Microsoft.LightSwitch.Internal.IEntityImplementation IssueProduct { get; set; }
+                new global::Microsoft.LightSwitch.Internal.IEntityImplementation IssueLocation { get; set; }
             }
             #pragma warning restore 109
     
@@ -474,350 +573,500 @@ namespace LightSwitchApplication
             {
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, int>.Entry
-                    Id = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, int>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, int>.Entry
+                    Id = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, int>.Entry(
                         "Id",
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Id_Stub,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Id_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Id_Validate,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Id_GetImplementationValue,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Id_SetImplementationValue,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Id_OnValueChanged);
-                private static void _Id_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Worker.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, int>.Data> c, global::LightSwitchApplication.Worker.DetailsClass d, object sf)
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Id_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Id_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Id_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Id_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Id_SetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Id_OnValueChanged);
+                private static void _Id_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, int>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
                 {
                     c(d, ref d._Id, sf);
                 }
-                private static bool _Id_ComputeIsReadOnly(global::LightSwitchApplication.Worker e)
+                private static bool _Id_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     bool result = false;
                     e.Id_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Id_Validate(global::LightSwitchApplication.Worker e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Id_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Id_Validate(r);
                 }
-                private static int _Id_GetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d)
+                private static int _Id_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
                 {
                     return d.ImplementationEntity.Id;
                 }
-                private static void _Id_SetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d, int v)
+                private static void _Id_SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, int v)
                 {
                     d.ImplementationEntity.Id = v;
                 }
-                private static void _Id_OnValueChanged(global::LightSwitchApplication.Worker e)
+                private static void _Id_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     e.Id_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Entry
-                    WorkerName = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Entry(
-                        "WorkerName",
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._WorkerName_Stub,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._WorkerName_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._WorkerName_Validate,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._WorkerName_GetImplementationValue,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._WorkerName_SetImplementationValue,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._WorkerName_OnValueChanged);
-                private static void _WorkerName_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Worker.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Data> c, global::LightSwitchApplication.Worker.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Entry
+                    IssueLot = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Entry(
+                        "IssueLot",
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLot_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLot_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLot_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLot_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLot_SetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLot_OnValueChanged);
+                private static void _IssueLot_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
                 {
-                    c(d, ref d._WorkerName, sf);
+                    c(d, ref d._IssueLot, sf);
                 }
-                private static bool _WorkerName_ComputeIsReadOnly(global::LightSwitchApplication.Worker e)
+                private static bool _IssueLot_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     bool result = false;
-                    e.WorkerName_IsReadOnly(ref result);
+                    e.IssueLot_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _WorkerName_Validate(global::LightSwitchApplication.Worker e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _IssueLot_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
-                    e.WorkerName_Validate(r);
+                    e.IssueLot_Validate(r);
                 }
-                private static string _WorkerName_GetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d)
+                private static string _IssueLot_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
                 {
-                    return d.ImplementationEntity.WorkerName;
+                    return d.ImplementationEntity.IssueLot;
                 }
-                private static void _WorkerName_SetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d, string v)
+                private static void _IssueLot_SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, string v)
                 {
-                    d.ImplementationEntity.WorkerName = v;
+                    d.ImplementationEntity.IssueLot = v;
                 }
-                private static void _WorkerName_OnValueChanged(global::LightSwitchApplication.Worker e)
+                private static void _IssueLot_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
-                    e.WorkerName_Changed();
+                    e.IssueLot_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.DateTime>.Entry
-                    HireDate = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.DateTime>.Entry(
-                        "HireDate",
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._HireDate_Stub,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._HireDate_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._HireDate_Validate,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._HireDate_GetImplementationValue,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._HireDate_SetImplementationValue,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._HireDate_OnValueChanged);
-                private static void _HireDate_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Worker.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.DateTime>.Data> c, global::LightSwitchApplication.Worker.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, double>.Entry
+                    IssueQuantity = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, double>.Entry(
+                        "IssueQuantity",
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueQuantity_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueQuantity_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueQuantity_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueQuantity_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueQuantity_SetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueQuantity_OnValueChanged);
+                private static void _IssueQuantity_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, double>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
                 {
-                    c(d, ref d._HireDate, sf);
+                    c(d, ref d._IssueQuantity, sf);
                 }
-                private static bool _HireDate_ComputeIsReadOnly(global::LightSwitchApplication.Worker e)
+                private static bool _IssueQuantity_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     bool result = false;
-                    e.HireDate_IsReadOnly(ref result);
+                    e.IssueQuantity_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _HireDate_Validate(global::LightSwitchApplication.Worker e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _IssueQuantity_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
-                    e.HireDate_Validate(r);
+                    e.IssueQuantity_Validate(r);
                 }
-                private static global::System.DateTime _HireDate_GetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d)
+                private static double _IssueQuantity_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
                 {
-                    return d.ImplementationEntity.HireDate;
+                    return d.ImplementationEntity.IssueQuantity;
                 }
-                private static void _HireDate_SetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d, global::System.DateTime v)
+                private static void _IssueQuantity_SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, double v)
                 {
-                    d.ImplementationEntity.HireDate = global::LightSwitchApplication.Worker.DetailsClass.TruncateDate(v);
+                    d.ImplementationEntity.IssueQuantity = v;
                 }
-                private static void _HireDate_OnValueChanged(global::LightSwitchApplication.Worker e)
+                private static void _IssueQuantity_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
-                    e.HireDate_Changed();
+                    e.IssueQuantity_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, bool>.Entry
-                    Discontinued = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, bool>.Entry(
-                        "Discontinued",
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Discontinued_Stub,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Discontinued_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Discontinued_Validate,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Discontinued_GetImplementationValue,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Discontinued_SetImplementationValue,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Discontinued_OnValueChanged);
-                private static void _Discontinued_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Worker.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, bool>.Data> c, global::LightSwitchApplication.Worker.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, decimal>.Entry
+                    IssueUnitCost = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, decimal>.Entry(
+                        "IssueUnitCost",
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueUnitCost_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueUnitCost_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueUnitCost_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueUnitCost_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueUnitCost_SetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueUnitCost_OnValueChanged);
+                private static void _IssueUnitCost_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, decimal>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
                 {
-                    c(d, ref d._Discontinued, sf);
+                    c(d, ref d._IssueUnitCost, sf);
                 }
-                private static bool _Discontinued_ComputeIsReadOnly(global::LightSwitchApplication.Worker e)
+                private static bool _IssueUnitCost_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     bool result = false;
-                    e.Discontinued_IsReadOnly(ref result);
+                    e.IssueUnitCost_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Discontinued_Validate(global::LightSwitchApplication.Worker e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _IssueUnitCost_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
-                    e.Discontinued_Validate(r);
+                    e.IssueUnitCost_Validate(r);
                 }
-                private static bool _Discontinued_GetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d)
+                private static decimal _IssueUnitCost_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
                 {
-                    return d.ImplementationEntity.Discontinued;
+                    return d.ImplementationEntity.IssueUnitCost;
                 }
-                private static void _Discontinued_SetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d, bool v)
+                private static void _IssueUnitCost_SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, decimal v)
                 {
-                    d.ImplementationEntity.Discontinued = v;
+                    d.ImplementationEntity.IssueUnitCost = v;
                 }
-                private static void _Discontinued_OnValueChanged(global::LightSwitchApplication.Worker e)
+                private static void _IssueUnitCost_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
-                    e.Discontinued_Changed();
+                    e.IssueUnitCost_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Entry
-                    CreatedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Entry
+                    CreatedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Entry(
                         "CreatedBy",
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._CreatedBy_Stub,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._CreatedBy_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._CreatedBy_Validate,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._CreatedBy_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._CreatedBy_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._CreatedBy_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._CreatedBy_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._CreatedBy_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._CreatedBy_OnValueChanged);
-                private static void _CreatedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Worker.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Data> c, global::LightSwitchApplication.Worker.DetailsClass d, object sf)
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._CreatedBy_OnValueChanged);
+                private static void _CreatedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
                 {
                     c(d, ref d._CreatedBy, sf);
                 }
-                private static bool _CreatedBy_ComputeIsReadOnly(global::LightSwitchApplication.Worker e)
+                private static bool _CreatedBy_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     bool result = false;
                     e.CreatedBy_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _CreatedBy_Validate(global::LightSwitchApplication.Worker e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _CreatedBy_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.CreatedBy_Validate(r);
                 }
-                private static string _CreatedBy_GetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d)
+                private static string _CreatedBy_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
                 {
                     return d.ImplementationEntity.CreatedBy;
                 }
-                private static void _CreatedBy_OnValueChanged(global::LightSwitchApplication.Worker e)
+                private static void _CreatedBy_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     e.CreatedBy_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
-                    Created = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
+                    Created = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
                         "Created",
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Created_Stub,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Created_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Created_Validate,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Created_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Created_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Created_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Created_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Created_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Created_OnValueChanged);
-                private static void _Created_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Worker.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.Worker.DetailsClass d, object sf)
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Created_OnValueChanged);
+                private static void _Created_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
                 {
                     c(d, ref d._Created, sf);
                 }
-                private static bool _Created_ComputeIsReadOnly(global::LightSwitchApplication.Worker e)
+                private static bool _Created_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     bool result = false;
                     e.Created_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Created_Validate(global::LightSwitchApplication.Worker e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Created_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Created_Validate(r);
                 }
-                private static global::System.Nullable<global::System.DateTimeOffset> _Created_GetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d)
+                private static global::System.Nullable<global::System.DateTimeOffset> _Created_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
                 {
                     return d.ImplementationEntity.Created;
                 }
-                private static void _Created_OnValueChanged(global::LightSwitchApplication.Worker e)
+                private static void _Created_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     e.Created_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Entry
-                    ModifiedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Entry
+                    ModifiedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Entry(
                         "ModifiedBy",
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._ModifiedBy_Stub,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._ModifiedBy_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._ModifiedBy_Validate,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._ModifiedBy_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._ModifiedBy_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._ModifiedBy_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._ModifiedBy_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._ModifiedBy_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._ModifiedBy_OnValueChanged);
-                private static void _ModifiedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Worker.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Data> c, global::LightSwitchApplication.Worker.DetailsClass d, object sf)
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._ModifiedBy_OnValueChanged);
+                private static void _ModifiedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
                 {
                     c(d, ref d._ModifiedBy, sf);
                 }
-                private static bool _ModifiedBy_ComputeIsReadOnly(global::LightSwitchApplication.Worker e)
+                private static bool _ModifiedBy_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     bool result = false;
                     e.ModifiedBy_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _ModifiedBy_Validate(global::LightSwitchApplication.Worker e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _ModifiedBy_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.ModifiedBy_Validate(r);
                 }
-                private static string _ModifiedBy_GetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d)
+                private static string _ModifiedBy_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
                 {
                     return d.ImplementationEntity.ModifiedBy;
                 }
-                private static void _ModifiedBy_OnValueChanged(global::LightSwitchApplication.Worker e)
+                private static void _ModifiedBy_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     e.ModifiedBy_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
-                    Modified = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
+                    Modified = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
                         "Modified",
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Modified_Stub,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Modified_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Modified_Validate,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Modified_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Modified_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Modified_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Modified_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Modified_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._Modified_OnValueChanged);
-                private static void _Modified_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Worker.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.Worker.DetailsClass d, object sf)
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._Modified_OnValueChanged);
+                private static void _Modified_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
                 {
                     c(d, ref d._Modified, sf);
                 }
-                private static bool _Modified_ComputeIsReadOnly(global::LightSwitchApplication.Worker e)
+                private static bool _Modified_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     bool result = false;
                     e.Modified_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Modified_Validate(global::LightSwitchApplication.Worker e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Modified_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Modified_Validate(r);
                 }
-                private static global::System.Nullable<global::System.DateTimeOffset> _Modified_GetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d)
+                private static global::System.Nullable<global::System.DateTimeOffset> _Modified_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
                 {
                     return d.ImplementationEntity.Modified;
                 }
-                private static void _Modified_OnValueChanged(global::LightSwitchApplication.Worker e)
+                private static void _Modified_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     e.Modified_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, byte[]>.Entry
-                    RowVersion = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, byte[]>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, byte[]>.Entry
+                    RowVersion = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, byte[]>.Entry(
                         "RowVersion",
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._RowVersion_Stub,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._RowVersion_ComputeIsReadOnly,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._RowVersion_Validate,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._RowVersion_GetImplementationValue,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._RowVersion_SetImplementationValue,
-                        global::LightSwitchApplication.Worker.DetailsClass.PropertySetProperties._RowVersion_OnValueChanged);
-                private static void _RowVersion_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Worker.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, byte[]>.Data> c, global::LightSwitchApplication.Worker.DetailsClass d, object sf)
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._RowVersion_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._RowVersion_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._RowVersion_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._RowVersion_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._RowVersion_SetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._RowVersion_OnValueChanged);
+                private static void _RowVersion_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, byte[]>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
                 {
                     c(d, ref d._RowVersion, sf);
                 }
-                private static bool _RowVersion_ComputeIsReadOnly(global::LightSwitchApplication.Worker e)
+                private static bool _RowVersion_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     bool result = false;
                     e.RowVersion_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _RowVersion_Validate(global::LightSwitchApplication.Worker e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _RowVersion_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.RowVersion_Validate(r);
                 }
-                private static byte[] _RowVersion_GetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d)
+                private static byte[] _RowVersion_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
                 {
                     return d.ImplementationEntity.RowVersion;
                 }
-                private static void _RowVersion_SetImplementationValue(global::LightSwitchApplication.Worker.DetailsClass d, byte[] v)
+                private static void _RowVersion_SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, byte[] v)
                 {
                     d.ImplementationEntity.RowVersion = v;
                 }
-                private static void _RowVersion_OnValueChanged(global::LightSwitchApplication.Worker e)
+                private static void _RowVersion_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
                 {
                     e.RowVersion_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.WorkOrder>.Entry
+                    WorkOrder = new global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.WorkOrder>.Entry(
+                        "WorkOrder",
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._WorkOrder_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._WorkOrder_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._WorkOrder_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._WorkOrder_GetCoreImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._WorkOrder_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._WorkOrder_SetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._WorkOrder_Refresh,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._WorkOrder_OnValueChanged);
+                private static void _WorkOrder_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.WorkOrder>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
+                {
+                    c(d, ref d._WorkOrder, sf);
+                }
+                private static bool _WorkOrder_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
+                {
+                    bool result = false;
+                    e.WorkOrder_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _WorkOrder_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.WorkOrder_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.Internal.IEntityImplementation _WorkOrder_GetCoreImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
+                {
+                    return d.ImplementationEntity.WorkOrder;
+                }
+                private static global::LightSwitchApplication.WorkOrder _WorkOrder_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
+                {
+                    return d.GetImplementationValue<global::LightSwitchApplication.WorkOrder, global::LightSwitchApplication.WorkOrder.DetailsClass>(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.WorkOrder, ref d._WorkOrder);
+                }
+                private static void _WorkOrder_SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, global::LightSwitchApplication.WorkOrder v)
+                {
+                    d.SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.WorkOrder, ref d._WorkOrder, (i, ev) => i.WorkOrder = ev, v);
+                }
+                private static void _WorkOrder_Refresh(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
+                {
+                    d.RefreshNavigationProperty(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.WorkOrder, ref d._WorkOrder);
+                }
+                private static void _WorkOrder_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
+                {
+                    e.WorkOrder_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Product>.Entry
+                    IssueProduct = new global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Product>.Entry(
+                        "IssueProduct",
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueProduct_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueProduct_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueProduct_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueProduct_GetCoreImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueProduct_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueProduct_SetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueProduct_Refresh,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueProduct_OnValueChanged);
+                private static void _IssueProduct_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Product>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
+                {
+                    c(d, ref d._IssueProduct, sf);
+                }
+                private static bool _IssueProduct_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
+                {
+                    bool result = false;
+                    e.IssueProduct_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _IssueProduct_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.IssueProduct_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.Internal.IEntityImplementation _IssueProduct_GetCoreImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
+                {
+                    return d.ImplementationEntity.IssueProduct;
+                }
+                private static global::LightSwitchApplication.Product _IssueProduct_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
+                {
+                    return d.GetImplementationValue<global::LightSwitchApplication.Product, global::LightSwitchApplication.Product.DetailsClass>(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueProduct, ref d._IssueProduct);
+                }
+                private static void _IssueProduct_SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, global::LightSwitchApplication.Product v)
+                {
+                    d.SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueProduct, ref d._IssueProduct, (i, ev) => i.IssueProduct = ev, v);
+                }
+                private static void _IssueProduct_Refresh(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
+                {
+                    d.RefreshNavigationProperty(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueProduct, ref d._IssueProduct);
+                }
+                private static void _IssueProduct_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
+                {
+                    e.IssueProduct_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Location>.Entry
+                    IssueLocation = new global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Location>.Entry(
+                        "IssueLocation",
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLocation_Stub,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLocation_ComputeIsReadOnly,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLocation_Validate,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLocation_GetCoreImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLocation_GetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLocation_SetImplementationValue,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLocation_Refresh,
+                        global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties._IssueLocation_OnValueChanged);
+                private static void _IssueLocation_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Location>.Data> c, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, object sf)
+                {
+                    c(d, ref d._IssueLocation, sf);
+                }
+                private static bool _IssueLocation_ComputeIsReadOnly(global::LightSwitchApplication.WorkOrderIssueDetail e)
+                {
+                    bool result = false;
+                    e.IssueLocation_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _IssueLocation_Validate(global::LightSwitchApplication.WorkOrderIssueDetail e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.IssueLocation_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.Internal.IEntityImplementation _IssueLocation_GetCoreImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
+                {
+                    return d.ImplementationEntity.IssueLocation;
+                }
+                private static global::LightSwitchApplication.Location _IssueLocation_GetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
+                {
+                    return d.GetImplementationValue<global::LightSwitchApplication.Location, global::LightSwitchApplication.Location.DetailsClass>(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueLocation, ref d._IssueLocation);
+                }
+                private static void _IssueLocation_SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d, global::LightSwitchApplication.Location v)
+                {
+                    d.SetImplementationValue(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueLocation, ref d._IssueLocation, (i, ev) => i.IssueLocation = ev, v);
+                }
+                private static void _IssueLocation_Refresh(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass d)
+                {
+                    d.RefreshNavigationProperty(global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass.PropertySetProperties.IssueLocation, ref d._IssueLocation);
+                }
+                private static void _IssueLocation_OnValueChanged(global::LightSwitchApplication.WorkOrderIssueDetail e)
+                {
+                    e.IssueLocation_Changed();
                 }
     
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, int>.Data _Id;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, int>.Data _Id;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Data _WorkerName;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Data _IssueLot;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.DateTime>.Data _HireDate;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, double>.Data _IssueQuantity;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, bool>.Data _Discontinued;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, decimal>.Data _IssueUnitCost;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Data _CreatedBy;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Data _CreatedBy;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Created;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Created;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, string>.Data _ModifiedBy;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, string>.Data _ModifiedBy;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Modified;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Modified;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Worker, global::LightSwitchApplication.Worker.DetailsClass, byte[]>.Data _RowVersion;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, byte[]>.Data _RowVersion;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.WorkOrder>.Data _WorkOrder;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Product>.Data _IssueProduct;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.WorkOrderIssueDetail, global::LightSwitchApplication.WorkOrderIssueDetail.DetailsClass, global::LightSwitchApplication.Location>.Data _IssueLocation;
             
         }
     

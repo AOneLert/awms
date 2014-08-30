@@ -641,6 +641,22 @@ namespace LightSwitchApplication.Implementation
             }
         }
         private ObjectSet<WorkOrder> _WorkOrders;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<Requisitions> RequisitionsSet
+        {
+            get
+            {
+                if ((_RequisitionsSet == null))
+                {
+                    _RequisitionsSet = base.CreateObjectSet<Requisitions>("RequisitionsSet");
+                }
+                return _RequisitionsSet;
+            }
+        }
+        private ObjectSet<Requisitions> _RequisitionsSet;
 
         #endregion
 
@@ -916,6 +932,14 @@ namespace LightSwitchApplication.Implementation
         public void AddToWorkOrders(WorkOrder workOrder)
         {
             base.AddObject("WorkOrders", workOrder);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the RequisitionsSet EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToRequisitionsSet(Requisitions requisitions)
+        {
+            base.AddObject("RequisitionsSet", requisitions);
         }
 
         #endregion
@@ -6922,6 +6946,185 @@ namespace LightSwitchApplication.Implementation
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="Requisitions")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class Requisitions : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new Requisitions object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="rowVersion">Initial value of the RowVersion property.</param>
+        public static Requisitions CreateRequisitions(global::System.Int32 id, global::System.Byte[] rowVersion)
+        {
+            Requisitions requisitions = new Requisitions();
+            requisitions.Id = id;
+            requisitions.RowVersion = rowVersion;
+            return requisitions;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = value;
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CreatedBy
+        {
+            get
+            {
+                return _CreatedBy;
+            }
+            set
+            {
+                OnCreatedByChanging(value);
+                ReportPropertyChanging("CreatedBy");
+                _CreatedBy = value;
+                ReportPropertyChanged("CreatedBy");
+                OnCreatedByChanged();
+            }
+        }
+        private global::System.String _CreatedBy;
+        partial void OnCreatedByChanging(global::System.String value);
+        partial void OnCreatedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return _Created;
+            }
+            set
+            {
+                OnCreatedChanging(value);
+                ReportPropertyChanging("Created");
+                _Created = value;
+                ReportPropertyChanged("Created");
+                OnCreatedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ModifiedBy
+        {
+            get
+            {
+                return _ModifiedBy;
+            }
+            set
+            {
+                OnModifiedByChanging(value);
+                ReportPropertyChanging("ModifiedBy");
+                _ModifiedBy = value;
+                ReportPropertyChanged("ModifiedBy");
+                OnModifiedByChanged();
+            }
+        }
+        private global::System.String _ModifiedBy;
+        partial void OnModifiedByChanging(global::System.String value);
+        partial void OnModifiedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return _Modified;
+            }
+            set
+            {
+                OnModifiedChanging(value);
+                ReportPropertyChanging("Modified");
+                _Modified = value;
+                ReportPropertyChanged("Modified");
+                OnModifiedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Byte[] RowVersion
+        {
+            get
+            {
+                return StructuralObject.GetValidValue(_RowVersion);
+            }
+            set
+            {
+                OnRowVersionChanging(value);
+                ReportPropertyChanging("RowVersion");
+                _RowVersion = value;
+                ReportPropertyChanged("RowVersion");
+                OnRowVersionChanged();
+            }
+        }
+        private global::System.Byte[] _RowVersion;
+        partial void OnRowVersionChanging(global::System.Byte[] value);
+        partial void OnRowVersionChanged();
+
+        #endregion
+
+    
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="SaleOrder")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -6936,14 +7139,16 @@ namespace LightSwitchApplication.Implementation
         /// <param name="documentNo">Initial value of the DocumentNo property.</param>
         /// <param name="saleOrderDate">Initial value of the SaleOrderDate property.</param>
         /// <param name="saleOrder_Customer">Initial value of the SaleOrder_Customer property.</param>
+        /// <param name="saleOrderStatus">Initial value of the SaleOrderStatus property.</param>
         /// <param name="rowVersion">Initial value of the RowVersion property.</param>
-        public static SaleOrder CreateSaleOrder(global::System.Int32 id, global::System.String documentNo, global::System.DateTime saleOrderDate, global::System.Int32 saleOrder_Customer, global::System.Byte[] rowVersion)
+        public static SaleOrder CreateSaleOrder(global::System.Int32 id, global::System.String documentNo, global::System.DateTime saleOrderDate, global::System.Int32 saleOrder_Customer, global::System.Boolean saleOrderStatus, global::System.Byte[] rowVersion)
         {
             SaleOrder saleOrder = new SaleOrder();
             saleOrder.Id = id;
             saleOrder.DocumentNo = documentNo;
             saleOrder.SaleOrderDate = saleOrderDate;
             saleOrder.SaleOrder_Customer = saleOrder_Customer;
+            saleOrder.SaleOrderStatus = saleOrderStatus;
             saleOrder.RowVersion = rowVersion;
             return saleOrder;
         }
@@ -7146,6 +7351,30 @@ namespace LightSwitchApplication.Implementation
         private global::System.String _Remarks;
         partial void OnRemarksChanging(global::System.String value);
         partial void OnRemarksChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Boolean SaleOrderStatus
+        {
+            get
+            {
+                return _SaleOrderStatus;
+            }
+            set
+            {
+                OnSaleOrderStatusChanging(value);
+                ReportPropertyChanging("SaleOrderStatus");
+                _SaleOrderStatus = value;
+                ReportPropertyChanged("SaleOrderStatus");
+                OnSaleOrderStatusChanged();
+            }
+        }
+        private global::System.Boolean _SaleOrderStatus;
+        partial void OnSaleOrderStatusChanging(global::System.Boolean value);
+        partial void OnSaleOrderStatusChanged();
     
         /// <summary>
         /// No Metadata Documentation available.

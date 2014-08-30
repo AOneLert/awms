@@ -1514,3 +1514,4 @@ C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLert
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\ViewPOReceivedDetail.lsml.js
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\ViewPurchaseOrder.lsml.js
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\ViewPurchaseOrderDetail.lsml.js
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\bin\Debug\HTMLClient\Screens\BrowseSaleOrderTasks.lsml.js

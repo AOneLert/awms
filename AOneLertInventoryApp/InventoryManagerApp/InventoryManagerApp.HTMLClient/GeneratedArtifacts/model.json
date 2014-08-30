@@ -2094,7 +2094,8 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:EmailAddress",
           "name": "EmailAddress",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@EmailAddressValidation": { "domainRequired": true }
         },
         {
           "__isSemanticType": 1,
@@ -2112,13 +2113,15 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:PhoneNumber",
           "name": "PhoneNumber",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@PhoneNumberValidation": { "formats": "C (AAA) NNN-NNNN;C (AAA) NNNNNNN;CAAANNNNNNN;(AAA) NNN-NNNN;(AAA) NNNNNNN;AAANNNNNNN;NNN-NNNN;NNNNNNN" }
         },
         {
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:Percent",
           "name": "Percent",
           "underlyingType": { "__id": ":Decimal" },
+          "Microsoft.LightSwitch.Extensions:@FormatParameter": { "decimalDigits": 2 },
           ":@DecimalConstraint":
           {
             "scale": 9
@@ -2128,7 +2131,8 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:WebAddress",
           "name": "WebAddress",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@WebAddressValidation": { }
         }
       ]
     },
@@ -3965,6 +3969,59 @@
           ]
         },
         {
+          "id": "Requisitions*",
+          "name": "Requisitions*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "Requisitions" }
+        },
+        {
+          "id": "CollectionView$Requisitions",
+          "name": "CollectionView$Requisitions",
+          "kind": "CollectionView",
+          "elementType": { "__id": "Requisitions" },
+          "methods":
+          [
+            {
+              "id": "CollectionView$Requisitions/Methods[addNew]",
+              "name": "addNew",
+              "returnType": { "__id": "Requisitions" }
+            },
+            {
+              "id": "CollectionView$Requisitions/Methods[addAndEditNew]",
+              "name": "addAndEditNew",
+              "returnType": { "__id": "Requisitions" }
+            },
+            {
+              "id": "CollectionView$Requisitions/Methods[editSelected]",
+              "name": "editSelected"
+            },
+            {
+              "id": "CollectionView$Requisitions/Methods[deleteSelected]",
+              "name": "deleteSelected"
+            },
+            {
+              "id": "CollectionView$Requisitions/Methods[removeSelected]",
+              "name": "removeSelected"
+            },
+            {
+              "id": "CollectionView$Requisitions/Methods[refresh]",
+              "name": "refresh"
+            },
+            {
+              "id": "CollectionView$Requisitions/Methods[viewSelected]",
+              "name": "viewSelected"
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "CollectionView$Requisitions/Properties[selectedItem]",
+              "name": "selectedItem",
+              "propertyType": { "__id": "Requisitions" }
+            }
+          ]
+        },
+        {
           "__isEntityType": 1,
           "id": "Product",
           "name": "Product",
@@ -4708,15 +4765,6 @@
               "toEnd": { "__id": "SaleOrder_Customer/Ends[Customer]" }
             },
             {
-              "id": "SaleOrder/Properties[SaleOrderDetails]",
-              "name": "SaleOrderDetails",
-              "association": { "__id": "SaleOrderDetail_SaleOrder" },
-              "elementType": { "__id": "SaleOrderDetail" },
-              "fromEnd": { "__id": "SaleOrderDetail_SaleOrder/Ends[SaleOrder]" },
-              "propertyType": { "__id": "SaleOrderDetail*" },
-              "toEnd": { "__id": "SaleOrderDetail_SaleOrder/Ends[SaleOrderDetail]" }
-            },
-            {
               "id": "SaleOrder/Properties[PaymentTerm]",
               "name": "PaymentTerm",
               "propertyType": { "__id": ":Int32?" },
@@ -4754,6 +4802,22 @@
               {
                 "value": 255
               }
+            },
+            {
+              "id": "SaleOrder/Properties[SaleOrderStatus]",
+              "name": "SaleOrderStatus",
+              "propertyType": { "__id": ":Boolean" },
+              ":@NotSearchable": { },
+              ":@Required": { }
+            },
+            {
+              "id": "SaleOrder/Properties[SaleOrderDetails]",
+              "name": "SaleOrderDetails",
+              "association": { "__id": "SaleOrderDetail_SaleOrder" },
+              "elementType": { "__id": "SaleOrderDetail" },
+              "fromEnd": { "__id": "SaleOrderDetail_SaleOrder/Ends[SaleOrder]" },
+              "propertyType": { "__id": "SaleOrderDetail*" },
+              "toEnd": { "__id": "SaleOrderDetail_SaleOrder/Ends[SaleOrderDetail]" }
             },
             {
               "id": "SaleOrder/Properties[CreatedBy]",
@@ -5884,6 +5948,15 @@
               "canUpdate": true,
               "elementType": { "__id": "WorkOrder" },
               "entityType": { "__id": "WorkOrder" }
+            },
+            {
+              "id": "ApplicationData/Members[RequisitionsSet]",
+              "name": "RequisitionsSet",
+              "canDelete": true,
+              "canInsert": true,
+              "canUpdate": true,
+              "elementType": { "__id": "Requisitions" },
+              "entityType": { "__id": "Requisitions" }
             }
           ],
           "queryOperations":
@@ -7593,6 +7666,44 @@
               [
                 {
                   "member": { "__id": "WorkOrder/Properties[WorkOrderNumber]" }
+                }
+              ]
+            },
+            {
+              "id": "ApplicationData/Members[RequisitionsSet_Single]",
+              "name": "RequisitionsSet_Single",
+              "elementType": { "__id": "Requisitions" },
+              "query": { "__id": "ApplicationData/Members[RequisitionsSet_Single]" },
+              "returnType": { "__id": "Requisitions" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[RequisitionsSet]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "ApplicationData/Members[RequisitionsSet_Single]/Parameters[Id]",
+                  "name": "Id",
+                  "parameterType": { "__id": ":Int32?" }
+                }
+              ]
+            },
+            {
+              "id": "ApplicationData/Members[RequisitionsSet_SingleOrDefault]",
+              "name": "RequisitionsSet_SingleOrDefault",
+              "elementType": { "__id": "Requisitions" },
+              "query": { "__id": "ApplicationData/Members[RequisitionsSet_SingleOrDefault]" },
+              "returnType": { "__id": "Requisitions" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[RequisitionsSet]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "ApplicationData/Members[RequisitionsSet_SingleOrDefault]/Parameters[Id]",
+                  "name": "Id",
+                  "parameterType": { "__id": ":Int32?" }
                 }
               ]
             }
@@ -21032,7 +21143,7 @@
           ]
         },
         {
-          "displayName": "สร้างเอกสารการขาย",
+          "displayName": "เอกสารการขาย",
           "id": "AddEditSaleOrder",
           "name": "AddEditSaleOrder",
           "launchMode": "Single",
@@ -21042,7 +21153,7 @@
           },
           "rootContentItem":
           {
-            "displayName": "สร้างเอกสารการขาย",
+            "displayName": "เอกสารการขาย",
             "name": "RootContentItem",
             "kind": "Screen",
             "view": { "__id": ":Screen" },
@@ -21223,16 +21334,6 @@
                                     }
                                   },
                                   {
-                                    "displayName": "สถานที่จัดเก็บ",
-                                    "name": "Location",
-                                    "kind": "Details",
-                                    "view": { "__id": ":Summary" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "SaleOrderDetail/Properties[Location]" }
-                                    }
-                                  },
-                                  {
                                     "displayName": "Lot No.",
                                     "name": "LotNo",
                                     "kind": "Value",
@@ -21240,6 +21341,16 @@
                                     "dataSource":
                                     {
                                       "member": { "__id": "SaleOrderDetail/Properties[LotNo]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "สถานที่จัดเก็บ",
+                                    "name": "Location",
+                                    "kind": "Details",
+                                    "view": { "__id": ":Summary" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "SaleOrderDetail/Properties[Location]" }
                                     }
                                   },
                                   {
@@ -21253,7 +21364,7 @@
                                     }
                                   },
                                   {
-                                    "displayName": "Sale Price",
+                                    "displayName": "ราคาขาย",
                                     "name": "SalePrice",
                                     "kind": "Value",
                                     "view": { "__id": ":Text" },
@@ -21536,6 +21647,10 @@
                         {
                           "target": { "__id": "AddEditSaleOrder/Methods[CustomersPopup_Tap]" }
                         }
+                      },
+                      {
+                        "property": { "__id": ":RootGroup/Properties[CompactMargins]" },
+                        "value": true
                       }
                     ]
                   }
@@ -21735,7 +21850,7 @@
           ]
         },
         {
-          "displayName": "เพิ่ม/แก้ไข รายการสินค้า",
+          "displayName": "รายการสินค้า",
           "id": "AddEditSaleOrderDetail",
           "name": "AddEditSaleOrderDetail",
           "launchMode": "Single",
@@ -21745,7 +21860,7 @@
           },
           "rootContentItem":
           {
-            "displayName": "เพิ่ม/แก้ไข รายการสินค้า",
+            "displayName": "รายการสินค้า",
             "name": "RootContentItem",
             "kind": "Screen",
             "view": { "__id": ":Screen" },
@@ -21787,7 +21902,7 @@
                                 "displayName": "รหัสสินค้า",
                                 "name": "ProductCode1",
                                 "kind": "Value",
-                                "view": { "__id": ":TextBox" },
+                                "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
                                   "links":
@@ -21799,13 +21914,20 @@
                                       "member": { "__id": "Product/Properties[ProductCode]" }
                                     }
                                   ]
-                                }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                    "value": "StretchToContainer"
+                                  }
+                                ]
                               },
                               {
                                 "displayName": "ชื่อสินค้า",
                                 "name": "ProductName1",
                                 "kind": "Value",
-                                "view": { "__id": ":TextBox" },
+                                "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
                                   "links":
@@ -21817,7 +21939,14 @@
                                       "member": { "__id": "Product/Properties[ProductName]" }
                                     }
                                   ]
-                                }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                    "value": "StretchToContainer"
+                                  }
+                                ]
                               }
                             ]
                           },
@@ -21832,7 +21961,7 @@
                                 "displayName": "เบิกจากสถานที่",
                                 "name": "LocationName1",
                                 "kind": "Value",
-                                "view": { "__id": ":TextBox" },
+                                "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
                                   "links":
@@ -21844,17 +21973,31 @@
                                       "member": { "__id": "Location/Properties[LocationName]" }
                                     }
                                   ]
-                                }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                    "value": "StretchToContainer"
+                                  }
+                                ]
                               },
                               {
                                 "displayName": "Lot No.",
                                 "name": "LotNo",
                                 "kind": "Value",
-                                "view": { "__id": ":TextBox" },
+                                "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrderDetail/Properties[LotNo]" }
-                                }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                    "value": "StretchToContainer"
+                                  }
+                                ]
                               }
                             ]
                           },
@@ -21869,17 +22012,24 @@
                                 "displayName": "จำนวนสินค้าพร้อมขาย",
                                 "name": "AvailableQuantity",
                                 "kind": "Value",
-                                "view": { "__id": ":TextBox" },
+                                "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "AddEditSaleOrderDetail/Properties[AvailableQuantity]" }
-                                }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                    "value": "StretchToContainer"
+                                  }
+                                ]
                               },
                               {
                                 "displayName": "หน่วย",
                                 "name": "UOMName1",
                                 "kind": "Value",
-                                "view": { "__id": ":TextBox" },
+                                "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
                                   "links":
@@ -21894,7 +22044,14 @@
                                       "member": { "__id": "UnitOfMeasure/Properties[UOMName]" }
                                     }
                                   ]
-                                }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                    "value": "StretchToContainer"
+                                  }
+                                ]
                               }
                             ]
                           },
@@ -21909,21 +22066,35 @@
                                 "displayName": "ต้นทุนต่อหน่วย",
                                 "name": "UnitCost",
                                 "kind": "Value",
-                                "view": { "__id": ":TextBox" },
+                                "view": { "__id": ":MoneyViewer" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrderDetail/Properties[UnitCost]" }
-                                }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                    "value": "StretchToContainer"
+                                  }
+                                ]
                               },
                               {
                                 "displayName": "ต้นทุนขาย",
                                 "name": "MasterSalePrice",
                                 "kind": "Value",
-                                "view": { "__id": ":TextBox" },
+                                "view": { "__id": ":MoneyViewer" },
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrderDetail/Properties[MasterSalePrice]" }
-                                }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                    "value": "StretchToContainer"
+                                  }
+                                ]
                               }
                             ]
                           },
@@ -21973,7 +22144,7 @@
                         ]
                       },
                       {
-                        "displayName": "เลือกสินค้าเพื่อขาย",
+                        "displayName": "เลือกสินค้า",
                         "name": "ShowPopupStockOnHand",
                         "kind": "Command",
                         "view": { "__id": ":CommandBarButton" },
@@ -22010,7 +22181,7 @@
                 "childContentItems":
                 [
                   {
-                    "displayName": "Popup Stock On Hand",
+                    "displayName": "ค้นหารายการสินค้าพร้อมขาย",
                     "name": "PopupStockOnHand",
                     "kind": "Popup",
                     "view": { "__id": ":RowsLayout" },
@@ -22128,6 +22299,16 @@
                                 }
                               },
                               {
+                                "displayName": "Lot No.",
+                                "name": "LotNo1",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StockOnHand/Properties[LotNo]" }
+                                }
+                              },
+                              {
                                 "displayName": "สถานที่เก็บ",
                                 "name": "LocationName",
                                 "kind": "Value",
@@ -22143,16 +22324,6 @@
                                       "member": { "__id": "Location/Properties[LocationName]" }
                                     }
                                   ]
-                                }
-                              },
-                              {
-                                "displayName": "Lot No",
-                                "name": "LotNo1",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "StockOnHand/Properties[LotNo]" }
                                 }
                               },
                               {
@@ -22221,6 +22392,21 @@
                             }
                           }
                         ]
+                      }
+                    ],
+                    "propertySources":
+                    [
+                      {
+                        "property": { "__id": ":RootGroup/Properties[CompactMargins]" },
+                        "value": true
+                      },
+                      {
+                        "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                        "value": 600
+                      },
+                      {
+                        "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                        "value": 600
                       }
                     ]
                   }
@@ -29463,7 +29649,7 @@
                     "childContentItems":
                     [
                       {
-                        "displayName": "ค้นหาใบสั่งซื้อ",
+                        "displayName": "ค้นหาใบสั่งซื้อสินค้า",
                         "name": "SearchParameter",
                         "kind": "Value",
                         "view": { "__id": ":TextBox" },
@@ -29604,6 +29790,26 @@
                                 "targetParameter": { "__id": "!module/Methods[showAddEditPO]/Parameters[PurchaseOrder]" }
                               }
                             }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "รับสินค้า",
+                        "name": "ShowBrowsePOReceive",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showBrowsePOReceive]" }
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-document"
                           }
                         ]
                       }
@@ -29771,7 +29977,7 @@
           ]
         },
         {
-          "displayName": "รายการสั่งซื้อสินค้าที่รอรับสินค้า",
+          "displayName": "รายการรับสินค้า",
           "id": "BrowsePOReceive",
           "name": "BrowsePOReceive",
           "launchMode": "Single",
@@ -29781,7 +29987,7 @@
           },
           "rootContentItem":
           {
-            "displayName": "รายการสั่งซื้อสินค้าที่รอรับสินค้า",
+            "displayName": "รายการรับสินค้า",
             "name": "RootContentItem",
             "kind": "Screen",
             "view": { "__id": ":Screen" },
@@ -33056,7 +33262,7 @@
           ]
         },
         {
-          "displayName": "บันทึกการขายสินค้า",
+          "displayName": "รายการขายสินค้า",
           "id": "BrowseSaleOrders",
           "name": "BrowseSaleOrders",
           "launchMode": "Single",
@@ -33066,7 +33272,7 @@
           },
           "rootContentItem":
           {
-            "displayName": "บันทึกการขายสินค้า",
+            "displayName": "รายการขายสินค้า",
             "name": "RootContentItem",
             "kind": "Screen",
             "view": { "__id": ":Screen" },
@@ -33242,6 +33448,16 @@
                                 "dataSource":
                                 {
                                   "member": { "__id": "SaleOrder/Properties[Remarks]" }
+                                }
+                              },
+                              {
+                                "displayName": "สถานะ",
+                                "name": "SaleOrderStatus",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "SaleOrder/Properties[SaleOrderStatus]" }
                                 }
                               }
                             ]
@@ -35929,7 +36145,7 @@
           ]
         },
         {
-          "displayName": "Browse Work Orders",
+          "displayName": "รายการใบสั่งผลิตสินค้า",
           "id": "BrowseWorkOrders",
           "name": "BrowseWorkOrders",
           "launchMode": "Single",
@@ -35939,7 +36155,7 @@
           },
           "rootContentItem":
           {
-            "displayName": "Root Content Item",
+            "displayName": "รายการใบสั่งผลิตสินค้า",
             "name": "RootContentItem",
             "kind": "Screen",
             "view": { "__id": ":Screen" },
@@ -35959,6 +36175,16 @@
                     "view": { "__id": ":RowsLayout" },
                     "childContentItems":
                     [
+                      {
+                        "displayName": "ค้นหาใบสั่งผลิต",
+                        "name": "SearchWorkOrder",
+                        "kind": "Value",
+                        "view": { "__id": ":TextBox" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "BrowseWorkOrders/Properties[SearchWorkOrder]" }
+                        }
+                      },
                       {
                         "displayName": "Work Orders",
                         "name": "WorkOrder",
@@ -36081,7 +36307,7 @@
                     "commandItems":
                     [
                       {
-                        "displayName": "Add Work Order",
+                        "displayName": "สร้างใบสั่งผลิตสินค้า",
                         "name": "AddWorkOrder",
                         "kind": "Command",
                         "view": { "__id": ":CommandBarButton" },
@@ -36098,6 +36324,30 @@
                                 "targetParameter": { "__id": "!module/Methods[showAddEditWorkOrder]/Parameters[WorkOrder]" }
                               }
                             }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-add"
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "รับสินค้าจากการผลิต",
+                        "name": "ShowBrowseWorkOrderIsNotReceive",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showBrowseWorkOrderIsNotReceive]" }
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-document"
                           }
                         ]
                       }
@@ -36188,6 +36438,75 @@
               "elementType": { "__id": ":String" },
               "propertyType": { "__id": ":String" },
               ":@Required": { }
+            },
+            {
+              "id": "BrowseWorkOrders/Properties[WorkOrdersQuery]",
+              "name": "WorkOrdersQuery",
+              "pageSize": 45,
+              "elementType": { "__id": "WorkOrder" },
+              "propertyType": { "__id": "CollectionView$WorkOrder" },
+              "query":
+              {
+                "id": "BrowseWorkOrders/Properties[WorkOrdersQuery]/Query",
+                "name": "WorkOrdersQueryQuery",
+                "elementType": { "__id": "WorkOrder" },
+                "returnType": { "__id": "WorkOrder*" },
+                "filterExpression":
+                {
+                  "nodeType": "Contains",
+                  "left":
+                  {
+                    "links":
+                    [
+                      {
+                        "member": { "__id": "WorkOrder/Properties[WorkOrderNumber]" }
+                      }
+                    ]
+                  },
+                  "right":
+                  {
+                    "parameter": { "__id": "BrowseWorkOrders/Properties[WorkOrdersQuery]/Query/Parameters[Parameter]" }
+                  }
+                },
+                "source":
+                {
+                  "member": { "__id": "ApplicationData/Members[WorkOrders]" }
+                },
+                "parameters":
+                [
+                  {
+                    "id": "BrowseWorkOrders/Properties[WorkOrdersQuery]/Query/Parameters[Parameter]",
+                    "name": "Parameter",
+                    "isOptional": true,
+                    "parameterType": { "__id": ":String?" }
+                  }
+                ]
+              },
+              "source":
+              {
+                "target": { "__id": "BrowseWorkOrders/Properties[WorkOrdersQuery]/Query" },
+                "arguments":
+                [
+                  {
+                    "parameter": { "__id": "BrowseWorkOrders/Properties[WorkOrdersQuery]/Query/Parameters[Parameter]" },
+                    "value":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "BrowseWorkOrders/Properties[SearchWorkOrder]" }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "BrowseWorkOrders/Properties[SearchWorkOrder]",
+              "name": "SearchWorkOrder",
+              "elementType": { "__id": ":String?" },
+              "propertyType": { "__id": ":String?" }
             }
           ]
         },
@@ -36314,7 +36633,7 @@
                         ]
                       },
                       {
-                        "displayName": "สั่งซื้อสินค้า",
+                        "displayName": "ซื้อสินค้า",
                         "name": "PurchaseOrders",
                         "kind": "Command",
                         "view": { "__id": ":Button" },
@@ -36332,6 +36651,7 @@
                       {
                         "displayName": "รับสินค้าจากการสั่งซื้อ",
                         "name": "ShowBrowsePOReceive",
+                        "isHidden": true,
                         "kind": "Command",
                         "view": { "__id": ":Button" },
                         "propertySources":
@@ -36346,7 +36666,7 @@
                         ]
                       },
                       {
-                        "displayName": "รับสินค้าจากยอดยกมา",
+                        "displayName": "สินค้ายอดยกมา",
                         "name": "ManageReceiveProduct",
                         "kind": "Command",
                         "view": { "__id": ":Button" },
@@ -36362,7 +36682,7 @@
                         ]
                       },
                       {
-                        "displayName": "สั่งผลิตสินค้า",
+                        "displayName": "ผลิตสินค้า",
                         "name": "ShowBrowseWorkOrders",
                         "kind": "Command",
                         "view": { "__id": ":Button" },
@@ -36380,6 +36700,7 @@
                       {
                         "displayName": "รับสินค้าจากการผลิต",
                         "name": "ShowBrowseWorkOrderIsNotReceive",
+                        "isHidden": true,
                         "kind": "Command",
                         "view": { "__id": ":Button" },
                         "propertySources":
@@ -36394,7 +36715,7 @@
                         ]
                       },
                       {
-                        "displayName": "กำหนดราคาขายสินค้า",
+                        "displayName": "กำหนดราคาสินค้า",
                         "name": "ShowBrowseProductPricings",
                         "kind": "Command",
                         "view": { "__id": ":Button" },
@@ -36453,7 +36774,7 @@
                             "property": { "__id": ":RootControl/Properties[Tap]" },
                             "source":
                             {
-                              "target": { "__id": "!module/Methods[showBrowseSaleOrders]" }
+                              "target": { "__id": "!module/Methods[showBrowseSaleOrderTasks]" }
                             }
                           }
                         ]
@@ -40005,6 +40326,262 @@
               }
             }
           ]
+        },
+        {
+          "displayName": "งานขายสินค้า",
+          "id": "BrowseSaleOrderTasks",
+          "name": "BrowseSaleOrderTasks",
+          "launchMode": "Single",
+          "rootContentItem":
+          {
+            "displayName": "งานขายสินค้า",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Group",
+                    "name": "Group",
+                    "kind": "Tab",
+                    "view": { "__id": ":ColumnsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "บันทึกการขายสินค้า",
+                        "name": "ShowBrowseSaleOrders",
+                        "kind": "Command",
+                        "view": { "__id": ":Button" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showBrowseSaleOrders]" }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "ออกใบเบิกสินค้า",
+                        "name": "ShowBrowseRequisitions",
+                        "kind": "Command",
+                        "view": { "__id": ":Button" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showBrowseRequisitions]" }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "propertySources":
+                [
+                  {
+                    "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "BrowseSaleOrderTasks/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "BrowseSaleOrderTasks/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "BrowseSaleOrderTasks/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "BrowseSaleOrderTasks/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__isEntityType": 1,
+          ":@SummaryProperty": { "property": { "__id": "Requisitions/Properties[Id]" } },
+          "id": "Requisitions",
+          "name": "Requisitions",
+          ":@CreatedModifiedPropertiesEnabled": { },
+          "methods":
+          [
+            {
+              "id": "Requisitions/Methods[deleteEntity]",
+              "name": "deleteEntity"
+            },
+            {
+              "id": "Requisitions/Methods[edit]",
+              "name": "edit"
+            },
+            {
+              "id": "Requisitions/Methods[view]",
+              "name": "view"
+            }
+          ],
+          "properties":
+          [
+            {
+              "__isKeyProperty": 1,
+              "id": "Requisitions/Properties[Id]",
+              "name": "Id",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Int32" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "Requisitions/Properties[CreatedBy]",
+              "name": "CreatedBy",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Person?" },
+              ":@NotSearchable": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "Requisitions/Properties[Created]",
+              "name": "Created",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":DateTimeOffset?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "Requisitions/Properties[ModifiedBy]",
+              "name": "ModifiedBy",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Person?" },
+              ":@NotSearchable": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "Requisitions/Properties[Modified]",
+              "name": "Modified",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":DateTimeOffset?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "Requisitions/Properties[RowVersion]",
+              "name": "RowVersion",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":RowVersion" },
+              ":@UseForConcurrency": { },
+              ":@Hidden": { },
+              ":@NotSearchable": { }
+            }
+          ]
+        },
+        {
+          "displayName": "รายการใบเบิกสินค้า",
+          "id": "BrowseRequisitions",
+          "name": "BrowseRequisitions",
+          "launchMode": "Single",
+          "rootContentItem":
+          {
+            "displayName": "รายการใบเบิกสินค้า",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Group",
+                    "name": "Group",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" }
+                  }
+                ],
+                "propertySources":
+                [
+                  {
+                    "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "BrowseRequisitions/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "BrowseRequisitions/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "BrowseRequisitions/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "BrowseRequisitions/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ]
         }
       ],
       "methods":
@@ -40807,6 +41384,16 @@
               "parameterType": { "__id": "WorkOrder" }
             }
           ]
+        },
+        {
+          "id": "!module/Methods[showBrowseSaleOrderTasks]",
+          "name": "showBrowseSaleOrderTasks",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseSaleOrderTasks" } }
+        },
+        {
+          "id": "!module/Methods[showBrowseRequisitions]",
+          "name": "showBrowseRequisitions",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseRequisitions" } }
         }
       ]
     }

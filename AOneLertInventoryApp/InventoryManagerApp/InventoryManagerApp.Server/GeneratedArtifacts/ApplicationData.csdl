@@ -324,6 +324,7 @@
     <Property Name="PaymentTerm" Type="Edm.Int32" />
     <Property Name="PaymentStatus" Type="Edm.String" MaxLength="255" />
     <Property Name="Remarks" Type="Edm.String" MaxLength="255" />
+    <Property Name="SaleOrderStatus" Type="Edm.Boolean" Nullable="false" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
@@ -633,6 +634,17 @@
     <NavigationProperty Name="Machine" Relationship="LightSwitchApplication.WorkOrder_Machine" ToRole="Machine" FromRole="WorkOrder" />
     <NavigationProperty Name="WorkOrderIssueDetails" Relationship="LightSwitchApplication.WorkOrderIssueDetail_WorkOrder" ToRole="WorkOrderIssueDetail" FromRole="WorkOrder" />
     <NavigationProperty Name="WorkOrderProduces" Relationship="LightSwitchApplication.WorkOrderProduce_WorkOrder" ToRole="WorkOrderProduce" FromRole="WorkOrder" />
+  </EntityType>
+  <EntityType Name="Requisitions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
   </EntityType>
   <Association Name="Customer_CustomerGroup">
     <End Role="CustomerGroup" Type="LightSwitchApplication.CustomerGroup" Multiplicity="1" />
@@ -1043,6 +1055,7 @@
     <EntitySet Name="WorkOrderIssueDetails" EntityType="LightSwitchApplication.WorkOrderIssueDetail" />
     <EntitySet Name="WorkOrderProduces" EntityType="LightSwitchApplication.WorkOrderProduce" />
     <EntitySet Name="WorkOrders" EntityType="LightSwitchApplication.WorkOrder" />
+    <EntitySet Name="RequisitionsSet" EntityType="LightSwitchApplication.Requisitions" />
     <AssociationSet Name="Customer_CustomerGroup" Association="LightSwitchApplication.Customer_CustomerGroup">
       <End Role="CustomerGroup" EntitySet="CustomerGroups" />
       <End Role="Customer" EntitySet="Customers" />

@@ -360,6 +360,7 @@
     <LightSwitchModel Include="DataSources\ApplicationData\QueryMaxSONumber.lsml">
       <DependentUpon>SaleOrders.lsml</DependentUpon>
     </LightSwitchModel>
+    <LightSwitchModel Include="DataSources\ApplicationData\RequisitionsSet.lsml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
