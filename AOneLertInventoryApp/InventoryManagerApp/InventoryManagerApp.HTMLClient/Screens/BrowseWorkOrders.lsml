@@ -9,6 +9,8 @@
     <Screen.Attributes>
       <SaveChangesTo
         EntityContainer="ApplicationData" />
+      <DisplayName
+        Value="รายการใบสั่งผลิตสินค้า" />
     </Screen.Attributes>
     <Screen.RootContentItem>
       <ContentItem
@@ -22,6 +24,24 @@
           <ContentItem
             Name="WorkOrderList"
             Kind="Group">
+            <ContentItem
+              Name="SearchWorkOrder"
+              Kind="Value"
+              DataType=":String?"
+              View="Microsoft.LightSwitch.MobileWeb:TextBox">
+              <ContentItem.Attributes>
+                <DisplayName
+                  Value="ค้นหาใบสั่งผลิต" />
+              </ContentItem.Attributes>
+              <ContentItem.DataSource>
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <MemberExpression
+                      Member="BrowseWorkOrders/Properties[SearchWorkOrder]" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ContentItem.DataSource>
+            </ContentItem>
             <ContentItem
               Name="WorkOrder"
               Kind="Collection"
@@ -184,6 +204,10 @@
               <ContentItem
                 Name="AddWorkOrder"
                 Kind="Command">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="สร้างใบสั่งผลิตสินค้า" />
+                </ContentItem.Attributes>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
                     Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
@@ -198,6 +222,45 @@
                               TargetParameter="!module/Methods[showAddEditWorkOrder]/Parameters[WorkOrder]" />
                           </CallExpression.Attributes>
                         </CallExpression>
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootCommand/Properties[Icon]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <ConstantExpression
+                          Value="msls-add"
+                          ResultType=":String" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                </ContentItem.PropertySources>
+              </ContentItem>
+              <ContentItem
+                Name="ShowBrowseWorkOrderIsNotReceive"
+                Kind="Command">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="รับสินค้าจากการผลิต" />
+                </ContentItem.Attributes>
+                <ContentItem.PropertySources>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <CallExpression
+                          Target="!module/Methods[showBrowseWorkOrderIsNotReceive]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootCommand/Properties[Icon]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <ConstantExpression
+                          Value="msls-document"
+                          ResultType=":String" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ControlPropertySource>
@@ -291,6 +354,63 @@
           <Required />
         </ScreenProperty.Attributes>
       </ScreenProperty>
+      <ScreenCollectionProperty
+        Name="WorkOrdersQuery"
+        PageSize="45"
+        PropertyType="CollectionView$WorkOrder">
+        <ScreenCollectionProperty.Query>
+          <ScreenQueryDefinition
+            Name="WorkOrdersQueryQuery"
+            ReturnType="WorkOrder*">
+            <ScreenQueryDefinition.FilterExpression>
+              <QueryFilterExpressionTree>
+                <BinaryExpression
+                  NodeType="Contains">
+                  <BinaryExpression.Left>
+                    <ChainExpression>
+                      <MemberExpression
+                        Member="WorkOrder/Properties[WorkOrderNumber]" />
+                    </ChainExpression>
+                  </BinaryExpression.Left>
+                  <BinaryExpression.Right>
+                    <ParameterExpression
+                      Parameter="Parameter" />
+                  </BinaryExpression.Right>
+                </BinaryExpression>
+              </QueryFilterExpressionTree>
+            </ScreenQueryDefinition.FilterExpression>
+            <ScreenQueryDefinition.Source>
+              <QuerySourceExpressionTree>
+                <MemberExpression
+                  Member="ApplicationData/Members[WorkOrders]" />
+              </QuerySourceExpressionTree>
+            </ScreenQueryDefinition.Source>
+            <ScreenQueryDefinition.Parameters>
+              <QueryParameter
+                Name="Parameter"
+                IsOptional="True"
+                ParameterType=":String?" />
+            </ScreenQueryDefinition.Parameters>
+          </ScreenQueryDefinition>
+        </ScreenCollectionProperty.Query>
+        <ScreenExpressionTree>
+          <ChainExpression>
+            <CallExpression
+              Target="BrowseWorkOrders/Properties[WorkOrdersQuery]/Query">
+              <ArgumentExpression
+                Parameter="Parameter">
+                <ChainExpression>
+                  <MemberExpression
+                    Member="BrowseWorkOrders/Properties[SearchWorkOrder]" />
+                </ChainExpression>
+              </ArgumentExpression>
+            </CallExpression>
+          </ChainExpression>
+        </ScreenExpressionTree>
+      </ScreenCollectionProperty>
+      <ScreenProperty
+        Name="SearchWorkOrder"
+        PropertyType=":String?" />
     </Screen.Properties>
   </Screen>
   <Application.Methods>

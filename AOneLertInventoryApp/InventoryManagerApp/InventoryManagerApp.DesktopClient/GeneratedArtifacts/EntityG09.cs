@@ -251,6 +251,30 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public bool SaleOrderStatus
+        {
+            get
+            {
+                return global::LightSwitchApplication.SaleOrder.DetailsClass.GetValue(this, global::LightSwitchApplication.SaleOrder.DetailsClass.PropertySetProperties.SaleOrderStatus);
+            }
+            set
+            {
+                global::LightSwitchApplication.SaleOrder.DetailsClass.SetValue(this, global::LightSwitchApplication.SaleOrder.DetailsClass.PropertySetProperties.SaleOrderStatus, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaleOrderStatus_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaleOrderStatus_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaleOrderStatus_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string CreatedBy
         {
             get
@@ -536,6 +560,14 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, bool> SaleOrderStatus
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.SaleOrder.DetailsClass.PropertySetProperties.SaleOrderStatus) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, bool>;
+                    }
+                }
+                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, string> CreatedBy
                 {
                     get
@@ -605,6 +637,7 @@ namespace LightSwitchApplication
                 new global::System.Nullable<int> PaymentTerm { get; set; }
                 new string PaymentStatus { get; set; }
                 new string Remarks { get; set; }
+                new bool SaleOrderStatus { get; set; }
                 new string CreatedBy { get; }
                 new global::System.Nullable<global::System.DateTimeOffset> Created { get; }
                 new string ModifiedBy { get; }
@@ -881,6 +914,43 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, bool>.Entry
+                    SaleOrderStatus = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, bool>.Entry(
+                        "SaleOrderStatus",
+                        global::LightSwitchApplication.SaleOrder.DetailsClass.PropertySetProperties._SaleOrderStatus_Stub,
+                        global::LightSwitchApplication.SaleOrder.DetailsClass.PropertySetProperties._SaleOrderStatus_ComputeIsReadOnly,
+                        global::LightSwitchApplication.SaleOrder.DetailsClass.PropertySetProperties._SaleOrderStatus_Validate,
+                        global::LightSwitchApplication.SaleOrder.DetailsClass.PropertySetProperties._SaleOrderStatus_GetImplementationValue,
+                        global::LightSwitchApplication.SaleOrder.DetailsClass.PropertySetProperties._SaleOrderStatus_SetImplementationValue,
+                        global::LightSwitchApplication.SaleOrder.DetailsClass.PropertySetProperties._SaleOrderStatus_OnValueChanged);
+                private static void _SaleOrderStatus_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.SaleOrder.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, bool>.Data> c, global::LightSwitchApplication.SaleOrder.DetailsClass d, object sf)
+                {
+                    c(d, ref d._SaleOrderStatus, sf);
+                }
+                private static bool _SaleOrderStatus_ComputeIsReadOnly(global::LightSwitchApplication.SaleOrder e)
+                {
+                    bool result = false;
+                    e.SaleOrderStatus_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _SaleOrderStatus_Validate(global::LightSwitchApplication.SaleOrder e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.SaleOrderStatus_Validate(r);
+                }
+                private static bool _SaleOrderStatus_GetImplementationValue(global::LightSwitchApplication.SaleOrder.DetailsClass d)
+                {
+                    return d.ImplementationEntity.SaleOrderStatus;
+                }
+                private static void _SaleOrderStatus_SetImplementationValue(global::LightSwitchApplication.SaleOrder.DetailsClass d, bool v)
+                {
+                    d.ImplementationEntity.SaleOrderStatus = v;
+                }
+                private static void _SaleOrderStatus_OnValueChanged(global::LightSwitchApplication.SaleOrder e)
+                {
+                    e.SaleOrderStatus_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, string>.Entry
                     CreatedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, string>.Entry(
                         "CreatedBy",
@@ -1138,6 +1208,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, string>.Data _Remarks;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, bool>.Data _SaleOrderStatus;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.SaleOrder, global::LightSwitchApplication.SaleOrder.DetailsClass, string>.Data _CreatedBy;

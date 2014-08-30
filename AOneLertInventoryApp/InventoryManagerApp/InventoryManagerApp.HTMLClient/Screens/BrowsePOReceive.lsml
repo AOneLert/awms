@@ -10,7 +10,7 @@
       <SaveChangesTo
         EntityContainer="ApplicationData" />
       <DisplayName
-        Value="รายการสั่งซื้อสินค้าที่รอรับสินค้า" />
+        Value="รายการรับสินค้า" />
     </Screen.Attributes>
     <Screen.RootContentItem>
       <ContentItem

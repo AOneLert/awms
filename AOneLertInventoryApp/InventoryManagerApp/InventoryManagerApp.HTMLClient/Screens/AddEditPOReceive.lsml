@@ -223,6 +223,7 @@
                   </ContentItem>
                   <ContentItem
                     Name="ReceiveDate"
+                    IsHidden="True"
                     Kind="Value"
                     DataType=":Date?">
                     <ContentItem.Attributes>
@@ -278,6 +279,7 @@
                   </ContentItem>
                   <ContentItem
                     Name="LocationName"
+                    IsHidden="True"
                     Kind="Value"
                     DataType=":String">
                     <ContentItem.Attributes>
@@ -297,6 +299,7 @@
                   </ContentItem>
                   <ContentItem
                     Name="LotNo"
+                    IsHidden="True"
                     Kind="Value"
                     DataType=":String?"
                     View="Microsoft.LightSwitch.MobileWeb:Text">
@@ -455,21 +458,7 @@
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <CallExpression
-                          Target="!module/Methods[showAddEditPOReceiveDetail]">
-                          <CallExpression.Attributes>
-                            <AssociatedCollection
-                              Collection="AddEditPOReceive/Properties[PurchaseOrderDetails]" />
-                          </CallExpression.Attributes>
-                          <ArgumentExpression
-                            Parameter="PurchaseOrderDetail">
-                            <ChainExpression>
-                              <MemberExpression
-                                Member="AddEditPOReceive/Properties[PurchaseOrderDetails]" />
-                              <MemberExpression
-                                Member="selectedItem" />
-                            </ChainExpression>
-                          </ArgumentExpression>
-                        </CallExpression>
+                          Target="AddEditPOReceive/Methods[PurchaseOrderDetails_ItemTap]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ControlPropertySource>
@@ -519,6 +508,8 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
+      <ScreenMethod
+        Name="PurchaseOrderDetails_ItemTap" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenProperty

@@ -370,4 +370,10 @@
         Target="ServiceInterface:StockOnHandHistory" />
     </EntityType.Attributes>
   </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:Requisitions" />
+    </EntityType.Attributes>
+  </EntityType>
 </Application>

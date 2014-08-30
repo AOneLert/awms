@@ -56,11 +56,6 @@
         Association="SaleOrder_Customer"
         FromEnd="SaleOrder"
         ToEnd="Customer" />
-      <NavigationProperty
-        Name="SaleOrderDetails"
-        Association="SaleOrderDetail_SaleOrder"
-        FromEnd="SaleOrder"
-        ToEnd="SaleOrderDetail" />
       <EntityProperty
         Name="PaymentTerm"
         PropertyType=":Int32?">
@@ -93,6 +88,19 @@
             Value="255" />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <EntityProperty
+        Name="SaleOrderStatus"
+        PropertyType=":Boolean">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="SaleOrderDetails"
+        Association="SaleOrderDetail_SaleOrder"
+        FromEnd="SaleOrder"
+        ToEnd="SaleOrderDetail" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"

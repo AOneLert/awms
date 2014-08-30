@@ -126,7 +126,7 @@
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="สั่งซื้อสินค้า" />
+                  Value="ซื้อสินค้า" />
               </ContentItem.Attributes>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -142,6 +142,7 @@
             </ContentItem>
             <ContentItem
               Name="ShowBrowsePOReceive"
+              IsHidden="True"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
@@ -164,7 +165,7 @@
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="รับสินค้าจากยอดยกมา" />
+                  Value="สินค้ายอดยกมา" />
               </ContentItem.Attributes>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -183,7 +184,7 @@
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="สั่งผลิตสินค้า" />
+                  Value="ผลิตสินค้า" />
               </ContentItem.Attributes>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -199,6 +200,7 @@
             </ContentItem>
             <ContentItem
               Name="ShowBrowseWorkOrderIsNotReceive"
+              IsHidden="True"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
@@ -221,7 +223,7 @@
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="กำหนดราคาขายสินค้า" />
+                  Value="กำหนดราคาสินค้า" />
               </ContentItem.Attributes>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -287,7 +289,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showBrowseSaleOrders]" />
+                        Target="!module/Methods[showBrowseSaleOrderTasks]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>

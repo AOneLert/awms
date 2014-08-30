@@ -241,6 +241,9 @@
     <Content Include="Screens\BrowseSaleOrders.lsml.js">
       <DependentUpon>BrowseSaleOrders.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\BrowseSaleOrderTasks.lsml.js">
+      <DependentUpon>BrowseSaleOrderTasks.lsml</DependentUpon>
+    </Content>
     <Content Include="Screens\BrowseShippingMethods.lsml.js">
       <DependentUpon>BrowseShippingMethods.lsml</DependentUpon>
     </Content>
@@ -385,7 +388,9 @@
     <LightSwitchModel Include="Screens\BrowsePurchaseOrderNotClose.lsml" />
     <LightSwitchModel Include="Screens\BrowsePurchaseOrders.lsml" />
     <LightSwitchModel Include="Screens\BrowsePurchaseOrders_Old.lsml" />
+    <LightSwitchModel Include="Screens\BrowseRequisitions.lsml" />
     <LightSwitchModel Include="Screens\BrowseSaleOrders.lsml" />
+    <LightSwitchModel Include="Screens\BrowseSaleOrderTasks.lsml" />
     <LightSwitchModel Include="Screens\BrowseShippingMethods.lsml" />
     <LightSwitchModel Include="Screens\BrowseStockAdjusts.lsml" />
     <LightSwitchModel Include="Screens\BrowseStockOnHands.lsml" />
