@@ -358,6 +358,7 @@
     <LightSwitchModel Include="Screens\AddEditOrderRequisitionDetail.lsml" />
     <LightSwitchModel Include="Screens\AddEditPackage.lsml" />
     <LightSwitchModel Include="Screens\AddEditPaymentType.lsml" />
+    <LightSwitchModel Include="Screens\AddEditPickingSlip.lsml" />
     <LightSwitchModel Include="Screens\AddEditPO.lsml" />
     <LightSwitchModel Include="Screens\AddEditPODetail.lsml" />
     <LightSwitchModel Include="Screens\AddEditPOReceive.lsml" />

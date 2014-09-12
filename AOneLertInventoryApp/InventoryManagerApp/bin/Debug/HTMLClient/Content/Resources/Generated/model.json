@@ -2094,7 +2094,8 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:EmailAddress",
           "name": "EmailAddress",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@EmailAddressValidation": { "domainRequired": true }
         },
         {
           "__isSemanticType": 1,
@@ -2112,13 +2113,15 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:PhoneNumber",
           "name": "PhoneNumber",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@PhoneNumberValidation": { "formats": "C (AAA) NNN-NNNN;C (AAA) NNNNNNN;CAAANNNNNNN;(AAA) NNN-NNNN;(AAA) NNNNNNN;AAANNNNNNN;NNN-NNNN;NNNNNNN" }
         },
         {
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:Percent",
           "name": "Percent",
           "underlyingType": { "__id": ":Decimal" },
+          "Microsoft.LightSwitch.Extensions:@FormatParameter": { "decimalDigits": 2 },
           ":@DecimalConstraint":
           {
             "scale": 9
@@ -2128,7 +2131,8 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:WebAddress",
           "name": "WebAddress",
-          "underlyingType": { "__id": ":String" }
+          "underlyingType": { "__id": ":String" },
+          "Microsoft.LightSwitch.Extensions:@WebAddressValidation": { }
         }
       ]
     },
@@ -34252,34 +34256,12 @@
                             "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
                             "source":
                             {
-                              "target": { "__id": "!module/Methods[showBrowseOrderRequisitionsDelivery]" },
-                              "arguments":
-                              [
-                                {
-                                  "parameter": { "__id": "!module/Methods[showBrowseOrderRequisitionsDelivery]/Parameters[SelectedTransportRouteId]" },
-                                  "value":
-                                  {
-                                    "links":
-                                    [
-                                      {
-                                        "member": { "__id": "BrowseOrderRequisitionsTransportRoute/Properties[QueryOrderRequisitionTransportRoute]" }
-                                      },
-                                      {
-                                        "member": { "__id": "CollectionView$OrderRequisition/Properties[selectedItem]" }
-                                      },
-                                      {
-                                        "member": { "__id": "OrderRequisition/Properties[Customer]" }
-                                      },
-                                      {
-                                        "member": { "__id": "Customer/Properties[TransportRoute]" }
-                                      },
-                                      {
-                                        "member": { "__id": "TransportRoute/Properties[Id]" }
-                                      }
-                                    ]
-                                  }
-                                }
-                              ]
+                              "target": { "__id": "!module/Methods[showAddEditPickingSlip]" },
+                              ":@CreateNewEntity":
+                              {
+                                "entityType": { "__id": "PickingSlip" },
+                                "targetParameter": { "__id": "!module/Methods[showAddEditPickingSlip]/Parameters[PickingSlip]" }
+                              }
                             }
                           }
                         ]
@@ -47354,6 +47336,379 @@
               }
             }
           ]
+        },
+        {
+          "displayName": "Add Edit Picking Slip",
+          "id": "AddEditPickingSlip",
+          "name": "AddEditPickingSlip",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "Root Content Item",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Details",
+                    "name": "Details",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "columns",
+                        "name": "columns",
+                        "kind": "Details",
+                        "view": { "__id": ":ColumnsLayout" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditPickingSlip/Properties[PickingSlip]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "left",
+                            "name": "left",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Picking No",
+                                "name": "PickingNo",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlip/Properties[PickingNo]" }
+                                }
+                              },
+                              {
+                                "displayName": "Picking Date",
+                                "name": "PickingDate",
+                                "kind": "Value",
+                                "view": { "__id": ":DatePicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlip/Properties[PickingDate]" }
+                                }
+                              },
+                              {
+                                "displayName": "Transport Route",
+                                "name": "TransportRoute",
+                                "kind": "Details",
+                                "view": { "__id": ":DetailsModalPicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlip/Properties[TransportRoute]" }
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "Transport Route",
+                                    "name": "RowTemplate",
+                                    "kind": "Details",
+                                    "view": { "__id": ":Summary" },
+                                    "dataSource":
+                                    {
+                                      "links":
+                                      [
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "right",
+                            "name": "right",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Total Weight",
+                                "name": "TotalWeight",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlip/Properties[TotalWeight]" }
+                                }
+                              },
+                              {
+                                "displayName": "Status",
+                                "name": "Status",
+                                "kind": "Value",
+                                "view": { "__id": ":FlipSwitchControl" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlip/Properties[Status]" }
+                                }
+                              },
+                              {
+                                "displayName": "Remark",
+                                "name": "Remark",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlip/Properties[Remark]" }
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Picking Slip Details",
+                        "name": "PickingSlipDetails",
+                        "kind": "Group",
+                        "view": { "__id": ":RowsLayout" },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "Picking Slip Details",
+                            "name": "PickingSlipDetails1",
+                            "kind": "Collection",
+                            "view": { "__id": ":Table" },
+                            "dataSource":
+                            {
+                              "member": { "__id": "AddEditPickingSlip/Properties[PickingSlipDetails]" }
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Picking Slip Detail",
+                                "name": "RowTemplate1",
+                                "kind": "Details",
+                                "view": { "__id": ":TableRowLayout" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                  ]
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "Order Requisition Detail",
+                                    "name": "OrderRequisitionDetail",
+                                    "kind": "Details",
+                                    "view": { "__id": ":Summary" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[OrderRequisitionDetail]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "Lot No",
+                                    "name": "LotNo",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[LotNo]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "Location",
+                                    "name": "Location",
+                                    "kind": "Details",
+                                    "view": { "__id": ":Summary" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[Location]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "Picking Quantity",
+                                    "name": "PickingQuantity",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[PickingQuantity]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "Unit Price",
+                                    "name": "UnitPrice",
+                                    "kind": "Value",
+                                    "view": { "__id": ":MoneyViewer" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[UnitPrice]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "Created By",
+                                    "name": "CreatedBy",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[CreatedBy]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "Created",
+                                    "name": "Created",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[Created]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "Modified By",
+                                    "name": "ModifiedBy",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[ModifiedBy]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "Modified",
+                                    "name": "Modified",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[Modified]" }
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ],
+            "propertySources":
+            [
+              {
+                "property": { "__id": ":Screen/Properties[ScreenType]" },
+                "value": "Edit"
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "AddEditPickingSlip/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "AddEditPickingSlip/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "AddEditPickingSlip/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "AddEditPickingSlip/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "AddEditPickingSlip/Properties[PickingSlip]",
+              "name": "PickingSlip",
+              "elementType": { "__id": "PickingSlip" },
+              "propertyType": { "__id": "PickingSlip" },
+              ":@IsParameter": { }
+            },
+            {
+              "id": "AddEditPickingSlip/Properties[PickingSlipDetails]",
+              "name": "PickingSlipDetails",
+              "pageSize": 15,
+              "elementType": { "__id": "PickingSlipDetail" },
+              "propertyType": { "__id": "CollectionView$PickingSlipDetail" },
+              "query":
+              {
+                "id": "AddEditPickingSlip/Properties[PickingSlipDetails]/Query",
+                "name": "PickingSlipDetailsQuery",
+                "elementType": { "__id": "PickingSlipDetail" },
+                "returnType": { "__id": "PickingSlipDetail*" },
+                "source":
+                {
+                  "links":
+                  [
+                    {
+                      "member": { "__id": "AddEditPickingSlip/Properties[PickingSlip]" }
+                    },
+                    {
+                      "member": { "__id": "PickingSlip/Properties[PickingSlipDetails]" }
+                    }
+                  ]
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "AddEditPickingSlip/Properties[PickingSlipDetails]/Query" }
+              }
+            }
+          ]
         }
       ],
       "methods":
@@ -48257,6 +48612,19 @@
               "id": "!module/Methods[showViewWorkOrder]/Parameters[WorkOrder]",
               "name": "WorkOrder",
               "parameterType": { "__id": "WorkOrder" }
+            }
+          ]
+        },
+        {
+          "id": "!module/Methods[showAddEditPickingSlip]",
+          "name": "showAddEditPickingSlip",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "AddEditPickingSlip" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showAddEditPickingSlip]/Parameters[PickingSlip]",
+              "name": "PickingSlip",
+              "parameterType": { "__id": "PickingSlip" }
             }
           ]
         }

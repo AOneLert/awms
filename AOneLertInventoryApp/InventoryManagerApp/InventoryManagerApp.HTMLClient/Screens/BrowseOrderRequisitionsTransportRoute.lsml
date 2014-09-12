@@ -79,22 +79,12 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showBrowseOrderRequisitionsDelivery]">
-                        <ArgumentExpression
-                          Parameter="SelectedTransportRouteId">
-                          <ChainExpression>
-                            <MemberExpression
-                              Member="BrowseOrderRequisitionsTransportRoute/Properties[QueryOrderRequisitionTransportRoute]" />
-                            <MemberExpression
-                              Member="selectedItem" />
-                            <MemberExpression
-                              Member="Customer" />
-                            <MemberExpression
-                              Member="TransportRoute" />
-                            <MemberExpression
-                              Member="Id" />
-                          </ChainExpression>
-                        </ArgumentExpression>
+                        Target="!module/Methods[showAddEditPickingSlip]">
+                        <CallExpression.Attributes>
+                          <CreateNewEntity
+                            EntityType="PickingSlip"
+                            TargetParameter="!module/Methods[showAddEditPickingSlip]/Parameters[PickingSlip]" />
+                        </CallExpression.Attributes>
                       </CallExpression>
                     </ChainExpression>
                   </ScreenExpressionTree>
