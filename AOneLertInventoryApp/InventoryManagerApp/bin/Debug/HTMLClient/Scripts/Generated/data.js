@@ -288,6 +288,9 @@ window.myapp = msls.application;
         /// <field name="ProductReceivePurchaseOrderDetails" type="msls.EntityCollection" elementType="msls.application.ProductReceivePurchaseOrderDetail">
         /// Gets the productReceivePurchaseOrderDetails for this location.
         /// </field>
+        /// <field name="PickingSlipDetails" type="msls.EntityCollection" elementType="msls.application.PickingSlipDetail">
+        /// Gets the pickingSlipDetails for this location.
+        /// </field>
         /// <field name="CreatedBy" type="String">
         /// Gets or sets the createdBy for this location.
         /// </field>
@@ -345,6 +348,104 @@ window.myapp = msls.application;
         /// </field>
         /// <field name="details" type="msls.application.Machine.Details">
         /// Gets the details for this machine.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
+    function OrderRequisitionDetail(entitySet) {
+        /// <summary>
+        /// Represents the OrderRequisitionDetail entity type.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// The entity set that should contain this orderRequisitionDetail.
+        /// </param>
+        /// <field name="Id" type="Number">
+        /// Gets or sets the id for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="OrderRequisition" type="msls.application.OrderRequisition">
+        /// Gets or sets the orderRequisition for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="Product" type="msls.application.Product">
+        /// Gets or sets the product for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="Quantity" type="Number">
+        /// Gets or sets the quantity for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="Status" type="Boolean">
+        /// Gets or sets the status for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="DeliveredQuantity" type="Number">
+        /// Gets or sets the deliveredQuantity for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="PickingSlipDetails" type="msls.EntityCollection" elementType="msls.application.PickingSlipDetail">
+        /// Gets the pickingSlipDetails for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="CreatedBy" type="String">
+        /// Gets or sets the createdBy for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="Created" type="Date">
+        /// Gets or sets the created for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="ModifiedBy" type="String">
+        /// Gets or sets the modifiedBy for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="Modified" type="Date">
+        /// Gets or sets the modified for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="RowVersion" type="Array">
+        /// Gets or sets the rowVersion for this orderRequisitionDetail.
+        /// </field>
+        /// <field name="details" type="msls.application.OrderRequisitionDetail.Details">
+        /// Gets the details for this orderRequisitionDetail.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
+    function OrderRequisition(entitySet) {
+        /// <summary>
+        /// Represents the OrderRequisition entity type.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// The entity set that should contain this orderRequisition.
+        /// </param>
+        /// <field name="Id" type="Number">
+        /// Gets or sets the id for this orderRequisition.
+        /// </field>
+        /// <field name="OrderRequisitionNo" type="String">
+        /// Gets or sets the orderRequisitionNo for this orderRequisition.
+        /// </field>
+        /// <field name="OrderRequisitionDate" type="Date">
+        /// Gets or sets the orderRequisitionDate for this orderRequisition.
+        /// </field>
+        /// <field name="Remark" type="String">
+        /// Gets or sets the remark for this orderRequisition.
+        /// </field>
+        /// <field name="Customer" type="msls.application.Customer">
+        /// Gets or sets the customer for this orderRequisition.
+        /// </field>
+        /// <field name="Status" type="Boolean">
+        /// Gets or sets the status for this orderRequisition.
+        /// </field>
+        /// <field name="OrderRequisitionDetail" type="msls.EntityCollection" elementType="msls.application.OrderRequisitionDetail">
+        /// Gets the orderRequisitionDetail for this orderRequisition.
+        /// </field>
+        /// <field name="CreatedBy" type="String">
+        /// Gets or sets the createdBy for this orderRequisition.
+        /// </field>
+        /// <field name="Created" type="Date">
+        /// Gets or sets the created for this orderRequisition.
+        /// </field>
+        /// <field name="ModifiedBy" type="String">
+        /// Gets or sets the modifiedBy for this orderRequisition.
+        /// </field>
+        /// <field name="Modified" type="Date">
+        /// Gets or sets the modified for this orderRequisition.
+        /// </field>
+        /// <field name="RowVersion" type="Array">
+        /// Gets or sets the rowVersion for this orderRequisition.
+        /// </field>
+        /// <field name="details" type="msls.application.OrderRequisition.Details">
+        /// Gets the details for this orderRequisition.
         /// </field>
         $Entity.call(this, entitySet);
     }
@@ -419,6 +520,107 @@ window.myapp = msls.application;
         /// </field>
         /// <field name="details" type="msls.application.PaymentType.Details">
         /// Gets the details for this paymentType.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
+    function PickingSlipDetail(entitySet) {
+        /// <summary>
+        /// Represents the PickingSlipDetail entity type.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// The entity set that should contain this pickingSlipDetail.
+        /// </param>
+        /// <field name="Id" type="Number">
+        /// Gets or sets the id for this pickingSlipDetail.
+        /// </field>
+        /// <field name="PickingSlip" type="msls.application.PickingSlip">
+        /// Gets or sets the pickingSlip for this pickingSlipDetail.
+        /// </field>
+        /// <field name="OrderRequisitionDetail" type="msls.application.OrderRequisitionDetail">
+        /// Gets or sets the orderRequisitionDetail for this pickingSlipDetail.
+        /// </field>
+        /// <field name="LotNo" type="String">
+        /// Gets or sets the lotNo for this pickingSlipDetail.
+        /// </field>
+        /// <field name="Location" type="msls.application.Location">
+        /// Gets or sets the location for this pickingSlipDetail.
+        /// </field>
+        /// <field name="PickingQuantity" type="Number">
+        /// Gets or sets the pickingQuantity for this pickingSlipDetail.
+        /// </field>
+        /// <field name="UnitPrice" type="String">
+        /// Gets or sets the unitPrice for this pickingSlipDetail.
+        /// </field>
+        /// <field name="CreatedBy" type="String">
+        /// Gets or sets the createdBy for this pickingSlipDetail.
+        /// </field>
+        /// <field name="Created" type="Date">
+        /// Gets or sets the created for this pickingSlipDetail.
+        /// </field>
+        /// <field name="ModifiedBy" type="String">
+        /// Gets or sets the modifiedBy for this pickingSlipDetail.
+        /// </field>
+        /// <field name="Modified" type="Date">
+        /// Gets or sets the modified for this pickingSlipDetail.
+        /// </field>
+        /// <field name="RowVersion" type="Array">
+        /// Gets or sets the rowVersion for this pickingSlipDetail.
+        /// </field>
+        /// <field name="details" type="msls.application.PickingSlipDetail.Details">
+        /// Gets the details for this pickingSlipDetail.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
+    function PickingSlip(entitySet) {
+        /// <summary>
+        /// Represents the PickingSlip entity type.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// The entity set that should contain this pickingSlip.
+        /// </param>
+        /// <field name="Id" type="Number">
+        /// Gets or sets the id for this pickingSlip.
+        /// </field>
+        /// <field name="PickingNo" type="String">
+        /// Gets or sets the pickingNo for this pickingSlip.
+        /// </field>
+        /// <field name="PickingDate" type="Date">
+        /// Gets or sets the pickingDate for this pickingSlip.
+        /// </field>
+        /// <field name="TransportRoute" type="msls.application.TransportRoute">
+        /// Gets or sets the transportRoute for this pickingSlip.
+        /// </field>
+        /// <field name="TotalWeight" type="Number">
+        /// Gets or sets the totalWeight for this pickingSlip.
+        /// </field>
+        /// <field name="Status" type="Boolean">
+        /// Gets or sets the status for this pickingSlip.
+        /// </field>
+        /// <field name="PickingSlipDetails" type="msls.EntityCollection" elementType="msls.application.PickingSlipDetail">
+        /// Gets the pickingSlipDetails for this pickingSlip.
+        /// </field>
+        /// <field name="Remark" type="String">
+        /// Gets or sets the remark for this pickingSlip.
+        /// </field>
+        /// <field name="CreatedBy" type="String">
+        /// Gets or sets the createdBy for this pickingSlip.
+        /// </field>
+        /// <field name="Created" type="Date">
+        /// Gets or sets the created for this pickingSlip.
+        /// </field>
+        /// <field name="ModifiedBy" type="String">
+        /// Gets or sets the modifiedBy for this pickingSlip.
+        /// </field>
+        /// <field name="Modified" type="Date">
+        /// Gets or sets the modified for this pickingSlip.
+        /// </field>
+        /// <field name="RowVersion" type="Array">
+        /// Gets or sets the rowVersion for this pickingSlip.
+        /// </field>
+        /// <field name="details" type="msls.application.PickingSlip.Details">
+        /// Gets the details for this pickingSlip.
         /// </field>
         $Entity.call(this, entitySet);
     }
@@ -924,55 +1126,6 @@ window.myapp = msls.application;
         $Entity.call(this, entitySet);
     }
 
-    function OrderRequisition(entitySet) {
-        /// <summary>
-        /// Represents the OrderRequisition entity type.
-        /// </summary>
-        /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// The entity set that should contain this orderRequisition.
-        /// </param>
-        /// <field name="Id" type="Number">
-        /// Gets or sets the id for this orderRequisition.
-        /// </field>
-        /// <field name="OrderRequisitionNo" type="String">
-        /// Gets or sets the orderRequisitionNo for this orderRequisition.
-        /// </field>
-        /// <field name="OrderRequisitionDate" type="Date">
-        /// Gets or sets the orderRequisitionDate for this orderRequisition.
-        /// </field>
-        /// <field name="Remark" type="String">
-        /// Gets or sets the remark for this orderRequisition.
-        /// </field>
-        /// <field name="Customer" type="msls.application.Customer">
-        /// Gets or sets the customer for this orderRequisition.
-        /// </field>
-        /// <field name="Status" type="Boolean">
-        /// Gets or sets the status for this orderRequisition.
-        /// </field>
-        /// <field name="OrderRequisitionDetail" type="msls.EntityCollection" elementType="msls.application.OrderRequisitionDetail">
-        /// Gets the orderRequisitionDetail for this orderRequisition.
-        /// </field>
-        /// <field name="CreatedBy" type="String">
-        /// Gets or sets the createdBy for this orderRequisition.
-        /// </field>
-        /// <field name="Created" type="Date">
-        /// Gets or sets the created for this orderRequisition.
-        /// </field>
-        /// <field name="ModifiedBy" type="String">
-        /// Gets or sets the modifiedBy for this orderRequisition.
-        /// </field>
-        /// <field name="Modified" type="Date">
-        /// Gets or sets the modified for this orderRequisition.
-        /// </field>
-        /// <field name="RowVersion" type="Array">
-        /// Gets or sets the rowVersion for this orderRequisition.
-        /// </field>
-        /// <field name="details" type="msls.application.OrderRequisition.Details">
-        /// Gets the details for this orderRequisition.
-        /// </field>
-        $Entity.call(this, entitySet);
-    }
-
     function SaleOrderDetail(entitySet) {
         /// <summary>
         /// Represents the SaleOrderDetail entity type.
@@ -1041,8 +1194,8 @@ window.myapp = msls.application;
         /// <field name="Id" type="Number">
         /// Gets or sets the id for this saleOrder.
         /// </field>
-        /// <field name="DocumentNo" type="String">
-        /// Gets or sets the documentNo for this saleOrder.
+        /// <field name="SaleOrderNo" type="String">
+        /// Gets or sets the saleOrderNo for this saleOrder.
         /// </field>
         /// <field name="SaleOrderDate" type="Date">
         /// Gets or sets the saleOrderDate for this saleOrder.
@@ -1659,6 +1812,9 @@ window.myapp = msls.application;
         /// <field name="Discontinued" type="Boolean">
         /// Gets or sets the discontinued for this transportRoute.
         /// </field>
+        /// <field name="PickingSlips" type="msls.EntityCollection" elementType="msls.application.PickingSlip">
+        /// Gets the pickingSlips for this transportRoute.
+        /// </field>
         /// <field name="CreatedBy" type="String">
         /// Gets or sets the createdBy for this transportRoute.
         /// </field>
@@ -1922,52 +2078,6 @@ window.myapp = msls.application;
         $Entity.call(this, entitySet);
     }
 
-    function OrderRequisitionDetail(entitySet) {
-        /// <summary>
-        /// Represents the OrderRequisitionDetail entity type.
-        /// </summary>
-        /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// The entity set that should contain this orderRequisitionDetail.
-        /// </param>
-        /// <field name="Id" type="Number">
-        /// Gets or sets the id for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="OrderRequisition" type="msls.application.OrderRequisition">
-        /// Gets or sets the orderRequisition for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="Product" type="msls.application.Product">
-        /// Gets or sets the product for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="Quantity" type="Number">
-        /// Gets or sets the quantity for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="Status" type="Boolean">
-        /// Gets or sets the status for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="DeliveredQuantity" type="Number">
-        /// Gets or sets the deliveredQuantity for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="CreatedBy" type="String">
-        /// Gets or sets the createdBy for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="Created" type="Date">
-        /// Gets or sets the created for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="ModifiedBy" type="String">
-        /// Gets or sets the modifiedBy for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="Modified" type="Date">
-        /// Gets or sets the modified for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="RowVersion" type="Array">
-        /// Gets or sets the rowVersion for this orderRequisitionDetail.
-        /// </field>
-        /// <field name="details" type="msls.application.OrderRequisitionDetail.Details">
-        /// Gets the details for this orderRequisitionDetail.
-        /// </field>
-        $Entity.call(this, entitySet);
-    }
-
     function ApplicationData(dataWorkspace) {
         /// <summary>
         /// Represents the ApplicationData data service.
@@ -1993,11 +2103,23 @@ window.myapp = msls.application;
         /// <field name="Machines" type="msls.EntitySet">
         /// Gets the Machines entity set.
         /// </field>
+        /// <field name="OrderRequisitionDetails" type="msls.EntitySet">
+        /// Gets the OrderRequisitionDetails entity set.
+        /// </field>
+        /// <field name="OrderRequisitions" type="msls.EntitySet">
+        /// Gets the OrderRequisitions entity set.
+        /// </field>
         /// <field name="Packages" type="msls.EntitySet">
         /// Gets the Packages entity set.
         /// </field>
         /// <field name="PaymentTypes" type="msls.EntitySet">
         /// Gets the PaymentTypes entity set.
+        /// </field>
+        /// <field name="PickingSlipDetails" type="msls.EntitySet">
+        /// Gets the PickingSlipDetails entity set.
+        /// </field>
+        /// <field name="PickingSlips" type="msls.EntitySet">
+        /// Gets the PickingSlips entity set.
         /// </field>
         /// <field name="ProductCategories" type="msls.EntitySet">
         /// Gets the ProductCategories entity set.
@@ -2025,9 +2147,6 @@ window.myapp = msls.application;
         /// </field>
         /// <field name="PurchaseOrders" type="msls.EntitySet">
         /// Gets the PurchaseOrders entity set.
-        /// </field>
-        /// <field name="OrderRequisitions" type="msls.EntitySet">
-        /// Gets the OrderRequisitions entity set.
         /// </field>
         /// <field name="SaleOrderDetails" type="msls.EntitySet">
         /// Gets the SaleOrderDetails entity set.
@@ -2085,9 +2204,6 @@ window.myapp = msls.application;
         /// </field>
         /// <field name="WorkOrders" type="msls.EntitySet">
         /// Gets the WorkOrders entity set.
-        /// </field>
-        /// <field name="OrderRequisitionDetails" type="msls.EntitySet">
-        /// Gets the OrderRequisitionDetails entity set.
         /// </field>
         /// <field name="details" type="msls.application.ApplicationData.Details">
         /// Gets the details for this data service.
@@ -2194,6 +2310,7 @@ window.myapp = msls.application;
             { name: "WorkOrderIssueDetail", kind: "collection", elementType: WorkOrderIssueDetail },
             { name: "WorkOrderProduces", kind: "collection", elementType: WorkOrderProduce },
             { name: "ProductReceivePurchaseOrderDetails", kind: "collection", elementType: ProductReceivePurchaseOrderDetail },
+            { name: "PickingSlipDetails", kind: "collection", elementType: PickingSlipDetail },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },
@@ -2206,6 +2323,36 @@ window.myapp = msls.application;
             { name: "MachineName", type: String },
             { name: "Discontinued", type: Boolean },
             { name: "WorkOrders", kind: "collection", elementType: WorkOrder },
+            { name: "CreatedBy", type: String, isReadOnly: true },
+            { name: "Created", type: Date, isReadOnly: true },
+            { name: "ModifiedBy", type: String, isReadOnly: true },
+            { name: "Modified", type: Date, isReadOnly: true },
+            { name: "RowVersion", type: Array }
+        ]),
+
+        OrderRequisitionDetail: $defineEntity(OrderRequisitionDetail, [
+            { name: "Id", type: Number },
+            { name: "OrderRequisition", kind: "reference", type: OrderRequisition },
+            { name: "Product", kind: "reference", type: Product },
+            { name: "Quantity", type: Number },
+            { name: "Status", type: Boolean },
+            { name: "DeliveredQuantity", type: Number },
+            { name: "PickingSlipDetails", kind: "collection", elementType: PickingSlipDetail },
+            { name: "CreatedBy", type: String, isReadOnly: true },
+            { name: "Created", type: Date, isReadOnly: true },
+            { name: "ModifiedBy", type: String, isReadOnly: true },
+            { name: "Modified", type: Date, isReadOnly: true },
+            { name: "RowVersion", type: Array }
+        ]),
+
+        OrderRequisition: $defineEntity(OrderRequisition, [
+            { name: "Id", type: Number },
+            { name: "OrderRequisitionNo", type: String },
+            { name: "OrderRequisitionDate", type: Date },
+            { name: "Remark", type: String },
+            { name: "Customer", kind: "reference", type: Customer },
+            { name: "Status", type: Boolean },
+            { name: "OrderRequisitionDetail", kind: "collection", elementType: OrderRequisitionDetail },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },
@@ -2228,6 +2375,37 @@ window.myapp = msls.application;
             { name: "Id", type: Number },
             { name: "PaymentTypeName", type: String },
             { name: "Discontinued", type: Boolean },
+            { name: "CreatedBy", type: String, isReadOnly: true },
+            { name: "Created", type: Date, isReadOnly: true },
+            { name: "ModifiedBy", type: String, isReadOnly: true },
+            { name: "Modified", type: Date, isReadOnly: true },
+            { name: "RowVersion", type: Array }
+        ]),
+
+        PickingSlipDetail: $defineEntity(PickingSlipDetail, [
+            { name: "Id", type: Number },
+            { name: "PickingSlip", kind: "reference", type: PickingSlip },
+            { name: "OrderRequisitionDetail", kind: "reference", type: OrderRequisitionDetail },
+            { name: "LotNo", type: String },
+            { name: "Location", kind: "reference", type: Location },
+            { name: "PickingQuantity", type: Number },
+            { name: "UnitPrice", type: String },
+            { name: "CreatedBy", type: String, isReadOnly: true },
+            { name: "Created", type: Date, isReadOnly: true },
+            { name: "ModifiedBy", type: String, isReadOnly: true },
+            { name: "Modified", type: Date, isReadOnly: true },
+            { name: "RowVersion", type: Array }
+        ]),
+
+        PickingSlip: $defineEntity(PickingSlip, [
+            { name: "Id", type: Number },
+            { name: "PickingNo", type: String },
+            { name: "PickingDate", type: Date },
+            { name: "TransportRoute", kind: "reference", type: TransportRoute },
+            { name: "TotalWeight", type: Number },
+            { name: "Status", type: Boolean },
+            { name: "PickingSlipDetails", kind: "collection", elementType: PickingSlipDetail },
+            { name: "Remark", type: String },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },
@@ -2390,21 +2568,6 @@ window.myapp = msls.application;
             { name: "RowVersion", type: Array }
         ]),
 
-        OrderRequisition: $defineEntity(OrderRequisition, [
-            { name: "Id", type: Number },
-            { name: "OrderRequisitionNo", type: String },
-            { name: "OrderRequisitionDate", type: Date },
-            { name: "Remark", type: String },
-            { name: "Customer", kind: "reference", type: Customer },
-            { name: "Status", type: Boolean },
-            { name: "OrderRequisitionDetail", kind: "collection", elementType: OrderRequisitionDetail },
-            { name: "CreatedBy", type: String, isReadOnly: true },
-            { name: "Created", type: Date, isReadOnly: true },
-            { name: "ModifiedBy", type: String, isReadOnly: true },
-            { name: "Modified", type: Date, isReadOnly: true },
-            { name: "RowVersion", type: Array }
-        ]),
-
         SaleOrderDetail: $defineEntity(SaleOrderDetail, [
             { name: "Id", type: Number },
             { name: "SaleOrder", kind: "reference", type: SaleOrder },
@@ -2425,7 +2588,7 @@ window.myapp = msls.application;
 
         SaleOrder: $defineEntity(SaleOrder, [
             { name: "Id", type: Number },
-            { name: "DocumentNo", type: String },
+            { name: "SaleOrderNo", type: String },
             { name: "SaleOrderDate", type: Date },
             { name: "ReferenceNo", type: String },
             { name: "Customer", kind: "reference", type: Customer },
@@ -2615,6 +2778,7 @@ window.myapp = msls.application;
             { name: "Customers", kind: "collection", elementType: Customer },
             { name: "Distance", type: Number },
             { name: "Discontinued", type: Boolean },
+            { name: "PickingSlips", kind: "collection", elementType: PickingSlip },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },
@@ -2696,20 +2860,6 @@ window.myapp = msls.application;
             { name: "RowVersion", type: Array }
         ]),
 
-        OrderRequisitionDetail: $defineEntity(OrderRequisitionDetail, [
-            { name: "Id", type: Number },
-            { name: "OrderRequisition", kind: "reference", type: OrderRequisition },
-            { name: "Product", kind: "reference", type: Product },
-            { name: "Quantity", type: Number },
-            { name: "Status", type: Boolean },
-            { name: "DeliveredQuantity", type: Number },
-            { name: "CreatedBy", type: String, isReadOnly: true },
-            { name: "Created", type: Date, isReadOnly: true },
-            { name: "ModifiedBy", type: String, isReadOnly: true },
-            { name: "Modified", type: Date, isReadOnly: true },
-            { name: "RowVersion", type: Array }
-        ]),
-
         ApplicationData: $defineDataService(ApplicationData, lightSwitchApplication.rootUri + "/ApplicationData.svc", [
             { name: "Banks", elementType: Bank },
             { name: "Companies", elementType: Company },
@@ -2717,8 +2867,12 @@ window.myapp = msls.application;
             { name: "Customers", elementType: Customer },
             { name: "Locations", elementType: Location },
             { name: "Machines", elementType: Machine },
+            { name: "OrderRequisitionDetails", elementType: OrderRequisitionDetail },
+            { name: "OrderRequisitions", elementType: OrderRequisition },
             { name: "Packages", elementType: Package },
             { name: "PaymentTypes", elementType: PaymentType },
+            { name: "PickingSlipDetails", elementType: PickingSlipDetail },
+            { name: "PickingSlips", elementType: PickingSlip },
             { name: "ProductCategories", elementType: ProductCategory },
             { name: "ProductGroups", elementType: ProductGroup },
             { name: "ProductReceiveBalanceForwardDetails", elementType: ProductReceiveBalanceForwardDetail },
@@ -2728,7 +2882,6 @@ window.myapp = msls.application;
             { name: "Products", elementType: Product },
             { name: "PurchaseOrderDetails", elementType: PurchaseOrderDetail },
             { name: "PurchaseOrders", elementType: PurchaseOrder },
-            { name: "OrderRequisitions", elementType: OrderRequisition },
             { name: "SaleOrderDetails", elementType: SaleOrderDetail },
             { name: "SaleOrders", elementType: SaleOrder },
             { name: "StockAdjustDetails", elementType: StockAdjustDetail },
@@ -2747,8 +2900,7 @@ window.myapp = msls.application;
             { name: "Workers", elementType: Worker },
             { name: "WorkOrderIssueDetails", elementType: WorkOrderIssueDetail },
             { name: "WorkOrderProduces", elementType: WorkOrderProduce },
-            { name: "WorkOrders", elementType: WorkOrder },
-            { name: "OrderRequisitionDetails", elementType: OrderRequisitionDetail }
+            { name: "WorkOrders", elementType: WorkOrder }
         ], [
             {
                 name: "Banks_SingleOrDefault", value: function (Id) {
@@ -2833,6 +2985,36 @@ window.myapp = msls.application;
                 }
             },
             {
+                name: "OrderRequisitionDetails_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.OrderRequisitionDetails },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/OrderRequisitionDetails(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
+                }
+            },
+            {
+                name: "OrderRequisitions_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.OrderRequisitions },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/OrderRequisitions(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
+                }
+            },
+            {
+                name: "GetMaxOrderRequisitionNo", value: function () {
+                    return new $DataServiceQuery({ _entitySet: this.OrderRequisitions },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/GetMaxOrderRequisitionNo()",
+                        {
+                        });
+                }
+            },
+            {
+                name: "QueryOrderRequisitionTransportRoute", value: function () {
+                    return new $DataServiceQuery({ _entitySet: this.OrderRequisitions },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/QueryOrderRequisitionTransportRoute()",
+                        {
+                        });
+                }
+            },
+            {
                 name: "Packages_SingleOrDefault", value: function (Id) {
                     return new $DataServiceQuery({ _entitySet: this.Packages },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/Packages(" + "Id=" + $toODataString(Id, "Int32?") + ")"
@@ -2860,6 +3042,20 @@ window.myapp = msls.application;
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/PaymentTypeActiveQuery()",
                         {
                         });
+                }
+            },
+            {
+                name: "PickingSlipDetails_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.PickingSlipDetails },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/PickingSlipDetails(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
+                }
+            },
+            {
+                name: "PickingSlips_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.PickingSlips },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/PickingSlips(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
                 }
             },
             {
@@ -2996,13 +3192,6 @@ window.myapp = msls.application;
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/QueryMaxPONumber()",
                         {
                         });
-                }
-            },
-            {
-                name: "OrderRequisitions_SingleOrDefault", value: function (Id) {
-                    return new $DataServiceQuery({ _entitySet: this.OrderRequisitions },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/OrderRequisitions(" + "Id=" + $toODataString(Id, "Int32?") + ")"
-                    );
                 }
             },
             {
@@ -3214,29 +3403,6 @@ window.myapp = msls.application;
                 name: "WorkOrderIsNotReceive", value: function () {
                     return new $DataServiceQuery({ _entitySet: this.WorkOrders },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/WorkOrderIsNotReceive()",
-                        {
-                        });
-                }
-            },
-            {
-                name: "OrderRequisitionDetails_SingleOrDefault", value: function (Id) {
-                    return new $DataServiceQuery({ _entitySet: this.OrderRequisitionDetails },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/OrderRequisitionDetails(" + "Id=" + $toODataString(Id, "Int32?") + ")"
-                    );
-                }
-            },
-            {
-                name: "QueryOrderRequisitionTransportRoute", value: function () {
-                    return new $DataServiceQuery({ _entitySet: this.OrderRequisitions },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/QueryOrderRequisitionTransportRoute()",
-                        {
-                        });
-                }
-            },
-            {
-                name: "GetMaxOrderRequisitionNo", value: function () {
-                    return new $DataServiceQuery({ _entitySet: this.OrderRequisitions },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/GetMaxOrderRequisitionNo()",
                         {
                         });
                 }

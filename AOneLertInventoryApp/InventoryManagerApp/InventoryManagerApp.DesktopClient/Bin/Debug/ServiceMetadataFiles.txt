@@ -67,4 +67,4 @@ InventoryManagerApp.Server.DataSources.ApplicationData.OrderRequisitionDetails.l
 InventoryManagerApp.Server.DataSources.ApplicationData.QueryOrderRequisitionTransportRoute.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.GetMaxOrderRequisitionNo.lsml
 InventoryManagerApp.Server.DataSources.ApplicationData.PickingSlips.lsml
-InventoryManagerApp.Server.DataSources.ApplicationData.Table1Items.lsml
+InventoryManagerApp.Server.DataSources.ApplicationData.PickingSlipDetails.lsml

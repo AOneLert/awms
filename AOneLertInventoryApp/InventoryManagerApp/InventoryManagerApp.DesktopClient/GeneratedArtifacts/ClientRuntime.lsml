@@ -1397,6 +1397,16 @@
         Name="Customer"
         EntitySet="Customers" />
     </AssociationSet>
+    <AssociationSet
+      Name="OrderRequisition_Customers"
+      Association="OrderRequisition_Customer">
+      <AssociationSetEnd
+        Name="OrderRequisition"
+        EntitySet="OrderRequisitions" />
+      <AssociationSetEnd
+        Name="Customer"
+        EntitySet="Customers" />
+    </AssociationSet>
     <QueryOperation
       Name="CustomersActiveQuery"
       ReturnType="Customer*">
@@ -1557,6 +1567,16 @@
         Name="Location"
         EntitySet="Locations" />
     </AssociationSet>
+    <AssociationSet
+      Name="PickingSlipDetail_Locations"
+      Association="PickingSlipDetail_Location">
+      <AssociationSetEnd
+        Name="PickingSlipDetail"
+        EntitySet="PickingSlipDetails" />
+      <AssociationSetEnd
+        Name="Location"
+        EntitySet="Locations" />
+    </AssociationSet>
     <QueryOperation
       Name="LocationActiveQuery"
       ReturnType="Location*">
@@ -1654,6 +1674,150 @@
           </ChainExpression>
         </SortCriterion>
       </QueryOperation.SortCriteria>
+    </QueryOperation>
+    <EntitySet
+      Name="OrderRequisitionDetails"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="OrderRequisitionDetail" />
+    <QueryOperation
+      Name="OrderRequisitionDetails_Single"
+      ReturnType="OrderRequisitionDetail">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitionDetails" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="OrderRequisitionDetails_SingleOrDefault"
+      ReturnType="OrderRequisitionDetail">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitionDetails" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <AssociationSet
+      Name="PickingSlipDetail_OrderRequisitionDetails"
+      Association="PickingSlipDetail_OrderRequisitionDetail">
+      <AssociationSetEnd
+        Name="PickingSlipDetail"
+        EntitySet="PickingSlipDetails" />
+      <AssociationSetEnd
+        Name="OrderRequisitionDetail"
+        EntitySet="OrderRequisitionDetails" />
+    </AssociationSet>
+    <EntitySet
+      Name="OrderRequisitions"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="OrderRequisition" />
+    <QueryOperation
+      Name="OrderRequisitions_Single"
+      ReturnType="OrderRequisition">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="OrderRequisitions_SingleOrDefault"
+      ReturnType="OrderRequisition">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <AssociationSet
+      Name="OrderRequisitionDetail_OrderRequisitions"
+      Association="OrderRequisitionDetail_OrderRequisition">
+      <AssociationSetEnd
+        Name="OrderRequisitionDetail"
+        EntitySet="OrderRequisitionDetails" />
+      <AssociationSetEnd
+        Name="OrderRequisition"
+        EntitySet="OrderRequisitions" />
+    </AssociationSet>
+    <QueryOperation
+      Name="GetMaxOrderRequisitionNo"
+      ReturnType="OrderRequisition*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+    </QueryOperation>
+    <QueryOperation
+      Name="QueryOrderRequisitionTransportRoute"
+      ReturnType="OrderRequisition*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
     </QueryOperation>
     <EntitySet
       Name="Packages"
@@ -1795,6 +1959,120 @@
         </SortCriterion>
       </QueryOperation.SortCriteria>
     </QueryOperation>
+    <EntitySet
+      Name="PickingSlipDetails"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="PickingSlipDetail" />
+    <QueryOperation
+      Name="PickingSlipDetails_Single"
+      ReturnType="PickingSlipDetail">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="PickingSlipDetails" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="PickingSlipDetails_SingleOrDefault"
+      ReturnType="PickingSlipDetail">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="PickingSlipDetails" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <EntitySet
+      Name="PickingSlips"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="PickingSlip" />
+    <QueryOperation
+      Name="PickingSlips_Single"
+      ReturnType="PickingSlip">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="PickingSlips" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="PickingSlips_SingleOrDefault"
+      ReturnType="PickingSlip">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="PickingSlips" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <AssociationSet
+      Name="PickingSlipDetail_PickingSlips"
+      Association="PickingSlipDetail_PickingSlip">
+      <AssociationSetEnd
+        Name="PickingSlipDetail"
+        EntitySet="PickingSlipDetails" />
+      <AssociationSetEnd
+        Name="PickingSlip"
+        EntitySet="PickingSlips" />
+    </AssociationSet>
     <EntitySet
       Name="ProductCategories"
       CanDelete="True"
@@ -2325,6 +2603,16 @@
         Name="Product"
         EntitySet="Products" />
     </AssociationSet>
+    <AssociationSet
+      Name="OrderRequisitionDetail_Products"
+      Association="OrderRequisitionDetail_Product">
+      <AssociationSetEnd
+        Name="OrderRequisitionDetail"
+        EntitySet="OrderRequisitionDetails" />
+      <AssociationSetEnd
+        Name="Product"
+        EntitySet="Products" />
+    </AssociationSet>
     <QueryOperation
       Name="ProductsActiveQuery"
       ReturnType="Product*">
@@ -2573,58 +2861,6 @@
             Member="PurchaseOrders" />
         </QuerySourceExpressionTree>
       </QueryOperation.Source>
-    </QueryOperation>
-    <EntitySet
-      Name="OrderRequisitions"
-      CanDelete="True"
-      CanInsert="True"
-      CanUpdate="True"
-      EntityType="OrderRequisition" />
-    <QueryOperation
-      Name="OrderRequisitions_Single"
-      ReturnType="OrderRequisition">
-      <QueryOperation.Attributes>
-        <Generated />
-        <Description
-          Value="Returns the entity whose identity is specified by the parameter(s)." />
-      </QueryOperation.Attributes>
-      <QueryOperation.Source>
-        <QuerySourceExpressionTree>
-          <MemberExpression
-            Member="OrderRequisitions" />
-        </QuerySourceExpressionTree>
-      </QueryOperation.Source>
-      <QueryOperationParameter
-        Name="Id"
-        ParameterType=":Int32?">
-        <QueryOperationParameter.Attributes>
-          <Description
-            Value="The value of the 'Id' key property of the entity to retrieve." />
-        </QueryOperationParameter.Attributes>
-      </QueryOperationParameter>
-    </QueryOperation>
-    <QueryOperation
-      Name="OrderRequisitions_SingleOrDefault"
-      ReturnType="OrderRequisition">
-      <QueryOperation.Attributes>
-        <Generated />
-        <Description
-          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
-      </QueryOperation.Attributes>
-      <QueryOperation.Source>
-        <QuerySourceExpressionTree>
-          <MemberExpression
-            Member="OrderRequisitions" />
-        </QuerySourceExpressionTree>
-      </QueryOperation.Source>
-      <QueryOperationParameter
-        Name="Id"
-        ParameterType=":Int32?">
-        <QueryOperationParameter.Attributes>
-          <Description
-            Value="The value of the 'Id' key property of the entity to retrieve." />
-        </QueryOperationParameter.Attributes>
-      </QueryOperationParameter>
     </QueryOperation>
     <EntitySet
       Name="SaleOrderDetails"
@@ -3480,6 +3716,16 @@
         Name="TransportRoute"
         EntitySet="TransportRoutes" />
     </AssociationSet>
+    <AssociationSet
+      Name="PickingSlip_TransportRoutes"
+      Association="PickingSlip_TransportRoute">
+      <AssociationSetEnd
+        Name="PickingSlip"
+        EntitySet="PickingSlips" />
+      <AssociationSetEnd
+        Name="TransportRoute"
+        EntitySet="TransportRoutes" />
+    </AssociationSet>
     <QueryOperation
       Name="TransportRoutesActiveQuery"
       ReturnType="TransportRoute*">
@@ -3852,108 +4098,6 @@
         </SortCriterion>
       </QueryOperation.SortCriteria>
     </QueryOperation>
-    <AssociationSet
-      Name="OrderRequisition_Customers"
-      Association="OrderRequisition_Customer">
-      <AssociationSetEnd
-        Name="OrderRequisition"
-        EntitySet="OrderRequisitions" />
-      <AssociationSetEnd
-        Name="Customer"
-        EntitySet="Customers" />
-    </AssociationSet>
-    <EntitySet
-      Name="OrderRequisitionDetails"
-      CanDelete="True"
-      CanInsert="True"
-      CanUpdate="True"
-      EntityType="OrderRequisitionDetail" />
-    <QueryOperation
-      Name="OrderRequisitionDetails_Single"
-      ReturnType="OrderRequisitionDetail">
-      <QueryOperation.Attributes>
-        <Generated />
-        <Description
-          Value="Returns the entity whose identity is specified by the parameter(s)." />
-      </QueryOperation.Attributes>
-      <QueryOperation.Source>
-        <QuerySourceExpressionTree>
-          <MemberExpression
-            Member="OrderRequisitionDetails" />
-        </QuerySourceExpressionTree>
-      </QueryOperation.Source>
-      <QueryOperationParameter
-        Name="Id"
-        ParameterType=":Int32?">
-        <QueryOperationParameter.Attributes>
-          <Description
-            Value="The value of the 'Id' key property of the entity to retrieve." />
-        </QueryOperationParameter.Attributes>
-      </QueryOperationParameter>
-    </QueryOperation>
-    <QueryOperation
-      Name="OrderRequisitionDetails_SingleOrDefault"
-      ReturnType="OrderRequisitionDetail">
-      <QueryOperation.Attributes>
-        <Generated />
-        <Description
-          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
-      </QueryOperation.Attributes>
-      <QueryOperation.Source>
-        <QuerySourceExpressionTree>
-          <MemberExpression
-            Member="OrderRequisitionDetails" />
-        </QuerySourceExpressionTree>
-      </QueryOperation.Source>
-      <QueryOperationParameter
-        Name="Id"
-        ParameterType=":Int32?">
-        <QueryOperationParameter.Attributes>
-          <Description
-            Value="The value of the 'Id' key property of the entity to retrieve." />
-        </QueryOperationParameter.Attributes>
-      </QueryOperationParameter>
-    </QueryOperation>
-    <AssociationSet
-      Name="OrderRequisitionDetail_OrderRequisitions"
-      Association="OrderRequisitionDetail_OrderRequisition">
-      <AssociationSetEnd
-        Name="OrderRequisitionDetail"
-        EntitySet="OrderRequisitionDetails" />
-      <AssociationSetEnd
-        Name="OrderRequisition"
-        EntitySet="OrderRequisitions" />
-    </AssociationSet>
-    <AssociationSet
-      Name="OrderRequisitionDetail_Products"
-      Association="OrderRequisitionDetail_Product">
-      <AssociationSetEnd
-        Name="OrderRequisitionDetail"
-        EntitySet="OrderRequisitionDetails" />
-      <AssociationSetEnd
-        Name="Product"
-        EntitySet="Products" />
-    </AssociationSet>
-    <QueryOperation
-      Name="QueryOrderRequisitionTransportRoute"
-      ReturnType="OrderRequisition*">
-      <QueryOperation.Source>
-        <QuerySourceExpressionTree>
-          <MemberExpression
-            Member="OrderRequisitions" />
-        </QuerySourceExpressionTree>
-      </QueryOperation.Source>
-    </QueryOperation>
-    <QueryOperation
-      Name="GetMaxOrderRequisitionNo"
-      ReturnType="OrderRequisition*">
-      <QueryOperation.Source>
-        <QuerySourceExpressionTree>
-          <MemberExpression
-            Member="OrderRequisitions" />
-        </QuerySourceExpressionTree>
-      </QueryOperation.Source>
-    </QueryOperation>
   </EntityContainer>
   <Association
     Name="ProductCategory_Product">
@@ -4095,6 +4239,11 @@
         Association="ProductReceivePurchaseOrderDet_Location"
         FromEnd="Location"
         ToEnd="ProductReceivePurchaseOrderDetail" />
+      <NavigationProperty
+        Name="PickingSlipDetails"
+        Association="PickingSlipDetail_Location"
+        FromEnd="Location"
+        ToEnd="PickingSlipDetail" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -4663,6 +4812,11 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="PickingSlips"
+        Association="PickingSlip_TransportRoute"
+        FromEnd="TransportRoute"
+        ToEnd="PickingSlip" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -6226,7 +6380,7 @@
         </KeyProperty.Attributes>
       </KeyProperty>
       <EntityProperty
-        Name="DocumentNo"
+        Name="SaleOrderNo"
         PropertyType=":String">
         <EntityProperty.Attributes>
           <Required />
@@ -8171,6 +8325,11 @@
           <Required />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="PickingSlipDetails"
+        Association="PickingSlipDetail_OrderRequisitionDetail"
+        FromEnd="OrderRequisitionDetail"
+        ToEnd="PickingSlipDetail" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -8249,6 +8408,313 @@
       Name="Product"
       Multiplicity="One"
       EntityType="Product">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <EntityType
+    Name="PickingSlip">
+    <EntityType.Attributes>
+      <CreatedModifiedPropertiesEnabled />
+    </EntityType.Attributes>
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="Id"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="PickingNo"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="PickingDate"
+        PropertyType=":Date">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="TransportRoute"
+        Association="PickingSlip_TransportRoute"
+        FromEnd="PickingSlip"
+        ToEnd="TransportRoute" />
+      <EntityProperty
+        Name="TotalWeight"
+        PropertyType=":Double">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Status"
+        PropertyType=":Boolean">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="PickingSlipDetails"
+        Association="PickingSlipDetail_PickingSlip"
+        FromEnd="PickingSlip"
+        ToEnd="PickingSlipDetail" />
+      <EntityProperty
+        Name="Remark"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CreatedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Created"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ModifiedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Modified"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        PropertyType=":RowVersion">
+        <EntityProperty.Attributes>
+          <UseForConcurrency />
+          <Generated />
+          <Hidden />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <Association
+    Name="PickingSlip_TransportRoute">
+    <AssociationEnd
+      Name="PickingSlip"
+      Multiplicity="Many"
+      EntityType="PickingSlip" />
+    <AssociationEnd
+      Name="TransportRoute"
+      Multiplicity="One"
+      EntityType="TransportRoute">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <EntityType
+    Name="PickingSlipDetail">
+    <EntityType.Attributes>
+      <CreatedModifiedPropertiesEnabled />
+    </EntityType.Attributes>
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="Id"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <NavigationProperty
+        Name="PickingSlip"
+        Association="PickingSlipDetail_PickingSlip"
+        FromEnd="PickingSlipDetail"
+        ToEnd="PickingSlip" />
+      <NavigationProperty
+        Name="OrderRequisitionDetail"
+        Association="PickingSlipDetail_OrderRequisitionDetail"
+        FromEnd="PickingSlipDetail"
+        ToEnd="OrderRequisitionDetail" />
+      <EntityProperty
+        Name="LotNo"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="Location"
+        Association="PickingSlipDetail_Location"
+        FromEnd="PickingSlipDetail"
+        ToEnd="Location" />
+      <EntityProperty
+        Name="PickingQuantity"
+        PropertyType=":Double">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UnitPrice"
+        PropertyType="Microsoft.LightSwitch.Extensions:Money">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+          <DecimalConstraint
+            Precision="18"
+            Scale="2" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CreatedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Created"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ModifiedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Modified"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        PropertyType=":RowVersion">
+        <EntityProperty.Attributes>
+          <UseForConcurrency />
+          <Generated />
+          <Hidden />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <Association
+    Name="PickingSlipDetail_PickingSlip">
+    <AssociationEnd
+      Name="PickingSlipDetail"
+      Multiplicity="Many"
+      EntityType="PickingSlipDetail" />
+    <AssociationEnd
+      Name="PickingSlip"
+      Multiplicity="One"
+      EntityType="PickingSlip">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="PickingSlipDetail_OrderRequisitionDetail">
+    <AssociationEnd
+      Name="PickingSlipDetail"
+      Multiplicity="Many"
+      EntityType="PickingSlipDetail" />
+    <AssociationEnd
+      Name="OrderRequisitionDetail"
+      Multiplicity="One"
+      EntityType="OrderRequisitionDetail">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="PickingSlipDetail_Location">
+    <AssociationEnd
+      Name="PickingSlipDetail"
+      Multiplicity="Many"
+      EntityType="PickingSlipDetail" />
+    <AssociationEnd
+      Name="Location"
+      Multiplicity="One"
+      EntityType="Location">
       <AssociationEnd.Attributes>
         <DeleteRule
           Action="Restrict" />
