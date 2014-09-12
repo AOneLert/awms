@@ -37,13 +37,15 @@
         </QuerySourceExpressionTree>
       </QueryOperation.Source>
       <QueryOperation.SortCriteria>
-        <SortCriterion>
+        <SortCriterion
+          Direction="Descending">
           <ChainExpression>
             <MemberExpression
               Member="PurchaseOrderDate" />
           </ChainExpression>
         </SortCriterion>
-        <SortCriterion>
+        <SortCriterion
+          Direction="Descending">
           <ChainExpression>
             <MemberExpression
               Member="PurchaseOrderNumber" />

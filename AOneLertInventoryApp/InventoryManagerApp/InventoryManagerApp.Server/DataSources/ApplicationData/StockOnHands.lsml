@@ -84,6 +84,14 @@
         FromEnd="StockOnHand"
         ToEnd="Product" />
       <EntityProperty
+        Name="ReservedQuantity"
+        PropertyType=":Double">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
         PropertyType=":Person?">

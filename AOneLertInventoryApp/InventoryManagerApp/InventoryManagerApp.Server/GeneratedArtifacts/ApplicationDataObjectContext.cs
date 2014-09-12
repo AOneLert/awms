@@ -21,6 +21,7 @@ using System.Xml.Serialization;
 
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "Customer_CustomerGroup", "CustomerGroup", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.CustomerGroup), "Customer", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Customer), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "SaleOrder_Customer", "Customer", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Customer), "SaleOrder", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.SaleOrder), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "OrderRequisition_Customer", "Customer", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Customer), "OrderRequisition", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.OrderRequisition), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "Product_Location", "Location", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Location), "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Product), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "ProductReceiveBalanceForwardDe_Location", "Location", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Location), "ProductReceiveBalanceForwardDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.ProductReceiveBalanceForwardDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "StockOnHand_Location", "Location", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Location), "StockOnHand", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.StockOnHand), true)]
@@ -29,7 +30,12 @@ using System.Xml.Serialization;
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "PurchaseOrderDetail_Location", "Location", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Location), "PurchaseOrderDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.PurchaseOrderDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "WorkOrderIssueDetail_Location", "Location", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Location), "WorkOrderIssueDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.WorkOrderIssueDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "WorkOrderProduce_Location", "Location", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Location), "WorkOrderProduce", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.WorkOrderProduce), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "ProductReceivePurchaseOrderDet_Location", "Location", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Location), "ProductReceivePurchaseOrderDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.ProductReceivePurchaseOrderDetail), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "PickingSlipDetail_Location", "Location", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Location), "PickingSlipDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.PickingSlipDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "WorkOrder_Machine", "Machine", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Machine), "WorkOrder", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.WorkOrder), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "PickingSlipDetail_OrderRequisitionDetail", "OrderRequisitionDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.OrderRequisitionDetail), "PickingSlipDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.PickingSlipDetail), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "OrderRequisitionDetail_OrderRequisition", "OrderRequisition", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.OrderRequisition), "OrderRequisitionDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.OrderRequisitionDetail), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "PickingSlipDetail_PickingSlip", "PickingSlip", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.PickingSlip), "PickingSlipDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.PickingSlipDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "ProductCategory_Product", "ProductCategory", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.ProductCategory), "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Product), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "Product_ProductGroup", "ProductGroup", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.ProductGroup), "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Product), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "ProductReceiveBalanceForwardDe_ProductReceiveBalanceForward", "ProductReceiveBalanceForward", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.ProductReceiveBalanceForward), "ProductReceiveBalanceForwardDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.ProductReceiveBalanceForwardDetail), true)]
@@ -40,6 +46,9 @@ using System.Xml.Serialization;
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "PurchaseOrderDetail_Product", "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Product), "PurchaseOrderDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.PurchaseOrderDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "WorkOrderIssueDetail_Product", "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Product), "WorkOrderIssueDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.WorkOrderIssueDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "WorkOrderProduce_Product", "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Product), "WorkOrderProduce", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.WorkOrderProduce), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "ProductReceivePurchaseOrderDet_Product", "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Product), "ProductReceivePurchaseOrderDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.ProductReceivePurchaseOrderDetail), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "OrderRequisitionDetail_Product", "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Product), "OrderRequisitionDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.OrderRequisitionDetail), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "ProductReceivePurchaseOrderDet_PurchaseOrderDetail", "PurchaseOrderDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.PurchaseOrderDetail), "ProductReceivePurchaseOrderDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.ProductReceivePurchaseOrderDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "PurchaseOrderDetail_PurchaseOrder", "PurchaseOrder", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.PurchaseOrder), "PurchaseOrderDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.PurchaseOrderDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "SaleOrderDetail_SaleOrder", "SaleOrder", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.SaleOrder), "SaleOrderDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.SaleOrderDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "StockAdjustDetail_StockAdjust", "StockAdjust", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.StockAdjust), "StockAdjustDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.StockAdjustDetail), true)]
@@ -47,6 +56,7 @@ using System.Xml.Serialization;
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "Supplier_SupplierGroup", "SupplierGroup", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.SupplierGroup), "Supplier", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Supplier), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "PurchaseOrder_Supplier", "Supplier", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Supplier), "PurchaseOrder", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.PurchaseOrder), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "Customer_TransportRoute", "TransportRoute", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.TransportRoute), "Customer", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Customer), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "PickingSlip_TransportRoute", "TransportRoute", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.TransportRoute), "PickingSlip", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.PickingSlip), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "Product_UnitOfMeasure", "UnitOfMeasure", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.UnitOfMeasure), "Product", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Product), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "WorkOrderIssueDetail_WorkOrder", "WorkOrder", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.WorkOrder), "WorkOrderIssueDetail", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.WorkOrderIssueDetail), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "WorkOrderProduce_WorkOrder", "WorkOrder", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.WorkOrder), "WorkOrderProduce", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.WorkOrderProduce), true)]
@@ -197,6 +207,38 @@ namespace LightSwitchApplication.Implementation
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<OrderRequisitionDetail> OrderRequisitionDetails
+        {
+            get
+            {
+                if ((_OrderRequisitionDetails == null))
+                {
+                    _OrderRequisitionDetails = base.CreateObjectSet<OrderRequisitionDetail>("OrderRequisitionDetails");
+                }
+                return _OrderRequisitionDetails;
+            }
+        }
+        private ObjectSet<OrderRequisitionDetail> _OrderRequisitionDetails;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<OrderRequisition> OrderRequisitions
+        {
+            get
+            {
+                if ((_OrderRequisitions == null))
+                {
+                    _OrderRequisitions = base.CreateObjectSet<OrderRequisition>("OrderRequisitions");
+                }
+                return _OrderRequisitions;
+            }
+        }
+        private ObjectSet<OrderRequisition> _OrderRequisitions;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<Package> Packages
         {
             get
@@ -225,6 +267,38 @@ namespace LightSwitchApplication.Implementation
             }
         }
         private ObjectSet<PaymentType> _PaymentTypes;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<PickingSlipDetail> PickingSlipDetails
+        {
+            get
+            {
+                if ((_PickingSlipDetails == null))
+                {
+                    _PickingSlipDetails = base.CreateObjectSet<PickingSlipDetail>("PickingSlipDetails");
+                }
+                return _PickingSlipDetails;
+            }
+        }
+        private ObjectSet<PickingSlipDetail> _PickingSlipDetails;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<PickingSlip> PickingSlips
+        {
+            get
+            {
+                if ((_PickingSlips == null))
+                {
+                    _PickingSlips = base.CreateObjectSet<PickingSlip>("PickingSlips");
+                }
+                return _PickingSlips;
+            }
+        }
+        private ObjectSet<PickingSlip> _PickingSlips;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -289,6 +363,38 @@ namespace LightSwitchApplication.Implementation
             }
         }
         private ObjectSet<ProductReceiveBalanceForward> _ProductReceiveBalanceForwards;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<ProductReceivePurchaseOrderDetail> ProductReceivePurchaseOrderDetails
+        {
+            get
+            {
+                if ((_ProductReceivePurchaseOrderDetails == null))
+                {
+                    _ProductReceivePurchaseOrderDetails = base.CreateObjectSet<ProductReceivePurchaseOrderDetail>("ProductReceivePurchaseOrderDetails");
+                }
+                return _ProductReceivePurchaseOrderDetails;
+            }
+        }
+        private ObjectSet<ProductReceivePurchaseOrderDetail> _ProductReceivePurchaseOrderDetails;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<ProductReceive> ProductReceives
+        {
+            get
+            {
+                if ((_ProductReceives == null))
+                {
+                    _ProductReceives = base.CreateObjectSet<ProductReceive>("ProductReceives");
+                }
+                return _ProductReceives;
+            }
+        }
+        private ObjectSet<ProductReceive> _ProductReceives;
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -641,22 +747,6 @@ namespace LightSwitchApplication.Implementation
             }
         }
         private ObjectSet<WorkOrder> _WorkOrders;
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        public ObjectSet<Requisitions> RequisitionsSet
-        {
-            get
-            {
-                if ((_RequisitionsSet == null))
-                {
-                    _RequisitionsSet = base.CreateObjectSet<Requisitions>("RequisitionsSet");
-                }
-                return _RequisitionsSet;
-            }
-        }
-        private ObjectSet<Requisitions> _RequisitionsSet;
 
         #endregion
 
@@ -711,6 +801,22 @@ namespace LightSwitchApplication.Implementation
         }
     
         /// <summary>
+        /// Deprecated Method for adding a new object to the OrderRequisitionDetails EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToOrderRequisitionDetails(OrderRequisitionDetail orderRequisitionDetail)
+        {
+            base.AddObject("OrderRequisitionDetails", orderRequisitionDetail);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the OrderRequisitions EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToOrderRequisitions(OrderRequisition orderRequisition)
+        {
+            base.AddObject("OrderRequisitions", orderRequisition);
+        }
+    
+        /// <summary>
         /// Deprecated Method for adding a new object to the Packages EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
         public void AddToPackages(Package package)
@@ -724,6 +830,22 @@ namespace LightSwitchApplication.Implementation
         public void AddToPaymentTypes(PaymentType paymentType)
         {
             base.AddObject("PaymentTypes", paymentType);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the PickingSlipDetails EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToPickingSlipDetails(PickingSlipDetail pickingSlipDetail)
+        {
+            base.AddObject("PickingSlipDetails", pickingSlipDetail);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the PickingSlips EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToPickingSlips(PickingSlip pickingSlip)
+        {
+            base.AddObject("PickingSlips", pickingSlip);
         }
     
         /// <summary>
@@ -756,6 +878,22 @@ namespace LightSwitchApplication.Implementation
         public void AddToProductReceiveBalanceForwards(ProductReceiveBalanceForward productReceiveBalanceForward)
         {
             base.AddObject("ProductReceiveBalanceForwards", productReceiveBalanceForward);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the ProductReceivePurchaseOrderDetails EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToProductReceivePurchaseOrderDetails(ProductReceivePurchaseOrderDetail productReceivePurchaseOrderDetail)
+        {
+            base.AddObject("ProductReceivePurchaseOrderDetails", productReceivePurchaseOrderDetail);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the ProductReceives EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToProductReceives(ProductReceive productReceive)
+        {
+            base.AddObject("ProductReceives", productReceive);
         }
     
         /// <summary>
@@ -932,14 +1070,6 @@ namespace LightSwitchApplication.Implementation
         public void AddToWorkOrders(WorkOrder workOrder)
         {
             base.AddObject("WorkOrders", workOrder);
-        }
-    
-        /// <summary>
-        /// Deprecated Method for adding a new object to the RequisitionsSet EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
-        /// </summary>
-        public void AddToRequisitionsSet(Requisitions requisitions)
-        {
-            base.AddObject("RequisitionsSet", requisitions);
         }
 
         #endregion
@@ -2284,6 +2414,28 @@ namespace LightSwitchApplication.Implementation
                 }
             }
         }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "OrderRequisition_Customer", "OrderRequisition")]
+        public EntityCollection<OrderRequisition> OrderRequisition
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<OrderRequisition>("LightSwitchApplication.OrderRequisition_Customer", "OrderRequisition");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<OrderRequisition>("LightSwitchApplication.OrderRequisition_Customer", "OrderRequisition", value);
+                }
+            }
+        }
 
         #endregion
 
@@ -3030,6 +3182,50 @@ namespace LightSwitchApplication.Implementation
                 }
             }
         }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "ProductReceivePurchaseOrderDet_Location", "ProductReceivePurchaseOrderDetail")]
+        public EntityCollection<ProductReceivePurchaseOrderDetail> ProductReceivePurchaseOrderDetails
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<ProductReceivePurchaseOrderDetail>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Location", "ProductReceivePurchaseOrderDetail");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<ProductReceivePurchaseOrderDetail>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Location", "ProductReceivePurchaseOrderDetail", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "PickingSlipDetail_Location", "PickingSlipDetail")]
+        public EntityCollection<PickingSlipDetail> PickingSlipDetails
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<PickingSlipDetail>("LightSwitchApplication.PickingSlipDetail_Location", "PickingSlipDetail");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<PickingSlipDetail>("LightSwitchApplication.PickingSlipDetail_Location", "PickingSlipDetail", value);
+                }
+            }
+        }
 
         #endregion
 
@@ -3284,6 +3480,788 @@ namespace LightSwitchApplication.Implementation
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<WorkOrder>("LightSwitchApplication.WorkOrder_Machine", "WorkOrder", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="OrderRequisition")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class OrderRequisition : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new OrderRequisition object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="orderRequisitionNo">Initial value of the OrderRequisitionNo property.</param>
+        /// <param name="orderRequisitionDate">Initial value of the OrderRequisitionDate property.</param>
+        /// <param name="requisition_Customer">Initial value of the Requisition_Customer property.</param>
+        /// <param name="status">Initial value of the Status property.</param>
+        /// <param name="rowVersion">Initial value of the RowVersion property.</param>
+        public static OrderRequisition CreateOrderRequisition(global::System.Int32 id, global::System.String orderRequisitionNo, global::System.DateTime orderRequisitionDate, global::System.Int32 requisition_Customer, global::System.Boolean status, global::System.Byte[] rowVersion)
+        {
+            OrderRequisition orderRequisition = new OrderRequisition();
+            orderRequisition.Id = id;
+            orderRequisition.OrderRequisitionNo = orderRequisitionNo;
+            orderRequisition.OrderRequisitionDate = orderRequisitionDate;
+            orderRequisition.Requisition_Customer = requisition_Customer;
+            orderRequisition.Status = status;
+            orderRequisition.RowVersion = rowVersion;
+            return orderRequisition;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = value;
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String OrderRequisitionNo
+        {
+            get
+            {
+                return _OrderRequisitionNo;
+            }
+            set
+            {
+                OnOrderRequisitionNoChanging(value);
+                ReportPropertyChanging("OrderRequisitionNo");
+                _OrderRequisitionNo = value;
+                ReportPropertyChanged("OrderRequisitionNo");
+                OnOrderRequisitionNoChanged();
+            }
+        }
+        private global::System.String _OrderRequisitionNo;
+        partial void OnOrderRequisitionNoChanging(global::System.String value);
+        partial void OnOrderRequisitionNoChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.DateTime OrderRequisitionDate
+        {
+            get
+            {
+                return _OrderRequisitionDate;
+            }
+            set
+            {
+                OnOrderRequisitionDateChanging(value);
+                ReportPropertyChanging("OrderRequisitionDate");
+                _OrderRequisitionDate = value;
+                ReportPropertyChanged("OrderRequisitionDate");
+                OnOrderRequisitionDateChanged();
+            }
+        }
+        private global::System.DateTime _OrderRequisitionDate;
+        partial void OnOrderRequisitionDateChanging(global::System.DateTime value);
+        partial void OnOrderRequisitionDateChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Remark
+        {
+            get
+            {
+                return _Remark;
+            }
+            set
+            {
+                OnRemarkChanging(value);
+                ReportPropertyChanging("Remark");
+                _Remark = value;
+                ReportPropertyChanged("Remark");
+                OnRemarkChanged();
+            }
+        }
+        private global::System.String _Remark;
+        partial void OnRemarkChanging(global::System.String value);
+        partial void OnRemarkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Requisition_Customer
+        {
+            get
+            {
+                return _Requisition_Customer;
+            }
+            set
+            {
+                OnRequisition_CustomerChanging(value);
+                ReportPropertyChanging("Requisition_Customer");
+                _Requisition_Customer = value;
+                ReportPropertyChanged("Requisition_Customer");
+                OnRequisition_CustomerChanged();
+            }
+        }
+        private global::System.Int32 _Requisition_Customer;
+        partial void OnRequisition_CustomerChanging(global::System.Int32 value);
+        partial void OnRequisition_CustomerChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Boolean Status
+        {
+            get
+            {
+                return _Status;
+            }
+            set
+            {
+                OnStatusChanging(value);
+                ReportPropertyChanging("Status");
+                _Status = value;
+                ReportPropertyChanged("Status");
+                OnStatusChanged();
+            }
+        }
+        private global::System.Boolean _Status;
+        partial void OnStatusChanging(global::System.Boolean value);
+        partial void OnStatusChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CreatedBy
+        {
+            get
+            {
+                return _CreatedBy;
+            }
+            set
+            {
+                OnCreatedByChanging(value);
+                ReportPropertyChanging("CreatedBy");
+                _CreatedBy = value;
+                ReportPropertyChanged("CreatedBy");
+                OnCreatedByChanged();
+            }
+        }
+        private global::System.String _CreatedBy;
+        partial void OnCreatedByChanging(global::System.String value);
+        partial void OnCreatedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return _Created;
+            }
+            set
+            {
+                OnCreatedChanging(value);
+                ReportPropertyChanging("Created");
+                _Created = value;
+                ReportPropertyChanged("Created");
+                OnCreatedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ModifiedBy
+        {
+            get
+            {
+                return _ModifiedBy;
+            }
+            set
+            {
+                OnModifiedByChanging(value);
+                ReportPropertyChanging("ModifiedBy");
+                _ModifiedBy = value;
+                ReportPropertyChanged("ModifiedBy");
+                OnModifiedByChanged();
+            }
+        }
+        private global::System.String _ModifiedBy;
+        partial void OnModifiedByChanging(global::System.String value);
+        partial void OnModifiedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return _Modified;
+            }
+            set
+            {
+                OnModifiedChanging(value);
+                ReportPropertyChanging("Modified");
+                _Modified = value;
+                ReportPropertyChanged("Modified");
+                OnModifiedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Byte[] RowVersion
+        {
+            get
+            {
+                return StructuralObject.GetValidValue(_RowVersion);
+            }
+            set
+            {
+                OnRowVersionChanging(value);
+                ReportPropertyChanging("RowVersion");
+                _RowVersion = value;
+                ReportPropertyChanged("RowVersion");
+                OnRowVersionChanged();
+            }
+        }
+        private global::System.Byte[] _RowVersion;
+        partial void OnRowVersionChanging(global::System.Byte[] value);
+        partial void OnRowVersionChanged();
+
+        #endregion
+
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "OrderRequisition_Customer", "Customer")]
+        public Customer Customer
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Customer>("LightSwitchApplication.OrderRequisition_Customer", "Customer").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Customer>("LightSwitchApplication.OrderRequisition_Customer", "Customer").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Customer> CustomerReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Customer>("LightSwitchApplication.OrderRequisition_Customer", "Customer");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Customer>("LightSwitchApplication.OrderRequisition_Customer", "Customer", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "OrderRequisitionDetail_OrderRequisition", "OrderRequisitionDetail")]
+        public EntityCollection<OrderRequisitionDetail> OrderRequisitionDetail
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<OrderRequisitionDetail>("LightSwitchApplication.OrderRequisitionDetail_OrderRequisition", "OrderRequisitionDetail");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<OrderRequisitionDetail>("LightSwitchApplication.OrderRequisitionDetail_OrderRequisition", "OrderRequisitionDetail", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="OrderRequisitionDetail")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class OrderRequisitionDetail : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new OrderRequisitionDetail object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="requisitionDetail_Requisition">Initial value of the RequisitionDetail_Requisition property.</param>
+        /// <param name="requisitionDetail_Product">Initial value of the RequisitionDetail_Product property.</param>
+        /// <param name="quantity">Initial value of the Quantity property.</param>
+        /// <param name="status">Initial value of the Status property.</param>
+        /// <param name="deliveredQuantity">Initial value of the DeliveredQuantity property.</param>
+        /// <param name="rowVersion">Initial value of the RowVersion property.</param>
+        public static OrderRequisitionDetail CreateOrderRequisitionDetail(global::System.Int32 id, global::System.Int32 requisitionDetail_Requisition, global::System.Int32 requisitionDetail_Product, global::System.Double quantity, global::System.Boolean status, global::System.Double deliveredQuantity, global::System.Byte[] rowVersion)
+        {
+            OrderRequisitionDetail orderRequisitionDetail = new OrderRequisitionDetail();
+            orderRequisitionDetail.Id = id;
+            orderRequisitionDetail.RequisitionDetail_Requisition = requisitionDetail_Requisition;
+            orderRequisitionDetail.RequisitionDetail_Product = requisitionDetail_Product;
+            orderRequisitionDetail.Quantity = quantity;
+            orderRequisitionDetail.Status = status;
+            orderRequisitionDetail.DeliveredQuantity = deliveredQuantity;
+            orderRequisitionDetail.RowVersion = rowVersion;
+            return orderRequisitionDetail;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = value;
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 RequisitionDetail_Requisition
+        {
+            get
+            {
+                return _RequisitionDetail_Requisition;
+            }
+            set
+            {
+                OnRequisitionDetail_RequisitionChanging(value);
+                ReportPropertyChanging("RequisitionDetail_Requisition");
+                _RequisitionDetail_Requisition = value;
+                ReportPropertyChanged("RequisitionDetail_Requisition");
+                OnRequisitionDetail_RequisitionChanged();
+            }
+        }
+        private global::System.Int32 _RequisitionDetail_Requisition;
+        partial void OnRequisitionDetail_RequisitionChanging(global::System.Int32 value);
+        partial void OnRequisitionDetail_RequisitionChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 RequisitionDetail_Product
+        {
+            get
+            {
+                return _RequisitionDetail_Product;
+            }
+            set
+            {
+                OnRequisitionDetail_ProductChanging(value);
+                ReportPropertyChanging("RequisitionDetail_Product");
+                _RequisitionDetail_Product = value;
+                ReportPropertyChanged("RequisitionDetail_Product");
+                OnRequisitionDetail_ProductChanged();
+            }
+        }
+        private global::System.Int32 _RequisitionDetail_Product;
+        partial void OnRequisitionDetail_ProductChanging(global::System.Int32 value);
+        partial void OnRequisitionDetail_ProductChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double Quantity
+        {
+            get
+            {
+                return _Quantity;
+            }
+            set
+            {
+                OnQuantityChanging(value);
+                ReportPropertyChanging("Quantity");
+                _Quantity = value;
+                ReportPropertyChanged("Quantity");
+                OnQuantityChanged();
+            }
+        }
+        private global::System.Double _Quantity;
+        partial void OnQuantityChanging(global::System.Double value);
+        partial void OnQuantityChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Boolean Status
+        {
+            get
+            {
+                return _Status;
+            }
+            set
+            {
+                OnStatusChanging(value);
+                ReportPropertyChanging("Status");
+                _Status = value;
+                ReportPropertyChanged("Status");
+                OnStatusChanged();
+            }
+        }
+        private global::System.Boolean _Status;
+        partial void OnStatusChanging(global::System.Boolean value);
+        partial void OnStatusChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double DeliveredQuantity
+        {
+            get
+            {
+                return _DeliveredQuantity;
+            }
+            set
+            {
+                OnDeliveredQuantityChanging(value);
+                ReportPropertyChanging("DeliveredQuantity");
+                _DeliveredQuantity = value;
+                ReportPropertyChanged("DeliveredQuantity");
+                OnDeliveredQuantityChanged();
+            }
+        }
+        private global::System.Double _DeliveredQuantity;
+        partial void OnDeliveredQuantityChanging(global::System.Double value);
+        partial void OnDeliveredQuantityChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CreatedBy
+        {
+            get
+            {
+                return _CreatedBy;
+            }
+            set
+            {
+                OnCreatedByChanging(value);
+                ReportPropertyChanging("CreatedBy");
+                _CreatedBy = value;
+                ReportPropertyChanged("CreatedBy");
+                OnCreatedByChanged();
+            }
+        }
+        private global::System.String _CreatedBy;
+        partial void OnCreatedByChanging(global::System.String value);
+        partial void OnCreatedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return _Created;
+            }
+            set
+            {
+                OnCreatedChanging(value);
+                ReportPropertyChanging("Created");
+                _Created = value;
+                ReportPropertyChanged("Created");
+                OnCreatedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ModifiedBy
+        {
+            get
+            {
+                return _ModifiedBy;
+            }
+            set
+            {
+                OnModifiedByChanging(value);
+                ReportPropertyChanging("ModifiedBy");
+                _ModifiedBy = value;
+                ReportPropertyChanged("ModifiedBy");
+                OnModifiedByChanged();
+            }
+        }
+        private global::System.String _ModifiedBy;
+        partial void OnModifiedByChanging(global::System.String value);
+        partial void OnModifiedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return _Modified;
+            }
+            set
+            {
+                OnModifiedChanging(value);
+                ReportPropertyChanging("Modified");
+                _Modified = value;
+                ReportPropertyChanged("Modified");
+                OnModifiedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Byte[] RowVersion
+        {
+            get
+            {
+                return StructuralObject.GetValidValue(_RowVersion);
+            }
+            set
+            {
+                OnRowVersionChanging(value);
+                ReportPropertyChanging("RowVersion");
+                _RowVersion = value;
+                ReportPropertyChanged("RowVersion");
+                OnRowVersionChanged();
+            }
+        }
+        private global::System.Byte[] _RowVersion;
+        partial void OnRowVersionChanging(global::System.Byte[] value);
+        partial void OnRowVersionChanged();
+
+        #endregion
+
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "OrderRequisitionDetail_OrderRequisition", "OrderRequisition")]
+        public OrderRequisition OrderRequisition
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<OrderRequisition>("LightSwitchApplication.OrderRequisitionDetail_OrderRequisition", "OrderRequisition").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<OrderRequisition>("LightSwitchApplication.OrderRequisitionDetail_OrderRequisition", "OrderRequisition").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<OrderRequisition> OrderRequisitionReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<OrderRequisition>("LightSwitchApplication.OrderRequisitionDetail_OrderRequisition", "OrderRequisition");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<OrderRequisition>("LightSwitchApplication.OrderRequisitionDetail_OrderRequisition", "OrderRequisition", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "OrderRequisitionDetail_Product", "Product")]
+        public Product Product
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Product>("LightSwitchApplication.OrderRequisitionDetail_Product", "Product").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Product>("LightSwitchApplication.OrderRequisitionDetail_Product", "Product").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Product> ProductReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Product>("LightSwitchApplication.OrderRequisitionDetail_Product", "Product");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Product>("LightSwitchApplication.OrderRequisitionDetail_Product", "Product", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "PickingSlipDetail_OrderRequisitionDetail", "PickingSlipDetail")]
+        public EntityCollection<PickingSlipDetail> PickingSlipDetails
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<PickingSlipDetail>("LightSwitchApplication.PickingSlipDetail_OrderRequisitionDetail", "PickingSlipDetail");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<PickingSlipDetail>("LightSwitchApplication.PickingSlipDetail_OrderRequisitionDetail", "PickingSlipDetail", value);
                 }
             }
         }
@@ -3752,6 +4730,858 @@ namespace LightSwitchApplication.Implementation
         #endregion
 
     
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="PickingSlip")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class PickingSlip : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new PickingSlip object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="pickingNo">Initial value of the PickingNo property.</param>
+        /// <param name="pickingDate">Initial value of the PickingDate property.</param>
+        /// <param name="pickingSlip_TransportRoute">Initial value of the PickingSlip_TransportRoute property.</param>
+        /// <param name="totalWeight">Initial value of the TotalWeight property.</param>
+        /// <param name="status">Initial value of the Status property.</param>
+        /// <param name="remark">Initial value of the Remark property.</param>
+        /// <param name="rowVersion">Initial value of the RowVersion property.</param>
+        public static PickingSlip CreatePickingSlip(global::System.Int32 id, global::System.String pickingNo, global::System.DateTime pickingDate, global::System.Int32 pickingSlip_TransportRoute, global::System.Double totalWeight, global::System.Boolean status, global::System.String remark, global::System.Byte[] rowVersion)
+        {
+            PickingSlip pickingSlip = new PickingSlip();
+            pickingSlip.Id = id;
+            pickingSlip.PickingNo = pickingNo;
+            pickingSlip.PickingDate = pickingDate;
+            pickingSlip.PickingSlip_TransportRoute = pickingSlip_TransportRoute;
+            pickingSlip.TotalWeight = totalWeight;
+            pickingSlip.Status = status;
+            pickingSlip.Remark = remark;
+            pickingSlip.RowVersion = rowVersion;
+            return pickingSlip;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = value;
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String PickingNo
+        {
+            get
+            {
+                return _PickingNo;
+            }
+            set
+            {
+                OnPickingNoChanging(value);
+                ReportPropertyChanging("PickingNo");
+                _PickingNo = value;
+                ReportPropertyChanged("PickingNo");
+                OnPickingNoChanged();
+            }
+        }
+        private global::System.String _PickingNo;
+        partial void OnPickingNoChanging(global::System.String value);
+        partial void OnPickingNoChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.DateTime PickingDate
+        {
+            get
+            {
+                return _PickingDate;
+            }
+            set
+            {
+                OnPickingDateChanging(value);
+                ReportPropertyChanging("PickingDate");
+                _PickingDate = value;
+                ReportPropertyChanged("PickingDate");
+                OnPickingDateChanged();
+            }
+        }
+        private global::System.DateTime _PickingDate;
+        partial void OnPickingDateChanging(global::System.DateTime value);
+        partial void OnPickingDateChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 PickingSlip_TransportRoute
+        {
+            get
+            {
+                return _PickingSlip_TransportRoute;
+            }
+            set
+            {
+                OnPickingSlip_TransportRouteChanging(value);
+                ReportPropertyChanging("PickingSlip_TransportRoute");
+                _PickingSlip_TransportRoute = value;
+                ReportPropertyChanged("PickingSlip_TransportRoute");
+                OnPickingSlip_TransportRouteChanged();
+            }
+        }
+        private global::System.Int32 _PickingSlip_TransportRoute;
+        partial void OnPickingSlip_TransportRouteChanging(global::System.Int32 value);
+        partial void OnPickingSlip_TransportRouteChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double TotalWeight
+        {
+            get
+            {
+                return _TotalWeight;
+            }
+            set
+            {
+                OnTotalWeightChanging(value);
+                ReportPropertyChanging("TotalWeight");
+                _TotalWeight = value;
+                ReportPropertyChanged("TotalWeight");
+                OnTotalWeightChanged();
+            }
+        }
+        private global::System.Double _TotalWeight;
+        partial void OnTotalWeightChanging(global::System.Double value);
+        partial void OnTotalWeightChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Boolean Status
+        {
+            get
+            {
+                return _Status;
+            }
+            set
+            {
+                OnStatusChanging(value);
+                ReportPropertyChanging("Status");
+                _Status = value;
+                ReportPropertyChanged("Status");
+                OnStatusChanged();
+            }
+        }
+        private global::System.Boolean _Status;
+        partial void OnStatusChanging(global::System.Boolean value);
+        partial void OnStatusChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String Remark
+        {
+            get
+            {
+                return _Remark;
+            }
+            set
+            {
+                OnRemarkChanging(value);
+                ReportPropertyChanging("Remark");
+                _Remark = value;
+                ReportPropertyChanged("Remark");
+                OnRemarkChanged();
+            }
+        }
+        private global::System.String _Remark;
+        partial void OnRemarkChanging(global::System.String value);
+        partial void OnRemarkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CreatedBy
+        {
+            get
+            {
+                return _CreatedBy;
+            }
+            set
+            {
+                OnCreatedByChanging(value);
+                ReportPropertyChanging("CreatedBy");
+                _CreatedBy = value;
+                ReportPropertyChanged("CreatedBy");
+                OnCreatedByChanged();
+            }
+        }
+        private global::System.String _CreatedBy;
+        partial void OnCreatedByChanging(global::System.String value);
+        partial void OnCreatedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return _Created;
+            }
+            set
+            {
+                OnCreatedChanging(value);
+                ReportPropertyChanging("Created");
+                _Created = value;
+                ReportPropertyChanged("Created");
+                OnCreatedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ModifiedBy
+        {
+            get
+            {
+                return _ModifiedBy;
+            }
+            set
+            {
+                OnModifiedByChanging(value);
+                ReportPropertyChanging("ModifiedBy");
+                _ModifiedBy = value;
+                ReportPropertyChanged("ModifiedBy");
+                OnModifiedByChanged();
+            }
+        }
+        private global::System.String _ModifiedBy;
+        partial void OnModifiedByChanging(global::System.String value);
+        partial void OnModifiedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return _Modified;
+            }
+            set
+            {
+                OnModifiedChanging(value);
+                ReportPropertyChanging("Modified");
+                _Modified = value;
+                ReportPropertyChanged("Modified");
+                OnModifiedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Byte[] RowVersion
+        {
+            get
+            {
+                return StructuralObject.GetValidValue(_RowVersion);
+            }
+            set
+            {
+                OnRowVersionChanging(value);
+                ReportPropertyChanging("RowVersion");
+                _RowVersion = value;
+                ReportPropertyChanged("RowVersion");
+                OnRowVersionChanged();
+            }
+        }
+        private global::System.Byte[] _RowVersion;
+        partial void OnRowVersionChanging(global::System.Byte[] value);
+        partial void OnRowVersionChanged();
+
+        #endregion
+
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "PickingSlip_TransportRoute", "TransportRoute")]
+        public TransportRoute TransportRoute
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<TransportRoute>("LightSwitchApplication.PickingSlip_TransportRoute", "TransportRoute").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<TransportRoute>("LightSwitchApplication.PickingSlip_TransportRoute", "TransportRoute").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<TransportRoute> TransportRouteReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<TransportRoute>("LightSwitchApplication.PickingSlip_TransportRoute", "TransportRoute");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<TransportRoute>("LightSwitchApplication.PickingSlip_TransportRoute", "TransportRoute", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "PickingSlipDetail_PickingSlip", "PickingSlipDetail")]
+        public EntityCollection<PickingSlipDetail> PickingSlipDetails
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<PickingSlipDetail>("LightSwitchApplication.PickingSlipDetail_PickingSlip", "PickingSlipDetail");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<PickingSlipDetail>("LightSwitchApplication.PickingSlipDetail_PickingSlip", "PickingSlipDetail", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="PickingSlipDetail")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class PickingSlipDetail : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new PickingSlipDetail object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="pickingSlipDetail_PickingSlip">Initial value of the PickingSlipDetail_PickingSlip property.</param>
+        /// <param name="pickingSlipDetail_OrderRequisitionDetail">Initial value of the PickingSlipDetail_OrderRequisitionDetail property.</param>
+        /// <param name="lotNo">Initial value of the LotNo property.</param>
+        /// <param name="pickingSlipDetail_Location">Initial value of the PickingSlipDetail_Location property.</param>
+        /// <param name="pickingQuantity">Initial value of the PickingQuantity property.</param>
+        /// <param name="unitPrice">Initial value of the UnitPrice property.</param>
+        /// <param name="rowVersion">Initial value of the RowVersion property.</param>
+        public static PickingSlipDetail CreatePickingSlipDetail(global::System.Int32 id, global::System.Int32 pickingSlipDetail_PickingSlip, global::System.Int32 pickingSlipDetail_OrderRequisitionDetail, global::System.String lotNo, global::System.Int32 pickingSlipDetail_Location, global::System.Double pickingQuantity, global::System.Decimal unitPrice, global::System.Byte[] rowVersion)
+        {
+            PickingSlipDetail pickingSlipDetail = new PickingSlipDetail();
+            pickingSlipDetail.Id = id;
+            pickingSlipDetail.PickingSlipDetail_PickingSlip = pickingSlipDetail_PickingSlip;
+            pickingSlipDetail.PickingSlipDetail_OrderRequisitionDetail = pickingSlipDetail_OrderRequisitionDetail;
+            pickingSlipDetail.LotNo = lotNo;
+            pickingSlipDetail.PickingSlipDetail_Location = pickingSlipDetail_Location;
+            pickingSlipDetail.PickingQuantity = pickingQuantity;
+            pickingSlipDetail.UnitPrice = unitPrice;
+            pickingSlipDetail.RowVersion = rowVersion;
+            return pickingSlipDetail;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = value;
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 PickingSlipDetail_PickingSlip
+        {
+            get
+            {
+                return _PickingSlipDetail_PickingSlip;
+            }
+            set
+            {
+                OnPickingSlipDetail_PickingSlipChanging(value);
+                ReportPropertyChanging("PickingSlipDetail_PickingSlip");
+                _PickingSlipDetail_PickingSlip = value;
+                ReportPropertyChanged("PickingSlipDetail_PickingSlip");
+                OnPickingSlipDetail_PickingSlipChanged();
+            }
+        }
+        private global::System.Int32 _PickingSlipDetail_PickingSlip;
+        partial void OnPickingSlipDetail_PickingSlipChanging(global::System.Int32 value);
+        partial void OnPickingSlipDetail_PickingSlipChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 PickingSlipDetail_OrderRequisitionDetail
+        {
+            get
+            {
+                return _PickingSlipDetail_OrderRequisitionDetail;
+            }
+            set
+            {
+                OnPickingSlipDetail_OrderRequisitionDetailChanging(value);
+                ReportPropertyChanging("PickingSlipDetail_OrderRequisitionDetail");
+                _PickingSlipDetail_OrderRequisitionDetail = value;
+                ReportPropertyChanged("PickingSlipDetail_OrderRequisitionDetail");
+                OnPickingSlipDetail_OrderRequisitionDetailChanged();
+            }
+        }
+        private global::System.Int32 _PickingSlipDetail_OrderRequisitionDetail;
+        partial void OnPickingSlipDetail_OrderRequisitionDetailChanging(global::System.Int32 value);
+        partial void OnPickingSlipDetail_OrderRequisitionDetailChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String LotNo
+        {
+            get
+            {
+                return _LotNo;
+            }
+            set
+            {
+                OnLotNoChanging(value);
+                ReportPropertyChanging("LotNo");
+                _LotNo = value;
+                ReportPropertyChanged("LotNo");
+                OnLotNoChanged();
+            }
+        }
+        private global::System.String _LotNo;
+        partial void OnLotNoChanging(global::System.String value);
+        partial void OnLotNoChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 PickingSlipDetail_Location
+        {
+            get
+            {
+                return _PickingSlipDetail_Location;
+            }
+            set
+            {
+                OnPickingSlipDetail_LocationChanging(value);
+                ReportPropertyChanging("PickingSlipDetail_Location");
+                _PickingSlipDetail_Location = value;
+                ReportPropertyChanged("PickingSlipDetail_Location");
+                OnPickingSlipDetail_LocationChanged();
+            }
+        }
+        private global::System.Int32 _PickingSlipDetail_Location;
+        partial void OnPickingSlipDetail_LocationChanging(global::System.Int32 value);
+        partial void OnPickingSlipDetail_LocationChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double PickingQuantity
+        {
+            get
+            {
+                return _PickingQuantity;
+            }
+            set
+            {
+                OnPickingQuantityChanging(value);
+                ReportPropertyChanging("PickingQuantity");
+                _PickingQuantity = value;
+                ReportPropertyChanged("PickingQuantity");
+                OnPickingQuantityChanged();
+            }
+        }
+        private global::System.Double _PickingQuantity;
+        partial void OnPickingQuantityChanging(global::System.Double value);
+        partial void OnPickingQuantityChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Decimal UnitPrice
+        {
+            get
+            {
+                return _UnitPrice;
+            }
+            set
+            {
+                OnUnitPriceChanging(value);
+                ReportPropertyChanging("UnitPrice");
+                _UnitPrice = value;
+                ReportPropertyChanged("UnitPrice");
+                OnUnitPriceChanged();
+            }
+        }
+        private global::System.Decimal _UnitPrice;
+        partial void OnUnitPriceChanging(global::System.Decimal value);
+        partial void OnUnitPriceChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CreatedBy
+        {
+            get
+            {
+                return _CreatedBy;
+            }
+            set
+            {
+                OnCreatedByChanging(value);
+                ReportPropertyChanging("CreatedBy");
+                _CreatedBy = value;
+                ReportPropertyChanged("CreatedBy");
+                OnCreatedByChanged();
+            }
+        }
+        private global::System.String _CreatedBy;
+        partial void OnCreatedByChanging(global::System.String value);
+        partial void OnCreatedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return _Created;
+            }
+            set
+            {
+                OnCreatedChanging(value);
+                ReportPropertyChanging("Created");
+                _Created = value;
+                ReportPropertyChanged("Created");
+                OnCreatedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ModifiedBy
+        {
+            get
+            {
+                return _ModifiedBy;
+            }
+            set
+            {
+                OnModifiedByChanging(value);
+                ReportPropertyChanging("ModifiedBy");
+                _ModifiedBy = value;
+                ReportPropertyChanged("ModifiedBy");
+                OnModifiedByChanged();
+            }
+        }
+        private global::System.String _ModifiedBy;
+        partial void OnModifiedByChanging(global::System.String value);
+        partial void OnModifiedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return _Modified;
+            }
+            set
+            {
+                OnModifiedChanging(value);
+                ReportPropertyChanging("Modified");
+                _Modified = value;
+                ReportPropertyChanged("Modified");
+                OnModifiedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Byte[] RowVersion
+        {
+            get
+            {
+                return StructuralObject.GetValidValue(_RowVersion);
+            }
+            set
+            {
+                OnRowVersionChanging(value);
+                ReportPropertyChanging("RowVersion");
+                _RowVersion = value;
+                ReportPropertyChanged("RowVersion");
+                OnRowVersionChanged();
+            }
+        }
+        private global::System.Byte[] _RowVersion;
+        partial void OnRowVersionChanging(global::System.Byte[] value);
+        partial void OnRowVersionChanged();
+
+        #endregion
+
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "PickingSlipDetail_PickingSlip", "PickingSlip")]
+        public PickingSlip PickingSlip
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<PickingSlip>("LightSwitchApplication.PickingSlipDetail_PickingSlip", "PickingSlip").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<PickingSlip>("LightSwitchApplication.PickingSlipDetail_PickingSlip", "PickingSlip").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<PickingSlip> PickingSlipReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<PickingSlip>("LightSwitchApplication.PickingSlipDetail_PickingSlip", "PickingSlip");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<PickingSlip>("LightSwitchApplication.PickingSlipDetail_PickingSlip", "PickingSlip", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "PickingSlipDetail_OrderRequisitionDetail", "OrderRequisitionDetail")]
+        public OrderRequisitionDetail OrderRequisitionDetail
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<OrderRequisitionDetail>("LightSwitchApplication.PickingSlipDetail_OrderRequisitionDetail", "OrderRequisitionDetail").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<OrderRequisitionDetail>("LightSwitchApplication.PickingSlipDetail_OrderRequisitionDetail", "OrderRequisitionDetail").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<OrderRequisitionDetail> OrderRequisitionDetailReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<OrderRequisitionDetail>("LightSwitchApplication.PickingSlipDetail_OrderRequisitionDetail", "OrderRequisitionDetail");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<OrderRequisitionDetail>("LightSwitchApplication.PickingSlipDetail_OrderRequisitionDetail", "OrderRequisitionDetail", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "PickingSlipDetail_Location", "Location")]
+        public Location Location
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Location>("LightSwitchApplication.PickingSlipDetail_Location", "Location").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Location>("LightSwitchApplication.PickingSlipDetail_Location", "Location").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Location> LocationReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Location>("LightSwitchApplication.PickingSlipDetail_Location", "Location");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Location>("LightSwitchApplication.PickingSlipDetail_Location", "Location", value);
+                }
+            }
+        }
+
+        #endregion
+
     }
     
     /// <summary>
@@ -4696,6 +6526,50 @@ namespace LightSwitchApplication.Implementation
                 }
             }
         }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "ProductReceivePurchaseOrderDet_Product", "ProductReceivePurchaseOrderDetail")]
+        public EntityCollection<ProductReceivePurchaseOrderDetail> ProductReceivePurchaseOrderDetails
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<ProductReceivePurchaseOrderDetail>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Product", "ProductReceivePurchaseOrderDetail");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<ProductReceivePurchaseOrderDetail>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Product", "ProductReceivePurchaseOrderDetail", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "OrderRequisitionDetail_Product", "OrderRequisitionDetail")]
+        public EntityCollection<OrderRequisitionDetail> OrderRequisitionDetail
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<OrderRequisitionDetail>("LightSwitchApplication.OrderRequisitionDetail_Product", "OrderRequisitionDetail");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<OrderRequisitionDetail>("LightSwitchApplication.OrderRequisitionDetail_Product", "OrderRequisitionDetail", value);
+                }
+            }
+        }
 
         #endregion
 
@@ -5213,6 +7087,185 @@ namespace LightSwitchApplication.Implementation
 
         #endregion
 
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="ProductReceive")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class ProductReceive : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new ProductReceive object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="rowVersion">Initial value of the RowVersion property.</param>
+        public static ProductReceive CreateProductReceive(global::System.Int32 id, global::System.Byte[] rowVersion)
+        {
+            ProductReceive productReceive = new ProductReceive();
+            productReceive.Id = id;
+            productReceive.RowVersion = rowVersion;
+            return productReceive;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = value;
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CreatedBy
+        {
+            get
+            {
+                return _CreatedBy;
+            }
+            set
+            {
+                OnCreatedByChanging(value);
+                ReportPropertyChanging("CreatedBy");
+                _CreatedBy = value;
+                ReportPropertyChanged("CreatedBy");
+                OnCreatedByChanged();
+            }
+        }
+        private global::System.String _CreatedBy;
+        partial void OnCreatedByChanging(global::System.String value);
+        partial void OnCreatedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return _Created;
+            }
+            set
+            {
+                OnCreatedChanging(value);
+                ReportPropertyChanging("Created");
+                _Created = value;
+                ReportPropertyChanged("Created");
+                OnCreatedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ModifiedBy
+        {
+            get
+            {
+                return _ModifiedBy;
+            }
+            set
+            {
+                OnModifiedByChanging(value);
+                ReportPropertyChanging("ModifiedBy");
+                _ModifiedBy = value;
+                ReportPropertyChanged("ModifiedBy");
+                OnModifiedByChanged();
+            }
+        }
+        private global::System.String _ModifiedBy;
+        partial void OnModifiedByChanging(global::System.String value);
+        partial void OnModifiedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return _Modified;
+            }
+            set
+            {
+                OnModifiedChanging(value);
+                ReportPropertyChanging("Modified");
+                _Modified = value;
+                ReportPropertyChanged("Modified");
+                OnModifiedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Byte[] RowVersion
+        {
+            get
+            {
+                return StructuralObject.GetValidValue(_RowVersion);
+            }
+            set
+            {
+                OnRowVersionChanging(value);
+                ReportPropertyChanging("RowVersion");
+                _RowVersion = value;
+                ReportPropertyChanged("RowVersion");
+                OnRowVersionChanged();
+            }
+        }
+        private global::System.Byte[] _RowVersion;
+        partial void OnRowVersionChanging(global::System.Byte[] value);
+        partial void OnRowVersionChanged();
+
+        #endregion
+
+    
     }
     
     /// <summary>
@@ -5952,6 +8005,559 @@ namespace LightSwitchApplication.Implementation
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="ProductReceivePurchaseOrderDetail")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class ProductReceivePurchaseOrderDetail : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new ProductReceivePurchaseOrderDetail object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="receiveNumber">Initial value of the ReceiveNumber property.</param>
+        /// <param name="receiveDate">Initial value of the ReceiveDate property.</param>
+        /// <param name="productReceivePurchaseOrderDet_PurchaseOrderDetail">Initial value of the ProductReceivePurchaseOrderDet_PurchaseOrderDetail property.</param>
+        /// <param name="productReceivePurchaseOrderDet_Location">Initial value of the ProductReceivePurchaseOrderDet_Location property.</param>
+        /// <param name="receiveQuantity">Initial value of the ReceiveQuantity property.</param>
+        /// <param name="receiveUnitCost">Initial value of the ReceiveUnitCost property.</param>
+        /// <param name="receiveTotalCost">Initial value of the ReceiveTotalCost property.</param>
+        /// <param name="productReceivePurchaseOrderDet_Product">Initial value of the ProductReceivePurchaseOrderDet_Product property.</param>
+        /// <param name="rowVersion">Initial value of the RowVersion property.</param>
+        public static ProductReceivePurchaseOrderDetail CreateProductReceivePurchaseOrderDetail(global::System.Int32 id, global::System.String receiveNumber, global::System.DateTime receiveDate, global::System.Int32 productReceivePurchaseOrderDet_PurchaseOrderDetail, global::System.Int32 productReceivePurchaseOrderDet_Location, global::System.Double receiveQuantity, global::System.Decimal receiveUnitCost, global::System.Decimal receiveTotalCost, global::System.Int32 productReceivePurchaseOrderDet_Product, global::System.Byte[] rowVersion)
+        {
+            ProductReceivePurchaseOrderDetail productReceivePurchaseOrderDetail = new ProductReceivePurchaseOrderDetail();
+            productReceivePurchaseOrderDetail.Id = id;
+            productReceivePurchaseOrderDetail.ReceiveNumber = receiveNumber;
+            productReceivePurchaseOrderDetail.ReceiveDate = receiveDate;
+            productReceivePurchaseOrderDetail.ProductReceivePurchaseOrderDet_PurchaseOrderDetail = productReceivePurchaseOrderDet_PurchaseOrderDetail;
+            productReceivePurchaseOrderDetail.ProductReceivePurchaseOrderDet_Location = productReceivePurchaseOrderDet_Location;
+            productReceivePurchaseOrderDetail.ReceiveQuantity = receiveQuantity;
+            productReceivePurchaseOrderDetail.ReceiveUnitCost = receiveUnitCost;
+            productReceivePurchaseOrderDetail.ReceiveTotalCost = receiveTotalCost;
+            productReceivePurchaseOrderDetail.ProductReceivePurchaseOrderDet_Product = productReceivePurchaseOrderDet_Product;
+            productReceivePurchaseOrderDetail.RowVersion = rowVersion;
+            return productReceivePurchaseOrderDetail;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = value;
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String ReceiveNumber
+        {
+            get
+            {
+                return _ReceiveNumber;
+            }
+            set
+            {
+                OnReceiveNumberChanging(value);
+                ReportPropertyChanging("ReceiveNumber");
+                _ReceiveNumber = value;
+                ReportPropertyChanged("ReceiveNumber");
+                OnReceiveNumberChanged();
+            }
+        }
+        private global::System.String _ReceiveNumber;
+        partial void OnReceiveNumberChanging(global::System.String value);
+        partial void OnReceiveNumberChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.DateTime ReceiveDate
+        {
+            get
+            {
+                return _ReceiveDate;
+            }
+            set
+            {
+                OnReceiveDateChanging(value);
+                ReportPropertyChanging("ReceiveDate");
+                _ReceiveDate = value;
+                ReportPropertyChanged("ReceiveDate");
+                OnReceiveDateChanged();
+            }
+        }
+        private global::System.DateTime _ReceiveDate;
+        partial void OnReceiveDateChanging(global::System.DateTime value);
+        partial void OnReceiveDateChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ProductReceivePurchaseOrderDet_PurchaseOrderDetail
+        {
+            get
+            {
+                return _ProductReceivePurchaseOrderDet_PurchaseOrderDetail;
+            }
+            set
+            {
+                OnProductReceivePurchaseOrderDet_PurchaseOrderDetailChanging(value);
+                ReportPropertyChanging("ProductReceivePurchaseOrderDet_PurchaseOrderDetail");
+                _ProductReceivePurchaseOrderDet_PurchaseOrderDetail = value;
+                ReportPropertyChanged("ProductReceivePurchaseOrderDet_PurchaseOrderDetail");
+                OnProductReceivePurchaseOrderDet_PurchaseOrderDetailChanged();
+            }
+        }
+        private global::System.Int32 _ProductReceivePurchaseOrderDet_PurchaseOrderDetail;
+        partial void OnProductReceivePurchaseOrderDet_PurchaseOrderDetailChanging(global::System.Int32 value);
+        partial void OnProductReceivePurchaseOrderDet_PurchaseOrderDetailChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ProductReceivePurchaseOrderDet_Location
+        {
+            get
+            {
+                return _ProductReceivePurchaseOrderDet_Location;
+            }
+            set
+            {
+                OnProductReceivePurchaseOrderDet_LocationChanging(value);
+                ReportPropertyChanging("ProductReceivePurchaseOrderDet_Location");
+                _ProductReceivePurchaseOrderDet_Location = value;
+                ReportPropertyChanged("ProductReceivePurchaseOrderDet_Location");
+                OnProductReceivePurchaseOrderDet_LocationChanged();
+            }
+        }
+        private global::System.Int32 _ProductReceivePurchaseOrderDet_Location;
+        partial void OnProductReceivePurchaseOrderDet_LocationChanging(global::System.Int32 value);
+        partial void OnProductReceivePurchaseOrderDet_LocationChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double ReceiveQuantity
+        {
+            get
+            {
+                return _ReceiveQuantity;
+            }
+            set
+            {
+                OnReceiveQuantityChanging(value);
+                ReportPropertyChanging("ReceiveQuantity");
+                _ReceiveQuantity = value;
+                ReportPropertyChanged("ReceiveQuantity");
+                OnReceiveQuantityChanged();
+            }
+        }
+        private global::System.Double _ReceiveQuantity;
+        partial void OnReceiveQuantityChanging(global::System.Double value);
+        partial void OnReceiveQuantityChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Decimal ReceiveUnitCost
+        {
+            get
+            {
+                return _ReceiveUnitCost;
+            }
+            set
+            {
+                OnReceiveUnitCostChanging(value);
+                ReportPropertyChanging("ReceiveUnitCost");
+                _ReceiveUnitCost = value;
+                ReportPropertyChanged("ReceiveUnitCost");
+                OnReceiveUnitCostChanged();
+            }
+        }
+        private global::System.Decimal _ReceiveUnitCost;
+        partial void OnReceiveUnitCostChanging(global::System.Decimal value);
+        partial void OnReceiveUnitCostChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Decimal ReceiveTotalCost
+        {
+            get
+            {
+                return _ReceiveTotalCost;
+            }
+            set
+            {
+                OnReceiveTotalCostChanging(value);
+                ReportPropertyChanging("ReceiveTotalCost");
+                _ReceiveTotalCost = value;
+                ReportPropertyChanged("ReceiveTotalCost");
+                OnReceiveTotalCostChanged();
+            }
+        }
+        private global::System.Decimal _ReceiveTotalCost;
+        partial void OnReceiveTotalCostChanging(global::System.Decimal value);
+        partial void OnReceiveTotalCostChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Remark
+        {
+            get
+            {
+                return _Remark;
+            }
+            set
+            {
+                OnRemarkChanging(value);
+                ReportPropertyChanging("Remark");
+                _Remark = value;
+                ReportPropertyChanged("Remark");
+                OnRemarkChanged();
+            }
+        }
+        private global::System.String _Remark;
+        partial void OnRemarkChanging(global::System.String value);
+        partial void OnRemarkChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 ProductReceivePurchaseOrderDet_Product
+        {
+            get
+            {
+                return _ProductReceivePurchaseOrderDet_Product;
+            }
+            set
+            {
+                OnProductReceivePurchaseOrderDet_ProductChanging(value);
+                ReportPropertyChanging("ProductReceivePurchaseOrderDet_Product");
+                _ProductReceivePurchaseOrderDet_Product = value;
+                ReportPropertyChanged("ProductReceivePurchaseOrderDet_Product");
+                OnProductReceivePurchaseOrderDet_ProductChanged();
+            }
+        }
+        private global::System.Int32 _ProductReceivePurchaseOrderDet_Product;
+        partial void OnProductReceivePurchaseOrderDet_ProductChanging(global::System.Int32 value);
+        partial void OnProductReceivePurchaseOrderDet_ProductChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String LotNo
+        {
+            get
+            {
+                return _LotNo;
+            }
+            set
+            {
+                OnLotNoChanging(value);
+                ReportPropertyChanging("LotNo");
+                _LotNo = value;
+                ReportPropertyChanged("LotNo");
+                OnLotNoChanged();
+            }
+        }
+        private global::System.String _LotNo;
+        partial void OnLotNoChanging(global::System.String value);
+        partial void OnLotNoChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CreatedBy
+        {
+            get
+            {
+                return _CreatedBy;
+            }
+            set
+            {
+                OnCreatedByChanging(value);
+                ReportPropertyChanging("CreatedBy");
+                _CreatedBy = value;
+                ReportPropertyChanged("CreatedBy");
+                OnCreatedByChanged();
+            }
+        }
+        private global::System.String _CreatedBy;
+        partial void OnCreatedByChanging(global::System.String value);
+        partial void OnCreatedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return _Created;
+            }
+            set
+            {
+                OnCreatedChanging(value);
+                ReportPropertyChanging("Created");
+                _Created = value;
+                ReportPropertyChanged("Created");
+                OnCreatedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ModifiedBy
+        {
+            get
+            {
+                return _ModifiedBy;
+            }
+            set
+            {
+                OnModifiedByChanging(value);
+                ReportPropertyChanging("ModifiedBy");
+                _ModifiedBy = value;
+                ReportPropertyChanged("ModifiedBy");
+                OnModifiedByChanged();
+            }
+        }
+        private global::System.String _ModifiedBy;
+        partial void OnModifiedByChanging(global::System.String value);
+        partial void OnModifiedByChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return _Modified;
+            }
+            set
+            {
+                OnModifiedChanging(value);
+                ReportPropertyChanging("Modified");
+                _Modified = value;
+                ReportPropertyChanged("Modified");
+                OnModifiedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Byte[] RowVersion
+        {
+            get
+            {
+                return StructuralObject.GetValidValue(_RowVersion);
+            }
+            set
+            {
+                OnRowVersionChanging(value);
+                ReportPropertyChanging("RowVersion");
+                _RowVersion = value;
+                ReportPropertyChanged("RowVersion");
+                OnRowVersionChanged();
+            }
+        }
+        private global::System.Byte[] _RowVersion;
+        partial void OnRowVersionChanging(global::System.Byte[] value);
+        partial void OnRowVersionChanged();
+
+        #endregion
+
+    
+        #region Navigation Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "ProductReceivePurchaseOrderDet_PurchaseOrderDetail", "PurchaseOrderDetail")]
+        public PurchaseOrderDetail PurchaseOrderDetail
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<PurchaseOrderDetail>("LightSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail", "PurchaseOrderDetail").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<PurchaseOrderDetail>("LightSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail", "PurchaseOrderDetail").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<PurchaseOrderDetail> PurchaseOrderDetailReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<PurchaseOrderDetail>("LightSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail", "PurchaseOrderDetail");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<PurchaseOrderDetail>("LightSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail", "PurchaseOrderDetail", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "ProductReceivePurchaseOrderDet_Location", "Location")]
+        public Location Location
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Location>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Location", "Location").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Location>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Location", "Location").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Location> LocationReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Location>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Location", "Location");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Location>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Location", "Location", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "ProductReceivePurchaseOrderDet_Product", "Product")]
+        public Product Product
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Product>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Product", "Product").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Product>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Product", "Product").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Product> ProductReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Product>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Product", "Product");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Product>("LightSwitchApplication.ProductReceivePurchaseOrderDet_Product", "Product", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
     [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="PurchaseOrder")]
     [Serializable()]
     [DataContractAttribute(IsReference=true)]
@@ -6106,6 +8712,30 @@ namespace LightSwitchApplication.Implementation
         private global::System.Int32 _PurchaseOrder_Supplier;
         partial void OnPurchaseOrder_SupplierChanging(global::System.Int32 value);
         partial void OnPurchaseOrder_SupplierChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Remark
+        {
+            get
+            {
+                return _Remark;
+            }
+            set
+            {
+                OnRemarkChanging(value);
+                ReportPropertyChanging("Remark");
+                _Remark = value;
+                ReportPropertyChanged("Remark");
+                OnRemarkChanged();
+            }
+        }
+        private global::System.String _Remark;
+        partial void OnRemarkChanging(global::System.String value);
+        partial void OnRemarkChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -6938,188 +9568,31 @@ namespace LightSwitchApplication.Implementation
                 }
             }
         }
-
-        #endregion
-
-    }
-    
-    /// <summary>
-    /// No Metadata Documentation available.
-    /// </summary>
-    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="Requisitions")]
-    [Serializable()]
-    [DataContractAttribute(IsReference=true)]
-    public partial class Requisitions : EntityObject
-    {
-        #region Factory Method
-    
-        /// <summary>
-        /// Create a new Requisitions object.
-        /// </summary>
-        /// <param name="id">Initial value of the Id property.</param>
-        /// <param name="rowVersion">Initial value of the RowVersion property.</param>
-        public static Requisitions CreateRequisitions(global::System.Int32 id, global::System.Byte[] rowVersion)
-        {
-            Requisitions requisitions = new Requisitions();
-            requisitions.Id = id;
-            requisitions.RowVersion = rowVersion;
-            return requisitions;
-        }
-
-        #endregion
-
-        #region Primitive Properties
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        public global::System.Int32 Id
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "ProductReceivePurchaseOrderDet_PurchaseOrderDetail", "ProductReceivePurchaseOrderDetail")]
+        public EntityCollection<ProductReceivePurchaseOrderDetail> ProductReceivePurchaseOrderDetails
         {
             get
             {
-                return _Id;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<ProductReceivePurchaseOrderDetail>("LightSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail", "ProductReceivePurchaseOrderDetail");
             }
             set
             {
-                if (_Id != value)
+                if ((value != null))
                 {
-                    OnIdChanging(value);
-                    ReportPropertyChanging("Id");
-                    _Id = value;
-                    ReportPropertyChanged("Id");
-                    OnIdChanged();
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<ProductReceivePurchaseOrderDetail>("LightSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail", "ProductReceivePurchaseOrderDetail", value);
                 }
             }
         }
-        private global::System.Int32 _Id;
-        partial void OnIdChanging(global::System.Int32 value);
-        partial void OnIdChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String CreatedBy
-        {
-            get
-            {
-                return _CreatedBy;
-            }
-            set
-            {
-                OnCreatedByChanging(value);
-                ReportPropertyChanging("CreatedBy");
-                _CreatedBy = value;
-                ReportPropertyChanged("CreatedBy");
-                OnCreatedByChanged();
-            }
-        }
-        private global::System.String _CreatedBy;
-        partial void OnCreatedByChanging(global::System.String value);
-        partial void OnCreatedByChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.DateTimeOffset> Created
-        {
-            get
-            {
-                return _Created;
-            }
-            set
-            {
-                OnCreatedChanging(value);
-                ReportPropertyChanging("Created");
-                _Created = value;
-                ReportPropertyChanged("Created");
-                OnCreatedChanged();
-            }
-        }
-        private Nullable<global::System.DateTimeOffset> _Created;
-        partial void OnCreatedChanging(Nullable<global::System.DateTimeOffset> value);
-        partial void OnCreatedChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public global::System.String ModifiedBy
-        {
-            get
-            {
-                return _ModifiedBy;
-            }
-            set
-            {
-                OnModifiedByChanging(value);
-                ReportPropertyChanging("ModifiedBy");
-                _ModifiedBy = value;
-                ReportPropertyChanged("ModifiedBy");
-                OnModifiedByChanged();
-            }
-        }
-        private global::System.String _ModifiedBy;
-        partial void OnModifiedByChanging(global::System.String value);
-        partial void OnModifiedByChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
-        [DataMemberAttribute()]
-        public Nullable<global::System.DateTimeOffset> Modified
-        {
-            get
-            {
-                return _Modified;
-            }
-            set
-            {
-                OnModifiedChanging(value);
-                ReportPropertyChanging("Modified");
-                _Modified = value;
-                ReportPropertyChanged("Modified");
-                OnModifiedChanged();
-            }
-        }
-        private Nullable<global::System.DateTimeOffset> _Modified;
-        partial void OnModifiedChanging(Nullable<global::System.DateTimeOffset> value);
-        partial void OnModifiedChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Byte[] RowVersion
-        {
-            get
-            {
-                return StructuralObject.GetValidValue(_RowVersion);
-            }
-            set
-            {
-                OnRowVersionChanging(value);
-                ReportPropertyChanging("RowVersion");
-                _RowVersion = value;
-                ReportPropertyChanged("RowVersion");
-                OnRowVersionChanged();
-            }
-        }
-        private global::System.Byte[] _RowVersion;
-        partial void OnRowVersionChanging(global::System.Byte[] value);
-        partial void OnRowVersionChanged();
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -7136,16 +9609,16 @@ namespace LightSwitchApplication.Implementation
         /// Create a new SaleOrder object.
         /// </summary>
         /// <param name="id">Initial value of the Id property.</param>
-        /// <param name="documentNo">Initial value of the DocumentNo property.</param>
+        /// <param name="saleOrderNo">Initial value of the SaleOrderNo property.</param>
         /// <param name="saleOrderDate">Initial value of the SaleOrderDate property.</param>
         /// <param name="saleOrder_Customer">Initial value of the SaleOrder_Customer property.</param>
         /// <param name="saleOrderStatus">Initial value of the SaleOrderStatus property.</param>
         /// <param name="rowVersion">Initial value of the RowVersion property.</param>
-        public static SaleOrder CreateSaleOrder(global::System.Int32 id, global::System.String documentNo, global::System.DateTime saleOrderDate, global::System.Int32 saleOrder_Customer, global::System.Boolean saleOrderStatus, global::System.Byte[] rowVersion)
+        public static SaleOrder CreateSaleOrder(global::System.Int32 id, global::System.String saleOrderNo, global::System.DateTime saleOrderDate, global::System.Int32 saleOrder_Customer, global::System.Boolean saleOrderStatus, global::System.Byte[] rowVersion)
         {
             SaleOrder saleOrder = new SaleOrder();
             saleOrder.Id = id;
-            saleOrder.DocumentNo = documentNo;
+            saleOrder.SaleOrderNo = saleOrderNo;
             saleOrder.SaleOrderDate = saleOrderDate;
             saleOrder.SaleOrder_Customer = saleOrder_Customer;
             saleOrder.SaleOrderStatus = saleOrderStatus;
@@ -7189,24 +9662,24 @@ namespace LightSwitchApplication.Implementation
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String DocumentNo
+        public global::System.String SaleOrderNo
         {
             get
             {
-                return _DocumentNo;
+                return _SaleOrderNo;
             }
             set
             {
-                OnDocumentNoChanging(value);
-                ReportPropertyChanging("DocumentNo");
-                _DocumentNo = value;
-                ReportPropertyChanged("DocumentNo");
-                OnDocumentNoChanged();
+                OnSaleOrderNoChanging(value);
+                ReportPropertyChanging("SaleOrderNo");
+                _SaleOrderNo = value;
+                ReportPropertyChanged("SaleOrderNo");
+                OnSaleOrderNoChanged();
             }
         }
-        private global::System.String _DocumentNo;
-        partial void OnDocumentNoChanging(global::System.String value);
-        partial void OnDocumentNoChanged();
+        private global::System.String _SaleOrderNo;
+        partial void OnSaleOrderNoChanging(global::System.String value);
+        partial void OnSaleOrderNoChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -7826,6 +10299,30 @@ namespace LightSwitchApplication.Implementation
         private global::System.Decimal _SalePrice;
         partial void OnSalePriceChanging(global::System.Decimal value);
         partial void OnSalePriceChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.Boolean> RequisitionFlag
+        {
+            get
+            {
+                return _RequisitionFlag;
+            }
+            set
+            {
+                OnRequisitionFlagChanging(value);
+                ReportPropertyChanging("RequisitionFlag");
+                _RequisitionFlag = value;
+                ReportPropertyChanged("RequisitionFlag");
+                OnRequisitionFlagChanged();
+            }
+        }
+        private Nullable<global::System.Boolean> _RequisitionFlag;
+        partial void OnRequisitionFlagChanging(Nullable<global::System.Boolean> value);
+        partial void OnRequisitionFlagChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -9357,8 +11854,9 @@ namespace LightSwitchApplication.Implementation
         /// <param name="isAvailableForSale">Initial value of the IsAvailableForSale property.</param>
         /// <param name="stockOnHand_Location">Initial value of the StockOnHand_Location property.</param>
         /// <param name="stockOnHand_Product">Initial value of the StockOnHand_Product property.</param>
+        /// <param name="reservedQuantity">Initial value of the ReservedQuantity property.</param>
         /// <param name="rowVersion">Initial value of the RowVersion property.</param>
-        public static StockOnHand CreateStockOnHand(global::System.Int32 id, global::System.String lotNo, global::System.Double quantityOnHand, global::System.Decimal sellingPrice, global::System.Decimal costPrice, global::System.Boolean isAvailableForSale, global::System.Int32 stockOnHand_Location, global::System.Int32 stockOnHand_Product, global::System.Byte[] rowVersion)
+        public static StockOnHand CreateStockOnHand(global::System.Int32 id, global::System.String lotNo, global::System.Double quantityOnHand, global::System.Decimal sellingPrice, global::System.Decimal costPrice, global::System.Boolean isAvailableForSale, global::System.Int32 stockOnHand_Location, global::System.Int32 stockOnHand_Product, global::System.Double reservedQuantity, global::System.Byte[] rowVersion)
         {
             StockOnHand stockOnHand = new StockOnHand();
             stockOnHand.Id = id;
@@ -9369,6 +11867,7 @@ namespace LightSwitchApplication.Implementation
             stockOnHand.IsAvailableForSale = isAvailableForSale;
             stockOnHand.StockOnHand_Location = stockOnHand_Location;
             stockOnHand.StockOnHand_Product = stockOnHand_Product;
+            stockOnHand.ReservedQuantity = reservedQuantity;
             stockOnHand.RowVersion = rowVersion;
             return stockOnHand;
         }
@@ -9571,6 +12070,30 @@ namespace LightSwitchApplication.Implementation
         private global::System.Int32 _StockOnHand_Product;
         partial void OnStockOnHand_ProductChanging(global::System.Int32 value);
         partial void OnStockOnHand_ProductChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double ReservedQuantity
+        {
+            get
+            {
+                return _ReservedQuantity;
+            }
+            set
+            {
+                OnReservedQuantityChanging(value);
+                ReportPropertyChanging("ReservedQuantity");
+                _ReservedQuantity = value;
+                ReportPropertyChanged("ReservedQuantity");
+                OnReservedQuantityChanged();
+            }
+        }
+        private global::System.Double _ReservedQuantity;
+        partial void OnReservedQuantityChanging(global::System.Double value);
+        partial void OnReservedQuantityChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -12336,6 +14859,28 @@ namespace LightSwitchApplication.Implementation
                 if ((value != null))
                 {
                     ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Customer>("LightSwitchApplication.Customer_TransportRoute", "Customer", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "PickingSlip_TransportRoute", "PickingSlip")]
+        public EntityCollection<PickingSlip> PickingSlips
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<PickingSlip>("LightSwitchApplication.PickingSlip_TransportRoute", "PickingSlip");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<PickingSlip>("LightSwitchApplication.PickingSlip_TransportRoute", "PickingSlip", value);
                 }
             }
         }

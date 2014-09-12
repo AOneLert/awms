@@ -39,3 +39,8 @@ myapp.AddEditPODetail.created = function (screen) {
             screen.PurchaseOrderDetail.RequireTotalCost = (requireQty * itemPrice).toFixed(2);
     });
 };
+
+myapp.AddEditPODetail.deleteSelectedPODetail_postRender = function (element, contentItem) {
+    // Write code here.
+
+};

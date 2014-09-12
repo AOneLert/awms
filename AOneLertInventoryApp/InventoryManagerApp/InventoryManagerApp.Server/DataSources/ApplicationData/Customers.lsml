@@ -158,6 +158,11 @@
         Association="SaleOrder_Customer"
         FromEnd="Customer"
         ToEnd="SaleOrder" />
+      <NavigationProperty
+        Name="OrderRequisition"
+        Association="OrderRequisition_Customer"
+        FromEnd="Customer"
+        ToEnd="OrderRequisition" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -311,6 +316,16 @@
         Name="Customer"
         EntitySet="Customers" />
     </AssociationSet>
+    <AssociationSet
+      Name="OrderRequisition_Customers"
+      Association="OrderRequisition_Customer">
+      <AssociationSetEnd
+        Name="OrderRequisition"
+        EntitySet="OrderRequisitions" />
+      <AssociationSetEnd
+        Name="Customer"
+        EntitySet="Customers" />
+    </AssociationSet>
   </EntityContainer>
   <DataService
     Name="ApplicationDataMapping">
@@ -351,6 +366,27 @@
         </SsdlAssociationSetEnd>
       </AssociationSetMapping.Attributes>
     </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="OrderRequisition_Customers">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Requisition_Customers" />
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[OrderRequisition_Customers]/Members[OrderRequisition]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Requisition_Customer" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[OrderRequisition_Customers]/Members[Customer]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
   </DataService>
   <Association
     Name="SaleOrder_Customer">
@@ -358,6 +394,22 @@
       Name="SaleOrder"
       Multiplicity="Many"
       EntityType="SaleOrder" />
+    <AssociationEnd
+      Name="Customer"
+      Multiplicity="One"
+      EntityType="Customer">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="OrderRequisition_Customer">
+    <AssociationEnd
+      Name="OrderRequisition"
+      Multiplicity="Many"
+      EntityType="OrderRequisition" />
     <AssociationEnd
       Name="Customer"
       Multiplicity="One"

@@ -1,0 +1,4 @@
+C:\Users\paradornn.BTG\Documents\AWMS_20140901\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\paradornn.BTG\Documents\AWMS_20140901\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs

@@ -16,16 +16,6 @@ myapp.BrowsePO.RowTemplate_postRender = function (element, contentItem) {
 };
 
 //var count = 0;
-myapp.BrowsePO.POStatusDescription_postRender = function (element, contentItem) {
-    // Write code here.
-    //contentItem.dataBind("screen.PurchaseOrderStatus", function (value) {
-    //    if (value) {
-    //        contentItem.value = "ปิดการรับ";
-    //    } else {
-    //        contentItem.value = "รอรับสินค้า";
-    //    }
-    //});
-};
 
 
 myapp.BrowsePO.PurchaseOrderDate_postRender = function (element, contentItem) {
@@ -36,6 +26,7 @@ myapp.BrowsePO.PurchaseOrderDate_postRender = function (element, contentItem) {
         }
     });
 };
+
 myapp.BrowsePO.PurchaseOrder_ItemTap_execute = function (screen) {
     // Write code here.
     if (screen.PurchaseOrders.selectedItem.PurchaseOrderStatus) {
@@ -80,3 +71,99 @@ myapp.BrowsePO.PurchaseOrder_ItemTap_execute = function (screen) {
 //        }
 //    });
 //};
+myapp.BrowsePO.PurchaseOrderNotCloseTemplate_postRender = function (element, contentItem) {
+    // Write code here.
+    var desc = "";
+    if (contentItem.value.PurchaseOrderStatus)
+        desc = "ปิดการรับ";
+    else
+        desc = "รอรับสินค้า";
+
+    element.cells[5].innerText = desc;
+};
+
+myapp.BrowsePO.PurchaseOrderNotClose_ItemTap_execute = function (screen) {
+    // Write code here.
+    var temp = screen.PurchaseOrderNotClose.selectedItem.PurchaseOrderStatus;
+    if (screen.PurchaseOrderNotClose.selectedItem.PurchaseOrderStatus) {
+        myapp.showViewPurchaseOrder(null, {
+            beforeShown: function (addNewScreen) {
+                var selectPO = screen.PurchaseOrderNotClose.selectedItem;
+                addNewScreen.PurchaseOrder = selectPO;
+            }, afterClosed: function (addEditScreen, navigationAction) {
+                if (navigationAction === msls.NavigateBackAction.commit) {
+                    //screen.details.dataWorkspace.ApplicationData.PurchaseOrders._loadedEntities = {};
+                    screen.PurchaseOrderNotClose.refresh();
+                }
+            }
+        });
+    } else {
+        myapp.showAddEditPO(null, {
+            beforeShown: function (addNewScreen) {
+                var selectPO = screen.PurchaseOrderNotClose.selectedItem;
+                addNewScreen.PurchaseOrder = selectPO;
+            }, afterClosed: function (addEditScreen, navigationAction) {
+                if (navigationAction === msls.NavigateBackAction.commit) {
+                    //screen.details.dataWorkspace.ApplicationData.PurchaseOrders._loadedEntities = {};
+                    screen.PurchaseOrderNotClose.refresh();
+                }
+            }
+        });
+    }
+};
+myapp.BrowsePO.PurchaseOrderClosed_ItemTap_execute = function (screen) {
+    // Write code here.
+    var temp = screen.PurchaseOrderNotClose.selectedItem.PurchaseOrderStatus;
+    if (screen.PurchaseOrderClosed.selectedItem.PurchaseOrderStatus) {
+        myapp.showViewPurchaseOrder(null, {
+            beforeShown: function (addNewScreen) {
+                var selectPO = screen.PurchaseOrderClosed.selectedItem;
+                addNewScreen.PurchaseOrder = selectPO;
+            }, afterClosed: function (addEditScreen, navigationAction) {
+                if (navigationAction === msls.NavigateBackAction.commit) {
+                    //screen.details.dataWorkspace.ApplicationData.PurchaseOrders._loadedEntities = {};
+                    screen.PurchaseOrderClosed.refresh();
+                }
+            }
+        });
+    } else {
+        myapp.showAddEditPO(null, {
+            beforeShown: function (addNewScreen) {
+                var selectPO = screen.PurchaseOrderClosed.selectedItem;
+                addNewScreen.PurchaseOrder = selectPO;
+            }, afterClosed: function (addEditScreen, navigationAction) {
+                if (navigationAction === msls.NavigateBackAction.commit) {
+                    //screen.details.dataWorkspace.ApplicationData.PurchaseOrders._loadedEntities = {};
+                    screen.PurchaseOrderClosed.refresh();
+                }
+            }
+        });
+    }
+};
+
+myapp.BrowsePO.PurchaseOrderClosedTemplate_postRender = function (element, contentItem) {
+    // Write code here.
+    var desc = "";
+    if (contentItem.value.PurchaseOrderStatus)
+        desc = "ปิดการรับ";
+    else
+        desc = "รอรับสินค้า";
+
+    element.cells[5].innerText = desc;
+};
+myapp.BrowsePO.ShowBrowsePOReceive_Tap_execute = function (screen) {
+    // Write code here.
+    myapp.showBrowsePOReceive(null, {
+        beforeShown: function (addNewScreen) {
+            //var selectPO = screen.PurchaseOrders.selectedItem;
+            //addNewScreen.PurchaseOrder = selectPO;
+        }, afterClosed: function (addEditScreen, navigationAction) {
+            if (navigationAction === msls.NavigateBackAction.commit) {
+                //screen.details.dataWorkspace.ApplicationData.PurchaseOrders._loadedEntities = {};
+                screen.PurchaseOrders.refresh();
+                screen.PurchaseOrderNotClose.refresh();
+                screen.PurchaseOrderClosed.refresh();
+            }
+        }
+    });
+};

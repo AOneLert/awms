@@ -21,12 +21,14 @@ myapp.BrowsePOReceive.RowTemplate_postRender = function (element, contentItem) {
 myapp.BrowsePOReceive.PurchaseOrder_ItemTap_execute = function (screen) {
     // Write code here.
     myapp.showAddEditPOReceive(null, {
-        beforeShown: function (addNewScreen) {            
+        beforeShown: function (addNewScreen) {
             addNewScreen.PurchaseOrder = screen.PurchaseOrders.selectedItem;
         },
         afterClosed: function (addEditScreen, navigationAction) {
             if (navigationAction === msls.NavigateBackAction.commit) {
                 screen.PurchaseOrders.refresh();
+                screen.PurchaseOrderDetails.refresh();
+                screen.ProductReceivePurchaseOrderDetails.refresh();
             }
         }
     });

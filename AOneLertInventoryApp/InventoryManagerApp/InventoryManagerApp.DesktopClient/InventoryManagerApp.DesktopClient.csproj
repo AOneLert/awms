@@ -229,11 +229,17 @@
     </ServiceMetadataReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\InventoryManagerApp.Server\DataSources\ApplicationData\OrderRequisition.lsml.cs">
+      <Link>UserCode\Shared\OrderRequisition.lsml.cs</Link>
+    </Compile>
     <Compile Include="..\InventoryManagerApp.Server\DataSources\ApplicationData\Product.lsml.cs">
       <Link>UserCode\Shared\Product.lsml.cs</Link>
     </Compile>
     <Compile Include="..\InventoryManagerApp.Server\DataSources\ApplicationData\ProductReceiveBalanceForwardDetail.lsml.cs">
       <Link>UserCode\Shared\ProductReceiveBalanceForwardDetail.lsml.cs</Link>
+    </Compile>
+    <Compile Include="..\InventoryManagerApp.Server\DataSources\ApplicationData\PurchaseOrder.lsml.cs">
+      <Link>UserCode\Shared\PurchaseOrder.lsml.cs</Link>
     </Compile>
     <Compile Include="..\InventoryManagerApp.Server\DataSources\ApplicationData\StockCheck.lsml.cs">
       <Link>UserCode\Shared\StockCheck.lsml.cs</Link>

@@ -24,11 +24,11 @@
             Kind="Group"
             View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
             <ContentItem
-              Name="ShowBrowseSaleOrders"
+              Name="ShowBrowseProductPricings"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="บันทึกการขายสินค้า" />
+                  Value="กำหนดราคาสินค้า" />
               </ContentItem.Attributes>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -36,7 +36,26 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showBrowseSaleOrders]" />
+                        Target="!module/Methods[showBrowseProductPricings]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
+            </ContentItem>
+            <ContentItem
+              Name="ShowBrowseSaleOrders"
+              Kind="Command">
+              <ContentItem.Attributes>
+                <DisplayName
+                  Value="ใบจองสินค้า" />
+              </ContentItem.Attributes>
+              <ContentItem.PropertySources>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <CallExpression
+                        Target="!module/Methods[showBrowseOrderRequisitions]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>
@@ -47,7 +66,7 @@
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="ออกใบเบิกสินค้า" />
+                  Value="สร้างใบเบิกสินค้า" />
               </ContentItem.Attributes>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -55,7 +74,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showBrowseRequisitions]" />
+                        Target="!module/Methods[showBrowseOrderRequisitionsTransportRoute]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>

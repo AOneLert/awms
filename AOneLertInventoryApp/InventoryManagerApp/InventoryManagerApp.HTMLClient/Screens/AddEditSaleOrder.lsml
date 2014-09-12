@@ -62,7 +62,7 @@
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="SaleOrder/Properties[DocumentNo]" />
+                          Member="SaleOrder/Properties[SaleOrderNo]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -93,24 +93,6 @@
                       </ScreenExpressionTree>
                     </ContentItem.DataSource>
                   </ContentItem>
-                </ContentItem>
-                <ContentItem
-                  Name="PaymentStatus"
-                  IsHidden="True"
-                  Kind="Value"
-                  DataType=":String?">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="สถานะการรับชำระเงิน" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="SaleOrder/Properties[PaymentStatus]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
@@ -197,6 +179,50 @@
               </ContentItem>
             </ContentItem>
             <ContentItem
+              Name="Group3"
+              Kind="Group"
+              View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
+              <ContentItem
+                Name="Remarks"
+                Kind="Value"
+                DataType=":String?"
+                View="Microsoft.LightSwitch.MobileWeb:TextArea">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="หมายเหตุ" />
+                </ContentItem.Attributes>
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression
+                        Member="AddEditSaleOrder/Properties[SaleOrder]" />
+                      <MemberExpression
+                        Member="Remarks" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem
+                Name="SaleOrder_SaleOrderStatus"
+                Kind="Value"
+                DataType=":Boolean">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="สถานะใบขายสินค้า" />
+                </ContentItem.Attributes>
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression
+                        Member="AddEditSaleOrder/Properties[SaleOrder]" />
+                      <MemberExpression
+                        Member="SaleOrderStatus" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+            </ContentItem>
+            <ContentItem
               Name="SaleOrderDetails"
               Kind="Group"
               View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
@@ -228,31 +254,42 @@
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                   <ContentItem
-                    Name="Product"
-                    Kind="Details"
-                    DataType="Product">
+                    Name="ProductCode"
+                    Kind="Value"
+                    DataType=":String">
                     <ContentItem.Attributes>
                       <DisplayName
-                        Value="สินค้า" />
+                        Value="รหัสสินค้า" />
                     </ContentItem.Attributes>
                     <ContentItem.DataSource>
                       <ScreenExpressionTree>
                         <ChainExpression>
                           <MemberExpression
                             Member="SaleOrderDetail/Properties[Product]" />
+                          <MemberExpression
+                            Member="ProductCode" />
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ContentItem.DataSource>
-                    <ContentItem
-                      Name="RowTemplate2"
-                      Kind="Details"
-                      DataType="Product">
-                      <ContentItem.DataSource>
-                        <ScreenExpressionTree>
-                          <ChainExpression />
-                        </ScreenExpressionTree>
-                      </ContentItem.DataSource>
-                    </ContentItem>
+                  </ContentItem>
+                  <ContentItem
+                    Name="ProductName"
+                    Kind="Value"
+                    DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="ชื่อสินค้า" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="SaleOrderDetail/Properties[Product]" />
+                          <MemberExpression
+                            Member="ProductName" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
                   </ContentItem>
                   <ContentItem
                     Name="LotNo"
@@ -272,9 +309,9 @@
                     </ContentItem.DataSource>
                   </ContentItem>
                   <ContentItem
-                    Name="Location"
-                    Kind="Details"
-                    DataType="Location">
+                    Name="LocationName"
+                    Kind="Value"
+                    DataType=":String">
                     <ContentItem.Attributes>
                       <DisplayName
                         Value="สถานที่จัดเก็บ" />
@@ -284,19 +321,11 @@
                         <ChainExpression>
                           <MemberExpression
                             Member="SaleOrderDetail/Properties[Location]" />
+                          <MemberExpression
+                            Member="LocationName" />
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ContentItem.DataSource>
-                    <ContentItem
-                      Name="RowTemplate3"
-                      Kind="Details"
-                      DataType="Location">
-                      <ContentItem.DataSource>
-                        <ScreenExpressionTree>
-                          <ChainExpression />
-                        </ScreenExpressionTree>
-                      </ContentItem.DataSource>
-                    </ContentItem>
                   </ContentItem>
                   <ContentItem
                     Name="OrderQuantity"
@@ -316,6 +345,27 @@
                     </ContentItem.DataSource>
                   </ContentItem>
                   <ContentItem
+                    Name="UOMName"
+                    Kind="Value"
+                    DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="หน่วย" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="SaleOrderDetail/Properties[Product]" />
+                          <MemberExpression
+                            Member="UnitOfMeasure" />
+                          <MemberExpression
+                            Member="UOMName" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
                     Name="SalePrice"
                     Kind="Value"
                     DataType="Microsoft.LightSwitch.Extensions:Money"
@@ -329,6 +379,37 @@
                         <ChainExpression>
                           <MemberExpression
                             Member="SaleOrderDetail/Properties[SalePrice]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="RequisitionFlag"
+                    IsHidden="True"
+                    Kind="Value"
+                    DataType=":Boolean?">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="SaleOrderDetail/Properties[RequisitionFlag]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="SaleOrderDetailRequisitionFlagDescription"
+                    Kind="Value"
+                    DataType=":String?">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="สถานะการจัดส่งสินค้า" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="AddEditSaleOrder/Properties[SaleOrderDetailRequisitionFlagDescription]" />
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ContentItem.DataSource>
@@ -363,45 +444,13 @@
             </ContentItem>
             <ContentItem
               Name="Group"
+              IsHidden="True"
               Kind="Group"
               View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
               <ContentItem
                 Name="Group1"
                 Kind="Group"
-                View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
-                <ContentItem
-                  Name="Remarks"
-                  Kind="Value"
-                  DataType=":String?"
-                  View="Microsoft.LightSwitch.MobileWeb:TextArea">
-                  <ContentItem.Attributes>
-                    <DisplayName
-                      Value="หมายเหตุ" />
-                  </ContentItem.Attributes>
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="AddEditSaleOrder/Properties[SaleOrder]" />
-                        <MemberExpression
-                          Member="Remarks" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                  <ContentItem.PropertySources>
-                    <ControlPropertySource
-                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <ConstantExpression
-                            Value="LeftAligned"
-                            ResultType=":String" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ControlPropertySource>
-                  </ContentItem.PropertySources>
-                </ContentItem>
-              </ContentItem>
+                View="Microsoft.LightSwitch.MobileWeb:RowsLayout" />
               <ContentItem
                 Name="Group2"
                 Kind="Group"
@@ -831,6 +880,9 @@
           <Required />
         </ScreenProperty.Attributes>
       </ScreenProperty>
+      <ScreenProperty
+        Name="SaleOrderDetailRequisitionFlagDescription"
+        PropertyType=":String?" />
     </Screen.Properties>
   </Screen>
   <Application.Methods>

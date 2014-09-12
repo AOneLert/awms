@@ -56,6 +56,11 @@
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <NavigationProperty
+        Name="PickingSlips"
+        Association="PickingSlip_TransportRoute"
+        FromEnd="TransportRoute"
+        ToEnd="PickingSlip" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -209,6 +214,16 @@
         Name="TransportRoute"
         EntitySet="TransportRoutes" />
     </AssociationSet>
+    <AssociationSet
+      Name="PickingSlip_TransportRoutes"
+      Association="PickingSlip_TransportRoute">
+      <AssociationSetEnd
+        Name="PickingSlip"
+        EntitySet="PickingSlips" />
+      <AssociationSetEnd
+        Name="TransportRoute"
+        EntitySet="TransportRoutes" />
+    </AssociationSet>
   </EntityContainer>
   <Association
     Name="Customer_TransportRoute">
@@ -252,5 +267,42 @@
         </SsdlAssociationSetEnd>
       </AssociationSetMapping.Attributes>
     </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="PickingSlip_TransportRoutes">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="PickingSlip_TransportRoutes" />
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[PickingSlip_TransportRoutes]/Members[PickingSlip]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="PickingSlip_TransportRoute" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[PickingSlip_TransportRoutes]/Members[TransportRoute]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
   </DataService>
+  <Association
+    Name="PickingSlip_TransportRoute">
+    <AssociationEnd
+      Name="PickingSlip"
+      Multiplicity="Many"
+      EntityType="PickingSlip" />
+    <AssociationEnd
+      Name="TransportRoute"
+      Multiplicity="One"
+      EntityType="TransportRoute">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
 </ServiceApplication>

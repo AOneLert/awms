@@ -77,6 +77,7 @@
     <NavigationProperty Name="CustomerGroup" Relationship="LightSwitchApplication.Customer_CustomerGroup" ToRole="CustomerGroup" FromRole="Customer" />
     <NavigationProperty Name="TransportRoute" Relationship="LightSwitchApplication.Customer_TransportRoute" ToRole="TransportRoute" FromRole="Customer" />
     <NavigationProperty Name="SaleOrders" Relationship="LightSwitchApplication.SaleOrder_Customer" ToRole="SaleOrder" FromRole="Customer" />
+    <NavigationProperty Name="OrderRequisition" Relationship="LightSwitchApplication.OrderRequisition_Customer" ToRole="OrderRequisition" FromRole="Customer" />
   </EntityType>
   <EntityType Name="Location">
     <Key>
@@ -101,6 +102,8 @@
     <NavigationProperty Name="PurchaseOrderDetails" Relationship="LightSwitchApplication.PurchaseOrderDetail_Location" ToRole="PurchaseOrderDetail" FromRole="Location" />
     <NavigationProperty Name="WorkOrderIssueDetail" Relationship="LightSwitchApplication.WorkOrderIssueDetail_Location" ToRole="WorkOrderIssueDetail" FromRole="Location" />
     <NavigationProperty Name="WorkOrderProduces" Relationship="LightSwitchApplication.WorkOrderProduce_Location" ToRole="WorkOrderProduce" FromRole="Location" />
+    <NavigationProperty Name="ProductReceivePurchaseOrderDetails" Relationship="LightSwitchApplication.ProductReceivePurchaseOrderDet_Location" ToRole="ProductReceivePurchaseOrderDetail" FromRole="Location" />
+    <NavigationProperty Name="PickingSlipDetails" Relationship="LightSwitchApplication.PickingSlipDetail_Location" ToRole="PickingSlipDetail" FromRole="Location" />
   </EntityType>
   <EntityType Name="Machine">
     <Key>
@@ -115,6 +118,43 @@
     <Property Name="Modified" Type="Edm.DateTimeOffset" />
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
     <NavigationProperty Name="WorkOrders" Relationship="LightSwitchApplication.WorkOrder_Machine" ToRole="WorkOrder" FromRole="Machine" />
+  </EntityType>
+  <EntityType Name="OrderRequisitionDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RequisitionDetail_Requisition" Type="Edm.Int32" Nullable="false" />
+    <Property Name="RequisitionDetail_Product" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Edm.Double" Nullable="false" />
+    <Property Name="Status" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="DeliveredQuantity" Type="Edm.Double" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="OrderRequisition" Relationship="LightSwitchApplication.OrderRequisitionDetail_OrderRequisition" ToRole="OrderRequisition" FromRole="OrderRequisitionDetail" />
+    <NavigationProperty Name="Product" Relationship="LightSwitchApplication.OrderRequisitionDetail_Product" ToRole="Product" FromRole="OrderRequisitionDetail" />
+    <NavigationProperty Name="PickingSlipDetails" Relationship="LightSwitchApplication.PickingSlipDetail_OrderRequisitionDetail" ToRole="PickingSlipDetail" FromRole="OrderRequisitionDetail" />
+  </EntityType>
+  <EntityType Name="OrderRequisition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderRequisitionNo" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="OrderRequisitionDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="Remark" Type="Edm.String" MaxLength="255" />
+    <Property Name="Requisition_Customer" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Status" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Customer" Relationship="LightSwitchApplication.OrderRequisition_Customer" ToRole="Customer" FromRole="OrderRequisition" />
+    <NavigationProperty Name="OrderRequisitionDetail" Relationship="LightSwitchApplication.OrderRequisitionDetail_OrderRequisition" ToRole="OrderRequisitionDetail" FromRole="OrderRequisition" />
   </EntityType>
   <EntityType Name="Package">
     <Key>
@@ -141,6 +181,45 @@
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Modified" Type="Edm.DateTimeOffset" />
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="PickingSlipDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PickingSlipDetail_PickingSlip" Type="Edm.Int32" Nullable="false" />
+    <Property Name="PickingSlipDetail_OrderRequisitionDetail" Type="Edm.Int32" Nullable="false" />
+    <Property Name="LotNo" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="PickingSlipDetail_Location" Type="Edm.Int32" Nullable="false" />
+    <Property Name="PickingQuantity" Type="Edm.Double" Nullable="false" />
+    <Property Name="UnitPrice" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="PickingSlip" Relationship="LightSwitchApplication.PickingSlipDetail_PickingSlip" ToRole="PickingSlip" FromRole="PickingSlipDetail" />
+    <NavigationProperty Name="OrderRequisitionDetail" Relationship="LightSwitchApplication.PickingSlipDetail_OrderRequisitionDetail" ToRole="OrderRequisitionDetail" FromRole="PickingSlipDetail" />
+    <NavigationProperty Name="Location" Relationship="LightSwitchApplication.PickingSlipDetail_Location" ToRole="Location" FromRole="PickingSlipDetail" />
+  </EntityType>
+  <EntityType Name="PickingSlip">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PickingNo" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="PickingDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="PickingSlip_TransportRoute" Type="Edm.Int32" Nullable="false" />
+    <Property Name="TotalWeight" Type="Edm.Double" Nullable="false" />
+    <Property Name="Status" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="Remark" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="TransportRoute" Relationship="LightSwitchApplication.PickingSlip_TransportRoute" ToRole="TransportRoute" FromRole="PickingSlip" />
+    <NavigationProperty Name="PickingSlipDetails" Relationship="LightSwitchApplication.PickingSlipDetail_PickingSlip" ToRole="PickingSlipDetail" FromRole="PickingSlip" />
   </EntityType>
   <EntityType Name="ProductCategory">
     <Key>
@@ -205,6 +284,41 @@
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
     <NavigationProperty Name="ProductReceiveBalanceForwardDetail" Relationship="LightSwitchApplication.ProductReceiveBalanceForwardDe_ProductReceiveBalanceForward" ToRole="ProductReceiveBalanceForwardDetail" FromRole="ProductReceiveBalanceForward" />
   </EntityType>
+  <EntityType Name="ProductReceivePurchaseOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReceiveNumber" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="ReceiveDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="ProductReceivePurchaseOrderDet_PurchaseOrderDetail" Type="Edm.Int32" Nullable="false" />
+    <Property Name="ProductReceivePurchaseOrderDet_Location" Type="Edm.Int32" Nullable="false" />
+    <Property Name="ReceiveQuantity" Type="Edm.Double" Nullable="false" />
+    <Property Name="ReceiveUnitCost" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="ReceiveTotalCost" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Remark" Type="Edm.String" MaxLength="255" />
+    <Property Name="ProductReceivePurchaseOrderDet_Product" Type="Edm.Int32" Nullable="false" />
+    <Property Name="LotNo" Type="Edm.String" MaxLength="255" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="PurchaseOrderDetail" Relationship="LightSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail" ToRole="PurchaseOrderDetail" FromRole="ProductReceivePurchaseOrderDetail" />
+    <NavigationProperty Name="Location" Relationship="LightSwitchApplication.ProductReceivePurchaseOrderDet_Location" ToRole="Location" FromRole="ProductReceivePurchaseOrderDetail" />
+    <NavigationProperty Name="Product" Relationship="LightSwitchApplication.ProductReceivePurchaseOrderDet_Product" ToRole="Product" FromRole="ProductReceivePurchaseOrderDetail" />
+  </EntityType>
+  <EntityType Name="ProductReceive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
   <EntityType Name="Product">
     <Key>
       <PropertyRef Name="Id" />
@@ -244,6 +358,8 @@
     <NavigationProperty Name="PurchaseOrderDetails" Relationship="LightSwitchApplication.PurchaseOrderDetail_Product" ToRole="PurchaseOrderDetail" FromRole="Product" />
     <NavigationProperty Name="WorkOrderIssueDetail" Relationship="LightSwitchApplication.WorkOrderIssueDetail_Product" ToRole="WorkOrderIssueDetail" FromRole="Product" />
     <NavigationProperty Name="WorkOrderProduces" Relationship="LightSwitchApplication.WorkOrderProduce_Product" ToRole="WorkOrderProduce" FromRole="Product" />
+    <NavigationProperty Name="ProductReceivePurchaseOrderDetails" Relationship="LightSwitchApplication.ProductReceivePurchaseOrderDet_Product" ToRole="ProductReceivePurchaseOrderDetail" FromRole="Product" />
+    <NavigationProperty Name="OrderRequisitionDetail" Relationship="LightSwitchApplication.OrderRequisitionDetail_Product" ToRole="OrderRequisitionDetail" FromRole="Product" />
   </EntityType>
   <EntityType Name="PurchaseOrderDetail">
     <Key>
@@ -272,6 +388,7 @@
     <NavigationProperty Name="Product" Relationship="LightSwitchApplication.PurchaseOrderDetail_Product" ToRole="Product" FromRole="PurchaseOrderDetail" />
     <NavigationProperty Name="Location" Relationship="LightSwitchApplication.PurchaseOrderDetail_Location" ToRole="Location" FromRole="PurchaseOrderDetail" />
     <NavigationProperty Name="PurchaseOrder" Relationship="LightSwitchApplication.PurchaseOrderDetail_PurchaseOrder" ToRole="PurchaseOrder" FromRole="PurchaseOrderDetail" />
+    <NavigationProperty Name="ProductReceivePurchaseOrderDetails" Relationship="LightSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail" ToRole="ProductReceivePurchaseOrderDetail" FromRole="PurchaseOrderDetail" />
   </EntityType>
   <EntityType Name="PurchaseOrder">
     <Key>
@@ -282,6 +399,7 @@
     <Property Name="PurchaseOrderDate" Type="Edm.DateTime" Nullable="false" />
     <Property Name="PurchaseOrderStatus" Type="Edm.Boolean" Nullable="false" />
     <Property Name="PurchaseOrder_Supplier" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Remark" Type="Edm.String" MaxLength="255" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
@@ -303,6 +421,7 @@
     <Property Name="MasterSalePrice" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="UnitCost" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="SalePrice" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="RequisitionFlag" Type="Edm.Boolean" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
@@ -317,7 +436,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="DocumentNo" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="SaleOrderNo" Type="Edm.String" Nullable="false" MaxLength="255" />
     <Property Name="SaleOrderDate" Type="Edm.DateTime" Nullable="false" />
     <Property Name="ReferenceNo" Type="Edm.String" MaxLength="255" />
     <Property Name="SaleOrder_Customer" Type="Edm.Int32" Nullable="false" />
@@ -425,6 +544,7 @@
     <Property Name="IsAvailableForSale" Type="Edm.Boolean" Nullable="false" />
     <Property Name="StockOnHand_Location" Type="Edm.Int32" Nullable="false" />
     <Property Name="StockOnHand_Product" Type="Edm.Int32" Nullable="false" />
+    <Property Name="ReservedQuantity" Type="Edm.Double" Nullable="false" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
@@ -543,6 +663,7 @@
     <Property Name="Modified" Type="Edm.DateTimeOffset" />
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
     <NavigationProperty Name="Customers" Relationship="LightSwitchApplication.Customer_TransportRoute" ToRole="Customer" FromRole="TransportRoute" />
+    <NavigationProperty Name="PickingSlips" Relationship="LightSwitchApplication.PickingSlip_TransportRoute" ToRole="PickingSlip" FromRole="TransportRoute" />
   </EntityType>
   <EntityType Name="UnitOfMeasure">
     <Key>
@@ -635,17 +756,6 @@
     <NavigationProperty Name="WorkOrderIssueDetails" Relationship="LightSwitchApplication.WorkOrderIssueDetail_WorkOrder" ToRole="WorkOrderIssueDetail" FromRole="WorkOrder" />
     <NavigationProperty Name="WorkOrderProduces" Relationship="LightSwitchApplication.WorkOrderProduce_WorkOrder" ToRole="WorkOrderProduce" FromRole="WorkOrder" />
   </EntityType>
-  <EntityType Name="Requisitions">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Created" Type="Edm.DateTimeOffset" />
-    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
-    <Property Name="Modified" Type="Edm.DateTimeOffset" />
-    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-  </EntityType>
   <Association Name="Customer_CustomerGroup">
     <End Role="CustomerGroup" Type="LightSwitchApplication.CustomerGroup" Multiplicity="1" />
     <End Role="Customer" Type="LightSwitchApplication.Customer" Multiplicity="*" />
@@ -667,6 +777,18 @@
       </Principal>
       <Dependent Role="SaleOrder">
         <PropertyRef Name="SaleOrder_Customer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderRequisition_Customer">
+    <End Role="Customer" Type="LightSwitchApplication.Customer" Multiplicity="1" />
+    <End Role="OrderRequisition" Type="LightSwitchApplication.OrderRequisition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderRequisition">
+        <PropertyRef Name="Requisition_Customer" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -766,6 +888,30 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="ProductReceivePurchaseOrderDet_Location">
+    <End Role="Location" Type="LightSwitchApplication.Location" Multiplicity="1" />
+    <End Role="ProductReceivePurchaseOrderDetail" Type="LightSwitchApplication.ProductReceivePurchaseOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductReceivePurchaseOrderDetail">
+        <PropertyRef Name="ProductReceivePurchaseOrderDet_Location" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PickingSlipDetail_Location">
+    <End Role="Location" Type="LightSwitchApplication.Location" Multiplicity="1" />
+    <End Role="PickingSlipDetail" Type="LightSwitchApplication.PickingSlipDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PickingSlipDetail">
+        <PropertyRef Name="PickingSlipDetail_Location" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="WorkOrder_Machine">
     <End Role="Machine" Type="LightSwitchApplication.Machine" Multiplicity="1" />
     <End Role="WorkOrder" Type="LightSwitchApplication.WorkOrder" Multiplicity="*" />
@@ -775,6 +921,42 @@
       </Principal>
       <Dependent Role="WorkOrder">
         <PropertyRef Name="WorkOrder_Machine" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PickingSlipDetail_OrderRequisitionDetail">
+    <End Role="OrderRequisitionDetail" Type="LightSwitchApplication.OrderRequisitionDetail" Multiplicity="1" />
+    <End Role="PickingSlipDetail" Type="LightSwitchApplication.PickingSlipDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderRequisitionDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PickingSlipDetail">
+        <PropertyRef Name="PickingSlipDetail_OrderRequisitionDetail" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderRequisitionDetail_OrderRequisition">
+    <End Role="OrderRequisition" Type="LightSwitchApplication.OrderRequisition" Multiplicity="1" />
+    <End Role="OrderRequisitionDetail" Type="LightSwitchApplication.OrderRequisitionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderRequisition">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderRequisitionDetail">
+        <PropertyRef Name="RequisitionDetail_Requisition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PickingSlipDetail_PickingSlip">
+    <End Role="PickingSlip" Type="LightSwitchApplication.PickingSlip" Multiplicity="1" />
+    <End Role="PickingSlipDetail" Type="LightSwitchApplication.PickingSlipDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PickingSlip">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PickingSlipDetail">
+        <PropertyRef Name="PickingSlipDetail_PickingSlip" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -898,6 +1080,42 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="ProductReceivePurchaseOrderDet_Product">
+    <End Role="Product" Type="LightSwitchApplication.Product" Multiplicity="1" />
+    <End Role="ProductReceivePurchaseOrderDetail" Type="LightSwitchApplication.ProductReceivePurchaseOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductReceivePurchaseOrderDetail">
+        <PropertyRef Name="ProductReceivePurchaseOrderDet_Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderRequisitionDetail_Product">
+    <End Role="Product" Type="LightSwitchApplication.Product" Multiplicity="1" />
+    <End Role="OrderRequisitionDetail" Type="LightSwitchApplication.OrderRequisitionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderRequisitionDetail">
+        <PropertyRef Name="RequisitionDetail_Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductReceivePurchaseOrderDet_PurchaseOrderDetail">
+    <End Role="PurchaseOrderDetail" Type="LightSwitchApplication.PurchaseOrderDetail" Multiplicity="1" />
+    <End Role="ProductReceivePurchaseOrderDetail" Type="LightSwitchApplication.ProductReceivePurchaseOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrderDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductReceivePurchaseOrderDetail">
+        <PropertyRef Name="ProductReceivePurchaseOrderDet_PurchaseOrderDetail" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="PurchaseOrderDetail_PurchaseOrder">
     <End Role="PurchaseOrder" Type="LightSwitchApplication.PurchaseOrder" Multiplicity="1" />
     <End Role="PurchaseOrderDetail" Type="LightSwitchApplication.PurchaseOrderDetail" Multiplicity="*" />
@@ -984,6 +1202,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="PickingSlip_TransportRoute">
+    <End Role="TransportRoute" Type="LightSwitchApplication.TransportRoute" Multiplicity="1" />
+    <End Role="PickingSlip" Type="LightSwitchApplication.PickingSlip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TransportRoute">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PickingSlip">
+        <PropertyRef Name="PickingSlip_TransportRoute" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="Product_UnitOfMeasure">
     <End Role="UnitOfMeasure" Type="LightSwitchApplication.UnitOfMeasure" Multiplicity="1" />
     <End Role="Product" Type="LightSwitchApplication.Product" Multiplicity="*" />
@@ -1027,12 +1257,18 @@
     <EntitySet Name="Customers" EntityType="LightSwitchApplication.Customer" />
     <EntitySet Name="Locations" EntityType="LightSwitchApplication.Location" />
     <EntitySet Name="Machines" EntityType="LightSwitchApplication.Machine" />
+    <EntitySet Name="OrderRequisitionDetails" EntityType="LightSwitchApplication.OrderRequisitionDetail" />
+    <EntitySet Name="OrderRequisitions" EntityType="LightSwitchApplication.OrderRequisition" />
     <EntitySet Name="Packages" EntityType="LightSwitchApplication.Package" />
     <EntitySet Name="PaymentTypes" EntityType="LightSwitchApplication.PaymentType" />
+    <EntitySet Name="PickingSlipDetails" EntityType="LightSwitchApplication.PickingSlipDetail" />
+    <EntitySet Name="PickingSlips" EntityType="LightSwitchApplication.PickingSlip" />
     <EntitySet Name="ProductCategories" EntityType="LightSwitchApplication.ProductCategory" />
     <EntitySet Name="ProductGroups" EntityType="LightSwitchApplication.ProductGroup" />
     <EntitySet Name="ProductReceiveBalanceForwardDetails" EntityType="LightSwitchApplication.ProductReceiveBalanceForwardDetail" />
     <EntitySet Name="ProductReceiveBalanceForwards" EntityType="LightSwitchApplication.ProductReceiveBalanceForward" />
+    <EntitySet Name="ProductReceivePurchaseOrderDetails" EntityType="LightSwitchApplication.ProductReceivePurchaseOrderDetail" />
+    <EntitySet Name="ProductReceives" EntityType="LightSwitchApplication.ProductReceive" />
     <EntitySet Name="Products" EntityType="LightSwitchApplication.Product" />
     <EntitySet Name="PurchaseOrderDetails" EntityType="LightSwitchApplication.PurchaseOrderDetail" />
     <EntitySet Name="PurchaseOrders" EntityType="LightSwitchApplication.PurchaseOrder" />
@@ -1055,7 +1291,6 @@
     <EntitySet Name="WorkOrderIssueDetails" EntityType="LightSwitchApplication.WorkOrderIssueDetail" />
     <EntitySet Name="WorkOrderProduces" EntityType="LightSwitchApplication.WorkOrderProduce" />
     <EntitySet Name="WorkOrders" EntityType="LightSwitchApplication.WorkOrder" />
-    <EntitySet Name="RequisitionsSet" EntityType="LightSwitchApplication.Requisitions" />
     <AssociationSet Name="Customer_CustomerGroup" Association="LightSwitchApplication.Customer_CustomerGroup">
       <End Role="CustomerGroup" EntitySet="CustomerGroups" />
       <End Role="Customer" EntitySet="Customers" />
@@ -1063,6 +1298,10 @@
     <AssociationSet Name="SaleOrder_Customer" Association="LightSwitchApplication.SaleOrder_Customer">
       <End Role="Customer" EntitySet="Customers" />
       <End Role="SaleOrder" EntitySet="SaleOrders" />
+    </AssociationSet>
+    <AssociationSet Name="OrderRequisition_Customer" Association="LightSwitchApplication.OrderRequisition_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="OrderRequisition" EntitySet="OrderRequisitions" />
     </AssociationSet>
     <AssociationSet Name="Product_Location" Association="LightSwitchApplication.Product_Location">
       <End Role="Location" EntitySet="Locations" />
@@ -1096,9 +1335,29 @@
       <End Role="Location" EntitySet="Locations" />
       <End Role="WorkOrderProduce" EntitySet="WorkOrderProduces" />
     </AssociationSet>
+    <AssociationSet Name="ProductReceivePurchaseOrderDet_Location" Association="LightSwitchApplication.ProductReceivePurchaseOrderDet_Location">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="ProductReceivePurchaseOrderDetail" EntitySet="ProductReceivePurchaseOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="PickingSlipDetail_Location" Association="LightSwitchApplication.PickingSlipDetail_Location">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="PickingSlipDetail" EntitySet="PickingSlipDetails" />
+    </AssociationSet>
     <AssociationSet Name="WorkOrder_Machine" Association="LightSwitchApplication.WorkOrder_Machine">
       <End Role="Machine" EntitySet="Machines" />
       <End Role="WorkOrder" EntitySet="WorkOrders" />
+    </AssociationSet>
+    <AssociationSet Name="PickingSlipDetail_OrderRequisitionDetail" Association="LightSwitchApplication.PickingSlipDetail_OrderRequisitionDetail">
+      <End Role="OrderRequisitionDetail" EntitySet="OrderRequisitionDetails" />
+      <End Role="PickingSlipDetail" EntitySet="PickingSlipDetails" />
+    </AssociationSet>
+    <AssociationSet Name="OrderRequisitionDetail_OrderRequisition" Association="LightSwitchApplication.OrderRequisitionDetail_OrderRequisition">
+      <End Role="OrderRequisition" EntitySet="OrderRequisitions" />
+      <End Role="OrderRequisitionDetail" EntitySet="OrderRequisitionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="PickingSlipDetail_PickingSlip" Association="LightSwitchApplication.PickingSlipDetail_PickingSlip">
+      <End Role="PickingSlip" EntitySet="PickingSlips" />
+      <End Role="PickingSlipDetail" EntitySet="PickingSlipDetails" />
     </AssociationSet>
     <AssociationSet Name="ProductCategory_Product" Association="LightSwitchApplication.ProductCategory_Product">
       <End Role="ProductCategory" EntitySet="ProductCategories" />
@@ -1140,6 +1399,18 @@
       <End Role="Product" EntitySet="Products" />
       <End Role="WorkOrderProduce" EntitySet="WorkOrderProduces" />
     </AssociationSet>
+    <AssociationSet Name="ProductReceivePurchaseOrderDet_Product" Association="LightSwitchApplication.ProductReceivePurchaseOrderDet_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductReceivePurchaseOrderDetail" EntitySet="ProductReceivePurchaseOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="OrderRequisitionDetail_Product" Association="LightSwitchApplication.OrderRequisitionDetail_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="OrderRequisitionDetail" EntitySet="OrderRequisitionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="ProductReceivePurchaseOrderDet_PurchaseOrderDetail" Association="LightSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail">
+      <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
+      <End Role="ProductReceivePurchaseOrderDetail" EntitySet="ProductReceivePurchaseOrderDetails" />
+    </AssociationSet>
     <AssociationSet Name="PurchaseOrderDetail_PurchaseOrder" Association="LightSwitchApplication.PurchaseOrderDetail_PurchaseOrder">
       <End Role="PurchaseOrder" EntitySet="PurchaseOrders" />
       <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
@@ -1167,6 +1438,10 @@
     <AssociationSet Name="Customer_TransportRoute" Association="LightSwitchApplication.Customer_TransportRoute">
       <End Role="TransportRoute" EntitySet="TransportRoutes" />
       <End Role="Customer" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="PickingSlip_TransportRoute" Association="LightSwitchApplication.PickingSlip_TransportRoute">
+      <End Role="TransportRoute" EntitySet="TransportRoutes" />
+      <End Role="PickingSlip" EntitySet="PickingSlips" />
     </AssociationSet>
     <AssociationSet Name="Product_UnitOfMeasure" Association="LightSwitchApplication.Product_UnitOfMeasure">
       <End Role="UnitOfMeasure" EntitySet="UnitOfMeasures" />

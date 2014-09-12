@@ -28,73 +28,6 @@
                 Value="ระบบงาน" />
             </ContentItem.Attributes>
             <ContentItem
-              Name="ManageProducts"
-              IsHidden="True"
-              Kind="Command">
-              <ContentItem.PropertySources>
-                <ControlPropertySource
-                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <CallExpression
-                        Target="!module/Methods[showBrowseProducts]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ControlPropertySource>
-              </ContentItem.PropertySources>
-            </ContentItem>
-            <ContentItem
-              Name="ManageOrders"
-              IsHidden="True"
-              Kind="Command">
-              <ContentItem.Attributes>
-                <DisplayName
-                  Value="Manage Orders" />
-              </ContentItem.Attributes>
-              <ContentItem.PropertySources>
-                <ControlPropertySource
-                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <CallExpression
-                        Target="!module/Methods[showBrowseOrders]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ControlPropertySource>
-              </ContentItem.PropertySources>
-            </ContentItem>
-            <ContentItem
-              Name="StockCheck"
-              IsHidden="True"
-              Kind="Command" />
-            <ContentItem
-              Name="ManageAccounting"
-              IsHidden="True"
-              Kind="Command">
-              <ContentItem.Attributes>
-                <DisplayName
-                  Value="Accounting" />
-              </ContentItem.Attributes>
-              <ContentItem.PropertySources>
-                <ControlPropertySource
-                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <CallExpression
-                        Target="Home/Methods[showTab]">
-                        <ArgumentExpression
-                          Parameter="tabName">
-                          <ConstantExpression
-                            Value="Group"
-                            ResultType=":String" />
-                        </ArgumentExpression>
-                      </CallExpression>
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ControlPropertySource>
-              </ContentItem.PropertySources>
-            </ContentItem>
-            <ContentItem
               Name="ManageReports"
               IsHidden="True"
               Kind="Command">
@@ -126,7 +59,7 @@
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="ซื้อสินค้า" />
+                  Value="งานจัดซื้อสินค้า" />
               </ContentItem.Attributes>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -161,11 +94,11 @@
               </ContentItem.PropertySources>
             </ContentItem>
             <ContentItem
-              Name="ManageReceiveProduct"
+              Name="ShowBrowseInventoryTasks"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="สินค้ายอดยกมา" />
+                  Value="งานสินค้าคงคลัง" />
               </ContentItem.Attributes>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -173,18 +106,18 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showBrowseProductReceiveBalanceForwards]" />
+                        Target="!module/Methods[showBrowseInventoryTasks]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>
               </ContentItem.PropertySources>
             </ContentItem>
             <ContentItem
-              Name="ShowBrowseWorkOrders"
+              Name="ShowBrowseProductionTasks"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="ผลิตสินค้า" />
+                  Value="งานผลิตสินค้า" />
               </ContentItem.Attributes>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -199,12 +132,11 @@
               </ContentItem.PropertySources>
             </ContentItem>
             <ContentItem
-              Name="ShowBrowseWorkOrderIsNotReceive"
-              IsHidden="True"
+              Name="ShowBrowseSaleOrderTasks"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
-                  Value="รับสินค้าจากการผลิต" />
+                  Value="งานขายสินค้า" />
               </ContentItem.Attributes>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -212,7 +144,26 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showBrowseWorkOrderIsNotReceive]" />
+                        Target="!module/Methods[showBrowseSaleOrderTasks]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
+            </ContentItem>
+            <ContentItem
+              Name="ShowBrowseAccountingTasks"
+              Kind="Command">
+              <ContentItem.Attributes>
+                <DisplayName
+                  Value="งานบัญชี" />
+              </ContentItem.Attributes>
+              <ContentItem.PropertySources>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <CallExpression
+                        Target="!module/Methods[showBrowseAccountingTasks]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>
@@ -220,6 +171,7 @@
             </ContentItem>
             <ContentItem
               Name="ShowBrowseProductPricings"
+              IsHidden="True"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
@@ -259,6 +211,7 @@
             </ContentItem>
             <ContentItem
               Name="ShowBrowseStockTransfers"
+              IsHidden="True"
               Kind="Command">
               <ContentItem.Attributes>
                 <DisplayName
@@ -271,25 +224,6 @@
                     <ChainExpression>
                       <CallExpression
                         Target="!module/Methods[showBrowseStockTransfers]" />
-                    </ChainExpression>
-                  </ScreenExpressionTree>
-                </ControlPropertySource>
-              </ContentItem.PropertySources>
-            </ContentItem>
-            <ContentItem
-              Name="ShowBrowseSaleOrder"
-              Kind="Command">
-              <ContentItem.Attributes>
-                <DisplayName
-                  Value="ขายสินค้า" />
-              </ContentItem.Attributes>
-              <ContentItem.PropertySources>
-                <ControlPropertySource
-                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
-                  <ScreenExpressionTree>
-                    <ChainExpression>
-                      <CallExpression
-                        Target="!module/Methods[showBrowseSaleOrderTasks]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>

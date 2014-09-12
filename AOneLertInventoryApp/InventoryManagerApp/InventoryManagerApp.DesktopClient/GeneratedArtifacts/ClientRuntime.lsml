@@ -365,6 +365,16 @@
         Association="WorkOrderProduce_Product"
         FromEnd="Product"
         ToEnd="WorkOrderProduce" />
+      <NavigationProperty
+        Name="ProductReceivePurchaseOrderDetails"
+        Association="ProductReceivePurchaseOrderDet_Product"
+        FromEnd="Product"
+        ToEnd="ProductReceivePurchaseOrderDetail" />
+      <NavigationProperty
+        Name="OrderRequisitionDetail"
+        Association="OrderRequisitionDetail_Product"
+        FromEnd="Product"
+        ToEnd="OrderRequisitionDetail" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -578,6 +588,11 @@
         Association="SaleOrder_Customer"
         FromEnd="Customer"
         ToEnd="SaleOrder" />
+      <NavigationProperty
+        Name="OrderRequisition"
+        Association="OrderRequisition_Customer"
+        FromEnd="Customer"
+        ToEnd="OrderRequisition" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -1532,6 +1547,16 @@
         Name="Location"
         EntitySet="Locations" />
     </AssociationSet>
+    <AssociationSet
+      Name="ProductReceivePurchaseOrderDet_Locations"
+      Association="ProductReceivePurchaseOrderDet_Location">
+      <AssociationSetEnd
+        Name="ProductReceivePurchaseOrderDetail"
+        EntitySet="ProductReceivePurchaseOrderDetails" />
+      <AssociationSetEnd
+        Name="Location"
+        EntitySet="Locations" />
+    </AssociationSet>
     <QueryOperation
       Name="LocationActiveQuery"
       ReturnType="Location*">
@@ -2055,6 +2080,120 @@
       </QueryOperation.Source>
     </QueryOperation>
     <EntitySet
+      Name="ProductReceivePurchaseOrderDetails"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="ProductReceivePurchaseOrderDetail" />
+    <QueryOperation
+      Name="ProductReceivePurchaseOrderDetails_Single"
+      ReturnType="ProductReceivePurchaseOrderDetail">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ProductReceivePurchaseOrderDetails" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="ProductReceivePurchaseOrderDetails_SingleOrDefault"
+      ReturnType="ProductReceivePurchaseOrderDetail">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ProductReceivePurchaseOrderDetails" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="QueryMaxReceivePONumber"
+      ReturnType="ProductReceivePurchaseOrderDetail*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ProductReceivePurchaseOrderDetails" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+    </QueryOperation>
+    <EntitySet
+      Name="ProductReceives"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="ProductReceive" />
+    <QueryOperation
+      Name="ProductReceives_Single"
+      ReturnType="ProductReceive">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ProductReceives" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="ProductReceives_SingleOrDefault"
+      ReturnType="ProductReceive">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="ProductReceives" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <EntitySet
       Name="Products"
       CanDelete="True"
       CanInsert="True"
@@ -2176,6 +2315,16 @@
         Name="Product"
         EntitySet="Products" />
     </AssociationSet>
+    <AssociationSet
+      Name="ProductReceivePurchaseOrderDet_Products"
+      Association="ProductReceivePurchaseOrderDet_Product">
+      <AssociationSetEnd
+        Name="ProductReceivePurchaseOrderDetail"
+        EntitySet="ProductReceivePurchaseOrderDetails" />
+      <AssociationSetEnd
+        Name="Product"
+        EntitySet="Products" />
+    </AssociationSet>
     <QueryOperation
       Name="ProductsActiveQuery"
       ReturnType="Product*">
@@ -2262,6 +2411,16 @@
         </QueryOperationParameter.Attributes>
       </QueryOperationParameter>
     </QueryOperation>
+    <AssociationSet
+      Name="ProductReceivePurchaseOrderDet_PurchaseOrderDetails"
+      Association="ProductReceivePurchaseOrderDet_PurchaseOrderDetail">
+      <AssociationSetEnd
+        Name="ProductReceivePurchaseOrderDetail"
+        EntitySet="ProductReceivePurchaseOrderDetails" />
+      <AssociationSetEnd
+        Name="PurchaseOrderDetail"
+        EntitySet="PurchaseOrderDetails" />
+    </AssociationSet>
     <QueryOperation
       Name="PurchaseOrderDetailByPOId"
       ReturnType="PurchaseOrderDetail*">
@@ -2354,6 +2513,32 @@
         EntitySet="PurchaseOrders" />
     </AssociationSet>
     <QueryOperation
+      Name="PurchaseOrderClosed"
+      ReturnType="PurchaseOrder*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="PurchaseOrders" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperation.SortCriteria>
+        <SortCriterion
+          Direction="Descending">
+          <ChainExpression>
+            <MemberExpression
+              Member="PurchaseOrderDate" />
+          </ChainExpression>
+        </SortCriterion>
+        <SortCriterion
+          Direction="Descending">
+          <ChainExpression>
+            <MemberExpression
+              Member="PurchaseOrderNumber" />
+          </ChainExpression>
+        </SortCriterion>
+      </QueryOperation.SortCriteria>
+    </QueryOperation>
+    <QueryOperation
       Name="PurchaseOrderNotClose"
       ReturnType="PurchaseOrder*">
       <QueryOperation.Source>
@@ -2363,13 +2548,15 @@
         </QuerySourceExpressionTree>
       </QueryOperation.Source>
       <QueryOperation.SortCriteria>
-        <SortCriterion>
+        <SortCriterion
+          Direction="Descending">
           <ChainExpression>
             <MemberExpression
               Member="PurchaseOrderDate" />
           </ChainExpression>
         </SortCriterion>
-        <SortCriterion>
+        <SortCriterion
+          Direction="Descending">
           <ChainExpression>
             <MemberExpression
               Member="PurchaseOrderNumber" />
@@ -2386,6 +2573,58 @@
             Member="PurchaseOrders" />
         </QuerySourceExpressionTree>
       </QueryOperation.Source>
+    </QueryOperation>
+    <EntitySet
+      Name="OrderRequisitions"
+      CanDelete="True"
+      CanInsert="True"
+      CanUpdate="True"
+      EntityType="OrderRequisition" />
+    <QueryOperation
+      Name="OrderRequisitions_Single"
+      ReturnType="OrderRequisition">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s)." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
+    </QueryOperation>
+    <QueryOperation
+      Name="OrderRequisitions_SingleOrDefault"
+      ReturnType="OrderRequisition">
+      <QueryOperation.Attributes>
+        <Generated />
+        <Description
+          Value="Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists." />
+      </QueryOperation.Attributes>
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Id"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <Description
+            Value="The value of the 'Id' key property of the entity to retrieve." />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
     </QueryOperation>
     <EntitySet
       Name="SaleOrderDetails"
@@ -3613,15 +3852,25 @@
         </SortCriterion>
       </QueryOperation.SortCriteria>
     </QueryOperation>
+    <AssociationSet
+      Name="OrderRequisition_Customers"
+      Association="OrderRequisition_Customer">
+      <AssociationSetEnd
+        Name="OrderRequisition"
+        EntitySet="OrderRequisitions" />
+      <AssociationSetEnd
+        Name="Customer"
+        EntitySet="Customers" />
+    </AssociationSet>
     <EntitySet
-      Name="RequisitionsSet"
+      Name="OrderRequisitionDetails"
       CanDelete="True"
       CanInsert="True"
       CanUpdate="True"
-      EntityType="Requisitions" />
+      EntityType="OrderRequisitionDetail" />
     <QueryOperation
-      Name="RequisitionsSet_Single"
-      ReturnType="Requisitions">
+      Name="OrderRequisitionDetails_Single"
+      ReturnType="OrderRequisitionDetail">
       <QueryOperation.Attributes>
         <Generated />
         <Description
@@ -3630,7 +3879,7 @@
       <QueryOperation.Source>
         <QuerySourceExpressionTree>
           <MemberExpression
-            Member="RequisitionsSet" />
+            Member="OrderRequisitionDetails" />
         </QuerySourceExpressionTree>
       </QueryOperation.Source>
       <QueryOperationParameter
@@ -3643,8 +3892,8 @@
       </QueryOperationParameter>
     </QueryOperation>
     <QueryOperation
-      Name="RequisitionsSet_SingleOrDefault"
-      ReturnType="Requisitions">
+      Name="OrderRequisitionDetails_SingleOrDefault"
+      ReturnType="OrderRequisitionDetail">
       <QueryOperation.Attributes>
         <Generated />
         <Description
@@ -3653,7 +3902,7 @@
       <QueryOperation.Source>
         <QuerySourceExpressionTree>
           <MemberExpression
-            Member="RequisitionsSet" />
+            Member="OrderRequisitionDetails" />
         </QuerySourceExpressionTree>
       </QueryOperation.Source>
       <QueryOperationParameter
@@ -3664,6 +3913,46 @@
             Value="The value of the 'Id' key property of the entity to retrieve." />
         </QueryOperationParameter.Attributes>
       </QueryOperationParameter>
+    </QueryOperation>
+    <AssociationSet
+      Name="OrderRequisitionDetail_OrderRequisitions"
+      Association="OrderRequisitionDetail_OrderRequisition">
+      <AssociationSetEnd
+        Name="OrderRequisitionDetail"
+        EntitySet="OrderRequisitionDetails" />
+      <AssociationSetEnd
+        Name="OrderRequisition"
+        EntitySet="OrderRequisitions" />
+    </AssociationSet>
+    <AssociationSet
+      Name="OrderRequisitionDetail_Products"
+      Association="OrderRequisitionDetail_Product">
+      <AssociationSetEnd
+        Name="OrderRequisitionDetail"
+        EntitySet="OrderRequisitionDetails" />
+      <AssociationSetEnd
+        Name="Product"
+        EntitySet="Products" />
+    </AssociationSet>
+    <QueryOperation
+      Name="QueryOrderRequisitionTransportRoute"
+      ReturnType="OrderRequisition*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+    </QueryOperation>
+    <QueryOperation
+      Name="GetMaxOrderRequisitionNo"
+      ReturnType="OrderRequisition*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitions" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
     </QueryOperation>
   </EntityContainer>
   <Association
@@ -3801,6 +4090,11 @@
         Association="WorkOrderProduce_Location"
         FromEnd="Location"
         ToEnd="WorkOrderProduce" />
+      <NavigationProperty
+        Name="ProductReceivePurchaseOrderDetails"
+        Association="ProductReceivePurchaseOrderDet_Location"
+        FromEnd="Location"
+        ToEnd="ProductReceivePurchaseOrderDetail" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -5299,6 +5593,14 @@
         FromEnd="StockOnHand"
         ToEnd="Product" />
       <EntityProperty
+        Name="ReservedQuantity"
+        PropertyType=":Double">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
         PropertyType=":Person?">
@@ -6154,6 +6456,13 @@
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
+        Name="RequisitionFlag"
+        PropertyType=":Boolean?">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
         PropertyType=":Person?">
@@ -6310,6 +6619,14 @@
         Association="PurchaseOrderDetail_PurchaseOrder"
         FromEnd="PurchaseOrder"
         ToEnd="PurchaseOrderDetail" />
+      <EntityProperty
+        Name="Remark"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -6510,6 +6827,11 @@
         Association="PurchaseOrderDetail_PurchaseOrder"
         FromEnd="PurchaseOrderDetail"
         ToEnd="PurchaseOrder" />
+      <NavigationProperty
+        Name="ProductReceivePurchaseOrderDetails"
+        Association="ProductReceivePurchaseOrderDet_PurchaseOrderDetail"
+        FromEnd="PurchaseOrderDetail"
+        ToEnd="ProductReceivePurchaseOrderDetail" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -7387,7 +7709,124 @@
     </EntityType.Properties>
   </EntityType>
   <EntityType
-    Name="Requisitions">
+    Name="OrderRequisition">
+    <EntityType.Attributes>
+      <CreatedModifiedPropertiesEnabled />
+    </EntityType.Attributes>
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="Id"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="OrderRequisitionNo"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="OrderRequisitionDate"
+        PropertyType=":Date">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Remark"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="Customer"
+        Association="OrderRequisition_Customer"
+        FromEnd="OrderRequisition"
+        ToEnd="Customer" />
+      <EntityProperty
+        Name="Status"
+        PropertyType=":Boolean">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="OrderRequisitionDetail"
+        Association="OrderRequisitionDetail_OrderRequisition"
+        FromEnd="OrderRequisition"
+        ToEnd="OrderRequisitionDetail" />
+      <EntityProperty
+        Name="CreatedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Created"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ModifiedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Modified"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        PropertyType=":RowVersion">
+        <EntityProperty.Attributes>
+          <UseForConcurrency />
+          <Generated />
+          <Hidden />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <EntityType
+    Name="ProductReceive">
     <EntityType.Attributes>
       <CreatedModifiedPropertiesEnabled />
     </EntityType.Attributes>
@@ -7460,6 +7899,362 @@
       </EntityProperty>
     </EntityType.Properties>
   </EntityType>
+  <EntityType
+    Name="ProductReceivePurchaseOrderDetail">
+    <EntityType.Attributes>
+      <CreatedModifiedPropertiesEnabled />
+    </EntityType.Attributes>
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="Id"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <EntityProperty
+        Name="ReceiveNumber"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ReceiveDate"
+        PropertyType=":Date">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="PurchaseOrderDetail"
+        Association="ProductReceivePurchaseOrderDet_PurchaseOrderDetail"
+        FromEnd="ProductReceivePurchaseOrderDetail"
+        ToEnd="PurchaseOrderDetail" />
+      <NavigationProperty
+        Name="Location"
+        Association="ProductReceivePurchaseOrderDet_Location"
+        FromEnd="ProductReceivePurchaseOrderDetail"
+        ToEnd="Location" />
+      <EntityProperty
+        Name="ReceiveQuantity"
+        PropertyType=":Double">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ReceiveUnitCost"
+        PropertyType="Microsoft.LightSwitch.Extensions:Money">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+          <DecimalConstraint
+            Precision="18"
+            Scale="2" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ReceiveTotalCost"
+        PropertyType="Microsoft.LightSwitch.Extensions:Money">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+          <DecimalConstraint
+            Precision="18"
+            Scale="2" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Remark"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="Product"
+        Association="ProductReceivePurchaseOrderDet_Product"
+        FromEnd="ProductReceivePurchaseOrderDetail"
+        ToEnd="Product" />
+      <EntityProperty
+        Name="LotNo"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CreatedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Created"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ModifiedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Modified"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        PropertyType=":RowVersion">
+        <EntityProperty.Attributes>
+          <UseForConcurrency />
+          <Generated />
+          <Hidden />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <Association
+    Name="ProductReceivePurchaseOrderDet_PurchaseOrderDetail">
+    <AssociationEnd
+      Name="ProductReceivePurchaseOrderDetail"
+      Multiplicity="Many"
+      EntityType="ProductReceivePurchaseOrderDetail" />
+    <AssociationEnd
+      Name="PurchaseOrderDetail"
+      Multiplicity="One"
+      EntityType="PurchaseOrderDetail">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="ProductReceivePurchaseOrderDet_Location">
+    <AssociationEnd
+      Name="ProductReceivePurchaseOrderDetail"
+      Multiplicity="Many"
+      EntityType="ProductReceivePurchaseOrderDetail" />
+    <AssociationEnd
+      Name="Location"
+      Multiplicity="One"
+      EntityType="Location">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="ProductReceivePurchaseOrderDet_Product">
+    <AssociationEnd
+      Name="ProductReceivePurchaseOrderDetail"
+      Multiplicity="Many"
+      EntityType="ProductReceivePurchaseOrderDetail" />
+    <AssociationEnd
+      Name="Product"
+      Multiplicity="One"
+      EntityType="Product">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="OrderRequisition_Customer">
+    <AssociationEnd
+      Name="OrderRequisition"
+      Multiplicity="Many"
+      EntityType="OrderRequisition" />
+    <AssociationEnd
+      Name="Customer"
+      Multiplicity="One"
+      EntityType="Customer">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <EntityType
+    Name="OrderRequisitionDetail">
+    <EntityType.Attributes>
+      <CreatedModifiedPropertiesEnabled />
+    </EntityType.Attributes>
+    <EntityType.Methods>
+      <EntityMethod
+        Name="Delete">
+        <EntityMethod.Attributes>
+          <Generated />
+        </EntityMethod.Attributes>
+      </EntityMethod>
+    </EntityType.Methods>
+    <EntityType.Properties>
+      <KeyProperty
+        Name="Id"
+        PropertyType=":Int32">
+        <KeyProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+      <NavigationProperty
+        Name="OrderRequisition"
+        Association="OrderRequisitionDetail_OrderRequisition"
+        FromEnd="OrderRequisitionDetail"
+        ToEnd="OrderRequisition" />
+      <NavigationProperty
+        Name="Product"
+        Association="OrderRequisitionDetail_Product"
+        FromEnd="OrderRequisitionDetail"
+        ToEnd="Product" />
+      <EntityProperty
+        Name="Quantity"
+        PropertyType=":Double">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Status"
+        PropertyType=":Boolean">
+        <EntityProperty.Attributes>
+          <Required />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="DeliveredQuantity"
+        PropertyType=":Double">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="CreatedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Created"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="ModifiedBy"
+        IsReadOnly="True"
+        PropertyType=":Person?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Modified"
+        IsReadOnly="True"
+        PropertyType=":DateTimeOffset?">
+        <EntityProperty.Attributes>
+          <Generated />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="RowVersion"
+        PropertyType=":RowVersion">
+        <EntityProperty.Attributes>
+          <UseForConcurrency />
+          <Generated />
+          <Hidden />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+  </EntityType>
+  <Association
+    Name="OrderRequisitionDetail_OrderRequisition">
+    <AssociationEnd
+      Name="OrderRequisitionDetail"
+      Multiplicity="Many"
+      EntityType="OrderRequisitionDetail" />
+    <AssociationEnd
+      Name="OrderRequisition"
+      Multiplicity="One"
+      EntityType="OrderRequisition">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
+  <Association
+    Name="OrderRequisitionDetail_Product">
+    <AssociationEnd
+      Name="OrderRequisitionDetail"
+      Multiplicity="Many"
+      EntityType="OrderRequisitionDetail" />
+    <AssociationEnd
+      Name="Product"
+      Multiplicity="One"
+      EntityType="Product">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Restrict" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+  </Association>
   <Application.NavigationItems>
     <ApplicationNavigationGroup
       Name="Tasks">

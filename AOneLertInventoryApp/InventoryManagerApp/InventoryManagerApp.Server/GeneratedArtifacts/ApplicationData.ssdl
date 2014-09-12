@@ -7,12 +7,18 @@
     <EntitySet Name="Customers" EntityType="ApplicationDataStore.Customer" store:Type="Tables" Schema="dbo" Table="Customers" />
     <EntitySet Name="Locations" EntityType="ApplicationDataStore.Location" store:Type="Tables" Schema="dbo" Table="Locations" />
     <EntitySet Name="Machines" EntityType="ApplicationDataStore.Machine" store:Type="Tables" Schema="dbo" Table="Machines" />
+    <EntitySet Name="OrderRequisitionDetails" EntityType="ApplicationDataStore.OrderRequisitionDetail" store:Type="Tables" Schema="dbo" Table="OrderRequisitionDetails" />
+    <EntitySet Name="OrderRequisitions" EntityType="ApplicationDataStore.OrderRequisition" store:Type="Tables" Schema="dbo" Table="OrderRequisitions" />
     <EntitySet Name="Packages" EntityType="ApplicationDataStore.Package" store:Type="Tables" Schema="dbo" Table="Packages" />
     <EntitySet Name="PaymentTypes" EntityType="ApplicationDataStore.PaymentType" store:Type="Tables" Schema="dbo" Table="PaymentTypes" />
+    <EntitySet Name="PickingSlipDetails" EntityType="ApplicationDataStore.PickingSlipDetail" store:Type="Tables" Schema="dbo" Table="PickingSlipDetails" />
+    <EntitySet Name="PickingSlips" EntityType="ApplicationDataStore.PickingSlip" store:Type="Tables" Schema="dbo" Table="PickingSlips" />
     <EntitySet Name="ProductCategories" EntityType="ApplicationDataStore.ProductCategory" store:Type="Tables" Schema="dbo" Table="ProductCategories" />
     <EntitySet Name="ProductGroups" EntityType="ApplicationDataStore.ProductGroup" store:Type="Tables" Schema="dbo" Table="ProductGroups" />
     <EntitySet Name="ProductReceiveBalanceForwardDetails" EntityType="ApplicationDataStore.ProductReceiveBalanceForwardDetail" store:Type="Tables" Schema="dbo" Table="ProductReceiveBalanceForwardDetails" />
     <EntitySet Name="ProductReceiveBalanceForwards" EntityType="ApplicationDataStore.ProductReceiveBalanceForward" store:Type="Tables" Schema="dbo" Table="ProductReceiveBalanceForwards" />
+    <EntitySet Name="ProductReceivePurchaseOrderDetails" EntityType="ApplicationDataStore.ProductReceivePurchaseOrderDetail" store:Type="Tables" Schema="dbo" Table="ProductReceivePurchaseOrderDetails" />
+    <EntitySet Name="ProductReceives" EntityType="ApplicationDataStore.ProductReceive" store:Type="Tables" Schema="dbo" Table="ProductReceives" />
     <EntitySet Name="Products" EntityType="ApplicationDataStore.Product" store:Type="Tables" Schema="dbo" Table="Products" />
     <EntitySet Name="PurchaseOrderDetails" EntityType="ApplicationDataStore.PurchaseOrderDetail" store:Type="Tables" Schema="dbo" Table="PurchaseOrderDetails" />
     <EntitySet Name="PurchaseOrders" EntityType="ApplicationDataStore.PurchaseOrder" store:Type="Tables" Schema="dbo" Table="PurchaseOrders" />
@@ -35,7 +41,6 @@
     <EntitySet Name="WorkOrderIssueDetails" EntityType="ApplicationDataStore.WorkOrderIssueDetail" store:Type="Tables" Schema="dbo" Table="WorkOrderIssueDetails" />
     <EntitySet Name="WorkOrderProduces" EntityType="ApplicationDataStore.WorkOrderProduce" store:Type="Tables" Schema="dbo" Table="WorkOrderProduces" />
     <EntitySet Name="WorkOrders" EntityType="ApplicationDataStore.WorkOrder" store:Type="Tables" Schema="dbo" Table="WorkOrders" />
-    <EntitySet Name="RequisitionsSet" EntityType="ApplicationDataStore.Requisitions" store:Type="Tables" Schema="dbo" Table="RequisitionsSet" />
     <AssociationSet Name="Customer_CustomerGroup" Association="ApplicationDataStore.Customer_CustomerGroup">
       <End Role="CustomerGroup" EntitySet="CustomerGroups" />
       <End Role="Customer" EntitySet="Customers" />
@@ -43,6 +48,10 @@
     <AssociationSet Name="SaleOrder_Customer" Association="ApplicationDataStore.SaleOrder_Customer">
       <End Role="Customer" EntitySet="Customers" />
       <End Role="SaleOrder" EntitySet="SaleOrders" />
+    </AssociationSet>
+    <AssociationSet Name="OrderRequisition_Customer" Association="ApplicationDataStore.OrderRequisition_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="OrderRequisition" EntitySet="OrderRequisitions" />
     </AssociationSet>
     <AssociationSet Name="Product_Location" Association="ApplicationDataStore.Product_Location">
       <End Role="Location" EntitySet="Locations" />
@@ -76,9 +85,29 @@
       <End Role="Location" EntitySet="Locations" />
       <End Role="WorkOrderProduce" EntitySet="WorkOrderProduces" />
     </AssociationSet>
+    <AssociationSet Name="ProductReceivePurchaseOrderDet_Location" Association="ApplicationDataStore.ProductReceivePurchaseOrderDet_Location">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="ProductReceivePurchaseOrderDetail" EntitySet="ProductReceivePurchaseOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="PickingSlipDetail_Location" Association="ApplicationDataStore.PickingSlipDetail_Location">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="PickingSlipDetail" EntitySet="PickingSlipDetails" />
+    </AssociationSet>
     <AssociationSet Name="WorkOrder_Machine" Association="ApplicationDataStore.WorkOrder_Machine">
       <End Role="Machine" EntitySet="Machines" />
       <End Role="WorkOrder" EntitySet="WorkOrders" />
+    </AssociationSet>
+    <AssociationSet Name="PickingSlipDetail_OrderRequisitionDetail" Association="ApplicationDataStore.PickingSlipDetail_OrderRequisitionDetail">
+      <End Role="OrderRequisitionDetail" EntitySet="OrderRequisitionDetails" />
+      <End Role="PickingSlipDetail" EntitySet="PickingSlipDetails" />
+    </AssociationSet>
+    <AssociationSet Name="OrderRequisitionDetail_OrderRequisition" Association="ApplicationDataStore.OrderRequisitionDetail_OrderRequisition">
+      <End Role="OrderRequisition" EntitySet="OrderRequisitions" />
+      <End Role="OrderRequisitionDetail" EntitySet="OrderRequisitionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="PickingSlipDetail_PickingSlip" Association="ApplicationDataStore.PickingSlipDetail_PickingSlip">
+      <End Role="PickingSlip" EntitySet="PickingSlips" />
+      <End Role="PickingSlipDetail" EntitySet="PickingSlipDetails" />
     </AssociationSet>
     <AssociationSet Name="ProductCategory_Product" Association="ApplicationDataStore.ProductCategory_Product">
       <End Role="ProductCategory" EntitySet="ProductCategories" />
@@ -120,6 +149,18 @@
       <End Role="Product" EntitySet="Products" />
       <End Role="WorkOrderProduce" EntitySet="WorkOrderProduces" />
     </AssociationSet>
+    <AssociationSet Name="ProductReceivePurchaseOrderDet_Product" Association="ApplicationDataStore.ProductReceivePurchaseOrderDet_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductReceivePurchaseOrderDetail" EntitySet="ProductReceivePurchaseOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="OrderRequisitionDetail_Product" Association="ApplicationDataStore.OrderRequisitionDetail_Product">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="OrderRequisitionDetail" EntitySet="OrderRequisitionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="ProductReceivePurchaseOrderDet_PurchaseOrderDetail" Association="ApplicationDataStore.ProductReceivePurchaseOrderDet_PurchaseOrderDetail">
+      <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
+      <End Role="ProductReceivePurchaseOrderDetail" EntitySet="ProductReceivePurchaseOrderDetails" />
+    </AssociationSet>
     <AssociationSet Name="PurchaseOrderDetail_PurchaseOrder" Association="ApplicationDataStore.PurchaseOrderDetail_PurchaseOrder">
       <End Role="PurchaseOrder" EntitySet="PurchaseOrders" />
       <End Role="PurchaseOrderDetail" EntitySet="PurchaseOrderDetails" />
@@ -147,6 +188,10 @@
     <AssociationSet Name="Customer_TransportRoute" Association="ApplicationDataStore.Customer_TransportRoute">
       <End Role="TransportRoute" EntitySet="TransportRoutes" />
       <End Role="Customer" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="PickingSlip_TransportRoute" Association="ApplicationDataStore.PickingSlip_TransportRoute">
+      <End Role="TransportRoute" EntitySet="TransportRoutes" />
+      <End Role="PickingSlip" EntitySet="PickingSlips" />
     </AssociationSet>
     <AssociationSet Name="Product_UnitOfMeasure" Association="ApplicationDataStore.Product_UnitOfMeasure">
       <End Role="UnitOfMeasure" EntitySet="UnitOfMeasures" />
@@ -264,6 +309,38 @@
     <Property Name="Modified" Type="datetimeoffset" />
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
   </EntityType>
+  <EntityType Name="OrderRequisitionDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Quantity" Type="float" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="DeliveredQuantity" Type="float" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="RequisitionDetail_Requisition" Type="int" Nullable="false" />
+    <Property Name="RequisitionDetail_Product" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderRequisition">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderRequisitionNo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="OrderRequisitionDate" Type="datetime" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="255" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Requisition_Customer" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="Package">
     <Key>
       <PropertyRef Name="Id" />
@@ -289,6 +366,40 @@
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Modified" Type="datetimeoffset" />
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="PickingSlipDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LotNo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="PickingQuantity" Type="float" Nullable="false" />
+    <Property Name="UnitPrice" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="PickingSlipDetail_Location" Type="int" Nullable="false" />
+    <Property Name="PickingSlipDetail_OrderRequisitionDetail" Type="int" Nullable="false" />
+    <Property Name="PickingSlipDetail_PickingSlip" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PickingSlip">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PickingNo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="PickingDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalWeight" Type="float" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="PickingSlip_TransportRoute" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="ProductCategory">
     <Key>
@@ -341,6 +452,38 @@
     <Property Name="DocumentNo" Type="nvarchar" Nullable="false" MaxLength="255" />
     <Property Name="DocumentDate" Type="datetime" Nullable="false" />
     <Property Name="Remarks" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="ProductReceivePurchaseOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ReceiveNumber" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ReceiveDate" Type="datetime" Nullable="false" />
+    <Property Name="ReceiveQuantity" Type="float" Nullable="false" />
+    <Property Name="ReceiveUnitCost" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="ReceiveTotalCost" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="255" />
+    <Property Name="LotNo" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="ProductReceivePurchaseOrderDet_Location" Type="int" Nullable="false" />
+    <Property Name="ProductReceivePurchaseOrderDet_Product" Type="int" Nullable="false" />
+    <Property Name="ProductReceivePurchaseOrderDet_PurchaseOrderDetail" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductReceive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Created" Type="datetimeoffset" />
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
@@ -409,6 +552,7 @@
     <Property Name="PurchaseOrderNumber" Type="nvarchar" Nullable="false" MaxLength="255" />
     <Property Name="PurchaseOrderDate" Type="datetime" Nullable="false" />
     <Property Name="PurchaseOrderStatus" Type="bit" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="255" />
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Created" Type="datetimeoffset" />
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
@@ -426,6 +570,7 @@
     <Property Name="MasterSalePrice" Type="decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="UnitCost" Type="decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="SalePrice" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="RequisitionFlag" Type="bit" />
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Created" Type="datetimeoffset" />
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
@@ -440,7 +585,7 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="DocumentNo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="SaleOrderNo" Type="nvarchar" Nullable="false" MaxLength="255" />
     <Property Name="SaleOrderDate" Type="datetime" Nullable="false" />
     <Property Name="ReferenceNo" Type="nvarchar" MaxLength="255" />
     <Property Name="PaymentTerm" Type="int" />
@@ -538,6 +683,7 @@
     <Property Name="SellingPrice" Type="decimal" Nullable="false" Precision="18" Scale="2" />
     <Property Name="CostPrice" Type="decimal" Nullable="false" Precision="18" Scale="9" />
     <Property Name="IsAvailableForSale" Type="bit" Nullable="false" />
+    <Property Name="ReservedQuantity" Type="float" Nullable="false" />
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Created" Type="datetimeoffset" />
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
@@ -734,17 +880,6 @@
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
     <Property Name="WorkOrder_Machine" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="Requisitions">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Created" Type="datetimeoffset" />
-    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
-    <Property Name="Modified" Type="datetimeoffset" />
-    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-  </EntityType>
   <Association Name="Customer_CustomerGroup">
     <End Role="CustomerGroup" Type="ApplicationDataStore.CustomerGroup" Multiplicity="1">
       <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
@@ -770,6 +905,20 @@
       </Principal>
       <Dependent Role="SaleOrder">
         <PropertyRef Name="SaleOrder_Customer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderRequisition_Customer">
+    <End Role="Customer" Type="ApplicationDataStore.Customer" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="OrderRequisition" Type="ApplicationDataStore.OrderRequisition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderRequisition">
+        <PropertyRef Name="Requisition_Customer" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -885,6 +1034,34 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="ProductReceivePurchaseOrderDet_Location">
+    <End Role="Location" Type="ApplicationDataStore.Location" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="ProductReceivePurchaseOrderDetail" Type="ApplicationDataStore.ProductReceivePurchaseOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductReceivePurchaseOrderDetail">
+        <PropertyRef Name="ProductReceivePurchaseOrderDet_Location" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PickingSlipDetail_Location">
+    <End Role="Location" Type="ApplicationDataStore.Location" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="PickingSlipDetail" Type="ApplicationDataStore.PickingSlipDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PickingSlipDetail">
+        <PropertyRef Name="PickingSlipDetail_Location" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="WorkOrder_Machine">
     <End Role="Machine" Type="ApplicationDataStore.Machine" Multiplicity="1">
       <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
@@ -896,6 +1073,48 @@
       </Principal>
       <Dependent Role="WorkOrder">
         <PropertyRef Name="WorkOrder_Machine" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PickingSlipDetail_OrderRequisitionDetail">
+    <End Role="OrderRequisitionDetail" Type="ApplicationDataStore.OrderRequisitionDetail" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="PickingSlipDetail" Type="ApplicationDataStore.PickingSlipDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderRequisitionDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PickingSlipDetail">
+        <PropertyRef Name="PickingSlipDetail_OrderRequisitionDetail" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderRequisitionDetail_OrderRequisition">
+    <End Role="OrderRequisition" Type="ApplicationDataStore.OrderRequisition" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="OrderRequisitionDetail" Type="ApplicationDataStore.OrderRequisitionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderRequisition">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderRequisitionDetail">
+        <PropertyRef Name="RequisitionDetail_Requisition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PickingSlipDetail_PickingSlip">
+    <End Role="PickingSlip" Type="ApplicationDataStore.PickingSlip" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="PickingSlipDetail" Type="ApplicationDataStore.PickingSlipDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PickingSlip">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PickingSlipDetail">
+        <PropertyRef Name="PickingSlipDetail_PickingSlip" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1039,6 +1258,48 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="ProductReceivePurchaseOrderDet_Product">
+    <End Role="Product" Type="ApplicationDataStore.Product" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="ProductReceivePurchaseOrderDetail" Type="ApplicationDataStore.ProductReceivePurchaseOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductReceivePurchaseOrderDetail">
+        <PropertyRef Name="ProductReceivePurchaseOrderDet_Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderRequisitionDetail_Product">
+    <End Role="Product" Type="ApplicationDataStore.Product" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="OrderRequisitionDetail" Type="ApplicationDataStore.OrderRequisitionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderRequisitionDetail">
+        <PropertyRef Name="RequisitionDetail_Product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductReceivePurchaseOrderDet_PurchaseOrderDetail">
+    <End Role="PurchaseOrderDetail" Type="ApplicationDataStore.PurchaseOrderDetail" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="ProductReceivePurchaseOrderDetail" Type="ApplicationDataStore.ProductReceivePurchaseOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseOrderDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductReceivePurchaseOrderDetail">
+        <PropertyRef Name="ProductReceivePurchaseOrderDet_PurchaseOrderDetail" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="PurchaseOrderDetail_PurchaseOrder">
     <End Role="PurchaseOrder" Type="ApplicationDataStore.PurchaseOrder" Multiplicity="1">
       <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
@@ -1134,6 +1395,20 @@
       </Principal>
       <Dependent Role="Customer">
         <PropertyRef Name="Customer_TransportRoute" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PickingSlip_TransportRoute">
+    <End Role="TransportRoute" Type="ApplicationDataStore.TransportRoute" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="PickingSlip" Type="ApplicationDataStore.PickingSlip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TransportRoute">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PickingSlip">
+        <PropertyRef Name="PickingSlip_TransportRoute" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

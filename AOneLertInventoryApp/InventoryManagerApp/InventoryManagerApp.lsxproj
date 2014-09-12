@@ -22,7 +22,7 @@
     <ApplicationServerType>IIS</ApplicationServerType>
     <AuthenticationType>Forms</AuthenticationType>
     <ApplicationName>InventoryManagerApp</ApplicationName>
-    <AssemblyVersion>1.0.23.0</AssemblyVersion>
+    <AssemblyVersion>1.0.27.0</AssemblyVersion>
     <ServiceDefinitionFile>ServiceDefinition.csdef</ServiceDefinitionFile>
     <ServiceConfigurationFile>ServiceConfiguration.cscfg</ServiceConfigurationFile>
     <SqlExpressInstanceName>(LocalDB)\v11.0</SqlExpressInstanceName>
@@ -59,6 +59,7 @@
     <SharePointServerToServerCertificateIssuerId />
     <RequireSecureConnection>False</RequireSecureConnection>
     <DefaultDatabaseName>AWMSDB</DefaultDatabaseName>
+    <PublishLocation>C:\Users\paradornn.BTG\Documents\AWMS_Publish\</PublishLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>bin\Debug</OutputPath>

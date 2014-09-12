@@ -27,7 +27,7 @@
         </KeyProperty.Attributes>
       </KeyProperty>
       <EntityProperty
-        Name="DocumentNo"
+        Name="SaleOrderNo"
         PropertyType=":String">
         <EntityProperty.Attributes>
           <Required />

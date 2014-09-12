@@ -7,7 +7,7 @@ myapp.BrowseProductPricings.RowTemplate_postRender = function (element, contentI
     else
         desc = "รอกำหนดราคาขาย";
 
-    element.cells[7].innerText = desc;
+    element.cells[9].innerText = desc;
 };
 myapp.BrowseProductPricings.StockOnHand_ItemTap_execute = function (screen) {
     myapp.showAddEditProductPricing(screen.StockOnHands.selectedItem, {

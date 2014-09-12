@@ -53,19 +53,6 @@
         Association="ProductReceivePurchaseOrderDet_Location"
         FromEnd="ProductReceivePurchaseOrderDetail"
         ToEnd="Location" />
-      <NavigationProperty
-        Name="Product"
-        Association="ProductReceivePurchaseOrderDet_Product"
-        FromEnd="ProductReceivePurchaseOrderDetail"
-        ToEnd="Product" />
-      <EntityProperty
-        Name="LotNo"
-        PropertyType=":String?">
-        <EntityProperty.Attributes>
-          <MaxLength
-            Value="255" />
-        </EntityProperty.Attributes>
-      </EntityProperty>
       <EntityProperty
         Name="ReceiveQuantity"
         PropertyType=":Double">
@@ -98,6 +85,19 @@
       </EntityProperty>
       <EntityProperty
         Name="Remark"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <NavigationProperty
+        Name="Product"
+        Association="ProductReceivePurchaseOrderDet_Product"
+        FromEnd="ProductReceivePurchaseOrderDetail"
+        ToEnd="Product" />
+      <EntityProperty
+        Name="LotNo"
         PropertyType=":String?">
         <EntityProperty.Attributes>
           <MaxLength

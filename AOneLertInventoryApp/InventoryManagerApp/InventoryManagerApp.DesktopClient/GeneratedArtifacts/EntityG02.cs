@@ -1391,6 +1391,29 @@ namespace LightSwitchApplication
             }
         }
 
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.OrderRequisition> OrderRequisition
+        {
+            get
+            {
+                return global::LightSwitchApplication.Customer.DetailsClass.GetValue(this, global::LightSwitchApplication.Customer.DetailsClass.PropertySetProperties.OrderRequisition);
+            }
+        }
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.OrderRequisition> OrderRequisitionQuery
+        {
+            get
+            {
+                return global::LightSwitchApplication.Customer.DetailsClass.GetQuery(this, global::LightSwitchApplication.Customer.DetailsClass.PropertySetProperties.OrderRequisition);
+            }
+        }
+
         #endregion
     
         #region Details Class
@@ -1657,6 +1680,14 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Customer, global::LightSwitchApplication.Customer.DetailsClass, global::LightSwitchApplication.OrderRequisition> OrderRequisition
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.Customer.DetailsClass.PropertySetProperties.OrderRequisition) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Customer, global::LightSwitchApplication.Customer.DetailsClass, global::LightSwitchApplication.OrderRequisition>;
+                    }
+                }
+                
             }
     
             #pragma warning disable 109
@@ -1686,6 +1717,7 @@ namespace LightSwitchApplication
                 new global::Microsoft.LightSwitch.Internal.IEntityImplementation CustomerGroup { get; set; }
                 new global::Microsoft.LightSwitch.Internal.IEntityImplementation TransportRoute { get; set; }
                 new global::System.Collections.IEnumerable SaleOrders { get; }
+                new global::System.Collections.IEnumerable OrderRequisition { get; }
             }
             #pragma warning restore 109
     
@@ -2533,6 +2565,26 @@ namespace LightSwitchApplication
                     return d.ImplementationEntity.SaleOrders;
                 }
     
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Customer, global::LightSwitchApplication.Customer.DetailsClass, global::LightSwitchApplication.OrderRequisition>.Entry
+                    OrderRequisition = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Customer, global::LightSwitchApplication.Customer.DetailsClass, global::LightSwitchApplication.OrderRequisition>.Entry(
+                        "OrderRequisition",
+                        global::LightSwitchApplication.Customer.DetailsClass.PropertySetProperties._OrderRequisition_Stub,
+                        global::LightSwitchApplication.Customer.DetailsClass.PropertySetProperties._OrderRequisition_GetReferencedEntities,
+                        global::LightSwitchApplication.Customer.DetailsClass.PropertySetProperties._OrderRequisition_GetEntityCollection);
+                private static void _OrderRequisition_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Customer.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Customer, global::LightSwitchApplication.Customer.DetailsClass, global::LightSwitchApplication.OrderRequisition>.Data> c, global::LightSwitchApplication.Customer.DetailsClass d, object sf)
+                {
+                    c(d, ref d._OrderRequisition, sf);
+                }
+                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.OrderRequisition> _OrderRequisition_GetReferencedEntities(global::LightSwitchApplication.Customer.DetailsClass d)
+                {
+                    return d.GetReferencedEntities<global::LightSwitchApplication.OrderRequisition, global::LightSwitchApplication.OrderRequisition.DetailsClass>(global::LightSwitchApplication.Customer.DetailsClass.PropertySetProperties.OrderRequisition, ref d._OrderRequisition);
+                }
+                private static global::System.Collections.IEnumerable _OrderRequisition_GetEntityCollection(global::LightSwitchApplication.Customer.DetailsClass d)
+                {
+                    return d.ImplementationEntity.OrderRequisition;
+                }
+    
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -2603,6 +2655,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Customer, global::LightSwitchApplication.Customer.DetailsClass, global::LightSwitchApplication.SaleOrder>.Data _SaleOrders;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Customer, global::LightSwitchApplication.Customer.DetailsClass, global::LightSwitchApplication.OrderRequisition>.Data _OrderRequisition;
             
         }
     

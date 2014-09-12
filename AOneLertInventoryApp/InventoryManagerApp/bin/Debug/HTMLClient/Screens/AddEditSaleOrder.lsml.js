@@ -48,3 +48,14 @@ myapp.AddEditSaleOrder.CustomersPopup_Tap_execute = function (screen) {
     //screen.ProductDescription = Products.ProductCode + ": " + Products.ProductName;
     screen.closePopup();
 };
+
+myapp.AddEditSaleOrder.RowTemplate1_postRender = function (element, contentItem) {
+    // Write code here.
+    var desc = "";
+    if (contentItem.value.RequisitionFlag)
+        desc = "จัดส่งเรียบร้อยแล้ว";
+    else
+        desc = "รอจัดส่ง";
+
+    element.cells[8].innerText = desc;
+};

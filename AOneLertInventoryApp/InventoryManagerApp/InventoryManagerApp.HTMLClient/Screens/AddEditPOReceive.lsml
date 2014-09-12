@@ -53,7 +53,7 @@
                   Name="PurchaseOrderNumber"
                   Kind="Value"
                   DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  View="Microsoft.LightSwitch.MobileWeb:TextBox">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="เลขที่ใบสั่งซื้อ" />
@@ -124,7 +124,7 @@
                   Name="PurchaseOrderDate"
                   Kind="Value"
                   DataType=":Date"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  View="Microsoft.LightSwitch.MobileWeb:DatePicker">
                   <ContentItem.Attributes>
                     <DisplayName
                       Value="วันที่สั่งซื้อ" />
@@ -142,6 +142,10 @@
                   Name="PurchaseOrderStatus"
                   Kind="Value"
                   DataType=":Boolean">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="สถานะการรับสินค้า" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>

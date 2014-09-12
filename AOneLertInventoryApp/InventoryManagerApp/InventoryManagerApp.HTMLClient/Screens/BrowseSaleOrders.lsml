@@ -84,7 +84,7 @@
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="SaleOrder/Properties[DocumentNo]" />
+                          Member="SaleOrder/Properties[SaleOrderNo]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -233,17 +233,35 @@
                 </ContentItem>
                 <ContentItem
                   Name="SaleOrderStatus"
+                  IsHidden="True"
                   Kind="Value"
                   DataType=":Boolean">
                   <ContentItem.Attributes>
                     <DisplayName
-                      Value="สถานะ" />
+                      Value="SaleOrderStatus" />
                   </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
                           Member="SaleOrder/Properties[SaleOrderStatus]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="SaleOrderStatusDescription"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="สถานะเอกสาร" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="BrowseSaleOrders/Properties[SaleOrderStatusDescription]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -255,21 +273,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showAddEditSaleOrder]">
-                        <CallExpression.Attributes>
-                          <AssociatedCollection
-                            Collection="BrowseSaleOrders/Properties[SaleOrders]" />
-                        </CallExpression.Attributes>
-                        <ArgumentExpression
-                          Parameter="SaleOrder">
-                          <ChainExpression>
-                            <MemberExpression
-                              Member="BrowseSaleOrders/Properties[SaleOrders]" />
-                            <MemberExpression
-                              Member="selectedItem" />
-                          </ChainExpression>
-                        </ArgumentExpression>
-                      </CallExpression>
+                        Target="BrowseSaleOrders/Methods[SaleOrder_ItemTap]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>
@@ -356,6 +360,8 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
+      <ScreenMethod
+        Name="SaleOrder_ItemTap" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty
@@ -379,7 +385,7 @@
                           <BinaryExpression.Left>
                             <ChainExpression>
                               <MemberExpression
-                                Member="SaleOrder/Properties[DocumentNo]" />
+                                Member="SaleOrder/Properties[SaleOrderNo]" />
                             </ChainExpression>
                           </BinaryExpression.Left>
                           <BinaryExpression.Right>
@@ -442,7 +448,7 @@
                 Direction="Descending">
                 <ChainExpression>
                   <MemberExpression
-                    Member="DocumentNo" />
+                    Member="SaleOrderNo" />
                 </ChainExpression>
               </SortCriterion>
             </ScreenQueryDefinition.SortCriteria>
@@ -466,6 +472,13 @@
       <ScreenProperty
         Name="SearchSO"
         PropertyType=":String?" />
+      <ScreenProperty
+        Name="SaleOrderStatusDescription"
+        PropertyType=":String">
+        <ScreenProperty.Attributes>
+          <Required />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
     </Screen.Properties>
   </Screen>
   <Application.Methods>

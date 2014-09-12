@@ -8,6 +8,6 @@
     <parameterEntry kind="XmlFile" scope="web.config" match="//connectionStrings/add[@name='_IntrinsicData']/@connectionString" />
   </parameter>
   <parameter name="InventoryManagerApp_IisWebApplication" description="IIS Web Application content location" defaultValue="Default Web Site/awms" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Chalermpol\ Chueayen\\Documents\\Visual\ Studio\ 2013\\Projects\\AOneLertInventoryApp\\InventoryManagerApp\\bin\\Debug\\app\.publish\\$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\paradornn\.BTG\\Documents\\AWMS_20140901\\AOneLertInventoryApp\\InventoryManagerApp\\bin\\Debug\\app\.publish\\$" />
   </parameter>
 </parameters>

@@ -317,6 +317,23 @@
                 </ContentItem>
               </ContentItem>
               <ContentItem
+                Name="SalePrice"
+                Kind="Value"
+                DataType="Microsoft.LightSwitch.Extensions:Money">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="ราคาขาย" />
+                </ContentItem.Attributes>
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression
+                        Member="SaleOrderDetail/Properties[SalePrice]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem
                 Name="OrderQuantity"
                 Kind="Value"
                 DataType=":Double">
@@ -334,21 +351,44 @@
                 </ContentItem.DataSource>
               </ContentItem>
               <ContentItem
-                Name="SalePrice"
+                Name="TotalSalePrice"
                 Kind="Value"
-                DataType="Microsoft.LightSwitch.Extensions:Money">
+                DataType="Microsoft.LightSwitch.Extensions:Money"
+                View="Microsoft.LightSwitch.MobileWeb:MoneyViewer">
                 <ContentItem.Attributes>
                   <DisplayName
-                    Value="ราคาขาย" />
+                    Value="รวมราคาขาย" />
                 </ContentItem.Attributes>
                 <ContentItem.DataSource>
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <MemberExpression
-                        Member="SaleOrderDetail/Properties[SalePrice]" />
+                        Member="AddEditSaleOrderDetail/Properties[TotalSalePrice]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ContentItem.DataSource>
+                <ContentItem.PropertySources>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[FontStyle]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <ConstantExpression
+                          Value="Large"
+                          ResultType=":String" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[TextAlignment]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <ConstantExpression
+                          Value="Right"
+                          ResultType=":String" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                </ContentItem.PropertySources>
               </ContentItem>
             </ContentItem>
             <ContentItem.CommandItems>
@@ -610,6 +650,24 @@
                 </ContentItem>
                 <ContentItem
                   Name="QuantityOnHand"
+                  IsHidden="True"
+                  Kind="Value"
+                  DataType=":Double">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="QuantityOnHand" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="StockOnHand/Properties[QuantityOnHand]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="ReservedQuantity"
                   Kind="Value"
                   DataType=":Double">
                   <ContentItem.Attributes>
@@ -620,7 +678,7 @@
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="StockOnHand/Properties[QuantityOnHand]" />
+                          Member="StockOnHand/Properties[ReservedQuantity]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -946,6 +1004,13 @@
       <ScreenProperty
         Name="AvailableQuantity"
         PropertyType=":Double">
+        <ScreenProperty.Attributes>
+          <Required />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
+      <ScreenProperty
+        Name="TotalSalePrice"
+        PropertyType="Microsoft.LightSwitch.Extensions:Money">
         <ScreenProperty.Attributes>
           <Required />
         </ScreenProperty.Attributes>

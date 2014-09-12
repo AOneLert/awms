@@ -97,6 +97,12 @@
     <Content Include="Screens\AddEditOrderDetail.lsml.js">
       <DependentUpon>AddEditOrderDetail.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\AddEditOrderRequisition.lsml.js">
+      <DependentUpon>AddEditOrderRequisition.lsml</DependentUpon>
+    </Content>
+    <Content Include="Screens\AddEditOrderRequisitionDetail.lsml.js">
+      <DependentUpon>AddEditOrderRequisitionDetail.lsml</DependentUpon>
+    </Content>
     <Content Include="Screens\AddEditPO.lsml.js">
       <DependentUpon>AddEditPO.lsml</DependentUpon>
     </Content>
@@ -123,6 +129,9 @@
     </Content>
     <Content Include="Screens\AddEditProductReceiveBalanceForwardWithDetails.lsml.js">
       <DependentUpon>AddEditProductReceiveBalanceForwardWithDetails.lsml</DependentUpon>
+    </Content>
+    <Content Include="Screens\AddEditProductReceivePurchaseOrderDetail.lsml.js">
+      <DependentUpon>AddEditProductReceivePurchaseOrderDetail.lsml</DependentUpon>
     </Content>
     <Content Include="Screens\AddEditProduct_bk.lsml.js">
       <DependentUpon>AddEditProduct_bk.lsml</DependentUpon>
@@ -190,17 +199,26 @@
     <Content Include="Screens\AddEditWorkOrderProduce.lsml.js">
       <DependentUpon>AddEditWorkOrderProduce.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\BrowseAccountingTasks.lsml.js">
+      <DependentUpon>BrowseAccountingTasks.lsml</DependentUpon>
+    </Content>
     <Content Include="Screens\BrowseCustomers.lsml.js">
       <DependentUpon>BrowseCustomers.lsml</DependentUpon>
     </Content>
     <Content Include="Screens\BrowseEmployees.lsml.js">
       <DependentUpon>BrowseEmployees.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\BrowseInventoryTasks.lsml.js">
+      <DependentUpon>BrowseInventoryTasks.lsml</DependentUpon>
+    </Content>
     <Content Include="Screens\BrowseMenuReceiveProduct.lsml.js">
       <DependentUpon>BrowseMenuReceiveProduct.lsml</DependentUpon>
     </Content>
     <Content Include="Screens\BrowseMenuSales.lsml.js">
       <DependentUpon>BrowseMenuSales.lsml</DependentUpon>
+    </Content>
+    <Content Include="Screens\BrowseOrderRequisitionsDelivery.lsml.js">
+      <DependentUpon>BrowseOrderRequisitionsDelivery.lsml</DependentUpon>
     </Content>
     <Content Include="Screens\BrowseOrders.lsml.js">
       <DependentUpon>BrowseOrders.lsml</DependentUpon>
@@ -225,6 +243,9 @@
     </Content>
     <Content Include="Screens\BrowseProductReceiveBalanceForwards.lsml.js">
       <DependentUpon>BrowseProductReceiveBalanceForwards.lsml</DependentUpon>
+    </Content>
+    <Content Include="Screens\BrowseProductReceivePurchaseOrderDetails.lsml.js">
+      <DependentUpon>BrowseProductReceivePurchaseOrderDetails.lsml</DependentUpon>
     </Content>
     <Content Include="Screens\BrowseProducts.lsml.js">
       <DependentUpon>BrowseProducts.lsml</DependentUpon>
@@ -274,6 +295,9 @@
     <Content Include="Screens\ViewPurchaseOrderDetail.lsml.js">
       <DependentUpon>ViewPurchaseOrderDetail.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\ViewPurchaseOrderDetail1.lsml.js">
+      <DependentUpon>ViewPurchaseOrderDetail1.lsml</DependentUpon>
+    </Content>
     <Content Include="Scripts\datajs-1.1.1.js" />
     <Content Include="Scripts\datajs-1.1.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
@@ -294,6 +318,10 @@
     <Content Include="Scripts\msls-2.0.0.min.js" />
     <Content Include="Scripts\winjs-1.0.js" />
     <Content Include="Scripts\winjs-1.0.min.js" />
+    <Content Include="UserCode\OrderRequisition.lsml.js">
+      <DependentUpon>
+      </DependentUpon>
+    </Content>
     <Content Include="UserCode\ProductReceiveBalanceForward.lsml.js">
       <DependentUpon>
       </DependentUpon>
@@ -326,6 +354,8 @@
     <LightSwitchModel Include="Screens\AddEditMachine.lsml" />
     <LightSwitchModel Include="Screens\AddEditOrder.lsml" />
     <LightSwitchModel Include="Screens\AddEditOrderDetail.lsml" />
+    <LightSwitchModel Include="Screens\AddEditOrderRequisition.lsml" />
+    <LightSwitchModel Include="Screens\AddEditOrderRequisitionDetail.lsml" />
     <LightSwitchModel Include="Screens\AddEditPackage.lsml" />
     <LightSwitchModel Include="Screens\AddEditPaymentType.lsml" />
     <LightSwitchModel Include="Screens\AddEditPO.lsml" />
@@ -336,6 +366,7 @@
     <LightSwitchModel Include="Screens\AddEditProductReceiveBalanceForward.lsml" />
     <LightSwitchModel Include="Screens\AddEditProductReceiveBalanceForwardDetail.lsml" />
     <LightSwitchModel Include="Screens\AddEditProductReceiveBalanceForwardWithDetails.lsml" />
+    <LightSwitchModel Include="Screens\AddEditProductReceivePurchaseOrderDetail.lsml" />
     <LightSwitchModel Include="Screens\AddEditProduct_bk.lsml" />
     <LightSwitchModel Include="Screens\AddEditProductCategory.lsml" />
     <LightSwitchModel Include="Screens\AddEditProductGroup.lsml" />
@@ -365,14 +396,18 @@
     <LightSwitchModel Include="Screens\AddEditWorkOrder.lsml" />
     <LightSwitchModel Include="Screens\AddEditWorkOrderIssueDetail.lsml" />
     <LightSwitchModel Include="Screens\AddEditWorkOrderProduce.lsml" />
+    <LightSwitchModel Include="Screens\BrowseAccountingTasks.lsml" />
     <LightSwitchModel Include="Screens\BrowseBanks.lsml" />
     <LightSwitchModel Include="Screens\BrowseCompanies.lsml" />
     <LightSwitchModel Include="Screens\BrowseCustomerGroups.lsml" />
     <LightSwitchModel Include="Screens\BrowseCustomers.lsml" />
     <LightSwitchModel Include="Screens\BrowseEmployees.lsml" />
+    <LightSwitchModel Include="Screens\BrowseInventoryTasks.lsml" />
     <LightSwitchModel Include="Screens\BrowseMachines.lsml" />
     <LightSwitchModel Include="Screens\BrowseMenuReceiveProduct.lsml" />
     <LightSwitchModel Include="Screens\BrowseMenuSales.lsml" />
+    <LightSwitchModel Include="Screens\BrowseOrderRequisitions.lsml" />
+    <LightSwitchModel Include="Screens\BrowseOrderRequisitionsDelivery.lsml" />
     <LightSwitchModel Include="Screens\BrowseOrders.lsml" />
     <LightSwitchModel Include="Screens\BrowsePackages.lsml" />
     <LightSwitchModel Include="Screens\BrowsePaymentTypes.lsml" />
@@ -383,12 +418,13 @@
     <LightSwitchModel Include="Screens\BrowseLocations.lsml" />
     <LightSwitchModel Include="Screens\BrowseProductPricings.lsml" />
     <LightSwitchModel Include="Screens\BrowseProductReceiveBalanceForwards.lsml" />
+    <LightSwitchModel Include="Screens\BrowseProductReceivePurchaseOrderDetails.lsml" />
     <LightSwitchModel Include="Screens\BrowseProducts.lsml" />
     <LightSwitchModel Include="Screens\BrowseProducts_bk.lsml" />
     <LightSwitchModel Include="Screens\BrowsePurchaseOrderNotClose.lsml" />
     <LightSwitchModel Include="Screens\BrowsePurchaseOrders.lsml" />
     <LightSwitchModel Include="Screens\BrowsePurchaseOrders_Old.lsml" />
-    <LightSwitchModel Include="Screens\BrowseRequisitions.lsml" />
+    <LightSwitchModel Include="Screens\BrowseOrderRequisitionsTransportRoute.lsml" />
     <LightSwitchModel Include="Screens\BrowseSaleOrders.lsml" />
     <LightSwitchModel Include="Screens\BrowseSaleOrderTasks.lsml" />
     <LightSwitchModel Include="Screens\BrowseShippingMethods.lsml" />
@@ -408,7 +444,7 @@
     <LightSwitchModel Include="Screens\ViewPOReceivedDetail.lsml" />
     <LightSwitchModel Include="Screens\ViewPurchaseOrder.lsml" />
     <LightSwitchModel Include="Screens\ViewPurchaseOrderDetail.lsml" />
-    <LightSwitchModel Include="Screens\ViewReceiveFromPurchaseOrder.lsml" />
+    <LightSwitchModel Include="Screens\ViewPurchaseOrderDetail1.lsml" />
     <LightSwitchModel Include="Screens\ViewSaleOrder.lsml" />
     <LightSwitchModel Include="Screens\ViewWorkOrder.lsml" />
   </ItemGroup>
