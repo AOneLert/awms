@@ -103,6 +103,12 @@
     <Content Include="Screens\AddEditOrderRequisitionDetail.lsml.js">
       <DependentUpon>AddEditOrderRequisitionDetail.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\AddEditPickingSlip.lsml.js">
+      <DependentUpon>AddEditPickingSlip.lsml</DependentUpon>
+    </Content>
+    <Content Include="Screens\AddEditPickingSlipDetail.lsml.js">
+      <DependentUpon>AddEditPickingSlipDetail.lsml</DependentUpon>
+    </Content>
     <Content Include="Screens\AddEditPO.lsml.js">
       <DependentUpon>AddEditPO.lsml</DependentUpon>
     </Content>
@@ -220,6 +226,9 @@
     <Content Include="Screens\BrowseOrderRequisitionsDelivery.lsml.js">
       <DependentUpon>BrowseOrderRequisitionsDelivery.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\BrowseOrderRequisitionsTransportRoute.lsml.js">
+      <DependentUpon>BrowseOrderRequisitionsTransportRoute.lsml</DependentUpon>
+    </Content>
     <Content Include="Screens\BrowseOrders.lsml.js">
       <DependentUpon>BrowseOrders.lsml</DependentUpon>
     </Content>
@@ -322,6 +331,10 @@
       <DependentUpon>
       </DependentUpon>
     </Content>
+    <Content Include="UserCode\PickingSlip.lsml.js">
+      <DependentUpon>
+      </DependentUpon>
+    </Content>
     <Content Include="UserCode\ProductReceiveBalanceForward.lsml.js">
       <DependentUpon>
       </DependentUpon>
@@ -359,6 +372,7 @@
     <LightSwitchModel Include="Screens\AddEditPackage.lsml" />
     <LightSwitchModel Include="Screens\AddEditPaymentType.lsml" />
     <LightSwitchModel Include="Screens\AddEditPickingSlip.lsml" />
+    <LightSwitchModel Include="Screens\AddEditPickingSlipDetail.lsml" />
     <LightSwitchModel Include="Screens\AddEditPO.lsml" />
     <LightSwitchModel Include="Screens\AddEditPODetail.lsml" />
     <LightSwitchModel Include="Screens\AddEditPOReceive.lsml" />

@@ -30,7 +30,12 @@ myapp.AddEditPO.created = function (screen) {
             }
         });
     }
-
+    function onEvent() {
+        // Do something.
+        screen.PurchaseOrderDetails.refresh();
+    }
+    screen.PurchaseOrderDetails.addEventListener(
+        "Event", onEvent);
 
 };
 myapp.AddEditPO.PurchaseOrderNumber_postRender = function (element, contentItem) {

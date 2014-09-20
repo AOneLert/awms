@@ -33,3 +33,13 @@ myapp.BrowsePOReceive.PurchaseOrder_ItemTap_execute = function (screen) {
         }
     });
 };
+myapp.BrowsePOReceive.created = function (screen) {
+    // Write code here.
+    function onEvent() {
+        // Do something.
+        screen.PurchaseOrders.refresh();
+        screen.PurchaseOrderDetails.refresh();
+        screen.ProductReceivePurchaseOrderDetails.refresh();
+    }
+    screen.ProductReceivePurchaseOrderDetails.addEventListener("Event", onEvent);
+};

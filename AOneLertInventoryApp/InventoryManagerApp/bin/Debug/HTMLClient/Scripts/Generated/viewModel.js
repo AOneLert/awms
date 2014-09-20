@@ -118,6 +118,28 @@
         $Screen.call(this, dataWorkspace, "AddEditEmployee", parameters);
     }
 
+    function AddEditLocation(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the AddEditLocation screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="ProductLocation" type="msls.application.Location">
+        /// Gets or sets the productLocation for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.AddEditLocation.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditLocation", parameters);
+    }
+
     function AddEditMachine(parameters, dataWorkspace) {
         /// <summary>
         /// Represents the AddEditMachine screen.
@@ -193,6 +215,12 @@
         /// </field>
         /// <field name="OrderRequisitionDetail" type="msls.VisualCollection" elementType="msls.application.OrderRequisitionDetail">
         /// Gets the orderRequisitionDetail for this screen.
+        /// </field>
+        /// <field name="QueryCustomerGroupByTransportRoute" type="msls.VisualCollection" elementType="msls.application.Customer">
+        /// Gets the queryCustomerGroupByTransportRoute for this screen.
+        /// </field>
+        /// <field name="SearchCustomer" type="String">
+        /// Gets or sets the searchCustomer for this screen.
         /// </field>
         /// <field name="details" type="msls.application.AddEditOrderRequisition.Details">
         /// Gets the details for this screen.
@@ -285,6 +313,12 @@
         /// <field name="PickingSlip" type="msls.application.PickingSlip">
         /// Gets or sets the pickingSlip for this screen.
         /// </field>
+        /// <field name="SelectedTransportRoute" type="msls.application.TransportRoute">
+        /// Gets or sets the selectedTransportRoute for this screen.
+        /// </field>
+        /// <field name="QueryRequisitionDetailPicking" type="msls.VisualCollection" elementType="msls.application.OrderRequisitionDetail">
+        /// Gets the queryRequisitionDetailPicking for this screen.
+        /// </field>
         /// <field name="PickingSlipDetails" type="msls.VisualCollection" elementType="msls.application.PickingSlipDetail">
         /// Gets the pickingSlipDetails for this screen.
         /// </field>
@@ -295,6 +329,37 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "AddEditPickingSlip", parameters);
+    }
+
+    function AddEditPickingSlipDetail(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the AddEditPickingSlipDetail screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="PickingSlipDetail" type="msls.application.PickingSlipDetail">
+        /// Gets or sets the pickingSlipDetail for this screen.
+        /// </field>
+        /// <field name="StockOnHandForSale" type="msls.VisualCollection" elementType="msls.application.StockOnHand">
+        /// Gets the stockOnHandForSale for this screen.
+        /// </field>
+        /// <field name="SearchStockOnhand" type="String">
+        /// Gets or sets the searchStockOnhand for this screen.
+        /// </field>
+        /// <field name="AvailableQuantity" type="Number">
+        /// Gets or sets the availableQuantity for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.AddEditPickingSlipDetail.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditPickingSlipDetail", parameters);
     }
 
     function AddEditPO(parameters, dataWorkspace) {
@@ -446,6 +511,106 @@
         $Screen.call(this, dataWorkspace, "AddEditProduct", parameters);
     }
 
+    function AddEditProduct_bk(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the AddEditProduct_bk screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="Product" type="msls.application.Product">
+        /// Gets or sets the product for this screen.
+        /// </field>
+        /// <field name="UnitsOnOrder" type="String">
+        /// Gets or sets the unitsOnOrder for this screen.
+        /// </field>
+        /// <field name="UnitsOnHand" type="String">
+        /// Gets or sets the unitsOnHand for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.AddEditProduct_bk.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditProduct_bk", parameters);
+    }
+
+    function AddEditProductCategory(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the AddEditProductCategory screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="ProductCategory" type="msls.application.ProductCategory">
+        /// Gets or sets the productCategory for this screen.
+        /// </field>
+        /// <field name="Products" type="msls.VisualCollection" elementType="msls.application.Product">
+        /// Gets the products for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.AddEditProductCategory.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditProductCategory", parameters);
+    }
+
+    function AddEditProductGroup(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the AddEditProductGroup screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="ProductGroup" type="msls.application.ProductGroup">
+        /// Gets or sets the productGroup for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.AddEditProductGroup.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditProductGroup", parameters);
+    }
+
+    function AddEditProductPricing(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the AddEditProductPricing screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="StockOnHand" type="msls.application.StockOnHand">
+        /// Gets or sets the stockOnHand for this screen.
+        /// </field>
+        /// <field name="UnitCost" type="String">
+        /// Gets or sets the unitCost for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.AddEditProductPricing.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditProductPricing", parameters);
+    }
+
     function AddEditProductReceiveBalanceForward(parameters, dataWorkspace) {
         /// <summary>
         /// Represents the AddEditProductReceiveBalanceForward screen.
@@ -564,103 +729,6 @@
         $Screen.call(this, dataWorkspace, "AddEditProductReceivePurchaseOrderDetail", parameters);
     }
 
-    function AddEditProduct_bk(parameters, dataWorkspace) {
-        /// <summary>
-        /// Represents the AddEditProduct_bk screen.
-        /// </summary>
-        /// <param name="parameters" type="Array">
-        /// An array of screen parameter values.
-        /// </param>
-        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
-        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
-        /// </param>
-        /// <field name="Product" type="msls.application.Product">
-        /// Gets or sets the product for this screen.
-        /// </field>
-        /// <field name="UnitsOnOrder" type="String">
-        /// Gets or sets the unitsOnOrder for this screen.
-        /// </field>
-        /// <field name="UnitsOnHand" type="String">
-        /// Gets or sets the unitsOnHand for this screen.
-        /// </field>
-        /// <field name="details" type="msls.application.AddEditProduct_bk.Details">
-        /// Gets the details for this screen.
-        /// </field>
-        if (!dataWorkspace) {
-            dataWorkspace = new lightSwitchApplication.DataWorkspace();
-        }
-        $Screen.call(this, dataWorkspace, "AddEditProduct_bk", parameters);
-    }
-
-    function AddEditProductCategory(parameters, dataWorkspace) {
-        /// <summary>
-        /// Represents the AddEditProductCategory screen.
-        /// </summary>
-        /// <param name="parameters" type="Array">
-        /// An array of screen parameter values.
-        /// </param>
-        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
-        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
-        /// </param>
-        /// <field name="ProductCategory" type="msls.application.ProductCategory">
-        /// Gets or sets the productCategory for this screen.
-        /// </field>
-        /// <field name="Products" type="msls.VisualCollection" elementType="msls.application.Product">
-        /// Gets the products for this screen.
-        /// </field>
-        /// <field name="details" type="msls.application.AddEditProductCategory.Details">
-        /// Gets the details for this screen.
-        /// </field>
-        if (!dataWorkspace) {
-            dataWorkspace = new lightSwitchApplication.DataWorkspace();
-        }
-        $Screen.call(this, dataWorkspace, "AddEditProductCategory", parameters);
-    }
-
-    function AddEditProductGroup(parameters, dataWorkspace) {
-        /// <summary>
-        /// Represents the AddEditProductGroup screen.
-        /// </summary>
-        /// <param name="parameters" type="Array">
-        /// An array of screen parameter values.
-        /// </param>
-        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
-        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
-        /// </param>
-        /// <field name="ProductGroup" type="msls.application.ProductGroup">
-        /// Gets or sets the productGroup for this screen.
-        /// </field>
-        /// <field name="details" type="msls.application.AddEditProductGroup.Details">
-        /// Gets the details for this screen.
-        /// </field>
-        if (!dataWorkspace) {
-            dataWorkspace = new lightSwitchApplication.DataWorkspace();
-        }
-        $Screen.call(this, dataWorkspace, "AddEditProductGroup", parameters);
-    }
-
-    function AddEditLocation(parameters, dataWorkspace) {
-        /// <summary>
-        /// Represents the AddEditLocation screen.
-        /// </summary>
-        /// <param name="parameters" type="Array">
-        /// An array of screen parameter values.
-        /// </param>
-        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
-        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
-        /// </param>
-        /// <field name="ProductLocation" type="msls.application.Location">
-        /// Gets or sets the productLocation for this screen.
-        /// </field>
-        /// <field name="details" type="msls.application.AddEditLocation.Details">
-        /// Gets the details for this screen.
-        /// </field>
-        if (!dataWorkspace) {
-            dataWorkspace = new lightSwitchApplication.DataWorkspace();
-        }
-        $Screen.call(this, dataWorkspace, "AddEditLocation", parameters);
-    }
-
     function AddEditProductSubscriber(parameters, dataWorkspace) {
         /// <summary>
         /// Represents the AddEditProductSubscriber screen.
@@ -678,6 +746,53 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "AddEditProductSubscriber", parameters);
+    }
+
+    function AddEditPurchaseOrder(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the AddEditPurchaseOrder screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="PurchaseOrder" type="msls.application.PurchaseOrder">
+        /// Gets or sets the purchaseOrder for this screen.
+        /// </field>
+        /// <field name="PurchaseOrderDetails" type="msls.VisualCollection" elementType="msls.application.PurchaseOrderDetail">
+        /// Gets the purchaseOrderDetails for this screen.
+        /// </field>
+        /// <field name="POStatusDescription" type="String">
+        /// Gets or sets the pOStatusDescription for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.AddEditPurchaseOrder.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditPurchaseOrder", parameters);
+    }
+
+    function AddEditPurchaseOrder_Old(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the AddEditPurchaseOrder_Old screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="details" type="msls.application.AddEditPurchaseOrder_Old.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditPurchaseOrder_Old", parameters);
     }
 
     function AddEditPurchaseOrderDetail(parameters, dataWorkspace) {
@@ -703,6 +818,25 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "AddEditPurchaseOrderDetail", parameters);
+    }
+
+    function AddEditPurchaseOrderDetail_Old(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the AddEditPurchaseOrderDetail_Old screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="details" type="msls.application.AddEditPurchaseOrderDetail_Old.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditPurchaseOrderDetail_Old", parameters);
     }
 
     function AddEditPurchaseOrderDetailTest(parameters, dataWorkspace) {
@@ -750,72 +884,6 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "AddEditPurchaseOrderTest", parameters);
-    }
-
-    function AddEditPurchaseOrder_Old(parameters, dataWorkspace) {
-        /// <summary>
-        /// Represents the AddEditPurchaseOrder_Old screen.
-        /// </summary>
-        /// <param name="parameters" type="Array">
-        /// An array of screen parameter values.
-        /// </param>
-        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
-        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
-        /// </param>
-        /// <field name="details" type="msls.application.AddEditPurchaseOrder_Old.Details">
-        /// Gets the details for this screen.
-        /// </field>
-        if (!dataWorkspace) {
-            dataWorkspace = new lightSwitchApplication.DataWorkspace();
-        }
-        $Screen.call(this, dataWorkspace, "AddEditPurchaseOrder_Old", parameters);
-    }
-
-    function AddEditPurchaseOrder(parameters, dataWorkspace) {
-        /// <summary>
-        /// Represents the AddEditPurchaseOrder screen.
-        /// </summary>
-        /// <param name="parameters" type="Array">
-        /// An array of screen parameter values.
-        /// </param>
-        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
-        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
-        /// </param>
-        /// <field name="PurchaseOrder" type="msls.application.PurchaseOrder">
-        /// Gets or sets the purchaseOrder for this screen.
-        /// </field>
-        /// <field name="PurchaseOrderDetails" type="msls.VisualCollection" elementType="msls.application.PurchaseOrderDetail">
-        /// Gets the purchaseOrderDetails for this screen.
-        /// </field>
-        /// <field name="POStatusDescription" type="String">
-        /// Gets or sets the pOStatusDescription for this screen.
-        /// </field>
-        /// <field name="details" type="msls.application.AddEditPurchaseOrder.Details">
-        /// Gets the details for this screen.
-        /// </field>
-        if (!dataWorkspace) {
-            dataWorkspace = new lightSwitchApplication.DataWorkspace();
-        }
-        $Screen.call(this, dataWorkspace, "AddEditPurchaseOrder", parameters);
-    }
-
-    function AddEditPurchaseOrderDetail_Old(parameters, dataWorkspace) {
-        /// <summary>
-        /// Represents the AddEditPurchaseOrderDetail_Old screen.
-        /// </summary>
-        /// <param name="parameters" type="Array">
-        /// An array of screen parameter values.
-        /// </param>
-        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
-        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
-        /// </param>
-        /// <field name="details" type="msls.application.AddEditPurchaseOrderDetail_Old.Details">
-        /// Gets the details for this screen.
-        /// </field>
-        if (!dataWorkspace) {
-            dataWorkspace = new lightSwitchApplication.DataWorkspace();
-        }
-        $Screen.call(this, dataWorkspace, "AddEditPurchaseOrderDetail_Old", parameters);
     }
 
     function AddEditReceiveFromPurchaseOrder(parameters, dataWorkspace) {
@@ -1074,31 +1142,6 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "AddEditStockCheckDetail", parameters);
-    }
-
-    function AddEditProductPricing(parameters, dataWorkspace) {
-        /// <summary>
-        /// Represents the AddEditProductPricing screen.
-        /// </summary>
-        /// <param name="parameters" type="Array">
-        /// An array of screen parameter values.
-        /// </param>
-        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
-        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
-        /// </param>
-        /// <field name="StockOnHand" type="msls.application.StockOnHand">
-        /// Gets or sets the stockOnHand for this screen.
-        /// </field>
-        /// <field name="UnitCost" type="String">
-        /// Gets or sets the unitCost for this screen.
-        /// </field>
-        /// <field name="details" type="msls.application.AddEditProductPricing.Details">
-        /// Gets the details for this screen.
-        /// </field>
-        if (!dataWorkspace) {
-            dataWorkspace = new lightSwitchApplication.DataWorkspace();
-        }
-        $Screen.call(this, dataWorkspace, "AddEditProductPricing", parameters);
     }
 
     function AddEditSupplier(parameters, dataWorkspace) {
@@ -1464,6 +1507,34 @@
         $Screen.call(this, dataWorkspace, "BrowseInventoryTasks", parameters);
     }
 
+    function BrowseLocations(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the BrowseLocations screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="ProductLocations" type="msls.VisualCollection" elementType="msls.application.Location">
+        /// Gets the productLocations for this screen.
+        /// </field>
+        /// <field name="Products" type="msls.VisualCollection" elementType="msls.application.Product">
+        /// Gets the products for this screen.
+        /// </field>
+        /// <field name="Search" type="String">
+        /// Gets or sets the search for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.BrowseLocations.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "BrowseLocations", parameters);
+    }
+
     function BrowseMachines(parameters, dataWorkspace) {
         /// <summary>
         /// Represents the BrowseMachines screen.
@@ -1581,6 +1652,31 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "BrowseOrderRequisitionsDelivery", parameters);
+    }
+
+    function BrowseOrderRequisitionsTransportRoute(parameters, dataWorkspace) {
+        /// <summary>
+        /// Represents the BrowseOrderRequisitionsTransportRoute screen.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// An array of screen parameter values.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
+        /// </param>
+        /// <field name="QueryOrderRequisitionTransportRoute" type="msls.VisualCollection" elementType="msls.application.OrderRequisition">
+        /// Gets the queryOrderRequisitionTransportRoute for this screen.
+        /// </field>
+        /// <field name="QueryRequisitionDetailPicking" type="msls.VisualCollection" elementType="msls.application.OrderRequisitionDetail">
+        /// Gets the queryRequisitionDetailPicking for this screen.
+        /// </field>
+        /// <field name="details" type="msls.application.BrowseOrderRequisitionsTransportRoute.Details">
+        /// Gets the details for this screen.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "BrowseOrderRequisitionsTransportRoute", parameters);
     }
 
     function BrowseOrders(parameters, dataWorkspace) {
@@ -1765,34 +1861,6 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "BrowseProductGroups", parameters);
-    }
-
-    function BrowseLocations(parameters, dataWorkspace) {
-        /// <summary>
-        /// Represents the BrowseLocations screen.
-        /// </summary>
-        /// <param name="parameters" type="Array">
-        /// An array of screen parameter values.
-        /// </param>
-        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
-        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
-        /// </param>
-        /// <field name="ProductLocations" type="msls.VisualCollection" elementType="msls.application.Location">
-        /// Gets the productLocations for this screen.
-        /// </field>
-        /// <field name="Products" type="msls.VisualCollection" elementType="msls.application.Product">
-        /// Gets the products for this screen.
-        /// </field>
-        /// <field name="Search" type="String">
-        /// Gets or sets the search for this screen.
-        /// </field>
-        /// <field name="details" type="msls.application.BrowseLocations.Details">
-        /// Gets the details for this screen.
-        /// </field>
-        if (!dataWorkspace) {
-            dataWorkspace = new lightSwitchApplication.DataWorkspace();
-        }
-        $Screen.call(this, dataWorkspace, "BrowseLocations", parameters);
     }
 
     function BrowseProductPricings(parameters, dataWorkspace) {
@@ -1996,28 +2064,6 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "BrowsePurchaseOrders_Old", parameters);
-    }
-
-    function BrowseOrderRequisitionsTransportRoute(parameters, dataWorkspace) {
-        /// <summary>
-        /// Represents the BrowseOrderRequisitionsTransportRoute screen.
-        /// </summary>
-        /// <param name="parameters" type="Array">
-        /// An array of screen parameter values.
-        /// </param>
-        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
-        /// An existing data workspace for this screen to use. By default, a new data workspace is created.
-        /// </param>
-        /// <field name="QueryOrderRequisitionTransportRoute" type="msls.VisualCollection" elementType="msls.application.OrderRequisition">
-        /// Gets the queryOrderRequisitionTransportRoute for this screen.
-        /// </field>
-        /// <field name="details" type="msls.application.BrowseOrderRequisitionsTransportRoute.Details">
-        /// Gets the details for this screen.
-        /// </field>
-        if (!dataWorkspace) {
-            dataWorkspace = new lightSwitchApplication.DataWorkspace();
-        }
-        $Screen.call(this, dataWorkspace, "BrowseOrderRequisitionsTransportRoute", parameters);
     }
 
     function BrowseSaleOrders(parameters, dataWorkspace) {
@@ -2596,6 +2642,11 @@
         ], [
         ]),
 
+        AddEditLocation: $defineScreen(AddEditLocation, [
+            { name: "ProductLocation", kind: "local", type: lightSwitchApplication.Location }
+        ], [
+        ]),
+
         AddEditMachine: $defineScreen(AddEditMachine, [
             { name: "Machine", kind: "local", type: lightSwitchApplication.Machine }
         ], [
@@ -2622,8 +2673,16 @@
                 appendQuery: function () {
                     return this.expand("Product").expand("Product.UnitOfMeasure");
                 }
-            }
+            },
+            {
+                name: "QueryCustomerGroupByTransportRoute", kind: "collection", elementType: lightSwitchApplication.Customer,
+                createQuery: function (SearchCustomer) {
+                    return this.dataWorkspace.ApplicationData.QueryCustomerGroupByTransportRoute().filter("" + ((SearchCustomer === undefined || SearchCustomer === null) ? "true" : "substringof(" + $toODataString(SearchCustomer, "String?") + ", CustomerName)") + " or " + ((SearchCustomer === undefined || SearchCustomer === null) ? "true" : "substringof(" + $toODataString(SearchCustomer, "String?") + ", TransportRoute/TransportRouteName)") + "").orderBy("TransportRoute/TransportRouteName").thenBy("CustomerName").expand("TransportRoute");
+                }
+            },
+            { name: "SearchCustomer", kind: "local", type: String }
         ], [
+            { name: "QueryCustomerGroupByTransportRoute_ItemTap" }
         ]),
 
         AddEditOrderRequisitionDetail: $defineScreen(AddEditOrderRequisitionDetail, [
@@ -2651,19 +2710,41 @@
 
         AddEditPickingSlip: $defineScreen(AddEditPickingSlip, [
             { name: "PickingSlip", kind: "local", type: lightSwitchApplication.PickingSlip },
+            { name: "SelectedTransportRoute", kind: "local", type: lightSwitchApplication.TransportRoute },
+            {
+                name: "QueryRequisitionDetailPicking", kind: "collection", elementType: lightSwitchApplication.OrderRequisitionDetail,
+                createQuery: function (SelectedTransportRouteID) {
+                    return this.dataWorkspace.ApplicationData.QueryRequisitionDetailPicking(SelectedTransportRouteID).filter("" + ((SelectedTransportRouteID === undefined || SelectedTransportRouteID === null) ? "false" : "(OrderRequisition/Customer/TransportRoute/Id eq " + $toODataString(SelectedTransportRouteID, "Int32?") + ")") + "").expand("OrderRequisition").expand("OrderRequisition.Customer").expand("Product").expand("Product.UnitOfMeasure");
+                }
+            },
             {
                 name: "PickingSlipDetails", kind: "collection", elementType: lightSwitchApplication.PickingSlipDetail,
                 getNavigationProperty: function () {
-                    if (this.owner.PickingSlip) {
-                        return this.owner.PickingSlip.details.properties.PickingSlipDetails;
+                    if (this.owner.QueryRequisitionDetailPicking.selectedItem) {
+                        return this.owner.QueryRequisitionDetailPicking.selectedItem.details.properties.PickingSlipDetails;
                     }
                     return null;
                 },
                 appendQuery: function () {
-                    return this.expand("OrderRequisitionDetail").expand("Location");
+                    return this.filter("Id eq OrderRequisitionDetail/Id").expand("Location");
                 }
             }
         ], [
+            { name: "QueryRequisitionDetailPicking_ItemTap" }
+        ]),
+
+        AddEditPickingSlipDetail: $defineScreen(AddEditPickingSlipDetail, [
+            { name: "PickingSlipDetail", kind: "local", type: lightSwitchApplication.PickingSlipDetail },
+            {
+                name: "StockOnHandForSale", kind: "collection", elementType: lightSwitchApplication.StockOnHand,
+                createQuery: function (SearchStockOnhand, OrderDetail_ProductID) {
+                    return this.dataWorkspace.ApplicationData.StockOnHandForSale().filter("" + ((OrderDetail_ProductID === undefined || OrderDetail_ProductID === null) ? "false" : "(Product/Id eq " + $toODataString(OrderDetail_ProductID, "Int32?") + ")") + "").orderBy("Location/LocationName").thenBy("LotNo").expand("Product").expand("Location");
+                }
+            },
+            { name: "SearchStockOnhand", kind: "local", type: String },
+            { name: "AvailableQuantity", kind: "local", type: Number }
+        ], [
+            { name: "StockOnHandForSale_ItemTap" }
         ]),
 
         AddEditPO: $defineScreen(AddEditPO, [
@@ -2758,6 +2839,41 @@
         ], [
         ]),
 
+        AddEditProduct_bk: $defineScreen(AddEditProduct_bk, [
+            { name: "Product", kind: "local", type: lightSwitchApplication.Product },
+            { name: "UnitsOnOrder", kind: "local", type: String },
+            { name: "UnitsOnHand", kind: "local", type: String }
+        ], [
+        ]),
+
+        AddEditProductCategory: $defineScreen(AddEditProductCategory, [
+            { name: "ProductCategory", kind: "local", type: lightSwitchApplication.ProductCategory },
+            {
+                name: "Products", kind: "collection", elementType: lightSwitchApplication.Product,
+                getNavigationProperty: function () {
+                    if (this.owner.ProductCategory) {
+                        return this.owner.ProductCategory.details.properties.Products;
+                    }
+                    return null;
+                },
+                appendQuery: function () {
+                    return this;
+                }
+            }
+        ], [
+        ]),
+
+        AddEditProductGroup: $defineScreen(AddEditProductGroup, [
+            { name: "ProductGroup", kind: "local", type: lightSwitchApplication.ProductGroup }
+        ], [
+        ]),
+
+        AddEditProductPricing: $defineScreen(AddEditProductPricing, [
+            { name: "StockOnHand", kind: "local", type: lightSwitchApplication.StockOnHand },
+            { name: "UnitCost", kind: "local", type: String }
+        ], [
+        ]),
+
         AddEditProductReceiveBalanceForward: $defineScreen(AddEditProductReceiveBalanceForward, [
             { name: "ProductReceive", kind: "local", type: lightSwitchApplication.ProductReceiveBalanceForward },
             {
@@ -2830,47 +2946,39 @@
             { name: "LocationActiveQuery_ItemTap" }
         ]),
 
-        AddEditProduct_bk: $defineScreen(AddEditProduct_bk, [
-            { name: "Product", kind: "local", type: lightSwitchApplication.Product },
-            { name: "UnitsOnOrder", kind: "local", type: String },
-            { name: "UnitsOnHand", kind: "local", type: String }
+        AddEditProductSubscriber: $defineScreen(AddEditProductSubscriber, [
         ], [
         ]),
 
-        AddEditProductCategory: $defineScreen(AddEditProductCategory, [
-            { name: "ProductCategory", kind: "local", type: lightSwitchApplication.ProductCategory },
+        AddEditPurchaseOrder: $defineScreen(AddEditPurchaseOrder, [
+            { name: "PurchaseOrder", kind: "local", type: lightSwitchApplication.PurchaseOrder },
             {
-                name: "Products", kind: "collection", elementType: lightSwitchApplication.Product,
+                name: "PurchaseOrderDetails", kind: "collection", elementType: lightSwitchApplication.PurchaseOrderDetail,
                 getNavigationProperty: function () {
-                    if (this.owner.ProductCategory) {
-                        return this.owner.ProductCategory.details.properties.Products;
+                    if (this.owner.PurchaseOrder) {
+                        return this.owner.PurchaseOrder.details.properties.PurchaseOrderDetails;
                     }
                     return null;
                 },
                 appendQuery: function () {
-                    return this;
+                    return this.expand("Product").expand("Product.UnitOfMeasure");
                 }
-            }
+            },
+            { name: "POStatusDescription", kind: "local", type: String }
         ], [
         ]),
 
-        AddEditProductGroup: $defineScreen(AddEditProductGroup, [
-            { name: "ProductGroup", kind: "local", type: lightSwitchApplication.ProductGroup }
-        ], [
-        ]),
-
-        AddEditLocation: $defineScreen(AddEditLocation, [
-            { name: "ProductLocation", kind: "local", type: lightSwitchApplication.Location }
-        ], [
-        ]),
-
-        AddEditProductSubscriber: $defineScreen(AddEditProductSubscriber, [
+        AddEditPurchaseOrder_Old: $defineScreen(AddEditPurchaseOrder_Old, [
         ], [
         ]),
 
         AddEditPurchaseOrderDetail: $defineScreen(AddEditPurchaseOrderDetail, [
             { name: "PurchaseOrderDetail", kind: "local", type: lightSwitchApplication.PurchaseOrderDetail },
             { name: "SelectPONumber", kind: "local", type: String }
+        ], [
+        ]),
+
+        AddEditPurchaseOrderDetail_Old: $defineScreen(AddEditPurchaseOrderDetail_Old, [
         ], [
         ]),
 
@@ -2893,32 +3001,6 @@
                     return this.expand("Product").expand("Product.UnitOfMeasure");
                 }
             }
-        ], [
-        ]),
-
-        AddEditPurchaseOrder_Old: $defineScreen(AddEditPurchaseOrder_Old, [
-        ], [
-        ]),
-
-        AddEditPurchaseOrder: $defineScreen(AddEditPurchaseOrder, [
-            { name: "PurchaseOrder", kind: "local", type: lightSwitchApplication.PurchaseOrder },
-            {
-                name: "PurchaseOrderDetails", kind: "collection", elementType: lightSwitchApplication.PurchaseOrderDetail,
-                getNavigationProperty: function () {
-                    if (this.owner.PurchaseOrder) {
-                        return this.owner.PurchaseOrder.details.properties.PurchaseOrderDetails;
-                    }
-                    return null;
-                },
-                appendQuery: function () {
-                    return this.expand("Product").expand("Product.UnitOfMeasure");
-                }
-            },
-            { name: "POStatusDescription", kind: "local", type: String }
-        ], [
-        ]),
-
-        AddEditPurchaseOrderDetail_Old: $defineScreen(AddEditPurchaseOrderDetail_Old, [
         ], [
         ]),
 
@@ -3057,12 +3139,6 @@
 
         AddEditStockCheckDetail: $defineScreen(AddEditStockCheckDetail, [
             { name: "StockCheckDetail", kind: "local", type: lightSwitchApplication.StockCheckDetail }
-        ], [
-        ]),
-
-        AddEditProductPricing: $defineScreen(AddEditProductPricing, [
-            { name: "StockOnHand", kind: "local", type: lightSwitchApplication.StockOnHand },
-            { name: "UnitCost", kind: "local", type: String }
         ], [
         ]),
 
@@ -3218,6 +3294,29 @@
         ], [
         ]),
 
+        BrowseLocations: $defineScreen(BrowseLocations, [
+            {
+                name: "ProductLocations", kind: "collection", elementType: lightSwitchApplication.Location,
+                createQuery: function (Search) {
+                    return this.dataWorkspace.ApplicationData.Locations.filter("" + ((Search === undefined || Search === null) ? "true" : "substringof(" + $toODataString(Search, "String?") + ", LocationName)") + "");
+                }
+            },
+            {
+                name: "Products", kind: "collection", elementType: lightSwitchApplication.Product,
+                getNavigationProperty: function () {
+                    if (this.owner.ProductLocations.selectedItem) {
+                        return this.owner.ProductLocations.selectedItem.details.properties.Products;
+                    }
+                    return null;
+                },
+                appendQuery: function (Search) {
+                    return this.filter("" + ((Search === undefined || Search === null) ? "true" : "substringof(" + $toODataString(Search, "String?") + ", Location/LocationName)") + "");
+                }
+            },
+            { name: "Search", kind: "local", type: String }
+        ], [
+        ]),
+
         BrowseMachines: $defineScreen(BrowseMachines, [
             {
                 name: "Machines", kind: "collection", elementType: lightSwitchApplication.Machine,
@@ -3281,6 +3380,23 @@
             { name: "TotalProductWeight", kind: "local", type: Number },
             { name: "TotalWeight", kind: "local", type: Number }
         ], [
+        ]),
+
+        BrowseOrderRequisitionsTransportRoute: $defineScreen(BrowseOrderRequisitionsTransportRoute, [
+            {
+                name: "QueryOrderRequisitionTransportRoute", kind: "collection", elementType: lightSwitchApplication.OrderRequisition,
+                createQuery: function () {
+                    return this.dataWorkspace.ApplicationData.QueryOrderRequisitionTransportRoute().expand("Customer").expand("Customer.TransportRoute");
+                }
+            },
+            {
+                name: "QueryRequisitionDetailPicking", kind: "collection", elementType: lightSwitchApplication.OrderRequisitionDetail,
+                createQuery: function (SelectedTransportRouteID) {
+                    return this.dataWorkspace.ApplicationData.QueryRequisitionDetailPicking(SelectedTransportRouteID);
+                }
+            }
+        ], [
+            { name: "QueryOrderRequisitionTransportRoute_ItemTap" }
         ]),
 
         BrowseOrders: $defineScreen(BrowseOrders, [
@@ -3407,29 +3523,6 @@
         ], [
         ]),
 
-        BrowseLocations: $defineScreen(BrowseLocations, [
-            {
-                name: "ProductLocations", kind: "collection", elementType: lightSwitchApplication.Location,
-                createQuery: function (Search) {
-                    return this.dataWorkspace.ApplicationData.Locations.filter("" + ((Search === undefined || Search === null) ? "true" : "substringof(" + $toODataString(Search, "String?") + ", LocationName)") + "");
-                }
-            },
-            {
-                name: "Products", kind: "collection", elementType: lightSwitchApplication.Product,
-                getNavigationProperty: function () {
-                    if (this.owner.ProductLocations.selectedItem) {
-                        return this.owner.ProductLocations.selectedItem.details.properties.Products;
-                    }
-                    return null;
-                },
-                appendQuery: function (Search) {
-                    return this.filter("" + ((Search === undefined || Search === null) ? "true" : "substringof(" + $toODataString(Search, "String?") + ", Location/LocationName)") + "");
-                }
-            },
-            { name: "Search", kind: "local", type: String }
-        ], [
-        ]),
-
         BrowseProductPricings: $defineScreen(BrowseProductPricings, [
             {
                 name: "StockOnHands", kind: "collection", elementType: lightSwitchApplication.StockOnHand,
@@ -3529,16 +3622,6 @@
 
         BrowsePurchaseOrders_Old: $defineScreen(BrowsePurchaseOrders_Old, [
             { name: "Search", kind: "local", type: String }
-        ], [
-        ]),
-
-        BrowseOrderRequisitionsTransportRoute: $defineScreen(BrowseOrderRequisitionsTransportRoute, [
-            {
-                name: "QueryOrderRequisitionTransportRoute", kind: "collection", elementType: lightSwitchApplication.OrderRequisition,
-                createQuery: function () {
-                    return this.dataWorkspace.ApplicationData.QueryOrderRequisitionTransportRoute().expand("Customer").expand("Customer.TransportRoute");
-                }
-            }
         ], [
         ]),
 
@@ -3870,6 +3953,18 @@
             return lightSwitchApplication.showScreen("AddEditEmployee", parameters, options);
         }),
 
+        showAddEditLocation: $defineShowScreen(function showAddEditLocation(ProductLocation, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the AddEditLocation screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("AddEditLocation", parameters, options);
+        }),
+
         showAddEditMachine: $defineShowScreen(function showAddEditMachine(Machine, options) {
             /// <summary>
             /// Asynchronously navigates forward to the AddEditMachine screen.
@@ -3954,7 +4049,7 @@
             return lightSwitchApplication.showScreen("AddEditPaymentType", parameters, options);
         }),
 
-        showAddEditPickingSlip: $defineShowScreen(function showAddEditPickingSlip(PickingSlip, options) {
+        showAddEditPickingSlip: $defineShowScreen(function showAddEditPickingSlip(PickingSlip, SelectedTransportRoute, options) {
             /// <summary>
             /// Asynchronously navigates forward to the AddEditPickingSlip screen.
             /// </summary>
@@ -3962,8 +4057,20 @@
             /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
             /// </param>
             /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            var parameters = Array.prototype.slice.call(arguments, 0, 2);
             return lightSwitchApplication.showScreen("AddEditPickingSlip", parameters, options);
+        }),
+
+        showAddEditPickingSlipDetail: $defineShowScreen(function showAddEditPickingSlipDetail(PickingSlipDetail, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the AddEditPickingSlipDetail screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("AddEditPickingSlipDetail", parameters, options);
         }),
 
         showAddEditPO: $defineShowScreen(function showAddEditPO(PurchaseOrder, options) {
@@ -4026,6 +4133,54 @@
             return lightSwitchApplication.showScreen("AddEditProduct", parameters, options);
         }),
 
+        showAddEditProduct_bk: $defineShowScreen(function showAddEditProduct_bk(Product, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the AddEditProduct_bk screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("AddEditProduct_bk", parameters, options);
+        }),
+
+        showAddEditProductCategory: $defineShowScreen(function showAddEditProductCategory(ProductCategory, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the AddEditProductCategory screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("AddEditProductCategory", parameters, options);
+        }),
+
+        showAddEditProductGroup: $defineShowScreen(function showAddEditProductGroup(ProductGroup, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the AddEditProductGroup screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("AddEditProductGroup", parameters, options);
+        }),
+
+        showAddEditProductPricing: $defineShowScreen(function showAddEditProductPricing(StockOnHand, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the AddEditProductPricing screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("AddEditProductPricing", parameters, options);
+        }),
+
         showAddEditProductReceiveBalanceForward: $defineShowScreen(function showAddEditProductReceiveBalanceForward(ProductReceive, options) {
             /// <summary>
             /// Asynchronously navigates forward to the AddEditProductReceiveBalanceForward screen.
@@ -4074,54 +4229,6 @@
             return lightSwitchApplication.showScreen("AddEditProductReceivePurchaseOrderDetail", parameters, options);
         }),
 
-        showAddEditProduct_bk: $defineShowScreen(function showAddEditProduct_bk(Product, options) {
-            /// <summary>
-            /// Asynchronously navigates forward to the AddEditProduct_bk screen.
-            /// </summary>
-            /// <param name="options" optional="true">
-            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
-            /// </param>
-            /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 1);
-            return lightSwitchApplication.showScreen("AddEditProduct_bk", parameters, options);
-        }),
-
-        showAddEditProductCategory: $defineShowScreen(function showAddEditProductCategory(ProductCategory, options) {
-            /// <summary>
-            /// Asynchronously navigates forward to the AddEditProductCategory screen.
-            /// </summary>
-            /// <param name="options" optional="true">
-            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
-            /// </param>
-            /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 1);
-            return lightSwitchApplication.showScreen("AddEditProductCategory", parameters, options);
-        }),
-
-        showAddEditProductGroup: $defineShowScreen(function showAddEditProductGroup(ProductGroup, options) {
-            /// <summary>
-            /// Asynchronously navigates forward to the AddEditProductGroup screen.
-            /// </summary>
-            /// <param name="options" optional="true">
-            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
-            /// </param>
-            /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 1);
-            return lightSwitchApplication.showScreen("AddEditProductGroup", parameters, options);
-        }),
-
-        showAddEditLocation: $defineShowScreen(function showAddEditLocation(ProductLocation, options) {
-            /// <summary>
-            /// Asynchronously navigates forward to the AddEditLocation screen.
-            /// </summary>
-            /// <param name="options" optional="true">
-            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
-            /// </param>
-            /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 1);
-            return lightSwitchApplication.showScreen("AddEditLocation", parameters, options);
-        }),
-
         showAddEditProductSubscriber: $defineShowScreen(function showAddEditProductSubscriber(options) {
             /// <summary>
             /// Asynchronously navigates forward to the AddEditProductSubscriber screen.
@@ -4134,6 +4241,30 @@
             return lightSwitchApplication.showScreen("AddEditProductSubscriber", parameters, options);
         }),
 
+        showAddEditPurchaseOrder: $defineShowScreen(function showAddEditPurchaseOrder(PurchaseOrder, options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the AddEditPurchaseOrder screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("AddEditPurchaseOrder", parameters, options);
+        }),
+
+        showAddEditPurchaseOrder_Old: $defineShowScreen(function showAddEditPurchaseOrder_Old(options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the AddEditPurchaseOrder_Old screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 0);
+            return lightSwitchApplication.showScreen("AddEditPurchaseOrder_Old", parameters, options);
+        }),
+
         showAddEditPurchaseOrderDetail: $defineShowScreen(function showAddEditPurchaseOrderDetail(PurchaseOrderDetail, options) {
             /// <summary>
             /// Asynchronously navigates forward to the AddEditPurchaseOrderDetail screen.
@@ -4144,6 +4275,18 @@
             /// <returns type="WinJS.Promise" />
             var parameters = Array.prototype.slice.call(arguments, 0, 1);
             return lightSwitchApplication.showScreen("AddEditPurchaseOrderDetail", parameters, options);
+        }),
+
+        showAddEditPurchaseOrderDetail_Old: $defineShowScreen(function showAddEditPurchaseOrderDetail_Old(options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the AddEditPurchaseOrderDetail_Old screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 0);
+            return lightSwitchApplication.showScreen("AddEditPurchaseOrderDetail_Old", parameters, options);
         }),
 
         showAddEditPurchaseOrderDetailTest: $defineShowScreen(function showAddEditPurchaseOrderDetailTest(PurchaseOrderDetail, options) {
@@ -4168,42 +4311,6 @@
             /// <returns type="WinJS.Promise" />
             var parameters = Array.prototype.slice.call(arguments, 0, 1);
             return lightSwitchApplication.showScreen("AddEditPurchaseOrderTest", parameters, options);
-        }),
-
-        showAddEditPurchaseOrder_Old: $defineShowScreen(function showAddEditPurchaseOrder_Old(options) {
-            /// <summary>
-            /// Asynchronously navigates forward to the AddEditPurchaseOrder_Old screen.
-            /// </summary>
-            /// <param name="options" optional="true">
-            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
-            /// </param>
-            /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 0);
-            return lightSwitchApplication.showScreen("AddEditPurchaseOrder_Old", parameters, options);
-        }),
-
-        showAddEditPurchaseOrder: $defineShowScreen(function showAddEditPurchaseOrder(PurchaseOrder, options) {
-            /// <summary>
-            /// Asynchronously navigates forward to the AddEditPurchaseOrder screen.
-            /// </summary>
-            /// <param name="options" optional="true">
-            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
-            /// </param>
-            /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 1);
-            return lightSwitchApplication.showScreen("AddEditPurchaseOrder", parameters, options);
-        }),
-
-        showAddEditPurchaseOrderDetail_Old: $defineShowScreen(function showAddEditPurchaseOrderDetail_Old(options) {
-            /// <summary>
-            /// Asynchronously navigates forward to the AddEditPurchaseOrderDetail_Old screen.
-            /// </summary>
-            /// <param name="options" optional="true">
-            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
-            /// </param>
-            /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 0);
-            return lightSwitchApplication.showScreen("AddEditPurchaseOrderDetail_Old", parameters, options);
         }),
 
         showAddEditReceiveFromPurchaseOrder: $defineShowScreen(function showAddEditReceiveFromPurchaseOrder(options) {
@@ -4312,18 +4419,6 @@
             /// <returns type="WinJS.Promise" />
             var parameters = Array.prototype.slice.call(arguments, 0, 1);
             return lightSwitchApplication.showScreen("AddEditStockCheckDetail", parameters, options);
-        }),
-
-        showAddEditProductPricing: $defineShowScreen(function showAddEditProductPricing(StockOnHand, options) {
-            /// <summary>
-            /// Asynchronously navigates forward to the AddEditProductPricing screen.
-            /// </summary>
-            /// <param name="options" optional="true">
-            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
-            /// </param>
-            /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 1);
-            return lightSwitchApplication.showScreen("AddEditProductPricing", parameters, options);
         }),
 
         showAddEditSupplier: $defineShowScreen(function showAddEditSupplier(Supplier, options) {
@@ -4506,6 +4601,18 @@
             return lightSwitchApplication.showScreen("BrowseInventoryTasks", parameters, options);
         }),
 
+        showBrowseLocations: $defineShowScreen(function showBrowseLocations(options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the BrowseLocations screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 0);
+            return lightSwitchApplication.showScreen("BrowseLocations", parameters, options);
+        }),
+
         showBrowseMachines: $defineShowScreen(function showBrowseMachines(options) {
             /// <summary>
             /// Asynchronously navigates forward to the BrowseMachines screen.
@@ -4564,6 +4671,18 @@
             /// <returns type="WinJS.Promise" />
             var parameters = Array.prototype.slice.call(arguments, 0, 1);
             return lightSwitchApplication.showScreen("BrowseOrderRequisitionsDelivery", parameters, options);
+        }),
+
+        showBrowseOrderRequisitionsTransportRoute: $defineShowScreen(function showBrowseOrderRequisitionsTransportRoute(options) {
+            /// <summary>
+            /// Asynchronously navigates forward to the BrowseOrderRequisitionsTransportRoute screen.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 0);
+            return lightSwitchApplication.showScreen("BrowseOrderRequisitionsTransportRoute", parameters, options);
         }),
 
         showBrowseOrders: $defineShowScreen(function showBrowseOrders(options) {
@@ -4648,18 +4767,6 @@
             /// <returns type="WinJS.Promise" />
             var parameters = Array.prototype.slice.call(arguments, 0, 0);
             return lightSwitchApplication.showScreen("BrowseProductGroups", parameters, options);
-        }),
-
-        showBrowseLocations: $defineShowScreen(function showBrowseLocations(options) {
-            /// <summary>
-            /// Asynchronously navigates forward to the BrowseLocations screen.
-            /// </summary>
-            /// <param name="options" optional="true">
-            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
-            /// </param>
-            /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 0);
-            return lightSwitchApplication.showScreen("BrowseLocations", parameters, options);
         }),
 
         showBrowseProductPricings: $defineShowScreen(function showBrowseProductPricings(options) {
@@ -4756,18 +4863,6 @@
             /// <returns type="WinJS.Promise" />
             var parameters = Array.prototype.slice.call(arguments, 0, 0);
             return lightSwitchApplication.showScreen("BrowsePurchaseOrders_Old", parameters, options);
-        }),
-
-        showBrowseOrderRequisitionsTransportRoute: $defineShowScreen(function showBrowseOrderRequisitionsTransportRoute(options) {
-            /// <summary>
-            /// Asynchronously navigates forward to the BrowseOrderRequisitionsTransportRoute screen.
-            /// </summary>
-            /// <param name="options" optional="true">
-            /// An object that provides one or more of the following options:<br/>- beforeShown: a function that is called after boundary behavior has been applied but before the screen is shown.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: a function that is called after boundary behavior has been applied and the screen has been closed.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
-            /// </param>
-            /// <returns type="WinJS.Promise" />
-            var parameters = Array.prototype.slice.call(arguments, 0, 0);
-            return lightSwitchApplication.showScreen("BrowseOrderRequisitionsTransportRoute", parameters, options);
         }),
 
         showBrowseSaleOrders: $defineShowScreen(function showBrowseSaleOrders(options) {

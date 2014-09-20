@@ -690,7 +690,25 @@ namespace LightSwitchApplication
         {
             query = query.OrderByDescending(x => x.OrderRequisitionNo);
         }
-            
-      
+
+        partial void PurchaseOrders_Updating(PurchaseOrder entity)
+        {
+            if (entity.PurchaseOrderStatus == true) { 
+                foreach(PurchaseOrderDetail PODetail in entity.PurchaseOrderDetails){
+                    PODetail.IsReceiveComplete = true;
+                } 
+            }
+        }
+
+        partial void PurchaseOrders_Inserting(PurchaseOrder entity)
+        {
+            if (entity.PurchaseOrderStatus == true)
+            {
+                foreach (PurchaseOrderDetail PODetail in entity.PurchaseOrderDetails)
+                {
+                    PODetail.IsReceiveComplete = true;
+                }
+            }
+        }  
     }
 }

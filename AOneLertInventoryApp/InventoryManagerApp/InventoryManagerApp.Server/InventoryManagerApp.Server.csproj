@@ -214,6 +214,9 @@
     <Compile Include="DataSources\ApplicationData\OrderRequisition.lsml.cs">
       <DependentUpon>OrderRequisitions.lsml</DependentUpon>
     </Compile>
+    <Compile Include="DataSources\ApplicationData\PickingSlip.lsml.cs">
+      <DependentUpon>PickingSlips.lsml</DependentUpon>
+    </Compile>
     <Compile Include="DataSources\ApplicationData\Product.lsml.cs">
       <DependentUpon>Products.lsml</DependentUpon>
     </Compile>
@@ -384,6 +387,15 @@
     </LightSwitchModel>
     <LightSwitchModel Include="DataSources\ApplicationData\PickingSlips.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\PickingSlipDetails.lsml" />
+    <LightSwitchModel Include="DataSources\ApplicationData\QueryMaxPickingNUmber.lsml">
+      <DependentUpon>PickingSlips.lsml</DependentUpon>
+    </LightSwitchModel>
+    <LightSwitchModel Include="DataSources\ApplicationData\QueryRequisitionDetailPicking.lsml">
+      <DependentUpon>OrderRequisitionDetails.lsml</DependentUpon>
+    </LightSwitchModel>
+    <LightSwitchModel Include="DataSources\ApplicationData\QueryCustomerGroupByTransportRoute.lsml">
+      <DependentUpon>Customers.lsml</DependentUpon>
+    </LightSwitchModel>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

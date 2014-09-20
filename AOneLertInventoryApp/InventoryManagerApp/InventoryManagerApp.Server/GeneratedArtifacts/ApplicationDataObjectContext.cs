@@ -4749,20 +4749,22 @@ namespace LightSwitchApplication.Implementation
         /// <param name="pickingNo">Initial value of the PickingNo property.</param>
         /// <param name="pickingDate">Initial value of the PickingDate property.</param>
         /// <param name="pickingSlip_TransportRoute">Initial value of the PickingSlip_TransportRoute property.</param>
+        /// <param name="truckLicense">Initial value of the TruckLicense property.</param>
+        /// <param name="truckCapacityWeight">Initial value of the TruckCapacityWeight property.</param>
         /// <param name="totalWeight">Initial value of the TotalWeight property.</param>
         /// <param name="status">Initial value of the Status property.</param>
-        /// <param name="remark">Initial value of the Remark property.</param>
         /// <param name="rowVersion">Initial value of the RowVersion property.</param>
-        public static PickingSlip CreatePickingSlip(global::System.Int32 id, global::System.String pickingNo, global::System.DateTime pickingDate, global::System.Int32 pickingSlip_TransportRoute, global::System.Double totalWeight, global::System.Boolean status, global::System.String remark, global::System.Byte[] rowVersion)
+        public static PickingSlip CreatePickingSlip(global::System.Int32 id, global::System.String pickingNo, global::System.DateTime pickingDate, global::System.Int32 pickingSlip_TransportRoute, global::System.String truckLicense, global::System.Double truckCapacityWeight, global::System.Double totalWeight, global::System.Boolean status, global::System.Byte[] rowVersion)
         {
             PickingSlip pickingSlip = new PickingSlip();
             pickingSlip.Id = id;
             pickingSlip.PickingNo = pickingNo;
             pickingSlip.PickingDate = pickingDate;
             pickingSlip.PickingSlip_TransportRoute = pickingSlip_TransportRoute;
+            pickingSlip.TruckLicense = truckLicense;
+            pickingSlip.TruckCapacityWeight = truckCapacityWeight;
             pickingSlip.TotalWeight = totalWeight;
             pickingSlip.Status = status;
-            pickingSlip.Remark = remark;
             pickingSlip.RowVersion = rowVersion;
             return pickingSlip;
         }
@@ -4875,6 +4877,54 @@ namespace LightSwitchApplication.Implementation
         /// </summary>
         [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
         [DataMemberAttribute()]
+        public global::System.String TruckLicense
+        {
+            get
+            {
+                return _TruckLicense;
+            }
+            set
+            {
+                OnTruckLicenseChanging(value);
+                ReportPropertyChanging("TruckLicense");
+                _TruckLicense = value;
+                ReportPropertyChanged("TruckLicense");
+                OnTruckLicenseChanged();
+            }
+        }
+        private global::System.String _TruckLicense;
+        partial void OnTruckLicenseChanging(global::System.String value);
+        partial void OnTruckLicenseChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Double TruckCapacityWeight
+        {
+            get
+            {
+                return _TruckCapacityWeight;
+            }
+            set
+            {
+                OnTruckCapacityWeightChanging(value);
+                ReportPropertyChanging("TruckCapacityWeight");
+                _TruckCapacityWeight = value;
+                ReportPropertyChanged("TruckCapacityWeight");
+                OnTruckCapacityWeightChanged();
+            }
+        }
+        private global::System.Double _TruckCapacityWeight;
+        partial void OnTruckCapacityWeightChanging(global::System.Double value);
+        partial void OnTruckCapacityWeightChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
         public global::System.Double TotalWeight
         {
             get
@@ -4893,6 +4943,30 @@ namespace LightSwitchApplication.Implementation
         private global::System.Double _TotalWeight;
         partial void OnTotalWeightChanging(global::System.Double value);
         partial void OnTotalWeightChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Remark
+        {
+            get
+            {
+                return _Remark;
+            }
+            set
+            {
+                OnRemarkChanging(value);
+                ReportPropertyChanging("Remark");
+                _Remark = value;
+                ReportPropertyChanged("Remark");
+                OnRemarkChanged();
+            }
+        }
+        private global::System.String _Remark;
+        partial void OnRemarkChanging(global::System.String value);
+        partial void OnRemarkChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -4917,30 +4991,6 @@ namespace LightSwitchApplication.Implementation
         private global::System.Boolean _Status;
         partial void OnStatusChanging(global::System.Boolean value);
         partial void OnStatusChanged();
-    
-        /// <summary>
-        /// No Metadata Documentation available.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.String Remark
-        {
-            get
-            {
-                return _Remark;
-            }
-            set
-            {
-                OnRemarkChanging(value);
-                ReportPropertyChanging("Remark");
-                _Remark = value;
-                ReportPropertyChanged("Remark");
-                OnRemarkChanged();
-            }
-        }
-        private global::System.String _Remark;
-        partial void OnRemarkChanging(global::System.String value);
-        partial void OnRemarkChanged();
     
         /// <summary>
         /// No Metadata Documentation available.

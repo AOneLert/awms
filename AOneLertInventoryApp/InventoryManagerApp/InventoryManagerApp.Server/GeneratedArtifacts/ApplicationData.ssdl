@@ -391,9 +391,11 @@
     <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="PickingNo" Type="nvarchar" Nullable="false" MaxLength="255" />
     <Property Name="PickingDate" Type="datetime" Nullable="false" />
+    <Property Name="TruckLicense" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="TruckCapacityWeight" Type="float" Nullable="false" />
     <Property Name="TotalWeight" Type="float" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="255" />
     <Property Name="Status" Type="bit" Nullable="false" />
-    <Property Name="Remark" Type="nvarchar" Nullable="false" MaxLength="255" />
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Created" Type="datetimeoffset" />
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />

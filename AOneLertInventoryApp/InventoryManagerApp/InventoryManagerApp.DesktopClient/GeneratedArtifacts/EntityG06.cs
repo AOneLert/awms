@@ -1199,6 +1199,54 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string TruckLicense
+        {
+            get
+            {
+                return global::LightSwitchApplication.PickingSlip.DetailsClass.GetValue(this, global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.TruckLicense);
+            }
+            set
+            {
+                global::LightSwitchApplication.PickingSlip.DetailsClass.SetValue(this, global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.TruckLicense, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void TruckLicense_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void TruckLicense_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void TruckLicense_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public double TruckCapacityWeight
+        {
+            get
+            {
+                return global::LightSwitchApplication.PickingSlip.DetailsClass.GetValue(this, global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.TruckCapacityWeight);
+            }
+            set
+            {
+                global::LightSwitchApplication.PickingSlip.DetailsClass.SetValue(this, global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.TruckCapacityWeight, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void TruckCapacityWeight_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void TruckCapacityWeight_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void TruckCapacityWeight_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public double TotalWeight
         {
             get
@@ -1223,30 +1271,6 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public bool Status
-        {
-            get
-            {
-                return global::LightSwitchApplication.PickingSlip.DetailsClass.GetValue(this, global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.Status);
-            }
-            set
-            {
-                global::LightSwitchApplication.PickingSlip.DetailsClass.SetValue(this, global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.Status, value);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Status_IsReadOnly(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Status_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Status_Changed();
-
-        /// <summary>
-        /// No Modeled Description Available
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string Remark
         {
             get
@@ -1265,6 +1289,30 @@ namespace LightSwitchApplication
         partial void Remark_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void Remark_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public bool Status
+        {
+            get
+            {
+                return global::LightSwitchApplication.PickingSlip.DetailsClass.GetValue(this, global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.Status);
+            }
+            set
+            {
+                global::LightSwitchApplication.PickingSlip.DetailsClass.SetValue(this, global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.Status, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Status_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Status_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Status_Changed();
 
         /// <summary>
         /// No Modeled Description Available
@@ -1524,6 +1572,22 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string> TruckLicense
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.TruckLicense) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, double> TruckCapacityWeight
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.TruckCapacityWeight) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, double>;
+                    }
+                }
+                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, double> TotalWeight
                 {
                     get
@@ -1532,19 +1596,19 @@ namespace LightSwitchApplication
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool> Status
-                {
-                    get
-                    {
-                        return base.GetItem(global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.Status) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool>;
-                    }
-                }
-                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string> Remark
                 {
                     get
                     {
                         return base.GetItem(global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.Remark) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool> Status
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties.Status) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool>;
                     }
                 }
                 
@@ -1613,9 +1677,11 @@ namespace LightSwitchApplication
                 new int Id { get; set; }
                 new string PickingNo { get; set; }
                 new global::System.DateTime PickingDate { get; set; }
+                new string TruckLicense { get; set; }
+                new double TruckCapacityWeight { get; set; }
                 new double TotalWeight { get; set; }
-                new bool Status { get; set; }
                 new string Remark { get; set; }
+                new bool Status { get; set; }
                 new string CreatedBy { get; }
                 new global::System.Nullable<global::System.DateTimeOffset> Created { get; }
                 new string ModifiedBy { get; }
@@ -1744,6 +1810,80 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>.Entry
+                    TruckLicense = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>.Entry(
+                        "TruckLicense",
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckLicense_Stub,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckLicense_ComputeIsReadOnly,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckLicense_Validate,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckLicense_GetImplementationValue,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckLicense_SetImplementationValue,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckLicense_OnValueChanged);
+                private static void _TruckLicense_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PickingSlip.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>.Data> c, global::LightSwitchApplication.PickingSlip.DetailsClass d, object sf)
+                {
+                    c(d, ref d._TruckLicense, sf);
+                }
+                private static bool _TruckLicense_ComputeIsReadOnly(global::LightSwitchApplication.PickingSlip e)
+                {
+                    bool result = false;
+                    e.TruckLicense_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _TruckLicense_Validate(global::LightSwitchApplication.PickingSlip e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.TruckLicense_Validate(r);
+                }
+                private static string _TruckLicense_GetImplementationValue(global::LightSwitchApplication.PickingSlip.DetailsClass d)
+                {
+                    return d.ImplementationEntity.TruckLicense;
+                }
+                private static void _TruckLicense_SetImplementationValue(global::LightSwitchApplication.PickingSlip.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.TruckLicense = v;
+                }
+                private static void _TruckLicense_OnValueChanged(global::LightSwitchApplication.PickingSlip e)
+                {
+                    e.TruckLicense_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, double>.Entry
+                    TruckCapacityWeight = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, double>.Entry(
+                        "TruckCapacityWeight",
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckCapacityWeight_Stub,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckCapacityWeight_ComputeIsReadOnly,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckCapacityWeight_Validate,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckCapacityWeight_GetImplementationValue,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckCapacityWeight_SetImplementationValue,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._TruckCapacityWeight_OnValueChanged);
+                private static void _TruckCapacityWeight_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PickingSlip.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, double>.Data> c, global::LightSwitchApplication.PickingSlip.DetailsClass d, object sf)
+                {
+                    c(d, ref d._TruckCapacityWeight, sf);
+                }
+                private static bool _TruckCapacityWeight_ComputeIsReadOnly(global::LightSwitchApplication.PickingSlip e)
+                {
+                    bool result = false;
+                    e.TruckCapacityWeight_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _TruckCapacityWeight_Validate(global::LightSwitchApplication.PickingSlip e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.TruckCapacityWeight_Validate(r);
+                }
+                private static double _TruckCapacityWeight_GetImplementationValue(global::LightSwitchApplication.PickingSlip.DetailsClass d)
+                {
+                    return d.ImplementationEntity.TruckCapacityWeight;
+                }
+                private static void _TruckCapacityWeight_SetImplementationValue(global::LightSwitchApplication.PickingSlip.DetailsClass d, double v)
+                {
+                    d.ImplementationEntity.TruckCapacityWeight = v;
+                }
+                private static void _TruckCapacityWeight_OnValueChanged(global::LightSwitchApplication.PickingSlip e)
+                {
+                    e.TruckCapacityWeight_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, double>.Entry
                     TotalWeight = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, double>.Entry(
                         "TotalWeight",
@@ -1781,43 +1921,6 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool>.Entry
-                    Status = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool>.Entry(
-                        "Status",
-                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_Stub,
-                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_ComputeIsReadOnly,
-                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_Validate,
-                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_GetImplementationValue,
-                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_SetImplementationValue,
-                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_OnValueChanged);
-                private static void _Status_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PickingSlip.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool>.Data> c, global::LightSwitchApplication.PickingSlip.DetailsClass d, object sf)
-                {
-                    c(d, ref d._Status, sf);
-                }
-                private static bool _Status_ComputeIsReadOnly(global::LightSwitchApplication.PickingSlip e)
-                {
-                    bool result = false;
-                    e.Status_IsReadOnly(ref result);
-                    return result;
-                }
-                private static void _Status_Validate(global::LightSwitchApplication.PickingSlip e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.Status_Validate(r);
-                }
-                private static bool _Status_GetImplementationValue(global::LightSwitchApplication.PickingSlip.DetailsClass d)
-                {
-                    return d.ImplementationEntity.Status;
-                }
-                private static void _Status_SetImplementationValue(global::LightSwitchApplication.PickingSlip.DetailsClass d, bool v)
-                {
-                    d.ImplementationEntity.Status = v;
-                }
-                private static void _Status_OnValueChanged(global::LightSwitchApplication.PickingSlip e)
-                {
-                    e.Status_Changed();
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>.Entry
                     Remark = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>.Entry(
                         "Remark",
@@ -1852,6 +1955,43 @@ namespace LightSwitchApplication
                 private static void _Remark_OnValueChanged(global::LightSwitchApplication.PickingSlip e)
                 {
                     e.Remark_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool>.Entry
+                    Status = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool>.Entry(
+                        "Status",
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_Stub,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_ComputeIsReadOnly,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_Validate,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_GetImplementationValue,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_SetImplementationValue,
+                        global::LightSwitchApplication.PickingSlip.DetailsClass.PropertySetProperties._Status_OnValueChanged);
+                private static void _Status_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.PickingSlip.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool>.Data> c, global::LightSwitchApplication.PickingSlip.DetailsClass d, object sf)
+                {
+                    c(d, ref d._Status, sf);
+                }
+                private static bool _Status_ComputeIsReadOnly(global::LightSwitchApplication.PickingSlip e)
+                {
+                    bool result = false;
+                    e.Status_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _Status_Validate(global::LightSwitchApplication.PickingSlip e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.Status_Validate(r);
+                }
+                private static bool _Status_GetImplementationValue(global::LightSwitchApplication.PickingSlip.DetailsClass d)
+                {
+                    return d.ImplementationEntity.Status;
+                }
+                private static void _Status_SetImplementationValue(global::LightSwitchApplication.PickingSlip.DetailsClass d, bool v)
+                {
+                    d.ImplementationEntity.Status = v;
+                }
+                private static void _Status_OnValueChanged(global::LightSwitchApplication.PickingSlip e)
+                {
+                    e.Status_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -2102,13 +2242,19 @@ namespace LightSwitchApplication
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, global::System.DateTime>.Data _PickingDate;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>.Data _TruckLicense;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, double>.Data _TruckCapacityWeight;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, double>.Data _TotalWeight;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool>.Data _Status;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>.Data _Remark;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>.Data _Remark;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, bool>.Data _Status;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.PickingSlip, global::LightSwitchApplication.PickingSlip.DetailsClass, string>.Data _CreatedBy;

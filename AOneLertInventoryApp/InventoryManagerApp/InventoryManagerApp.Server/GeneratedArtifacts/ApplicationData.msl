@@ -197,9 +197,11 @@
           <ScalarProperty Name="PickingNo" ColumnName="PickingNo" />
           <ScalarProperty Name="PickingDate" ColumnName="PickingDate" />
           <ScalarProperty Name="PickingSlip_TransportRoute" ColumnName="PickingSlip_TransportRoute" />
+          <ScalarProperty Name="TruckLicense" ColumnName="TruckLicense" />
+          <ScalarProperty Name="TruckCapacityWeight" ColumnName="TruckCapacityWeight" />
           <ScalarProperty Name="TotalWeight" ColumnName="TotalWeight" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="Created" ColumnName="Created" />
           <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />

@@ -232,6 +232,9 @@
     <Compile Include="..\InventoryManagerApp.Server\DataSources\ApplicationData\OrderRequisition.lsml.cs">
       <Link>UserCode\Shared\OrderRequisition.lsml.cs</Link>
     </Compile>
+    <Compile Include="..\InventoryManagerApp.Server\DataSources\ApplicationData\PickingSlip.lsml.cs">
+      <Link>UserCode\Shared\PickingSlip.lsml.cs</Link>
+    </Compile>
     <Compile Include="..\InventoryManagerApp.Server\DataSources\ApplicationData\Product.lsml.cs">
       <Link>UserCode\Shared\Product.lsml.cs</Link>
     </Compile>

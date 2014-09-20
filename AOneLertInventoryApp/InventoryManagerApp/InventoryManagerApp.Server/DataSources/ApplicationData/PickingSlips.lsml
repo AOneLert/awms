@@ -49,11 +49,36 @@
         FromEnd="PickingSlip"
         ToEnd="TransportRoute" />
       <EntityProperty
-        Name="TotalWeight"
+        Name="TruckLicense"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TruckCapacityWeight"
         PropertyType=":Double">
         <EntityProperty.Attributes>
           <Required />
           <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TotalWeight"
+        PropertyType=":Double">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Remark"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -69,15 +94,6 @@
         Association="PickingSlipDetail_PickingSlip"
         FromEnd="PickingSlip"
         ToEnd="PickingSlipDetail" />
-      <EntityProperty
-        Name="Remark"
-        PropertyType=":String">
-        <EntityProperty.Attributes>
-          <Required />
-          <MaxLength
-            Value="255" />
-        </EntityProperty.Attributes>
-      </EntityProperty>
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"

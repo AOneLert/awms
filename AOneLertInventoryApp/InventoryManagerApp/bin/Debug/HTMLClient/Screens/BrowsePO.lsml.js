@@ -84,8 +84,8 @@ myapp.BrowsePO.PurchaseOrderNotCloseTemplate_postRender = function (element, con
 
 myapp.BrowsePO.PurchaseOrderNotClose_ItemTap_execute = function (screen) {
     // Write code here.
-    var temp = screen.PurchaseOrderNotClose.selectedItem.PurchaseOrderStatus;
-    if (screen.PurchaseOrderNotClose.selectedItem.PurchaseOrderStatus) {
+    var temp = screen.PurchaseOrderNotClose.selectedItem.POStatusPending;
+    if (screen.PurchaseOrderNotClose.selectedItem.POStatusPending) {
         myapp.showViewPurchaseOrder(null, {
             beforeShown: function (addNewScreen) {
                 var selectPO = screen.PurchaseOrderNotClose.selectedItem;
@@ -113,8 +113,8 @@ myapp.BrowsePO.PurchaseOrderNotClose_ItemTap_execute = function (screen) {
 };
 myapp.BrowsePO.PurchaseOrderClosed_ItemTap_execute = function (screen) {
     // Write code here.
-    var temp = screen.PurchaseOrderNotClose.selectedItem.PurchaseOrderStatus;
-    if (screen.PurchaseOrderClosed.selectedItem.PurchaseOrderStatus) {
+    //var temp = screen.PurchaseOrderClosed.selectedItem.POStatusClosed;
+    //if (screen.PurchaseOrderClosed.selectedItem.POStatusClosed) {
         myapp.showViewPurchaseOrder(null, {
             beforeShown: function (addNewScreen) {
                 var selectPO = screen.PurchaseOrderClosed.selectedItem;
@@ -126,19 +126,19 @@ myapp.BrowsePO.PurchaseOrderClosed_ItemTap_execute = function (screen) {
                 }
             }
         });
-    } else {
-        myapp.showAddEditPO(null, {
-            beforeShown: function (addNewScreen) {
-                var selectPO = screen.PurchaseOrderClosed.selectedItem;
-                addNewScreen.PurchaseOrder = selectPO;
-            }, afterClosed: function (addEditScreen, navigationAction) {
-                if (navigationAction === msls.NavigateBackAction.commit) {
-                    //screen.details.dataWorkspace.ApplicationData.PurchaseOrders._loadedEntities = {};
-                    screen.PurchaseOrderClosed.refresh();
-                }
-            }
-        });
-    }
+    //} else {
+    //    myapp.showAddEditPO(null, {
+    //        beforeShown: function (addNewScreen) {
+    //            var selectPO = screen.PurchaseOrderClosed.selectedItem;
+    //            addNewScreen.PurchaseOrder = selectPO;
+    //        }, afterClosed: function (addEditScreen, navigationAction) {
+    //            if (navigationAction === msls.NavigateBackAction.commit) {
+    //                //screen.details.dataWorkspace.ApplicationData.PurchaseOrders._loadedEntities = {};
+    //                screen.PurchaseOrderClosed.refresh();
+    //            }
+    //        }
+    //    });
+    //}
 };
 
 myapp.BrowsePO.PurchaseOrderClosedTemplate_postRender = function (element, contentItem) {

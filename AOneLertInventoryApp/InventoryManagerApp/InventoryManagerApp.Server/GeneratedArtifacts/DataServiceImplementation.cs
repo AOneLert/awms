@@ -70,6 +70,19 @@ namespace LightSwitchApplication.Implementation
             return query;
         }
     
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.Customer> QueryCustomerGroupByTransportRoute()
+        {
+            global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.Customer> query;
+            query = global::System.Linq.Queryable.ThenBy(
+                global::System.Linq.Queryable.OrderBy(
+                    global::System.Linq.Queryable.Where(
+                        this.GetQuery<global::LightSwitchApplication.Implementation.Customer>("Customers"),
+                        (c) => (c.Discontinued == true)),
+                    (c) => c.TransportRoute.TransportRouteName),
+                (c) => c.CustomerName);
+            return query;
+        }
+    
         public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.Location> LocationActiveQuery()
         {
             global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.Location> query;
@@ -89,6 +102,19 @@ namespace LightSwitchApplication.Implementation
                     this.GetQuery<global::LightSwitchApplication.Implementation.Machine>("Machines"),
                     (m) => (m.Discontinued == true)),
                 (m) => m.MachineName);
+            return query;
+        }
+    
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.OrderRequisitionDetail> QueryRequisitionDetailPicking(global::System.Nullable<int> SelectedTransportRouteID)
+        {
+            global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.OrderRequisitionDetail> query;
+            query = global::System.Linq.Queryable.ThenBy(
+                global::System.Linq.Queryable.OrderBy(
+                    global::System.Linq.Queryable.Where(
+                        this.GetQuery<global::LightSwitchApplication.Implementation.OrderRequisitionDetail>("OrderRequisitionDetails"),
+                        (o) => (o.Status == false)),
+                    (o) => o.OrderRequisition.Customer.CustomerName),
+                (o) => o.Product.ProductName);
             return query;
         }
     
@@ -125,6 +151,13 @@ namespace LightSwitchApplication.Implementation
                     this.GetQuery<global::LightSwitchApplication.Implementation.PaymentType>("PaymentTypes"),
                     (p) => (p.Discontinued == true)),
                 (p) => p.PaymentTypeName);
+            return query;
+        }
+    
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.PickingSlip> QueryMaxPickingNumber()
+        {
+            global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.PickingSlip> query;
+            query = this.GetQuery<global::LightSwitchApplication.Implementation.PickingSlip>("PickingSlips");
             return query;
         }
     

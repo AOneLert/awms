@@ -210,9 +210,11 @@
     <Property Name="PickingNo" Type="Edm.String" Nullable="false" MaxLength="255" />
     <Property Name="PickingDate" Type="Edm.DateTime" Nullable="false" />
     <Property Name="PickingSlip_TransportRoute" Type="Edm.Int32" Nullable="false" />
+    <Property Name="TruckLicense" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="TruckCapacityWeight" Type="Edm.Double" Nullable="false" />
     <Property Name="TotalWeight" Type="Edm.Double" Nullable="false" />
+    <Property Name="Remark" Type="Edm.String" MaxLength="255" />
     <Property Name="Status" Type="Edm.Boolean" Nullable="false" />
-    <Property Name="Remark" Type="Edm.String" Nullable="false" MaxLength="255" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
@@ -1458,12 +1460,17 @@
     <FunctionImport Name="BankActiveQuery" ReturnType="Collection(LightSwitchApplication.Bank)" EntitySet="Banks" m:HttpMethod="GET" />
     <FunctionImport Name="CustomerGroupActiveQuery" ReturnType="Collection(LightSwitchApplication.CustomerGroup)" EntitySet="CustomerGroups" m:HttpMethod="GET" />
     <FunctionImport Name="CustomersActiveQuery" ReturnType="Collection(LightSwitchApplication.Customer)" EntitySet="Customers" m:HttpMethod="GET" />
+    <FunctionImport Name="QueryCustomerGroupByTransportRoute" ReturnType="Collection(LightSwitchApplication.Customer)" EntitySet="Customers" m:HttpMethod="GET" />
     <FunctionImport Name="LocationActiveQuery" ReturnType="Collection(LightSwitchApplication.Location)" EntitySet="Locations" m:HttpMethod="GET" />
     <FunctionImport Name="MachineActiveQuery" ReturnType="Collection(LightSwitchApplication.Machine)" EntitySet="Machines" m:HttpMethod="GET" />
+    <FunctionImport Name="QueryRequisitionDetailPicking" ReturnType="Collection(LightSwitchApplication.OrderRequisitionDetail)" EntitySet="OrderRequisitionDetails" m:HttpMethod="GET">
+      <Parameter Name="SelectedTransportRouteID" Type="Edm.Int32" Mode="In" />
+    </FunctionImport>
     <FunctionImport Name="GetMaxOrderRequisitionNo" ReturnType="Collection(LightSwitchApplication.OrderRequisition)" EntitySet="OrderRequisitions" m:HttpMethod="GET" />
     <FunctionImport Name="QueryOrderRequisitionTransportRoute" ReturnType="Collection(LightSwitchApplication.OrderRequisition)" EntitySet="OrderRequisitions" m:HttpMethod="GET" />
     <FunctionImport Name="PackageActiveQuery" ReturnType="Collection(LightSwitchApplication.Package)" EntitySet="Packages" m:HttpMethod="GET" />
     <FunctionImport Name="PaymentTypeActiveQuery" ReturnType="Collection(LightSwitchApplication.PaymentType)" EntitySet="PaymentTypes" m:HttpMethod="GET" />
+    <FunctionImport Name="QueryMaxPickingNumber" ReturnType="Collection(LightSwitchApplication.PickingSlip)" EntitySet="PickingSlips" m:HttpMethod="GET" />
     <FunctionImport Name="ProductCategoriesActiveQuery" ReturnType="Collection(LightSwitchApplication.ProductCategory)" EntitySet="ProductCategories" m:HttpMethod="GET" />
     <FunctionImport Name="ProductGroupsActiveQuery" ReturnType="Collection(LightSwitchApplication.ProductGroup)" EntitySet="ProductGroups" m:HttpMethod="GET" />
     <FunctionImport Name="QueryLatestProductReceiveBalanceForwardDocumentNo" ReturnType="Collection(LightSwitchApplication.ProductReceiveBalanceForward)" EntitySet="ProductReceiveBalanceForwards" m:HttpMethod="GET" />

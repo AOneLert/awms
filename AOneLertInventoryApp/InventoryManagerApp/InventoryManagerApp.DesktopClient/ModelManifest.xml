@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Documents>
-    <Document FullPath="C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\ApplicationData\ProductReceiveBalanceForwardDetails.lsml" Checksum="FF9337C57D2D47522D4CDCADC5CBDC63670DC5E96EA38C6C425F88E865500EE8" />
-    <Document FullPath="C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\ApplicationData\Products.lsml" Checksum="0CEB3A511364FAE3CAB3C41F74B5634359D361C7AF67718090ACBAF972959BB3" />
-    <Document FullPath="C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\Client.lsml" Checksum="78EF5A90DAF8DB801A1D2E2DF235667BD1DF87326EF3540E6FB997FC4780E47D" />
-    <Document FullPath="C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\Proxies.lsml" Checksum="35DCE46EDC2B01D127C58F536938FEB4FC76471D425399CE115B2DD1CFF5AF15" />
+    <Document FullPath="C:\Users\paradornn.BTG\Documents\AWMS_20140913\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\ApplicationData\ProductReceiveBalanceForwardDetails.lsml" Checksum="07869E4A8CC1C8912C69271C0554795696A86C3FB143D1CA0D563924A1654B31" />
+    <Document FullPath="C:\Users\paradornn.BTG\Documents\AWMS_20140913\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\ApplicationData\Products.lsml" Checksum="4FD388E1C258389BEDC84640EBBF5676EA21140F8359B1204FBB94BCB26B7277" />
+    <Document FullPath="C:\Users\paradornn.BTG\Documents\AWMS_20140913\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\Client.lsml" Checksum="1573F6B72D8AA697360A0C798E73D03DBE8DF29075D24B0F2EDAD51AFAD4E8AB" />
+    <Document FullPath="C:\Users\paradornn.BTG\Documents\AWMS_20140913\AOneLertInventoryApp\InventoryManagerApp\InventoryManagerApp.DesktopClient\Properties\Proxies.lsml" Checksum="DA5D215C211FC85C702455EF6C46DFC3EE8F49BE0AC7448FE6FCAC59B2DC3333" />
   </Documents>
 </ModelDocumentManifest>

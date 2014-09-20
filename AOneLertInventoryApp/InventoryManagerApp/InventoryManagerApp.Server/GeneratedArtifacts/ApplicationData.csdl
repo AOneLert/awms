@@ -210,9 +210,11 @@
     <Property Name="PickingNo" Type="Edm.String" Nullable="false" MaxLength="255" />
     <Property Name="PickingDate" Type="Edm.DateTime" Nullable="false" />
     <Property Name="PickingSlip_TransportRoute" Type="Edm.Int32" Nullable="false" />
+    <Property Name="TruckLicense" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="TruckCapacityWeight" Type="Edm.Double" Nullable="false" />
     <Property Name="TotalWeight" Type="Edm.Double" Nullable="false" />
+    <Property Name="Remark" Type="Edm.String" MaxLength="255" />
     <Property Name="Status" Type="Edm.Boolean" Nullable="false" />
-    <Property Name="Remark" Type="Edm.String" Nullable="false" MaxLength="255" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />

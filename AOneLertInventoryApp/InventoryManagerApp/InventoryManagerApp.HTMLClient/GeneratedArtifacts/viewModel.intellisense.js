@@ -768,6 +768,151 @@
         DetailsTab_postRender: [$element, function () { return new lightSwitchApplication.AddEditEmployee().findContentItem("DetailsTab"); }]
     });
 
+    lightSwitchApplication.AddEditLocation.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditLocation
+        },
+        Details: {
+            _$class: msls.ContentItem,
+            _$name: "Details",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditLocation,
+            data: lightSwitchApplication.AddEditLocation,
+            value: lightSwitchApplication.AddEditLocation
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.AddEditLocation,
+            data: lightSwitchApplication.AddEditLocation,
+            value: lightSwitchApplication.Location
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditLocation,
+            data: lightSwitchApplication.Location,
+            value: lightSwitchApplication.Location
+        },
+        LocationName: {
+            _$class: msls.ContentItem,
+            _$name: "LocationName",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditLocation,
+            data: lightSwitchApplication.Location,
+            value: String
+        },
+        Width: {
+            _$class: msls.ContentItem,
+            _$name: "Width",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditLocation,
+            data: lightSwitchApplication.Location,
+            value: Number
+        },
+        Height: {
+            _$class: msls.ContentItem,
+            _$name: "Height",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditLocation,
+            data: lightSwitchApplication.Location,
+            value: Number
+        },
+        right: {
+            _$class: msls.ContentItem,
+            _$name: "right",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditLocation,
+            data: lightSwitchApplication.Location,
+            value: lightSwitchApplication.Location
+        },
+        Length: {
+            _$class: msls.ContentItem,
+            _$name: "Length",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditLocation,
+            data: lightSwitchApplication.Location,
+            value: Number
+        },
+        Discontinued: {
+            _$class: msls.ContentItem,
+            _$name: "Discontinued",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditLocation,
+            data: lightSwitchApplication.Location,
+            value: Boolean
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditLocation
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditLocation, {
+        /// <field>
+        /// Called when a new AddEditLocation screen is created.
+        /// <br/>created(msls.application.AddEditLocation screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditLocation],
+        /// <field>
+        /// Called before changes on an active AddEditLocation screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditLocation screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditLocation],
+        /// <field>
+        /// Called after the Details content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("Details"); }],
+        /// <field>
+        /// Called after the columns content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("columns"); }],
+        /// <field>
+        /// Called after the left content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("left"); }],
+        /// <field>
+        /// Called after the LocationName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        LocationName_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("LocationName"); }],
+        /// <field>
+        /// Called after the Width content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Width_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("Width"); }],
+        /// <field>
+        /// Called after the Height content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Height_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("Height"); }],
+        /// <field>
+        /// Called after the right content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("right"); }],
+        /// <field>
+        /// Called after the Length content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Length_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("Length"); }],
+        /// <field>
+        /// Called after the Discontinued content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Discontinued_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("Discontinued"); }]
+    });
+
     lightSwitchApplication.AddEditMachine.prototype._$contentItems = {
         Tabs: {
             _$class: msls.ContentItem,
@@ -1051,17 +1196,17 @@
         Group1: {
             _$class: msls.ContentItem,
             _$name: "Group1",
-            _$parentName: "Details",
+            _$parentName: "columns",
             screen: lightSwitchApplication.AddEditOrderRequisition,
-            data: lightSwitchApplication.AddEditOrderRequisition,
-            value: lightSwitchApplication.AddEditOrderRequisition
+            data: lightSwitchApplication.OrderRequisition,
+            value: lightSwitchApplication.OrderRequisition
         },
         Remark: {
             _$class: msls.ContentItem,
             _$name: "Remark",
             _$parentName: "Group1",
             screen: lightSwitchApplication.AddEditOrderRequisition,
-            data: lightSwitchApplication.AddEditOrderRequisition,
+            data: lightSwitchApplication.OrderRequisition,
             value: String
         },
         Group: {
@@ -1139,6 +1284,60 @@
             _$name: "Popups",
             _$parentName: "RootContentItem",
             screen: lightSwitchApplication.AddEditOrderRequisition
+        },
+        Group2: {
+            _$class: msls.ContentItem,
+            _$name: "Group2",
+            _$parentName: "Popups",
+            screen: lightSwitchApplication.AddEditOrderRequisition,
+            data: lightSwitchApplication.AddEditOrderRequisition,
+            value: lightSwitchApplication.AddEditOrderRequisition
+        },
+        SearchCustomer: {
+            _$class: msls.ContentItem,
+            _$name: "SearchCustomer",
+            _$parentName: "Group2",
+            screen: lightSwitchApplication.AddEditOrderRequisition,
+            data: lightSwitchApplication.AddEditOrderRequisition,
+            value: String
+        },
+        QueryCustomerGroupByTransportRoute: {
+            _$class: msls.ContentItem,
+            _$name: "QueryCustomerGroupByTransportRoute",
+            _$parentName: "Group2",
+            screen: lightSwitchApplication.AddEditOrderRequisition,
+            data: lightSwitchApplication.AddEditOrderRequisition,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.AddEditOrderRequisition,
+                _$entry: {
+                    elementType: lightSwitchApplication.Customer
+                }
+            }
+        },
+        QueryCustomerGroupByTransportRouteTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "QueryCustomerGroupByTransportRouteTemplate",
+            _$parentName: "QueryCustomerGroupByTransportRoute",
+            screen: lightSwitchApplication.AddEditOrderRequisition,
+            data: lightSwitchApplication.Customer,
+            value: lightSwitchApplication.Customer
+        },
+        TransportRouteName: {
+            _$class: msls.ContentItem,
+            _$name: "TransportRouteName",
+            _$parentName: "QueryCustomerGroupByTransportRouteTemplate",
+            screen: lightSwitchApplication.AddEditOrderRequisition,
+            data: lightSwitchApplication.Customer,
+            value: String
+        },
+        CustomerName: {
+            _$class: msls.ContentItem,
+            _$name: "CustomerName",
+            _$parentName: "QueryCustomerGroupByTransportRouteTemplate",
+            screen: lightSwitchApplication.AddEditOrderRequisition,
+            data: lightSwitchApplication.Customer,
+            value: String
         }
     };
 
@@ -1153,6 +1352,16 @@
         /// <br/>beforeApplyChanges(msls.application.AddEditOrderRequisition screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.AddEditOrderRequisition],
+        /// <field>
+        /// Called to determine if the QueryCustomerGroupByTransportRoute_ItemTap method can be executed.
+        /// <br/>canExecute(msls.application.AddEditOrderRequisition screen)
+        /// </field>
+        QueryCustomerGroupByTransportRoute_ItemTap_canExecute: [lightSwitchApplication.AddEditOrderRequisition],
+        /// <field>
+        /// Called to execute the QueryCustomerGroupByTransportRoute_ItemTap method.
+        /// <br/>execute(msls.application.AddEditOrderRequisition screen)
+        /// </field>
+        QueryCustomerGroupByTransportRoute_ItemTap_execute: [lightSwitchApplication.AddEditOrderRequisition],
         /// <field>
         /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -1247,7 +1456,37 @@
         /// Called after the OrderRequisitionDetailStatus content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        OrderRequisitionDetailStatus_postRender: [$element, function () { return new lightSwitchApplication.AddEditOrderRequisition().findContentItem("OrderRequisitionDetailStatus"); }]
+        OrderRequisitionDetailStatus_postRender: [$element, function () { return new lightSwitchApplication.AddEditOrderRequisition().findContentItem("OrderRequisitionDetailStatus"); }],
+        /// <field>
+        /// Called after the Group2 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group2_postRender: [$element, function () { return new lightSwitchApplication.AddEditOrderRequisition().findContentItem("Group2"); }],
+        /// <field>
+        /// Called after the SearchCustomer content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        SearchCustomer_postRender: [$element, function () { return new lightSwitchApplication.AddEditOrderRequisition().findContentItem("SearchCustomer"); }],
+        /// <field>
+        /// Called after the QueryCustomerGroupByTransportRoute content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        QueryCustomerGroupByTransportRoute_postRender: [$element, function () { return new lightSwitchApplication.AddEditOrderRequisition().findContentItem("QueryCustomerGroupByTransportRoute"); }],
+        /// <field>
+        /// Called after the QueryCustomerGroupByTransportRouteTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        QueryCustomerGroupByTransportRouteTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditOrderRequisition().findContentItem("QueryCustomerGroupByTransportRouteTemplate"); }],
+        /// <field>
+        /// Called after the TransportRouteName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        TransportRouteName_postRender: [$element, function () { return new lightSwitchApplication.AddEditOrderRequisition().findContentItem("TransportRouteName"); }],
+        /// <field>
+        /// Called after the CustomerName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CustomerName_postRender: [$element, function () { return new lightSwitchApplication.AddEditOrderRequisition().findContentItem("CustomerName"); }]
     });
 
     lightSwitchApplication.AddEditOrderRequisitionDetail.prototype._$contentItems = {
@@ -1777,23 +2016,55 @@
         right: {
             _$class: msls.ContentItem,
             _$name: "right",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.PickingSlip,
+            value: lightSwitchApplication.PickingSlip
+        },
+        Group1: {
+            _$class: msls.ContentItem,
+            _$name: "Group1",
             _$parentName: "columns",
             screen: lightSwitchApplication.AddEditPickingSlip,
             data: lightSwitchApplication.PickingSlip,
             value: lightSwitchApplication.PickingSlip
         },
-        TotalWeight: {
+        TruckLicense: {
             _$class: msls.ContentItem,
-            _$name: "TotalWeight",
-            _$parentName: "right",
+            _$name: "TruckLicense",
+            _$parentName: "Group1",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.PickingSlip,
+            value: String
+        },
+        TruckCapacityWeight: {
+            _$class: msls.ContentItem,
+            _$name: "TruckCapacityWeight",
+            _$parentName: "Group1",
             screen: lightSwitchApplication.AddEditPickingSlip,
             data: lightSwitchApplication.PickingSlip,
             value: Number
         },
+        TotalWeight: {
+            _$class: msls.ContentItem,
+            _$name: "TotalWeight",
+            _$parentName: "Group1",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.PickingSlip,
+            value: Number
+        },
+        Group3: {
+            _$class: msls.ContentItem,
+            _$name: "Group3",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.PickingSlip,
+            value: lightSwitchApplication.PickingSlip
+        },
         Status: {
             _$class: msls.ContentItem,
             _$name: "Status",
-            _$parentName: "right",
+            _$parentName: "Group3",
             screen: lightSwitchApplication.AddEditPickingSlip,
             data: lightSwitchApplication.PickingSlip,
             value: Boolean
@@ -1801,25 +2072,111 @@
         Remark: {
             _$class: msls.ContentItem,
             _$name: "Remark",
-            _$parentName: "right",
+            _$parentName: "Group3",
             screen: lightSwitchApplication.AddEditPickingSlip,
             data: lightSwitchApplication.PickingSlip,
             value: String
         },
-        PickingSlipDetails: {
+        Group: {
             _$class: msls.ContentItem,
-            _$name: "PickingSlipDetails",
+            _$name: "Group",
             _$parentName: "Details",
             screen: lightSwitchApplication.AddEditPickingSlip,
             data: lightSwitchApplication.AddEditPickingSlip,
             value: lightSwitchApplication.AddEditPickingSlip
         },
+        QueryRequisitionDetailPicking: {
+            _$class: msls.ContentItem,
+            _$name: "QueryRequisitionDetailPicking",
+            _$parentName: "Group",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.AddEditPickingSlip,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.AddEditPickingSlip,
+                _$entry: {
+                    elementType: lightSwitchApplication.OrderRequisitionDetail
+                }
+            }
+        },
+        QueryRequisitionDetailPickingTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "QueryRequisitionDetailPickingTemplate",
+            _$parentName: "QueryRequisitionDetailPicking",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.OrderRequisitionDetail,
+            value: lightSwitchApplication.OrderRequisitionDetail
+        },
+        CustomerName: {
+            _$class: msls.ContentItem,
+            _$name: "CustomerName",
+            _$parentName: "QueryRequisitionDetailPickingTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.OrderRequisitionDetail,
+            value: String
+        },
+        ProductCode: {
+            _$class: msls.ContentItem,
+            _$name: "ProductCode",
+            _$parentName: "QueryRequisitionDetailPickingTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.OrderRequisitionDetail,
+            value: String
+        },
+        ProductName: {
+            _$class: msls.ContentItem,
+            _$name: "ProductName",
+            _$parentName: "QueryRequisitionDetailPickingTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.OrderRequisitionDetail,
+            value: String
+        },
+        Quantity: {
+            _$class: msls.ContentItem,
+            _$name: "Quantity",
+            _$parentName: "QueryRequisitionDetailPickingTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.OrderRequisitionDetail,
+            value: Number
+        },
+        DeliveredQuantity: {
+            _$class: msls.ContentItem,
+            _$name: "DeliveredQuantity",
+            _$parentName: "QueryRequisitionDetailPickingTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.OrderRequisitionDetail,
+            value: Number
+        },
+        UOMName: {
+            _$class: msls.ContentItem,
+            _$name: "UOMName",
+            _$parentName: "QueryRequisitionDetailPickingTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.OrderRequisitionDetail,
+            value: String
+        },
+        UnitWeight: {
+            _$class: msls.ContentItem,
+            _$name: "UnitWeight",
+            _$parentName: "QueryRequisitionDetailPickingTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.OrderRequisitionDetail,
+            value: Number
+        },
+        Status1: {
+            _$class: msls.ContentItem,
+            _$name: "Status1",
+            _$parentName: "QueryRequisitionDetailPickingTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.OrderRequisitionDetail,
+            value: Boolean
+        },
         PickingSlipDetails1: {
             _$class: msls.ContentItem,
             _$name: "PickingSlipDetails1",
-            _$parentName: "PickingSlipDetails",
+            _$parentName: "QueryRequisitionDetailPickingTemplate",
             screen: lightSwitchApplication.AddEditPickingSlip,
-            data: lightSwitchApplication.AddEditPickingSlip,
+            data: lightSwitchApplication.OrderRequisitionDetail,
             value: {
                 _$class: msls.VisualCollection,
                 screen: lightSwitchApplication.AddEditPickingSlip,
@@ -1828,85 +2185,37 @@
                 }
             }
         },
-        RowTemplate1: {
+        PickingSlipDetails1Template: {
             _$class: msls.ContentItem,
-            _$name: "RowTemplate1",
+            _$name: "PickingSlipDetails1Template",
             _$parentName: "PickingSlipDetails1",
             screen: lightSwitchApplication.AddEditPickingSlip,
             data: lightSwitchApplication.PickingSlipDetail,
             value: lightSwitchApplication.PickingSlipDetail
         },
-        OrderRequisitionDetail: {
+        LocationName: {
             _$class: msls.ContentItem,
-            _$name: "OrderRequisitionDetail",
-            _$parentName: "RowTemplate1",
+            _$name: "LocationName",
+            _$parentName: "PickingSlipDetails1Template",
             screen: lightSwitchApplication.AddEditPickingSlip,
             data: lightSwitchApplication.PickingSlipDetail,
-            value: lightSwitchApplication.OrderRequisitionDetail
+            value: String
         },
         LotNo: {
             _$class: msls.ContentItem,
             _$name: "LotNo",
-            _$parentName: "RowTemplate1",
+            _$parentName: "PickingSlipDetails1Template",
             screen: lightSwitchApplication.AddEditPickingSlip,
             data: lightSwitchApplication.PickingSlipDetail,
             value: String
-        },
-        Location: {
-            _$class: msls.ContentItem,
-            _$name: "Location",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPickingSlip,
-            data: lightSwitchApplication.PickingSlipDetail,
-            value: lightSwitchApplication.Location
         },
         PickingQuantity: {
             _$class: msls.ContentItem,
             _$name: "PickingQuantity",
-            _$parentName: "RowTemplate1",
+            _$parentName: "PickingSlipDetails1Template",
             screen: lightSwitchApplication.AddEditPickingSlip,
             data: lightSwitchApplication.PickingSlipDetail,
             value: Number
-        },
-        UnitPrice: {
-            _$class: msls.ContentItem,
-            _$name: "UnitPrice",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPickingSlip,
-            data: lightSwitchApplication.PickingSlipDetail,
-            value: String
-        },
-        CreatedBy: {
-            _$class: msls.ContentItem,
-            _$name: "CreatedBy",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPickingSlip,
-            data: lightSwitchApplication.PickingSlipDetail,
-            value: String
-        },
-        Created: {
-            _$class: msls.ContentItem,
-            _$name: "Created",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPickingSlip,
-            data: lightSwitchApplication.PickingSlipDetail,
-            value: Date
-        },
-        ModifiedBy: {
-            _$class: msls.ContentItem,
-            _$name: "ModifiedBy",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPickingSlip,
-            data: lightSwitchApplication.PickingSlipDetail,
-            value: String
-        },
-        Modified: {
-            _$class: msls.ContentItem,
-            _$name: "Modified",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPickingSlip,
-            data: lightSwitchApplication.PickingSlipDetail,
-            value: Date
         },
         Popups: {
             _$class: msls.ContentItem,
@@ -1927,6 +2236,16 @@
         /// <br/>beforeApplyChanges(msls.application.AddEditPickingSlip screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.AddEditPickingSlip],
+        /// <field>
+        /// Called to determine if the QueryRequisitionDetailPicking_ItemTap method can be executed.
+        /// <br/>canExecute(msls.application.AddEditPickingSlip screen)
+        /// </field>
+        QueryRequisitionDetailPicking_ItemTap_canExecute: [lightSwitchApplication.AddEditPickingSlip],
+        /// <field>
+        /// Called to execute the QueryRequisitionDetailPicking_ItemTap method.
+        /// <br/>execute(msls.application.AddEditPickingSlip screen)
+        /// </field>
+        QueryRequisitionDetailPicking_ItemTap_execute: [lightSwitchApplication.AddEditPickingSlip],
         /// <field>
         /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -1968,10 +2287,30 @@
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("right"); }],
         /// <field>
+        /// Called after the Group1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("Group1"); }],
+        /// <field>
+        /// Called after the TruckLicense content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        TruckLicense_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("TruckLicense"); }],
+        /// <field>
+        /// Called after the TruckCapacityWeight content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        TruckCapacityWeight_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("TruckCapacityWeight"); }],
+        /// <field>
         /// Called after the TotalWeight content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         TotalWeight_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("TotalWeight"); }],
+        /// <field>
+        /// Called after the Group3 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group3_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("Group3"); }],
         /// <field>
         /// Called after the Status content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -1983,65 +2322,415 @@
         /// </field>
         Remark_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("Remark"); }],
         /// <field>
-        /// Called after the PickingSlipDetails content item has been rendered.
+        /// Called after the Group content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        PickingSlipDetails_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("PickingSlipDetails"); }],
+        Group_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("Group"); }],
+        /// <field>
+        /// Called after the QueryRequisitionDetailPicking content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        QueryRequisitionDetailPicking_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("QueryRequisitionDetailPicking"); }],
+        /// <field>
+        /// Called after the QueryRequisitionDetailPickingTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        QueryRequisitionDetailPickingTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("QueryRequisitionDetailPickingTemplate"); }],
+        /// <field>
+        /// Called after the CustomerName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CustomerName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("CustomerName"); }],
+        /// <field>
+        /// Called after the ProductCode content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("ProductCode"); }],
+        /// <field>
+        /// Called after the ProductName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("ProductName"); }],
+        /// <field>
+        /// Called after the Quantity content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Quantity_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("Quantity"); }],
+        /// <field>
+        /// Called after the DeliveredQuantity content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        DeliveredQuantity_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("DeliveredQuantity"); }],
+        /// <field>
+        /// Called after the UOMName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UOMName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("UOMName"); }],
+        /// <field>
+        /// Called after the UnitWeight content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UnitWeight_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("UnitWeight"); }],
+        /// <field>
+        /// Called after the Status1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Status1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("Status1"); }],
         /// <field>
         /// Called after the PickingSlipDetails1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         PickingSlipDetails1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("PickingSlipDetails1"); }],
         /// <field>
-        /// Called after the RowTemplate1 content item has been rendered.
+        /// Called after the PickingSlipDetails1Template content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        RowTemplate1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("RowTemplate1"); }],
+        PickingSlipDetails1Template_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("PickingSlipDetails1Template"); }],
         /// <field>
-        /// Called after the OrderRequisitionDetail content item has been rendered.
+        /// Called after the LocationName content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        OrderRequisitionDetail_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("OrderRequisitionDetail"); }],
+        LocationName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("LocationName"); }],
         /// <field>
         /// Called after the LotNo content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         LotNo_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("LotNo"); }],
         /// <field>
-        /// Called after the Location content item has been rendered.
+        /// Called after the PickingQuantity content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Location_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("Location"); }],
+        PickingQuantity_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("PickingQuantity"); }]
+    });
+
+    lightSwitchApplication.AddEditPickingSlipDetail.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail
+        },
+        Details: {
+            _$class: msls.ContentItem,
+            _$name: "Details",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.AddEditPickingSlipDetail,
+            value: lightSwitchApplication.AddEditPickingSlipDetail
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.AddEditPickingSlipDetail,
+            value: lightSwitchApplication.PickingSlipDetail
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.PickingSlipDetail,
+            value: lightSwitchApplication.PickingSlipDetail
+        },
+        ProductCode: {
+            _$class: msls.ContentItem,
+            _$name: "ProductCode",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.PickingSlipDetail,
+            value: String
+        },
+        ProductName: {
+            _$class: msls.ContentItem,
+            _$name: "ProductName",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.PickingSlipDetail,
+            value: String
+        },
+        LocationName: {
+            _$class: msls.ContentItem,
+            _$name: "LocationName",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.PickingSlipDetail,
+            value: String
+        },
+        LotNo: {
+            _$class: msls.ContentItem,
+            _$name: "LotNo",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.PickingSlipDetail,
+            value: String
+        },
+        right: {
+            _$class: msls.ContentItem,
+            _$name: "right",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.PickingSlipDetail,
+            value: lightSwitchApplication.PickingSlipDetail
+        },
+        AvailableQuantity: {
+            _$class: msls.ContentItem,
+            _$name: "AvailableQuantity",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.PickingSlipDetail,
+            value: Number
+        },
+        PickingQuantity: {
+            _$class: msls.ContentItem,
+            _$name: "PickingQuantity",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.PickingSlipDetail,
+            value: Number
+        },
+        UOMName: {
+            _$class: msls.ContentItem,
+            _$name: "UOMName",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.PickingSlipDetail,
+            value: String
+        },
+        UnitPrice: {
+            _$class: msls.ContentItem,
+            _$name: "UnitPrice",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.PickingSlipDetail,
+            value: String
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail
+        },
+        Group: {
+            _$class: msls.ContentItem,
+            _$name: "Group",
+            _$parentName: "Popups",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.AddEditPickingSlipDetail,
+            value: lightSwitchApplication.AddEditPickingSlipDetail
+        },
+        SearchStockOnhand: {
+            _$class: msls.ContentItem,
+            _$name: "SearchStockOnhand",
+            _$parentName: "Group",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.AddEditPickingSlipDetail,
+            value: String
+        },
+        StockOnHandForSale: {
+            _$class: msls.ContentItem,
+            _$name: "StockOnHandForSale",
+            _$parentName: "Group",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.AddEditPickingSlipDetail,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.AddEditPickingSlipDetail,
+                _$entry: {
+                    elementType: lightSwitchApplication.StockOnHand
+                }
+            }
+        },
+        StockOnHandForSaleTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "StockOnHandForSaleTemplate",
+            _$parentName: "StockOnHandForSale",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.StockOnHand,
+            value: lightSwitchApplication.StockOnHand
+        },
+        ProductName1: {
+            _$class: msls.ContentItem,
+            _$name: "ProductName1",
+            _$parentName: "StockOnHandForSaleTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        },
+        LocationName1: {
+            _$class: msls.ContentItem,
+            _$name: "LocationName1",
+            _$parentName: "StockOnHandForSaleTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        },
+        LotNo1: {
+            _$class: msls.ContentItem,
+            _$name: "LotNo1",
+            _$parentName: "StockOnHandForSaleTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        },
+        QuantityOnHand: {
+            _$class: msls.ContentItem,
+            _$name: "QuantityOnHand",
+            _$parentName: "StockOnHandForSaleTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.StockOnHand,
+            value: Number
+        },
+        SellingPrice: {
+            _$class: msls.ContentItem,
+            _$name: "SellingPrice",
+            _$parentName: "StockOnHandForSaleTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        },
+        CostPrice: {
+            _$class: msls.ContentItem,
+            _$name: "CostPrice",
+            _$parentName: "StockOnHandForSaleTemplate",
+            screen: lightSwitchApplication.AddEditPickingSlipDetail,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditPickingSlipDetail, {
+        /// <field>
+        /// Called when a new AddEditPickingSlipDetail screen is created.
+        /// <br/>created(msls.application.AddEditPickingSlipDetail screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditPickingSlipDetail],
+        /// <field>
+        /// Called before changes on an active AddEditPickingSlipDetail screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditPickingSlipDetail screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditPickingSlipDetail],
+        /// <field>
+        /// Called to determine if the StockOnHandForSale_ItemTap method can be executed.
+        /// <br/>canExecute(msls.application.AddEditPickingSlipDetail screen)
+        /// </field>
+        StockOnHandForSale_ItemTap_canExecute: [lightSwitchApplication.AddEditPickingSlipDetail],
+        /// <field>
+        /// Called to execute the StockOnHandForSale_ItemTap method.
+        /// <br/>execute(msls.application.AddEditPickingSlipDetail screen)
+        /// </field>
+        StockOnHandForSale_ItemTap_execute: [lightSwitchApplication.AddEditPickingSlipDetail],
+        /// <field>
+        /// Called after the Details content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("Details"); }],
+        /// <field>
+        /// Called after the columns content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("columns"); }],
+        /// <field>
+        /// Called after the left content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("left"); }],
+        /// <field>
+        /// Called after the ProductCode content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("ProductCode"); }],
+        /// <field>
+        /// Called after the ProductName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("ProductName"); }],
+        /// <field>
+        /// Called after the LocationName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        LocationName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("LocationName"); }],
+        /// <field>
+        /// Called after the LotNo content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        LotNo_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("LotNo"); }],
+        /// <field>
+        /// Called after the right content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("right"); }],
+        /// <field>
+        /// Called after the AvailableQuantity content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        AvailableQuantity_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("AvailableQuantity"); }],
         /// <field>
         /// Called after the PickingQuantity content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        PickingQuantity_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("PickingQuantity"); }],
+        PickingQuantity_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("PickingQuantity"); }],
+        /// <field>
+        /// Called after the UOMName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UOMName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("UOMName"); }],
         /// <field>
         /// Called after the UnitPrice content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        UnitPrice_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("UnitPrice"); }],
+        UnitPrice_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("UnitPrice"); }],
         /// <field>
-        /// Called after the CreatedBy content item has been rendered.
+        /// Called after the Group content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        CreatedBy_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("CreatedBy"); }],
+        Group_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("Group"); }],
         /// <field>
-        /// Called after the Created content item has been rendered.
+        /// Called after the SearchStockOnhand content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Created_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("Created"); }],
+        SearchStockOnhand_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("SearchStockOnhand"); }],
         /// <field>
-        /// Called after the ModifiedBy content item has been rendered.
+        /// Called after the StockOnHandForSale content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        ModifiedBy_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("ModifiedBy"); }],
+        StockOnHandForSale_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("StockOnHandForSale"); }],
         /// <field>
-        /// Called after the Modified content item has been rendered.
+        /// Called after the StockOnHandForSaleTemplate content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Modified_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlip().findContentItem("Modified"); }]
+        StockOnHandForSaleTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("StockOnHandForSaleTemplate"); }],
+        /// <field>
+        /// Called after the ProductName1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductName1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("ProductName1"); }],
+        /// <field>
+        /// Called after the LocationName1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        LocationName1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("LocationName1"); }],
+        /// <field>
+        /// Called after the LotNo1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        LotNo1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("LotNo1"); }],
+        /// <field>
+        /// Called after the QuantityOnHand content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        QuantityOnHand_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("QuantityOnHand"); }],
+        /// <field>
+        /// Called after the SellingPrice content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        SellingPrice_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("SellingPrice"); }],
+        /// <field>
+        /// Called after the CostPrice content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CostPrice_postRender: [$element, function () { return new lightSwitchApplication.AddEditPickingSlipDetail().findContentItem("CostPrice"); }]
     });
 
     lightSwitchApplication.AddEditPO.prototype._$contentItems = {
@@ -4013,6 +4702,859 @@
         CarryingCost_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct().findContentItem("CarryingCost"); }]
     });
 
+    lightSwitchApplication.AddEditProduct_bk.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditProduct_bk
+        },
+        DetailsTab: {
+            _$class: msls.ContentItem,
+            _$name: "DetailsTab",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.AddEditProduct_bk,
+            value: lightSwitchApplication.AddEditProduct_bk
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "DetailsTab",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.AddEditProduct_bk,
+            value: lightSwitchApplication.Product
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: lightSwitchApplication.Product
+        },
+        ProductCode: {
+            _$class: msls.ContentItem,
+            _$name: "ProductCode",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: String
+        },
+        ProductName: {
+            _$class: msls.ContentItem,
+            _$name: "ProductName",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: String
+        },
+        ProductCategory: {
+            _$class: msls.ContentItem,
+            _$name: "ProductCategory",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: lightSwitchApplication.ProductCategory
+        },
+        RowTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "RowTemplate",
+            _$parentName: "ProductCategory",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.ProductCategory,
+            value: lightSwitchApplication.ProductCategory
+        },
+        ProductGroup: {
+            _$class: msls.ContentItem,
+            _$name: "ProductGroup",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: lightSwitchApplication.ProductGroup
+        },
+        ProductGroup1: {
+            _$class: msls.ContentItem,
+            _$name: "ProductGroup1",
+            _$parentName: "ProductGroup",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.ProductGroup,
+            value: lightSwitchApplication.ProductGroup
+        },
+        UnitOfMeasure: {
+            _$class: msls.ContentItem,
+            _$name: "UnitOfMeasure",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: lightSwitchApplication.UnitOfMeasure
+        },
+        UnitOfMeasure1: {
+            _$class: msls.ContentItem,
+            _$name: "UnitOfMeasure1",
+            _$parentName: "UnitOfMeasure",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.UnitOfMeasure,
+            value: lightSwitchApplication.UnitOfMeasure
+        },
+        ProductLocation: {
+            _$class: msls.ContentItem,
+            _$name: "ProductLocation",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: lightSwitchApplication.Location
+        },
+        ProductLocation1: {
+            _$class: msls.ContentItem,
+            _$name: "ProductLocation1",
+            _$parentName: "ProductLocation",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Location,
+            value: lightSwitchApplication.Location
+        },
+        CarryingCostFlag: {
+            _$class: msls.ContentItem,
+            _$name: "CarryingCostFlag",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: Boolean
+        },
+        ProductionCostFlag: {
+            _$class: msls.ContentItem,
+            _$name: "ProductionCostFlag",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: Boolean
+        },
+        AgingControlFlag: {
+            _$class: msls.ContentItem,
+            _$name: "AgingControlFlag",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: Boolean
+        },
+        LotControlFlag: {
+            _$class: msls.ContentItem,
+            _$name: "LotControlFlag",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: Boolean
+        },
+        UnitsOnHand: {
+            _$class: msls.ContentItem,
+            _$name: "UnitsOnHand",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: String
+        },
+        right: {
+            _$class: msls.ContentItem,
+            _$name: "right",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: lightSwitchApplication.Product
+        },
+        LotType: {
+            _$class: msls.ContentItem,
+            _$name: "LotType",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: String
+        },
+        ReorderLevelFlag: {
+            _$class: msls.ContentItem,
+            _$name: "ReorderLevelFlag",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: Boolean
+        },
+        ReorderLevel: {
+            _$class: msls.ContentItem,
+            _$name: "ReorderLevel",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: Number
+        },
+        PackageCode: {
+            _$class: msls.ContentItem,
+            _$name: "PackageCode",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: Number
+        },
+        UnitPrice: {
+            _$class: msls.ContentItem,
+            _$name: "UnitPrice",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: String
+        },
+        Discontinued: {
+            _$class: msls.ContentItem,
+            _$name: "Discontinued",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: Boolean
+        },
+        UnitsOnOrder: {
+            _$class: msls.ContentItem,
+            _$name: "UnitsOnOrder",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.Product,
+            value: String
+        },
+        PurchaseOrders: {
+            _$class: msls.ContentItem,
+            _$name: "PurchaseOrders",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.AddEditProduct_bk,
+            value: lightSwitchApplication.AddEditProduct_bk
+        },
+        Orders: {
+            _$class: msls.ContentItem,
+            _$name: "Orders",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.AddEditProduct_bk,
+            value: lightSwitchApplication.AddEditProduct_bk
+        },
+        StockChecks: {
+            _$class: msls.ContentItem,
+            _$name: "StockChecks",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.AddEditProduct_bk,
+            value: lightSwitchApplication.AddEditProduct_bk
+        },
+        ProductSubscribersGroup: {
+            _$class: msls.ContentItem,
+            _$name: "ProductSubscribersGroup",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditProduct_bk,
+            data: lightSwitchApplication.AddEditProduct_bk,
+            value: lightSwitchApplication.AddEditProduct_bk
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditProduct_bk
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditProduct_bk, {
+        /// <field>
+        /// Called when a new AddEditProduct_bk screen is created.
+        /// <br/>created(msls.application.AddEditProduct_bk screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditProduct_bk],
+        /// <field>
+        /// Called before changes on an active AddEditProduct_bk screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditProduct_bk screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditProduct_bk],
+        /// <field>
+        /// Called after the DetailsTab content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        DetailsTab_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("DetailsTab"); }],
+        /// <field>
+        /// Called after the columns content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("columns"); }],
+        /// <field>
+        /// Called after the left content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("left"); }],
+        /// <field>
+        /// Called after the ProductCode content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductCode"); }],
+        /// <field>
+        /// Called after the ProductName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductName"); }],
+        /// <field>
+        /// Called after the ProductCategory content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductCategory_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductCategory"); }],
+        /// <field>
+        /// Called after the RowTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("RowTemplate"); }],
+        /// <field>
+        /// Called after the ProductGroup content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductGroup_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductGroup"); }],
+        /// <field>
+        /// Called after the ProductGroup1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductGroup1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductGroup1"); }],
+        /// <field>
+        /// Called after the UnitOfMeasure content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UnitOfMeasure_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("UnitOfMeasure"); }],
+        /// <field>
+        /// Called after the UnitOfMeasure1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UnitOfMeasure1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("UnitOfMeasure1"); }],
+        /// <field>
+        /// Called after the ProductLocation content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductLocation_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductLocation"); }],
+        /// <field>
+        /// Called after the ProductLocation1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductLocation1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductLocation1"); }],
+        /// <field>
+        /// Called after the CarryingCostFlag content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CarryingCostFlag_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("CarryingCostFlag"); }],
+        /// <field>
+        /// Called after the ProductionCostFlag content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductionCostFlag_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductionCostFlag"); }],
+        /// <field>
+        /// Called after the AgingControlFlag content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        AgingControlFlag_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("AgingControlFlag"); }],
+        /// <field>
+        /// Called after the LotControlFlag content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        LotControlFlag_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("LotControlFlag"); }],
+        /// <field>
+        /// Called after the UnitsOnHand content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UnitsOnHand_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("UnitsOnHand"); }],
+        /// <field>
+        /// Called after the right content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("right"); }],
+        /// <field>
+        /// Called after the LotType content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        LotType_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("LotType"); }],
+        /// <field>
+        /// Called after the ReorderLevelFlag content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ReorderLevelFlag_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ReorderLevelFlag"); }],
+        /// <field>
+        /// Called after the ReorderLevel content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ReorderLevel_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ReorderLevel"); }],
+        /// <field>
+        /// Called after the PackageCode content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        PackageCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("PackageCode"); }],
+        /// <field>
+        /// Called after the UnitPrice content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UnitPrice_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("UnitPrice"); }],
+        /// <field>
+        /// Called after the Discontinued content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Discontinued_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("Discontinued"); }],
+        /// <field>
+        /// Called after the UnitsOnOrder content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UnitsOnOrder_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("UnitsOnOrder"); }],
+        /// <field>
+        /// Called after the PurchaseOrders content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        PurchaseOrders_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("PurchaseOrders"); }],
+        /// <field>
+        /// Called after the Orders content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Orders_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("Orders"); }],
+        /// <field>
+        /// Called after the StockChecks content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        StockChecks_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("StockChecks"); }],
+        /// <field>
+        /// Called after the ProductSubscribersGroup content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductSubscribersGroup_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductSubscribersGroup"); }]
+    });
+
+    lightSwitchApplication.AddEditProductCategory.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditProductCategory
+        },
+        DetailsTab: {
+            _$class: msls.ContentItem,
+            _$name: "DetailsTab",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditProductCategory,
+            data: lightSwitchApplication.AddEditProductCategory,
+            value: lightSwitchApplication.AddEditProductCategory
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "DetailsTab",
+            screen: lightSwitchApplication.AddEditProductCategory,
+            data: lightSwitchApplication.AddEditProductCategory,
+            value: lightSwitchApplication.ProductCategory
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditProductCategory,
+            data: lightSwitchApplication.ProductCategory,
+            value: lightSwitchApplication.ProductCategory
+        },
+        Category: {
+            _$class: msls.ContentItem,
+            _$name: "Category",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProductCategory,
+            data: lightSwitchApplication.ProductCategory,
+            value: String
+        },
+        Discontinued: {
+            _$class: msls.ContentItem,
+            _$name: "Discontinued",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProductCategory,
+            data: lightSwitchApplication.ProductCategory,
+            value: Boolean
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditProductCategory
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditProductCategory, {
+        /// <field>
+        /// Called when a new AddEditProductCategory screen is created.
+        /// <br/>created(msls.application.AddEditProductCategory screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditProductCategory],
+        /// <field>
+        /// Called before changes on an active AddEditProductCategory screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditProductCategory screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditProductCategory],
+        /// <field>
+        /// Called after the DetailsTab content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        DetailsTab_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductCategory().findContentItem("DetailsTab"); }],
+        /// <field>
+        /// Called after the columns content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductCategory().findContentItem("columns"); }],
+        /// <field>
+        /// Called after the left content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductCategory().findContentItem("left"); }],
+        /// <field>
+        /// Called after the Category content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Category_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductCategory().findContentItem("Category"); }],
+        /// <field>
+        /// Called after the Discontinued content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Discontinued_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductCategory().findContentItem("Discontinued"); }]
+    });
+
+    lightSwitchApplication.AddEditProductGroup.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditProductGroup
+        },
+        Details: {
+            _$class: msls.ContentItem,
+            _$name: "Details",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditProductGroup,
+            data: lightSwitchApplication.AddEditProductGroup,
+            value: lightSwitchApplication.AddEditProductGroup
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.AddEditProductGroup,
+            data: lightSwitchApplication.AddEditProductGroup,
+            value: lightSwitchApplication.ProductGroup
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditProductGroup,
+            data: lightSwitchApplication.ProductGroup,
+            value: lightSwitchApplication.ProductGroup
+        },
+        ProductGroupName: {
+            _$class: msls.ContentItem,
+            _$name: "ProductGroupName",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProductGroup,
+            data: lightSwitchApplication.ProductGroup,
+            value: String
+        },
+        Discontinued1: {
+            _$class: msls.ContentItem,
+            _$name: "Discontinued1",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProductGroup,
+            data: lightSwitchApplication.ProductGroup,
+            value: Boolean
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditProductGroup
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditProductGroup, {
+        /// <field>
+        /// Called when a new AddEditProductGroup screen is created.
+        /// <br/>created(msls.application.AddEditProductGroup screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditProductGroup],
+        /// <field>
+        /// Called before changes on an active AddEditProductGroup screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditProductGroup screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditProductGroup],
+        /// <field>
+        /// Called after the Details content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductGroup().findContentItem("Details"); }],
+        /// <field>
+        /// Called after the columns content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductGroup().findContentItem("columns"); }],
+        /// <field>
+        /// Called after the left content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductGroup().findContentItem("left"); }],
+        /// <field>
+        /// Called after the ProductGroupName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductGroupName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductGroup().findContentItem("ProductGroupName"); }],
+        /// <field>
+        /// Called after the Discontinued1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Discontinued1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductGroup().findContentItem("Discontinued1"); }]
+    });
+
+    lightSwitchApplication.AddEditProductPricing.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditProductPricing
+        },
+        Details: {
+            _$class: msls.ContentItem,
+            _$name: "Details",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.AddEditProductPricing,
+            value: lightSwitchApplication.AddEditProductPricing
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.AddEditProductPricing,
+            value: lightSwitchApplication.StockOnHand
+        },
+        Product: {
+            _$class: msls.ContentItem,
+            _$name: "Product",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: lightSwitchApplication.Product
+        },
+        ProductCode: {
+            _$class: msls.ContentItem,
+            _$name: "ProductCode",
+            _$parentName: "Product",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.Product,
+            value: String
+        },
+        ProductName: {
+            _$class: msls.ContentItem,
+            _$name: "ProductName",
+            _$parentName: "Product",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.Product,
+            value: String
+        },
+        right: {
+            _$class: msls.ContentItem,
+            _$name: "right",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: lightSwitchApplication.StockOnHand
+        },
+        LocationName: {
+            _$class: msls.ContentItem,
+            _$name: "LocationName",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        },
+        LotNo: {
+            _$class: msls.ContentItem,
+            _$name: "LotNo",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        },
+        Group: {
+            _$class: msls.ContentItem,
+            _$name: "Group",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: lightSwitchApplication.StockOnHand
+        },
+        QuantityOnHand: {
+            _$class: msls.ContentItem,
+            _$name: "QuantityOnHand",
+            _$parentName: "Group",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: Number
+        },
+        CostPrice: {
+            _$class: msls.ContentItem,
+            _$name: "CostPrice",
+            _$parentName: "Group",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: lightSwitchApplication.StockOnHand
+        },
+        UnitCost: {
+            _$class: msls.ContentItem,
+            _$name: "UnitCost",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        },
+        SellingPrice: {
+            _$class: msls.ContentItem,
+            _$name: "SellingPrice",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        },
+        UOMName: {
+            _$class: msls.ContentItem,
+            _$name: "UOMName",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: String
+        },
+        Group1: {
+            _$class: msls.ContentItem,
+            _$name: "Group1",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: lightSwitchApplication.StockOnHand
+        },
+        IsAvailableForSale: {
+            _$class: msls.ContentItem,
+            _$name: "IsAvailableForSale",
+            _$parentName: "Group1",
+            screen: lightSwitchApplication.AddEditProductPricing,
+            data: lightSwitchApplication.StockOnHand,
+            value: Boolean
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditProductPricing
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditProductPricing, {
+        /// <field>
+        /// Called when a new AddEditProductPricing screen is created.
+        /// <br/>created(msls.application.AddEditProductPricing screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditProductPricing],
+        /// <field>
+        /// Called before changes on an active AddEditProductPricing screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditProductPricing screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditProductPricing],
+        /// <field>
+        /// Called after the Details content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("Details"); }],
+        /// <field>
+        /// Called after the columns content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("columns"); }],
+        /// <field>
+        /// Called after the Product content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Product_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("Product"); }],
+        /// <field>
+        /// Called after the ProductCode content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("ProductCode"); }],
+        /// <field>
+        /// Called after the ProductName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("ProductName"); }],
+        /// <field>
+        /// Called after the right content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("right"); }],
+        /// <field>
+        /// Called after the LocationName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        LocationName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("LocationName"); }],
+        /// <field>
+        /// Called after the LotNo content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        LotNo_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("LotNo"); }],
+        /// <field>
+        /// Called after the Group content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("Group"); }],
+        /// <field>
+        /// Called after the QuantityOnHand content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        QuantityOnHand_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("QuantityOnHand"); }],
+        /// <field>
+        /// Called after the CostPrice content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CostPrice_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("CostPrice"); }],
+        /// <field>
+        /// Called after the left content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("left"); }],
+        /// <field>
+        /// Called after the UnitCost content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UnitCost_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("UnitCost"); }],
+        /// <field>
+        /// Called after the SellingPrice content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        SellingPrice_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("SellingPrice"); }],
+        /// <field>
+        /// Called after the UOMName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UOMName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("UOMName"); }],
+        /// <field>
+        /// Called after the Group1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("Group1"); }],
+        /// <field>
+        /// Called after the IsAvailableForSale content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        IsAvailableForSale_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("IsAvailableForSale"); }]
+    });
+
     lightSwitchApplication.AddEditProductReceiveBalanceForward.prototype._$contentItems = {
         Tabs: {
             _$class: msls.ContentItem,
@@ -5731,755 +7273,6 @@
         LocationName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductReceivePurchaseOrderDetail().findContentItem("LocationName"); }]
     });
 
-    lightSwitchApplication.AddEditProduct_bk.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditProduct_bk
-        },
-        DetailsTab: {
-            _$class: msls.ContentItem,
-            _$name: "DetailsTab",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.AddEditProduct_bk,
-            value: lightSwitchApplication.AddEditProduct_bk
-        },
-        columns: {
-            _$class: msls.ContentItem,
-            _$name: "columns",
-            _$parentName: "DetailsTab",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.AddEditProduct_bk,
-            value: lightSwitchApplication.Product
-        },
-        left: {
-            _$class: msls.ContentItem,
-            _$name: "left",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: lightSwitchApplication.Product
-        },
-        ProductCode: {
-            _$class: msls.ContentItem,
-            _$name: "ProductCode",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: String
-        },
-        ProductName: {
-            _$class: msls.ContentItem,
-            _$name: "ProductName",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: String
-        },
-        ProductCategory: {
-            _$class: msls.ContentItem,
-            _$name: "ProductCategory",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: lightSwitchApplication.ProductCategory
-        },
-        RowTemplate: {
-            _$class: msls.ContentItem,
-            _$name: "RowTemplate",
-            _$parentName: "ProductCategory",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.ProductCategory,
-            value: lightSwitchApplication.ProductCategory
-        },
-        ProductGroup: {
-            _$class: msls.ContentItem,
-            _$name: "ProductGroup",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: lightSwitchApplication.ProductGroup
-        },
-        ProductGroup1: {
-            _$class: msls.ContentItem,
-            _$name: "ProductGroup1",
-            _$parentName: "ProductGroup",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.ProductGroup,
-            value: lightSwitchApplication.ProductGroup
-        },
-        UnitOfMeasure: {
-            _$class: msls.ContentItem,
-            _$name: "UnitOfMeasure",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: lightSwitchApplication.UnitOfMeasure
-        },
-        UnitOfMeasure1: {
-            _$class: msls.ContentItem,
-            _$name: "UnitOfMeasure1",
-            _$parentName: "UnitOfMeasure",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.UnitOfMeasure,
-            value: lightSwitchApplication.UnitOfMeasure
-        },
-        ProductLocation: {
-            _$class: msls.ContentItem,
-            _$name: "ProductLocation",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: lightSwitchApplication.Location
-        },
-        ProductLocation1: {
-            _$class: msls.ContentItem,
-            _$name: "ProductLocation1",
-            _$parentName: "ProductLocation",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Location,
-            value: lightSwitchApplication.Location
-        },
-        CarryingCostFlag: {
-            _$class: msls.ContentItem,
-            _$name: "CarryingCostFlag",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: Boolean
-        },
-        ProductionCostFlag: {
-            _$class: msls.ContentItem,
-            _$name: "ProductionCostFlag",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: Boolean
-        },
-        AgingControlFlag: {
-            _$class: msls.ContentItem,
-            _$name: "AgingControlFlag",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: Boolean
-        },
-        LotControlFlag: {
-            _$class: msls.ContentItem,
-            _$name: "LotControlFlag",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: Boolean
-        },
-        UnitsOnHand: {
-            _$class: msls.ContentItem,
-            _$name: "UnitsOnHand",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: String
-        },
-        right: {
-            _$class: msls.ContentItem,
-            _$name: "right",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: lightSwitchApplication.Product
-        },
-        LotType: {
-            _$class: msls.ContentItem,
-            _$name: "LotType",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: String
-        },
-        ReorderLevelFlag: {
-            _$class: msls.ContentItem,
-            _$name: "ReorderLevelFlag",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: Boolean
-        },
-        ReorderLevel: {
-            _$class: msls.ContentItem,
-            _$name: "ReorderLevel",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: Number
-        },
-        PackageCode: {
-            _$class: msls.ContentItem,
-            _$name: "PackageCode",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: Number
-        },
-        UnitPrice: {
-            _$class: msls.ContentItem,
-            _$name: "UnitPrice",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: String
-        },
-        Discontinued: {
-            _$class: msls.ContentItem,
-            _$name: "Discontinued",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: Boolean
-        },
-        UnitsOnOrder: {
-            _$class: msls.ContentItem,
-            _$name: "UnitsOnOrder",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.Product,
-            value: String
-        },
-        PurchaseOrders: {
-            _$class: msls.ContentItem,
-            _$name: "PurchaseOrders",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.AddEditProduct_bk,
-            value: lightSwitchApplication.AddEditProduct_bk
-        },
-        Orders: {
-            _$class: msls.ContentItem,
-            _$name: "Orders",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.AddEditProduct_bk,
-            value: lightSwitchApplication.AddEditProduct_bk
-        },
-        StockChecks: {
-            _$class: msls.ContentItem,
-            _$name: "StockChecks",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.AddEditProduct_bk,
-            value: lightSwitchApplication.AddEditProduct_bk
-        },
-        ProductSubscribersGroup: {
-            _$class: msls.ContentItem,
-            _$name: "ProductSubscribersGroup",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditProduct_bk,
-            data: lightSwitchApplication.AddEditProduct_bk,
-            value: lightSwitchApplication.AddEditProduct_bk
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditProduct_bk
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.AddEditProduct_bk, {
-        /// <field>
-        /// Called when a new AddEditProduct_bk screen is created.
-        /// <br/>created(msls.application.AddEditProduct_bk screen)
-        /// </field>
-        created: [lightSwitchApplication.AddEditProduct_bk],
-        /// <field>
-        /// Called before changes on an active AddEditProduct_bk screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.AddEditProduct_bk screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.AddEditProduct_bk],
-        /// <field>
-        /// Called after the DetailsTab content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        DetailsTab_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("DetailsTab"); }],
-        /// <field>
-        /// Called after the columns content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("columns"); }],
-        /// <field>
-        /// Called after the left content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("left"); }],
-        /// <field>
-        /// Called after the ProductCode content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductCode"); }],
-        /// <field>
-        /// Called after the ProductName content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductName"); }],
-        /// <field>
-        /// Called after the ProductCategory content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductCategory_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductCategory"); }],
-        /// <field>
-        /// Called after the RowTemplate content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("RowTemplate"); }],
-        /// <field>
-        /// Called after the ProductGroup content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductGroup_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductGroup"); }],
-        /// <field>
-        /// Called after the ProductGroup1 content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductGroup1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductGroup1"); }],
-        /// <field>
-        /// Called after the UnitOfMeasure content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UnitOfMeasure_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("UnitOfMeasure"); }],
-        /// <field>
-        /// Called after the UnitOfMeasure1 content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UnitOfMeasure1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("UnitOfMeasure1"); }],
-        /// <field>
-        /// Called after the ProductLocation content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductLocation_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductLocation"); }],
-        /// <field>
-        /// Called after the ProductLocation1 content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductLocation1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductLocation1"); }],
-        /// <field>
-        /// Called after the CarryingCostFlag content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        CarryingCostFlag_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("CarryingCostFlag"); }],
-        /// <field>
-        /// Called after the ProductionCostFlag content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductionCostFlag_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductionCostFlag"); }],
-        /// <field>
-        /// Called after the AgingControlFlag content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        AgingControlFlag_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("AgingControlFlag"); }],
-        /// <field>
-        /// Called after the LotControlFlag content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        LotControlFlag_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("LotControlFlag"); }],
-        /// <field>
-        /// Called after the UnitsOnHand content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UnitsOnHand_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("UnitsOnHand"); }],
-        /// <field>
-        /// Called after the right content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("right"); }],
-        /// <field>
-        /// Called after the LotType content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        LotType_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("LotType"); }],
-        /// <field>
-        /// Called after the ReorderLevelFlag content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ReorderLevelFlag_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ReorderLevelFlag"); }],
-        /// <field>
-        /// Called after the ReorderLevel content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ReorderLevel_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ReorderLevel"); }],
-        /// <field>
-        /// Called after the PackageCode content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PackageCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("PackageCode"); }],
-        /// <field>
-        /// Called after the UnitPrice content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UnitPrice_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("UnitPrice"); }],
-        /// <field>
-        /// Called after the Discontinued content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Discontinued_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("Discontinued"); }],
-        /// <field>
-        /// Called after the UnitsOnOrder content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UnitsOnOrder_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("UnitsOnOrder"); }],
-        /// <field>
-        /// Called after the PurchaseOrders content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PurchaseOrders_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("PurchaseOrders"); }],
-        /// <field>
-        /// Called after the Orders content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Orders_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("Orders"); }],
-        /// <field>
-        /// Called after the StockChecks content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        StockChecks_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("StockChecks"); }],
-        /// <field>
-        /// Called after the ProductSubscribersGroup content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductSubscribersGroup_postRender: [$element, function () { return new lightSwitchApplication.AddEditProduct_bk().findContentItem("ProductSubscribersGroup"); }]
-    });
-
-    lightSwitchApplication.AddEditProductCategory.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditProductCategory
-        },
-        DetailsTab: {
-            _$class: msls.ContentItem,
-            _$name: "DetailsTab",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditProductCategory,
-            data: lightSwitchApplication.AddEditProductCategory,
-            value: lightSwitchApplication.AddEditProductCategory
-        },
-        columns: {
-            _$class: msls.ContentItem,
-            _$name: "columns",
-            _$parentName: "DetailsTab",
-            screen: lightSwitchApplication.AddEditProductCategory,
-            data: lightSwitchApplication.AddEditProductCategory,
-            value: lightSwitchApplication.ProductCategory
-        },
-        left: {
-            _$class: msls.ContentItem,
-            _$name: "left",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditProductCategory,
-            data: lightSwitchApplication.ProductCategory,
-            value: lightSwitchApplication.ProductCategory
-        },
-        Category: {
-            _$class: msls.ContentItem,
-            _$name: "Category",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProductCategory,
-            data: lightSwitchApplication.ProductCategory,
-            value: String
-        },
-        Discontinued: {
-            _$class: msls.ContentItem,
-            _$name: "Discontinued",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProductCategory,
-            data: lightSwitchApplication.ProductCategory,
-            value: Boolean
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditProductCategory
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.AddEditProductCategory, {
-        /// <field>
-        /// Called when a new AddEditProductCategory screen is created.
-        /// <br/>created(msls.application.AddEditProductCategory screen)
-        /// </field>
-        created: [lightSwitchApplication.AddEditProductCategory],
-        /// <field>
-        /// Called before changes on an active AddEditProductCategory screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.AddEditProductCategory screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.AddEditProductCategory],
-        /// <field>
-        /// Called after the DetailsTab content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        DetailsTab_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductCategory().findContentItem("DetailsTab"); }],
-        /// <field>
-        /// Called after the columns content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductCategory().findContentItem("columns"); }],
-        /// <field>
-        /// Called after the left content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductCategory().findContentItem("left"); }],
-        /// <field>
-        /// Called after the Category content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Category_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductCategory().findContentItem("Category"); }],
-        /// <field>
-        /// Called after the Discontinued content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Discontinued_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductCategory().findContentItem("Discontinued"); }]
-    });
-
-    lightSwitchApplication.AddEditProductGroup.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditProductGroup
-        },
-        Details: {
-            _$class: msls.ContentItem,
-            _$name: "Details",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditProductGroup,
-            data: lightSwitchApplication.AddEditProductGroup,
-            value: lightSwitchApplication.AddEditProductGroup
-        },
-        columns: {
-            _$class: msls.ContentItem,
-            _$name: "columns",
-            _$parentName: "Details",
-            screen: lightSwitchApplication.AddEditProductGroup,
-            data: lightSwitchApplication.AddEditProductGroup,
-            value: lightSwitchApplication.ProductGroup
-        },
-        left: {
-            _$class: msls.ContentItem,
-            _$name: "left",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditProductGroup,
-            data: lightSwitchApplication.ProductGroup,
-            value: lightSwitchApplication.ProductGroup
-        },
-        ProductGroupName: {
-            _$class: msls.ContentItem,
-            _$name: "ProductGroupName",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProductGroup,
-            data: lightSwitchApplication.ProductGroup,
-            value: String
-        },
-        Discontinued1: {
-            _$class: msls.ContentItem,
-            _$name: "Discontinued1",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProductGroup,
-            data: lightSwitchApplication.ProductGroup,
-            value: Boolean
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditProductGroup
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.AddEditProductGroup, {
-        /// <field>
-        /// Called when a new AddEditProductGroup screen is created.
-        /// <br/>created(msls.application.AddEditProductGroup screen)
-        /// </field>
-        created: [lightSwitchApplication.AddEditProductGroup],
-        /// <field>
-        /// Called before changes on an active AddEditProductGroup screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.AddEditProductGroup screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.AddEditProductGroup],
-        /// <field>
-        /// Called after the Details content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductGroup().findContentItem("Details"); }],
-        /// <field>
-        /// Called after the columns content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductGroup().findContentItem("columns"); }],
-        /// <field>
-        /// Called after the left content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductGroup().findContentItem("left"); }],
-        /// <field>
-        /// Called after the ProductGroupName content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductGroupName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductGroup().findContentItem("ProductGroupName"); }],
-        /// <field>
-        /// Called after the Discontinued1 content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Discontinued1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductGroup().findContentItem("Discontinued1"); }]
-    });
-
-    lightSwitchApplication.AddEditLocation.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditLocation
-        },
-        Details: {
-            _$class: msls.ContentItem,
-            _$name: "Details",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditLocation,
-            data: lightSwitchApplication.AddEditLocation,
-            value: lightSwitchApplication.AddEditLocation
-        },
-        columns: {
-            _$class: msls.ContentItem,
-            _$name: "columns",
-            _$parentName: "Details",
-            screen: lightSwitchApplication.AddEditLocation,
-            data: lightSwitchApplication.AddEditLocation,
-            value: lightSwitchApplication.Location
-        },
-        left: {
-            _$class: msls.ContentItem,
-            _$name: "left",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditLocation,
-            data: lightSwitchApplication.Location,
-            value: lightSwitchApplication.Location
-        },
-        LocationName: {
-            _$class: msls.ContentItem,
-            _$name: "LocationName",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditLocation,
-            data: lightSwitchApplication.Location,
-            value: String
-        },
-        Width: {
-            _$class: msls.ContentItem,
-            _$name: "Width",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditLocation,
-            data: lightSwitchApplication.Location,
-            value: Number
-        },
-        Height: {
-            _$class: msls.ContentItem,
-            _$name: "Height",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditLocation,
-            data: lightSwitchApplication.Location,
-            value: Number
-        },
-        right: {
-            _$class: msls.ContentItem,
-            _$name: "right",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditLocation,
-            data: lightSwitchApplication.Location,
-            value: lightSwitchApplication.Location
-        },
-        Length: {
-            _$class: msls.ContentItem,
-            _$name: "Length",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditLocation,
-            data: lightSwitchApplication.Location,
-            value: Number
-        },
-        Discontinued: {
-            _$class: msls.ContentItem,
-            _$name: "Discontinued",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditLocation,
-            data: lightSwitchApplication.Location,
-            value: Boolean
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditLocation
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.AddEditLocation, {
-        /// <field>
-        /// Called when a new AddEditLocation screen is created.
-        /// <br/>created(msls.application.AddEditLocation screen)
-        /// </field>
-        created: [lightSwitchApplication.AddEditLocation],
-        /// <field>
-        /// Called before changes on an active AddEditLocation screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.AddEditLocation screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.AddEditLocation],
-        /// <field>
-        /// Called after the Details content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("Details"); }],
-        /// <field>
-        /// Called after the columns content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("columns"); }],
-        /// <field>
-        /// Called after the left content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("left"); }],
-        /// <field>
-        /// Called after the LocationName content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        LocationName_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("LocationName"); }],
-        /// <field>
-        /// Called after the Width content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Width_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("Width"); }],
-        /// <field>
-        /// Called after the Height content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Height_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("Height"); }],
-        /// <field>
-        /// Called after the right content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("right"); }],
-        /// <field>
-        /// Called after the Length content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Length_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("Length"); }],
-        /// <field>
-        /// Called after the Discontinued content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Discontinued_postRender: [$element, function () { return new lightSwitchApplication.AddEditLocation().findContentItem("Discontinued"); }]
-    });
-
     lightSwitchApplication.AddEditProductSubscriber.prototype._$contentItems = {
         Tabs: {
             _$class: msls.ContentItem,
@@ -6519,6 +7312,365 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         DetailsTab_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductSubscriber().findContentItem("DetailsTab"); }]
+    });
+
+    lightSwitchApplication.AddEditPurchaseOrder.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditPurchaseOrder
+        },
+        Details: {
+            _$class: msls.ContentItem,
+            _$name: "Details",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.AddEditPurchaseOrder,
+            value: lightSwitchApplication.AddEditPurchaseOrder
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.AddEditPurchaseOrder,
+            value: lightSwitchApplication.PurchaseOrder
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrder,
+            value: lightSwitchApplication.PurchaseOrder
+        },
+        PurchaseOrderNumber: {
+            _$class: msls.ContentItem,
+            _$name: "PurchaseOrderNumber",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrder,
+            value: String
+        },
+        PurchaseOrderDate: {
+            _$class: msls.ContentItem,
+            _$name: "PurchaseOrderDate",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrder,
+            value: Date
+        },
+        Supplier: {
+            _$class: msls.ContentItem,
+            _$name: "Supplier",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrder,
+            value: lightSwitchApplication.Supplier
+        },
+        RowTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "RowTemplate",
+            _$parentName: "Supplier",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.Supplier,
+            value: lightSwitchApplication.Supplier
+        },
+        PurchaseOrderStatus: {
+            _$class: msls.ContentItem,
+            _$name: "PurchaseOrderStatus",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrder,
+            value: Boolean
+        },
+        POStatusDescription: {
+            _$class: msls.ContentItem,
+            _$name: "POStatusDescription",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrder,
+            value: String
+        },
+        right: {
+            _$class: msls.ContentItem,
+            _$name: "right",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrder,
+            value: lightSwitchApplication.PurchaseOrder
+        },
+        Group: {
+            _$class: msls.ContentItem,
+            _$name: "Group",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.AddEditPurchaseOrder,
+            value: lightSwitchApplication.AddEditPurchaseOrder
+        },
+        PurchaseOrderDetails: {
+            _$class: msls.ContentItem,
+            _$name: "PurchaseOrderDetails",
+            _$parentName: "Group",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.AddEditPurchaseOrder,
+            value: lightSwitchApplication.AddEditPurchaseOrder
+        },
+        AddPurchaseOrderDetail: {
+            _$class: msls.ContentItem,
+            _$name: "AddPurchaseOrderDetail",
+            _$parentName: "PurchaseOrderDetails",
+            screen: lightSwitchApplication.AddEditPurchaseOrder
+        },
+        PurchaseOrderDetails1: {
+            _$class: msls.ContentItem,
+            _$name: "PurchaseOrderDetails1",
+            _$parentName: "Group",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.AddEditPurchaseOrder,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.AddEditPurchaseOrder,
+                _$entry: {
+                    elementType: lightSwitchApplication.PurchaseOrderDetail
+                }
+            }
+        },
+        RowTemplate1: {
+            _$class: msls.ContentItem,
+            _$name: "RowTemplate1",
+            _$parentName: "PurchaseOrderDetails1",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrderDetail,
+            value: lightSwitchApplication.PurchaseOrderDetail
+        },
+        RequireDate: {
+            _$class: msls.ContentItem,
+            _$name: "RequireDate",
+            _$parentName: "RowTemplate1",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrderDetail,
+            value: Date
+        },
+        ProductCode: {
+            _$class: msls.ContentItem,
+            _$name: "ProductCode",
+            _$parentName: "RowTemplate1",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrderDetail,
+            value: String
+        },
+        ProductName: {
+            _$class: msls.ContentItem,
+            _$name: "ProductName",
+            _$parentName: "RowTemplate1",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrderDetail,
+            value: String
+        },
+        RequireQuantity: {
+            _$class: msls.ContentItem,
+            _$name: "RequireQuantity",
+            _$parentName: "RowTemplate1",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrderDetail,
+            value: Number
+        },
+        UOMName: {
+            _$class: msls.ContentItem,
+            _$name: "UOMName",
+            _$parentName: "RowTemplate1",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrderDetail,
+            value: String
+        },
+        UnitWeight: {
+            _$class: msls.ContentItem,
+            _$name: "UnitWeight",
+            _$parentName: "RowTemplate1",
+            screen: lightSwitchApplication.AddEditPurchaseOrder,
+            data: lightSwitchApplication.PurchaseOrderDetail,
+            value: Number
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditPurchaseOrder
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditPurchaseOrder, {
+        /// <field>
+        /// Called when a new AddEditPurchaseOrder screen is created.
+        /// <br/>created(msls.application.AddEditPurchaseOrder screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditPurchaseOrder],
+        /// <field>
+        /// Called before changes on an active AddEditPurchaseOrder screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditPurchaseOrder screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditPurchaseOrder],
+        /// <field>
+        /// Called after the Details content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("Details"); }],
+        /// <field>
+        /// Called after the columns content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("columns"); }],
+        /// <field>
+        /// Called after the left content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("left"); }],
+        /// <field>
+        /// Called after the PurchaseOrderNumber content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        PurchaseOrderNumber_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("PurchaseOrderNumber"); }],
+        /// <field>
+        /// Called after the PurchaseOrderDate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        PurchaseOrderDate_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("PurchaseOrderDate"); }],
+        /// <field>
+        /// Called after the Supplier content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Supplier_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("Supplier"); }],
+        /// <field>
+        /// Called after the RowTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("RowTemplate"); }],
+        /// <field>
+        /// Called after the PurchaseOrderStatus content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        PurchaseOrderStatus_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("PurchaseOrderStatus"); }],
+        /// <field>
+        /// Called after the POStatusDescription content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        POStatusDescription_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("POStatusDescription"); }],
+        /// <field>
+        /// Called after the right content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("right"); }],
+        /// <field>
+        /// Called after the Group content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("Group"); }],
+        /// <field>
+        /// Called after the PurchaseOrderDetails content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        PurchaseOrderDetails_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("PurchaseOrderDetails"); }],
+        /// <field>
+        /// Called after the AddPurchaseOrderDetail content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        AddPurchaseOrderDetail_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("AddPurchaseOrderDetail"); }],
+        /// <field>
+        /// Called after the PurchaseOrderDetails1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        PurchaseOrderDetails1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("PurchaseOrderDetails1"); }],
+        /// <field>
+        /// Called after the RowTemplate1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        RowTemplate1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("RowTemplate1"); }],
+        /// <field>
+        /// Called after the RequireDate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        RequireDate_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("RequireDate"); }],
+        /// <field>
+        /// Called after the ProductCode content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("ProductCode"); }],
+        /// <field>
+        /// Called after the ProductName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("ProductName"); }],
+        /// <field>
+        /// Called after the RequireQuantity content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        RequireQuantity_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("RequireQuantity"); }],
+        /// <field>
+        /// Called after the UOMName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UOMName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("UOMName"); }],
+        /// <field>
+        /// Called after the UnitWeight content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UnitWeight_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("UnitWeight"); }]
+    });
+
+    lightSwitchApplication.AddEditPurchaseOrder_Old.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditPurchaseOrder_Old
+        },
+        DetailsTab: {
+            _$class: msls.ContentItem,
+            _$name: "DetailsTab",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditPurchaseOrder_Old,
+            data: lightSwitchApplication.AddEditPurchaseOrder_Old,
+            value: lightSwitchApplication.AddEditPurchaseOrder_Old
+        },
+        PurchaseOrderDetails: {
+            _$class: msls.ContentItem,
+            _$name: "PurchaseOrderDetails",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditPurchaseOrder_Old,
+            data: lightSwitchApplication.AddEditPurchaseOrder_Old,
+            value: lightSwitchApplication.AddEditPurchaseOrder_Old
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditPurchaseOrder_Old
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditPurchaseOrder_Old, {
+        /// <field>
+        /// Called when a new AddEditPurchaseOrder_Old screen is created.
+        /// <br/>created(msls.application.AddEditPurchaseOrder_Old screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditPurchaseOrder_Old],
+        /// <field>
+        /// Called before changes on an active AddEditPurchaseOrder_Old screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditPurchaseOrder_Old screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditPurchaseOrder_Old],
+        /// <field>
+        /// Called after the DetailsTab content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        DetailsTab_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder_Old().findContentItem("DetailsTab"); }],
+        /// <field>
+        /// Called after the PurchaseOrderDetails content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        PurchaseOrderDetails_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder_Old().findContentItem("PurchaseOrderDetails"); }]
     });
 
     lightSwitchApplication.AddEditPurchaseOrderDetail.prototype._$contentItems = {
@@ -6716,6 +7868,47 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         UnitWeight_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrderDetail().findContentItem("UnitWeight"); }]
+    });
+
+    lightSwitchApplication.AddEditPurchaseOrderDetail_Old.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditPurchaseOrderDetail_Old
+        },
+        DetailsTab: {
+            _$class: msls.ContentItem,
+            _$name: "DetailsTab",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditPurchaseOrderDetail_Old,
+            data: lightSwitchApplication.AddEditPurchaseOrderDetail_Old,
+            value: lightSwitchApplication.AddEditPurchaseOrderDetail_Old
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditPurchaseOrderDetail_Old
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditPurchaseOrderDetail_Old, {
+        /// <field>
+        /// Called when a new AddEditPurchaseOrderDetail_Old screen is created.
+        /// <br/>created(msls.application.AddEditPurchaseOrderDetail_Old screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditPurchaseOrderDetail_Old],
+        /// <field>
+        /// Called before changes on an active AddEditPurchaseOrderDetail_Old screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.AddEditPurchaseOrderDetail_Old screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditPurchaseOrderDetail_Old],
+        /// <field>
+        /// Called after the DetailsTab content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        DetailsTab_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrderDetail_Old().findContentItem("DetailsTab"); }]
     });
 
     lightSwitchApplication.AddEditPurchaseOrderDetailTest.prototype._$contentItems = {
@@ -7168,406 +8361,6 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Group1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrderTest().findContentItem("Group1"); }]
-    });
-
-    lightSwitchApplication.AddEditPurchaseOrder_Old.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditPurchaseOrder_Old
-        },
-        DetailsTab: {
-            _$class: msls.ContentItem,
-            _$name: "DetailsTab",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditPurchaseOrder_Old,
-            data: lightSwitchApplication.AddEditPurchaseOrder_Old,
-            value: lightSwitchApplication.AddEditPurchaseOrder_Old
-        },
-        PurchaseOrderDetails: {
-            _$class: msls.ContentItem,
-            _$name: "PurchaseOrderDetails",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditPurchaseOrder_Old,
-            data: lightSwitchApplication.AddEditPurchaseOrder_Old,
-            value: lightSwitchApplication.AddEditPurchaseOrder_Old
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditPurchaseOrder_Old
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.AddEditPurchaseOrder_Old, {
-        /// <field>
-        /// Called when a new AddEditPurchaseOrder_Old screen is created.
-        /// <br/>created(msls.application.AddEditPurchaseOrder_Old screen)
-        /// </field>
-        created: [lightSwitchApplication.AddEditPurchaseOrder_Old],
-        /// <field>
-        /// Called before changes on an active AddEditPurchaseOrder_Old screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.AddEditPurchaseOrder_Old screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.AddEditPurchaseOrder_Old],
-        /// <field>
-        /// Called after the DetailsTab content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        DetailsTab_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder_Old().findContentItem("DetailsTab"); }],
-        /// <field>
-        /// Called after the PurchaseOrderDetails content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PurchaseOrderDetails_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder_Old().findContentItem("PurchaseOrderDetails"); }]
-    });
-
-    lightSwitchApplication.AddEditPurchaseOrder.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditPurchaseOrder
-        },
-        Details: {
-            _$class: msls.ContentItem,
-            _$name: "Details",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.AddEditPurchaseOrder,
-            value: lightSwitchApplication.AddEditPurchaseOrder
-        },
-        columns: {
-            _$class: msls.ContentItem,
-            _$name: "columns",
-            _$parentName: "Details",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.AddEditPurchaseOrder,
-            value: lightSwitchApplication.PurchaseOrder
-        },
-        left: {
-            _$class: msls.ContentItem,
-            _$name: "left",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrder,
-            value: lightSwitchApplication.PurchaseOrder
-        },
-        PurchaseOrderNumber: {
-            _$class: msls.ContentItem,
-            _$name: "PurchaseOrderNumber",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrder,
-            value: String
-        },
-        PurchaseOrderDate: {
-            _$class: msls.ContentItem,
-            _$name: "PurchaseOrderDate",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrder,
-            value: Date
-        },
-        Supplier: {
-            _$class: msls.ContentItem,
-            _$name: "Supplier",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrder,
-            value: lightSwitchApplication.Supplier
-        },
-        RowTemplate: {
-            _$class: msls.ContentItem,
-            _$name: "RowTemplate",
-            _$parentName: "Supplier",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.Supplier,
-            value: lightSwitchApplication.Supplier
-        },
-        PurchaseOrderStatus: {
-            _$class: msls.ContentItem,
-            _$name: "PurchaseOrderStatus",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrder,
-            value: Boolean
-        },
-        POStatusDescription: {
-            _$class: msls.ContentItem,
-            _$name: "POStatusDescription",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrder,
-            value: String
-        },
-        right: {
-            _$class: msls.ContentItem,
-            _$name: "right",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrder,
-            value: lightSwitchApplication.PurchaseOrder
-        },
-        Group: {
-            _$class: msls.ContentItem,
-            _$name: "Group",
-            _$parentName: "Details",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.AddEditPurchaseOrder,
-            value: lightSwitchApplication.AddEditPurchaseOrder
-        },
-        PurchaseOrderDetails: {
-            _$class: msls.ContentItem,
-            _$name: "PurchaseOrderDetails",
-            _$parentName: "Group",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.AddEditPurchaseOrder,
-            value: lightSwitchApplication.AddEditPurchaseOrder
-        },
-        AddPurchaseOrderDetail: {
-            _$class: msls.ContentItem,
-            _$name: "AddPurchaseOrderDetail",
-            _$parentName: "PurchaseOrderDetails",
-            screen: lightSwitchApplication.AddEditPurchaseOrder
-        },
-        PurchaseOrderDetails1: {
-            _$class: msls.ContentItem,
-            _$name: "PurchaseOrderDetails1",
-            _$parentName: "Group",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.AddEditPurchaseOrder,
-            value: {
-                _$class: msls.VisualCollection,
-                screen: lightSwitchApplication.AddEditPurchaseOrder,
-                _$entry: {
-                    elementType: lightSwitchApplication.PurchaseOrderDetail
-                }
-            }
-        },
-        RowTemplate1: {
-            _$class: msls.ContentItem,
-            _$name: "RowTemplate1",
-            _$parentName: "PurchaseOrderDetails1",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrderDetail,
-            value: lightSwitchApplication.PurchaseOrderDetail
-        },
-        RequireDate: {
-            _$class: msls.ContentItem,
-            _$name: "RequireDate",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrderDetail,
-            value: Date
-        },
-        ProductCode: {
-            _$class: msls.ContentItem,
-            _$name: "ProductCode",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrderDetail,
-            value: String
-        },
-        ProductName: {
-            _$class: msls.ContentItem,
-            _$name: "ProductName",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrderDetail,
-            value: String
-        },
-        RequireQuantity: {
-            _$class: msls.ContentItem,
-            _$name: "RequireQuantity",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrderDetail,
-            value: Number
-        },
-        UOMName: {
-            _$class: msls.ContentItem,
-            _$name: "UOMName",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrderDetail,
-            value: String
-        },
-        UnitWeight: {
-            _$class: msls.ContentItem,
-            _$name: "UnitWeight",
-            _$parentName: "RowTemplate1",
-            screen: lightSwitchApplication.AddEditPurchaseOrder,
-            data: lightSwitchApplication.PurchaseOrderDetail,
-            value: Number
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditPurchaseOrder
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.AddEditPurchaseOrder, {
-        /// <field>
-        /// Called when a new AddEditPurchaseOrder screen is created.
-        /// <br/>created(msls.application.AddEditPurchaseOrder screen)
-        /// </field>
-        created: [lightSwitchApplication.AddEditPurchaseOrder],
-        /// <field>
-        /// Called before changes on an active AddEditPurchaseOrder screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.AddEditPurchaseOrder screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.AddEditPurchaseOrder],
-        /// <field>
-        /// Called after the Details content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("Details"); }],
-        /// <field>
-        /// Called after the columns content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("columns"); }],
-        /// <field>
-        /// Called after the left content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("left"); }],
-        /// <field>
-        /// Called after the PurchaseOrderNumber content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PurchaseOrderNumber_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("PurchaseOrderNumber"); }],
-        /// <field>
-        /// Called after the PurchaseOrderDate content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PurchaseOrderDate_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("PurchaseOrderDate"); }],
-        /// <field>
-        /// Called after the Supplier content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Supplier_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("Supplier"); }],
-        /// <field>
-        /// Called after the RowTemplate content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("RowTemplate"); }],
-        /// <field>
-        /// Called after the PurchaseOrderStatus content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PurchaseOrderStatus_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("PurchaseOrderStatus"); }],
-        /// <field>
-        /// Called after the POStatusDescription content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        POStatusDescription_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("POStatusDescription"); }],
-        /// <field>
-        /// Called after the right content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("right"); }],
-        /// <field>
-        /// Called after the Group content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Group_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("Group"); }],
-        /// <field>
-        /// Called after the PurchaseOrderDetails content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PurchaseOrderDetails_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("PurchaseOrderDetails"); }],
-        /// <field>
-        /// Called after the AddPurchaseOrderDetail content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        AddPurchaseOrderDetail_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("AddPurchaseOrderDetail"); }],
-        /// <field>
-        /// Called after the PurchaseOrderDetails1 content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PurchaseOrderDetails1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("PurchaseOrderDetails1"); }],
-        /// <field>
-        /// Called after the RowTemplate1 content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RowTemplate1_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("RowTemplate1"); }],
-        /// <field>
-        /// Called after the RequireDate content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RequireDate_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("RequireDate"); }],
-        /// <field>
-        /// Called after the ProductCode content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("ProductCode"); }],
-        /// <field>
-        /// Called after the ProductName content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("ProductName"); }],
-        /// <field>
-        /// Called after the RequireQuantity content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RequireQuantity_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("RequireQuantity"); }],
-        /// <field>
-        /// Called after the UOMName content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UOMName_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("UOMName"); }],
-        /// <field>
-        /// Called after the UnitWeight content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UnitWeight_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrder().findContentItem("UnitWeight"); }]
-    });
-
-    lightSwitchApplication.AddEditPurchaseOrderDetail_Old.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditPurchaseOrderDetail_Old
-        },
-        DetailsTab: {
-            _$class: msls.ContentItem,
-            _$name: "DetailsTab",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditPurchaseOrderDetail_Old,
-            data: lightSwitchApplication.AddEditPurchaseOrderDetail_Old,
-            value: lightSwitchApplication.AddEditPurchaseOrderDetail_Old
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditPurchaseOrderDetail_Old
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.AddEditPurchaseOrderDetail_Old, {
-        /// <field>
-        /// Called when a new AddEditPurchaseOrderDetail_Old screen is created.
-        /// <br/>created(msls.application.AddEditPurchaseOrderDetail_Old screen)
-        /// </field>
-        created: [lightSwitchApplication.AddEditPurchaseOrderDetail_Old],
-        /// <field>
-        /// Called before changes on an active AddEditPurchaseOrderDetail_Old screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.AddEditPurchaseOrderDetail_Old screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.AddEditPurchaseOrderDetail_Old],
-        /// <field>
-        /// Called after the DetailsTab content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        DetailsTab_postRender: [$element, function () { return new lightSwitchApplication.AddEditPurchaseOrderDetail_Old().findContentItem("DetailsTab"); }]
     });
 
     lightSwitchApplication.AddEditReceiveFromPurchaseOrder.prototype._$contentItems = {
@@ -9694,255 +10487,6 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         UnitsFound_postRender: [$element, function () { return new lightSwitchApplication.AddEditStockCheckDetail().findContentItem("UnitsFound"); }]
-    });
-
-    lightSwitchApplication.AddEditProductPricing.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditProductPricing
-        },
-        Details: {
-            _$class: msls.ContentItem,
-            _$name: "Details",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.AddEditProductPricing,
-            value: lightSwitchApplication.AddEditProductPricing
-        },
-        columns: {
-            _$class: msls.ContentItem,
-            _$name: "columns",
-            _$parentName: "Details",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.AddEditProductPricing,
-            value: lightSwitchApplication.StockOnHand
-        },
-        Product: {
-            _$class: msls.ContentItem,
-            _$name: "Product",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: lightSwitchApplication.Product
-        },
-        ProductCode: {
-            _$class: msls.ContentItem,
-            _$name: "ProductCode",
-            _$parentName: "Product",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.Product,
-            value: String
-        },
-        ProductName: {
-            _$class: msls.ContentItem,
-            _$name: "ProductName",
-            _$parentName: "Product",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.Product,
-            value: String
-        },
-        right: {
-            _$class: msls.ContentItem,
-            _$name: "right",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: lightSwitchApplication.StockOnHand
-        },
-        LocationName: {
-            _$class: msls.ContentItem,
-            _$name: "LocationName",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: String
-        },
-        LotNo: {
-            _$class: msls.ContentItem,
-            _$name: "LotNo",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: String
-        },
-        Group: {
-            _$class: msls.ContentItem,
-            _$name: "Group",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: lightSwitchApplication.StockOnHand
-        },
-        QuantityOnHand: {
-            _$class: msls.ContentItem,
-            _$name: "QuantityOnHand",
-            _$parentName: "Group",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: Number
-        },
-        CostPrice: {
-            _$class: msls.ContentItem,
-            _$name: "CostPrice",
-            _$parentName: "Group",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: String
-        },
-        left: {
-            _$class: msls.ContentItem,
-            _$name: "left",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: lightSwitchApplication.StockOnHand
-        },
-        UnitCost: {
-            _$class: msls.ContentItem,
-            _$name: "UnitCost",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: String
-        },
-        SellingPrice: {
-            _$class: msls.ContentItem,
-            _$name: "SellingPrice",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: String
-        },
-        UOMName: {
-            _$class: msls.ContentItem,
-            _$name: "UOMName",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: String
-        },
-        Group1: {
-            _$class: msls.ContentItem,
-            _$name: "Group1",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: lightSwitchApplication.StockOnHand
-        },
-        IsAvailableForSale: {
-            _$class: msls.ContentItem,
-            _$name: "IsAvailableForSale",
-            _$parentName: "Group1",
-            screen: lightSwitchApplication.AddEditProductPricing,
-            data: lightSwitchApplication.StockOnHand,
-            value: Boolean
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.AddEditProductPricing
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.AddEditProductPricing, {
-        /// <field>
-        /// Called when a new AddEditProductPricing screen is created.
-        /// <br/>created(msls.application.AddEditProductPricing screen)
-        /// </field>
-        created: [lightSwitchApplication.AddEditProductPricing],
-        /// <field>
-        /// Called before changes on an active AddEditProductPricing screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.AddEditProductPricing screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.AddEditProductPricing],
-        /// <field>
-        /// Called after the Details content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("Details"); }],
-        /// <field>
-        /// Called after the columns content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("columns"); }],
-        /// <field>
-        /// Called after the Product content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Product_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("Product"); }],
-        /// <field>
-        /// Called after the ProductCode content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("ProductCode"); }],
-        /// <field>
-        /// Called after the ProductName content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("ProductName"); }],
-        /// <field>
-        /// Called after the right content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("right"); }],
-        /// <field>
-        /// Called after the LocationName content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        LocationName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("LocationName"); }],
-        /// <field>
-        /// Called after the LotNo content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        LotNo_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("LotNo"); }],
-        /// <field>
-        /// Called after the Group content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Group_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("Group"); }],
-        /// <field>
-        /// Called after the QuantityOnHand content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        QuantityOnHand_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("QuantityOnHand"); }],
-        /// <field>
-        /// Called after the CostPrice content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        CostPrice_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("CostPrice"); }],
-        /// <field>
-        /// Called after the left content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("left"); }],
-        /// <field>
-        /// Called after the UnitCost content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UnitCost_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("UnitCost"); }],
-        /// <field>
-        /// Called after the SellingPrice content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        SellingPrice_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("SellingPrice"); }],
-        /// <field>
-        /// Called after the UOMName content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        UOMName_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("UOMName"); }],
-        /// <field>
-        /// Called after the Group1 content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Group1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("Group1"); }],
-        /// <field>
-        /// Called after the IsAvailableForSale content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        IsAvailableForSale_postRender: [$element, function () { return new lightSwitchApplication.AddEditProductPricing().findContentItem("IsAvailableForSale"); }]
     });
 
     lightSwitchApplication.AddEditSupplier.prototype._$contentItems = {
@@ -12641,6 +13185,105 @@
         ShowBrowseStockTransfers_postRender: [$element, function () { return new lightSwitchApplication.BrowseInventoryTasks().findContentItem("ShowBrowseStockTransfers"); }]
     });
 
+    lightSwitchApplication.BrowseLocations.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.BrowseLocations
+        },
+        ProductLocationList: {
+            _$class: msls.ContentItem,
+            _$name: "ProductLocationList",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.BrowseLocations,
+            data: lightSwitchApplication.BrowseLocations,
+            value: lightSwitchApplication.BrowseLocations
+        },
+        Search: {
+            _$class: msls.ContentItem,
+            _$name: "Search",
+            _$parentName: "ProductLocationList",
+            screen: lightSwitchApplication.BrowseLocations,
+            data: lightSwitchApplication.BrowseLocations,
+            value: String
+        },
+        ProductLocation: {
+            _$class: msls.ContentItem,
+            _$name: "ProductLocation",
+            _$parentName: "ProductLocationList",
+            screen: lightSwitchApplication.BrowseLocations,
+            data: lightSwitchApplication.BrowseLocations,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.BrowseLocations,
+                _$entry: {
+                    elementType: lightSwitchApplication.Location
+                }
+            }
+        },
+        RowTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "RowTemplate",
+            _$parentName: "ProductLocation",
+            screen: lightSwitchApplication.BrowseLocations,
+            data: lightSwitchApplication.Location,
+            value: lightSwitchApplication.Location
+        },
+        LocationName: {
+            _$class: msls.ContentItem,
+            _$name: "LocationName",
+            _$parentName: "RowTemplate",
+            screen: lightSwitchApplication.BrowseLocations,
+            data: lightSwitchApplication.Location,
+            value: String
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.BrowseLocations
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.BrowseLocations, {
+        /// <field>
+        /// Called when a new BrowseLocations screen is created.
+        /// <br/>created(msls.application.BrowseLocations screen)
+        /// </field>
+        created: [lightSwitchApplication.BrowseLocations],
+        /// <field>
+        /// Called before changes on an active BrowseLocations screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.BrowseLocations screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.BrowseLocations],
+        /// <field>
+        /// Called after the ProductLocationList content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductLocationList_postRender: [$element, function () { return new lightSwitchApplication.BrowseLocations().findContentItem("ProductLocationList"); }],
+        /// <field>
+        /// Called after the Search content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Search_postRender: [$element, function () { return new lightSwitchApplication.BrowseLocations().findContentItem("Search"); }],
+        /// <field>
+        /// Called after the ProductLocation content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProductLocation_postRender: [$element, function () { return new lightSwitchApplication.BrowseLocations().findContentItem("ProductLocation"); }],
+        /// <field>
+        /// Called after the RowTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseLocations().findContentItem("RowTemplate"); }],
+        /// <field>
+        /// Called after the LocationName content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        LocationName_postRender: [$element, function () { return new lightSwitchApplication.BrowseLocations().findContentItem("LocationName"); }]
+    });
+
     lightSwitchApplication.BrowseMachines.prototype._$contentItems = {
         Tabs: {
             _$class: msls.ContentItem,
@@ -13751,6 +14394,102 @@
         Modified1_postRender: [$element, function () { return new lightSwitchApplication.BrowseOrderRequisitionsDelivery().findContentItem("Modified1"); }]
     });
 
+    lightSwitchApplication.BrowseOrderRequisitionsTransportRoute.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute
+        },
+        Group: {
+            _$class: msls.ContentItem,
+            _$name: "Group",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
+            data: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
+            value: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute
+        },
+        QueryOrderRequisitionTransportRoute: {
+            _$class: msls.ContentItem,
+            _$name: "QueryOrderRequisitionTransportRoute",
+            _$parentName: "Group",
+            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
+            data: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
+                _$entry: {
+                    elementType: lightSwitchApplication.OrderRequisition
+                }
+            }
+        },
+        QueryOrderRequisitionTransportRouteTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "QueryOrderRequisitionTransportRouteTemplate",
+            _$parentName: "QueryOrderRequisitionTransportRoute",
+            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
+            data: lightSwitchApplication.OrderRequisition,
+            value: lightSwitchApplication.OrderRequisition
+        },
+        TransportRoute: {
+            _$class: msls.ContentItem,
+            _$name: "TransportRoute",
+            _$parentName: "QueryOrderRequisitionTransportRouteTemplate",
+            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
+            data: lightSwitchApplication.OrderRequisition,
+            value: lightSwitchApplication.TransportRoute
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.BrowseOrderRequisitionsTransportRoute, {
+        /// <field>
+        /// Called when a new BrowseOrderRequisitionsTransportRoute screen is created.
+        /// <br/>created(msls.application.BrowseOrderRequisitionsTransportRoute screen)
+        /// </field>
+        created: [lightSwitchApplication.BrowseOrderRequisitionsTransportRoute],
+        /// <field>
+        /// Called before changes on an active BrowseOrderRequisitionsTransportRoute screen are applied.
+        /// <br/>beforeApplyChanges(msls.application.BrowseOrderRequisitionsTransportRoute screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.BrowseOrderRequisitionsTransportRoute],
+        /// <field>
+        /// Called to determine if the QueryOrderRequisitionTransportRoute_ItemTap method can be executed.
+        /// <br/>canExecute(msls.application.BrowseOrderRequisitionsTransportRoute screen)
+        /// </field>
+        QueryOrderRequisitionTransportRoute_ItemTap_canExecute: [lightSwitchApplication.BrowseOrderRequisitionsTransportRoute],
+        /// <field>
+        /// Called to execute the QueryOrderRequisitionTransportRoute_ItemTap method.
+        /// <br/>execute(msls.application.BrowseOrderRequisitionsTransportRoute screen)
+        /// </field>
+        QueryOrderRequisitionTransportRoute_ItemTap_execute: [lightSwitchApplication.BrowseOrderRequisitionsTransportRoute],
+        /// <field>
+        /// Called after the Group content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group_postRender: [$element, function () { return new lightSwitchApplication.BrowseOrderRequisitionsTransportRoute().findContentItem("Group"); }],
+        /// <field>
+        /// Called after the QueryOrderRequisitionTransportRoute content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        QueryOrderRequisitionTransportRoute_postRender: [$element, function () { return new lightSwitchApplication.BrowseOrderRequisitionsTransportRoute().findContentItem("QueryOrderRequisitionTransportRoute"); }],
+        /// <field>
+        /// Called after the QueryOrderRequisitionTransportRouteTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        QueryOrderRequisitionTransportRouteTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseOrderRequisitionsTransportRoute().findContentItem("QueryOrderRequisitionTransportRouteTemplate"); }],
+        /// <field>
+        /// Called after the TransportRoute content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        TransportRoute_postRender: [$element, function () { return new lightSwitchApplication.BrowseOrderRequisitionsTransportRoute().findContentItem("TransportRoute"); }]
+    });
+
     lightSwitchApplication.BrowseOrders.prototype._$contentItems = {
         Tabs: {
             _$class: msls.ContentItem,
@@ -14820,105 +15559,6 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProductGroupName_postRender: [$element, function () { return new lightSwitchApplication.BrowseProductGroups().findContentItem("ProductGroupName"); }]
-    });
-
-    lightSwitchApplication.BrowseLocations.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.BrowseLocations
-        },
-        ProductLocationList: {
-            _$class: msls.ContentItem,
-            _$name: "ProductLocationList",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.BrowseLocations,
-            data: lightSwitchApplication.BrowseLocations,
-            value: lightSwitchApplication.BrowseLocations
-        },
-        Search: {
-            _$class: msls.ContentItem,
-            _$name: "Search",
-            _$parentName: "ProductLocationList",
-            screen: lightSwitchApplication.BrowseLocations,
-            data: lightSwitchApplication.BrowseLocations,
-            value: String
-        },
-        ProductLocation: {
-            _$class: msls.ContentItem,
-            _$name: "ProductLocation",
-            _$parentName: "ProductLocationList",
-            screen: lightSwitchApplication.BrowseLocations,
-            data: lightSwitchApplication.BrowseLocations,
-            value: {
-                _$class: msls.VisualCollection,
-                screen: lightSwitchApplication.BrowseLocations,
-                _$entry: {
-                    elementType: lightSwitchApplication.Location
-                }
-            }
-        },
-        RowTemplate: {
-            _$class: msls.ContentItem,
-            _$name: "RowTemplate",
-            _$parentName: "ProductLocation",
-            screen: lightSwitchApplication.BrowseLocations,
-            data: lightSwitchApplication.Location,
-            value: lightSwitchApplication.Location
-        },
-        LocationName: {
-            _$class: msls.ContentItem,
-            _$name: "LocationName",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.BrowseLocations,
-            data: lightSwitchApplication.Location,
-            value: String
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.BrowseLocations
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.BrowseLocations, {
-        /// <field>
-        /// Called when a new BrowseLocations screen is created.
-        /// <br/>created(msls.application.BrowseLocations screen)
-        /// </field>
-        created: [lightSwitchApplication.BrowseLocations],
-        /// <field>
-        /// Called before changes on an active BrowseLocations screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.BrowseLocations screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.BrowseLocations],
-        /// <field>
-        /// Called after the ProductLocationList content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductLocationList_postRender: [$element, function () { return new lightSwitchApplication.BrowseLocations().findContentItem("ProductLocationList"); }],
-        /// <field>
-        /// Called after the Search content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Search_postRender: [$element, function () { return new lightSwitchApplication.BrowseLocations().findContentItem("Search"); }],
-        /// <field>
-        /// Called after the ProductLocation content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProductLocation_postRender: [$element, function () { return new lightSwitchApplication.BrowseLocations().findContentItem("ProductLocation"); }],
-        /// <field>
-        /// Called after the RowTemplate content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseLocations().findContentItem("RowTemplate"); }],
-        /// <field>
-        /// Called after the LocationName content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        LocationName_postRender: [$element, function () { return new lightSwitchApplication.BrowseLocations().findContentItem("LocationName"); }]
     });
 
     lightSwitchApplication.BrowseProductPricings.prototype._$contentItems = {
@@ -16598,92 +17238,6 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Search_postRender: [$element, function () { return new lightSwitchApplication.BrowsePurchaseOrders_Old().findContentItem("Search"); }]
-    });
-
-    lightSwitchApplication.BrowseOrderRequisitionsTransportRoute.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute
-        },
-        Group: {
-            _$class: msls.ContentItem,
-            _$name: "Group",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
-            data: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
-            value: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute
-        },
-        QueryOrderRequisitionTransportRoute: {
-            _$class: msls.ContentItem,
-            _$name: "QueryOrderRequisitionTransportRoute",
-            _$parentName: "Group",
-            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
-            data: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
-            value: {
-                _$class: msls.VisualCollection,
-                screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
-                _$entry: {
-                    elementType: lightSwitchApplication.OrderRequisition
-                }
-            }
-        },
-        QueryOrderRequisitionTransportRouteTemplate: {
-            _$class: msls.ContentItem,
-            _$name: "QueryOrderRequisitionTransportRouteTemplate",
-            _$parentName: "QueryOrderRequisitionTransportRoute",
-            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
-            data: lightSwitchApplication.OrderRequisition,
-            value: lightSwitchApplication.OrderRequisition
-        },
-        TransportRoute: {
-            _$class: msls.ContentItem,
-            _$name: "TransportRoute",
-            _$parentName: "QueryOrderRequisitionTransportRouteTemplate",
-            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute,
-            data: lightSwitchApplication.OrderRequisition,
-            value: lightSwitchApplication.TransportRoute
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.BrowseOrderRequisitionsTransportRoute
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.BrowseOrderRequisitionsTransportRoute, {
-        /// <field>
-        /// Called when a new BrowseOrderRequisitionsTransportRoute screen is created.
-        /// <br/>created(msls.application.BrowseOrderRequisitionsTransportRoute screen)
-        /// </field>
-        created: [lightSwitchApplication.BrowseOrderRequisitionsTransportRoute],
-        /// <field>
-        /// Called before changes on an active BrowseOrderRequisitionsTransportRoute screen are applied.
-        /// <br/>beforeApplyChanges(msls.application.BrowseOrderRequisitionsTransportRoute screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.BrowseOrderRequisitionsTransportRoute],
-        /// <field>
-        /// Called after the Group content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Group_postRender: [$element, function () { return new lightSwitchApplication.BrowseOrderRequisitionsTransportRoute().findContentItem("Group"); }],
-        /// <field>
-        /// Called after the QueryOrderRequisitionTransportRoute content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        QueryOrderRequisitionTransportRoute_postRender: [$element, function () { return new lightSwitchApplication.BrowseOrderRequisitionsTransportRoute().findContentItem("QueryOrderRequisitionTransportRoute"); }],
-        /// <field>
-        /// Called after the QueryOrderRequisitionTransportRouteTemplate content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        QueryOrderRequisitionTransportRouteTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseOrderRequisitionsTransportRoute().findContentItem("QueryOrderRequisitionTransportRouteTemplate"); }],
-        /// <field>
-        /// Called after the TransportRoute content item has been rendered.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        TransportRoute_postRender: [$element, function () { return new lightSwitchApplication.BrowseOrderRequisitionsTransportRoute().findContentItem("TransportRoute"); }]
     });
 
     lightSwitchApplication.BrowseSaleOrders.prototype._$contentItems = {

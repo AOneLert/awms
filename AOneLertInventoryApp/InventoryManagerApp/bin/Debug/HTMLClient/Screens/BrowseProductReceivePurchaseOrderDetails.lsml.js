@@ -2,7 +2,11 @@
 
 myapp.BrowseProductReceivePurchaseOrderDetails.created = function (screen) {
     // Write code here.
-
+    function onEvent() {
+        // Do something.
+        screen.ProductReceivePurchaseOrderDetails.refresh();
+    }
+    screen.ProductReceivePurchaseOrderDetails.addEventListener("Event", onEvent);
 };
 myapp.BrowseProductReceivePurchaseOrderDetails.AddProductReceivePurchaseOrderDetail_Tap_execute = function (screen) {
     // Write code here.

@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
-// Generation date: 9/13/2014 12:17:47 AM
+// Generation date: 9/20/2014 9:50:56 AM
 namespace LightSwitchApplication.Implementation
 {
     
@@ -1251,960 +1251,966 @@ namespace LightSwitchApplication.Implementation
                 "t32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Na" +
                 "me=\"PickingNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Na" +
                 "me=\"PickingDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"PickingS" +
-                "lip_TransportRoute\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"TotalWei" +
-                "ght\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"Status\" Type=\"Edm.Bool" +
-                "ean\" Nullable=\"false\" /><Property Name=\"Remark\" Type=\"Edm.String\" Nullable=\"fals" +
-                "e\" MaxLength=\"255\" /><Property Name=\"CreatedBy\" Type=\"Edm.S";
+                "lip_TransportRoute\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"TruckLic" +
+                "ense\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Truck" +
+                "CapacityWeight\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"TotalWeight" +
+                "\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"Rema";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart2 = "tring\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Pr" +
-                "operty Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Mod" +
-                "ified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\"" +
-                " Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Comp" +
-                "uted\" /><NavigationProperty Name=\"TransportRoute\" Relationship=\"LightSwitchAppli" +
-                "cation.PickingSlip_TransportRoute\" ToRole=\"TransportRoute\" FromRole=\"PickingSlip" +
-                "\" /><NavigationProperty Name=\"PickingSlipDetails\" Relationship=\"LightSwitchAppli" +
-                "cation.PickingSlipDetail_PickingSlip\" ToRole=\"PickingSlipDetail\" FromRole=\"Picki" +
-                "ngSlip\" /></EntityType><EntityType Name=\"ProductCategory\"><Key><PropertyRef Name" +
-                "=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:S" +
-                "toreGeneratedPattern=\"Identity\" /><Property Name=\"ProductCategoryName\" Type=\"Edm" +
-                ".String\" Nullable=\"false\" MaxLength=\"100\" /><Property Name=\"Discontinued\" Type=\"" +
-                "Edm.Boolean\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" Max" +
-                "Length=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Na" +
-                "me=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Ty" +
-                "pe=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable" +
-                "=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><" +
-                "NavigationProperty Name=\"Products\" Relationship=\"LightSwitchApplication.ProductC" +
-                "ategory_Product\" ToRole=\"Product\" FromRole=\"ProductCategory\" /></EntityType><Ent" +
-                "ityType Name=\"ProductGroup\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"" +
-                "Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity" +
-                "\" /><Property Name=\"ProductGroupName\" Type=\"Edm.String\" Nullable=\"false\" MaxLeng" +
-                "th=\"255\" /><Property Name=\"Discontinued\" Type=\"Edm.Boolean\" Nullable=\"false\" /><" +
-                "Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Cr" +
-                "eated\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\"" +
-                " MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Proper" +
-                "ty Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" " +
-                "annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"Products" +
-                "\" Relationship=\"LightSwitchApplication.Product_ProductGroup\" ToRole=\"Product\" Fr" +
-                "omRole=\"ProductGroup\" /></EntityType><EntityType Name=\"ProductReceiveBalanceForw" +
-                "ardDetail\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int" +
-                "32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Nam" +
-                "e=\"LotNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"R" +
-                "eceivedQuantity\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"ProductRec" +
-                "eiveDetail_Product\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"ProductR" +
-                "eceiveDetail_Location\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Produ" +
-                "ctReceiveDetail_ProductReceive\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Na" +
-                "me=\"CostPrice\" Type=\"Edm.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><P" +
-                "roperty Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Cre" +
-                "ated\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" " +
-                "MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Propert" +
-                "y Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" a" +
-                "nnotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"Product\" " +
-                "Relationship=\"LightSwitchApplication.ProductReceiveBalanceForwardDe_Product\" ToR" +
-                "ole=\"Product\" FromRole=\"ProductReceiveBalanceForwardDetail\" /><NavigationPropert" +
-                "y Name=\"Location\" Relationship=\"LightSwitchApplication.ProductReceiveBalanceForw" +
-                "ardDe_Location\" ToRole=\"Location\" FromRole=\"ProductReceiveBalanceForwardDetail\" " +
-                "/><NavigationProperty Name=\"ProductReceiveBalanceForward\" Relationship=\"LightSwi" +
-                "tchApplication.ProductReceiveBalanceForwardDe_ProductReceiveBalanceForward\" ToRo" +
-                "le=\"ProductReceiveBalanceForward\" FromRole=\"ProductReceiveBalanceForwardDetail\" " +
-                "/></EntityType><EntityType Name=\"ProductReceiveBalanceForward\"><Key><PropertyRef" +
-                " Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotat" +
-                "ion:StoreGeneratedPattern=\"Identity\" /><Property Name=\"DocumentNo\" Type=\"Edm.Str" +
-                "ing\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"DocumentDate\" Type=\"Edm." +
-                "DateTime\" Nullable=\"false\" /><Property Name=\"Remarks\" Type=\"Edm.String\" MaxLengt" +
-                "h=\"255\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Proper" +
-                "ty Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"" +
-                "Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset" +
-                "\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMo" +
-                "de=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Nam" +
-                "e=\"ProductReceiveBalanceForwardDetail\" Relationship=\"LightSwitchApplication.Prod" +
-                "uctReceiveBalanceForwardDe_ProductReceiveBalanceForward\" ToRole=\"ProductReceiveB" +
-                "alanceForwardDetail\" FromRole=\"ProductReceiveBalanceForward\" /></EntityType><Ent" +
-                "ityType Name=\"ProductReceivePurchaseOrderDetail\"><Key><PropertyRef Name=\"Id\" /><" +
-                "/Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGener" +
-                "atedPattern=\"Identity\" /><Property Name=\"ReceiveNumber\" Type=\"Edm.String\" Nullab" +
-                "le=\"false\" MaxLength=\"255\" /><Property Name=\"ReceiveDate\" Type=\"Edm.DateTime\" Nu" +
-                "llable=\"false\" /><Property Name=\"ProductReceivePurchaseOrderDet_PurchaseOrderDet" +
-                "ail\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"ProductReceivePurchaseO" +
-                "rderDet_Location\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"ReceiveQua" +
-                "ntity\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"ReceiveUnitCost\" Typ" +
-                "e=\"Edm.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"Rece" +
-                "iveTotalCost\" Type=\"Edm.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><Pr" +
-                "operty Name=\"Remark\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Product" +
-                "ReceivePurchaseOrderDet_Product\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property N" +
-                "ame=\"LotNo\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"CreatedBy\" Type=" +
-                "\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset" +
-                "\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Na" +
-                "me=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm." +
-                "Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPatter" +
-                "n=\"Computed\" /><NavigationProperty Name=\"PurchaseOrderDetail\" Relationship=\"Ligh" +
-                "tSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail\" ToRole=\"P" +
-                "urchaseOrderDetail\" FromRole=\"ProductReceivePurchaseOrderDetail\" /><NavigationPr" +
-                "operty Name=\"Location\" Relationship=\"LightSwitchApplication.ProductReceivePurcha" +
-                "seOrderDet_Location\" ToRole=\"Location\" FromRole=\"ProductReceivePurchaseOrderDeta" +
-                "il\" /><NavigationProperty Name=\"Product\" Relationship=\"LightSwitchApplication.Pr" +
-                "oductReceivePurchaseOrderDet_Product\" ToRole=\"Product\" FromRole=\"ProductReceiveP" +
-                "urchaseOrderDetail\" /></EntityType><EntityType Name=\"ProductReceive\"><Key><Prope" +
-                "rtyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" a" +
-                "nnotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"CreatedBy\" Type=\"Ed" +
-                "m.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /" +
-                "><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=" +
-                "\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Bin" +
-                "ary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:St";
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart3 = "oreGeneratedPattern=\"Computed\" /></EntityType><EntityType Name=\"Product\"><Key><Pr" +
-                "opertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false" +
-                "\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"ProductCode\" Typ" +
-                "e=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"ProductName\" T" +
-                "ype=\"Edm.String\" Nullable=\"false\" MaxLength=\"100\" /><Property Name=\"ProductCateg" +
-                "ory_Product\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"UnitPrice\" Type" +
-                "=\"Edm.Decimal\" Precision=\"18\" Scale=\"2\" /><Property Name=\"ReorderLevelFlag\" Type" +
-                "=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"ReorderLevel\" Type=\"Edm.Int16\"" +
-                " /><Property Name=\"Discontinued\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property" +
-                " Name=\"Product_ProductGroup\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=" +
-                "\"Product_Location\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Product_U" +
-                "nitOfMeasure\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"AgingControlFl" +
-                "ag\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"AgingControlDays\" Type" +
-                "=\"Edm.Int16\" /><Property Name=\"LotControlFlag\" Type=\"Edm.Boolean\" Nullable=\"fals" +
-                "e\" /><Property Name=\"LotType\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\"" +
-                " /><Property Name=\"CarryingCostFlag\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Prop" +
-                "erty Name=\"CarryingCost\" Type=\"Edm.Decimal\" Precision=\"18\" Scale=\"2\" /><Property" +
-                " Name=\"ProductionCostFlag\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=" +
-                "\"UnitWeight\" Type=\"Edm.Double\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" Ma" +
-                "xLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property N" +
-                "ame=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" T" +
-                "ype=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullabl" +
-                "e=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" />" +
-                "<NavigationProperty Name=\"ProductCategory\" Relationship=\"LightSwitchApplication." +
-                "ProductCategory_Product\" ToRole=\"ProductCategory\" FromRole=\"Product\" /><Navigati" +
-                "onProperty Name=\"ProductGroup\" Relationship=\"LightSwitchApplication.Product_Prod" +
-                "uctGroup\" ToRole=\"ProductGroup\" FromRole=\"Product\" /><NavigationProperty Name=\"L" +
-                "ocation\" Relationship=\"LightSwitchApplication.Product_Location\" ToRole=\"Location" +
-                "\" FromRole=\"Product\" /><NavigationProperty Name=\"UnitOfMeasure\" Relationship=\"Li" +
-                "ghtSwitchApplication.Product_UnitOfMeasure\" ToRole=\"UnitOfMeasure\" FromRole=\"Pro" +
-                "duct\" /><NavigationProperty Name=\"ProductReceiveBalanceForwardDetail\" Relationsh" +
-                "ip=\"LightSwitchApplication.ProductReceiveBalanceForwardDe_Product\" ToRole=\"Produ" +
-                "ctReceiveBalanceForwardDetail\" FromRole=\"Product\" /><NavigationProperty Name=\"St" +
-                "ockOnHands\" Relationship=\"LightSwitchApplication.StockOnHand_Product\" ToRole=\"St" +
-                "ockOnHand\" FromRole=\"Product\" /><NavigationProperty Name=\"StockAdjustDetail\" Rel" +
-                "ationship=\"LightSwitchApplication.StockAdjustDetail_Product\" ToRole=\"StockAdjust" +
-                "Detail\" FromRole=\"Product\" /><NavigationProperty Name=\"SaleOrderDetails\" Relatio" +
-                "nship=\"LightSwitchApplication.SaleOrderDetail_Product\" ToRole=\"SaleOrderDetail\" " +
-                "FromRole=\"Product\" /><NavigationProperty Name=\"PurchaseOrderDetails\" Relationshi" +
-                "p=\"LightSwitchApplication.PurchaseOrderDetail_Product\" ToRole=\"PurchaseOrderDeta" +
-                "il\" FromRole=\"Product\" /><NavigationProperty Name=\"WorkOrderIssueDetail\" Relatio" +
-                "nship=\"LightSwitchApplication.WorkOrderIssueDetail_Product\" ToRole=\"WorkOrderIss" +
-                "ueDetail\" FromRole=\"Product\" /><NavigationProperty Name=\"WorkOrderProduces\" Rela" +
-                "tionship=\"LightSwitchApplication.WorkOrderProduce_Product\" ToRole=\"WorkOrderProd" +
-                "uce\" FromRole=\"Product\" /><NavigationProperty Name=\"ProductReceivePurchaseOrderD" +
-                "etails\" Relationship=\"LightSwitchApplication.ProductReceivePurchaseOrderDet_Prod" +
-                "uct\" ToRole=\"ProductReceivePurchaseOrderDetail\" FromRole=\"Product\" /><Navigation" +
-                "Property Name=\"OrderRequisitionDetail\" Relationship=\"LightSwitchApplication.Orde" +
-                "rRequisitionDetail_Product\" ToRole=\"OrderRequisitionDetail\" FromRole=\"Product\" /" +
-                "></EntityType><EntityType Name=\"PurchaseOrderDetail\"><Key><PropertyRef Name=\"Id\"" +
-                " /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreG" +
-                "eneratedPattern=\"Identity\" /><Property Name=\"RequireDate\" Type=\"Edm.DateTime\" Nu" +
-                "llable=\"false\" /><Property Name=\"ReceiveDate\" Type=\"Edm.DateTime\" /><Property Na" +
-                "me=\"PurchaseOrderDetail_Product\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property N" +
-                "ame=\"PurchaseOrderDetail_Location\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property" +
-                " Name=\"LotNo\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"RequireQuantit" +
-                "y\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"ReceiveQuantity\" Type=\"E" +
-                "dm.Double\" /><Property Name=\"RequireUnitCost\" Type=\"Edm.Decimal\" Precision=\"18\" " +
-                "Scale=\"2\" /><Property Name=\"ReceiveUnitCost\" Type=\"Edm.Decimal\" Precision=\"18\" S" +
-                "cale=\"2\" /><Property Name=\"RequireTotalCost\" Type=\"Edm.Decimal\" Nullable=\"false\"" +
-                " Precision=\"18\" Scale=\"2\" /><Property Name=\"ReceiveTotalCost\" Type=\"Edm.Decimal\"" +
-                " Precision=\"18\" Scale=\"2\" /><Property Name=\"Remark\" Type=\"Edm.String\" MaxLength=" +
-                "\"255\" /><Property Name=\"IsReceiveComplete\" Type=\"Edm.Boolean\" Nullable=\"false\" /" +
-                "><Property Name=\"PurchaseOrderDetail_PurchaseOrder\" Type=\"Edm.Int32\" Nullable=\"f" +
-                "alse\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property" +
-                " Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Ed" +
-                "m.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" " +
-                "/><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode" +
-                "=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=" +
-                "\"Product\" Relationship=\"LightSwitchApplication.PurchaseOrderDetail_Product\" ToRo" +
-                "le=\"Product\" FromRole=\"PurchaseOrderDetail\" /><NavigationProperty Name=\"Location" +
-                "\" Relationship=\"LightSwitchApplication.PurchaseOrderDetail_Location\" ToRole=\"Loc" +
-                "ation\" FromRole=\"PurchaseOrderDetail\" /><NavigationProperty Name=\"PurchaseOrder\"" +
-                " Relationship=\"LightSwitchApplication.PurchaseOrderDetail_PurchaseOrder\" ToRole=" +
-                "\"PurchaseOrder\" FromRole=\"PurchaseOrderDetail\" /><NavigationProperty Name=\"Produ" +
-                "ctReceivePurchaseOrderDetails\" Relationship=\"LightSwitchApplication.ProductRecei" +
-                "vePurchaseOrderDet_PurchaseOrderDetail\" ToRole=\"ProductReceivePurchaseOrderDetai" +
-                "l\" FromRole=\"PurchaseOrderDetail\" /></EntityType><EntityType Name=\"PurchaseOrder" +
-                "\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nulla" +
-                "ble=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"Purcha" +
-                "seOrderNumber\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Na" +
-                "me=\"PurchaseOrderDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"Pu" +
-                "rchaseOrderStatus\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"Purchas" +
-                "eOrder_Supplier\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Remark\" Typ" +
-                "e=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" Ma" +
-                "xLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property N" +
-                "ame=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" T" +
-                "ype=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullabl" +
-                "e=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" />" +
-                "<NavigationProperty Name=\"Supplier\" Relationship=\"LightSwitchApplication.Purchas" +
-                "eOrder_Supplier\" ToRole=\"Supplier\" FromRole=\"PurchaseOrder\" /><NavigationPropert" +
-                "y Name=\"PurchaseOrderDetails\" Relationship=\"LightSwitchApplication.PurchaseOrder" +
-                "Detail_PurchaseOrder\" ToRole=\"PurchaseOrderDetail\" FromRole=\"PurchaseOrder\" /></" +
-                "EntityType><EntityType Name=\"SaleOrderDetail\"><Key><Propert";
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart4 = "yRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" anno" +
-                "tation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"SaleOrderDetail_SaleOr" +
-                "der\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"SaleOrderDetail_Product" +
-                "\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"SaleOrderDetail_Location\" " +
-                "Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"LotNo\" Type=\"Edm.String\" Nul" +
-                "lable=\"false\" MaxLength=\"255\" /><Property Name=\"OrderQuantity\" Type=\"Edm.Double\"" +
-                " Nullable=\"false\" /><Property Name=\"MasterSalePrice\" Type=\"Edm.Decimal\" Nullable" +
-                "=\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"UnitCost\" Type=\"Edm.Decimal\"" +
-                " Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"SalePrice\" Type=\"Ed" +
-                "m.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"Requisiti" +
-                "onFlag\" Type=\"Edm.Boolean\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLen" +
-                "gth=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=" +
-                "\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=" +
-                "\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"f" +
-                "alse\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><Nav" +
-                "igationProperty Name=\"SaleOrder\" Relationship=\"LightSwitchApplication.SaleOrderD" +
-                "etail_SaleOrder\" ToRole=\"SaleOrder\" FromRole=\"SaleOrderDetail\" /><NavigationProp" +
-                "erty Name=\"Product\" Relationship=\"LightSwitchApplication.SaleOrderDetail_Product" +
-                "\" ToRole=\"Product\" FromRole=\"SaleOrderDetail\" /><NavigationProperty Name=\"Locati" +
-                "on\" Relationship=\"LightSwitchApplication.SaleOrderDetail_Location\" ToRole=\"Locat" +
-                "ion\" FromRole=\"SaleOrderDetail\" /></EntityType><EntityType Name=\"SaleOrder\"><Key" +
-                "><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"f" +
-                "alse\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"SaleOrderNo\"" +
-                " Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"SaleOrderD" +
-                "ate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"ReferenceNo\" Type=\"E" +
-                "dm.String\" MaxLength=\"255\" /><Property Name=\"SaleOrder_Customer\" Type=\"Edm.Int32" +
-                "\" Nullable=\"false\" /><Property Name=\"PaymentTerm\" Type=\"Edm.Int32\" /><Property N" +
-                "ame=\"PaymentStatus\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Remarks\"" +
-                " Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"SaleOrderStatus\" Type=\"Edm." +
-                "Boolean\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLeng" +
-                "th=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"" +
-                "ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"" +
-                "Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"fa" +
-                "lse\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><Navi" +
-                "gationProperty Name=\"Customer\" Relationship=\"LightSwitchApplication.SaleOrder_Cu" +
-                "stomer\" ToRole=\"Customer\" FromRole=\"SaleOrder\" /><NavigationProperty Name=\"SaleO" +
-                "rderDetails\" Relationship=\"LightSwitchApplication.SaleOrderDetail_SaleOrder\" ToR" +
-                "ole=\"SaleOrderDetail\" FromRole=\"SaleOrder\" /></EntityType><EntityType Name=\"Stoc" +
-                "kAdjustDetail\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm" +
-                ".Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property" +
-                " Name=\"StockAdjustDetail_Location\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property" +
-                " Name=\"StockAdjust_Product\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"" +
-                "LotNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Curr" +
-                "entQuantity\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"NewQuantity\" T" +
-                "ype=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"StockAdjustDetail_StockAdjus" +
-                "t\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.Stri" +
-                "ng\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Prop" +
-                "erty Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modif" +
-                "ied\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" N" +
-                "ullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Comput" +
-                "ed\" /><NavigationProperty Name=\"Location\" Relationship=\"LightSwitchApplication.S" +
-                "tockAdjustDetail_Location\" ToRole=\"Location\" FromRole=\"StockAdjustDetail\" /><Nav" +
-                "igationProperty Name=\"Product\" Relationship=\"LightSwitchApplication.StockAdjustD" +
-                "etail_Product\" ToRole=\"Product\" FromRole=\"StockAdjustDetail\" /><NavigationProper" +
-                "ty Name=\"StockAdjust\" Relationship=\"LightSwitchApplication.StockAdjustDetail_Sto" +
-                "ckAdjust\" ToRole=\"StockAdjust\" FromRole=\"StockAdjustDetail\" /></EntityType><Enti" +
-                "tyType Name=\"StockAdjust\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id" +
-                "\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" " +
-                "/><Property Name=\"DocumentNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\"" +
-                " /><Property Name=\"DocumentDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Propert" +
-                "y Name=\"Remarks\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property " +
-                "Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Ty" +
-                "pe=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLengt" +
-                "h=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"" +
-                "RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotatio" +
-                "n:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"StockAdjustDetail" +
-                "s\" Relationship=\"LightSwitchApplication.StockAdjustDetail_StockAdjust\" ToRole=\"S" +
-                "tockAdjustDetail\" FromRole=\"StockAdjust\" /></EntityType><EntityType Name=\"StockC" +
-                "heckDetail\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.In" +
-                "t32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Na" +
-                "me=\"StockCheckDetails_StockCheck\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property " +
-                "Name=\"UnitsExpected\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"UnitsFo" +
-                "und\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.St" +
-                "ring\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Pr" +
-                "operty Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Mod" +
-                "ified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\"" +
-                " Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Comp" +
-                "uted\" /><NavigationProperty Name=\"StockCheck\" Relationship=\"LightSwitchApplicati" +
-                "on.StockCheckDetail_StockCheck\" ToRole=\"StockCheck\" FromRole=\"StockCheckDetail\" " +
-                "/></EntityType><EntityType Name=\"StockCheck\"><Key><PropertyRef Name=\"Id\" /></Key" +
-                "><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGenerated" +
-                "Pattern=\"Identity\" /><Property Name=\"StockCheckDate\" Type=\"Edm.DateTime\" Nullabl" +
+            private const string ModelPart2 = "rk\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Status\" Type=\"Edm.Boolean" +
+                "\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255" +
+                "\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"Modifie" +
+                "dBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.Dat" +
+                "eTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Co" +
+                "ncurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationP" +
+                "roperty Name=\"TransportRoute\" Relationship=\"LightSwitchApplication.PickingSlip_T" +
+                "ransportRoute\" ToRole=\"TransportRoute\" FromRole=\"PickingSlip\" /><NavigationPrope" +
+                "rty Name=\"PickingSlipDetails\" Relationship=\"LightSwitchApplication.PickingSlipDe" +
+                "tail_PickingSlip\" ToRole=\"PickingSlipDetail\" FromRole=\"PickingSlip\" /></EntityTy" +
+                "pe><EntityType Name=\"ProductCategory\"><Key><PropertyRef Name=\"Id\" /></Key><Prope" +
+                "rty Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern" +
+                "=\"Identity\" /><Property Name=\"ProductCategoryName\" Type=\"Edm.String\" Nullable=\"f" +
+                "alse\" MaxLength=\"100\" /><Property Name=\"Discontinued\" Type=\"Edm.Boolean\" Nullabl" +
                 "e=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Prop" +
                 "erty Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type" +
                 "=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffs" +
                 "et\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Concurrency" +
                 "Mode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty N" +
-                "ame=\"StockCheckDetails\" Relationship=\"LightSwitchApplication.StockCheckDetail_St" +
-                "ockCheck\" ToRole=\"StockCheckDetail\" FromRole=\"StockCheck\" /></EntityType><Entity" +
-                "Type Name=\"StockOnHandHistory\"><Key><PropertyRef Name=\"Id\" /></Key><Property Nam" +
-                "e=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Ident" +
-                "ity\" /><Property Name=\"TransactionNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLeng" +
-                "th=\"255\" /><Property Name=\"TransactionDate\" Type=\"Edm.DateTime\" Nullable=\"false\"" +
-                " /><Property Name=\"TransactionBy\" Type=\"Edm.String\" Nullabl";
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart5 = "e=\"false\" MaxLength=\"255\" /><Property Name=\"ProductId\" Type=\"Edm.Int32\" Nullable=" +
-                "\"false\" /><Property Name=\"LocationId\" Type=\"Edm.Int32\" Nullable=\"false\" /><Prope" +
-                "rty Name=\"LotNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property " +
-                "Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Ty" +
-                "pe=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLengt" +
-                "h=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"" +
-                "RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotatio" +
-                "n:StoreGeneratedPattern=\"Computed\" /></EntityType><EntityType Name=\"StockOnHand\"" +
-                "><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullab" +
-                "le=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"LotNo\" " +
-                "Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"QuantityOnH" +
-                "and\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"SellingPrice\" Type=\"Ed" +
-                "m.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"CostPrice" +
-                "\" Type=\"Edm.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"9\" /><Property Name=" +
-                "\"IsAvailableForSale\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"Stock" +
-                "OnHand_Location\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"StockOnHand" +
-                "_Product\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"ReservedQuantity\" " +
-                "Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String" +
-                "\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Proper" +
-                "ty Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modifie" +
-                "d\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nul" +
-                "lable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed" +
-                "\" /><NavigationProperty Name=\"Location\" Relationship=\"LightSwitchApplication.Sto" +
-                "ckOnHand_Location\" ToRole=\"Location\" FromRole=\"StockOnHand\" /><NavigationPropert" +
-                "y Name=\"Product\" Relationship=\"LightSwitchApplication.StockOnHand_Product\" ToRol" +
-                "e=\"Product\" FromRole=\"StockOnHand\" /></EntityType><EntityType Name=\"StockTransac" +
-                "tion\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" N" +
-                "ullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"Tr" +
-                "ansactionPeriod\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property " +
-                "Name=\"TransactionDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"Tr" +
-                "ansactionNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name" +
-                "=\"TransactionType\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Propert" +
-                "y Name=\"ItemSequence\" Type=\"Edm.Int16\" Nullable=\"false\" /><Property Name=\"Locati" +
-                "onId\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"ProductId\" Type=\"Edm.I" +
-                "nt32\" Nullable=\"false\" /><Property Name=\"LotNo\" Type=\"Edm.String\" Nullable=\"fals" +
-                "e\" MaxLength=\"255\" /><Property Name=\"Quantity\" Type=\"Edm.Double\" Nullable=\"false" +
-                "\" /><Property Name=\"CostPrice\" Type=\"Edm.Decimal\" Nullable=\"false\" Precision=\"18" +
-                "\" Scale=\"2\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Pr" +
-                "operty Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Ty" +
-                "pe=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOf" +
-                "fset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Concurren" +
-                "cyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /></EntityType><Entit" +
-                "yType Name=\"StockTransfer\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"I" +
-                "d\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\"" +
-                " /><Property Name=\"LotNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><" +
-                "Property Name=\"Quantity\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"Cr" +
-                "eatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm." +
-                "DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" " +
-                "/><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersi" +
-                "on\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreG" +
-                "eneratedPattern=\"Computed\" /></EntityType><EntityType Name=\"SupplierGroup\"><Key>" +
-                "<PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"fa" +
-                "lse\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"SupplierGroup" +
-                "Name\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Disco" +
-                "ntinued\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"" +
-                "Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\"" +
-                " /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Nam" +
-                "e=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.B" +
-                "inary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern" +
-                "=\"Computed\" /><NavigationProperty Name=\"Suppliers\" Relationship=\"LightSwitchAppl" +
-                "ication.Supplier_SupplierGroup\" ToRole=\"Supplier\" FromRole=\"SupplierGroup\" /></E" +
-                "ntityType><EntityType Name=\"Supplier\"><Key><PropertyRef Name=\"Id\" /></Key><Prope" +
-                "rty Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern" +
-                "=\"Identity\" /><Property Name=\"SupplierName\" Type=\"Edm.String\" Nullable=\"false\" M" +
-                "axLength=\"100\" /><Property Name=\"Address1\" Type=\"Edm.String\" MaxLength=\"100\" /><" +
-                "Property Name=\"Address2\" Type=\"Edm.String\" MaxLength=\"100\" /><Property Name=\"Con" +
-                "tactName\" Type=\"Edm.String\" MaxLength=\"100\" /><Property Name=\"TaxID\" Type=\"Edm.S" +
-                "tring\" MaxLength=\"100\" /><Property Name=\"CreditTerm\" Type=\"Edm.Int16\" /><Propert" +
-                "y Name=\"Email\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Phone\" Type=\"" +
-                "Edm.String\" MaxLength=\"255\" /><Property Name=\"Fax\" Type=\"Edm.String\" MaxLength=\"" +
-                "255\" /><Property Name=\"Website\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Na" +
-                "me=\"RegisterDate\" Type=\"Edm.DateTime\" /><Property Name=\"Latitude\" Type=\"Edm.Doub" +
-                "le\" /><Property Name=\"Longitude\" Type=\"Edm.Double\" /><Property Name=\"Supplier_Su" +
-                "pplierGroup\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Discontinued\" T" +
-                "ype=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String" +
-                "\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Proper" +
-                "ty Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modifie" +
-                "d\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nul" +
-                "lable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed" +
-                "\" /><NavigationProperty Name=\"SupplierGroup\" Relationship=\"LightSwitchApplicatio" +
-                "n.Supplier_SupplierGroup\" ToRole=\"SupplierGroup\" FromRole=\"Supplier\" /><Navigati" +
-                "onProperty Name=\"PurchaseOrders\" Relationship=\"LightSwitchApplication.PurchaseOr" +
-                "der_Supplier\" ToRole=\"PurchaseOrder\" FromRole=\"Supplier\" /></EntityType><EntityT" +
-                "ype Name=\"Transaction\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" T" +
-                "ype=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><" +
-                "Property Name=\"TransactionNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\"" +
-                " /><Property Name=\"TransactionDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Prop" +
-                "erty Name=\"TransactionType\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /" +
-                "><Property Name=\"ReferenceNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\"" +
-                " /><Property Name=\"ProductId\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name" +
-                "=\"LocationId\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"LotNo\" Type=\"E" +
-                "dm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Quantity\" Type=\"Ed" +
-                "m.Double\" Nullable=\"false\" /><Property Name=\"Cost\" Type=\"Edm.Decimal\" Nullable=\"" +
-                "false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"CreatedBy";
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart6 = "\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTime" +
-                "Offset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Prope" +
-                "rty Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type" +
-                "=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGenerated" +
-                "Pattern=\"Computed\" /></EntityType><EntityType Name=\"TransportRoute\"><Key><Proper" +
-                "tyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" an" +
-                "notation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"TransportRouteName\" " +
-                "Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Distance\" T" +
-                "ype=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"Discontinued\" Type=\"Edm.Bool" +
-                "ean\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"" +
-                "255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"Modi" +
-                "fiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm." +
-                "DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\"" +
-                " ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><Navigati" +
-                "onProperty Name=\"Customers\" Relationship=\"LightSwitchApplication.Customer_Transp" +
-                "ortRoute\" ToRole=\"Customer\" FromRole=\"TransportRoute\" /><NavigationProperty Name" +
-                "=\"PickingSlips\" Relationship=\"LightSwitchApplication.PickingSlip_TransportRoute\"" +
-                " ToRole=\"PickingSlip\" FromRole=\"TransportRoute\" /></EntityType><EntityType Name=" +
-                "\"UnitOfMeasure\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Ed" +
-                "m.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Propert" +
-                "y Name=\"UOMName\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property " +
-                "Name=\"Discontinued\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"Create" +
+                "ame=\"Products\" Relationship=\"LightSwitchApplication.ProductCategory_Product\" ToR" +
+                "ole=\"Product\" FromRole=\"ProductCategory\" /></EntityType><EntityType Name=\"Produc" +
+                "tGroup\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\"" +
+                " Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"" +
+                "ProductGroupName\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property" +
+                " Name=\"Discontinued\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"Creat" +
+                "edBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.Dat" +
+                "eTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><" +
+                "Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\"" +
+                " Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGene" +
+                "ratedPattern=\"Computed\" /><NavigationProperty Name=\"Products\" Relationship=\"Ligh" +
+                "tSwitchApplication.Product_ProductGroup\" ToRole=\"Product\" FromRole=\"ProductGroup" +
+                "\" /></EntityType><EntityType Name=\"ProductReceiveBalanceForwardDetail\"><Key><Pro" +
+                "pertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\"" +
+                " annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"LotNo\" Type=\"Edm." +
+                "String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"ReceivedQuantity\" Typ" +
+                "e=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"ProductReceiveDetail_Product\" " +
+                "Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"ProductReceiveDetail_Locatio" +
+                "n\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"ProductReceiveDetail_Prod" +
+                "uctReceive\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"CostPrice\" Type=" +
+                "\"Edm.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"Create" +
                 "dBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.Date" +
                 "TimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><P" +
                 "roperty Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" " +
                 "Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGener" +
-                "atedPattern=\"Computed\" /><NavigationProperty Name=\"Products\" Relationship=\"Light" +
-                "SwitchApplication.Product_UnitOfMeasure\" ToRole=\"Product\" FromRole=\"UnitOfMeasur" +
-                "e\" /></EntityType><EntityType Name=\"Worker\"><Key><PropertyRef Name=\"Id\" /></Key>" +
-                "<Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedP" +
-                "attern=\"Identity\" /><Property Name=\"WorkerName\" Type=\"Edm.String\" Nullable=\"fals" +
-                "e\" MaxLength=\"255\" /><Property Name=\"HireDate\" Type=\"Edm.DateTime\" Nullable=\"fal" +
-                "se\" /><Property Name=\"Discontinued\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Prope" +
-                "rty Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created" +
-                "\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxL" +
-                "ength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Na" +
-                "me=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annot" +
-                "ation:StoreGeneratedPattern=\"Computed\" /></EntityType><EntityType Name=\"WorkOrde" +
-                "rIssueDetail\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm." +
-                "Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property " +
-                "Name=\"WorkOrderIssueDetail_WorkOrder\" Type=\"Edm.Int32\" Nullable=\"false\" /><Prope" +
-                "rty Name=\"WorkOrderIssue_Product\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property " +
-                "Name=\"WorkOrderIssue_Location\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Nam" +
-                "e=\"IssueLot\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name" +
-                "=\"IssueQuantity\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"IssueUnitC" +
-                "ost\" Type=\"Edm.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><Property Na" +
+                "atedPattern=\"Computed\" /><NavigationProperty Name=\"Product\" Relationship=\"LightS" +
+                "witchApplication.ProductReceiveBalanceForwardDe_Product\" ToRole=\"Product\" FromRo" +
+                "le=\"ProductReceiveBalanceForwardDetail\" /><NavigationProperty Name=\"Location\" Re" +
+                "lationship=\"LightSwitchApplication.ProductReceiveBalanceForwardDe_Location\" ToRo" +
+                "le=\"Location\" FromRole=\"ProductReceiveBalanceForwardDetail\" /><NavigationPropert" +
+                "y Name=\"ProductReceiveBalanceForward\" Relationship=\"LightSwitchApplication.Produ" +
+                "ctReceiveBalanceForwardDe_ProductReceiveBalanceForward\" ToRole=\"ProductReceiveBa" +
+                "lanceForward\" FromRole=\"ProductReceiveBalanceForwardDetail\" /></EntityType><Enti" +
+                "tyType Name=\"ProductReceiveBalanceForward\"><Key><PropertyRef Name=\"Id\" /></Key><" +
+                "Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPa" +
+                "ttern=\"Identity\" /><Property Name=\"DocumentNo\" Type=\"Edm.String\" Nullable=\"false" +
+                "\" MaxLength=\"255\" /><Property Name=\"DocumentDate\" Type=\"Edm.DateTime\" Nullable=\"" +
+                "false\" /><Property Name=\"Remarks\" Type=\"Edm.String\" MaxLength=\"255\" /><Property " +
+                "Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Ty" +
+                "pe=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLengt" +
+                "h=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"" +
+                "RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotatio" +
+                "n:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"ProductReceiveBal" +
+                "anceForwardDetail\" Relationship=\"LightSwitchApplication.ProductReceiveBalanceFor" +
+                "wardDe_ProductReceiveBalanceForward\" ToRole=\"ProductReceiveBalanceForwardDetail\"" +
+                " FromRole=\"ProductReceiveBalanceForward\" /></EntityType><EntityType Name=\"Produc" +
+                "tReceivePurchaseOrderDetail\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=" +
+                "\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identit" +
+                "y\" /><Property Name=\"ReceiveNumber\" Type=\"Edm.String\" Nullable=\"false\" MaxLength" +
+                "=\"255\" /><Property Name=\"ReceiveDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Pr" +
+                "operty Name=\"ProductReceivePurchaseOrderDet_PurchaseOrderDetail\" Type=\"Edm.Int32" +
+                "\" Nullable=\"false\" /><Property Name=\"ProductReceivePurchaseOrderDet_Location\" Ty" +
+                "pe=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"ReceiveQuantity\" Type=\"Edm.Dou" +
+                "ble\" Nullable=\"false\" /><Property Name=\"ReceiveUnitCost\" Type=\"Edm.Decimal\" Null" +
+                "able=\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"ReceiveTotalCost\" Type=\"" +
+                "Edm.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"Remark\"" +
+                " Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"ProductReceivePurchaseOrder" +
+                "Det_Product\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"LotNo\" Type=\"Ed" +
+                "m.String\" MaxLength=\"255\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLeng" +
+                "th=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"" +
+                "ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"" +
+                "Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"fa" +
+                "lse\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><Navi" +
+                "gationProperty Name=\"PurchaseOrderDetail\" Relationship=\"LightSwitchApplication.P" +
+                "roductReceivePurchaseOrderDet_PurchaseOrderDetail\" ToRole=\"PurchaseOrderDetail\" " +
+                "FromRole=\"ProductReceivePurchaseOrderDetail\" /><NavigationProperty Name=\"Locatio" +
+                "n\" Relationship=\"LightSwitchApplication.ProductReceivePurchaseOrderDet_Location\"" +
+                " ToRole=\"Location\" FromRole=\"ProductReceivePurchaseOrderDetail\" /><NavigationPro" +
+                "perty Name=\"Product\" Relationship=\"LightSwitchApplication.ProductReceivePurchase" +
+                "OrderDet_Product\" ToRole=\"Product\" FromRole=\"ProductReceivePurchaseOrderDetail\" " +
+                "/></EntityType><EntityType Name=\"ProductReceive\"><Key><PropertyRef Name=\"Id\" /><" +
+                "/Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGener" +
+                "atedPattern=\"Identity\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=" +
+                "\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"Mod" +
+                "ifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name";
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+            private const string ModelPart3 = "=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Bin" +
+                "ary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"" +
+                "Computed\" /></EntityType><EntityType Name=\"Product\"><Key><PropertyRef Name=\"Id\" " +
+                "/></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGe" +
+                "neratedPattern=\"Identity\" /><Property Name=\"ProductCode\" Type=\"Edm.String\" Nulla" +
+                "ble=\"false\" MaxLength=\"255\" /><Property Name=\"ProductName\" Type=\"Edm.String\" Nul" +
+                "lable=\"false\" MaxLength=\"100\" /><Property Name=\"ProductCategory_Product\" Type=\"E" +
+                "dm.Int32\" Nullable=\"false\" /><Property Name=\"UnitPrice\" Type=\"Edm.Decimal\" Preci" +
+                "sion=\"18\" Scale=\"2\" /><Property Name=\"ReorderLevelFlag\" Type=\"Edm.Boolean\" Nulla" +
+                "ble=\"false\" /><Property Name=\"ReorderLevel\" Type=\"Edm.Int16\" /><Property Name=\"D" +
+                "iscontinued\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"Product_Produ" +
+                "ctGroup\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Product_Location\" T" +
+                "ype=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Product_UnitOfMeasure\" Type=\"" +
+                "Edm.Int32\" Nullable=\"false\" /><Property Name=\"AgingControlFlag\" Type=\"Edm.Boolea" +
+                "n\" Nullable=\"false\" /><Property Name=\"AgingControlDays\" Type=\"Edm.Int16\" /><Prop" +
+                "erty Name=\"LotControlFlag\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=" +
+                "\"LotType\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"C" +
+                "arryingCostFlag\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"CarryingC" +
+                "ost\" Type=\"Edm.Decimal\" Precision=\"18\" Scale=\"2\" /><Property Name=\"ProductionCos" +
+                "tFlag\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"UnitWeight\" Type=\"E" +
+                "dm.Double\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Pro" +
+                "perty Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Typ" +
+                "e=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOff" +
+                "set\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Concurrenc" +
+                "yMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty " +
+                "Name=\"ProductCategory\" Relationship=\"LightSwitchApplication.ProductCategory_Prod" +
+                "uct\" ToRole=\"ProductCategory\" FromRole=\"Product\" /><NavigationProperty Name=\"Pro" +
+                "ductGroup\" Relationship=\"LightSwitchApplication.Product_ProductGroup\" ToRole=\"Pr" +
+                "oductGroup\" FromRole=\"Product\" /><NavigationProperty Name=\"Location\" Relationshi" +
+                "p=\"LightSwitchApplication.Product_Location\" ToRole=\"Location\" FromRole=\"Product\"" +
+                " /><NavigationProperty Name=\"UnitOfMeasure\" Relationship=\"LightSwitchApplication" +
+                ".Product_UnitOfMeasure\" ToRole=\"UnitOfMeasure\" FromRole=\"Product\" /><NavigationP" +
+                "roperty Name=\"ProductReceiveBalanceForwardDetail\" Relationship=\"LightSwitchAppli" +
+                "cation.ProductReceiveBalanceForwardDe_Product\" ToRole=\"ProductReceiveBalanceForw" +
+                "ardDetail\" FromRole=\"Product\" /><NavigationProperty Name=\"StockOnHands\" Relation" +
+                "ship=\"LightSwitchApplication.StockOnHand_Product\" ToRole=\"StockOnHand\" FromRole=" +
+                "\"Product\" /><NavigationProperty Name=\"StockAdjustDetail\" Relationship=\"LightSwit" +
+                "chApplication.StockAdjustDetail_Product\" ToRole=\"StockAdjustDetail\" FromRole=\"Pr" +
+                "oduct\" /><NavigationProperty Name=\"SaleOrderDetails\" Relationship=\"LightSwitchAp" +
+                "plication.SaleOrderDetail_Product\" ToRole=\"SaleOrderDetail\" FromRole=\"Product\" /" +
+                "><NavigationProperty Name=\"PurchaseOrderDetails\" Relationship=\"LightSwitchApplic" +
+                "ation.PurchaseOrderDetail_Product\" ToRole=\"PurchaseOrderDetail\" FromRole=\"Produc" +
+                "t\" /><NavigationProperty Name=\"WorkOrderIssueDetail\" Relationship=\"LightSwitchAp" +
+                "plication.WorkOrderIssueDetail_Product\" ToRole=\"WorkOrderIssueDetail\" FromRole=\"" +
+                "Product\" /><NavigationProperty Name=\"WorkOrderProduces\" Relationship=\"LightSwitc" +
+                "hApplication.WorkOrderProduce_Product\" ToRole=\"WorkOrderProduce\" FromRole=\"Produ" +
+                "ct\" /><NavigationProperty Name=\"ProductReceivePurchaseOrderDetails\" Relationship" +
+                "=\"LightSwitchApplication.ProductReceivePurchaseOrderDet_Product\" ToRole=\"Product" +
+                "ReceivePurchaseOrderDetail\" FromRole=\"Product\" /><NavigationProperty Name=\"Order" +
+                "RequisitionDetail\" Relationship=\"LightSwitchApplication.OrderRequisitionDetail_P" +
+                "roduct\" ToRole=\"OrderRequisitionDetail\" FromRole=\"Product\" /></EntityType><Entit" +
+                "yType Name=\"PurchaseOrderDetail\"><Key><PropertyRef Name=\"Id\" /></Key><Property N" +
+                "ame=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Ide" +
+                "ntity\" /><Property Name=\"RequireDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Pr" +
+                "operty Name=\"ReceiveDate\" Type=\"Edm.DateTime\" /><Property Name=\"PurchaseOrderDet" +
+                "ail_Product\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"PurchaseOrderDe" +
+                "tail_Location\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"LotNo\" Type=\"" +
+                "Edm.String\" MaxLength=\"255\" /><Property Name=\"RequireQuantity\" Type=\"Edm.Double\"" +
+                " Nullable=\"false\" /><Property Name=\"ReceiveQuantity\" Type=\"Edm.Double\" /><Proper" +
+                "ty Name=\"RequireUnitCost\" Type=\"Edm.Decimal\" Precision=\"18\" Scale=\"2\" /><Propert" +
+                "y Name=\"ReceiveUnitCost\" Type=\"Edm.Decimal\" Precision=\"18\" Scale=\"2\" /><Property" +
+                " Name=\"RequireTotalCost\" Type=\"Edm.Decimal\" Nullable=\"false\" Precision=\"18\" Scal" +
+                "e=\"2\" /><Property Name=\"ReceiveTotalCost\" Type=\"Edm.Decimal\" Precision=\"18\" Scal" +
+                "e=\"2\" /><Property Name=\"Remark\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Na" +
+                "me=\"IsReceiveComplete\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"Pur" +
+                "chaseOrderDetail_PurchaseOrder\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Na" +
                 "me=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type" +
                 "=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=" +
                 "\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"Ro" +
                 "wVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:" +
-                "StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"WorkOrder\" Relation" +
-                "ship=\"LightSwitchApplication.WorkOrderIssueDetail_WorkOrder\" ToRole=\"WorkOrder\" " +
-                "FromRole=\"WorkOrderIssueDetail\" /><NavigationProperty Name=\"IssueProduct\" Relati" +
-                "onship=\"LightSwitchApplication.WorkOrderIssueDetail_Product\" ToRole=\"Product\" Fr" +
-                "omRole=\"WorkOrderIssueDetail\" /><NavigationProperty Name=\"IssueLocation\" Relatio" +
-                "nship=\"LightSwitchApplication.WorkOrderIssueDetail_Location\" ToRole=\"Location\" F" +
-                "romRole=\"WorkOrderIssueDetail\" /></EntityType><EntityType Name=\"WorkOrderProduce" +
-                "\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nulla" +
-                "ble=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"WorkOr" +
-                "derProduce_WorkOrder\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Receiv" +
-                "eDate\" Type=\"Edm.DateTime\" /><Property Name=\"WorkOrderProduce_Product\" Type=\"Edm" +
-                ".Int32\" Nullable=\"false\" /><Property Name=\"WorkOrderProduce_Location\" Type=\"Edm." +
-                "Int32\" Nullable=\"false\" /><Property Name=\"ProduceLot\" Type=\"Edm.String\" MaxLengt" +
-                "h=\"255\" /><Property Name=\"OrderQuantity\" Type=\"Edm.Double\" Nullable=\"false\" /><P" +
-                "roperty Name=\"ReceiveQuantity\" Type=\"Edm.Double\" /><Property Name=\"ProduceCost\" " +
-                "Type=\"Edm.Decimal\" Precision=\"18\" Scale=\"2\" /><Property Name=\"ReceiveCost\" Type=" +
-                "\"Edm.Decimal\" Precision=\"18\" Scale=\"2\" /><Property Name=\"IsReceiveComplete\" Type" +
-                "=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" M" +
+                "StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"Product\" Relationsh" +
+                "ip=\"LightSwitchApplication.PurchaseOrderDetail_Product\" ToRole=\"Product\" FromRol" +
+                "e=\"PurchaseOrderDetail\" /><NavigationProperty Name=\"Location\" Relationship=\"Ligh" +
+                "tSwitchApplication.PurchaseOrderDetail_Location\" ToRole=\"Location\" FromRole=\"Pur" +
+                "chaseOrderDetail\" /><NavigationProperty Name=\"PurchaseOrder\" Relationship=\"Light" +
+                "SwitchApplication.PurchaseOrderDetail_PurchaseOrder\" ToRole=\"PurchaseOrder\" From" +
+                "Role=\"PurchaseOrderDetail\" /><NavigationProperty Name=\"ProductReceivePurchaseOrd" +
+                "erDetails\" Relationship=\"LightSwitchApplication.ProductReceivePurchaseOrderDet_P" +
+                "urchaseOrderDetail\" ToRole=\"ProductReceivePurchaseOrderDetail\" FromRole=\"Purchas" +
+                "eOrderDetail\" /></EntityType><EntityType Name=\"PurchaseOrder\"><Key><PropertyRef " +
+                "Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotati" +
+                "on:StoreGeneratedPattern=\"Identity\" /><Property Name=\"PurchaseOrderNumber\" Type=" +
+                "\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"PurchaseOrderDat" +
+                "e\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"PurchaseOrderStatus\" T" +
+                "ype=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"PurchaseOrder_Supplier\" Typ" +
+                "e=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Remark\" Type=\"Edm.String\" MaxLe" +
+                "ngth=\"255\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Pro" +
+                "perty Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Typ" +
+                "e=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOff" +
+                "set\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Concurrenc" +
+                "yMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty " +
+                "Name=\"Supplier\" Relationship=\"LightSwitchApplication.PurchaseOrder_Supplier\" ToR" +
+                "ole=\"Supplier\" FromRole=\"PurchaseOrder\" /><NavigationProperty Name=\"PurchaseOrde" +
+                "rDetails\" Relationship=\"LightSwitchApplication.PurchaseOrde";
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+            private const string ModelPart4 = "rDetail_PurchaseOrder\" ToRole=\"PurchaseOrderDetail\" FromRole=\"PurchaseOrder\" /></" +
+                "EntityType><EntityType Name=\"SaleOrderDetail\"><Key><PropertyRef Name=\"Id\" /></Ke" +
+                "y><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGenerate" +
+                "dPattern=\"Identity\" /><Property Name=\"SaleOrderDetail_SaleOrder\" Type=\"Edm.Int32" +
+                "\" Nullable=\"false\" /><Property Name=\"SaleOrderDetail_Product\" Type=\"Edm.Int32\" N" +
+                "ullable=\"false\" /><Property Name=\"SaleOrderDetail_Location\" Type=\"Edm.Int32\" Nul" +
+                "lable=\"false\" /><Property Name=\"LotNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLen" +
+                "gth=\"255\" /><Property Name=\"OrderQuantity\" Type=\"Edm.Double\" Nullable=\"false\" />" +
+                "<Property Name=\"MasterSalePrice\" Type=\"Edm.Decimal\" Nullable=\"false\" Precision=\"" +
+                "18\" Scale=\"2\" /><Property Name=\"UnitCost\" Type=\"Edm.Decimal\" Nullable=\"false\" Pr" +
+                "ecision=\"18\" Scale=\"2\" /><Property Name=\"SalePrice\" Type=\"Edm.Decimal\" Nullable=" +
+                "\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"RequisitionFlag\" Type=\"Edm.Bo" +
+                "olean\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Propert" +
+                "y Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"E" +
+                "dm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\"" +
+                " /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMod" +
+                "e=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name" +
+                "=\"SaleOrder\" Relationship=\"LightSwitchApplication.SaleOrderDetail_SaleOrder\" ToR" +
+                "ole=\"SaleOrder\" FromRole=\"SaleOrderDetail\" /><NavigationProperty Name=\"Product\" " +
+                "Relationship=\"LightSwitchApplication.SaleOrderDetail_Product\" ToRole=\"Product\" F" +
+                "romRole=\"SaleOrderDetail\" /><NavigationProperty Name=\"Location\" Relationship=\"Li" +
+                "ghtSwitchApplication.SaleOrderDetail_Location\" ToRole=\"Location\" FromRole=\"SaleO" +
+                "rderDetail\" /></EntityType><EntityType Name=\"SaleOrder\"><Key><PropertyRef Name=\"" +
+                "Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:Sto" +
+                "reGeneratedPattern=\"Identity\" /><Property Name=\"SaleOrderNo\" Type=\"Edm.String\" N" +
+                "ullable=\"false\" MaxLength=\"255\" /><Property Name=\"SaleOrderDate\" Type=\"Edm.DateT" +
+                "ime\" Nullable=\"false\" /><Property Name=\"ReferenceNo\" Type=\"Edm.String\" MaxLength" +
+                "=\"255\" /><Property Name=\"SaleOrder_Customer\" Type=\"Edm.Int32\" Nullable=\"false\" /" +
+                "><Property Name=\"PaymentTerm\" Type=\"Edm.Int32\" /><Property Name=\"PaymentStatus\" " +
+                "Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Remarks\" Type=\"Edm.String\" M" +
+                "axLength=\"255\" /><Property Name=\"SaleOrderStatus\" Type=\"Edm.Boolean\" Nullable=\"f" +
+                "alse\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property" +
+                " Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Ed" +
+                "m.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" " +
+                "/><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode" +
+                "=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=" +
+                "\"Customer\" Relationship=\"LightSwitchApplication.SaleOrder_Customer\" ToRole=\"Cust" +
+                "omer\" FromRole=\"SaleOrder\" /><NavigationProperty Name=\"SaleOrderDetails\" Relatio" +
+                "nship=\"LightSwitchApplication.SaleOrderDetail_SaleOrder\" ToRole=\"SaleOrderDetail" +
+                "\" FromRole=\"SaleOrder\" /></EntityType><EntityType Name=\"StockAdjustDetail\"><Key>" +
+                "<PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"fa" +
+                "lse\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"StockAdjustDe" +
+                "tail_Location\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"StockAdjust_P" +
+                "roduct\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"LotNo\" Type=\"Edm.Str" +
+                "ing\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"CurrentQuantity\" Type=\"E" +
+                "dm.Double\" Nullable=\"false\" /><Property Name=\"NewQuantity\" Type=\"Edm.Double\" Nul" +
+                "lable=\"false\" /><Property Name=\"StockAdjustDetail_StockAdjust\" Type=\"Edm.Int32\" " +
+                "Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" " +
+                "/><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedB" +
+                "y\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateT" +
+                "imeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Conc" +
+                "urrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationPro" +
+                "perty Name=\"Location\" Relationship=\"LightSwitchApplication.StockAdjustDetail_Loc" +
+                "ation\" ToRole=\"Location\" FromRole=\"StockAdjustDetail\" /><NavigationProperty Name" +
+                "=\"Product\" Relationship=\"LightSwitchApplication.StockAdjustDetail_Product\" ToRol" +
+                "e=\"Product\" FromRole=\"StockAdjustDetail\" /><NavigationProperty Name=\"StockAdjust" +
+                "\" Relationship=\"LightSwitchApplication.StockAdjustDetail_StockAdjust\" ToRole=\"St" +
+                "ockAdjust\" FromRole=\"StockAdjustDetail\" /></EntityType><EntityType Name=\"StockAd" +
+                "just\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" N" +
+                "ullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"Do" +
+                "cumentNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"D" +
+                "ocumentDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"Remarks\" Typ" +
+                "e=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"CreatedBy\" Typ" +
+                "e=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffs" +
+                "et\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property " +
+                "Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Ed" +
+                "m.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPatt" +
+                "ern=\"Computed\" /><NavigationProperty Name=\"StockAdjustDetails\" Relationship=\"Lig" +
+                "htSwitchApplication.StockAdjustDetail_StockAdjust\" ToRole=\"StockAdjustDetail\" Fr" +
+                "omRole=\"StockAdjust\" /></EntityType><EntityType Name=\"StockCheckDetail\"><Key><Pr" +
+                "opertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false" +
+                "\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"StockCheckDetail" +
+                "s_StockCheck\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"UnitsExpected\"" +
+                " Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"UnitsFound\" Type=\"Edm.Int32" +
+                "\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255" +
+                "\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"Modifie" +
+                "dBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.Dat" +
+                "eTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Co" +
+                "ncurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationP" +
+                "roperty Name=\"StockCheck\" Relationship=\"LightSwitchApplication.StockCheckDetail_" +
+                "StockCheck\" ToRole=\"StockCheck\" FromRole=\"StockCheckDetail\" /></EntityType><Enti" +
+                "tyType Name=\"StockCheck\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\"" +
+                " Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /" +
+                "><Property Name=\"StockCheckDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Propert" +
+                "y Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" " +
+                "Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLen" +
+                "gth=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name" +
+                "=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotat" +
+                "ion:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"StockCheckDetai" +
+                "ls\" Relationship=\"LightSwitchApplication.StockCheckDetail_StockCheck\" ToRole=\"St" +
+                "ockCheckDetail\" FromRole=\"StockCheck\" /></EntityType><EntityType Name=\"StockOnHa" +
+                "ndHistory\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int" +
+                "32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Nam" +
+                "e=\"TransactionNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLen";
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+            private const string ModelPart5 = "gth=\"255\" /><Property Name=\"TransactionDate\" Type=\"Edm.DateTime\" Nullable=\"false\"" +
+                " /><Property Name=\"TransactionBy\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"" +
+                "255\" /><Property Name=\"ProductId\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property " +
+                "Name=\"LocationId\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"LotNo\" Typ" +
+                "e=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"CreatedBy\" Typ" +
+                "e=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffs" +
+                "et\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property " +
+                "Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Ed" +
+                "m.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPatt" +
+                "ern=\"Computed\" /></EntityType><EntityType Name=\"StockOnHand\"><Key><PropertyRef N" +
+                "ame=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotatio" +
+                "n:StoreGeneratedPattern=\"Identity\" /><Property Name=\"LotNo\" Type=\"Edm.String\" Nu" +
+                "llable=\"false\" MaxLength=\"255\" /><Property Name=\"QuantityOnHand\" Type=\"Edm.Doubl" +
+                "e\" Nullable=\"false\" /><Property Name=\"SellingPrice\" Type=\"Edm.Decimal\" Nullable=" +
+                "\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"CostPrice\" Type=\"Edm.Decimal\"" +
+                " Nullable=\"false\" Precision=\"18\" Scale=\"9\" /><Property Name=\"IsAvailableForSale\"" +
+                " Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"StockOnHand_Location\" Typ" +
+                "e=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"StockOnHand_Product\" Type=\"Edm." +
+                "Int32\" Nullable=\"false\" /><Property Name=\"ReservedQuantity\" Type=\"Edm.Double\" Nu" +
+                "llable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" />" +
+                "<Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\"" +
+                " Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTim" +
+                "eOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Concur" +
+                "rencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationPrope" +
+                "rty Name=\"Location\" Relationship=\"LightSwitchApplication.StockOnHand_Location\" T" +
+                "oRole=\"Location\" FromRole=\"StockOnHand\" /><NavigationProperty Name=\"Product\" Rel" +
+                "ationship=\"LightSwitchApplication.StockOnHand_Product\" ToRole=\"Product\" FromRole" +
+                "=\"StockOnHand\" /></EntityType><EntityType Name=\"StockTransaction\"><Key><Property" +
+                "Ref Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" anno" +
+                "tation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"TransactionPeriod\" Typ" +
+                "e=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"TransactionDat" +
+                "e\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"TransactionNo\" Type=\"E" +
+                "dm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"TransactionType\" T" +
+                "ype=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"ItemSequence" +
+                "\" Type=\"Edm.Int16\" Nullable=\"false\" /><Property Name=\"LocationId\" Type=\"Edm.Int3" +
+                "2\" Nullable=\"false\" /><Property Name=\"ProductId\" Type=\"Edm.Int32\" Nullable=\"fals" +
+                "e\" /><Property Name=\"LotNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /" +
+                "><Property Name=\"Quantity\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"" +
+                "CostPrice\" Type=\"Edm.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><Prope" +
+                "rty Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created" +
+                "\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxL" +
+                "ength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Na" +
+                "me=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annot" +
+                "ation:StoreGeneratedPattern=\"Computed\" /></EntityType><EntityType Name=\"StockTra" +
+                "nsfer\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" " +
+                "Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"L" +
+                "otNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Quant" +
+                "ity\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.S" +
+                "tring\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><P" +
+                "roperty Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Mo" +
+                "dified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary" +
+                "\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Com" +
+                "puted\" /></EntityType><EntityType Name=\"SupplierGroup\"><Key><PropertyRef Name=\"I" +
+                "d\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:Stor" +
+                "eGeneratedPattern=\"Identity\" /><Property Name=\"SupplierGroupName\" Type=\"Edm.Stri" +
+                "ng\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Discontinued\" Type=\"Edm.B" +
+                "oolean\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLengt" +
+                "h=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"M" +
+                "odifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"E" +
+                "dm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"fal" +
+                "se\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><Navig" +
+                "ationProperty Name=\"Suppliers\" Relationship=\"LightSwitchApplication.Supplier_Sup" +
+                "plierGroup\" ToRole=\"Supplier\" FromRole=\"SupplierGroup\" /></EntityType><EntityTyp" +
+                "e Name=\"Supplier\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"" +
+                "Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Prope" +
+                "rty Name=\"SupplierName\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"100\" /><Pr" +
+                "operty Name=\"Address1\" Type=\"Edm.String\" MaxLength=\"100\" /><Property Name=\"Addre" +
+                "ss2\" Type=\"Edm.String\" MaxLength=\"100\" /><Property Name=\"ContactName\" Type=\"Edm." +
+                "String\" MaxLength=\"100\" /><Property Name=\"TaxID\" Type=\"Edm.String\" MaxLength=\"10" +
+                "0\" /><Property Name=\"CreditTerm\" Type=\"Edm.Int16\" /><Property Name=\"Email\" Type=" +
+                "\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Phone\" Type=\"Edm.String\" MaxLengt" +
+                "h=\"255\" /><Property Name=\"Fax\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Nam" +
+                "e=\"Website\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"RegisterDate\" Ty" +
+                "pe=\"Edm.DateTime\" /><Property Name=\"Latitude\" Type=\"Edm.Double\" /><Property Name" +
+                "=\"Longitude\" Type=\"Edm.Double\" /><Property Name=\"Supplier_SupplierGroup\" Type=\"E" +
+                "dm.Int32\" Nullable=\"false\" /><Property Name=\"Discontinued\" Type=\"Edm.Boolean\" Nu" +
+                "llable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" />" +
+                "<Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\"" +
+                " Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTim" +
+                "eOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Concur" +
+                "rencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationPrope" +
+                "rty Name=\"SupplierGroup\" Relationship=\"LightSwitchApplication.Supplier_SupplierG" +
+                "roup\" ToRole=\"SupplierGroup\" FromRole=\"Supplier\" /><NavigationProperty Name=\"Pur" +
+                "chaseOrders\" Relationship=\"LightSwitchApplication.PurchaseOrder_Supplier\" ToRole" +
+                "=\"PurchaseOrder\" FromRole=\"Supplier\" /></EntityType><EntityType Name=\"Transactio" +
+                "n\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Null" +
+                "able=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"Trans" +
+                "actionNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"T" +
+                "ransactionDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"Transacti" +
+                "onType\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Ref" +
+                "erenceNo\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"P" +
+                "roductId\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"LocationId\" Type=\"" +
+                "Edm.Int32\" Nullable=\"false\" /><Property Name=\"LotNo\" Type=\"Edm.String\" Nullable=" +
+                "\"false\" MaxLength=\"255\" /><Property Name=\"Quantity\" Type=\"E";
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+            private const string ModelPart6 = "dm.Double\" Nullable=\"false\" /><Property Name=\"Cost\" Type=\"Edm.Decimal\" Nullable=\"" +
+                "false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" M" +
                 "axLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property " +
                 "Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" " +
                 "Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullab" +
                 "le=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /" +
-                "><NavigationProperty Name=\"WorkOrder\" Relationship=\"LightSwitchApplication.WorkO" +
-                "rderProduce_WorkOrder\" ToRole=\"WorkOrder\" FromRole=\"WorkOrderProduce\" /><Navigat" +
-                "ionProperty Name=\"ProduceProduct\" Relationship=\"LightSwitchApplication.WorkOrder" +
-                "Produce_Product\" ToRole=\"Product\" FromRole=\"WorkOrderProduce\" /><NavigationPrope" +
-                "rty Name=\"ProduceLocation\" Relationship=\"LightSwitchApplication.WorkOrderProduce" +
-                "_Location\" ToRole=\"Location\" FromRole=\"WorkOrderProduce\" /></EntityType><EntityT" +
-                "ype Name=\"WorkOrder\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Typ" +
-                "e=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Pr" +
-                "operty Name=\"WorkOrderNumber\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\"" +
-                " /><Property Name=\"WorkOrderDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Proper" +
-                "ty Name=\"WorkOrder_Machine\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"" +
-                "IsReceiveComplete\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"Remark\"" +
-                " Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"CreatedBy\" Type=\"Edm.String" +
-                "\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Proper" +
-                "ty Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modifie" +
-                "d\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nul" +
-                "lable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed" +
-                "\" /><NavigationProperty Name=\"Machine\" Relationship=\"LightSwitchApplication.Work" +
-                "Order_Machine\" ToRole=\"Machine\" FromRole=\"WorkOrder\" /><NavigationProperty Name=" +
-                "\"WorkOrderIssueDetails\" Relationship=\"LightSwitchApplication.WorkOrderIssueDetai" +
-                "l_WorkOrder\" ToRole=\"WorkOrderIssueDetail\" FromRole=\"WorkOrder\" /><NavigationPro" +
-                "perty Name=\"WorkOrderProduces\" Relationship=\"LightSwitchApp";
+                "></EntityType><EntityType Name=\"TransportRoute\"><Key><PropertyRef Name=\"Id\" /></" +
+                "Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGenera" +
+                "tedPattern=\"Identity\" /><Property Name=\"TransportRouteName\" Type=\"Edm.String\" Nu" +
+                "llable=\"false\" MaxLength=\"255\" /><Property Name=\"Distance\" Type=\"Edm.Double\" Nul" +
+                "lable=\"false\" /><Property Name=\"Discontinued\" Type=\"Edm.Boolean\" Nullable=\"false" +
+                "\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Nam" +
+                "e=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.St" +
+                "ring\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><P" +
+                "roperty Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fi" +
+                "xed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"Cus" +
+                "tomers\" Relationship=\"LightSwitchApplication.Customer_TransportRoute\" ToRole=\"Cu" +
+                "stomer\" FromRole=\"TransportRoute\" /><NavigationProperty Name=\"PickingSlips\" Rela" +
+                "tionship=\"LightSwitchApplication.PickingSlip_TransportRoute\" ToRole=\"PickingSlip" +
+                "\" FromRole=\"TransportRoute\" /></EntityType><EntityType Name=\"UnitOfMeasure\"><Key" +
+                "><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"f" +
+                "alse\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"UOMName\" Typ" +
+                "e=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Discontinued\" " +
+                "Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.Strin" +
+                "g\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Prope" +
+                "rty Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modifi" +
+                "ed\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nu" +
+                "llable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Compute" +
+                "d\" /><NavigationProperty Name=\"Products\" Relationship=\"LightSwitchApplication.Pr" +
+                "oduct_UnitOfMeasure\" ToRole=\"Product\" FromRole=\"UnitOfMeasure\" /></EntityType><E" +
+                "ntityType Name=\"Worker\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" " +
+                "Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" />" +
+                "<Property Name=\"WorkerName\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /" +
+                "><Property Name=\"HireDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name" +
+                "=\"Discontinued\" Type=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"CreatedBy\"" +
+                " Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTime" +
+                "Offset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Prope" +
+                "rty Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type" +
+                "=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGenerated" +
+                "Pattern=\"Computed\" /></EntityType><EntityType Name=\"WorkOrderIssueDetail\"><Key><" +
+                "PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"fal" +
+                "se\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"WorkOrderIssue" +
+                "Detail_WorkOrder\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"WorkOrderI" +
+                "ssue_Product\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"WorkOrderIssue" +
+                "_Location\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"IssueLot\" Type=\"E" +
+                "dm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"IssueQuantity\" Typ" +
+                "e=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"IssueUnitCost\" Type=\"Edm.Decim" +
+                "al\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"CreatedBy\" Type=" +
+                "\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset" +
+                "\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Na" +
+                "me=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm." +
+                "Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPatter" +
+                "n=\"Computed\" /><NavigationProperty Name=\"WorkOrder\" Relationship=\"LightSwitchApp" +
+                "lication.WorkOrderIssueDetail_WorkOrder\" ToRole=\"WorkOrder\" FromRole=\"WorkOrderI" +
+                "ssueDetail\" /><NavigationProperty Name=\"IssueProduct\" Relationship=\"LightSwitchA" +
+                "pplication.WorkOrderIssueDetail_Product\" ToRole=\"Product\" FromRole=\"WorkOrderIss" +
+                "ueDetail\" /><NavigationProperty Name=\"IssueLocation\" Relationship=\"LightSwitchAp" +
+                "plication.WorkOrderIssueDetail_Location\" ToRole=\"Location\" FromRole=\"WorkOrderIs" +
+                "sueDetail\" /></EntityType><EntityType Name=\"WorkOrderProduce\"><Key><PropertyRef " +
+                "Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotati" +
+                "on:StoreGeneratedPattern=\"Identity\" /><Property Name=\"WorkOrderProduce_WorkOrder" +
+                "\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"ReceiveDate\" Type=\"Edm.Dat" +
+                "eTime\" /><Property Name=\"WorkOrderProduce_Product\" Type=\"Edm.Int32\" Nullable=\"fa" +
+                "lse\" /><Property Name=\"WorkOrderProduce_Location\" Type=\"Edm.Int32\" Nullable=\"fal" +
+                "se\" /><Property Name=\"ProduceLot\" Type=\"Edm.String\" MaxLength=\"255\" /><Property " +
+                "Name=\"OrderQuantity\" Type=\"Edm.Double\" Nullable=\"false\" /><Property Name=\"Receiv" +
+                "eQuantity\" Type=\"Edm.Double\" /><Property Name=\"ProduceCost\" Type=\"Edm.Decimal\" P" +
+                "recision=\"18\" Scale=\"2\" /><Property Name=\"ReceiveCost\" Type=\"Edm.Decimal\" Precis" +
+                "ion=\"18\" Scale=\"2\" /><Property Name=\"IsReceiveComplete\" Type=\"Edm.Boolean\" Nulla" +
+                "ble=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Pr" +
+                "operty Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Ty" +
+                "pe=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOf" +
+                "fset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Concurren" +
+                "cyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty" +
+                " Name=\"WorkOrder\" Relationship=\"LightSwitchApplication.WorkOrderProduce_WorkOrde" +
+                "r\" ToRole=\"WorkOrder\" FromRole=\"WorkOrderProduce\" /><NavigationProperty Name=\"Pr" +
+                "oduceProduct\" Relationship=\"LightSwitchApplication.WorkOrderProduce_Product\" ToR" +
+                "ole=\"Product\" FromRole=\"WorkOrderProduce\" /><NavigationProperty Name=\"ProduceLoc" +
+                "ation\" Relationship=\"LightSwitchApplication.WorkOrderProduce_Location\" ToRole=\"L" +
+                "ocation\" FromRole=\"WorkOrderProduce\" /></EntityType><EntityType Name=\"WorkOrder\"" +
+                "><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullab" +
+                "le=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"WorkOrd" +
+                "erNumber\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"W" +
+                "orkOrderDate\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"WorkOrder_M" +
+                "achine\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"IsReceiveComplete\" T" +
+                "ype=\"Edm.Boolean\" Nullable=\"false\" /><Property Name=\"Remark\" Type=\"Edm.String\" M" +
+                "axLength=\"255\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" />" +
+                "<Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\"" +
+                " Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTim" +
+                "eOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Concur" +
+                "rencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationPrope" +
+                "rty Name=\"Machine\" Relationship=\"LightSwitchApplication.WorkOrder_Machine\" ToRol" +
+                "e=\"Machine\" FromRole=\"WorkOrder\" /><NavigationProperty Name=\"WorkOrderIssueDetai" +
+                "ls\" Relationship=\"LightSwitchApplication.WorkOrderIssueDeta";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart7 = "lication.WorkOrderProduce_WorkOrder\" ToRole=\"WorkOrderProduce\" FromRole=\"WorkOrde" +
-                "r\" /></EntityType><Association Name=\"Customer_CustomerGroup\"><End Role=\"Customer" +
-                "Group\" Type=\"LightSwitchApplication.CustomerGroup\" Multiplicity=\"1\" /><End Role=" +
-                "\"Customer\" Type=\"LightSwitchApplication.Customer\" Multiplicity=\"*\" /><Referentia" +
-                "lConstraint><Principal Role=\"CustomerGroup\"><PropertyRef Name=\"Id\" /></Principal" +
-                "><Dependent Role=\"Customer\"><PropertyRef Name=\"Customer_CustomerGroup\" /></Depen" +
-                "dent></ReferentialConstraint></Association><Association Name=\"SaleOrder_Customer" +
-                "\"><End Role=\"Customer\" Type=\"LightSwitchApplication.Customer\" Multiplicity=\"1\" /" +
-                "><End Role=\"SaleOrder\" Type=\"LightSwitchApplication.SaleOrder\" Multiplicity=\"*\" " +
-                "/><ReferentialConstraint><Principal Role=\"Customer\"><PropertyRef Name=\"Id\" /></P" +
-                "rincipal><Dependent Role=\"SaleOrder\"><PropertyRef Name=\"SaleOrder_Customer\" /></" +
-                "Dependent></ReferentialConstraint></Association><Association Name=\"OrderRequisit" +
-                "ion_Customer\"><End Role=\"Customer\" Type=\"LightSwitchApplication.Customer\" Multip" +
-                "licity=\"1\" /><End Role=\"OrderRequisition\" Type=\"LightSwitchApplication.OrderRequ" +
-                "isition\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Customer\"><P" +
-                "ropertyRef Name=\"Id\" /></Principal><Dependent Role=\"OrderRequisition\"><PropertyR" +
-                "ef Name=\"Requisition_Customer\" /></Dependent></ReferentialConstraint></Associati" +
-                "on><Association Name=\"Product_Location\"><End Role=\"Location\" Type=\"LightSwitchAp" +
-                "plication.Location\" Multiplicity=\"1\" /><End Role=\"Product\" Type=\"LightSwitchAppl" +
-                "ication.Product\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Loca" +
-                "tion\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Product\"><PropertyRe" +
-                "f Name=\"Product_Location\" /></Dependent></ReferentialConstraint></Association><A" +
-                "ssociation Name=\"ProductReceiveBalanceForwardDe_Location\"><End Role=\"Location\" T" +
-                "ype=\"LightSwitchApplication.Location\" Multiplicity=\"1\" /><End Role=\"ProductRecei" +
-                "veBalanceForwardDetail\" Type=\"LightSwitchApplication.ProductReceiveBalanceForwar" +
-                "dDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Location\"><P" +
-                "ropertyRef Name=\"Id\" /></Principal><Dependent Role=\"ProductReceiveBalanceForward" +
-                "Detail\"><PropertyRef Name=\"ProductReceiveDetail_Location\" /></Dependent></Refere" +
-                "ntialConstraint></Association><Association Name=\"StockOnHand_Location\"><End Role" +
-                "=\"Location\" Type=\"LightSwitchApplication.Location\" Multiplicity=\"1\" /><End Role=" +
-                "\"StockOnHand\" Type=\"LightSwitchApplication.StockOnHand\" Multiplicity=\"*\" /><Refe" +
-                "rentialConstraint><Principal Role=\"Location\"><PropertyRef Name=\"Id\" /></Principa" +
-                "l><Dependent Role=\"StockOnHand\"><PropertyRef Name=\"StockOnHand_Location\" /></Dep" +
-                "endent></ReferentialConstraint></Association><Association Name=\"StockAdjustDetai" +
-                "l_Location\"><End Role=\"Location\" Type=\"LightSwitchApplication.Location\" Multipli" +
-                "city=\"1\" /><End Role=\"StockAdjustDetail\" Type=\"LightSwitchApplication.StockAdjus" +
-                "tDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Location\"><P" +
-                "ropertyRef Name=\"Id\" /></Principal><Dependent Role=\"StockAdjustDetail\"><Property" +
-                "Ref Name=\"StockAdjustDetail_Location\" /></Dependent></ReferentialConstraint></As" +
-                "sociation><Association Name=\"SaleOrderDetail_Location\"><End Role=\"Location\" Type" +
-                "=\"LightSwitchApplication.Location\" Multiplicity=\"1\" /><End Role=\"SaleOrderDetail" +
-                "\" Type=\"LightSwitchApplication.SaleOrderDetail\" Multiplicity=\"*\" /><ReferentialC" +
-                "onstraint><Principal Role=\"Location\"><PropertyRef Name=\"Id\" /></Principal><Depen" +
-                "dent Role=\"SaleOrderDetail\"><PropertyRef Name=\"SaleOrderDetail_Location\" /></Dep" +
-                "endent></ReferentialConstraint></Association><Association Name=\"PurchaseOrderDet" +
-                "ail_Location\"><End Role=\"Location\" Type=\"LightSwitchApplication.Location\" Multip" +
-                "licity=\"1\" /><End Role=\"PurchaseOrderDetail\" Type=\"LightSwitchApplication.Purcha" +
-                "seOrderDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Locati" +
-                "on\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"PurchaseOrderDetail\"><" +
-                "PropertyRef Name=\"PurchaseOrderDetail_Location\" /></Dependent></ReferentialConst" +
-                "raint></Association><Association Name=\"WorkOrderIssueDetail_Location\"><End Role=" +
-                "\"Location\" Type=\"LightSwitchApplication.Location\" Multiplicity=\"1\" /><End Role=\"" +
-                "WorkOrderIssueDetail\" Type=\"LightSwitchApplication.WorkOrderIssueDetail\" Multipl" +
-                "icity=\"*\" /><ReferentialConstraint><Principal Role=\"Location\"><PropertyRef Name=" +
-                "\"Id\" /></Principal><Dependent Role=\"WorkOrderIssueDetail\"><PropertyRef Name=\"Wor" +
-                "kOrderIssue_Location\" /></Dependent></ReferentialConstraint></Association><Assoc" +
-                "iation Name=\"WorkOrderProduce_Location\"><End Role=\"Location\" Type=\"LightSwitchAp" +
-                "plication.Location\" Multiplicity=\"1\" /><End Role=\"WorkOrderProduce\" Type=\"LightS" +
-                "witchApplication.WorkOrderProduce\" Multiplicity=\"*\" /><ReferentialConstraint><Pr" +
-                "incipal Role=\"Location\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Wo" +
-                "rkOrderProduce\"><PropertyRef Name=\"WorkOrderProduce_Location\" /></Dependent></Re" +
-                "ferentialConstraint></Association><Association Name=\"ProductReceivePurchaseOrder" +
-                "Det_Location\"><End Role=\"Location\" Type=\"LightSwitchApplication.Location\" Multip" +
-                "licity=\"1\" /><End Role=\"ProductReceivePurchaseOrderDetail\" Type=\"LightSwitchAppl" +
-                "ication.ProductReceivePurchaseOrderDetail\" Multiplicity=\"*\" /><ReferentialConstr" +
-                "aint><Principal Role=\"Location\"><PropertyRef Name=\"Id\" /></Principal><Dependent " +
-                "Role=\"ProductReceivePurchaseOrderDetail\"><PropertyRef Name=\"ProductReceivePurcha" +
-                "seOrderDet_Location\" /></Dependent></ReferentialConstraint></Association><Associ" +
-                "ation Name=\"PickingSlipDetail_Location\"><End Role=\"Location\" Type=\"LightSwitchAp" +
-                "plication.Location\" Multiplicity=\"1\" /><End Role=\"PickingSlipDetail\" Type=\"Light" +
-                "SwitchApplication.PickingSlipDetail\" Multiplicity=\"*\" /><ReferentialConstraint><" +
-                "Principal Role=\"Location\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"" +
-                "PickingSlipDetail\"><PropertyRef Name=\"PickingSlipDetail_Location\" /></Dependent>" +
-                "</ReferentialConstraint></Association><Association Name=\"WorkOrder_Machine\"><End" +
-                " Role=\"Machine\" Type=\"LightSwitchApplication.Machine\" Multiplicity=\"1\" /><End Ro" +
-                "le=\"WorkOrder\" Type=\"LightSwitchApplication.WorkOrder\" Multiplicity=\"*\" /><Refer" +
-                "entialConstraint><Principal Role=\"Machine\"><PropertyRef Name=\"Id\" /></Principal>" +
-                "<Dependent Role=\"WorkOrder\"><PropertyRef Name=\"WorkOrder_Machine\" /></Dependent>" +
-                "</ReferentialConstraint></Association><Association Name=\"PickingSlipDetail_Order" +
-                "RequisitionDetail\"><End Role=\"OrderRequisitionDetail\" Type=\"LightSwitchApplicati" +
-                "on.OrderRequisitionDetail\" Multiplicity=\"1\" /><End Role=\"PickingSlipDetail\" Type" +
-                "=\"LightSwitchApplication.PickingSlipDetail\" Multiplicity=\"*\" /><ReferentialConst" +
-                "raint><Principal Role=\"OrderRequisitionDetail\"><PropertyRef Name=\"Id\" /></Princi" +
-                "pal><Dependent Role=\"PickingSlipDetail\"><PropertyRef Name=\"PickingSlipDetail_Ord" +
-                "erRequisitionDetail\" /></Dependent></ReferentialConstraint></Association><Associ" +
-                "ation Name=\"OrderRequisitionDetail_OrderRequisition\"><End Role=\"OrderRequisition" +
-                "\" Type=\"LightSwitchApplication.OrderRequisition\" Multiplicity=\"1\" /><End Role=\"O" +
-                "rderRequisitionDetail\" Type=\"LightSwitchApplication.OrderRequisitionDetail\" Mult" +
-                "iplicity=\"*\" /><ReferentialConstraint><Principal Role=\"OrderRequisition\"><Proper" +
-                "tyRef Name=\"Id\" /></Principal><Dependent Role=\"OrderRequisitionDetail\"><Property" +
-                "Ref Name=\"RequisitionDetail_Requisition\" /></Dependent></ReferentialConstraint><" +
-                "/Association><Association Name=\"PickingSlipDetail_PickingSlip\"><End Role=\"Pickin" +
-                "gSlip\" Type=\"LightSwitchApplication.PickingSlip\" Multiplicity=\"1\" /><End Role=\"P" +
-                "ickingSlipDetail\" Type=\"LightSwitchApplication.PickingSlipD";
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart8 = "etail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"PickingSlip\"><P" +
-                "ropertyRef Name=\"Id\" /></Principal><Dependent Role=\"PickingSlipDetail\"><Property" +
-                "Ref Name=\"PickingSlipDetail_PickingSlip\" /></Dependent></ReferentialConstraint><" +
-                "/Association><Association Name=\"ProductCategory_Product\"><End Role=\"ProductCateg" +
-                "ory\" Type=\"LightSwitchApplication.ProductCategory\" Multiplicity=\"1\" /><End Role=" +
-                "\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"*\" /><ReferentialC" +
-                "onstraint><Principal Role=\"ProductCategory\"><PropertyRef Name=\"Id\" /></Principal" +
-                "><Dependent Role=\"Product\"><PropertyRef Name=\"ProductCategory_Product\" /></Depen" +
-                "dent></ReferentialConstraint></Association><Association Name=\"Product_ProductGro" +
-                "up\"><End Role=\"ProductGroup\" Type=\"LightSwitchApplication.ProductGroup\" Multipli" +
-                "city=\"1\" /><End Role=\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicit" +
-                "y=\"*\" /><ReferentialConstraint><Principal Role=\"ProductGroup\"><PropertyRef Name=" +
-                "\"Id\" /></Principal><Dependent Role=\"Product\"><PropertyRef Name=\"Product_ProductG" +
-                "roup\" /></Dependent></ReferentialConstraint></Association><Association Name=\"Pro" +
-                "ductReceiveBalanceForwardDe_ProductReceiveBalanceForward\"><End Role=\"ProductRece" +
-                "iveBalanceForward\" Type=\"LightSwitchApplication.ProductReceiveBalanceForward\" Mu" +
-                "ltiplicity=\"1\" /><End Role=\"ProductReceiveBalanceForwardDetail\" Type=\"LightSwitc" +
-                "hApplication.ProductReceiveBalanceForwardDetail\" Multiplicity=\"*\" /><Referential" +
-                "Constraint><Principal Role=\"ProductReceiveBalanceForward\"><PropertyRef Name=\"Id\"" +
-                " /></Principal><Dependent Role=\"ProductReceiveBalanceForwardDetail\"><PropertyRef" +
-                " Name=\"ProductReceiveDetail_ProductReceive\" /></Dependent></ReferentialConstrain" +
-                "t></Association><Association Name=\"ProductReceiveBalanceForwardDe_Product\"><End " +
-                "Role=\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"1\" /><End Rol" +
-                "e=\"ProductReceiveBalanceForwardDetail\" Type=\"LightSwitchApplication.ProductRecei" +
-                "veBalanceForwardDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Rol" +
-                "e=\"Product\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"ProductReceive" +
-                "BalanceForwardDetail\"><PropertyRef Name=\"ProductReceiveDetail_Product\" /></Depen" +
-                "dent></ReferentialConstraint></Association><Association Name=\"StockOnHand_Produc" +
-                "t\"><End Role=\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"1\" />" +
-                "<End Role=\"StockOnHand\" Type=\"LightSwitchApplication.StockOnHand\" Multiplicity=\"" +
-                "*\" /><ReferentialConstraint><Principal Role=\"Product\"><PropertyRef Name=\"Id\" /><" +
-                "/Principal><Dependent Role=\"StockOnHand\"><PropertyRef Name=\"StockOnHand_Product\"" +
-                " /></Dependent></ReferentialConstraint></Association><Association Name=\"StockAdj" +
-                "ustDetail_Product\"><End Role=\"Product\" Type=\"LightSwitchApplication.Product\" Mul" +
-                "tiplicity=\"1\" /><End Role=\"StockAdjustDetail\" Type=\"LightSwitchApplication.Stock" +
-                "AdjustDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Product" +
-                "\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"StockAdjustDetail\"><Prop" +
-                "ertyRef Name=\"StockAdjust_Product\" /></Dependent></ReferentialConstraint></Assoc" +
-                "iation><Association Name=\"SaleOrderDetail_Product\"><End Role=\"Product\" Type=\"Lig" +
-                "htSwitchApplication.Product\" Multiplicity=\"1\" /><End Role=\"SaleOrderDetail\" Type" +
-                "=\"LightSwitchApplication.SaleOrderDetail\" Multiplicity=\"*\" /><ReferentialConstra" +
-                "int><Principal Role=\"Product\"><PropertyRef Name=\"Id\" /></Principal><Dependent Ro" +
-                "le=\"SaleOrderDetail\"><PropertyRef Name=\"SaleOrderDetail_Product\" /></Dependent><" +
-                "/ReferentialConstraint></Association><Association Name=\"PurchaseOrderDetail_Prod" +
-                "uct\"><End Role=\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"1\" " +
-                "/><End Role=\"PurchaseOrderDetail\" Type=\"LightSwitchApplication.PurchaseOrderDeta" +
-                "il\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Product\"><Propert" +
-                "yRef Name=\"Id\" /></Principal><Dependent Role=\"PurchaseOrderDetail\"><PropertyRef " +
-                "Name=\"PurchaseOrderDetail_Product\" /></Dependent></ReferentialConstraint></Assoc" +
-                "iation><Association Name=\"WorkOrderIssueDetail_Product\"><End Role=\"Product\" Type" +
-                "=\"LightSwitchApplication.Product\" Multiplicity=\"1\" /><End Role=\"WorkOrderIssueDe" +
-                "tail\" Type=\"LightSwitchApplication.WorkOrderIssueDetail\" Multiplicity=\"*\" /><Ref" +
-                "erentialConstraint><Principal Role=\"Product\"><PropertyRef Name=\"Id\" /></Principa" +
-                "l><Dependent Role=\"WorkOrderIssueDetail\"><PropertyRef Name=\"WorkOrderIssue_Produ" +
-                "ct\" /></Dependent></ReferentialConstraint></Association><Association Name=\"WorkO" +
-                "rderProduce_Product\"><End Role=\"Product\" Type=\"LightSwitchApplication.Product\" M" +
-                "ultiplicity=\"1\" /><End Role=\"WorkOrderProduce\" Type=\"LightSwitchApplication.Work" +
-                "OrderProduce\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Product" +
-                "\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"WorkOrderProduce\"><Prope" +
-                "rtyRef Name=\"WorkOrderProduce_Product\" /></Dependent></ReferentialConstraint></A" +
-                "ssociation><Association Name=\"ProductReceivePurchaseOrderDet_Product\"><End Role=" +
-                "\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"1\" /><End Role=\"Pr" +
-                "oductReceivePurchaseOrderDetail\" Type=\"LightSwitchApplication.ProductReceivePurc" +
-                "haseOrderDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Prod" +
-                "uct\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"ProductReceivePurchas" +
-                "eOrderDetail\"><PropertyRef Name=\"ProductReceivePurchaseOrderDet_Product\" /></Dep" +
-                "endent></ReferentialConstraint></Association><Association Name=\"OrderRequisition" +
-                "Detail_Product\"><End Role=\"Product\" Type=\"LightSwitchApplication.Product\" Multip" +
-                "licity=\"1\" /><End Role=\"OrderRequisitionDetail\" Type=\"LightSwitchApplication.Ord" +
-                "erRequisitionDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"" +
-                "Product\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"OrderRequisitionD" +
-                "etail\"><PropertyRef Name=\"RequisitionDetail_Product\" /></Dependent></Referential" +
-                "Constraint></Association><Association Name=\"ProductReceivePurchaseOrderDet_Purch" +
-                "aseOrderDetail\"><End Role=\"PurchaseOrderDetail\" Type=\"LightSwitchApplication.Pur" +
-                "chaseOrderDetail\" Multiplicity=\"1\" /><End Role=\"ProductReceivePurchaseOrderDetai" +
-                "l\" Type=\"LightSwitchApplication.ProductReceivePurchaseOrderDetail\" Multiplicity=" +
-                "\"*\" /><ReferentialConstraint><Principal Role=\"PurchaseOrderDetail\"><PropertyRef " +
-                "Name=\"Id\" /></Principal><Dependent Role=\"ProductReceivePurchaseOrderDetail\"><Pro" +
-                "pertyRef Name=\"ProductReceivePurchaseOrderDet_PurchaseOrderDetail\" /></Dependent" +
-                "></ReferentialConstraint></Association><Association Name=\"PurchaseOrderDetail_Pu" +
-                "rchaseOrder\"><End Role=\"PurchaseOrder\" Type=\"LightSwitchApplication.PurchaseOrde" +
-                "r\" Multiplicity=\"1\" /><End Role=\"PurchaseOrderDetail\" Type=\"LightSwitchApplicati" +
-                "on.PurchaseOrderDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Rol" +
-                "e=\"PurchaseOrder\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Purchase" +
-                "OrderDetail\"><PropertyRef Name=\"PurchaseOrderDetail_PurchaseOrder\" /></Dependent" +
-                "></ReferentialConstraint></Association><Association Name=\"SaleOrderDetail_SaleOr" +
-                "der\"><End Role=\"SaleOrder\" Type=\"LightSwitchApplication.SaleOrder\" Multiplicity=" +
-                "\"1\" /><End Role=\"SaleOrderDetail\" Type=\"LightSwitchApplication.SaleOrderDetail\" " +
-                "Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"SaleOrder\"><PropertyR" +
-                "ef Name=\"Id\" /></Principal><Dependent Role=\"SaleOrderDetail\"><PropertyRef Name=\"" +
-                "SaleOrderDetail_SaleOrder\" /></Dependent></ReferentialConstraint></Association><" +
-                "Association Name=\"StockAdjustDetail_StockAdjust\"><End Role=\"StockAdjust\" Type=\"L" +
-                "ightSwitchApplication.StockAdjust\" Multiplicity=\"1\" /><End Role=\"StockAdjustDeta" +
-                "il\" Type=\"LightSwitchApplication.StockAdjustDetail\" Multipl";
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart9 = "icity=\"*\" /><ReferentialConstraint><Principal Role=\"StockAdjust\"><PropertyRef Nam" +
-                "e=\"Id\" /></Principal><Dependent Role=\"StockAdjustDetail\"><PropertyRef Name=\"Stoc" +
-                "kAdjustDetail_StockAdjust\" /></Dependent></ReferentialConstraint></Association><" +
-                "Association Name=\"StockCheckDetail_StockCheck\"><End Role=\"StockCheck\" Type=\"Ligh" +
-                "tSwitchApplication.StockCheck\" Multiplicity=\"1\"><OnDelete Action=\"Cascade\" /></E" +
-                "nd><End Role=\"StockCheckDetail\" Type=\"LightSwitchApplication.StockCheckDetail\" M" +
-                "ultiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"StockCheck\"><PropertyR" +
-                "ef Name=\"Id\" /></Principal><Dependent Role=\"StockCheckDetail\"><PropertyRef Name=" +
-                "\"StockCheckDetails_StockCheck\" /></Dependent></ReferentialConstraint></Associati" +
-                "on><Association Name=\"Supplier_SupplierGroup\"><End Role=\"SupplierGroup\" Type=\"Li" +
-                "ghtSwitchApplication.SupplierGroup\" Multiplicity=\"1\" /><End Role=\"Supplier\" Type" +
-                "=\"LightSwitchApplication.Supplier\" Multiplicity=\"*\" /><ReferentialConstraint><Pr" +
-                "incipal Role=\"SupplierGroup\"><PropertyRef Name=\"Id\" /></Principal><Dependent Rol" +
-                "e=\"Supplier\"><PropertyRef Name=\"Supplier_SupplierGroup\" /></Dependent></Referent" +
-                "ialConstraint></Association><Association Name=\"PurchaseOrder_Supplier\"><End Role" +
-                "=\"Supplier\" Type=\"LightSwitchApplication.Supplier\" Multiplicity=\"1\" /><End Role=" +
-                "\"PurchaseOrder\" Type=\"LightSwitchApplication.PurchaseOrder\" Multiplicity=\"*\" /><" +
-                "ReferentialConstraint><Principal Role=\"Supplier\"><PropertyRef Name=\"Id\" /></Prin" +
-                "cipal><Dependent Role=\"PurchaseOrder\"><PropertyRef Name=\"PurchaseOrder_Supplier\"" +
-                " /></Dependent></ReferentialConstraint></Association><Association Name=\"Customer" +
-                "_TransportRoute\"><End Role=\"TransportRoute\" Type=\"LightSwitchApplication.Transpo" +
-                "rtRoute\" Multiplicity=\"1\" /><End Role=\"Customer\" Type=\"LightSwitchApplication.Cu" +
-                "stomer\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"TransportRout" +
-                "e\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Customer\"><PropertyRef " +
-                "Name=\"Customer_TransportRoute\" /></Dependent></ReferentialConstraint></Associati" +
-                "on><Association Name=\"PickingSlip_TransportRoute\"><End Role=\"TransportRoute\" Typ" +
-                "e=\"LightSwitchApplication.TransportRoute\" Multiplicity=\"1\" /><End Role=\"PickingS" +
-                "lip\" Type=\"LightSwitchApplication.PickingSlip\" Multiplicity=\"*\" /><ReferentialCo" +
-                "nstraint><Principal Role=\"TransportRoute\"><PropertyRef Name=\"Id\" /></Principal><" +
-                "Dependent Role=\"PickingSlip\"><PropertyRef Name=\"PickingSlip_TransportRoute\" /></" +
-                "Dependent></ReferentialConstraint></Association><Association Name=\"Product_UnitO" +
-                "fMeasure\"><End Role=\"UnitOfMeasure\" Type=\"LightSwitchApplication.UnitOfMeasure\" " +
+            private const string ModelPart7 = "il_WorkOrder\" ToRole=\"WorkOrderIssueDetail\" FromRole=\"WorkOrder\" /><NavigationPro" +
+                "perty Name=\"WorkOrderProduces\" Relationship=\"LightSwitchApplication.WorkOrderPro" +
+                "duce_WorkOrder\" ToRole=\"WorkOrderProduce\" FromRole=\"WorkOrder\" /></EntityType><A" +
+                "ssociation Name=\"Customer_CustomerGroup\"><End Role=\"CustomerGroup\" Type=\"LightSw" +
+                "itchApplication.CustomerGroup\" Multiplicity=\"1\" /><End Role=\"Customer\" Type=\"Lig" +
+                "htSwitchApplication.Customer\" Multiplicity=\"*\" /><ReferentialConstraint><Princip" +
+                "al Role=\"CustomerGroup\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Cu" +
+                "stomer\"><PropertyRef Name=\"Customer_CustomerGroup\" /></Dependent></ReferentialCo" +
+                "nstraint></Association><Association Name=\"SaleOrder_Customer\"><End Role=\"Custome" +
+                "r\" Type=\"LightSwitchApplication.Customer\" Multiplicity=\"1\" /><End Role=\"SaleOrde" +
+                "r\" Type=\"LightSwitchApplication.SaleOrder\" Multiplicity=\"*\" /><ReferentialConstr" +
+                "aint><Principal Role=\"Customer\"><PropertyRef Name=\"Id\" /></Principal><Dependent " +
+                "Role=\"SaleOrder\"><PropertyRef Name=\"SaleOrder_Customer\" /></Dependent></Referent" +
+                "ialConstraint></Association><Association Name=\"OrderRequisition_Customer\"><End R" +
+                "ole=\"Customer\" Type=\"LightSwitchApplication.Customer\" Multiplicity=\"1\" /><End Ro" +
+                "le=\"OrderRequisition\" Type=\"LightSwitchApplication.OrderRequisition\" Multiplicit" +
+                "y=\"*\" /><ReferentialConstraint><Principal Role=\"Customer\"><PropertyRef Name=\"Id\"" +
+                " /></Principal><Dependent Role=\"OrderRequisition\"><PropertyRef Name=\"Requisition" +
+                "_Customer\" /></Dependent></ReferentialConstraint></Association><Association Name" +
+                "=\"Product_Location\"><End Role=\"Location\" Type=\"LightSwitchApplication.Location\" " +
                 "Multiplicity=\"1\" /><End Role=\"Product\" Type=\"LightSwitchApplication.Product\" Mul" +
-                "tiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"UnitOfMeasure\"><Property" +
-                "Ref Name=\"Id\" /></Principal><Dependent Role=\"Product\"><PropertyRef Name=\"Product" +
-                "_UnitOfMeasure\" /></Dependent></ReferentialConstraint></Association><Association" +
-                " Name=\"WorkOrderIssueDetail_WorkOrder\"><End Role=\"WorkOrder\" Type=\"LightSwitchAp" +
-                "plication.WorkOrder\" Multiplicity=\"1\" /><End Role=\"WorkOrderIssueDetail\" Type=\"L" +
-                "ightSwitchApplication.WorkOrderIssueDetail\" Multiplicity=\"*\" /><ReferentialConst" +
-                "raint><Principal Role=\"WorkOrder\"><PropertyRef Name=\"Id\" /></Principal><Dependen" +
-                "t Role=\"WorkOrderIssueDetail\"><PropertyRef Name=\"WorkOrderIssueDetail_WorkOrder\"" +
-                " /></Dependent></ReferentialConstraint></Association><Association Name=\"WorkOrde" +
-                "rProduce_WorkOrder\"><End Role=\"WorkOrder\" Type=\"LightSwitchApplication.WorkOrder" +
-                "\" Multiplicity=\"1\" /><End Role=\"WorkOrderProduce\" Type=\"LightSwitchApplication.W" +
-                "orkOrderProduce\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Work" +
-                "Order\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"WorkOrderProduce\"><" +
-                "PropertyRef Name=\"WorkOrderProduce_WorkOrder\" /></Dependent></ReferentialConstra" +
-                "int></Association><EntityContainer Name=\"ApplicationData\" m:IsDefaultEntityConta" +
-                "iner=\"true\"><EntitySet Name=\"Banks\" EntityType=\"LightSwitchApplication.Bank\" /><" +
-                "EntitySet Name=\"Companies\" EntityType=\"LightSwitchApplication.Company\" /><Entity" +
-                "Set Name=\"CustomerGroups\" EntityType=\"LightSwitchApplication.CustomerGroup\" /><E" +
-                "ntitySet Name=\"Customers\" EntityType=\"LightSwitchApplication.Customer\" /><Entity" +
-                "Set Name=\"Locations\" EntityType=\"LightSwitchApplication.Location\" /><EntitySet N" +
-                "ame=\"Machines\" EntityType=\"LightSwitchApplication.Machine\" /><EntitySet Name=\"Or" +
-                "derRequisitionDetails\" EntityType=\"LightSwitchApplication.OrderRequisitionDetail" +
-                "\" /><EntitySet Name=\"OrderRequisitions\" EntityType=\"LightSwitchApplication.Order" +
-                "Requisition\" /><EntitySet Name=\"Packages\" EntityType=\"LightSwitchApplication.Pac" +
-                "kage\" /><EntitySet Name=\"PaymentTypes\" EntityType=\"LightSwitchApplication.Paymen" +
-                "tType\" /><EntitySet Name=\"PickingSlipDetails\" EntityType=\"LightSwitchApplication" +
-                ".PickingSlipDetail\" /><EntitySet Name=\"PickingSlips\" EntityType=\"LightSwitchAppl" +
-                "ication.PickingSlip\" /><EntitySet Name=\"ProductCategories\" EntityType=\"LightSwit" +
-                "chApplication.ProductCategory\" /><EntitySet Name=\"ProductGroups\" EntityType=\"Lig" +
-                "htSwitchApplication.ProductGroup\" /><EntitySet Name=\"ProductReceiveBalanceForwar" +
-                "dDetails\" EntityType=\"LightSwitchApplication.ProductReceiveBalanceForwardDetail\"" +
-                " /><EntitySet Name=\"ProductReceiveBalanceForwards\" EntityType=\"LightSwitchApplic" +
-                "ation.ProductReceiveBalanceForward\" /><EntitySet Name=\"ProductReceivePurchaseOrd" +
-                "erDetails\" EntityType=\"LightSwitchApplication.ProductReceivePurchaseOrderDetail\"" +
-                " /><EntitySet Name=\"ProductReceives\" EntityType=\"LightSwitchApplication.ProductR" +
-                "eceive\" /><EntitySet Name=\"Products\" EntityType=\"LightSwitchApplication.Product\"" +
-                " /><EntitySet Name=\"PurchaseOrderDetails\" EntityType=\"LightSwitchApplication.Pur" +
-                "chaseOrderDetail\" /><EntitySet Name=\"PurchaseOrders\" EntityType=\"LightSwitchAppl" +
-                "ication.PurchaseOrder\" /><EntitySet Name=\"SaleOrderDetails\" EntityType=\"LightSwi" +
-                "tchApplication.SaleOrderDetail\" /><EntitySet Name=\"SaleOrders\" EntityType=\"Light" +
-                "SwitchApplication.SaleOrder\" /><EntitySet Name=\"StockAdjustDetails\" EntityType=\"" +
-                "LightSwitchApplication.StockAdjustDetail\" /><EntitySet Name=\"StockAdjusts\" Entit" +
-                "yType=\"LightSwitchApplication.StockAdjust\" /><EntitySet Name=\"StockCheckDetails\"" +
-                " EntityType=\"LightSwitchApplication.StockCheckDetail\" /><EntitySet Name=\"StockCh" +
-                "ecks\" EntityType=\"LightSwitchApplication.StockCheck\" /><EntitySet Name=\"StockOnH" +
-                "andHistories\" EntityType=\"LightSwitchApplication.StockOnHandHistory\" /><EntitySe" +
-                "t Name=\"StockOnHands\" EntityType=\"LightSwitchApplication.StockOnHand\" /><EntityS" +
-                "et Name=\"StockTransactions\" EntityType=\"LightSwitchApplication.StockTransaction\"" +
-                " /><EntitySet Name=\"StockTransfers\" EntityType=\"LightSwitchApplication.StockTran" +
-                "sfer\" /><EntitySet Name=\"SupplierGroups\" EntityType=\"LightSwitchApplication.Supp" +
-                "lierGroup\" /><EntitySet Name=\"Suppliers\" EntityType=\"LightSwitchApplication.Supp" +
-                "lier\" /><EntitySet Name=\"Transactions\" EntityType=\"LightSwitchApplication.Transa" +
-                "ction\" /><EntitySet Name=\"TransportRoutes\" EntityType=\"LightSwitchApplication.Tr" +
-                "ansportRoute\" /><EntitySet Name=\"UnitOfMeasures\" EntityType=\"LightSwitchApplicat" +
-                "ion.UnitOfMeasure\" /><EntitySet Name=\"Workers\" EntityType=\"LightSwitchApplicatio" +
-                "n.Worker\" /><EntitySet Name=\"WorkOrderIssueDetails\" EntityType=\"LightSwitchAppli" +
-                "cation.WorkOrderIssueDetail\" /><EntitySet Name=\"WorkOrderProduces\" EntityType=\"L" +
-                "ightSwitchApplication.WorkOrderProduce\" /><EntitySet Name=\"WorkOrders\" EntityTyp" +
-                "e=\"LightSwitchApplication.WorkOrder\" /><AssociationSet Name=\"Customer_CustomerGr" +
-                "oup\" Association=\"LightSwitchApplication.Customer_CustomerGroup\"><End Role=\"Cust" +
-                "omerGroup\" EntitySet=\"CustomerGroups\" /><End Role=\"Customer";
+                "tiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Location\"><PropertyRef N" +
+                "ame=\"Id\" /></Principal><Dependent Role=\"Product\"><PropertyRef Name=\"Product_Loca" +
+                "tion\" /></Dependent></ReferentialConstraint></Association><Association Name=\"Pro" +
+                "ductReceiveBalanceForwardDe_Location\"><End Role=\"Location\" Type=\"LightSwitchAppl" +
+                "ication.Location\" Multiplicity=\"1\" /><End Role=\"ProductReceiveBalanceForwardDeta" +
+                "il\" Type=\"LightSwitchApplication.ProductReceiveBalanceForwardDetail\" Multiplicit" +
+                "y=\"*\" /><ReferentialConstraint><Principal Role=\"Location\"><PropertyRef Name=\"Id\"" +
+                " /></Principal><Dependent Role=\"ProductReceiveBalanceForwardDetail\"><PropertyRef" +
+                " Name=\"ProductReceiveDetail_Location\" /></Dependent></ReferentialConstraint></As" +
+                "sociation><Association Name=\"StockOnHand_Location\"><End Role=\"Location\" Type=\"Li" +
+                "ghtSwitchApplication.Location\" Multiplicity=\"1\" /><End Role=\"StockOnHand\" Type=\"" +
+                "LightSwitchApplication.StockOnHand\" Multiplicity=\"*\" /><ReferentialConstraint><P" +
+                "rincipal Role=\"Location\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"S" +
+                "tockOnHand\"><PropertyRef Name=\"StockOnHand_Location\" /></Dependent></Referential" +
+                "Constraint></Association><Association Name=\"StockAdjustDetail_Location\"><End Rol" +
+                "e=\"Location\" Type=\"LightSwitchApplication.Location\" Multiplicity=\"1\" /><End Role" +
+                "=\"StockAdjustDetail\" Type=\"LightSwitchApplication.StockAdjustDetail\" Multiplicit" +
+                "y=\"*\" /><ReferentialConstraint><Principal Role=\"Location\"><PropertyRef Name=\"Id\"" +
+                " /></Principal><Dependent Role=\"StockAdjustDetail\"><PropertyRef Name=\"StockAdjus" +
+                "tDetail_Location\" /></Dependent></ReferentialConstraint></Association><Associati" +
+                "on Name=\"SaleOrderDetail_Location\"><End Role=\"Location\" Type=\"LightSwitchApplica" +
+                "tion.Location\" Multiplicity=\"1\" /><End Role=\"SaleOrderDetail\" Type=\"LightSwitchA" +
+                "pplication.SaleOrderDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal" +
+                " Role=\"Location\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"SaleOrder" +
+                "Detail\"><PropertyRef Name=\"SaleOrderDetail_Location\" /></Dependent></Referential" +
+                "Constraint></Association><Association Name=\"PurchaseOrderDetail_Location\"><End R" +
+                "ole=\"Location\" Type=\"LightSwitchApplication.Location\" Multiplicity=\"1\" /><End Ro" +
+                "le=\"PurchaseOrderDetail\" Type=\"LightSwitchApplication.PurchaseOrderDetail\" Multi" +
+                "plicity=\"*\" /><ReferentialConstraint><Principal Role=\"Location\"><PropertyRef Nam" +
+                "e=\"Id\" /></Principal><Dependent Role=\"PurchaseOrderDetail\"><PropertyRef Name=\"Pu" +
+                "rchaseOrderDetail_Location\" /></Dependent></ReferentialConstraint></Association>" +
+                "<Association Name=\"WorkOrderIssueDetail_Location\"><End Role=\"Location\" Type=\"Lig" +
+                "htSwitchApplication.Location\" Multiplicity=\"1\" /><End Role=\"WorkOrderIssueDetail" +
+                "\" Type=\"LightSwitchApplication.WorkOrderIssueDetail\" Multiplicity=\"*\" /><Referen" +
+                "tialConstraint><Principal Role=\"Location\"><PropertyRef Name=\"Id\" /></Principal><" +
+                "Dependent Role=\"WorkOrderIssueDetail\"><PropertyRef Name=\"WorkOrderIssue_Location" +
+                "\" /></Dependent></ReferentialConstraint></Association><Association Name=\"WorkOrd" +
+                "erProduce_Location\"><End Role=\"Location\" Type=\"LightSwitchApplication.Location\" " +
+                "Multiplicity=\"1\" /><End Role=\"WorkOrderProduce\" Type=\"LightSwitchApplication.Wor" +
+                "kOrderProduce\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Locati" +
+                "on\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"WorkOrderProduce\"><Pro" +
+                "pertyRef Name=\"WorkOrderProduce_Location\" /></Dependent></ReferentialConstraint>" +
+                "</Association><Association Name=\"ProductReceivePurchaseOrderDet_Location\"><End R" +
+                "ole=\"Location\" Type=\"LightSwitchApplication.Location\" Multiplicity=\"1\" /><End Ro" +
+                "le=\"ProductReceivePurchaseOrderDetail\" Type=\"LightSwitchApplication.ProductRecei" +
+                "vePurchaseOrderDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role" +
+                "=\"Location\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"ProductReceive" +
+                "PurchaseOrderDetail\"><PropertyRef Name=\"ProductReceivePurchaseOrderDet_Location\"" +
+                " /></Dependent></ReferentialConstraint></Association><Association Name=\"PickingS" +
+                "lipDetail_Location\"><End Role=\"Location\" Type=\"LightSwitchApplication.Location\" " +
+                "Multiplicity=\"1\" /><End Role=\"PickingSlipDetail\" Type=\"LightSwitchApplication.Pi" +
+                "ckingSlipDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Loca" +
+                "tion\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"PickingSlipDetail\"><" +
+                "PropertyRef Name=\"PickingSlipDetail_Location\" /></Dependent></ReferentialConstra" +
+                "int></Association><Association Name=\"WorkOrder_Machine\"><End Role=\"Machine\" Type" +
+                "=\"LightSwitchApplication.Machine\" Multiplicity=\"1\" /><End Role=\"WorkOrder\" Type=" +
+                "\"LightSwitchApplication.WorkOrder\" Multiplicity=\"*\" /><ReferentialConstraint><Pr" +
+                "incipal Role=\"Machine\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Wor" +
+                "kOrder\"><PropertyRef Name=\"WorkOrder_Machine\" /></Dependent></ReferentialConstra" +
+                "int></Association><Association Name=\"PickingSlipDetail_OrderRequisitionDetail\"><" +
+                "End Role=\"OrderRequisitionDetail\" Type=\"LightSwitchApplication.OrderRequisitionD" +
+                "etail\" Multiplicity=\"1\" /><End Role=\"PickingSlipDetail\" Type=\"LightSwitchApplica" +
+                "tion.PickingSlipDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Rol" +
+                "e=\"OrderRequisitionDetail\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=" +
+                "\"PickingSlipDetail\"><PropertyRef Name=\"PickingSlipDetail_OrderRequisitionDetail\"" +
+                " /></Dependent></ReferentialConstraint></Association><Association Name=\"OrderReq" +
+                "uisitionDetail_OrderRequisition\"><End Role=\"OrderRequisition\" Type=\"LightSwitchA" +
+                "pplication.OrderRequisition\" Multiplicity=\"1\" /><End Role=\"OrderRequisitionDetai" +
+                "l\" Type=\"LightSwitchApplication.OrderRequisitionDetail\" Multiplicity=\"*\" /><Refe" +
+                "rentialConstraint><Principal Role=\"OrderRequisition\"><PropertyRef Name=\"Id\" /></" +
+                "Principal><Dependent Role=\"OrderRequisitionDetail\"><PropertyRef Name=\"Requisitio" +
+                "nDetail_Requisition\" /></Dependent></ReferentialConstraint></Association><Associ" +
+                "ation Name=\"PickingSlipDetail_PickingSlip\"><End Role=\"Picki";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart10 = "\" EntitySet=\"Customers\" /></AssociationSet><AssociationSet Name=\"SaleOrder_Custom" +
-                "er\" Association=\"LightSwitchApplication.SaleOrder_Customer\"><End Role=\"Customer\"" +
-                " EntitySet=\"Customers\" /><End Role=\"SaleOrder\" EntitySet=\"SaleOrders\" /></Associ" +
-                "ationSet><AssociationSet Name=\"OrderRequisition_Customer\" Association=\"LightSwit" +
-                "chApplication.OrderRequisition_Customer\"><End Role=\"Customer\" EntitySet=\"Custome" +
-                "rs\" /><End Role=\"OrderRequisition\" EntitySet=\"OrderRequisitions\" /></Association" +
-                "Set><AssociationSet Name=\"Product_Location\" Association=\"LightSwitchApplication." +
-                "Product_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"Produc" +
-                "t\" EntitySet=\"Products\" /></AssociationSet><AssociationSet Name=\"ProductReceiveB" +
-                "alanceForwardDe_Location\" Association=\"LightSwitchApplication.ProductReceiveBala" +
-                "nceForwardDe_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"P" +
-                "roductReceiveBalanceForwardDetail\" EntitySet=\"ProductReceiveBalanceForwardDetail" +
-                "s\" /></AssociationSet><AssociationSet Name=\"StockOnHand_Location\" Association=\"L" +
-                "ightSwitchApplication.StockOnHand_Location\"><End Role=\"Location\" EntitySet=\"Loca" +
-                "tions\" /><End Role=\"StockOnHand\" EntitySet=\"StockOnHands\" /></AssociationSet><As" +
-                "sociationSet Name=\"StockAdjustDetail_Location\" Association=\"LightSwitchApplicati" +
-                "on.StockAdjustDetail_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><End" +
-                " Role=\"StockAdjustDetail\" EntitySet=\"StockAdjustDetails\" /></AssociationSet><Ass" +
-                "ociationSet Name=\"SaleOrderDetail_Location\" Association=\"LightSwitchApplication." +
-                "SaleOrderDetail_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role" +
-                "=\"SaleOrderDetail\" EntitySet=\"SaleOrderDetails\" /></AssociationSet><AssociationS" +
-                "et Name=\"PurchaseOrderDetail_Location\" Association=\"LightSwitchApplication.Purch" +
-                "aseOrderDetail_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=" +
-                "\"PurchaseOrderDetail\" EntitySet=\"PurchaseOrderDetails\" /></AssociationSet><Assoc" +
-                "iationSet Name=\"WorkOrderIssueDetail_Location\" Association=\"LightSwitchApplicati" +
-                "on.WorkOrderIssueDetail_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><" +
-                "End Role=\"WorkOrderIssueDetail\" EntitySet=\"WorkOrderIssueDetails\" /></Associatio" +
-                "nSet><AssociationSet Name=\"WorkOrderProduce_Location\" Association=\"LightSwitchAp" +
-                "plication.WorkOrderProduce_Location\"><End Role=\"Location\" EntitySet=\"Locations\" " +
-                "/><End Role=\"WorkOrderProduce\" EntitySet=\"WorkOrderProduces\" /></AssociationSet>" +
-                "<AssociationSet Name=\"ProductReceivePurchaseOrderDet_Location\" Association=\"Ligh" +
-                "tSwitchApplication.ProductReceivePurchaseOrderDet_Location\"><End Role=\"Location\"" +
-                " EntitySet=\"Locations\" /><End Role=\"ProductReceivePurchaseOrderDetail\" EntitySet" +
-                "=\"ProductReceivePurchaseOrderDetails\" /></AssociationSet><AssociationSet Name=\"P" +
-                "ickingSlipDetail_Location\" Association=\"LightSwitchApplication.PickingSlipDetail" +
-                "_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"PickingSlipDe" +
-                "tail\" EntitySet=\"PickingSlipDetails\" /></AssociationSet><AssociationSet Name=\"Wo" +
-                "rkOrder_Machine\" Association=\"LightSwitchApplication.WorkOrder_Machine\"><End Rol" +
-                "e=\"Machine\" EntitySet=\"Machines\" /><End Role=\"WorkOrder\" EntitySet=\"WorkOrders\" " +
-                "/></AssociationSet><AssociationSet Name=\"PickingSlipDetail_OrderRequisitionDetai" +
-                "l\" Association=\"LightSwitchApplication.PickingSlipDetail_OrderRequisitionDetail\"" +
-                "><End Role=\"OrderRequisitionDetail\" EntitySet=\"OrderRequisitionDetails\" /><End R" +
-                "ole=\"PickingSlipDetail\" EntitySet=\"PickingSlipDetails\" /></AssociationSet><Assoc" +
-                "iationSet Name=\"OrderRequisitionDetail_OrderRequisition\" Association=\"LightSwitc" +
-                "hApplication.OrderRequisitionDetail_OrderRequisition\"><End Role=\"OrderRequisitio" +
-                "n\" EntitySet=\"OrderRequisitions\" /><End Role=\"OrderRequisitionDetail\" EntitySet=" +
-                "\"OrderRequisitionDetails\" /></AssociationSet><AssociationSet Name=\"PickingSlipDe" +
-                "tail_PickingSlip\" Association=\"LightSwitchApplication.PickingSlipDetail_PickingS" +
-                "lip\"><End Role=\"PickingSlip\" EntitySet=\"PickingSlips\" /><End Role=\"PickingSlipDe" +
-                "tail\" EntitySet=\"PickingSlipDetails\" /></AssociationSet><AssociationSet Name=\"Pr" +
-                "oductCategory_Product\" Association=\"LightSwitchApplication.ProductCategory_Produ" +
-                "ct\"><End Role=\"ProductCategory\" EntitySet=\"ProductCategories\" /><End Role=\"Produ" +
-                "ct\" EntitySet=\"Products\" /></AssociationSet><AssociationSet Name=\"Product_Produc" +
-                "tGroup\" Association=\"LightSwitchApplication.Product_ProductGroup\"><End Role=\"Pro" +
-                "ductGroup\" EntitySet=\"ProductGroups\" /><End Role=\"Product\" EntitySet=\"Products\" " +
-                "/></AssociationSet><AssociationSet Name=\"ProductReceiveBalanceForwardDe_ProductR" +
-                "eceiveBalanceForward\" Association=\"LightSwitchApplication.ProductReceiveBalanceF" +
-                "orwardDe_ProductReceiveBalanceForward\"><End Role=\"ProductReceiveBalanceForward\" " +
-                "EntitySet=\"ProductReceiveBalanceForwards\" /><End Role=\"ProductReceiveBalanceForw" +
-                "ardDetail\" EntitySet=\"ProductReceiveBalanceForwardDetails\" /></AssociationSet><A" +
-                "ssociationSet Name=\"ProductReceiveBalanceForwardDe_Product\" Association=\"LightSw" +
-                "itchApplication.ProductReceiveBalanceForwardDe_Product\"><End Role=\"Product\" Enti" +
-                "tySet=\"Products\" /><End Role=\"ProductReceiveBalanceForwardDetail\" EntitySet=\"Pro" +
-                "ductReceiveBalanceForwardDetails\" /></AssociationSet><AssociationSet Name=\"Stock" +
-                "OnHand_Product\" Association=\"LightSwitchApplication.StockOnHand_Product\"><End Ro" +
-                "le=\"Product\" EntitySet=\"Products\" /><End Role=\"StockOnHand\" EntitySet=\"StockOnHa" +
-                "nds\" /></AssociationSet><AssociationSet Name=\"StockAdjustDetail_Product\" Associa" +
-                "tion=\"LightSwitchApplication.StockAdjustDetail_Product\"><End Role=\"Product\" Enti" +
-                "tySet=\"Products\" /><End Role=\"StockAdjustDetail\" EntitySet=\"StockAdjustDetails\" " +
-                "/></AssociationSet><AssociationSet Name=\"SaleOrderDetail_Product\" Association=\"L" +
-                "ightSwitchApplication.SaleOrderDetail_Product\"><End Role=\"Product\" EntitySet=\"Pr" +
-                "oducts\" /><End Role=\"SaleOrderDetail\" EntitySet=\"SaleOrderDetails\" /></Associati" +
-                "onSet><AssociationSet Name=\"PurchaseOrderDetail_Product\" Association=\"LightSwitc" +
-                "hApplication.PurchaseOrderDetail_Product\"><End Role=\"Product\" EntitySet=\"Product" +
-                "s\" /><End Role=\"PurchaseOrderDetail\" EntitySet=\"PurchaseOrderDetails\" /></Associ" +
-                "ationSet><AssociationSet Name=\"WorkOrderIssueDetail_Product\" Association=\"LightS" +
-                "witchApplication.WorkOrderIssueDetail_Product\"><End Role=\"Product\" EntitySet=\"Pr" +
-                "oducts\" /><End Role=\"WorkOrderIssueDetail\" EntitySet=\"WorkOrderIssueDetails\" /><" +
-                "/AssociationSet><AssociationSet Name=\"WorkOrderProduce_Product\" Association=\"Lig" +
-                "htSwitchApplication.WorkOrderProduce_Product\"><End Role=\"Product\" EntitySet=\"Pro" +
-                "ducts\" /><End Role=\"WorkOrderProduce\" EntitySet=\"WorkOrderProduces\" /></Associat" +
-                "ionSet><AssociationSet Name=\"ProductReceivePurchaseOrderDet_Product\" Association" +
-                "=\"LightSwitchApplication.ProductReceivePurchaseOrderDet_Product\"><End Role=\"Prod" +
-                "uct\" EntitySet=\"Products\" /><End Role=\"ProductReceivePurchaseOrderDetail\" Entity" +
-                "Set=\"ProductReceivePurchaseOrderDetails\" /></AssociationSet><AssociationSet Name" +
-                "=\"OrderRequisitionDetail_Product\" Association=\"LightSwitchApplication.OrderRequi" +
-                "sitionDetail_Product\"><End Role=\"Product\" EntitySet=\"Products\" /><End Role=\"Orde" +
-                "rRequisitionDetail\" EntitySet=\"OrderRequisitionDetails\" /></AssociationSet><Asso" +
-                "ciationSet Name=\"ProductReceivePurchaseOrderDet_PurchaseOrderDetail\" Association" +
-                "=\"LightSwitchApplication.ProductReceivePurchaseOrderDet_PurchaseOrderDetail\"><En" +
-                "d Role=\"PurchaseOrderDetail\" EntitySet=\"PurchaseOrderDetails\" /><End Role=\"Produ" +
-                "ctReceivePurchaseOrderDetail\" EntitySet=\"ProductReceivePurchaseOrderDetails\" /><" +
-                "/AssociationSet><AssociationSet Name=\"PurchaseOrderDetail_PurchaseOrder\" Associa" +
-                "tion=\"LightSwitchApplication.PurchaseOrderDetail_PurchaseOr";
+            private const string ModelPart8 = "ngSlip\" Type=\"LightSwitchApplication.PickingSlip\" Multiplicity=\"1\" /><End Role=\"P" +
+                "ickingSlipDetail\" Type=\"LightSwitchApplication.PickingSlipDetail\" Multiplicity=\"" +
+                "*\" /><ReferentialConstraint><Principal Role=\"PickingSlip\"><PropertyRef Name=\"Id\"" +
+                " /></Principal><Dependent Role=\"PickingSlipDetail\"><PropertyRef Name=\"PickingSli" +
+                "pDetail_PickingSlip\" /></Dependent></ReferentialConstraint></Association><Associ" +
+                "ation Name=\"ProductCategory_Product\"><End Role=\"ProductCategory\" Type=\"LightSwit" +
+                "chApplication.ProductCategory\" Multiplicity=\"1\" /><End Role=\"Product\" Type=\"Ligh" +
+                "tSwitchApplication.Product\" Multiplicity=\"*\" /><ReferentialConstraint><Principal" +
+                " Role=\"ProductCategory\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Pr" +
+                "oduct\"><PropertyRef Name=\"ProductCategory_Product\" /></Dependent></ReferentialCo" +
+                "nstraint></Association><Association Name=\"Product_ProductGroup\"><End Role=\"Produ" +
+                "ctGroup\" Type=\"LightSwitchApplication.ProductGroup\" Multiplicity=\"1\" /><End Role" +
+                "=\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"*\" /><Referential" +
+                "Constraint><Principal Role=\"ProductGroup\"><PropertyRef Name=\"Id\" /></Principal><" +
+                "Dependent Role=\"Product\"><PropertyRef Name=\"Product_ProductGroup\" /></Dependent>" +
+                "</ReferentialConstraint></Association><Association Name=\"ProductReceiveBalanceFo" +
+                "rwardDe_ProductReceiveBalanceForward\"><End Role=\"ProductReceiveBalanceForward\" T" +
+                "ype=\"LightSwitchApplication.ProductReceiveBalanceForward\" Multiplicity=\"1\" /><En" +
+                "d Role=\"ProductReceiveBalanceForwardDetail\" Type=\"LightSwitchApplication.Product" +
+                "ReceiveBalanceForwardDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principa" +
+                "l Role=\"ProductReceiveBalanceForward\"><PropertyRef Name=\"Id\" /></Principal><Depe" +
+                "ndent Role=\"ProductReceiveBalanceForwardDetail\"><PropertyRef Name=\"ProductReceiv" +
+                "eDetail_ProductReceive\" /></Dependent></ReferentialConstraint></Association><Ass" +
+                "ociation Name=\"ProductReceiveBalanceForwardDe_Product\"><End Role=\"Product\" Type=" +
+                "\"LightSwitchApplication.Product\" Multiplicity=\"1\" /><End Role=\"ProductReceiveBal" +
+                "anceForwardDetail\" Type=\"LightSwitchApplication.ProductReceiveBalanceForwardDeta" +
+                "il\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Product\"><Propert" +
+                "yRef Name=\"Id\" /></Principal><Dependent Role=\"ProductReceiveBalanceForwardDetail" +
+                "\"><PropertyRef Name=\"ProductReceiveDetail_Product\" /></Dependent></ReferentialCo" +
+                "nstraint></Association><Association Name=\"StockOnHand_Product\"><End Role=\"Produc" +
+                "t\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"1\" /><End Role=\"StockOnHa" +
+                "nd\" Type=\"LightSwitchApplication.StockOnHand\" Multiplicity=\"*\" /><ReferentialCon" +
+                "straint><Principal Role=\"Product\"><PropertyRef Name=\"Id\" /></Principal><Dependen" +
+                "t Role=\"StockOnHand\"><PropertyRef Name=\"StockOnHand_Product\" /></Dependent></Ref" +
+                "erentialConstraint></Association><Association Name=\"StockAdjustDetail_Product\"><" +
+                "End Role=\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"1\" /><End" +
+                " Role=\"StockAdjustDetail\" Type=\"LightSwitchApplication.StockAdjustDetail\" Multip" +
+                "licity=\"*\" /><ReferentialConstraint><Principal Role=\"Product\"><PropertyRef Name=" +
+                "\"Id\" /></Principal><Dependent Role=\"StockAdjustDetail\"><PropertyRef Name=\"StockA" +
+                "djust_Product\" /></Dependent></ReferentialConstraint></Association><Association " +
+                "Name=\"SaleOrderDetail_Product\"><End Role=\"Product\" Type=\"LightSwitchApplication." +
+                "Product\" Multiplicity=\"1\" /><End Role=\"SaleOrderDetail\" Type=\"LightSwitchApplica" +
+                "tion.SaleOrderDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=" +
+                "\"Product\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"SaleOrderDetail\"" +
+                "><PropertyRef Name=\"SaleOrderDetail_Product\" /></Dependent></ReferentialConstrai" +
+                "nt></Association><Association Name=\"PurchaseOrderDetail_Product\"><End Role=\"Prod" +
+                "uct\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"1\" /><End Role=\"Purchas" +
+                "eOrderDetail\" Type=\"LightSwitchApplication.PurchaseOrderDetail\" Multiplicity=\"*\"" +
+                " /><ReferentialConstraint><Principal Role=\"Product\"><PropertyRef Name=\"Id\" /></P" +
+                "rincipal><Dependent Role=\"PurchaseOrderDetail\"><PropertyRef Name=\"PurchaseOrderD" +
+                "etail_Product\" /></Dependent></ReferentialConstraint></Association><Association " +
+                "Name=\"WorkOrderIssueDetail_Product\"><End Role=\"Product\" Type=\"LightSwitchApplica" +
+                "tion.Product\" Multiplicity=\"1\" /><End Role=\"WorkOrderIssueDetail\" Type=\"LightSwi" +
+                "tchApplication.WorkOrderIssueDetail\" Multiplicity=\"*\" /><ReferentialConstraint><" +
+                "Principal Role=\"Product\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"W" +
+                "orkOrderIssueDetail\"><PropertyRef Name=\"WorkOrderIssue_Product\" /></Dependent></" +
+                "ReferentialConstraint></Association><Association Name=\"WorkOrderProduce_Product\"" +
+                "><End Role=\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"1\" /><E" +
+                "nd Role=\"WorkOrderProduce\" Type=\"LightSwitchApplication.WorkOrderProduce\" Multip" +
+                "licity=\"*\" /><ReferentialConstraint><Principal Role=\"Product\"><PropertyRef Name=" +
+                "\"Id\" /></Principal><Dependent Role=\"WorkOrderProduce\"><PropertyRef Name=\"WorkOrd" +
+                "erProduce_Product\" /></Dependent></ReferentialConstraint></Association><Associat" +
+                "ion Name=\"ProductReceivePurchaseOrderDet_Product\"><End Role=\"Product\" Type=\"Ligh" +
+                "tSwitchApplication.Product\" Multiplicity=\"1\" /><End Role=\"ProductReceivePurchase" +
+                "OrderDetail\" Type=\"LightSwitchApplication.ProductReceivePurchaseOrderDetail\" Mul" +
+                "tiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Product\"><PropertyRef Na" +
+                "me=\"Id\" /></Principal><Dependent Role=\"ProductReceivePurchaseOrderDetail\"><Prope" +
+                "rtyRef Name=\"ProductReceivePurchaseOrderDet_Product\" /></Dependent></Referential" +
+                "Constraint></Association><Association Name=\"OrderRequisitionDetail_Product\"><End" +
+                " Role=\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"1\" /><End Ro" +
+                "le=\"OrderRequisitionDetail\" Type=\"LightSwitchApplication.OrderRequisitionDetail\"" +
+                " Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Product\"><PropertyRe" +
+                "f Name=\"Id\" /></Principal><Dependent Role=\"OrderRequisitionDetail\"><PropertyRef " +
+                "Name=\"RequisitionDetail_Product\" /></Dependent></ReferentialConstraint></Associa" +
+                "tion><Association Name=\"ProductReceivePurchaseOrderDet_PurchaseOrderDetail\"><End" +
+                " Role=\"PurchaseOrderDetail\" Type=\"LightSwitchApplication.PurchaseOrderDetail\" Mu" +
+                "ltiplicity=\"1\" /><End Role=\"ProductReceivePurchaseOrderDetail\" Type=\"LightSwitch" +
+                "Application.ProductReceivePurchaseOrderDetail\" Multiplicity=\"*\" /><ReferentialCo" +
+                "nstraint><Principal Role=\"PurchaseOrderDetail\"><PropertyRef Name=\"Id\" /></Princi" +
+                "pal><Dependent Role=\"ProductReceivePurchaseOrderDetail\"><PropertyRef Name=\"Produ" +
+                "ctReceivePurchaseOrderDet_PurchaseOrderDetail\" /></Dependent></ReferentialConstr" +
+                "aint></Association><Association Name=\"PurchaseOrderDetail_PurchaseOrder\"><End Ro" +
+                "le=\"PurchaseOrder\" Type=\"LightSwitchApplication.PurchaseOrder\" Multiplicity=\"1\" " +
+                "/><End Role=\"PurchaseOrderDetail\" Type=\"LightSwitchApplication.PurchaseOrderDeta" +
+                "il\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"PurchaseOrder\"><P" +
+                "ropertyRef Name=\"Id\" /></Principal><Dependent Role=\"PurchaseOrderDetail\"><Proper" +
+                "tyRef Name=\"PurchaseOrderDetail_PurchaseOrder\" /></Dependent></ReferentialConstr" +
+                "aint></Association><Association Name=\"SaleOrderDetail_SaleOrder\"><End Role=\"Sale" +
+                "Order\" Type=\"LightSwitchApplication.SaleOrder\" Multiplicity=\"1\" /><End Role=\"Sal" +
+                "eOrderDetail\" Type=\"LightSwitchApplication.SaleOrderDetail\" Multiplicity=\"*\" /><" +
+                "ReferentialConstraint><Principal Role=\"SaleOrder\"><PropertyRef Name=\"Id\" /></Pri" +
+                "ncipal><Dependent Role=\"SaleOrderDetail\"><PropertyRef Name=\"SaleOrderDetail_Sale" +
+                "Order\" /></Dependent></ReferentialConstraint></Association><Association Name=\"St" +
+                "ockAdjustDetail_StockAdjust\"><End Role=\"StockAdjust\" Type=\"";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart11 = "der\"><End Role=\"PurchaseOrder\" EntitySet=\"PurchaseOrders\" /><End Role=\"PurchaseOr" +
-                "derDetail\" EntitySet=\"PurchaseOrderDetails\" /></AssociationSet><AssociationSet N" +
-                "ame=\"SaleOrderDetail_SaleOrder\" Association=\"LightSwitchApplication.SaleOrderDet" +
-                "ail_SaleOrder\"><End Role=\"SaleOrder\" EntitySet=\"SaleOrders\" /><End Role=\"SaleOrd" +
-                "erDetail\" EntitySet=\"SaleOrderDetails\" /></AssociationSet><AssociationSet Name=\"" +
-                "StockAdjustDetail_StockAdjust\" Association=\"LightSwitchApplication.StockAdjustDe" +
-                "tail_StockAdjust\"><End Role=\"StockAdjust\" EntitySet=\"StockAdjusts\" /><End Role=\"" +
-                "StockAdjustDetail\" EntitySet=\"StockAdjustDetails\" /></AssociationSet><Associatio" +
-                "nSet Name=\"StockCheckDetail_StockCheck\" Association=\"LightSwitchApplication.Stoc" +
-                "kCheckDetail_StockCheck\"><End Role=\"StockCheck\" EntitySet=\"StockChecks\" /><End R" +
-                "ole=\"StockCheckDetail\" EntitySet=\"StockCheckDetails\" /></AssociationSet><Associa" +
-                "tionSet Name=\"Supplier_SupplierGroup\" Association=\"LightSwitchApplication.Suppli" +
-                "er_SupplierGroup\"><End Role=\"SupplierGroup\" EntitySet=\"SupplierGroups\" /><End Ro" +
-                "le=\"Supplier\" EntitySet=\"Suppliers\" /></AssociationSet><AssociationSet Name=\"Pur" +
-                "chaseOrder_Supplier\" Association=\"LightSwitchApplication.PurchaseOrder_Supplier\"" +
-                "><End Role=\"Supplier\" EntitySet=\"Suppliers\" /><End Role=\"PurchaseOrder\" EntitySe" +
-                "t=\"PurchaseOrders\" /></AssociationSet><AssociationSet Name=\"Customer_TransportRo" +
-                "ute\" Association=\"LightSwitchApplication.Customer_TransportRoute\"><End Role=\"Tra" +
-                "nsportRoute\" EntitySet=\"TransportRoutes\" /><End Role=\"Customer\" EntitySet=\"Custo" +
-                "mers\" /></AssociationSet><AssociationSet Name=\"PickingSlip_TransportRoute\" Assoc" +
-                "iation=\"LightSwitchApplication.PickingSlip_TransportRoute\"><End Role=\"TransportR" +
-                "oute\" EntitySet=\"TransportRoutes\" /><End Role=\"PickingSlip\" EntitySet=\"PickingSl" +
-                "ips\" /></AssociationSet><AssociationSet Name=\"Product_UnitOfMeasure\" Association" +
-                "=\"LightSwitchApplication.Product_UnitOfMeasure\"><End Role=\"UnitOfMeasure\" Entity" +
-                "Set=\"UnitOfMeasures\" /><End Role=\"Product\" EntitySet=\"Products\" /></AssociationS" +
-                "et><AssociationSet Name=\"WorkOrderIssueDetail_WorkOrder\" Association=\"LightSwitc" +
-                "hApplication.WorkOrderIssueDetail_WorkOrder\"><End Role=\"WorkOrder\" EntitySet=\"Wo" +
-                "rkOrders\" /><End Role=\"WorkOrderIssueDetail\" EntitySet=\"WorkOrderIssueDetails\" /" +
-                "></AssociationSet><AssociationSet Name=\"WorkOrderProduce_WorkOrder\" Association=" +
-                "\"LightSwitchApplication.WorkOrderProduce_WorkOrder\"><End Role=\"WorkOrder\" Entity" +
-                "Set=\"WorkOrders\" /><End Role=\"WorkOrderProduce\" EntitySet=\"WorkOrderProduces\" />" +
-                "</AssociationSet><FunctionImport Name=\"BankActiveQuery\" ReturnType=\"Collection(L" +
-                "ightSwitchApplication.Bank)\" EntitySet=\"Banks\" m:HttpMethod=\"GET\" /><FunctionImp" +
-                "ort Name=\"CustomerGroupActiveQuery\" ReturnType=\"Collection(LightSwitchApplicatio" +
-                "n.CustomerGroup)\" EntitySet=\"CustomerGroups\" m:HttpMethod=\"GET\" /><FunctionImpor" +
-                "t Name=\"CustomersActiveQuery\" ReturnType=\"Collection(LightSwitchApplication.Cust" +
-                "omer)\" EntitySet=\"Customers\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"Location" +
-                "ActiveQuery\" ReturnType=\"Collection(LightSwitchApplication.Location)\" EntitySet=" +
-                "\"Locations\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"MachineActiveQuery\" Retur" +
-                "nType=\"Collection(LightSwitchApplication.Machine)\" EntitySet=\"Machines\" m:HttpMe" +
-                "thod=\"GET\" /><FunctionImport Name=\"GetMaxOrderRequisitionNo\" ReturnType=\"Collect" +
-                "ion(LightSwitchApplication.OrderRequisition)\" EntitySet=\"OrderRequisitions\" m:Ht" +
-                "tpMethod=\"GET\" /><FunctionImport Name=\"QueryOrderRequisitionTransportRoute\" Retu" +
-                "rnType=\"Collection(LightSwitchApplication.OrderRequisition)\" EntitySet=\"OrderReq" +
-                "uisitions\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"PackageActiveQuery\" Return" +
-                "Type=\"Collection(LightSwitchApplication.Package)\" EntitySet=\"Packages\" m:HttpMet" +
-                "hod=\"GET\" /><FunctionImport Name=\"PaymentTypeActiveQuery\" ReturnType=\"Collection" +
-                "(LightSwitchApplication.PaymentType)\" EntitySet=\"PaymentTypes\" m:HttpMethod=\"GET" +
-                "\" /><FunctionImport Name=\"ProductCategoriesActiveQuery\" ReturnType=\"Collection(L" +
-                "ightSwitchApplication.ProductCategory)\" EntitySet=\"ProductCategories\" m:HttpMeth" +
-                "od=\"GET\" /><FunctionImport Name=\"ProductGroupsActiveQuery\" ReturnType=\"Collectio" +
-                "n(LightSwitchApplication.ProductGroup)\" EntitySet=\"ProductGroups\" m:HttpMethod=\"" +
-                "GET\" /><FunctionImport Name=\"QueryLatestProductReceiveBalanceForwardDocumentNo\" " +
-                "ReturnType=\"Collection(LightSwitchApplication.ProductReceiveBalanceForward)\" Ent" +
-                "itySet=\"ProductReceiveBalanceForwards\" m:HttpMethod=\"GET\" /><FunctionImport Name" +
-                "=\"QueryMaxReceivePONumber\" ReturnType=\"Collection(LightSwitchApplication.Product" +
-                "ReceivePurchaseOrderDetail)\" EntitySet=\"ProductReceivePurchaseOrderDetails\" m:Ht" +
-                "tpMethod=\"GET\" /><FunctionImport Name=\"ProductsActiveQuery\" ReturnType=\"Collecti" +
-                "on(LightSwitchApplication.Product)\" EntitySet=\"Products\" m:HttpMethod=\"GET\" /><F" +
-                "unctionImport Name=\"PurchaseOrderDetailByPOId\" ReturnType=\"Collection(LightSwitc" +
-                "hApplication.PurchaseOrderDetail)\" EntitySet=\"PurchaseOrderDetails\" m:HttpMethod" +
-                "=\"GET\"><Parameter Name=\"POId\" Type=\"Edm.Int32\" Mode=\"In\" /></FunctionImport><Fun" +
-                "ctionImport Name=\"PurchaseOrderClosed\" ReturnType=\"Collection(LightSwitchApplica" +
-                "tion.PurchaseOrder)\" EntitySet=\"PurchaseOrders\" m:HttpMethod=\"GET\" /><FunctionIm" +
-                "port Name=\"PurchaseOrderNotClose\" ReturnType=\"Collection(LightSwitchApplication." +
-                "PurchaseOrder)\" EntitySet=\"PurchaseOrders\" m:HttpMethod=\"GET\" /><FunctionImport " +
-                "Name=\"QueryMaxPONumber\" ReturnType=\"Collection(LightSwitchApplication.PurchaseOr" +
-                "der)\" EntitySet=\"PurchaseOrders\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"Quer" +
-                "yMaxSONumber\" ReturnType=\"Collection(LightSwitchApplication.SaleOrder)\" EntitySe" +
-                "t=\"SaleOrders\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"QueryStockOnHandForIss" +
-                "ue\" ReturnType=\"Collection(LightSwitchApplication.StockOnHand)\" EntitySet=\"Stock" +
-                "OnHands\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"StockOnHandForSale\" ReturnTy" +
-                "pe=\"Collection(LightSwitchApplication.StockOnHand)\" EntitySet=\"StockOnHands\" m:H" +
-                "ttpMethod=\"GET\" /><FunctionImport Name=\"SupplierGroupsActiveQuery\" ReturnType=\"C" +
-                "ollection(LightSwitchApplication.SupplierGroup)\" EntitySet=\"SupplierGroups\" m:Ht" +
-                "tpMethod=\"GET\" /><FunctionImport Name=\"SupplierActiveQuery\" ReturnType=\"Collecti" +
-                "on(LightSwitchApplication.Supplier)\" EntitySet=\"Suppliers\" m:HttpMethod=\"GET\" />" +
-                "<FunctionImport Name=\"TransportRoutesActiveQuery\" ReturnType=\"Collection(LightSw" +
-                "itchApplication.TransportRoute)\" EntitySet=\"TransportRoutes\" m:HttpMethod=\"GET\" " +
-                "/><FunctionImport Name=\"UnitOfMeasuresActiveQuery\" ReturnType=\"Collection(LightS" +
-                "witchApplication.UnitOfMeasure)\" EntitySet=\"UnitOfMeasures\" m:HttpMethod=\"GET\" /" +
-                "><FunctionImport Name=\"WorkersActiveQuery\" ReturnType=\"Collection(LightSwitchApp" +
-                "lication.Worker)\" EntitySet=\"Workers\" m:HttpMethod=\"GET\" /><FunctionImport Name=" +
-                "\"QueryMaxWONumber\" ReturnType=\"Collection(LightSwitchApplication.WorkOrder)\" Ent" +
-                "itySet=\"WorkOrders\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"WorkOrderIsNotRec" +
-                "eive\" ReturnType=\"Collection(LightSwitchApplication.WorkOrder)\" EntitySet=\"WorkO" +
-                "rders\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"Microsoft_LightSwitch_GetCanIn" +
-                "formation\" ReturnType=\"Edm.String\" m:HttpMethod=\"GET\"><Parameter Name=\"dataServi" +
-                "ceMembers\" Type=\"Edm.String\" Mode=\"In\" /></FunctionImport></EntityContainer></Sc" +
-                "hema></edmx:DataServices></edmx:Edmx>";
+            private const string ModelPart9 = "LightSwitchApplication.StockAdjust\" Multiplicity=\"1\" /><End Role=\"StockAdjustDeta" +
+                "il\" Type=\"LightSwitchApplication.StockAdjustDetail\" Multiplicity=\"*\" /><Referent" +
+                "ialConstraint><Principal Role=\"StockAdjust\"><PropertyRef Name=\"Id\" /></Principal" +
+                "><Dependent Role=\"StockAdjustDetail\"><PropertyRef Name=\"StockAdjustDetail_StockA" +
+                "djust\" /></Dependent></ReferentialConstraint></Association><Association Name=\"St" +
+                "ockCheckDetail_StockCheck\"><End Role=\"StockCheck\" Type=\"LightSwitchApplication.S" +
+                "tockCheck\" Multiplicity=\"1\"><OnDelete Action=\"Cascade\" /></End><End Role=\"StockC" +
+                "heckDetail\" Type=\"LightSwitchApplication.StockCheckDetail\" Multiplicity=\"*\" /><R" +
+                "eferentialConstraint><Principal Role=\"StockCheck\"><PropertyRef Name=\"Id\" /></Pri" +
+                "ncipal><Dependent Role=\"StockCheckDetail\"><PropertyRef Name=\"StockCheckDetails_S" +
+                "tockCheck\" /></Dependent></ReferentialConstraint></Association><Association Name" +
+                "=\"Supplier_SupplierGroup\"><End Role=\"SupplierGroup\" Type=\"LightSwitchApplication" +
+                ".SupplierGroup\" Multiplicity=\"1\" /><End Role=\"Supplier\" Type=\"LightSwitchApplica" +
+                "tion.Supplier\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Suppli" +
+                "erGroup\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Supplier\"><Proper" +
+                "tyRef Name=\"Supplier_SupplierGroup\" /></Dependent></ReferentialConstraint></Asso" +
+                "ciation><Association Name=\"PurchaseOrder_Supplier\"><End Role=\"Supplier\" Type=\"Li" +
+                "ghtSwitchApplication.Supplier\" Multiplicity=\"1\" /><End Role=\"PurchaseOrder\" Type" +
+                "=\"LightSwitchApplication.PurchaseOrder\" Multiplicity=\"*\" /><ReferentialConstrain" +
+                "t><Principal Role=\"Supplier\"><PropertyRef Name=\"Id\" /></Principal><Dependent Rol" +
+                "e=\"PurchaseOrder\"><PropertyRef Name=\"PurchaseOrder_Supplier\" /></Dependent></Ref" +
+                "erentialConstraint></Association><Association Name=\"Customer_TransportRoute\"><En" +
+                "d Role=\"TransportRoute\" Type=\"LightSwitchApplication.TransportRoute\" Multiplicit" +
+                "y=\"1\" /><End Role=\"Customer\" Type=\"LightSwitchApplication.Customer\" Multiplicity" +
+                "=\"*\" /><ReferentialConstraint><Principal Role=\"TransportRoute\"><PropertyRef Name" +
+                "=\"Id\" /></Principal><Dependent Role=\"Customer\"><PropertyRef Name=\"Customer_Trans" +
+                "portRoute\" /></Dependent></ReferentialConstraint></Association><Association Name" +
+                "=\"PickingSlip_TransportRoute\"><End Role=\"TransportRoute\" Type=\"LightSwitchApplic" +
+                "ation.TransportRoute\" Multiplicity=\"1\" /><End Role=\"PickingSlip\" Type=\"LightSwit" +
+                "chApplication.PickingSlip\" Multiplicity=\"*\" /><ReferentialConstraint><Principal " +
+                "Role=\"TransportRoute\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Pick" +
+                "ingSlip\"><PropertyRef Name=\"PickingSlip_TransportRoute\" /></Dependent></Referent" +
+                "ialConstraint></Association><Association Name=\"Product_UnitOfMeasure\"><End Role=" +
+                "\"UnitOfMeasure\" Type=\"LightSwitchApplication.UnitOfMeasure\" Multiplicity=\"1\" /><" +
+                "End Role=\"Product\" Type=\"LightSwitchApplication.Product\" Multiplicity=\"*\" /><Ref" +
+                "erentialConstraint><Principal Role=\"UnitOfMeasure\"><PropertyRef Name=\"Id\" /></Pr" +
+                "incipal><Dependent Role=\"Product\"><PropertyRef Name=\"Product_UnitOfMeasure\" /></" +
+                "Dependent></ReferentialConstraint></Association><Association Name=\"WorkOrderIssu" +
+                "eDetail_WorkOrder\"><End Role=\"WorkOrder\" Type=\"LightSwitchApplication.WorkOrder\"" +
+                " Multiplicity=\"1\" /><End Role=\"WorkOrderIssueDetail\" Type=\"LightSwitchApplicatio" +
+                "n.WorkOrderIssueDetail\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Rol" +
+                "e=\"WorkOrder\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"WorkOrderIss" +
+                "ueDetail\"><PropertyRef Name=\"WorkOrderIssueDetail_WorkOrder\" /></Dependent></Ref" +
+                "erentialConstraint></Association><Association Name=\"WorkOrderProduce_WorkOrder\">" +
+                "<End Role=\"WorkOrder\" Type=\"LightSwitchApplication.WorkOrder\" Multiplicity=\"1\" /" +
+                "><End Role=\"WorkOrderProduce\" Type=\"LightSwitchApplication.WorkOrderProduce\" Mul" +
+                "tiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"WorkOrder\"><PropertyRef " +
+                "Name=\"Id\" /></Principal><Dependent Role=\"WorkOrderProduce\"><PropertyRef Name=\"Wo" +
+                "rkOrderProduce_WorkOrder\" /></Dependent></ReferentialConstraint></Association><E" +
+                "ntityContainer Name=\"ApplicationData\" m:IsDefaultEntityContainer=\"true\"><EntityS" +
+                "et Name=\"Banks\" EntityType=\"LightSwitchApplication.Bank\" /><EntitySet Name=\"Comp" +
+                "anies\" EntityType=\"LightSwitchApplication.Company\" /><EntitySet Name=\"CustomerGr" +
+                "oups\" EntityType=\"LightSwitchApplication.CustomerGroup\" /><EntitySet Name=\"Custo" +
+                "mers\" EntityType=\"LightSwitchApplication.Customer\" /><EntitySet Name=\"Locations\"" +
+                " EntityType=\"LightSwitchApplication.Location\" /><EntitySet Name=\"Machines\" Entit" +
+                "yType=\"LightSwitchApplication.Machine\" /><EntitySet Name=\"OrderRequisitionDetail" +
+                "s\" EntityType=\"LightSwitchApplication.OrderRequisitionDetail\" /><EntitySet Name=" +
+                "\"OrderRequisitions\" EntityType=\"LightSwitchApplication.OrderRequisition\" /><Enti" +
+                "tySet Name=\"Packages\" EntityType=\"LightSwitchApplication.Package\" /><EntitySet N" +
+                "ame=\"PaymentTypes\" EntityType=\"LightSwitchApplication.PaymentType\" /><EntitySet " +
+                "Name=\"PickingSlipDetails\" EntityType=\"LightSwitchApplication.PickingSlipDetail\" " +
+                "/><EntitySet Name=\"PickingSlips\" EntityType=\"LightSwitchApplication.PickingSlip\"" +
+                " /><EntitySet Name=\"ProductCategories\" EntityType=\"LightSwitchApplication.Produc" +
+                "tCategory\" /><EntitySet Name=\"ProductGroups\" EntityType=\"LightSwitchApplication." +
+                "ProductGroup\" /><EntitySet Name=\"ProductReceiveBalanceForwardDetails\" EntityType" +
+                "=\"LightSwitchApplication.ProductReceiveBalanceForwardDetail\" /><EntitySet Name=\"" +
+                "ProductReceiveBalanceForwards\" EntityType=\"LightSwitchApplication.ProductReceive" +
+                "BalanceForward\" /><EntitySet Name=\"ProductReceivePurchaseOrderDetails\" EntityTyp" +
+                "e=\"LightSwitchApplication.ProductReceivePurchaseOrderDetail\" /><EntitySet Name=\"" +
+                "ProductReceives\" EntityType=\"LightSwitchApplication.ProductReceive\" /><EntitySet" +
+                " Name=\"Products\" EntityType=\"LightSwitchApplication.Product\" /><EntitySet Name=\"" +
+                "PurchaseOrderDetails\" EntityType=\"LightSwitchApplication.PurchaseOrderDetail\" />" +
+                "<EntitySet Name=\"PurchaseOrders\" EntityType=\"LightSwitchApplication.PurchaseOrde" +
+                "r\" /><EntitySet Name=\"SaleOrderDetails\" EntityType=\"LightSwitchApplication.SaleO" +
+                "rderDetail\" /><EntitySet Name=\"SaleOrders\" EntityType=\"LightSwitchApplication.Sa" +
+                "leOrder\" /><EntitySet Name=\"StockAdjustDetails\" EntityType=\"LightSwitchApplicati" +
+                "on.StockAdjustDetail\" /><EntitySet Name=\"StockAdjusts\" EntityType=\"LightSwitchAp" +
+                "plication.StockAdjust\" /><EntitySet Name=\"StockCheckDetails\" EntityType=\"LightSw" +
+                "itchApplication.StockCheckDetail\" /><EntitySet Name=\"StockChecks\" EntityType=\"Li" +
+                "ghtSwitchApplication.StockCheck\" /><EntitySet Name=\"StockOnHandHistories\" Entity" +
+                "Type=\"LightSwitchApplication.StockOnHandHistory\" /><EntitySet Name=\"StockOnHands" +
+                "\" EntityType=\"LightSwitchApplication.StockOnHand\" /><EntitySet Name=\"StockTransa" +
+                "ctions\" EntityType=\"LightSwitchApplication.StockTransaction\" /><EntitySet Name=\"" +
+                "StockTransfers\" EntityType=\"LightSwitchApplication.StockTransfer\" /><EntitySet N" +
+                "ame=\"SupplierGroups\" EntityType=\"LightSwitchApplication.SupplierGroup\" /><Entity" +
+                "Set Name=\"Suppliers\" EntityType=\"LightSwitchApplication.Supplier\" /><EntitySet N" +
+                "ame=\"Transactions\" EntityType=\"LightSwitchApplication.Transaction\" /><EntitySet " +
+                "Name=\"TransportRoutes\" EntityType=\"LightSwitchApplication.TransportRoute\" /><Ent" +
+                "itySet Name=\"UnitOfMeasures\" EntityType=\"LightSwitchApplication.UnitOfMeasure\" /" +
+                "><EntitySet Name=\"Workers\" EntityType=\"LightSwitchApplication.Worker\" /><EntityS" +
+                "et Name=\"WorkOrderIssueDetails\" EntityType=\"LightSwitchApplication.WorkOrderIssu" +
+                "eDetail\" /><EntitySet Name=\"WorkOrderProduces\" EntityType=\"LightSwitchApplicatio" +
+                "n.WorkOrderProduce\" /><EntitySet Name=\"WorkOrders\" EntityType=\"LightSwitchApplic" +
+                "ation.WorkOrder\" /><AssociationSet Name=\"Customer_CustomerG";
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+            private const string ModelPart10 = "roup\" Association=\"LightSwitchApplication.Customer_CustomerGroup\"><End Role=\"Cust" +
+                "omerGroup\" EntitySet=\"CustomerGroups\" /><End Role=\"Customer\" EntitySet=\"Customer" +
+                "s\" /></AssociationSet><AssociationSet Name=\"SaleOrder_Customer\" Association=\"Lig" +
+                "htSwitchApplication.SaleOrder_Customer\"><End Role=\"Customer\" EntitySet=\"Customer" +
+                "s\" /><End Role=\"SaleOrder\" EntitySet=\"SaleOrders\" /></AssociationSet><Associatio" +
+                "nSet Name=\"OrderRequisition_Customer\" Association=\"LightSwitchApplication.OrderR" +
+                "equisition_Customer\"><End Role=\"Customer\" EntitySet=\"Customers\" /><End Role=\"Ord" +
+                "erRequisition\" EntitySet=\"OrderRequisitions\" /></AssociationSet><AssociationSet " +
+                "Name=\"Product_Location\" Association=\"LightSwitchApplication.Product_Location\"><E" +
+                "nd Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"Product\" EntitySet=\"Produc" +
+                "ts\" /></AssociationSet><AssociationSet Name=\"ProductReceiveBalanceForwardDe_Loca" +
+                "tion\" Association=\"LightSwitchApplication.ProductReceiveBalanceForwardDe_Locatio" +
+                "n\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"ProductReceiveBalance" +
+                "ForwardDetail\" EntitySet=\"ProductReceiveBalanceForwardDetails\" /></AssociationSe" +
+                "t><AssociationSet Name=\"StockOnHand_Location\" Association=\"LightSwitchApplicatio" +
+                "n.StockOnHand_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"" +
+                "StockOnHand\" EntitySet=\"StockOnHands\" /></AssociationSet><AssociationSet Name=\"S" +
+                "tockAdjustDetail_Location\" Association=\"LightSwitchApplication.StockAdjustDetail" +
+                "_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"StockAdjustDe" +
+                "tail\" EntitySet=\"StockAdjustDetails\" /></AssociationSet><AssociationSet Name=\"Sa" +
+                "leOrderDetail_Location\" Association=\"LightSwitchApplication.SaleOrderDetail_Loca" +
+                "tion\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"SaleOrderDetail\" E" +
+                "ntitySet=\"SaleOrderDetails\" /></AssociationSet><AssociationSet Name=\"PurchaseOrd" +
+                "erDetail_Location\" Association=\"LightSwitchApplication.PurchaseOrderDetail_Locat" +
+                "ion\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"PurchaseOrderDetail" +
+                "\" EntitySet=\"PurchaseOrderDetails\" /></AssociationSet><AssociationSet Name=\"Work" +
+                "OrderIssueDetail_Location\" Association=\"LightSwitchApplication.WorkOrderIssueDet" +
+                "ail_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"WorkOrderI" +
+                "ssueDetail\" EntitySet=\"WorkOrderIssueDetails\" /></AssociationSet><AssociationSet" +
+                " Name=\"WorkOrderProduce_Location\" Association=\"LightSwitchApplication.WorkOrderP" +
+                "roduce_Location\"><End Role=\"Location\" EntitySet=\"Locations\" /><End Role=\"WorkOrd" +
+                "erProduce\" EntitySet=\"WorkOrderProduces\" /></AssociationSet><AssociationSet Name" +
+                "=\"ProductReceivePurchaseOrderDet_Location\" Association=\"LightSwitchApplication.P" +
+                "roductReceivePurchaseOrderDet_Location\"><End Role=\"Location\" EntitySet=\"Location" +
+                "s\" /><End Role=\"ProductReceivePurchaseOrderDetail\" EntitySet=\"ProductReceivePurc" +
+                "haseOrderDetails\" /></AssociationSet><AssociationSet Name=\"PickingSlipDetail_Loc" +
+                "ation\" Association=\"LightSwitchApplication.PickingSlipDetail_Location\"><End Role" +
+                "=\"Location\" EntitySet=\"Locations\" /><End Role=\"PickingSlipDetail\" EntitySet=\"Pic" +
+                "kingSlipDetails\" /></AssociationSet><AssociationSet Name=\"WorkOrder_Machine\" Ass" +
+                "ociation=\"LightSwitchApplication.WorkOrder_Machine\"><End Role=\"Machine\" EntitySe" +
+                "t=\"Machines\" /><End Role=\"WorkOrder\" EntitySet=\"WorkOrders\" /></AssociationSet><" +
+                "AssociationSet Name=\"PickingSlipDetail_OrderRequisitionDetail\" Association=\"Ligh" +
+                "tSwitchApplication.PickingSlipDetail_OrderRequisitionDetail\"><End Role=\"OrderReq" +
+                "uisitionDetail\" EntitySet=\"OrderRequisitionDetails\" /><End Role=\"PickingSlipDeta" +
+                "il\" EntitySet=\"PickingSlipDetails\" /></AssociationSet><AssociationSet Name=\"Orde" +
+                "rRequisitionDetail_OrderRequisition\" Association=\"LightSwitchApplication.OrderRe" +
+                "quisitionDetail_OrderRequisition\"><End Role=\"OrderRequisition\" EntitySet=\"OrderR" +
+                "equisitions\" /><End Role=\"OrderRequisitionDetail\" EntitySet=\"OrderRequisitionDet" +
+                "ails\" /></AssociationSet><AssociationSet Name=\"PickingSlipDetail_PickingSlip\" As" +
+                "sociation=\"LightSwitchApplication.PickingSlipDetail_PickingSlip\"><End Role=\"Pick" +
+                "ingSlip\" EntitySet=\"PickingSlips\" /><End Role=\"PickingSlipDetail\" EntitySet=\"Pic" +
+                "kingSlipDetails\" /></AssociationSet><AssociationSet Name=\"ProductCategory_Produc" +
+                "t\" Association=\"LightSwitchApplication.ProductCategory_Product\"><End Role=\"Produ" +
+                "ctCategory\" EntitySet=\"ProductCategories\" /><End Role=\"Product\" EntitySet=\"Produ" +
+                "cts\" /></AssociationSet><AssociationSet Name=\"Product_ProductGroup\" Association=" +
+                "\"LightSwitchApplication.Product_ProductGroup\"><End Role=\"ProductGroup\" EntitySet" +
+                "=\"ProductGroups\" /><End Role=\"Product\" EntitySet=\"Products\" /></AssociationSet><" +
+                "AssociationSet Name=\"ProductReceiveBalanceForwardDe_ProductReceiveBalanceForward" +
+                "\" Association=\"LightSwitchApplication.ProductReceiveBalanceForwardDe_ProductRece" +
+                "iveBalanceForward\"><End Role=\"ProductReceiveBalanceForward\" EntitySet=\"ProductRe" +
+                "ceiveBalanceForwards\" /><End Role=\"ProductReceiveBalanceForwardDetail\" EntitySet" +
+                "=\"ProductReceiveBalanceForwardDetails\" /></AssociationSet><AssociationSet Name=\"" +
+                "ProductReceiveBalanceForwardDe_Product\" Association=\"LightSwitchApplication.Prod" +
+                "uctReceiveBalanceForwardDe_Product\"><End Role=\"Product\" EntitySet=\"Products\" /><" +
+                "End Role=\"ProductReceiveBalanceForwardDetail\" EntitySet=\"ProductReceiveBalanceFo" +
+                "rwardDetails\" /></AssociationSet><AssociationSet Name=\"StockOnHand_Product\" Asso" +
+                "ciation=\"LightSwitchApplication.StockOnHand_Product\"><End Role=\"Product\" EntityS" +
+                "et=\"Products\" /><End Role=\"StockOnHand\" EntitySet=\"StockOnHands\" /></Association" +
+                "Set><AssociationSet Name=\"StockAdjustDetail_Product\" Association=\"LightSwitchApp" +
+                "lication.StockAdjustDetail_Product\"><End Role=\"Product\" EntitySet=\"Products\" /><" +
+                "End Role=\"StockAdjustDetail\" EntitySet=\"StockAdjustDetails\" /></AssociationSet><" +
+                "AssociationSet Name=\"SaleOrderDetail_Product\" Association=\"LightSwitchApplicatio" +
+                "n.SaleOrderDetail_Product\"><End Role=\"Product\" EntitySet=\"Products\" /><End Role=" +
+                "\"SaleOrderDetail\" EntitySet=\"SaleOrderDetails\" /></AssociationSet><AssociationSe" +
+                "t Name=\"PurchaseOrderDetail_Product\" Association=\"LightSwitchApplication.Purchas" +
+                "eOrderDetail_Product\"><End Role=\"Product\" EntitySet=\"Products\" /><End Role=\"Purc" +
+                "haseOrderDetail\" EntitySet=\"PurchaseOrderDetails\" /></AssociationSet><Associatio" +
+                "nSet Name=\"WorkOrderIssueDetail_Product\" Association=\"LightSwitchApplication.Wor" +
+                "kOrderIssueDetail_Product\"><End Role=\"Product\" EntitySet=\"Products\" /><End Role=" +
+                "\"WorkOrderIssueDetail\" EntitySet=\"WorkOrderIssueDetails\" /></AssociationSet><Ass" +
+                "ociationSet Name=\"WorkOrderProduce_Product\" Association=\"LightSwitchApplication." +
+                "WorkOrderProduce_Product\"><End Role=\"Product\" EntitySet=\"Products\" /><End Role=\"" +
+                "WorkOrderProduce\" EntitySet=\"WorkOrderProduces\" /></AssociationSet><AssociationS" +
+                "et Name=\"ProductReceivePurchaseOrderDet_Product\" Association=\"LightSwitchApplica" +
+                "tion.ProductReceivePurchaseOrderDet_Product\"><End Role=\"Product\" EntitySet=\"Prod" +
+                "ucts\" /><End Role=\"ProductReceivePurchaseOrderDetail\" EntitySet=\"ProductReceiveP" +
+                "urchaseOrderDetails\" /></AssociationSet><AssociationSet Name=\"OrderRequisitionDe" +
+                "tail_Product\" Association=\"LightSwitchApplication.OrderRequisitionDetail_Product" +
+                "\"><End Role=\"Product\" EntitySet=\"Products\" /><End Role=\"OrderRequisitionDetail\" " +
+                "EntitySet=\"OrderRequisitionDetails\" /></AssociationSet><AssociationSet Name=\"Pro" +
+                "ductReceivePurchaseOrderDet_PurchaseOrderDetail\" Association=\"LightSwitchApplica" +
+                "tion.ProductReceivePurchaseOrderDet_PurchaseOrderDetail\"><End Role=\"PurchaseOrde" +
+                "rDetail\" EntitySet=\"PurchaseOrderDetails\" /><End Role=\"ProductReceivePurchaseOrd" +
+                "erDetail\" EntitySet=\"ProductReceivePurchaseOrderDetails\" />";
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+            private const string ModelPart11 = "</AssociationSet><AssociationSet Name=\"PurchaseOrderDetail_PurchaseOrder\" Associa" +
+                "tion=\"LightSwitchApplication.PurchaseOrderDetail_PurchaseOrder\"><End Role=\"Purch" +
+                "aseOrder\" EntitySet=\"PurchaseOrders\" /><End Role=\"PurchaseOrderDetail\" EntitySet" +
+                "=\"PurchaseOrderDetails\" /></AssociationSet><AssociationSet Name=\"SaleOrderDetail" +
+                "_SaleOrder\" Association=\"LightSwitchApplication.SaleOrderDetail_SaleOrder\"><End " +
+                "Role=\"SaleOrder\" EntitySet=\"SaleOrders\" /><End Role=\"SaleOrderDetail\" EntitySet=" +
+                "\"SaleOrderDetails\" /></AssociationSet><AssociationSet Name=\"StockAdjustDetail_St" +
+                "ockAdjust\" Association=\"LightSwitchApplication.StockAdjustDetail_StockAdjust\"><E" +
+                "nd Role=\"StockAdjust\" EntitySet=\"StockAdjusts\" /><End Role=\"StockAdjustDetail\" E" +
+                "ntitySet=\"StockAdjustDetails\" /></AssociationSet><AssociationSet Name=\"StockChec" +
+                "kDetail_StockCheck\" Association=\"LightSwitchApplication.StockCheckDetail_StockCh" +
+                "eck\"><End Role=\"StockCheck\" EntitySet=\"StockChecks\" /><End Role=\"StockCheckDetai" +
+                "l\" EntitySet=\"StockCheckDetails\" /></AssociationSet><AssociationSet Name=\"Suppli" +
+                "er_SupplierGroup\" Association=\"LightSwitchApplication.Supplier_SupplierGroup\"><E" +
+                "nd Role=\"SupplierGroup\" EntitySet=\"SupplierGroups\" /><End Role=\"Supplier\" Entity" +
+                "Set=\"Suppliers\" /></AssociationSet><AssociationSet Name=\"PurchaseOrder_Supplier\"" +
+                " Association=\"LightSwitchApplication.PurchaseOrder_Supplier\"><End Role=\"Supplier" +
+                "\" EntitySet=\"Suppliers\" /><End Role=\"PurchaseOrder\" EntitySet=\"PurchaseOrders\" /" +
+                "></AssociationSet><AssociationSet Name=\"Customer_TransportRoute\" Association=\"Li" +
+                "ghtSwitchApplication.Customer_TransportRoute\"><End Role=\"TransportRoute\" EntityS" +
+                "et=\"TransportRoutes\" /><End Role=\"Customer\" EntitySet=\"Customers\" /></Associatio" +
+                "nSet><AssociationSet Name=\"PickingSlip_TransportRoute\" Association=\"LightSwitchA" +
+                "pplication.PickingSlip_TransportRoute\"><End Role=\"TransportRoute\" EntitySet=\"Tra" +
+                "nsportRoutes\" /><End Role=\"PickingSlip\" EntitySet=\"PickingSlips\" /></Association" +
+                "Set><AssociationSet Name=\"Product_UnitOfMeasure\" Association=\"LightSwitchApplica" +
+                "tion.Product_UnitOfMeasure\"><End Role=\"UnitOfMeasure\" EntitySet=\"UnitOfMeasures\"" +
+                " /><End Role=\"Product\" EntitySet=\"Products\" /></AssociationSet><AssociationSet N" +
+                "ame=\"WorkOrderIssueDetail_WorkOrder\" Association=\"LightSwitchApplication.WorkOrd" +
+                "erIssueDetail_WorkOrder\"><End Role=\"WorkOrder\" EntitySet=\"WorkOrders\" /><End Rol" +
+                "e=\"WorkOrderIssueDetail\" EntitySet=\"WorkOrderIssueDetails\" /></AssociationSet><A" +
+                "ssociationSet Name=\"WorkOrderProduce_WorkOrder\" Association=\"LightSwitchApplicat" +
+                "ion.WorkOrderProduce_WorkOrder\"><End Role=\"WorkOrder\" EntitySet=\"WorkOrders\" /><" +
+                "End Role=\"WorkOrderProduce\" EntitySet=\"WorkOrderProduces\" /></AssociationSet><Fu" +
+                "nctionImport Name=\"BankActiveQuery\" ReturnType=\"Collection(LightSwitchApplicatio" +
+                "n.Bank)\" EntitySet=\"Banks\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"CustomerGr" +
+                "oupActiveQuery\" ReturnType=\"Collection(LightSwitchApplication.CustomerGroup)\" En" +
+                "titySet=\"CustomerGroups\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"CustomersAct" +
+                "iveQuery\" ReturnType=\"Collection(LightSwitchApplication.Customer)\" EntitySet=\"Cu" +
+                "stomers\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"QueryCustomerGroupByTranspor" +
+                "tRoute\" ReturnType=\"Collection(LightSwitchApplication.Customer)\" EntitySet=\"Cust" +
+                "omers\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"LocationActiveQuery\" ReturnTyp" +
+                "e=\"Collection(LightSwitchApplication.Location)\" EntitySet=\"Locations\" m:HttpMeth" +
+                "od=\"GET\" /><FunctionImport Name=\"MachineActiveQuery\" ReturnType=\"Collection(Ligh" +
+                "tSwitchApplication.Machine)\" EntitySet=\"Machines\" m:HttpMethod=\"GET\" /><Function" +
+                "Import Name=\"QueryRequisitionDetailPicking\" ReturnType=\"Collection(LightSwitchAp" +
+                "plication.OrderRequisitionDetail)\" EntitySet=\"OrderRequisitionDetails\" m:HttpMet" +
+                "hod=\"GET\"><Parameter Name=\"SelectedTransportRouteID\" Type=\"Edm.Int32\" Mode=\"In\" " +
+                "/></FunctionImport><FunctionImport Name=\"GetMaxOrderRequisitionNo\" ReturnType=\"C" +
+                "ollection(LightSwitchApplication.OrderRequisition)\" EntitySet=\"OrderRequisitions" +
+                "\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"QueryOrderRequisitionTransportRoute" +
+                "\" ReturnType=\"Collection(LightSwitchApplication.OrderRequisition)\" EntitySet=\"Or" +
+                "derRequisitions\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"PackageActiveQuery\" " +
+                "ReturnType=\"Collection(LightSwitchApplication.Package)\" EntitySet=\"Packages\" m:H" +
+                "ttpMethod=\"GET\" /><FunctionImport Name=\"PaymentTypeActiveQuery\" ReturnType=\"Coll" +
+                "ection(LightSwitchApplication.PaymentType)\" EntitySet=\"PaymentTypes\" m:HttpMetho" +
+                "d=\"GET\" /><FunctionImport Name=\"QueryMaxPickingNumber\" ReturnType=\"Collection(Li" +
+                "ghtSwitchApplication.PickingSlip)\" EntitySet=\"PickingSlips\" m:HttpMethod=\"GET\" /" +
+                "><FunctionImport Name=\"ProductCategoriesActiveQuery\" ReturnType=\"Collection(Ligh" +
+                "tSwitchApplication.ProductCategory)\" EntitySet=\"ProductCategories\" m:HttpMethod=" +
+                "\"GET\" /><FunctionImport Name=\"ProductGroupsActiveQuery\" ReturnType=\"Collection(L" +
+                "ightSwitchApplication.ProductGroup)\" EntitySet=\"ProductGroups\" m:HttpMethod=\"GET" +
+                "\" /><FunctionImport Name=\"QueryLatestProductReceiveBalanceForwardDocumentNo\" Ret" +
+                "urnType=\"Collection(LightSwitchApplication.ProductReceiveBalanceForward)\" Entity" +
+                "Set=\"ProductReceiveBalanceForwards\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"Q" +
+                "ueryMaxReceivePONumber\" ReturnType=\"Collection(LightSwitchApplication.ProductRec" +
+                "eivePurchaseOrderDetail)\" EntitySet=\"ProductReceivePurchaseOrderDetails\" m:HttpM" +
+                "ethod=\"GET\" /><FunctionImport Name=\"ProductsActiveQuery\" ReturnType=\"Collection(" +
+                "LightSwitchApplication.Product)\" EntitySet=\"Products\" m:HttpMethod=\"GET\" /><Func" +
+                "tionImport Name=\"PurchaseOrderDetailByPOId\" ReturnType=\"Collection(LightSwitchAp" +
+                "plication.PurchaseOrderDetail)\" EntitySet=\"PurchaseOrderDetails\" m:HttpMethod=\"G" +
+                "ET\"><Parameter Name=\"POId\" Type=\"Edm.Int32\" Mode=\"In\" /></FunctionImport><Functi" +
+                "onImport Name=\"PurchaseOrderClosed\" ReturnType=\"Collection(LightSwitchApplicatio" +
+                "n.PurchaseOrder)\" EntitySet=\"PurchaseOrders\" m:HttpMethod=\"GET\" /><FunctionImpor" +
+                "t Name=\"PurchaseOrderNotClose\" ReturnType=\"Collection(LightSwitchApplication.Pur" +
+                "chaseOrder)\" EntitySet=\"PurchaseOrders\" m:HttpMethod=\"GET\" /><FunctionImport Nam" +
+                "e=\"QueryMaxPONumber\" ReturnType=\"Collection(LightSwitchApplication.PurchaseOrder" +
+                ")\" EntitySet=\"PurchaseOrders\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"QueryMa" +
+                "xSONumber\" ReturnType=\"Collection(LightSwitchApplication.SaleOrder)\" EntitySet=\"" +
+                "SaleOrders\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"QueryStockOnHandForIssue\"" +
+                " ReturnType=\"Collection(LightSwitchApplication.StockOnHand)\" EntitySet=\"StockOnH" +
+                "ands\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"StockOnHandForSale\" ReturnType=" +
+                "\"Collection(LightSwitchApplication.StockOnHand)\" EntitySet=\"StockOnHands\" m:Http" +
+                "Method=\"GET\" /><FunctionImport Name=\"SupplierGroupsActiveQuery\" ReturnType=\"Coll" +
+                "ection(LightSwitchApplication.SupplierGroup)\" EntitySet=\"SupplierGroups\" m:HttpM" +
+                "ethod=\"GET\" /><FunctionImport Name=\"SupplierActiveQuery\" ReturnType=\"Collection(" +
+                "LightSwitchApplication.Supplier)\" EntitySet=\"Suppliers\" m:HttpMethod=\"GET\" /><Fu" +
+                "nctionImport Name=\"TransportRoutesActiveQuery\" ReturnType=\"Collection(LightSwitc" +
+                "hApplication.TransportRoute)\" EntitySet=\"TransportRoutes\" m:HttpMethod=\"GET\" /><" +
+                "FunctionImport Name=\"UnitOfMeasuresActiveQuery\" ReturnType=\"Collection(LightSwit" +
+                "chApplication.UnitOfMeasure)\" EntitySet=\"UnitOfMeasures\" m:HttpMethod=\"GET\" /><F" +
+                "unctionImport Name=\"WorkersActiveQuery\" ReturnType=\"Collection(LightSwitchApplic" +
+                "ation.Worker)\" EntitySet=\"Workers\" m:HttpMethod=\"GET\" /><FunctionImport Name=\"Qu" +
+                "eryMaxWONumber\" ReturnType=\"Collection(LightSwitchApplication.WorkOrder)\" Entity" +
+                "Set=\"WorkOrders\" m:HttpMethod=\"GET\" /><FunctionImport Name=";
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+            private const string ModelPart12 = @"""WorkOrderIsNotReceive"" ReturnType=""Collection(LightSwitchApplication.WorkOrder)"" EntitySet=""WorkOrders"" m:HttpMethod=""GET"" /><FunctionImport Name=""Microsoft_LightSwitch_GetCanInformation"" ReturnType=""Edm.String"" m:HttpMethod=""GET""><Parameter Name=""dataServiceMembers"" Type=""Edm.String"" Mode=""In"" /></FunctionImport></EntityContainer></Schema></edmx:DataServices></edmx:Edmx>";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
             private static string GetConcatenatedEdmxString()
             {
-                return string.Concat(ModelPart0, ModelPart1, ModelPart2, ModelPart3, ModelPart4, ModelPart5, ModelPart6, ModelPart7, ModelPart8, ModelPart9, ModelPart10, ModelPart11);
+                return string.Concat(ModelPart0, ModelPart1, ModelPart2, ModelPart3, ModelPart4, ModelPart5, ModelPart6, ModelPart7, ModelPart8, ModelPart9, ModelPart10, ModelPart11, ModelPart12);
             }
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
             public static global::Microsoft.Data.Edm.IEdmModel GetInstance()
@@ -6662,21 +6668,23 @@ namespace LightSwitchApplication.Implementation
         /// <param name="pickingNo">Initial value of PickingNo.</param>
         /// <param name="pickingDate">Initial value of PickingDate.</param>
         /// <param name="pickingSlip_TransportRoute">Initial value of PickingSlip_TransportRoute.</param>
+        /// <param name="truckLicense">Initial value of TruckLicense.</param>
+        /// <param name="truckCapacityWeight">Initial value of TruckCapacityWeight.</param>
         /// <param name="totalWeight">Initial value of TotalWeight.</param>
         /// <param name="status">Initial value of Status.</param>
-        /// <param name="remark">Initial value of Remark.</param>
         /// <param name="rowVersion">Initial value of RowVersion.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static PickingSlip CreatePickingSlip(int ID, string pickingNo, global::System.DateTime pickingDate, int pickingSlip_TransportRoute, double totalWeight, bool status, string remark, byte[] rowVersion)
+        public static PickingSlip CreatePickingSlip(int ID, string pickingNo, global::System.DateTime pickingDate, int pickingSlip_TransportRoute, string truckLicense, double truckCapacityWeight, double totalWeight, bool status, byte[] rowVersion)
         {
             PickingSlip pickingSlip = new PickingSlip();
             pickingSlip.Id = ID;
             pickingSlip.PickingNo = pickingNo;
             pickingSlip.PickingDate = pickingDate;
             pickingSlip.PickingSlip_TransportRoute = pickingSlip_TransportRoute;
+            pickingSlip.TruckLicense = truckLicense;
+            pickingSlip.TruckCapacityWeight = truckCapacityWeight;
             pickingSlip.TotalWeight = totalWeight;
             pickingSlip.Status = status;
-            pickingSlip.Remark = remark;
             pickingSlip.RowVersion = rowVersion;
             return pickingSlip;
         }
@@ -6785,6 +6793,58 @@ namespace LightSwitchApplication.Implementation
         partial void OnPickingSlip_TransportRouteChanging(int value);
         partial void OnPickingSlip_TransportRouteChanged();
         /// <summary>
+        /// There are no comments for Property TruckLicense in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string TruckLicense
+        {
+            get
+            {
+                return this._TruckLicense;
+            }
+            set
+            {
+                this.OnTruckLicenseChanging(value);
+                if (object.Equals(this.TruckLicense, value))
+                {
+                    return;
+                }
+                this._TruckLicense = value;
+                this.OnTruckLicenseChanged();
+                this.OnPropertyChanged("TruckLicense");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _TruckLicense;
+        partial void OnTruckLicenseChanging(string value);
+        partial void OnTruckLicenseChanged();
+        /// <summary>
+        /// There are no comments for Property TruckCapacityWeight in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public double TruckCapacityWeight
+        {
+            get
+            {
+                return this._TruckCapacityWeight;
+            }
+            set
+            {
+                this.OnTruckCapacityWeightChanging(value);
+                if (object.Equals(this.TruckCapacityWeight, value))
+                {
+                    return;
+                }
+                this._TruckCapacityWeight = value;
+                this.OnTruckCapacityWeightChanged();
+                this.OnPropertyChanged("TruckCapacityWeight");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private double _TruckCapacityWeight;
+        partial void OnTruckCapacityWeightChanging(double value);
+        partial void OnTruckCapacityWeightChanged();
+        /// <summary>
         /// There are no comments for Property TotalWeight in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -6811,32 +6871,6 @@ namespace LightSwitchApplication.Implementation
         partial void OnTotalWeightChanging(double value);
         partial void OnTotalWeightChanged();
         /// <summary>
-        /// There are no comments for Property Status in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public bool Status
-        {
-            get
-            {
-                return this._Status;
-            }
-            set
-            {
-                this.OnStatusChanging(value);
-                if (object.Equals(this.Status, value))
-                {
-                    return;
-                }
-                this._Status = value;
-                this.OnStatusChanged();
-                this.OnPropertyChanged("Status");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private bool _Status;
-        partial void OnStatusChanging(bool value);
-        partial void OnStatusChanged();
-        /// <summary>
         /// There are no comments for Property Remark in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -6862,6 +6896,32 @@ namespace LightSwitchApplication.Implementation
         private string _Remark;
         partial void OnRemarkChanging(string value);
         partial void OnRemarkChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public bool Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                if (object.Equals(this.Status, value))
+                {
+                    return;
+                }
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private bool _Status;
+        partial void OnStatusChanging(bool value);
+        partial void OnStatusChanged();
         /// <summary>
         /// There are no comments for Property CreatedBy in the schema.
         /// </summary>

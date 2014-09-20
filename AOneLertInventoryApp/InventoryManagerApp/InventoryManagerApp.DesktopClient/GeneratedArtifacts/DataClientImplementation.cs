@@ -1443,19 +1443,29 @@ namespace LightSwitchApplication.Implementation
             this.___OnPropertyChanged("PickingDate");
         }
         
+        partial void OnTruckLicenseChanged()
+        {
+            this.___OnPropertyChanged("TruckLicense");
+        }
+        
+        partial void OnTruckCapacityWeightChanged()
+        {
+            this.___OnPropertyChanged("TruckCapacityWeight");
+        }
+        
         partial void OnTotalWeightChanged()
         {
             this.___OnPropertyChanged("TotalWeight");
         }
         
-        partial void OnStatusChanged()
-        {
-            this.___OnPropertyChanged("Status");
-        }
-        
         partial void OnRemarkChanged()
         {
             this.___OnPropertyChanged("Remark");
+        }
+        
+        partial void OnStatusChanged()
+        {
+            this.___OnPropertyChanged("Status");
         }
         
         partial void OnCreatedByChanged()

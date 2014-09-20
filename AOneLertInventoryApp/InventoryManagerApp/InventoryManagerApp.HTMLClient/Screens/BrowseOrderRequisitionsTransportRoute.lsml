@@ -85,6 +85,19 @@
                             EntityType="PickingSlip"
                             TargetParameter="!module/Methods[showAddEditPickingSlip]/Parameters[PickingSlip]" />
                         </CallExpression.Attributes>
+                        <ArgumentExpression
+                          Parameter="SelectedTransportRoute">
+                          <ChainExpression>
+                            <MemberExpression
+                              Member="BrowseOrderRequisitionsTransportRoute/Properties[QueryOrderRequisitionTransportRoute]" />
+                            <MemberExpression
+                              Member="selectedItem" />
+                            <MemberExpression
+                              Member="Customer" />
+                            <MemberExpression
+                              Member="TransportRoute" />
+                          </ChainExpression>
+                        </ArgumentExpression>
                       </CallExpression>
                     </ChainExpression>
                   </ScreenExpressionTree>
@@ -134,6 +147,8 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
+      <ScreenMethod
+        Name="QueryOrderRequisitionTransportRoute_ItemTap" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty
@@ -159,6 +174,48 @@
           <ChainExpression>
             <CallExpression
               Target="BrowseOrderRequisitionsTransportRoute/Properties[QueryOrderRequisitionTransportRoute]/Query" />
+          </ChainExpression>
+        </ScreenExpressionTree>
+      </ScreenCollectionProperty>
+      <ScreenCollectionProperty
+        Name="QueryRequisitionDetailPicking"
+        PageSize="45"
+        PropertyType="CollectionView$OrderRequisitionDetail">
+        <ScreenCollectionProperty.Query>
+          <ScreenQueryDefinition
+            Name="QueryRequisitionDetailPickingQuery"
+            ReturnType="OrderRequisitionDetail*">
+            <ScreenQueryDefinition.FilterExpression>
+              <QueryFilterExpressionTree />
+            </ScreenQueryDefinition.FilterExpression>
+            <ScreenQueryDefinition.Source>
+              <QuerySourceExpressionTree>
+                <MemberExpression
+                  Member="ApplicationData/Members[QueryRequisitionDetailPicking]" />
+              </QuerySourceExpressionTree>
+            </ScreenQueryDefinition.Source>
+          </ScreenQueryDefinition>
+        </ScreenCollectionProperty.Query>
+        <ScreenExpressionTree>
+          <ChainExpression>
+            <CallExpression
+              Target="BrowseOrderRequisitionsTransportRoute/Properties[QueryRequisitionDetailPicking]/Query">
+              <ArgumentExpression
+                Parameter="SelectedTransportRouteID">
+                <ChainExpression>
+                  <MemberExpression
+                    Member="BrowseOrderRequisitionsTransportRoute/Properties[QueryOrderRequisitionTransportRoute]" />
+                  <MemberExpression
+                    Member="selectedItem" />
+                  <MemberExpression
+                    Member="Customer" />
+                  <MemberExpression
+                    Member="TransportRoute" />
+                  <MemberExpression
+                    Member="Id" />
+                </ChainExpression>
+              </ArgumentExpression>
+            </CallExpression>
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>

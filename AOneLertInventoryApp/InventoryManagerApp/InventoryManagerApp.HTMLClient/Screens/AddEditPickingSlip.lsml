@@ -9,6 +9,8 @@
     <Screen.Attributes>
       <SaveChangesTo
         EntityContainer="ApplicationData" />
+      <DisplayName
+        Value="ใบจัดสินค้าขึ้นรถ" />
     </Screen.Attributes>
     <Screen.RootContentItem>
       <ContentItem
@@ -25,7 +27,7 @@
             View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
             <ContentItem.Attributes>
               <DisplayName
-                Value="Details" />
+                Value="ข้อมูลการจัดสินค้า" />
             </ContentItem.Attributes>
             <ContentItem
               Name="columns"
@@ -51,6 +53,10 @@
                   Name="PickingNo"
                   Kind="Value"
                   DataType=":String">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="เลขที่ใบจัด" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -59,11 +65,27 @@
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MaxWidth]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="200"
+                            ResultType=":Double" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
                   Name="PickingDate"
                   Kind="Value"
                   DataType=":Date">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="วันที่สั่งจัด" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -77,6 +99,10 @@
                   Name="TransportRoute"
                   Kind="Details"
                   DataType="TransportRoute">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="สายส่ง" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -95,6 +121,45 @@
                       </ScreenExpressionTree>
                     </ContentItem.DataSource>
                   </ContentItem>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MaxWidth]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="200"
+                            ResultType=":Double" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
+                  Name="right"
+                  Kind="Group"
+                  View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MinWidth]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="200"
+                            ResultType=":Double" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MaxWidth]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="400"
+                            ResultType=":Double" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
@@ -120,21 +185,107 @@
                 </ContentItem.PropertySources>
               </ContentItem>
               <ContentItem
-                Name="right"
-                Kind="Group">
+                Name="Group1"
+                Kind="Group"
+                View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
                 <ContentItem
-                  Name="TotalWeight"
+                  Name="TruckLicense"
                   Kind="Value"
-                  DataType=":Double">
+                  DataType=":String">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="ทะเบียนรถ" />
+                  </ContentItem.Attributes>
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="PickingSlip/Properties[TotalWeight]" />
+                          Member="AddEditPickingSlip/Properties[PickingSlip]" />
+                        <MemberExpression
+                          Member="TruckLicense" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MaxWidth]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="200"
+                            ResultType=":Double" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
+                <ContentItem
+                  Name="TruckCapacityWeight"
+                  Kind="Value"
+                  DataType=":Double">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="นน.บรรทุก รถขนส่ง" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="AddEditPickingSlip/Properties[PickingSlip]" />
+                        <MemberExpression
+                          Member="TruckCapacityWeight" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MaxWidth]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="200"
+                            ResultType=":Double" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
+                  Name="TotalWeight"
+                  Kind="Value"
+                  DataType=":Double">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="นน.จัดรวม" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="AddEditPickingSlip/Properties[PickingSlip]" />
+                        <MemberExpression
+                          Member="TotalWeight" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MaxWidth]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="200"
+                            ResultType=":Double" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+              </ContentItem>
+              <ContentItem
+                Name="Group3"
+                Kind="Group"
+                View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
                 <ContentItem
                   Name="Status"
                   Kind="Value"
@@ -143,7 +294,9 @@
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="PickingSlip/Properties[Status]" />
+                          Member="AddEditPickingSlip/Properties[PickingSlip]" />
+                        <MemberExpression
+                          Member="Status" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -151,204 +304,299 @@
                 <ContentItem
                   Name="Remark"
                   Kind="Value"
-                  DataType=":String">
+                  DataType=":String?"
+                  View="Microsoft.LightSwitch.MobileWeb:TextArea">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="PickingSlip/Properties[Remark]" />
+                          Member="AddEditPickingSlip/Properties[PickingSlip]" />
+                        <MemberExpression
+                          Member="Remark" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MaxWidth]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="250"
+                            ResultType=":Double" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
-                <ContentItem.PropertySources>
-                  <ControlPropertySource
-                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MinWidth]">
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <ConstantExpression
-                          Value="200"
-                          ResultType=":Double" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ControlPropertySource>
-                  <ControlPropertySource
-                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MaxWidth]">
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <ConstantExpression
-                          Value="400"
-                          ResultType=":Double" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ControlPropertySource>
-                </ContentItem.PropertySources>
               </ContentItem>
             </ContentItem>
             <ContentItem
-              Name="PickingSlipDetails"
-              Kind="Group"
-              View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
+              Name="Group"
+              Kind="Group">
               <ContentItem
-                Name="PickingSlipDetails1"
+                Name="QueryRequisitionDetailPicking"
                 Kind="Collection"
-                DataType="CollectionView$PickingSlipDetail"
+                DataType="CollectionView$OrderRequisitionDetail"
                 View="Microsoft.LightSwitch.MobileWeb:Table">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="รายการสั่งซื้อ" />
+                </ContentItem.Attributes>
                 <ContentItem.DataSource>
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <MemberExpression
-                        Member="AddEditPickingSlip/Properties[PickingSlipDetails]" />
+                        Member="AddEditPickingSlip/Properties[QueryRequisitionDetailPicking]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ContentItem.DataSource>
                 <ContentItem
-                  Name="RowTemplate1"
+                  Name="QueryRequisitionDetailPickingTemplate"
                   Kind="Details"
-                  DataType="PickingSlipDetail">
+                  DataType="OrderRequisitionDetail">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression />
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                   <ContentItem
-                    Name="OrderRequisitionDetail"
-                    Kind="Details"
-                    DataType="OrderRequisitionDetail">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="PickingSlipDetail/Properties[OrderRequisitionDetail]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                    <ContentItem
-                      Name="RowTemplate2"
-                      Kind="Details"
-                      DataType="OrderRequisitionDetail">
-                      <ContentItem.DataSource>
-                        <ScreenExpressionTree>
-                          <ChainExpression />
-                        </ScreenExpressionTree>
-                      </ContentItem.DataSource>
-                    </ContentItem>
-                  </ContentItem>
-                  <ContentItem
-                    Name="LotNo"
+                    Name="CustomerName"
                     Kind="Value"
                     DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="ชื่อลูกค้า" />
+                    </ContentItem.Attributes>
                     <ContentItem.DataSource>
                       <ScreenExpressionTree>
                         <ChainExpression>
                           <MemberExpression
-                            Member="PickingSlipDetail/Properties[LotNo]" />
+                            Member="OrderRequisitionDetail/Properties[OrderRequisition]" />
+                          <MemberExpression
+                            Member="Customer" />
+                          <MemberExpression
+                            Member="CustomerName" />
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ContentItem.DataSource>
                   </ContentItem>
                   <ContentItem
-                    Name="Location"
-                    Kind="Details"
-                    DataType="Location">
+                    Name="ProductCode"
+                    Kind="Value"
+                    DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="รหัสสินค้า" />
+                    </ContentItem.Attributes>
                     <ContentItem.DataSource>
                       <ScreenExpressionTree>
                         <ChainExpression>
                           <MemberExpression
-                            Member="PickingSlipDetail/Properties[Location]" />
+                            Member="OrderRequisitionDetail/Properties[Product]" />
+                          <MemberExpression
+                            Member="ProductCode" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="ProductName"
+                    Kind="Value"
+                    DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="ชื่อสินค้า" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="OrderRequisitionDetail/Properties[Product]" />
+                          <MemberExpression
+                            Member="ProductName" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="Quantity"
+                    Kind="Value"
+                    DataType=":Double">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="จำนวนสั่ง" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="OrderRequisitionDetail/Properties[Quantity]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="DeliveredQuantity"
+                    Kind="Value"
+                    DataType=":Double">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="จำนวนส่ง" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="OrderRequisitionDetail/Properties[DeliveredQuantity]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="UOMName"
+                    Kind="Value"
+                    DataType=":String">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="หน่วย" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="OrderRequisitionDetail/Properties[Product]" />
+                          <MemberExpression
+                            Member="UnitOfMeasure" />
+                          <MemberExpression
+                            Member="UOMName" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="UnitWeight"
+                    Kind="Value"
+                    DataType=":Double?">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="นน./หน่วย" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="OrderRequisitionDetail/Properties[Product]" />
+                          <MemberExpression
+                            Member="UnitWeight" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="Status1"
+                    IsHidden="True"
+                    Kind="Value"
+                    DataType=":Boolean">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="OrderRequisitionDetail/Properties[Status]" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                  <ContentItem
+                    Name="PickingSlipDetails1"
+                    Kind="Collection"
+                    DataType="CollectionView$PickingSlipDetail"
+                    View="Microsoft.LightSwitch.MobileWeb:List">
+                    <ContentItem.Attributes>
+                      <DisplayName
+                        Value="รายการจัดสินค้า" />
+                    </ContentItem.Attributes>
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="AddEditPickingSlip/Properties[PickingSlipDetails]" />
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ContentItem.DataSource>
                     <ContentItem
-                      Name="RowTemplate3"
+                      Name="PickingSlipDetails1Template"
                       Kind="Details"
-                      DataType="Location">
+                      DataType="PickingSlipDetail"
+                      View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
                       <ContentItem.DataSource>
                         <ScreenExpressionTree>
                           <ChainExpression />
                         </ScreenExpressionTree>
                       </ContentItem.DataSource>
+                      <ContentItem
+                        Name="LocationName"
+                        Kind="Value"
+                        DataType=":String">
+                        <ContentItem.Attributes>
+                          <DisplayName
+                            Value="เบิกจากสถานที่" />
+                        </ContentItem.Attributes>
+                        <ContentItem.DataSource>
+                          <ScreenExpressionTree>
+                            <ChainExpression>
+                              <MemberExpression
+                                Member="PickingSlipDetail/Properties[Location]" />
+                              <MemberExpression
+                                Member="LocationName" />
+                            </ChainExpression>
+                          </ScreenExpressionTree>
+                        </ContentItem.DataSource>
+                      </ContentItem>
+                      <ContentItem
+                        Name="LotNo"
+                        Kind="Value"
+                        DataType=":String">
+                        <ContentItem.DataSource>
+                          <ScreenExpressionTree>
+                            <ChainExpression>
+                              <MemberExpression
+                                Member="PickingSlipDetail/Properties[LotNo]" />
+                            </ChainExpression>
+                          </ScreenExpressionTree>
+                        </ContentItem.DataSource>
+                      </ContentItem>
+                      <ContentItem
+                        Name="PickingQuantity"
+                        Kind="Value"
+                        DataType=":Double">
+                        <ContentItem.Attributes>
+                          <DisplayName
+                            Value="จำนวนจัด" />
+                        </ContentItem.Attributes>
+                        <ContentItem.DataSource>
+                          <ScreenExpressionTree>
+                            <ChainExpression>
+                              <MemberExpression
+                                Member="PickingSlipDetail/Properties[PickingQuantity]" />
+                            </ChainExpression>
+                          </ScreenExpressionTree>
+                        </ContentItem.DataSource>
+                      </ContentItem>
                     </ContentItem>
                   </ContentItem>
-                  <ContentItem
-                    Name="PickingQuantity"
-                    Kind="Value"
-                    DataType=":Double">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="PickingSlipDetail/Properties[PickingQuantity]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                  <ContentItem
-                    Name="UnitPrice"
-                    Kind="Value"
-                    DataType="Microsoft.LightSwitch.Extensions:Money">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="PickingSlipDetail/Properties[UnitPrice]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                  <ContentItem
-                    Name="CreatedBy"
-                    Kind="Value"
-                    DataType=":Person?">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="PickingSlipDetail/Properties[CreatedBy]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                  <ContentItem
-                    Name="Created"
-                    Kind="Value"
-                    DataType=":DateTimeOffset?">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="PickingSlipDetail/Properties[Created]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                  <ContentItem
-                    Name="ModifiedBy"
-                    Kind="Value"
-                    DataType=":Person?">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="PickingSlipDetail/Properties[ModifiedBy]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                  <ContentItem
-                    Name="Modified"
-                    Kind="Value"
-                    DataType=":DateTimeOffset?">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="PickingSlipDetail/Properties[Modified]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
                 </ContentItem>
+                <ContentItem.PropertySources>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootCollectionControl/Properties[ItemTap]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <CallExpression
+                          Target="AddEditPickingSlip/Methods[QueryRequisitionDetailPicking_ItemTap]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                </ContentItem.PropertySources>
               </ContentItem>
             </ContentItem>
           </ContentItem>
@@ -394,6 +642,8 @@
           Name="dialogName"
           ParameterType=":String" />
       </ScreenMethod>
+      <ScreenMethod
+        Name="QueryRequisitionDetailPicking_ItemTap" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenProperty
@@ -403,22 +653,105 @@
           <IsParameter />
         </ScreenProperty.Attributes>
       </ScreenProperty>
+      <ScreenProperty
+        Name="SelectedTransportRoute"
+        PropertyType="TransportRoute">
+        <ScreenProperty.Attributes>
+          <IsParameter />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
+      <ScreenCollectionProperty
+        Name="QueryRequisitionDetailPicking"
+        PageSize="45"
+        PropertyType="CollectionView$OrderRequisitionDetail">
+        <ScreenCollectionProperty.Query>
+          <ScreenQueryDefinition
+            Name="QueryRequisitionDetailPickingQuery"
+            ReturnType="OrderRequisitionDetail*">
+            <ScreenQueryDefinition.FilterExpression>
+              <QueryFilterExpressionTree>
+                <BinaryExpression
+                  NodeType="Equal">
+                  <BinaryExpression.Left>
+                    <ChainExpression>
+                      <MemberExpression
+                        Member="OrderRequisitionDetail/Properties[OrderRequisition]" />
+                      <MemberExpression
+                        Member="Customer" />
+                      <MemberExpression
+                        Member="TransportRoute" />
+                      <MemberExpression
+                        Member="Id" />
+                    </ChainExpression>
+                  </BinaryExpression.Left>
+                  <BinaryExpression.Right>
+                    <ParameterExpression
+                      Parameter="SelectedTransportRouteID" />
+                  </BinaryExpression.Right>
+                </BinaryExpression>
+              </QueryFilterExpressionTree>
+            </ScreenQueryDefinition.FilterExpression>
+            <ScreenQueryDefinition.Source>
+              <QuerySourceExpressionTree>
+                <MemberExpression
+                  Member="ApplicationData/Members[QueryRequisitionDetailPicking]" />
+              </QuerySourceExpressionTree>
+            </ScreenQueryDefinition.Source>
+          </ScreenQueryDefinition>
+        </ScreenCollectionProperty.Query>
+        <ScreenExpressionTree>
+          <ChainExpression>
+            <CallExpression
+              Target="AddEditPickingSlip/Properties[QueryRequisitionDetailPicking]/Query">
+              <ArgumentExpression
+                Parameter="SelectedTransportRouteID">
+                <ChainExpression>
+                  <MemberExpression
+                    Member="AddEditPickingSlip/Properties[SelectedTransportRoute]" />
+                  <MemberExpression
+                    Member="Id" />
+                </ChainExpression>
+              </ArgumentExpression>
+            </CallExpression>
+          </ChainExpression>
+        </ScreenExpressionTree>
+      </ScreenCollectionProperty>
       <ScreenCollectionProperty
         Name="PickingSlipDetails"
-        PageSize="15"
+        PageSize="45"
         PropertyType="CollectionView$PickingSlipDetail">
         <ScreenCollectionProperty.Query>
           <ScreenQueryDefinition
             Name="PickingSlipDetailsQuery"
             ReturnType="PickingSlipDetail*">
             <ScreenQueryDefinition.FilterExpression>
-              <QueryFilterExpressionTree />
+              <QueryFilterExpressionTree>
+                <BinaryExpression
+                  NodeType="Equal">
+                  <BinaryExpression.Left>
+                    <ChainExpression>
+                      <MemberExpression
+                        Member="PickingSlipDetail/Properties[Id]" />
+                    </ChainExpression>
+                  </BinaryExpression.Left>
+                  <BinaryExpression.Right>
+                    <ChainExpression>
+                      <MemberExpression
+                        Member="PickingSlipDetail/Properties[OrderRequisitionDetail]" />
+                      <MemberExpression
+                        Member="Id" />
+                    </ChainExpression>
+                  </BinaryExpression.Right>
+                </BinaryExpression>
+              </QueryFilterExpressionTree>
             </ScreenQueryDefinition.FilterExpression>
             <ScreenQueryDefinition.Source>
               <QuerySourceExpressionTree>
                 <ChainExpression>
                   <MemberExpression
-                    Member="AddEditPickingSlip/Properties[PickingSlip]" />
+                    Member="AddEditPickingSlip/Properties[QueryRequisitionDetailPicking]" />
+                  <MemberExpression
+                    Member="selectedItem" />
                   <MemberExpression
                     Member="PickingSlipDetails" />
                 </ChainExpression>
@@ -445,6 +778,9 @@
       <ApplicationMethodParameter
         Name="PickingSlip"
         ParameterType="PickingSlip" />
+      <ApplicationMethodParameter
+        Name="SelectedTransportRoute"
+        ParameterType="TransportRoute" />
     </ApplicationMethod>
   </Application.Methods>
 </Application>

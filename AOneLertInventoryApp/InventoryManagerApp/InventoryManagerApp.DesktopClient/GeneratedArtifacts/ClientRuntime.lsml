@@ -1425,6 +1425,32 @@
         </SortCriterion>
       </QueryOperation.SortCriteria>
     </QueryOperation>
+    <QueryOperation
+      Name="QueryCustomerGroupByTransportRoute"
+      ReturnType="Customer*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="Customers" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperation.SortCriteria>
+        <SortCriterion>
+          <ChainExpression>
+            <MemberExpression
+              Member="TransportRoute" />
+            <MemberExpression
+              Member="TransportRouteName" />
+          </ChainExpression>
+        </SortCriterion>
+        <SortCriterion>
+          <ChainExpression>
+            <MemberExpression
+              Member="CustomerName" />
+          </ChainExpression>
+        </SortCriterion>
+      </QueryOperation.SortCriteria>
+    </QueryOperation>
     <EntitySet
       Name="Locations"
       CanDelete="True"
@@ -1737,6 +1763,39 @@
         Name="OrderRequisitionDetail"
         EntitySet="OrderRequisitionDetails" />
     </AssociationSet>
+    <QueryOperation
+      Name="QueryRequisitionDetailPicking"
+      ReturnType="OrderRequisitionDetail*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="OrderRequisitionDetails" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="SelectedTransportRouteID"
+        ParameterType=":Int32?" />
+      <QueryOperation.SortCriteria>
+        <SortCriterion>
+          <ChainExpression>
+            <MemberExpression
+              Member="OrderRequisition" />
+            <MemberExpression
+              Member="Customer" />
+            <MemberExpression
+              Member="CustomerName" />
+          </ChainExpression>
+        </SortCriterion>
+        <SortCriterion>
+          <ChainExpression>
+            <MemberExpression
+              Member="Product" />
+            <MemberExpression
+              Member="ProductName" />
+          </ChainExpression>
+        </SortCriterion>
+      </QueryOperation.SortCriteria>
+    </QueryOperation>
     <EntitySet
       Name="OrderRequisitions"
       CanDelete="True"
@@ -2073,6 +2132,16 @@
         Name="PickingSlip"
         EntitySet="PickingSlips" />
     </AssociationSet>
+    <QueryOperation
+      Name="QueryMaxPickingNumber"
+      ReturnType="PickingSlip*">
+      <QueryOperation.Source>
+        <QuerySourceExpressionTree>
+          <MemberExpression
+            Member="PickingSlips" />
+        </QuerySourceExpressionTree>
+      </QueryOperation.Source>
+    </QueryOperation>
     <EntitySet
       Name="ProductCategories"
       CanDelete="True"
@@ -8459,11 +8528,36 @@
         FromEnd="PickingSlip"
         ToEnd="TransportRoute" />
       <EntityProperty
-        Name="TotalWeight"
+        Name="TruckLicense"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TruckCapacityWeight"
         PropertyType=":Double">
         <EntityProperty.Attributes>
           <Required />
           <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="TotalWeight"
+        PropertyType=":Double">
+        <EntityProperty.Attributes>
+          <NotSearchable />
+          <Required />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="Remark"
+        PropertyType=":String?">
+        <EntityProperty.Attributes>
+          <MaxLength
+            Value="255" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -8479,15 +8573,6 @@
         Association="PickingSlipDetail_PickingSlip"
         FromEnd="PickingSlip"
         ToEnd="PickingSlipDetail" />
-      <EntityProperty
-        Name="Remark"
-        PropertyType=":String">
-        <EntityProperty.Attributes>
-          <Required />
-          <MaxLength
-            Value="255" />
-        </EntityProperty.Attributes>
-      </EntityProperty>
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"

@@ -12,3 +12,16 @@ C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLert
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.sqlprojResolveAssemblyReference.cache
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.dll
 C:\Users\Chalermpol Chueayen\Documents\Visual Studio 2013\Projects\AWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.pdb
+C:\Users\paradornn.BTG\Documents\NewAWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dacpac
+C:\Users\paradornn.BTG\Documents\NewAWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dll
+C:\Users\paradornn.BTG\Documents\NewAWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.pdb
+C:\Users\paradornn.BTG\Documents\NewAWMS\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\ApplicationSchema.dacpac
+C:\Users\paradornn.BTG\Documents\NewAWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.dll
+C:\Users\paradornn.BTG\Documents\NewAWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.pdb
+C:\Users\paradornn.BTG\Documents\NewAWMS\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.sqlprojResolveAssemblyReference.cache
+C:\Users\paradornn.BTG\Documents\AWMS_20140913\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dacpac
+C:\Users\paradornn.BTG\Documents\AWMS_20140913\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.dll
+C:\Users\paradornn.BTG\Documents\AWMS_20140913\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\InventoryManagerApp.Database.pdb
+C:\Users\paradornn.BTG\Documents\AWMS_20140913\AOneLertInventoryApp\InventoryManagerApp.Database\bin\Debug\ApplicationSchema.dacpac
+C:\Users\paradornn.BTG\Documents\AWMS_20140913\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.dll
+C:\Users\paradornn.BTG\Documents\AWMS_20140913\AOneLertInventoryApp\InventoryManagerApp.Database\obj\Debug\InventoryManagerApp.Database.pdb

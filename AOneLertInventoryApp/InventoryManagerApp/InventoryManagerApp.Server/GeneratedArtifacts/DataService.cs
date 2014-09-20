@@ -1557,6 +1557,21 @@ namespace LightSwitchApplication
         partial void CustomersActiveQuery_ExecuteFailed(global::System.Exception exception);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void QueryCustomerGroupByTransportRoute_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryCustomerGroupByTransportRoute_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void QueryCustomerGroupByTransportRoute_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.Customer> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryCustomerGroupByTransportRoute_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Customer> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryCustomerGroupByTransportRoute_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void LocationActiveQuery_CanExecute(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -1585,6 +1600,21 @@ namespace LightSwitchApplication
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         partial void MachineActiveQuery_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void QueryRequisitionDetailPicking_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryRequisitionDetailPicking_Executing(global::System.Nullable<int> SelectedTransportRouteID);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void QueryRequisitionDetailPicking_PreprocessQuery(global::System.Nullable<int> SelectedTransportRouteID, ref global::System.Linq.IQueryable<global::LightSwitchApplication.OrderRequisitionDetail> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryRequisitionDetailPicking_Executed(global::System.Nullable<int> SelectedTransportRouteID, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.OrderRequisitionDetail> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryRequisitionDetailPicking_ExecuteFailed(global::System.Nullable<int> SelectedTransportRouteID, global::System.Exception exception);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void GetMaxOrderRequisitionNo_CanExecute(ref bool result);
@@ -1645,6 +1675,21 @@ namespace LightSwitchApplication
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         partial void PaymentTypeActiveQuery_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void QueryMaxPickingNumber_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryMaxPickingNumber_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void QueryMaxPickingNumber_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.PickingSlip> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryMaxPickingNumber_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PickingSlip> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void QueryMaxPickingNumber_ExecuteFailed(global::System.Exception exception);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void ProductCategoriesActiveQuery_CanExecute(ref bool result);
@@ -5080,6 +5125,39 @@ namespace LightSwitchApplication
             }
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.Customer>
+                __QueryCustomerGroupByTransportRouteEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.Customer>(
+                    "QueryCustomerGroupByTransportRoute",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryCustomerGroupByTransportRoute_CanExecute,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryCustomerGroupByTransportRoute_Executing,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryCustomerGroupByTransportRoute_Executed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryCustomerGroupByTransportRoute_Failed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryCustomerGroupByTransportRoute_PreprocessQuery);
+            private static bool __QueryCustomerGroupByTransportRoute_CanExecute(global::LightSwitchApplication.ApplicationDataService d, bool r)
+            {
+                d.QueryCustomerGroupByTransportRoute_CanExecute(ref r);
+                return r;
+            }
+            private static void __QueryCustomerGroupByTransportRoute_Executing(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.QueryCustomerGroupByTransportRoute_Executing();
+            }
+            private static void __QueryCustomerGroupByTransportRoute_Executed(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.QueryCustomerGroupByTransportRoute_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Customer>)args[0]);
+            }
+            private static void __QueryCustomerGroupByTransportRoute_Failed(global::LightSwitchApplication.ApplicationDataService d, object[] args, global::System.Exception ex)
+            {
+                d.QueryCustomerGroupByTransportRoute_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __QueryCustomerGroupByTransportRoute_PreprocessQuery(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.Customer> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Customer>)args[0];
+                d.QueryCustomerGroupByTransportRoute_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.Location>
                 __LocationActiveQueryEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.Location>(
                     "LocationActiveQuery",
@@ -5142,6 +5220,39 @@ namespace LightSwitchApplication
             {
                 global::System.Linq.IQueryable<global::LightSwitchApplication.Machine> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.Machine>)args[0];
                 d.MachineActiveQuery_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.OrderRequisitionDetail>
+                __QueryRequisitionDetailPickingEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.OrderRequisitionDetail>(
+                    "QueryRequisitionDetailPicking",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryRequisitionDetailPicking_CanExecute,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryRequisitionDetailPicking_Executing,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryRequisitionDetailPicking_Executed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryRequisitionDetailPicking_Failed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryRequisitionDetailPicking_PreprocessQuery);
+            private static bool __QueryRequisitionDetailPicking_CanExecute(global::LightSwitchApplication.ApplicationDataService d, bool r)
+            {
+                d.QueryRequisitionDetailPicking_CanExecute(ref r);
+                return r;
+            }
+            private static void __QueryRequisitionDetailPicking_Executing(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.QueryRequisitionDetailPicking_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __QueryRequisitionDetailPicking_Executed(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.QueryRequisitionDetailPicking_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.OrderRequisitionDetail>)args[1]);
+            }
+            private static void __QueryRequisitionDetailPicking_Failed(global::LightSwitchApplication.ApplicationDataService d, object[] args, global::System.Exception ex)
+            {
+                d.QueryRequisitionDetailPicking_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __QueryRequisitionDetailPicking_PreprocessQuery(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.OrderRequisitionDetail> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.OrderRequisitionDetail>)args[1];
+                d.QueryRequisitionDetailPicking_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
                 return query;
             }
             
@@ -5274,6 +5385,39 @@ namespace LightSwitchApplication
             {
                 global::System.Linq.IQueryable<global::LightSwitchApplication.PaymentType> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PaymentType>)args[0];
                 d.PaymentTypeActiveQuery_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.PickingSlip>
+                __QueryMaxPickingNumberEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.PickingSlip>(
+                    "QueryMaxPickingNumber",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryMaxPickingNumber_CanExecute,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryMaxPickingNumber_Executing,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryMaxPickingNumber_Executed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryMaxPickingNumber_Failed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__QueryMaxPickingNumber_PreprocessQuery);
+            private static bool __QueryMaxPickingNumber_CanExecute(global::LightSwitchApplication.ApplicationDataService d, bool r)
+            {
+                d.QueryMaxPickingNumber_CanExecute(ref r);
+                return r;
+            }
+            private static void __QueryMaxPickingNumber_Executing(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.QueryMaxPickingNumber_Executing();
+            }
+            private static void __QueryMaxPickingNumber_Executed(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.QueryMaxPickingNumber_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.PickingSlip>)args[0]);
+            }
+            private static void __QueryMaxPickingNumber_Failed(global::LightSwitchApplication.ApplicationDataService d, object[] args, global::System.Exception ex)
+            {
+                d.QueryMaxPickingNumber_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __QueryMaxPickingNumber_PreprocessQuery(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.PickingSlip> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.PickingSlip>)args[0];
+                d.QueryMaxPickingNumber_PreprocessQuery(ref query);
                 return query;
             }
             

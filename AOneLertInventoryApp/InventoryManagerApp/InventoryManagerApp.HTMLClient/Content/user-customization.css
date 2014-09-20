@@ -20,6 +20,7 @@
 .msls-font-style-small {
 }
 
+.ReceiptQuantityAbnormal {color:red;}
 /* Uncomment the following lines if you want to use certain jQuery Mobile listview features such as 
     count bubbles and icons inside LightSwitch lists. jQuery Mobile relies on list items using 
     position:relative for these features.  However, this setting performs poorly on certain mobile 

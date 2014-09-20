@@ -6711,6 +6711,34 @@
               ]
             },
             {
+              "id": "ApplicationData/Members[QueryCustomerGroupByTransportRoute]",
+              "name": "QueryCustomerGroupByTransportRoute",
+              "elementType": { "__id": "Customer" },
+              "query": { "__id": "ApplicationData/Members[QueryCustomerGroupByTransportRoute]" },
+              "returnType": { "__id": "Customer*" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[Customers]" }
+              },
+              "sortCriteria":
+              [
+                {
+                  "links":
+                  [
+                    {
+                      "member": { "__id": "Customer/Properties[TransportRoute]" }
+                    },
+                    {
+                      "member": { "__id": "TransportRoute/Properties[TransportRouteName]" }
+                    }
+                  ]
+                },
+                {
+                  "member": { "__id": "Customer/Properties[CustomerName]" }
+                }
+              ]
+            },
+            {
               "id": "ApplicationData/Members[Locations_Single]",
               "name": "Locations_Single",
               "elementType": { "__id": "Location" },
@@ -6855,6 +6883,53 @@
                   "id": "ApplicationData/Members[OrderRequisitionDetails_SingleOrDefault]/Parameters[Id]",
                   "name": "Id",
                   "parameterType": { "__id": ":Int32?" }
+                }
+              ]
+            },
+            {
+              "id": "ApplicationData/Members[QueryRequisitionDetailPicking]",
+              "name": "QueryRequisitionDetailPicking",
+              "elementType": { "__id": "OrderRequisitionDetail" },
+              "query": { "__id": "ApplicationData/Members[QueryRequisitionDetailPicking]" },
+              "returnType": { "__id": "OrderRequisitionDetail*" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[OrderRequisitionDetails]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "ApplicationData/Members[QueryRequisitionDetailPicking]/Parameters[SelectedTransportRouteID]",
+                  "name": "SelectedTransportRouteID",
+                  "parameterType": { "__id": ":Int32?" }
+                }
+              ],
+              "sortCriteria":
+              [
+                {
+                  "links":
+                  [
+                    {
+                      "member": { "__id": "OrderRequisitionDetail/Properties[OrderRequisition]" }
+                    },
+                    {
+                      "member": { "__id": "OrderRequisition/Properties[Customer]" }
+                    },
+                    {
+                      "member": { "__id": "Customer/Properties[CustomerName]" }
+                    }
+                  ]
+                },
+                {
+                  "links":
+                  [
+                    {
+                      "member": { "__id": "OrderRequisitionDetail/Properties[Product]" }
+                    },
+                    {
+                      "member": { "__id": "Product/Properties[ProductName]" }
+                    }
+                  ]
                 }
               ]
             },
@@ -7103,6 +7178,17 @@
                   "parameterType": { "__id": ":Int32?" }
                 }
               ]
+            },
+            {
+              "id": "ApplicationData/Members[QueryMaxPickingNumber]",
+              "name": "QueryMaxPickingNumber",
+              "elementType": { "__id": "PickingSlip" },
+              "query": { "__id": "ApplicationData/Members[QueryMaxPickingNumber]" },
+              "returnType": { "__id": "PickingSlip*" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[PickingSlips]" }
+              }
             },
             {
               "id": "ApplicationData/Members[ProductCategories_Single]",
@@ -13674,11 +13760,37 @@
               "toEnd": { "__id": "PickingSlip_TransportRoute/Ends[TransportRoute]" }
             },
             {
-              "id": "PickingSlip/Properties[TotalWeight]",
-              "name": "TotalWeight",
+              "id": "PickingSlip/Properties[TruckLicense]",
+              "name": "TruckLicense",
+              "propertyType": { "__id": ":String" },
+              ":@Required": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "PickingSlip/Properties[TruckCapacityWeight]",
+              "name": "TruckCapacityWeight",
               "propertyType": { "__id": ":Double" },
               ":@Required": { },
               ":@NotSearchable": { }
+            },
+            {
+              "id": "PickingSlip/Properties[TotalWeight]",
+              "name": "TotalWeight",
+              "propertyType": { "__id": ":Double" },
+              ":@NotSearchable": { },
+              ":@Required": { }
+            },
+            {
+              "id": "PickingSlip/Properties[Remark]",
+              "name": "Remark",
+              "propertyType": { "__id": ":String?" },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
             },
             {
               "id": "PickingSlip/Properties[Status]",
@@ -13695,16 +13807,6 @@
               "fromEnd": { "__id": "PickingSlipDetail_PickingSlip/Ends[PickingSlip]" },
               "propertyType": { "__id": "PickingSlipDetail*" },
               "toEnd": { "__id": "PickingSlipDetail_PickingSlip/Ends[PickingSlipDetail]" }
-            },
-            {
-              "id": "PickingSlip/Properties[Remark]",
-              "name": "Remark",
-              "propertyType": { "__id": ":String" },
-              ":@Required": { },
-              ":@MaxLength":
-              {
-                "value": 255
-              }
             },
             {
               "id": "PickingSlip/Properties[CreatedBy]",
@@ -15622,33 +15724,33 @@
                                 "value": 400
                               }
                             ]
-                          }
-                        ]
-                      },
-                      {
-                        "displayName": "Group1",
-                        "name": "Group1",
-                        "kind": "Group",
-                        "view": { "__id": ":RowsLayout" },
-                        "childContentItems":
-                        [
+                          },
                           {
-                            "displayName": "หมายเหตุ",
-                            "name": "Remark",
-                            "kind": "Value",
-                            "view": { "__id": ":TextArea" },
-                            "dataSource":
-                            {
-                              "links":
-                              [
+                            "displayName": "Group1",
+                            "name": "Group1",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "หมายเหตุ",
+                                "name": "Remark",
+                                "kind": "Value",
+                                "view": { "__id": ":TextArea" },
+                                "dataSource":
                                 {
-                                  "member": { "__id": "AddEditOrderRequisition/Properties[OrderRequisition]" }
-                                },
-                                {
-                                  "member": { "__id": "OrderRequisition/Properties[Remark]" }
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "AddEditOrderRequisition/Properties[OrderRequisition]" }
+                                    },
+                                    {
+                                      "member": { "__id": "OrderRequisition/Properties[Remark]" }
+                                    }
+                                  ]
                                 }
-                              ]
-                            }
+                              }
+                            ]
                           }
                         ]
                       },
@@ -15822,6 +15924,32 @@
                             "value": "msls-add"
                           }
                         ]
+                      },
+                      {
+                        "displayName": "ค้นหาข้อมูลลูกค้า",
+                        "name": "ShowGroup2",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "AddEditOrderRequisition/Methods[showDialog]" },
+                              "arguments":
+                              [
+                                {
+                                  "parameter": { "__id": "AddEditOrderRequisition/Methods[showDialog]/Parameters[dialogName]" },
+                                  "value":
+                                  {
+                                    "value": "Group2"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       }
                     ]
                   }
@@ -15831,7 +15959,95 @@
                 "displayName": "Popups",
                 "name": "Popups",
                 "kind": "Group",
-                "view": { "__id": ":DialogPages" }
+                "view": { "__id": ":DialogPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "ค้นหาข้อมูลลูกค้า",
+                    "name": "Group2",
+                    "kind": "Popup",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "ค้นหาข้อมูลลูกค้า",
+                        "name": "SearchCustomer",
+                        "kind": "Value",
+                        "view": { "__id": ":TextBox" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditOrderRequisition/Properties[SearchCustomer]" }
+                        }
+                      },
+                      {
+                        "displayName": "ค้นหาข้อมูลลูกค้า",
+                        "name": "QueryCustomerGroupByTransportRoute",
+                        "kind": "Collection",
+                        "view": { "__id": ":Table" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditOrderRequisition/Properties[QueryCustomerGroupByTransportRoute]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "Customer",
+                            "name": "QueryCustomerGroupByTransportRouteTemplate",
+                            "kind": "Details",
+                            "view": { "__id": ":TableRowLayout" },
+                            "dataSource":
+                            {
+                              "links":
+                              [
+                              ]
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "สายส่ง",
+                                "name": "TransportRouteName",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "Customer/Properties[TransportRoute]" }
+                                    },
+                                    {
+                                      "member": { "__id": "TransportRoute/Properties[TransportRouteName]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "ชื่อลูกค้า",
+                                "name": "CustomerName",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "Customer/Properties[CustomerName]" }
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                            "source":
+                            {
+                              "target": { "__id": "AddEditOrderRequisition/Methods[QueryCustomerGroupByTransportRoute_ItemTap]" }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ],
             "propertySources":
@@ -15867,6 +16083,10 @@
                   "parameterType": { "__id": ":String" }
                 }
               ]
+            },
+            {
+              "id": "AddEditOrderRequisition/Methods[QueryCustomerGroupByTransportRoute_ItemTap]",
+              "name": "QueryCustomerGroupByTransportRoute_ItemTap"
             }
           ],
           "properties":
@@ -15907,6 +16127,116 @@
               {
                 "target": { "__id": "AddEditOrderRequisition/Properties[OrderRequisitionDetail]/Query" }
               }
+            },
+            {
+              "id": "AddEditOrderRequisition/Properties[QueryCustomerGroupByTransportRoute]",
+              "name": "QueryCustomerGroupByTransportRoute",
+              "pageSize": 45,
+              "elementType": { "__id": "Customer" },
+              "propertyType": { "__id": "CollectionView$Customer" },
+              "query":
+              {
+                "id": "AddEditOrderRequisition/Properties[QueryCustomerGroupByTransportRoute]/Query",
+                "name": "QueryCustomerGroupByTransportRouteQuery",
+                "elementType": { "__id": "Customer" },
+                "returnType": { "__id": "Customer*" },
+                "filterExpression":
+                {
+                  "nodeType": "Or",
+                  "left":
+                  {
+                    "nodeType": "Contains",
+                    "left":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "Customer/Properties[CustomerName]" }
+                        }
+                      ]
+                    },
+                    "right":
+                    {
+                      "parameter": { "__id": "AddEditOrderRequisition/Properties[QueryCustomerGroupByTransportRoute]/Query/Parameters[SearchCustomer]" }
+                    }
+                  },
+                  "right":
+                  {
+                    "nodeType": "Contains",
+                    "left":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "Customer/Properties[TransportRoute]" }
+                        },
+                        {
+                          "member": { "__id": "TransportRoute/Properties[TransportRouteName]" }
+                        }
+                      ]
+                    },
+                    "right":
+                    {
+                      "parameter": { "__id": "AddEditOrderRequisition/Properties[QueryCustomerGroupByTransportRoute]/Query/Parameters[SearchCustomer]" }
+                    }
+                  }
+                },
+                "source":
+                {
+                  "member": { "__id": "ApplicationData/Members[QueryCustomerGroupByTransportRoute]" }
+                },
+                "parameters":
+                [
+                  {
+                    "id": "AddEditOrderRequisition/Properties[QueryCustomerGroupByTransportRoute]/Query/Parameters[SearchCustomer]",
+                    "name": "SearchCustomer",
+                    "isOptional": true,
+                    "parameterType": { "__id": ":String?" }
+                  }
+                ],
+                "sortCriteria":
+                [
+                  {
+                    "links":
+                    [
+                      {
+                        "member": { "__id": "Customer/Properties[TransportRoute]" }
+                      },
+                      {
+                        "member": { "__id": "TransportRoute/Properties[TransportRouteName]" }
+                      }
+                    ]
+                  },
+                  {
+                    "member": { "__id": "Customer/Properties[CustomerName]" }
+                  }
+                ]
+              },
+              "source":
+              {
+                "target": { "__id": "AddEditOrderRequisition/Properties[QueryCustomerGroupByTransportRoute]/Query" },
+                "arguments":
+                [
+                  {
+                    "parameter": { "__id": "AddEditOrderRequisition/Properties[QueryCustomerGroupByTransportRoute]/Query/Parameters[SearchCustomer]" },
+                    "value":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "AddEditOrderRequisition/Properties[SearchCustomer]" }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "AddEditOrderRequisition/Properties[SearchCustomer]",
+              "name": "SearchCustomer",
+              "elementType": { "__id": ":String?" },
+              "propertyType": { "__id": ":String?" }
             }
           ]
         },
@@ -16615,6 +16945,1276 @@
               "elementType": { "__id": "PaymentType" },
               "propertyType": { "__id": "PaymentType" },
               ":@IsParameter": { }
+            }
+          ]
+        },
+        {
+          "displayName": "ใบจัดสินค้าขึ้นรถ",
+          "id": "AddEditPickingSlip",
+          "name": "AddEditPickingSlip",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "ใบจัดสินค้าขึ้นรถ",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "ข้อมูลการจัดสินค้า",
+                    "name": "Details",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "columns",
+                        "name": "columns",
+                        "kind": "Details",
+                        "view": { "__id": ":ColumnsLayout" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditPickingSlip/Properties[PickingSlip]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "left",
+                            "name": "left",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "เลขที่ใบจัด",
+                                "name": "PickingNo",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlip/Properties[PickingNo]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                    "value": 200
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "วันที่สั่งจัด",
+                                "name": "PickingDate",
+                                "kind": "Value",
+                                "view": { "__id": ":DatePicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlip/Properties[PickingDate]" }
+                                }
+                              },
+                              {
+                                "displayName": "สายส่ง",
+                                "name": "TransportRoute",
+                                "kind": "Details",
+                                "view": { "__id": ":DetailsModalPicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlip/Properties[TransportRoute]" }
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "Transport Route",
+                                    "name": "RowTemplate",
+                                    "kind": "Details",
+                                    "view": { "__id": ":Summary" },
+                                    "dataSource":
+                                    {
+                                      "links":
+                                      [
+                                      ]
+                                    }
+                                  }
+                                ],
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                    "value": 200
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "right",
+                                "name": "right",
+                                "kind": "Group",
+                                "view": { "__id": ":ColumnsLayout" },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                    "value": 200
+                                  },
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                    "value": 400
+                                  }
+                                ]
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "Group1",
+                            "name": "Group1",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "ทะเบียนรถ",
+                                "name": "TruckLicense",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "AddEditPickingSlip/Properties[PickingSlip]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PickingSlip/Properties[TruckLicense]" }
+                                    }
+                                  ]
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                    "value": 200
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "นน.บรรทุก รถขนส่ง",
+                                "name": "TruckCapacityWeight",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "AddEditPickingSlip/Properties[PickingSlip]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PickingSlip/Properties[TruckCapacityWeight]" }
+                                    }
+                                  ]
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                    "value": 200
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "นน.จัดรวม",
+                                "name": "TotalWeight",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "AddEditPickingSlip/Properties[PickingSlip]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PickingSlip/Properties[TotalWeight]" }
+                                    }
+                                  ]
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                    "value": 200
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "Group3",
+                            "name": "Group3",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Status",
+                                "name": "Status",
+                                "kind": "Value",
+                                "view": { "__id": ":FlipSwitchControl" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "AddEditPickingSlip/Properties[PickingSlip]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PickingSlip/Properties[Status]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Remark",
+                                "name": "Remark",
+                                "kind": "Value",
+                                "view": { "__id": ":TextArea" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "AddEditPickingSlip/Properties[PickingSlip]" }
+                                    },
+                                    {
+                                      "member": { "__id": "PickingSlip/Properties[Remark]" }
+                                    }
+                                  ]
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                    "value": 250
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Group",
+                        "name": "Group",
+                        "kind": "Group",
+                        "view": { "__id": ":RowsLayout" },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "รายการสั่งซื้อ",
+                            "name": "QueryRequisitionDetailPicking",
+                            "kind": "Collection",
+                            "view": { "__id": ":Table" },
+                            "dataSource":
+                            {
+                              "member": { "__id": "AddEditPickingSlip/Properties[QueryRequisitionDetailPicking]" }
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Order Requisition Detail",
+                                "name": "QueryRequisitionDetailPickingTemplate",
+                                "kind": "Details",
+                                "view": { "__id": ":TableRowLayout" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                  ]
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "ชื่อลูกค้า",
+                                    "name": "CustomerName",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "OrderRequisitionDetail/Properties[OrderRequisition]" }
+                                        },
+                                        {
+                                          "member": { "__id": "OrderRequisition/Properties[Customer]" }
+                                        },
+                                        {
+                                          "member": { "__id": "Customer/Properties[CustomerName]" }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "displayName": "รหัสสินค้า",
+                                    "name": "ProductCode",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "OrderRequisitionDetail/Properties[Product]" }
+                                        },
+                                        {
+                                          "member": { "__id": "Product/Properties[ProductCode]" }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "displayName": "ชื่อสินค้า",
+                                    "name": "ProductName",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "OrderRequisitionDetail/Properties[Product]" }
+                                        },
+                                        {
+                                          "member": { "__id": "Product/Properties[ProductName]" }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "displayName": "จำนวนสั่ง",
+                                    "name": "Quantity",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "OrderRequisitionDetail/Properties[Quantity]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "จำนวนส่ง",
+                                    "name": "DeliveredQuantity",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "OrderRequisitionDetail/Properties[DeliveredQuantity]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "หน่วย",
+                                    "name": "UOMName",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "OrderRequisitionDetail/Properties[Product]" }
+                                        },
+                                        {
+                                          "member": { "__id": "Product/Properties[UnitOfMeasure]" }
+                                        },
+                                        {
+                                          "member": { "__id": "UnitOfMeasure/Properties[UOMName]" }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "displayName": "นน./หน่วย",
+                                    "name": "UnitWeight",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "links":
+                                      [
+                                        {
+                                          "member": { "__id": "OrderRequisitionDetail/Properties[Product]" }
+                                        },
+                                        {
+                                          "member": { "__id": "Product/Properties[UnitWeight]" }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "displayName": "Status",
+                                    "name": "Status1",
+                                    "isHidden": true,
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "OrderRequisitionDetail/Properties[Status]" }
+                                    }
+                                  },
+                                  {
+                                    "displayName": "รายการจัดสินค้า",
+                                    "name": "PickingSlipDetails1",
+                                    "kind": "Collection",
+                                    "view": { "__id": ":List" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "AddEditPickingSlip/Properties[PickingSlipDetails]" }
+                                    },
+                                    "childContentItems":
+                                    [
+                                      {
+                                        "displayName": "Picking Slip Detail",
+                                        "name": "PickingSlipDetails1Template",
+                                        "kind": "Details",
+                                        "view": { "__id": ":RowsLayout" },
+                                        "dataSource":
+                                        {
+                                          "links":
+                                          [
+                                          ]
+                                        },
+                                        "childContentItems":
+                                        [
+                                          {
+                                            "displayName": "เบิกจากสถานที่",
+                                            "name": "LocationName",
+                                            "kind": "Value",
+                                            "view": { "__id": ":Text" },
+                                            "dataSource":
+                                            {
+                                              "links":
+                                              [
+                                                {
+                                                  "member": { "__id": "PickingSlipDetail/Properties[Location]" }
+                                                },
+                                                {
+                                                  "member": { "__id": "Location/Properties[LocationName]" }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "displayName": "Lot No",
+                                            "name": "LotNo",
+                                            "kind": "Value",
+                                            "view": { "__id": ":Text" },
+                                            "dataSource":
+                                            {
+                                              "member": { "__id": "PickingSlipDetail/Properties[LotNo]" }
+                                            }
+                                          },
+                                          {
+                                            "displayName": "จำนวนจัด",
+                                            "name": "PickingQuantity",
+                                            "kind": "Value",
+                                            "view": { "__id": ":Text" },
+                                            "dataSource":
+                                            {
+                                              "member": { "__id": "PickingSlipDetail/Properties[PickingQuantity]" }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                                "source":
+                                {
+                                  "target": { "__id": "AddEditPickingSlip/Methods[QueryRequisitionDetailPicking_ItemTap]" }
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ],
+            "propertySources":
+            [
+              {
+                "property": { "__id": ":Screen/Properties[ScreenType]" },
+                "value": "Edit"
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "AddEditPickingSlip/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "AddEditPickingSlip/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "AddEditPickingSlip/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "AddEditPickingSlip/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "AddEditPickingSlip/Methods[QueryRequisitionDetailPicking_ItemTap]",
+              "name": "QueryRequisitionDetailPicking_ItemTap"
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "AddEditPickingSlip/Properties[PickingSlip]",
+              "name": "PickingSlip",
+              "elementType": { "__id": "PickingSlip" },
+              "propertyType": { "__id": "PickingSlip" },
+              ":@IsParameter": { }
+            },
+            {
+              "id": "AddEditPickingSlip/Properties[SelectedTransportRoute]",
+              "name": "SelectedTransportRoute",
+              "elementType": { "__id": "TransportRoute" },
+              "propertyType": { "__id": "TransportRoute" },
+              ":@IsParameter": { }
+            },
+            {
+              "id": "AddEditPickingSlip/Properties[QueryRequisitionDetailPicking]",
+              "name": "QueryRequisitionDetailPicking",
+              "pageSize": 45,
+              "elementType": { "__id": "OrderRequisitionDetail" },
+              "propertyType": { "__id": "CollectionView$OrderRequisitionDetail" },
+              "query":
+              {
+                "id": "AddEditPickingSlip/Properties[QueryRequisitionDetailPicking]/Query",
+                "name": "QueryRequisitionDetailPickingQuery",
+                "elementType": { "__id": "OrderRequisitionDetail" },
+                "returnType": { "__id": "OrderRequisitionDetail*" },
+                "filterExpression":
+                {
+                  "nodeType": "Equal",
+                  "left":
+                  {
+                    "links":
+                    [
+                      {
+                        "member": { "__id": "OrderRequisitionDetail/Properties[OrderRequisition]" }
+                      },
+                      {
+                        "member": { "__id": "OrderRequisition/Properties[Customer]" }
+                      },
+                      {
+                        "member": { "__id": "Customer/Properties[TransportRoute]" }
+                      },
+                      {
+                        "member": { "__id": "TransportRoute/Properties[Id]" }
+                      }
+                    ]
+                  },
+                  "right":
+                  {
+                    "parameter": { "__id": "ApplicationData/Members[QueryRequisitionDetailPicking]/Parameters[SelectedTransportRouteID]" }
+                  }
+                },
+                "source":
+                {
+                  "member": { "__id": "ApplicationData/Members[QueryRequisitionDetailPicking]" }
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "AddEditPickingSlip/Properties[QueryRequisitionDetailPicking]/Query" },
+                "arguments":
+                [
+                  {
+                    "parameter": { "__id": "ApplicationData/Members[QueryRequisitionDetailPicking]/Parameters[SelectedTransportRouteID]" },
+                    "value":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "AddEditPickingSlip/Properties[SelectedTransportRoute]" }
+                        },
+                        {
+                          "member": { "__id": "TransportRoute/Properties[Id]" }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "AddEditPickingSlip/Properties[PickingSlipDetails]",
+              "name": "PickingSlipDetails",
+              "pageSize": 45,
+              "elementType": { "__id": "PickingSlipDetail" },
+              "propertyType": { "__id": "CollectionView$PickingSlipDetail" },
+              "query":
+              {
+                "id": "AddEditPickingSlip/Properties[PickingSlipDetails]/Query",
+                "name": "PickingSlipDetailsQuery",
+                "elementType": { "__id": "PickingSlipDetail" },
+                "returnType": { "__id": "PickingSlipDetail*" },
+                "filterExpression":
+                {
+                  "nodeType": "Equal",
+                  "left":
+                  {
+                    "links":
+                    [
+                      {
+                        "member": { "__id": "PickingSlipDetail/Properties[Id]" }
+                      }
+                    ]
+                  },
+                  "right":
+                  {
+                    "links":
+                    [
+                      {
+                        "member": { "__id": "PickingSlipDetail/Properties[OrderRequisitionDetail]" }
+                      },
+                      {
+                        "member": { "__id": "OrderRequisitionDetail/Properties[Id]" }
+                      }
+                    ]
+                  }
+                },
+                "source":
+                {
+                  "links":
+                  [
+                    {
+                      "member": { "__id": "AddEditPickingSlip/Properties[QueryRequisitionDetailPicking]" }
+                    },
+                    {
+                      "member": { "__id": "CollectionView$OrderRequisitionDetail/Properties[selectedItem]" }
+                    },
+                    {
+                      "member": { "__id": "OrderRequisitionDetail/Properties[PickingSlipDetails]" }
+                    }
+                  ]
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "AddEditPickingSlip/Properties[PickingSlipDetails]/Query" }
+              }
+            }
+          ]
+        },
+        {
+          "displayName": "Add Edit Picking Slip Detail",
+          "id": "AddEditPickingSlipDetail",
+          "name": "AddEditPickingSlipDetail",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "Root Content Item",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "รายการสินค้าสั่งจัด",
+                    "name": "Details",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "columns",
+                        "name": "columns",
+                        "kind": "Details",
+                        "view": { "__id": ":ColumnsLayout" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditPickingSlipDetail/Properties[PickingSlipDetail]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "left",
+                            "name": "left",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "รหัสสินค้า",
+                                "name": "ProductCode",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[OrderRequisitionDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "OrderRequisitionDetail/Properties[Product]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Product/Properties[ProductCode]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "ชื่อสินค้า",
+                                "name": "ProductName",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[OrderRequisitionDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "OrderRequisitionDetail/Properties[Product]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Product/Properties[ProductName]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "สถานที่จัดเก็บ",
+                                "name": "LocationName",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[Location]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Location/Properties[LocationName]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Lot No",
+                                "name": "LotNo",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlipDetail/Properties[LotNo]" }
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "right",
+                            "name": "right",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "จำนวนพร้อมขาย",
+                                "name": "AvailableQuantity",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "AddEditPickingSlipDetail/Properties[AvailableQuantity]" }
+                                }
+                              },
+                              {
+                                "displayName": "จำนวนสั่งจัด",
+                                "name": "PickingQuantity",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlipDetail/Properties[PickingQuantity]" }
+                                }
+                              },
+                              {
+                                "displayName": "หน่วย",
+                                "name": "UOMName",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "PickingSlipDetail/Properties[OrderRequisitionDetail]" }
+                                    },
+                                    {
+                                      "member": { "__id": "OrderRequisitionDetail/Properties[Product]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Product/Properties[UnitOfMeasure]" }
+                                    },
+                                    {
+                                      "member": { "__id": "UnitOfMeasure/Properties[UOMName]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "ราคา/หน่วย",
+                                "name": "UnitPrice",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":MoneyViewer" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "PickingSlipDetail/Properties[UnitPrice]" }
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "ค้นหาสินค้าเพื่อขาย",
+                        "name": "ShowGroup",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "AddEditPickingSlipDetail/Methods[showDialog]" },
+                              "arguments":
+                              [
+                                {
+                                  "parameter": { "__id": "AddEditPickingSlipDetail/Methods[showDialog]/Parameters[dialogName]" },
+                                  "value":
+                                  {
+                                    "value": "Group"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "ค้นหาสินค้าเพื่อขาย",
+                    "name": "Group",
+                    "kind": "Popup",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "ค้นหาสินค้าเพื่อขาย",
+                        "name": "SearchStockOnhand",
+                        "kind": "Value",
+                        "view": { "__id": ":TextBox" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditPickingSlipDetail/Properties[SearchStockOnhand]" }
+                        }
+                      },
+                      {
+                        "displayName": "รายการสินค้าพร้อมขาย",
+                        "name": "StockOnHandForSale",
+                        "kind": "Collection",
+                        "view": { "__id": ":Table" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditPickingSlipDetail/Properties[StockOnHandForSale]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "รายการสินค้าพร้อมขาย",
+                            "name": "StockOnHandForSaleTemplate",
+                            "kind": "Details",
+                            "view": { "__id": ":TableRowLayout" },
+                            "dataSource":
+                            {
+                              "links":
+                              [
+                              ]
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "สินค้า",
+                                "name": "ProductName1",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "StockOnHand/Properties[Product]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Product/Properties[ProductName]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "สถานที่จัดเก็บ",
+                                "name": "LocationName1",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "StockOnHand/Properties[Location]" }
+                                    },
+                                    {
+                                      "member": { "__id": "Location/Properties[LocationName]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Lot No",
+                                "name": "LotNo1",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StockOnHand/Properties[LotNo]" }
+                                }
+                              },
+                              {
+                                "displayName": "จำนวนพร้อมขาย",
+                                "name": "QuantityOnHand",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StockOnHand/Properties[QuantityOnHand]" }
+                                }
+                              },
+                              {
+                                "displayName": "Selling Price",
+                                "name": "SellingPrice",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":MoneyViewer" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StockOnHand/Properties[SellingPrice]" }
+                                }
+                              },
+                              {
+                                "displayName": "Cost Price",
+                                "name": "CostPrice",
+                                "isHidden": true,
+                                "kind": "Value",
+                                "view": { "__id": ":MoneyViewer" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StockOnHand/Properties[CostPrice]" }
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                            "source":
+                            {
+                              "target": { "__id": "AddEditPickingSlipDetail/Methods[StockOnHandForSale_ItemTap]" }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "propertySources":
+            [
+              {
+                "property": { "__id": ":Screen/Properties[ScreenType]" },
+                "value": "Edit"
+              },
+              {
+                "property": { "__id": ":Screen/Properties[ShowAsDialog]" },
+                "value": true
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "AddEditPickingSlipDetail/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "AddEditPickingSlipDetail/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "AddEditPickingSlipDetail/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "AddEditPickingSlipDetail/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "AddEditPickingSlipDetail/Methods[StockOnHandForSale_ItemTap]",
+              "name": "StockOnHandForSale_ItemTap"
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "AddEditPickingSlipDetail/Properties[PickingSlipDetail]",
+              "name": "PickingSlipDetail",
+              "elementType": { "__id": "PickingSlipDetail" },
+              "propertyType": { "__id": "PickingSlipDetail" },
+              ":@IsParameter": { }
+            },
+            {
+              "id": "AddEditPickingSlipDetail/Properties[StockOnHandForSale]",
+              "name": "StockOnHandForSale",
+              "pageSize": 45,
+              "elementType": { "__id": "StockOnHand" },
+              "propertyType": { "__id": "CollectionView$StockOnHand" },
+              "query":
+              {
+                "id": "AddEditPickingSlipDetail/Properties[StockOnHandForSale]/Query",
+                "name": "StockOnHandForSaleQuery",
+                "elementType": { "__id": "StockOnHand" },
+                "returnType": { "__id": "StockOnHand*" },
+                "filterExpression":
+                {
+                  "nodeType": "Equal",
+                  "left":
+                  {
+                    "links":
+                    [
+                      {
+                        "member": { "__id": "StockOnHand/Properties[Product]" }
+                      },
+                      {
+                        "member": { "__id": "Product/Properties[Id]" }
+                      }
+                    ]
+                  },
+                  "right":
+                  {
+                    "parameter": { "__id": "AddEditPickingSlipDetail/Properties[StockOnHandForSale]/Query/Parameters[OrderDetail_ProductID]" }
+                  }
+                },
+                "source":
+                {
+                  "member": { "__id": "ApplicationData/Members[StockOnHandForSale]" }
+                },
+                "parameters":
+                [
+                  {
+                    "id": "AddEditPickingSlipDetail/Properties[StockOnHandForSale]/Query/Parameters[SearchStockOnhand]",
+                    "name": "SearchStockOnhand",
+                    "isOptional": true,
+                    "parameterType": { "__id": ":String?" }
+                  },
+                  {
+                    "id": "AddEditPickingSlipDetail/Properties[StockOnHandForSale]/Query/Parameters[OrderDetail_ProductID]",
+                    "name": "OrderDetail_ProductID",
+                    "parameterType": { "__id": ":Int32?" }
+                  }
+                ],
+                "sortCriteria":
+                [
+                  {
+                    "links":
+                    [
+                      {
+                        "member": { "__id": "StockOnHand/Properties[Location]" }
+                      },
+                      {
+                        "member": { "__id": "Location/Properties[LocationName]" }
+                      }
+                    ]
+                  },
+                  {
+                    "member": { "__id": "StockOnHand/Properties[LotNo]" }
+                  }
+                ]
+              },
+              "source":
+              {
+                "target": { "__id": "AddEditPickingSlipDetail/Properties[StockOnHandForSale]/Query" },
+                "arguments":
+                [
+                  {
+                    "parameter": { "__id": "AddEditPickingSlipDetail/Properties[StockOnHandForSale]/Query/Parameters[SearchStockOnhand]" },
+                    "value":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "AddEditPickingSlipDetail/Properties[SearchStockOnhand]" }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "parameter": { "__id": "AddEditPickingSlipDetail/Properties[StockOnHandForSale]/Query/Parameters[OrderDetail_ProductID]" },
+                    "value":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "AddEditPickingSlipDetail/Properties[PickingSlipDetail]" }
+                        },
+                        {
+                          "member": { "__id": "PickingSlipDetail/Properties[OrderRequisitionDetail]" }
+                        },
+                        {
+                          "member": { "__id": "OrderRequisitionDetail/Properties[Product]" }
+                        },
+                        {
+                          "member": { "__id": "Product/Properties[Id]" }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "AddEditPickingSlipDetail/Properties[SearchStockOnhand]",
+              "name": "SearchStockOnhand",
+              "elementType": { "__id": ":String?" },
+              "propertyType": { "__id": ":String?" }
+            },
+            {
+              "id": "AddEditPickingSlipDetail/Properties[AvailableQuantity]",
+              "name": "AvailableQuantity",
+              "elementType": { "__id": ":Double?" },
+              "propertyType": { "__id": ":Double?" }
             }
           ]
         },
@@ -34261,7 +35861,31 @@
                               {
                                 "entityType": { "__id": "PickingSlip" },
                                 "targetParameter": { "__id": "!module/Methods[showAddEditPickingSlip]/Parameters[PickingSlip]" }
-                              }
+                              },
+                              "arguments":
+                              [
+                                {
+                                  "parameter": { "__id": "!module/Methods[showAddEditPickingSlip]/Parameters[SelectedTransportRoute]" },
+                                  "value":
+                                  {
+                                    "links":
+                                    [
+                                      {
+                                        "member": { "__id": "BrowseOrderRequisitionsTransportRoute/Properties[QueryOrderRequisitionTransportRoute]" }
+                                      },
+                                      {
+                                        "member": { "__id": "CollectionView$OrderRequisition/Properties[selectedItem]" }
+                                      },
+                                      {
+                                        "member": { "__id": "OrderRequisition/Properties[Customer]" }
+                                      },
+                                      {
+                                        "member": { "__id": "Customer/Properties[TransportRoute]" }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
                             }
                           }
                         ]
@@ -34310,6 +35934,10 @@
                   "parameterType": { "__id": ":String" }
                 }
               ]
+            },
+            {
+              "id": "BrowseOrderRequisitionsTransportRoute/Methods[QueryOrderRequisitionTransportRoute_ItemTap]",
+              "name": "QueryOrderRequisitionTransportRoute_ItemTap"
             }
           ],
           "properties":
@@ -34334,6 +35962,55 @@
               "source":
               {
                 "target": { "__id": "BrowseOrderRequisitionsTransportRoute/Properties[QueryOrderRequisitionTransportRoute]/Query" }
+              }
+            },
+            {
+              "id": "BrowseOrderRequisitionsTransportRoute/Properties[QueryRequisitionDetailPicking]",
+              "name": "QueryRequisitionDetailPicking",
+              "pageSize": 45,
+              "elementType": { "__id": "OrderRequisitionDetail" },
+              "propertyType": { "__id": "CollectionView$OrderRequisitionDetail" },
+              "query":
+              {
+                "id": "BrowseOrderRequisitionsTransportRoute/Properties[QueryRequisitionDetailPicking]/Query",
+                "name": "QueryRequisitionDetailPickingQuery",
+                "elementType": { "__id": "OrderRequisitionDetail" },
+                "returnType": { "__id": "OrderRequisitionDetail*" },
+                "source":
+                {
+                  "member": { "__id": "ApplicationData/Members[QueryRequisitionDetailPicking]" }
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "BrowseOrderRequisitionsTransportRoute/Properties[QueryRequisitionDetailPicking]/Query" },
+                "arguments":
+                [
+                  {
+                    "parameter": { "__id": "ApplicationData/Members[QueryRequisitionDetailPicking]/Parameters[SelectedTransportRouteID]" },
+                    "value":
+                    {
+                      "links":
+                      [
+                        {
+                          "member": { "__id": "BrowseOrderRequisitionsTransportRoute/Properties[QueryOrderRequisitionTransportRoute]" }
+                        },
+                        {
+                          "member": { "__id": "CollectionView$OrderRequisition/Properties[selectedItem]" }
+                        },
+                        {
+                          "member": { "__id": "OrderRequisition/Properties[Customer]" }
+                        },
+                        {
+                          "member": { "__id": "Customer/Properties[TransportRoute]" }
+                        },
+                        {
+                          "member": { "__id": "TransportRoute/Properties[Id]" }
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
             }
           ]
@@ -47336,379 +49013,6 @@
               }
             }
           ]
-        },
-        {
-          "displayName": "Add Edit Picking Slip",
-          "id": "AddEditPickingSlip",
-          "name": "AddEditPickingSlip",
-          "launchMode": "Single",
-          ":@SaveChangesTo":
-          {
-            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
-          },
-          "rootContentItem":
-          {
-            "displayName": "Root Content Item",
-            "name": "RootContentItem",
-            "kind": "Screen",
-            "view": { "__id": ":Screen" },
-            "childContentItems":
-            [
-              {
-                "displayName": "Tabs",
-                "name": "Tabs",
-                "kind": "Group",
-                "view": { "__id": ":TabPages" },
-                "childContentItems":
-                [
-                  {
-                    "displayName": "Details",
-                    "name": "Details",
-                    "kind": "Tab",
-                    "view": { "__id": ":RowsLayout" },
-                    "childContentItems":
-                    [
-                      {
-                        "displayName": "columns",
-                        "name": "columns",
-                        "kind": "Details",
-                        "view": { "__id": ":ColumnsLayout" },
-                        "dataSource":
-                        {
-                          "member": { "__id": "AddEditPickingSlip/Properties[PickingSlip]" }
-                        },
-                        "childContentItems":
-                        [
-                          {
-                            "displayName": "left",
-                            "name": "left",
-                            "kind": "Group",
-                            "view": { "__id": ":RowsLayout" },
-                            "childContentItems":
-                            [
-                              {
-                                "displayName": "Picking No",
-                                "name": "PickingNo",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "PickingSlip/Properties[PickingNo]" }
-                                }
-                              },
-                              {
-                                "displayName": "Picking Date",
-                                "name": "PickingDate",
-                                "kind": "Value",
-                                "view": { "__id": ":DatePicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "PickingSlip/Properties[PickingDate]" }
-                                }
-                              },
-                              {
-                                "displayName": "Transport Route",
-                                "name": "TransportRoute",
-                                "kind": "Details",
-                                "view": { "__id": ":DetailsModalPicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "PickingSlip/Properties[TransportRoute]" }
-                                },
-                                "childContentItems":
-                                [
-                                  {
-                                    "displayName": "Transport Route",
-                                    "name": "RowTemplate",
-                                    "kind": "Details",
-                                    "view": { "__id": ":Summary" },
-                                    "dataSource":
-                                    {
-                                      "links":
-                                      [
-                                      ]
-                                    }
-                                  }
-                                ]
-                              }
-                            ],
-                            "propertySources":
-                            [
-                              {
-                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
-                                "value": 200
-                              },
-                              {
-                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
-                                "value": 400
-                              }
-                            ]
-                          },
-                          {
-                            "displayName": "right",
-                            "name": "right",
-                            "kind": "Group",
-                            "view": { "__id": ":RowsLayout" },
-                            "childContentItems":
-                            [
-                              {
-                                "displayName": "Total Weight",
-                                "name": "TotalWeight",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "PickingSlip/Properties[TotalWeight]" }
-                                }
-                              },
-                              {
-                                "displayName": "Status",
-                                "name": "Status",
-                                "kind": "Value",
-                                "view": { "__id": ":FlipSwitchControl" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "PickingSlip/Properties[Status]" }
-                                }
-                              },
-                              {
-                                "displayName": "Remark",
-                                "name": "Remark",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "PickingSlip/Properties[Remark]" }
-                                }
-                              }
-                            ],
-                            "propertySources":
-                            [
-                              {
-                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
-                                "value": 200
-                              },
-                              {
-                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
-                                "value": 400
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "displayName": "Picking Slip Details",
-                        "name": "PickingSlipDetails",
-                        "kind": "Group",
-                        "view": { "__id": ":RowsLayout" },
-                        "childContentItems":
-                        [
-                          {
-                            "displayName": "Picking Slip Details",
-                            "name": "PickingSlipDetails1",
-                            "kind": "Collection",
-                            "view": { "__id": ":Table" },
-                            "dataSource":
-                            {
-                              "member": { "__id": "AddEditPickingSlip/Properties[PickingSlipDetails]" }
-                            },
-                            "childContentItems":
-                            [
-                              {
-                                "displayName": "Picking Slip Detail",
-                                "name": "RowTemplate1",
-                                "kind": "Details",
-                                "view": { "__id": ":TableRowLayout" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
-                                  ]
-                                },
-                                "childContentItems":
-                                [
-                                  {
-                                    "displayName": "Order Requisition Detail",
-                                    "name": "OrderRequisitionDetail",
-                                    "kind": "Details",
-                                    "view": { "__id": ":Summary" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "PickingSlipDetail/Properties[OrderRequisitionDetail]" }
-                                    }
-                                  },
-                                  {
-                                    "displayName": "Lot No",
-                                    "name": "LotNo",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "PickingSlipDetail/Properties[LotNo]" }
-                                    }
-                                  },
-                                  {
-                                    "displayName": "Location",
-                                    "name": "Location",
-                                    "kind": "Details",
-                                    "view": { "__id": ":Summary" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "PickingSlipDetail/Properties[Location]" }
-                                    }
-                                  },
-                                  {
-                                    "displayName": "Picking Quantity",
-                                    "name": "PickingQuantity",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "PickingSlipDetail/Properties[PickingQuantity]" }
-                                    }
-                                  },
-                                  {
-                                    "displayName": "Unit Price",
-                                    "name": "UnitPrice",
-                                    "kind": "Value",
-                                    "view": { "__id": ":MoneyViewer" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "PickingSlipDetail/Properties[UnitPrice]" }
-                                    }
-                                  },
-                                  {
-                                    "displayName": "Created By",
-                                    "name": "CreatedBy",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "PickingSlipDetail/Properties[CreatedBy]" }
-                                    }
-                                  },
-                                  {
-                                    "displayName": "Created",
-                                    "name": "Created",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "PickingSlipDetail/Properties[Created]" }
-                                    }
-                                  },
-                                  {
-                                    "displayName": "Modified By",
-                                    "name": "ModifiedBy",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "PickingSlipDetail/Properties[ModifiedBy]" }
-                                    }
-                                  },
-                                  {
-                                    "displayName": "Modified",
-                                    "name": "Modified",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "PickingSlipDetail/Properties[Modified]" }
-                                    }
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "displayName": "Popups",
-                "name": "Popups",
-                "kind": "Group",
-                "view": { "__id": ":DialogPages" }
-              }
-            ],
-            "propertySources":
-            [
-              {
-                "property": { "__id": ":Screen/Properties[ScreenType]" },
-                "value": "Edit"
-              }
-            ]
-          },
-          "methods":
-          [
-            {
-              "id": "AddEditPickingSlip/Methods[showTab]",
-              "name": "showTab",
-              "parameters":
-              [
-                {
-                  "id": "AddEditPickingSlip/Methods[showTab]/Parameters[tabName]",
-                  "name": "tabName",
-                  "parameterType": { "__id": ":String" }
-                }
-              ]
-            },
-            {
-              "id": "AddEditPickingSlip/Methods[showDialog]",
-              "name": "showDialog",
-              "parameters":
-              [
-                {
-                  "id": "AddEditPickingSlip/Methods[showDialog]/Parameters[dialogName]",
-                  "name": "dialogName",
-                  "parameterType": { "__id": ":String" }
-                }
-              ]
-            }
-          ],
-          "properties":
-          [
-            {
-              "id": "AddEditPickingSlip/Properties[PickingSlip]",
-              "name": "PickingSlip",
-              "elementType": { "__id": "PickingSlip" },
-              "propertyType": { "__id": "PickingSlip" },
-              ":@IsParameter": { }
-            },
-            {
-              "id": "AddEditPickingSlip/Properties[PickingSlipDetails]",
-              "name": "PickingSlipDetails",
-              "pageSize": 15,
-              "elementType": { "__id": "PickingSlipDetail" },
-              "propertyType": { "__id": "CollectionView$PickingSlipDetail" },
-              "query":
-              {
-                "id": "AddEditPickingSlip/Properties[PickingSlipDetails]/Query",
-                "name": "PickingSlipDetailsQuery",
-                "elementType": { "__id": "PickingSlipDetail" },
-                "returnType": { "__id": "PickingSlipDetail*" },
-                "source":
-                {
-                  "links":
-                  [
-                    {
-                      "member": { "__id": "AddEditPickingSlip/Properties[PickingSlip]" }
-                    },
-                    {
-                      "member": { "__id": "PickingSlip/Properties[PickingSlipDetails]" }
-                    }
-                  ]
-                }
-              },
-              "source":
-              {
-                "target": { "__id": "AddEditPickingSlip/Properties[PickingSlipDetails]/Query" }
-              }
-            }
-          ]
         }
       ],
       "methods":
@@ -47855,6 +49159,37 @@
               "id": "!module/Methods[showAddEditPaymentType]/Parameters[PaymentType]",
               "name": "PaymentType",
               "parameterType": { "__id": "PaymentType" }
+            }
+          ]
+        },
+        {
+          "id": "!module/Methods[showAddEditPickingSlip]",
+          "name": "showAddEditPickingSlip",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "AddEditPickingSlip" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showAddEditPickingSlip]/Parameters[PickingSlip]",
+              "name": "PickingSlip",
+              "parameterType": { "__id": "PickingSlip" }
+            },
+            {
+              "id": "!module/Methods[showAddEditPickingSlip]/Parameters[SelectedTransportRoute]",
+              "name": "SelectedTransportRoute",
+              "parameterType": { "__id": "TransportRoute" }
+            }
+          ]
+        },
+        {
+          "id": "!module/Methods[showAddEditPickingSlipDetail]",
+          "name": "showAddEditPickingSlipDetail",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "AddEditPickingSlipDetail" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showAddEditPickingSlipDetail]/Parameters[PickingSlipDetail]",
+              "name": "PickingSlipDetail",
+              "parameterType": { "__id": "PickingSlipDetail" }
             }
           ]
         },
@@ -48612,19 +49947,6 @@
               "id": "!module/Methods[showViewWorkOrder]/Parameters[WorkOrder]",
               "name": "WorkOrder",
               "parameterType": { "__id": "WorkOrder" }
-            }
-          ]
-        },
-        {
-          "id": "!module/Methods[showAddEditPickingSlip]",
-          "name": "showAddEditPickingSlip",
-          ":@ShowScreenMethod": { "targetScreen": { "__id": "AddEditPickingSlip" } },
-          "parameters":
-          [
-            {
-              "id": "!module/Methods[showAddEditPickingSlip]/Parameters[PickingSlip]",
-              "name": "PickingSlip",
-              "parameterType": { "__id": "PickingSlip" }
             }
           ]
         }

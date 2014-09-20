@@ -24,3 +24,12 @@ myapp.AddEditOrderRequisition.created = function (screen) {
         });
     }
 };
+myapp.AddEditOrderRequisition.QueryCustomerGroupByTransportRoute_ItemTap_execute = function (screen) {
+    // Write code here.
+    var Query = screen.findContentItem("QueryCustomerGroupByTransportRoute");
+    var Customer = Query.value.selectedItem;
+
+    screen.OrderRequisition.setCustomer(Customer);
+    //screen.ProductDescription = Products.ProductCode + ": " + Products.ProductName;
+    screen.closePopup();
+};
